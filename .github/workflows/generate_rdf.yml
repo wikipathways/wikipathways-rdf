@@ -24,18 +24,18 @@ jobs:
         uses: actions/cache@v3
         id: cacheMetaJar
         with:
-          path: ./gpml2rdf-4.0.1.jar
-          key: cached-gpmlrdf-action-${{ hashFiles('gpml2rdf-4.0.1.jar') }}
+          path: ./gpml2rdf-4.0.2.jar
+          key: cached-gpmlrdf-action-${{ hashFiles('gpml2rdf-4.0.2.jar') }}
           restore-keys: |
-            cached-gpmlrdf-action-${{ hashFiles('gpml2rdf-4.0.1.jar') }}
+            cached-gpmlrdf-action-${{ hashFiles('gpml2rdf-4.0.2.jar') }}
             cached-gpmlrdf-action-
 
       - if: steps.cacheMetaJar.outputs.cache-hit != 'true'
         name: Install deps
         run: |
-          echo "Cache not found: gpml2rdf-4.0.1.jar"
-          if [ ! -e ./gpml2rdf-4.0.1.jar ]; then
-            wget -O gpml2rdf-4.0.1.jar https://github.com/egonw/org.pathvisio.io.rdf/releases/download/4.0.1/gpml2rdf-4.0.1.jar
+          echo "Cache not found: gpml2rdf-4.0.2.jar"
+          if [ ! -e ./gpml2rdf-4.0.2.jar ]; then
+            wget -O gpml2rdf-4.0.2.jar https://github.com/egonw/org.pathvisio.io.rdf/releases/download/4.0.2/gpml2rdf-4.0.2.jar
           fi
 
       - name: Setup Java
@@ -51,8 +51,8 @@ jobs:
             wpid="$(basename ""$f"" | sed 's/.gpml//')"
             echo "generating info and datanode files for $wpid"
             mkdir -p rdf/${wpid}
-            java -cp gpml2rdf-4.0.1.jar org.wikipathways.wp2rdf.CreateGPMLRDF $f rdf/${wpid}/${wpid}.gpml.ttl || true
-            java -cp gpml2rdf-4.0.1.jar org.wikipathways.wp2rdf.CreateWPRDF $f rdf/${wpid}/${wpid}.wp.ttl || true
+            java -cp gpml2rdf-4.0.2.jar org.wikipathways.wp2rdf.CreateGPMLRDF $f rdf/${wpid}/${wpid}.gpml.ttl || true
+            java -cp gpml2rdf-4.0.2.jar org.wikipathways.wp2rdf.CreateWPRDF $f rdf/${wpid}/${wpid}.wp.ttl || true
           done
 
       - name: Commit report
