@@ -29,7 +29,7 @@ jobs:
           restore-keys: |
             cached-gpmlrdf-action-${{ hashFiles('gpml2rdf-4.0.0.jar') }}
             cached-gpmlrdf-action-
-    
+
       - if: steps.cacheMetaJar.outputs.cache-hit != 'true'
         name: Install deps
         run: |
@@ -46,10 +46,13 @@ jobs:
 
       - name: Count the number of pathways
         run: |
-          find . -name "*\.gpml" | wc -l > count.txt
           mkdir -p rdf
-          java -cp gpml2rdf-4.0.0.jar org.wikipathways.wp2rdf.CreateGPMLRDF database/pathways/WP4846/WP4846.gpml rdf/WP4846.gpml.ttl
-          java -cp gpml2rdf-4.0.0.jar org.wikipathways.wp2rdf.CreateWPRDF database/pathways/WP4846/WP4846.gpml rdf/WP4846.wp.ttl
+          for f in `find database -name "*\.gpml"`; do
+            wpid="$(basename ""$f"" | sed 's/.gpml//')"
+            echo "generating info and datanode files for $wpid"
+            java -cp gpml2rdf-4.0.0.jar org.wikipathways.wp2rdf.CreateGPMLRDF $f rdf/${wpid}/${wpid}.gpml.ttl
+            java -cp gpml2rdf-4.0.0.jar org.wikipathways.wp2rdf.CreateWPRDF $f rdf/${wpid}/${wpid}.wp.ttl
+          done
 
       - name: Commit report
         run: |
