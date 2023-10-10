@@ -20,15 +20,43 @@ jobs:
           fetch-depth: 0
           ref: main
 
+      - name: Cache GPML2RDF with dependencies
+        uses: actions/cache@v3
+        id: cacheMetaJar
+        with:
+          path: ./gpml2rdf-4.0.0.jar
+          key: cached-gpmlrdf-action-${{ hashFiles('gpml2rdf-4.0.0.jar') }}
+          restore-keys: |
+            cached-gpmlrdf-action-${{ hashFiles('gpml2rdf-4.0.0.jar') }}
+            cached-gpmlrdf-action-
+    
+      - if: steps.cacheMetaJar.outputs.cache-hit != 'true'
+        name: Install deps
+        run: |
+          echo "Cache not found: gpml2rdf-4.0.0.jar"
+          if [ ! -e ./gpml2rdf-4.0.0.jar ]; then
+            wget -O gpml2rdf-4.0.0.jar https://github.com/egonw/org.pathvisio.io.rdf/releases/download/4.0.0/gpml2rdf-4.0.0.jar
+          fi
+
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '11'
+
       - name: Count the number of pathways
         run: |
           find . -name "*\.gpml" | wc -l > count.txt
+          mkdir -p rdf
+          java -cp gpml2rdf-4.0.0.jar org.wikipathways.wp2rdf.CreateGPMLRDF database/pathways/WP4846/WP4846.gpml rdf/WP4846.gpml.ttl
+          java -cp gpml2rdf-4.0.0.jar org.wikipathways.wp2rdf.CreateWPRDF database/pathways/WP4846/WP4846.gpml rdf/WP4846.wp.ttl
 
       - name: Commit report
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
           git add count.txt
+          git add rdf
           if git diff --exit-code --staged; then
               echo "No changes"
           else
