@@ -50,6 +50,7 @@ jobs:
           for f in `find database -name "*\.gpml"`; do
             wpid="$(basename ""$f"" | sed 's/.gpml//')"
             echo "generating info and datanode files for $wpid"
+            mkdir -p rdf/${wpid}
             java -cp gpml2rdf-4.0.0.jar org.wikipathways.wp2rdf.CreateGPMLRDF $f rdf/${wpid}/${wpid}.gpml.ttl
             java -cp gpml2rdf-4.0.0.jar org.wikipathways.wp2rdf.CreateWPRDF $f rdf/${wpid}/${wpid}.wp.ttl
           done
