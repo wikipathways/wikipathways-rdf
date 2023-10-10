@@ -47,7 +47,7 @@ jobs:
       - name: Count the number of pathways
         run: |
           mkdir -p rdf
-          for f in `find database -name "*\.gpml"`; do
+          for f in `find database -name "*\.gpml" | grep -v pending | sort`; do
             wpid="$(basename ""$f"" | sed 's/.gpml//')"
             echo "generating info and datanode files for $wpid"
             mkdir -p rdf/${wpid}
