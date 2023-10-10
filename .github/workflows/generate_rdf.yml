@@ -7,11 +7,16 @@ jobs:
   changed-gpmls:
     runs-on: ubuntu-latest
     steps:
-        # Make sure we have some code to diff.
+      - name: Checkout
+        # check this out repository
+        uses: actions/checkout@v4
+
       - name: Checkout repository
+        # checkout the GPMLs
         uses: actions/checkout@v4
         with:
           repository: wikipathways/wikipathways-database
+          path: database
           fetch-depth: 0
           ref: main
 
