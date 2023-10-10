@@ -1,0 +1,529 @@
+@prefix biopax:  <http://www.biopax.org/release/biopax-level3.owl#> .
+@prefix cito:    <http://purl.org/spar/cito/> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix freq:    <http://purl.org/cld/freq/> .
+@prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix pav:     <http://purl.org/pav/> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix void:    <http://rdfs.org/ns/void#> .
+@prefix wp:      <http://vocabularies.wikipathways.org/wp#> .
+@prefix wprdf:   <http://rdf.wikipathways.org/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+<https://identifiers.org/ensembl/ENSG00000102554>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "KLF5";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000102554>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000102554";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/f30e4>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000102554> .
+
+<https://identifiers.org/chebi/CHEBI:1547>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "3-HK";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:1547>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:1547";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/b4df1>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:1547> .
+
+<https://identifiers.org/chebi/CHEBI:28683>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Kynurenine";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:28683>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:28683";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/c17f1>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:28683> .
+
+<https://identifiers.org/uniprot/P04637>
+        rdf:type            wp:Protein , wp:DataNode;
+        rdfs:label          "p53";
+        dc:identifier       <https://identifiers.org/uniprot/P04637>;
+        dc:source           "Uniprot-TrEMBL";
+        dcterms:identifier  "P04637";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/d0202>;
+        foaf:page           <http://www.uniprot.org/uniprot/P04637> .
+
+<https://identifiers.org/wikipathways/WP5044/WP5044_rWP5044_r125311>
+        rdf:type             skos:Collection , wp:Pathway;
+        dc:identifier        <https://identifiers.org/wikipathways/WP5044/WP5044>;
+        dc:source            "WikiPathways";
+        dc:title             "Kynurenine pathway and links to cell senescence"@en;
+        dcterms:description  "The kynurenine pathway is the major path for Tryptophan (Trp) breakdown (Castro-Portuguez & Sutphin, 2020; Dalton et al.,2020; Kondrikov et al., 2020; Li, Oxenkrug & Yang, 2017; Lindquist et al., 2020; Lugo-Huitron et al., 2013; Oxenkrug, 2011; Platten et al., 2019; Savitz, 2019; Soegdrageret al., 2019; Tan & Guillemin, 2019). The kynurenine (Kyn)/Trp ratio is proposed to be an accurate indicator of biological age as well as an indicator of risk for age-related diseases (Castro-Portuguez & Sutphin, 2020;  Li et al., 2017; Lindquist et al., 2020; Oxenkrug, 2011; Platten et al., 2019; Savitz, 2019; Soegdrageret al., 2019). \n \nThe first and also rate-limiting enzymes that determine rate of Trp conversion into N-formylkynurenine and further on into Kyn are tryptophan-2,3-dioxygenase (TDO) and indoleamine-2,3-dioxygenase (IDO), out of which the IDO isoform IDO1 is the most important (Castro-Portuguez & Sutphin, 2020; Dalton et al.,2020;  Li et al., 2017; Lindquist et al., 2020; Lugo-Huitron et al., 2013; Minhas et al., 2018; Oxenkrug, 2011; Platten et al., 2019; Savitz, 2019; Soegdrageret al., 2019; Tan & Guillemin, 2019). This catalytic enzyme is activated by pro-inflammatory cytokines such as interleukins, interferons gamma and beta or the aryl hydrocarbon receptor (AhR) (Castro-Portuguez & Sutphin, 2020; Dalton et al.,2020; Kondrikov et al., 2020; Li et al., 2017; Lindquist et al., 2020; Lugo-Huitron et al., 2013; Oxenkrug, 2011; Platten et al., 2019; Savitz, 2019; Soegdrageret al., 2019; Tan & Guillemin, 2019). \n \nNext, N-formylkynurenine is converted either into kynurenic acid by a kynurenine aminotransferase (KAT), anthranilic acid by kynureninase or, into Kyn by formidase (AFMID) (Castro-Portuguez & Sutphin, 2020). Kyn can alter the regulation of cell cycle and proliferation and induce oxidative stress through by inducing the transcription of multiple miRNAs (Dalton et al., 2020),  activating the p53/p21 pathway (Kondrikov et al., 2020) and  binding to AhR, resulting in a positive feedback loop, while further promoting oxidative stress (Castro-Portuguez & Sutphin, Dalton et al., 2020; 2020, Kondrikov et al., 2020). \n \nKyn is further converted into 3-hydroxykynurenine (3HK) by kynurenine monooxygenase (KMO), then Kynureninase converts 3HK into 3-hydroxyanthranilic acid (3HAA) and then into 2-amino-3-carboxymuconate-6-semialdehyde (ACMSA) (Castro-Portuguez & Sutphin, 2020, Lindquist et al., 2020; Lugo-Huitron et al., 2013; Platten et al., 2019; Savitz, 2019; Tan & Guillemin, 2019). 3-HK can alternatively be converted into xanthurenic acid, a metabolite that modulates the tetrahydrobiopterin (BH4) pathway,(Tan & Guillemin, 2019). 3HAA can be converted either into quinolinic acid and from there enter the de novo NAD synthesis due to the enzymatic action of nicotinate-nucleotide pyrophosphorylase (QPRT), or it can be converted into 2-aminomuconate-6-semialdehyde (AMSA) which can be converted into glutaryl-CoA and enter the TCA cycle and glycolysis (Castro-Portuguez & Sutphin, 2020; Lindquist et al., 2020; Lugo-Huitron et al., 2013; Platten et al., 2019; Savitz, 2019; Tan & Guillemin, 2019). ";
+        dcterms:identifier   "WP5044/WP5044";
+        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311>;
+        wp:organismName      "Homo sapiens";
+        foaf:page            <http://www.wikipathways.org/instance/WP5044/WP5044_rWP5044_r125311> .
+
+<https://identifiers.org/chebi/CHEBI:15372>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "BH4";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:15372>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:15372";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/a07f5>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15372> .
+
+<https://identifiers.org/uniprot/P01375>
+        rdf:type            wp:Protein , wp:DataNode;
+        rdfs:label          "TNF";
+        dc:identifier       <https://identifiers.org/uniprot/P01375>;
+        dc:source           "Uniprot-TrEMBL";
+        dcterms:identifier  "P01375";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/cabc1>;
+        foaf:page           <http://www.uniprot.org/uniprot/P01375> .
+
+<https://identifiers.org/hmdb/HMDB0001206>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Acetyl-CoA";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0001206>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0001206";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/e791c>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB01206> .
+
+<https://identifiers.org/uniprot/P27930>
+        rdf:type            wp:Protein , wp:DataNode;
+        rdfs:label          "IL-1R";
+        dc:identifier       <https://identifiers.org/uniprot/P27930>;
+        dc:source           "Uniprot-TrEMBL";
+        dcterms:identifier  "P27930";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/d1acf>;
+        foaf:page           <http://www.uniprot.org/uniprot/P27930> .
+
+<https://identifiers.org/hmdb/HMDB0001290>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Glutaconyl-CoA";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0001290>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0001290";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/abc8b>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB01290> .
+
+<https://identifiers.org/uniprot/Q63HM1>
+        rdf:type            wp:Protein , wp:DataNode;
+        rdfs:label          "AFMID";
+        dc:identifier       <https://identifiers.org/uniprot/Q63HM1>;
+        dc:source           "Uniprot-TrEMBL";
+        dcterms:identifier  "Q63HM1";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/fb7dd>;
+        foaf:page           <http://www.uniprot.org/uniprot/Q63HM1> .
+
+<https://identifiers.org/wikidata/Q2639429>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "acetoacetyl-CoA";
+        dc:identifier       <https://identifiers.org/wikidata/Q2639429>;
+        dc:source           "Wikidata";
+        dcterms:identifier  "Q2639429";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/cdf12>;
+        foaf:page           <https://scholia.toolforge.org/Q2639429> .
+
+<http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/WP/Interaction/id8aeeee6a>
+        rdf:type  wp:Interaction .
+
+<https://identifiers.org/wikipathways/WP78>
+        rdf:type            wp:Pathway , wp:DataNode;
+        rdfs:label          "TCA Cycle";
+        dc:identifier       <https://identifiers.org/wikipathways/WP78>;
+        dc:source           "WikiPathways";
+        dcterms:identifier  "WP78";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/c0065>;
+        foaf:page           <https://www.wikipathways.org/instance/WP78> .
+
+<https://identifiers.org/chebi/CHEBI:27897>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Tryptophan";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:27897>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:27897";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/f3433>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:27897> .
+
+<https://identifiers.org/uniprot/P38936>
+        rdf:type            wp:Protein , wp:DataNode;
+        rdfs:label          "p21";
+        dc:identifier       <https://identifiers.org/uniprot/P38936>;
+        dc:source           "Uniprot-TrEMBL";
+        dcterms:identifier  "P38936";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/fa89f>;
+        foaf:page           <http://www.uniprot.org/uniprot/P38936> .
+
+<https://identifiers.org/chebi/CHEBI:30754>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Anthranilic acid";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:30754>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:30754";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/b1d76>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:30754> .
+
+<https://identifiers.org/chebi/CHEBI:15524>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "glutaryl-coA";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:15524>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:15524";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/bee05>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15524> .
+
+<http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/WP/Interaction/id78dc9dd6>
+        rdf:type  wp:Interaction .
+
+<https://identifiers.org/wikidata/Q27089442>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "(S)-3-hydroxy- butanoyl-CoA";
+        dc:identifier       <https://identifiers.org/wikidata/Q27089442>;
+        dc:source           "Wikidata";
+        dcterms:identifier  "Q27089442";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/ff35e>;
+        foaf:page           <https://scholia.toolforge.org/Q27089442> .
+
+<https://identifiers.org/chebi/CHEBI:18377>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "N-Formylkynurenine";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:18377>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:18377";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/dfb79>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:18377> .
+
+<https://identifiers.org/chebi/CHEBI:15473>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Crotonyl-CoA";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:15473>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:15473";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/ef395>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15473> .
+
+<https://identifiers.org/chebi/CHEBI:15793>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "3-HAA";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:15793>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:15793";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/ca078>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15793> .
+
+<https://identifiers.org/ensembl/ENSG00000150907>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "FOXO1";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000150907>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000150907";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/e4ee2>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000150907> .
+
+<https://identifiers.org/uniprot/P46952>
+        rdf:type            wp:Protein , wp:DataNode;
+        rdfs:label          "3-HAO";
+        dc:identifier       <https://identifiers.org/uniprot/P46952>;
+        dc:source           "Uniprot-TrEMBL";
+        dcterms:identifier  "P46952";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/b3d5f>;
+        foaf:page           <http://www.uniprot.org/uniprot/P46952> .
+
+<https://identifiers.org/chebi/CHEBI:3715>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Cinnavalininate";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:3715>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:3715";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/be8d9>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:3715> .
+
+<https://identifiers.org/uniprot/Q9P2K8>
+        rdf:type            wp:Protein , wp:DataNode;
+        rdfs:label          "GCN2";
+        dc:identifier       <https://identifiers.org/uniprot/Q9P2K8>;
+        dc:source           "Uniprot-TrEMBL";
+        dcterms:identifier  "Q9P2K8";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/c37f6>;
+        foaf:page           <http://www.uniprot.org/uniprot/Q9P2K8> .
+
+<https://identifiers.org/chebi/CHEBI:15745>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "AMSA";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:15745>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:15745";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/cdbd6>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15745> .
+
+<https://identifiers.org/chebi/CHEBI:18344>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Kynurenic acid";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:18344>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:18344";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/b322d>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:18344> .
+
+<https://identifiers.org/uniprot/Q9BQI3>
+        rdf:type            wp:Protein , wp:DataNode;
+        rdfs:label          "eIF-2alpha";
+        dc:identifier       <https://identifiers.org/uniprot/Q9BQI3>;
+        dc:source           "Uniprot-TrEMBL";
+        dcterms:identifier  "Q9BQI3";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/b2846>;
+        foaf:page           <http://www.uniprot.org/uniprot/Q9BQI3> .
+
+<https://identifiers.org/chebi/CHEBI:15346>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Coenzyme A";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:15346>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:15346";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/b3bc9>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15346> .
+
+<https://identifiers.org/uniprot/Q16719>
+        rdf:type            wp:Protein , wp:DataNode;
+        rdfs:label          "Kynureninase";
+        dc:identifier       <https://identifiers.org/uniprot/Q16719>;
+        dc:source           "Uniprot-TrEMBL";
+        dcterms:identifier  "Q16719";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/a5832> , <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/ee1bf>;
+        foaf:page           <http://www.uniprot.org/uniprot/Q16719> .
+
+<https://identifiers.org/hmdb/HMDB0002243>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Picolinic acid";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0002243>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0002243";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/cc8af>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB02243> .
+
+<https://identifiers.org/mirbase/MIMAT0000267>
+        rdf:type            wp:DataNode;
+        rdfs:label          "miR-210-3p";
+        dc:identifier       <https://identifiers.org/mirbase/MIMAT0000267>;
+        dc:source           "miRBase Sequence";
+        dcterms:identifier  "MIMAT0000267";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/a70e2>;
+        foaf:page           <http://www.mirbase.org/cgi-bin/mirna_entry.pl?acc=MIMAT0000267> .
+
+<https://identifiers.org/chebi/CHEBI:15846>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "NAD+";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:15846>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:15846";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/da6c1>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15846> .
+
+<https://identifiers.org/wikipathways/WP534>
+        rdf:type            wp:Pathway , wp:DataNode;
+        rdfs:label          "Glycolysis";
+        dc:identifier       <https://identifiers.org/wikipathways/WP534>;
+        dc:source           "WikiPathways";
+        dcterms:identifier  "WP534";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/f2e45>;
+        foaf:page           <https://www.wikipathways.org/instance/WP534> .
+
+<https://identifiers.org/uniprot/Q6ZQW0>
+        rdf:type            wp:Protein , wp:DataNode;
+        rdfs:label          "IDO2";
+        dc:identifier       <https://identifiers.org/uniprot/Q6ZQW0>;
+        dc:source           "Uniprot-TrEMBL";
+        dcterms:identifier  "Q6ZQW0";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/e35c9>;
+        foaf:page           <http://www.uniprot.org/uniprot/Q6ZQW0> .
+
+<https://identifiers.org/chebi/CHEBI:606564>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "PGE2";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:606564>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:606564";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/ec962>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:606564> .
+
+<https://identifiers.org/ensembl/ENSG00000103485>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "QPRT";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000103485>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000103485";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/fe240>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000103485> .
+
+<https://identifiers.org/hmdb/HMDB0000232>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Quinolinic acid";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000232>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0000232";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/f640d>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB00232> .
+
+<https://identifiers.org/uniprot/B3VK56>
+        rdf:type            wp:Protein , wp:DataNode;
+        rdfs:label          "NOS";
+        dc:identifier       <https://identifiers.org/uniprot/B3VK56>;
+        dc:source           "Uniprot-TrEMBL";
+        dcterms:identifier  "B3VK56";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/b6727>;
+        foaf:page           <http://www.uniprot.org/uniprot/B3VK56> .
+
+<https://identifiers.org/uniprot/Q8N5Z0>
+        rdf:type            wp:Protein , wp:DataNode;
+        rdfs:label          "KAT";
+        dc:identifier       <https://identifiers.org/uniprot/Q8N5Z0>;
+        dc:source           "Uniprot-TrEMBL";
+        dcterms:identifier  "Q8N5Z0";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/d4dba>;
+        foaf:page           <http://www.uniprot.org/uniprot/Q8N5Z0> .
+
+<https://identifiers.org/hmdb/HMDB0001179>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "NAAD";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0001179>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0001179";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/ac9b1>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB01179> .
+
+<https://identifiers.org/pubchem.compound/5280673>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "ACMSA";
+        dc:identifier       <https://identifiers.org/pubchem.compound/5280673>;
+        dc:source           "PubChem-compound";
+        dcterms:identifier  "5280673";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/ac40f>;
+        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=5280673> .
+
+<http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/WP/Interaction/idf72624fe>
+        rdf:type  wp:Interaction .
+
+<https://identifiers.org/uniprot/O15229>
+        rdf:type            wp:Protein , wp:DataNode;
+        rdfs:label          "KMO";
+        dc:identifier       <https://identifiers.org/uniprot/O15229>;
+        dc:source           "Uniprot-TrEMBL";
+        dcterms:identifier  "O15229";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/a05b8>;
+        foaf:page           <http://www.uniprot.org/uniprot/O15229> .
+
+<http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/WP/Interaction/id74999cb3>
+        rdf:type  wp:Interaction .
+
+<https://identifiers.org/uniprot/P14902>
+        rdf:type            wp:Protein , wp:DataNode;
+        rdfs:label          "IDO1";
+        dc:identifier       <https://identifiers.org/uniprot/P14902>;
+        dc:source           "Uniprot-TrEMBL";
+        dcterms:identifier  "P14902";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/ac223>;
+        foaf:page           <http://www.uniprot.org/uniprot/P14902> .
+
+<https://identifiers.org/uniprot/P01579>
+        rdf:type            wp:Protein , wp:DataNode;
+        rdfs:label          "IFNÎ³";
+        dc:identifier       <https://identifiers.org/uniprot/P01579>;
+        dc:source           "Uniprot-TrEMBL";
+        dcterms:identifier  "P01579";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/aa86b>;
+        foaf:page           <http://www.uniprot.org/uniprot/P01579> .
+
+<https://identifiers.org/uniprot/O00206>
+        rdf:type            wp:Protein , wp:DataNode;
+        rdfs:label          "TLR 4";
+        dc:identifier       <https://identifiers.org/uniprot/O00206>;
+        dc:source           "Uniprot-TrEMBL";
+        dcterms:identifier  "O00206";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/fff3b>;
+        foaf:page           <http://www.uniprot.org/uniprot/O00206> .
+
+<https://identifiers.org/uniprot/Q8TDX5>
+        rdf:type            wp:Protein , wp:DataNode;
+        rdfs:label          "ACMSD";
+        dc:identifier       <https://identifiers.org/uniprot/Q8TDX5>;
+        dc:source           "Uniprot-TrEMBL";
+        dcterms:identifier  "Q8TDX5";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/d1915>;
+        foaf:page           <http://www.uniprot.org/uniprot/Q8TDX5> .
+
+<http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/WP/Interaction/id661f1c9c>
+        rdf:type  wp:Interaction .
+
+<https://identifiers.org/uniprot/P48775>
+        rdf:type            wp:Protein , wp:DataNode;
+        rdfs:label          "TDO";
+        dc:identifier       <https://identifiers.org/uniprot/P48775>;
+        dc:source           "Uniprot-TrEMBL";
+        dcterms:identifier  "P48775";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/e8717>;
+        foaf:page           <http://www.uniprot.org/uniprot/P48775> .
+
+<https://identifiers.org/chebi/CHEBI:16796>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Melatonin";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:16796>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:16796";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/d9c69>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16796> .
+
+<https://identifiers.org/chebi/CHEBI:15763>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "NAMN";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:15763>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:15763";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/ce197>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15763> .
+
+<https://identifiers.org/hmdb/HMDB0000881>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Xanthurenic acid";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000881>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0000881";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/e11ea>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB00881> .
+
+<https://identifiers.org/wikipathways/WP2873>
+        rdf:type            wp:Pathway , wp:DataNode;
+        rdfs:label          "AhR Signaling Pathway";
+        dc:identifier       <https://identifiers.org/wikipathways/WP2873>;
+        dc:source           "WikiPathways";
+        dcterms:identifier  "WP2873";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/b6060>;
+        foaf:page           <https://www.wikipathways.org/instance/WP2873> .
+
+<https://identifiers.org/uniprot/P35869>
+        rdf:type            wp:Protein , wp:DataNode;
+        rdfs:label          "AhR";
+        dc:identifier       <https://identifiers.org/uniprot/P35869>;
+        dc:source           "Uniprot-TrEMBL";
+        dcterms:identifier  "P35869";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/d4a38>;
+        foaf:page           <http://www.uniprot.org/uniprot/P35869> .
+
+<https://identifiers.org/mirbase/MIMAT0002813>
+        rdf:type            wp:DataNode;
+        rdfs:label          "miR-493-5p";
+        dc:identifier       <https://identifiers.org/mirbase/MIMAT0002813>;
+        dc:source           "miRBase Sequence";
+        dcterms:identifier  "MIMAT0002813";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/e7b79>;
+        foaf:page           <http://www.mirbase.org/cgi-bin/mirna_entry.pl?acc=MIMAT0002813> .
+
+<https://identifiers.org/uniprot/P01574>
+        rdf:type            wp:Protein , wp:DataNode;
+        rdfs:label          "IFNÎ²";
+        dc:identifier       <https://identifiers.org/uniprot/P01574>;
+        dc:source           "Uniprot-TrEMBL";
+        dcterms:identifier  "P01574";
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5044/WP5044_rWP5044_r125311/DataNode/e0c55>;
+        foaf:page           <http://www.uniprot.org/uniprot/P01574> .
