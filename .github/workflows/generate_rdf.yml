@@ -1,0 +1,33 @@
+name: Generate WikiPathways RDF
+
+on:
+  workflow_dispatch:
+
+jobs:
+  changed-gpmls:
+    runs-on: ubuntu-latest
+    steps:
+        # Make sure we have some code to diff.
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          repository: wikipathways/wikipathways-database
+          fetch-depth: 0
+          ref: main
+
+      - name: Count the number of pathways
+        run: |
+          find . -name "*\.gpml" | wc -l > count.txt
+
+      - name: Commit report
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add count.txt
+          if git diff --exit-code --staged; then
+              echo "No changes"
+          else
+              git commit -m 'Updated RDF'
+              git pull --rebase
+              git push
+          fi
