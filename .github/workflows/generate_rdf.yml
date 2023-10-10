@@ -51,8 +51,7 @@ jobs:
             wpid="$(basename ""$f"" | sed 's/.gpml//')"
             echo "generating info and datanode files for $wpid"
             mkdir -p rdf/${wpid}
-            java -cp gpml2rdf-4.0.2.jar org.wikipathways.wp2rdf.CreateGPMLRDF $f rdf/${wpid}/${wpid}.gpml.ttl || true
-            java -cp gpml2rdf-4.0.2.jar org.wikipathways.wp2rdf.CreateWPRDF $f rdf/${wpid}/${wpid}.wp.ttl || true
+            java -cp gpml2rdf-4.0.2.jar org.wikipathways.wp2rdf.CreateRDF $f rdf/${wpid}/${wpid}.gpml.ttl rdf/${wpid}/${wpid}.wp.ttl || true
           done
 
       - name: Commit report
