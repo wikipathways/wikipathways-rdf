@@ -16,23 +16,72 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP556&oldid=r97054>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_4932>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "4932" .
+
+<https://identifiers.org/wikipathways/WP556_r97054>
+        rdf:type               skos:Collection , wp:Pathway;
+        dc:identifier          <https://identifiers.org/wikipathways/WP556>;
+        dc:source              "WikiPathways";
+        dc:title               "Glutamate degradation I"@en;
+        dcterms:description    "Based on http://metacyc.org/META/NEW-IMAGE?type=PATHWAY&object=GLUDEG-I-PWY";
+        dcterms:identifier     "WP556";
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP556_r97054>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0001380>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_4932>;
+        wp:organismName        "Saccharomyces cerevisiae";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0001380>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP556&oldid=r97054> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP556&oldid=r97054>;
+        foaf:page              <http://www.wikipathways.org/instance/WP556_r97054> .
+
+<http://rdf.wikipathways.org/Pathway/WP556_r97054/WP/Interaction/id1356da06>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP556_r97054>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP556_r97054/Interaction/id1356da06>;
+        wp:participants   <https://identifiers.org/cas/56-85-9>;
+        wp:source         <https://identifiers.org/cas/56-85-9> .
+
 <https://identifiers.org/sgd/S000004862>
         rdf:type            wp:GeneProduct , wp:DataNode;
         rdfs:label          "GAD1";
         dc:identifier       <https://identifiers.org/sgd/S000004862>;
         dc:source           "SGD";
         dcterms:identifier  "S000004862";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP556/WP556_rWP556_r97054/DataNode/d1e>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP556_r97054>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP556_r97054/DataNode/d1e>;
         foaf:page           <http://www.yeastgenome.org/locus/S000004862> .
 
+<http://rdf.wikipathways.org/Pathway/WP556_r97054/WP/Interaction/id6fa778e6>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP556_r97054>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP556_r97054/Interaction/id6fa778e6>;
+        wp:participants   <https://identifiers.org/cas/56-86-0>;
+        wp:target         <https://identifiers.org/cas/56-86-0> .
+
+<https://identifiers.org/wikipathways/WP556>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP556_r97054> .
+
 <https://identifiers.org/cas/53-57-6>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "NADPH";
         dc:identifier       <https://identifiers.org/cas/53-57-6>;
         dc:source           "CAS";
         dcterms:identifier  "53-57-6";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP556/WP556_rWP556_r97054/DataNode/c79>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP556_r97054/WP/Interaction/id9c69f155> , <https://identifiers.org/wikipathways/WP556_r97054>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP556_r97054/DataNode/c79>;
         foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=53-57-6> .
+
+<http://rdf.wikipathways.org/Pathway/WP556_r97054/WP/Interaction/id9c69f155>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP556_r97054>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP556_r97054/Interaction/id9c69f155>;
+        wp:participants   <https://identifiers.org/cas/53-57-6>;
+        wp:target         <https://identifiers.org/cas/53-57-6> .
 
 <https://identifiers.org/sgd/S000000210>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -40,7 +89,8 @@
         dc:identifier       <https://identifiers.org/sgd/S000000210>;
         dc:source           "SGD";
         dcterms:identifier  "S000000210";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP556/WP556_rWP556_r97054/DataNode/d30>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP556_r97054>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP556_r97054/DataNode/d30>;
         foaf:page           <http://www.yeastgenome.org/locus/S000000210> .
 
 <https://identifiers.org/sgd/S000003251>
@@ -49,7 +99,8 @@
         dc:identifier       <https://identifiers.org/sgd/S000003251>;
         dc:source           "SGD";
         dcterms:identifier  "S000003251";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP556/WP556_rWP556_r97054/DataNode/de4>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP556_r97054>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP556_r97054/DataNode/de4>;
         foaf:page           <http://www.yeastgenome.org/locus/S000003251> .
 
 <https://identifiers.org/cas/56-85-9>
@@ -58,25 +109,20 @@
         dc:identifier       <https://identifiers.org/cas/56-85-9>;
         dc:source           "CAS";
         dcterms:identifier  "56-85-9";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP556/WP556_rWP556_r97054/DataNode/ed5>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP556_r97054> , <http://rdf.wikipathways.org/Pathway/WP556_r97054/WP/Interaction/id1356da06>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP556_r97054/DataNode/ed5>;
         foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=56-85-9> .
 
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP556&oldid=r97054>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
 <https://identifiers.org/cas/56-86-0>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "L-glutamate";
         dc:identifier       <https://identifiers.org/cas/56-86-0>;
         dc:source           "CAS";
         dcterms:identifier  "56-86-0";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP556/WP556_rWP556_r97054/DataNode/b63>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP556_r97054> , <http://rdf.wikipathways.org/Pathway/WP556_r97054/WP/Interaction/id6fa778e6>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP556_r97054/DataNode/b63>;
         foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=56-86-0> .
-
-<https://identifiers.org/wikipathways/WP556/WP556_rWP556_r97054>
-        rdf:type             wp:Pathway , skos:Collection;
-        dc:identifier        <https://identifiers.org/wikipathways/WP556/WP556>;
-        dc:source            "WikiPathways";
-        dc:title             "Glutamate degradation I"@en;
-        dcterms:description  "Based on http://metacyc.org/META/NEW-IMAGE?type=PATHWAY&object=GLUDEG-I-PWY";
-        dcterms:identifier   "WP556/WP556";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP556/WP556_rWP556_r97054>;
-        wp:organismName      "Saccharomyces cerevisiae";
-        foaf:page            <http://www.wikipathways.org/instance/WP556/WP556_rWP556_r97054> .

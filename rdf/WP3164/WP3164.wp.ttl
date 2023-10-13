@@ -16,58 +16,159 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
+<http://rdf.wikipathways.org/Pathway/WP3164_r80734/WP/Interaction/id40c6c87b>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3164_r80734>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3164_r80734/Interaction/id40c6c87b>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP3164_r80734/WP/Interaction/id8cf2fab6> , <https://identifiers.org/ensembl/ENSBTAG00000048265>;
+        wp:source         <https://identifiers.org/ensembl/ENSBTAG00000048265>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP3164_r80734/WP/Interaction/id8cf2fab6> .
+
+<https://identifiers.org/wikipathways/WP3164>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP3164_r80734> .
+
+<https://identifiers.org/pubmed/24384374>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "24384374";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3164_r80734>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/24384374> .
+
+<https://identifiers.org/ensembl/ENSBTAG00000017551>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "DROSHA";
+        dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000017551>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSBTAG00000017551";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3164_r80734/Complex/bcbff> , <https://identifiers.org/wikipathways/WP3164_r80734>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3164_r80734/DataNode/d0d0c>;
+        foaf:page           <https://www.ensembl.org/id/ENSBTAG00000017551> .
+
+<https://identifiers.org/ensembl/ENSBTAG00000012852>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "DICER1";
+        dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000012852>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSBTAG00000012852";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3164_r80734/WP/Interaction/id44ff4068> , <http://rdf.wikipathways.org/Pathway/WP3164_r80734/WP/Interaction/idc8e52fd8> , <https://identifiers.org/wikipathways/WP3164_r80734>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3164_r80734/DataNode/e605a> , <http://rdf.wikipathways.org/Pathway/WP3164_r80734/DataNode/af552>;
+        foaf:page           <https://www.ensembl.org/id/ENSBTAG00000012852> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3164&oldid=r80734>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_9913>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9913" .
+
+<http://rdf.wikipathways.org/Pathway/WP3164_r80734/Complex/bcbff>
+        rdf:type          wp:Complex , wp:DataNode;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3164_r80734>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3164_r80734/Group/bcbff>;
+        wp:participants   <https://identifiers.org/ensembl/ENSBTAG00000019869> , <https://identifiers.org/ensembl/ENSBTAG00000017551> .
+
+<https://identifiers.org/wikipathways/WP3164_r80734>
+        rdf:type               wp:Pathway , skos:Collection;
+        dc:identifier          <https://identifiers.org/wikipathways/WP3164>;
+        dc:source              "WikiPathways";
+        dc:title               "RNA interference"@en;
+        dcterms:description    "The process of RNA-interference in eukaryotic cells. Long precursor microRNA (miRNA), called pri-miRNA, is cleaved by RNase III endonuclease (Drosha) into pieces of approximately 70 nucleotides each (called pre-miRNA) in the nucleus. Following transportation into the cytoplasm by exportin 5 another RNase III endonuclease (Dicer) cleaves it into mature miRNA segments. Degradation of messenger RNA (mRNA) and translational repression occurs after miRNA binds to the RNA-induced silencing complex (RISC). Cytoplasmic long double-stranded RNA (dsRNA) is cleaved by Dicer into small interfering RNA (siRNA), which is incorporated into RISC, resulting in the cleavage and degradation of specific target mRNA. Synthetic double-stranded siRNA is not processed by Dicer and directly incorporated by the RISC.";
+        dcterms:identifier     "WP3164";
+        dcterms:references     <https://identifiers.org/pubmed/24384374>;
+        cito:cites             <https://identifiers.org/pubmed/24384374> , <https://identifiers.org/pubmed/24929628>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP3164_r80734>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0001161>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9913>;
+        wp:organismName        "Bos taurus";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0001161>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3164&oldid=r80734> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3164&oldid=r80734>;
+        foaf:page              <http://www.wikipathways.org/instance/WP3164_r80734> .
+
+<http://rdf.wikipathways.org/Pathway/WP3164_r80734/WP/Interaction/id8cf2fab6>
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP3164_r80734/WP/Interaction/id40c6c87b> .
+
+<https://identifiers.org/ensembl/ENSBTAG00000019869>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "DGCR8";
+        dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000019869>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSBTAG00000019869";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3164_r80734/Complex/bcbff> , <https://identifiers.org/wikipathways/WP3164_r80734>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3164_r80734/DataNode/e0fdb>;
+        foaf:page           <https://www.ensembl.org/id/ENSBTAG00000019869> .
+
+<https://identifiers.org/pubmed/24929628>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "24929628";
+        dcterms:isPartOf    <https://identifiers.org/ensembl/ENSBTAG00000048265>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/24929628> .
+
+<http://rdf.wikipathways.org/Pathway/WP3164_r80734/WP/Interaction/id18234304>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3164_r80734>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3164_r80734/Interaction/id18234304> .
+
+<http://rdf.wikipathways.org/Pathway/WP3164_r80734/WP/Interaction/id9592e63c>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3164_r80734>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3164_r80734/Interaction/id9592e63c>;
+        wp:participants   <https://identifiers.org/ensembl/ENSBTAG00000018970>;
+        wp:source         <https://identifiers.org/ensembl/ENSBTAG00000018970> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3164&oldid=r80734>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<https://identifiers.org/ensembl/ENSBTAG00000048265>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "ERI1";
+        dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000048265>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSBTAG00000048265";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3164_r80734/WP/Interaction/id40c6c87b> , <https://identifiers.org/wikipathways/WP3164_r80734>;
+        dcterms:references  <https://identifiers.org/pubmed/24929628>;
+        cito:cites          <https://identifiers.org/pubmed/24929628>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3164_r80734/DataNode/d5932>;
+        foaf:page           <https://www.ensembl.org/id/ENSBTAG00000048265> .
+
+<http://rdf.wikipathways.org/Pathway/WP3164_r80734/WP/Interaction/ida34bc386>
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP3164_r80734/WP/Interaction/id44ff4068> .
+
+<http://rdf.wikipathways.org/Pathway/WP3164_r80734/WP/Interaction/id44ff4068>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3164_r80734>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3164_r80734/Interaction/id44ff4068>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP3164_r80734/WP/Interaction/ida34bc386> , <https://identifiers.org/ensembl/ENSBTAG00000012852>;
+        wp:source         <https://identifiers.org/ensembl/ENSBTAG00000012852>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP3164_r80734/WP/Interaction/ida34bc386> .
+
+<http://rdf.wikipathways.org/Pathway/WP3164_r80734/WP/Interaction/id82eab879>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP3164_r80734/WP/Interaction/idc8e52fd8> , <https://identifiers.org/wikipathways/WP3164_r80734>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3164_r80734/Interaction/id82eab879> .
+
+<http://rdf.wikipathways.org/Pathway/WP3164_r80734/ComplexBinding/bcbff>
+        rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3164_r80734>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3164_r80734/Group/bcbff>;
+        wp:participants   <https://identifiers.org/ensembl/ENSBTAG00000019869> , <https://identifiers.org/ensembl/ENSBTAG00000017551> , <http://rdf.wikipathways.org/Pathway/WP3164_r80734/Complex/bcbff> .
+
 <https://identifiers.org/ensembl/ENSBTAG00000018970>
         rdf:type            wp:GeneProduct , wp:DataNode;
         rdfs:label          "XPO5";
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000018970>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000018970";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3164/WP3164_rWP3164_r80734/DataNode/cd457>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3164_r80734/WP/Interaction/id9592e63c> , <https://identifiers.org/wikipathways/WP3164_r80734>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3164_r80734/DataNode/cd457>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000018970> .
 
-<https://identifiers.org/ensembl/ENSBTAG00000019869>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "DGCR8";
-        dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000019869>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSBTAG00000019869";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3164/WP3164_rWP3164_r80734/DataNode/e0fdb>;
-        foaf:page           <https://www.ensembl.org/id/ENSBTAG00000019869> .
-
-<https://identifiers.org/ensembl/ENSBTAG00000048265>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "ERI1";
-        dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000048265>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSBTAG00000048265";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3164/WP3164_rWP3164_r80734/DataNode/d5932>;
-        foaf:page           <https://www.ensembl.org/id/ENSBTAG00000048265> .
-
-<https://identifiers.org/ensembl/ENSBTAG00000012852>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "DICER1";
-        dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000012852>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSBTAG00000012852";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3164/WP3164_rWP3164_r80734/DataNode/e605a> , <http://rdf.wikipathways.org/Pathway/WP3164/WP3164_rWP3164_r80734/DataNode/af552>;
-        foaf:page           <https://www.ensembl.org/id/ENSBTAG00000012852> .
-
-<https://identifiers.org/ensembl/ENSBTAG00000017551>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "DROSHA";
-        dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000017551>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSBTAG00000017551";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3164/WP3164_rWP3164_r80734/DataNode/d0d0c>;
-        foaf:page           <https://www.ensembl.org/id/ENSBTAG00000017551> .
-
-<https://identifiers.org/wikipathways/WP3164/WP3164_rWP3164_r80734>
-        rdf:type             wp:Pathway , skos:Collection;
-        dc:identifier        <https://identifiers.org/wikipathways/WP3164/WP3164>;
-        dc:source            "WikiPathways";
-        dc:title             "RNA interference"@en;
-        dcterms:description  "The process of RNA-interference in eukaryotic cells. Long precursor microRNA (miRNA), called pri-miRNA, is cleaved by RNase III endonuclease (Drosha) into pieces of approximately 70 nucleotides each (called pre-miRNA) in the nucleus. Following transportation into the cytoplasm by exportin 5 another RNase III endonuclease (Dicer) cleaves it into mature miRNA segments. Degradation of messenger RNA (mRNA) and translational repression occurs after miRNA binds to the RNA-induced silencing complex (RISC). Cytoplasmic long double-stranded RNA (dsRNA) is cleaved by Dicer into small interfering RNA (siRNA), which is incorporated into RISC, resulting in the cleavage and degradation of specific target mRNA. Synthetic double-stranded siRNA is not processed by Dicer and directly incorporated by the RISC.";
-        dcterms:identifier   "WP3164/WP3164";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP3164/WP3164_rWP3164_r80734>;
-        wp:organismName      "Bos taurus";
-        foaf:page            <http://www.wikipathways.org/instance/WP3164/WP3164_rWP3164_r80734> .
+<http://rdf.wikipathways.org/Pathway/WP3164_r80734/WP/Interaction/idc8e52fd8>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3164_r80734>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3164_r80734/Interaction/idc8e52fd8>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP3164_r80734/WP/Interaction/id82eab879> , <https://identifiers.org/ensembl/ENSBTAG00000012852>;
+        wp:source         <https://identifiers.org/ensembl/ENSBTAG00000012852>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP3164_r80734/WP/Interaction/id82eab879> .

@@ -16,68 +16,83 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/cas/57-83-0>
+<https://identifiers.org/cas/57-88-5>
         rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Progesterone";
-        dc:identifier       <https://identifiers.org/cas/57-83-0>;
+        rdfs:label          "Cholesterol";
+        dc:identifier       <https://identifiers.org/cas/57-88-5>;
         dc:source           "CAS";
-        dcterms:identifier  "57-83-0";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/a97>;
-        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=57-83-0> .
+        dcterms:identifier  "57-88-5";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/a4f06> , <https://identifiers.org/wikipathways/WP1024_r121240>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/fc9>;
+        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=57-88-5> .
 
-<https://identifiers.org/hmdb/HMDB0002961>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Dihydrotestosterone";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0002961>;
+<http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/b77c2>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1024_r121240>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1024_r121240/Interaction/b77c2>;
+        wp:participants   <https://identifiers.org/wikipathways/WP4523> , <https://identifiers.org/hmdb/HMDB0000374>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000374>;
+        wp:target         <https://identifiers.org/wikipathways/WP4523> .
+
+<http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/a4f06>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1024_r121240>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1024_r121240/Interaction/a4f06>;
+        wp:participants   <https://identifiers.org/cas/145-13-1> , <https://identifiers.org/cas/57-88-5>;
+        wp:source         <https://identifiers.org/cas/57-88-5>;
+        wp:target         <https://identifiers.org/cas/145-13-1> .
+
+<http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/ffb15>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1024_r121240>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1024_r121240/Interaction/ffb15>;
+        wp:participants   <https://identifiers.org/cas/58-22-0> , <https://identifiers.org/hmdb/HMDB0005849>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0005849>;
+        wp:target         <https://identifiers.org/cas/58-22-0> .
+
+<http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/id1342dce3>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1024_r121240>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1024_r121240/Interaction/id1342dce3>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/f1fce> , <https://identifiers.org/ensembl/ENSBTAG00000023941>;
+        wp:source         <https://identifiers.org/ensembl/ENSBTAG00000023941>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/f1fce> .
+
+<https://identifiers.org/hmdb/HMDB0005849>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Androstenediol";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0005849>;
         dc:source           "HMDB";
-        dcterms:identifier  "HMDB0002961";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/b37e5>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0002961> .
-
-<https://identifiers.org/cas/57-91-0>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Estradiol";
-        dc:identifier       <https://identifiers.org/cas/57-91-0>;
-        dc:source           "CAS";
-        dcterms:identifier  "57-91-0";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/a8e>;
-        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=57-91-0> .
+        dcterms:identifier  "HMDB0005849";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/fc704> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/ffb15> , <https://identifiers.org/wikipathways/WP1024_r121240>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/aa58a>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0005849> .
 
 <https://identifiers.org/cas/53-16-7>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "Estrone";
         dc:identifier       <https://identifiers.org/cas/53-16-7>;
         dc:source           "CAS";
         dcterms:identifier  "53-16-7";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/e5c>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/fec22> , <https://identifiers.org/wikipathways/WP1024_r121240> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/e1660>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/e5c>;
         foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=53-16-7> .
 
-<https://identifiers.org/hmdb/HMDB0000374>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "17-alpha-OH-Progesterone";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000374>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000374";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/eba07>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000374> .
+<http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/id9b26dd4a>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1024_r121240>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1024_r121240/Interaction/id9b26dd4a>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/c641d> , <https://identifiers.org/ensembl/ENSBTAG00000000070>;
+        wp:source         <https://identifiers.org/ensembl/ENSBTAG00000000070>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/c641d> .
 
-<https://identifiers.org/ensembl/ENSBTAG00000047604>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "HSD17B1";
-        dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000047604>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSBTAG00000047604";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/d3c>;
-        foaf:page           <https://www.ensembl.org/id/ENSBTAG00000047604> .
-
-<https://identifiers.org/ensembl/ENSBTAG00000006978>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "HSD17B4";
-        dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000006978>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSBTAG00000006978";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/a47>;
-        foaf:page           <https://www.ensembl.org/id/ENSBTAG00000006978> .
+<http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/c641d>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/id9b26dd4a> , <https://identifiers.org/wikipathways/WP1024_r121240>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1024_r121240/Interaction/c641d>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0002961> , <https://identifiers.org/cas/58-22-0>;
+        wp:source         <https://identifiers.org/cas/58-22-0>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0002961> .
 
 <https://identifiers.org/ensembl/ENSBTAG00000003234>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -85,8 +100,154 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000003234>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000003234";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/a5f>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1024_r121240>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/a5f>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000003234> .
+
+<https://identifiers.org/ensembl/ENSBTAG00000023941>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "CPN1";
+        dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000023941>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSBTAG00000023941";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/idb26dca1> , <https://identifiers.org/wikipathways/WP1024_r121240> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/id1342dce3>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/abc1b> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/a55>;
+        foaf:page           <https://www.ensembl.org/id/ENSBTAG00000023941> .
+
+<https://identifiers.org/wikipathways/WP1024_r121240>
+        rdf:type               skos:Collection , wp:Pathway;
+        dc:identifier          <https://identifiers.org/wikipathways/WP1024>;
+        dc:source              "WikiPathways";
+        dc:title               "Steroid biosynthesis"@en;
+        dcterms:description    "";
+        dcterms:identifier     "WP1024";
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP1024_r121240>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000040>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9913>;
+        wp:organismName        "Bos taurus";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000040>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP1024&oldid=r121240> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP1024&oldid=r121240>;
+        foaf:page              <http://www.wikipathways.org/instance/WP1024_r121240> .
+
+<http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/f1fce>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/id1342dce3> , <https://identifiers.org/wikipathways/WP1024_r121240>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1024_r121240/Interaction/f1fce>;
+        wp:participants   <https://identifiers.org/cas/57-91-0> , <https://identifiers.org/cas/58-22-0>;
+        wp:source         <https://identifiers.org/cas/58-22-0>;
+        wp:target         <https://identifiers.org/cas/57-91-0> .
+
+<https://identifiers.org/hmdb/HMDB0000363>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "17-alpha-OH-Pregnenolone";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000363>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0000363";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/d6842> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/b3d37> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/aae23> , <https://identifiers.org/wikipathways/WP1024_r121240>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/d5886>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000363> .
+
+<http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/id33db230f>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1024_r121240>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1024_r121240/Interaction/id33db230f>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/aae23> , <https://identifiers.org/ensembl/ENSBTAG00000014335>;
+        wp:source         <https://identifiers.org/ensembl/ENSBTAG00000014335>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/aae23> .
+
+<https://identifiers.org/ensembl/ENSBTAG00000006978>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "HSD17B4";
+        dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000006978>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSBTAG00000006978";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1024_r121240>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/a47>;
+        foaf:page           <https://www.ensembl.org/id/ENSBTAG00000006978> .
+
+<http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/id51330f20>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1024_r121240>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1024_r121240/Interaction/id51330f20>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/bb139>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/bb139> .
+
+<http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/f0ce4>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1024_r121240>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1024_r121240/Interaction/f0ce4>;
+        wp:participants   <https://identifiers.org/cas/63-05-8> , <https://identifiers.org/cas/53-43-0>;
+        wp:source         <https://identifiers.org/cas/53-43-0>;
+        wp:target         <https://identifiers.org/cas/63-05-8> .
+
+<https://identifiers.org/hmdb/HMDB0002961>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Dihydrotestosterone";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0002961>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0002961";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/c641d> , <https://identifiers.org/wikipathways/WP1024_r121240>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/b37e5>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0002961> .
+
+<https://identifiers.org/cas/58-22-0>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Testosterone";
+        dc:identifier       <https://identifiers.org/cas/58-22-0>;
+        dc:source           "CAS";
+        dcterms:identifier  "58-22-0";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/c641d> , <https://identifiers.org/wikipathways/WP1024_r121240> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/f2073> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/f1fce> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/ffb15>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/c1f>;
+        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=58-22-0> .
+
+<https://identifiers.org/ensembl/ENSBTAG00000047604>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "HSD17B1";
+        dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000047604>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSBTAG00000047604";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1024_r121240>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/d3c>;
+        foaf:page           <https://www.ensembl.org/id/ENSBTAG00000047604> .
+
+<https://identifiers.org/cas/145-13-1>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Pregnenolone";
+        dc:identifier       <https://identifiers.org/cas/145-13-1>;
+        dc:source           "CAS";
+        dcterms:identifier  "145-13-1";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/a4f06> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/f744e> , <https://identifiers.org/wikipathways/WP1024_r121240> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/aae23>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/e7c>;
+        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=145-13-1> .
+
+<http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/b3d37>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/id3bc05b12> , <https://identifiers.org/wikipathways/WP1024_r121240>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1024_r121240/Interaction/b3d37>;
+        wp:participants   <https://identifiers.org/cas/53-43-0> , <https://identifiers.org/hmdb/HMDB0000363>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000363>;
+        wp:target         <https://identifiers.org/cas/53-43-0> .
+
+<http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/idb00e663e>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1024_r121240>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1024_r121240/Interaction/idb00e663e>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/f8a58> , <https://identifiers.org/ensembl/ENSBTAG00000014335>;
+        wp:source         <https://identifiers.org/ensembl/ENSBTAG00000014335>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/f8a58> .
+
+<https://identifiers.org/ensembl/ENSBTAG00000014335>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "CYP17A1";
+        dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000014335>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSBTAG00000014335";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/idb00e663e> , <https://identifiers.org/wikipathways/WP1024_r121240> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/id33db230f>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/c68> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/d04>;
+        foaf:page           <https://www.ensembl.org/id/ENSBTAG00000014335> .
+
+<https://identifiers.org/wikipathways/WP1024>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP1024_r121240> .
 
 <https://identifiers.org/ensembl/ENSBTAG00000016867>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -94,62 +255,78 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000016867>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000016867";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/dc0>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1024_r121240>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/dc0>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000016867> .
 
-<https://identifiers.org/cas/145-13-1>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Pregnenolone";
-        dc:identifier       <https://identifiers.org/cas/145-13-1>;
-        dc:source           "CAS";
-        dcterms:identifier  "145-13-1";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/e7c>;
-        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=145-13-1> .
+<http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/bb139>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/id51330f20> , <https://identifiers.org/wikipathways/WP1024_r121240>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1024_r121240/Interaction/bb139>;
+        wp:participants   <https://identifiers.org/cas/63-05-8> , <https://identifiers.org/hmdb/HMDB0000374>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000374>;
+        wp:target         <https://identifiers.org/cas/63-05-8> .
 
-<https://identifiers.org/ensembl/ENSBTAG00000014335>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "CYP17A1";
-        dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000014335>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSBTAG00000014335";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/d04> , <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/c68>;
-        foaf:page           <https://www.ensembl.org/id/ENSBTAG00000014335> .
+<http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/idb26dca1>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1024_r121240>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1024_r121240/Interaction/idb26dca1>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/fec22> , <https://identifiers.org/ensembl/ENSBTAG00000023941>;
+        wp:source         <https://identifiers.org/ensembl/ENSBTAG00000023941>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/fec22> .
+
+<http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/fc704>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1024_r121240>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1024_r121240/Interaction/fc704>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0005849> , <https://identifiers.org/cas/53-43-0>;
+        wp:source         <https://identifiers.org/cas/53-43-0>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0005849> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_9913>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9913" .
+
+<http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/idf9e079de>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1024_r121240>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1024_r121240/Interaction/idf9e079de>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/f2073> , <https://identifiers.org/ensembl/ENSBTAG00000006769>;
+        wp:source         <https://identifiers.org/ensembl/ENSBTAG00000006769>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/f2073> .
+
+<http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/f2073>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/idf9e079de> , <https://identifiers.org/wikipathways/WP1024_r121240>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1024_r121240/Interaction/f2073>;
+        wp:participants   <https://identifiers.org/cas/58-22-0> , <https://identifiers.org/cas/63-05-8>;
+        wp:source         <https://identifiers.org/cas/63-05-8>;
+        wp:target         <https://identifiers.org/cas/58-22-0> .
+
+<http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/id3bc05b12>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1024_r121240>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1024_r121240/Interaction/id3bc05b12>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/b3d37>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/b3d37> .
+
+<http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/d6842>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1024_r121240>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1024_r121240/Interaction/d6842>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000374> , <https://identifiers.org/hmdb/HMDB0000363>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000363>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000374> .
 
 <https://identifiers.org/cas/63-05-8>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "Androstenedione";
         dc:identifier       <https://identifiers.org/cas/63-05-8>;
         dc:source           "CAS";
         dcterms:identifier  "63-05-8";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/fe0>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/f2073> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/f0ce4> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/bb139> , <https://identifiers.org/wikipathways/WP1024_r121240> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/fec22>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/fe0>;
         foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=63-05-8> .
-
-<https://identifiers.org/wikipathways/WP4523>
-        rdf:type            wp:DataNode , wp:Pathway;
-        rdfs:label          "Glucocortocoid Synthesis" , "Mineralocortocoid Synthesis";
-        dc:identifier       <https://identifiers.org/wikipathways/WP4523>;
-        dc:source           "WikiPathways";
-        dcterms:identifier  "WP4523";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/f787e> , <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/cec42>;
-        foaf:page           <https://www.wikipathways.org/instance/WP4523> .
-
-<https://identifiers.org/cas/57-88-5>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Cholesterol";
-        dc:identifier       <https://identifiers.org/cas/57-88-5>;
-        dc:source           "CAS";
-        dcterms:identifier  "57-88-5";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/fc9>;
-        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=57-88-5> .
-
-<https://identifiers.org/cas/58-22-0>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Testosterone";
-        dc:identifier       <https://identifiers.org/cas/58-22-0>;
-        dc:source           "CAS";
-        dcterms:identifier  "58-22-0";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/c1f>;
-        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=58-22-0> .
 
 <https://identifiers.org/ensembl/ENSBTAG00000005976>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -157,37 +334,39 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000005976>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000005976";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/e69>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1024_r121240>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/e69>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000005976> .
 
-<https://identifiers.org/ensembl/ENSBTAG00000023941>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "CPN1";
-        dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000023941>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSBTAG00000023941";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/abc1b> , <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/a55>;
-        foaf:page           <https://www.ensembl.org/id/ENSBTAG00000023941> .
+<https://identifiers.org/wikipathways/WP4523>
+        rdf:type            wp:DataNode , wp:Pathway;
+        rdfs:label          "Glucocortocoid Synthesis" , "Mineralocortocoid Synthesis";
+        dc:identifier       <https://identifiers.org/wikipathways/WP4523>;
+        dc:source           "WikiPathways";
+        dcterms:identifier  "WP4523";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1024_r121240> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/b8f52> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/b77c2>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/cec42> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/f787e>;
+        foaf:page           <https://www.wikipathways.org/instance/WP4523> .
 
-<https://identifiers.org/ensembl/ENSBTAG00000000070>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "F13B";
-        dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000000070>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSBTAG00000000070";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/b9d>;
-        foaf:page           <https://www.ensembl.org/id/ENSBTAG00000000070> .
+<http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/f744e>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1024_r121240>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1024_r121240/Interaction/f744e>;
+        wp:participants   <https://identifiers.org/cas/57-83-0> , <https://identifiers.org/cas/145-13-1>;
+        wp:source         <https://identifiers.org/cas/145-13-1>;
+        wp:target         <https://identifiers.org/cas/57-83-0> .
 
-<https://identifiers.org/wikipathways/WP1024/WP1024_rWP1024_r121240>
-        rdf:type             wp:Pathway , skos:Collection;
-        dc:identifier        <https://identifiers.org/wikipathways/WP1024/WP1024>;
-        dc:source            "WikiPathways";
-        dc:title             "Steroid biosynthesis"@en;
-        dcterms:description  "";
-        dcterms:identifier   "WP1024/WP1024";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240>;
-        wp:organismName      "Bos taurus";
-        foaf:page            <http://www.wikipathways.org/instance/WP1024/WP1024_rWP1024_r121240> .
+<http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/f8a58>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/idb00e663e> , <https://identifiers.org/wikipathways/WP1024_r121240>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1024_r121240/Interaction/f8a58>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000374> , <https://identifiers.org/cas/57-83-0>;
+        wp:source         <https://identifiers.org/cas/57-83-0>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000374> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP1024&oldid=r121240>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
 
 <https://identifiers.org/cas/53-43-0>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -195,26 +374,49 @@
         dc:identifier       <https://identifiers.org/cas/53-43-0>;
         dc:source           "CAS";
         dcterms:identifier  "53-43-0";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/a627a>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/fc704> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/f0ce4> , <https://identifiers.org/wikipathways/WP1024_r121240> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/b3d37>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/a627a>;
         foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=53-43-0> .
 
-<https://identifiers.org/hmdb/HMDB0000363>
+<https://identifiers.org/hmdb/HMDB0000374>
         rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "17-alpha-OH-Pregnenolone";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000363>;
+        rdfs:label          "17-alpha-OH-Progesterone";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000374>;
         dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000363";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/d5886>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000363> .
+        dcterms:identifier  "HMDB0000374";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/f8a58> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/b77c2> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/bb139> , <https://identifiers.org/wikipathways/WP1024_r121240> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/d6842>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/eba07>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000374> .
 
-<https://identifiers.org/hmdb/HMDB0005849>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Androstenediol";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0005849>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0005849";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/aa58a>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0005849> .
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP1024&oldid=r121240>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<https://identifiers.org/ensembl/ENSBTAG00000000070>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "F13B";
+        dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000000070>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSBTAG00000000070";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1024_r121240> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/id9b26dd4a>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/b9d>;
+        foaf:page           <https://www.ensembl.org/id/ENSBTAG00000000070> .
+
+<http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/e1660>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1024_r121240>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1024_r121240/Interaction/e1660>;
+        wp:participants   <https://identifiers.org/cas/53-16-7> , <https://identifiers.org/cas/57-91-0>;
+        wp:source         <https://identifiers.org/cas/57-91-0>;
+        wp:target         <https://identifiers.org/cas/53-16-7> .
+
+<http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/aae23>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/id33db230f> , <https://identifiers.org/wikipathways/WP1024_r121240>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1024_r121240/Interaction/aae23>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000363> , <https://identifiers.org/cas/145-13-1>;
+        wp:source         <https://identifiers.org/cas/145-13-1>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000363> .
 
 <https://identifiers.org/ensembl/ENSBTAG00000006769>
         rdf:type            wp:DataNode , wp:GeneProduct;
@@ -222,5 +424,42 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000006769>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000006769";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/d18> , <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/c4f> , <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/dad> , <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/c11> , <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/a9d> , <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/e4d> , <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/bce> , <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/fb1> , <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/e0d> , <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/d38> , <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/a4d> , <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/b64> , <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/b6a> , <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/dcb> , <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/e35> , <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/d0d> , <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/c90> , <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/ef5> , <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/f07> , <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/d1c> , <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/f52> , <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/ceb> , <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/d86> , <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/fb9> , <http://rdf.wikipathways.org/Pathway/WP1024/WP1024_rWP1024_r121240/DataNode/ab1>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/idf9e079de> , <https://identifiers.org/wikipathways/WP1024_r121240>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/b64> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/ab1> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/c4f> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/d1c> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/f52> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/dcb> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/ef5> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/a9d> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/d86> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/fb9> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/e4d> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/d18> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/dad> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/e0d> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/c11> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/f07> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/b6a> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/c90> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/d0d> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/d38> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/fb1> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/a4d> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/e35> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/ceb> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/bce>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000006769> .
+
+<http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/fec22>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/idb26dca1> , <https://identifiers.org/wikipathways/WP1024_r121240>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1024_r121240/Interaction/fec22>;
+        wp:participants   <https://identifiers.org/cas/53-16-7> , <https://identifiers.org/cas/63-05-8>;
+        wp:source         <https://identifiers.org/cas/63-05-8>;
+        wp:target         <https://identifiers.org/cas/53-16-7> .
+
+<https://identifiers.org/cas/57-83-0>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Progesterone";
+        dc:identifier       <https://identifiers.org/cas/57-83-0>;
+        dc:source           "CAS";
+        dcterms:identifier  "57-83-0";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/f744e> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/b8f52> , <https://identifiers.org/wikipathways/WP1024_r121240> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/f8a58>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/a97>;
+        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=57-83-0> .
+
+<http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/b8f52>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1024_r121240>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1024_r121240/Interaction/b8f52>;
+        wp:participants   <https://identifiers.org/wikipathways/WP4523> , <https://identifiers.org/cas/57-83-0>;
+        wp:source         <https://identifiers.org/cas/57-83-0>;
+        wp:target         <https://identifiers.org/wikipathways/WP4523> .
+
+<https://identifiers.org/cas/57-91-0>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Estradiol";
+        dc:identifier       <https://identifiers.org/cas/57-91-0>;
+        dc:source           "CAS";
+        dcterms:identifier  "57-91-0";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/e1660> , <http://rdf.wikipathways.org/Pathway/WP1024_r121240/WP/Interaction/f1fce> , <https://identifiers.org/wikipathways/WP1024_r121240>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1024_r121240/DataNode/a8e>;
+        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=57-91-0> .

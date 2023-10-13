@@ -16,14 +16,12 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/ncbigene/956534>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "polymerase 1";
-        dc:identifier       <https://identifiers.org/ncbigene/956534>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "956534";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1438/WP1438_rWP1438_r108357/DataNode/c95e3>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/956534> .
+<http://rdf.wikipathways.org/Pathway/WP1438_r108357/WP/Interaction/idec44d2dc>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1438_r108357>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1438_r108357/Interaction/idec44d2dc>;
+        wp:participants   <https://identifiers.org/ncbigene/596>;
+        wp:source         <https://identifiers.org/ncbigene/596> .
 
 <https://identifiers.org/ncbigene/956536>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -31,17 +29,26 @@
         dc:identifier       <https://identifiers.org/ncbigene/956536>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "956536";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1438/WP1438_rWP1438_r108357/DataNode/d374b> , <http://rdf.wikipathways.org/Pathway/WP1438/WP1438_rWP1438_r108357/DataNode/ce79f>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1438_r108357> , <http://rdf.wikipathways.org/Pathway/WP1438_r108357/Complex/b0576> , <http://rdf.wikipathways.org/Pathway/WP1438_r108357/Complex/ad199>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1438_r108357/DataNode/ce79f> , <http://rdf.wikipathways.org/Pathway/WP1438_r108357/DataNode/d374b>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/956536> .
 
-<https://identifiers.org/ncbigene/956531>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "nucleocapsid protein";
-        dc:identifier       <https://identifiers.org/ncbigene/956531>;
+<https://identifiers.org/ncbigene/956530>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "neuraminidase";
+        dc:identifier       <https://identifiers.org/ncbigene/956530>;
         dc:source           "Entrez Gene";
-        dcterms:identifier  "956531";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1438/WP1438_rWP1438_r108357/DataNode/dc619>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/956531> .
+        dcterms:identifier  "956530";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1438_r108357> , <http://rdf.wikipathways.org/Pathway/WP1438_r108357/Complex/b0576>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1438_r108357/DataNode/a84e3>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/956530> .
+
+<https://identifiers.org/wikipathways/WP1438>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP1438_r108357> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_9606>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9606" .
 
 <https://identifiers.org/ncbigene/956527>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -49,73 +56,35 @@
         dc:identifier       <https://identifiers.org/ncbigene/956527>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "956527";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1438/WP1438_rWP1438_r108357/DataNode/a2656>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1438_r108357/Complex/b0576> , <https://identifiers.org/wikipathways/WP1438_r108357>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1438_r108357/DataNode/a2656>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/956527> .
 
-<https://identifiers.org/ncbigene/956533>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "NS1";
-        dc:identifier       <https://identifiers.org/ncbigene/956533>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "956533";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1438/WP1438_rWP1438_r108357/DataNode/c8013>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/956533> .
+<https://identifiers.org/wikipathways/WP1438_r108357>
+        rdf:type               skos:Collection , wp:Pathway;
+        dc:identifier          <https://identifiers.org/wikipathways/WP1438>;
+        dc:source              "WikiPathways";
+        dc:title               "Influenza A virus infection"@en;
+        dcterms:description    "The Influenza A virus infection pathway provides an overview of the key steps in the infection including virus assembly and release and viral transcription and replication.";
+        dcterms:identifier     "WP1438";
+        cito:cites             <https://identifiers.org/pubmed/18803879>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP1438_r108357>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000013> , <http://purl.obolibrary.org/obo/PW_0001054>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606>;
+        wp:organismName        "Homo sapiens";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000013> , <http://purl.obolibrary.org/obo/PW_0001054>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP1438&oldid=r108357> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP1438&oldid=r108357>;
+        foaf:page              <http://www.wikipathways.org/instance/WP1438_r108357> .
 
-<https://identifiers.org/wikipathways/WP1438/WP1438_rWP1438_r108357>
-        rdf:type             wp:Pathway , skos:Collection;
-        dc:identifier        <https://identifiers.org/wikipathways/WP1438/WP1438>;
-        dc:source            "WikiPathways";
-        dc:title             "Influenza A virus infection"@en;
-        dcterms:description  "The Influenza A virus infection pathway provides an overview of the key steps in the infection including virus assembly and release and viral transcription and replication.";
-        dcterms:identifier   "WP1438/WP1438";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP1438/WP1438_rWP1438_r108357>;
-        wp:organismName      "Homo sapiens";
-        foaf:page            <http://www.wikipathways.org/instance/WP1438/WP1438_rWP1438_r108357> .
-
-<https://identifiers.org/ncbigene/956529>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "haemagglutinin";
-        dc:identifier       <https://identifiers.org/ncbigene/956529>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "956529";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1438/WP1438_rWP1438_r108357/DataNode/f0c1f> , <http://rdf.wikipathways.org/Pathway/WP1438/WP1438_rWP1438_r108357/DataNode/b421e>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/956529> .
-
-<https://identifiers.org/ncbigene/596>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "BCL2";
-        dc:identifier       <https://identifiers.org/ncbigene/596>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "596";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1438/WP1438_rWP1438_r108357/DataNode/b804b>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/596> .
-
-<https://identifiers.org/ncbigene/956535>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "PA";
-        dc:identifier       <https://identifiers.org/ncbigene/956535>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "956535";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1438/WP1438_rWP1438_r108357/DataNode/fa294> , <http://rdf.wikipathways.org/Pathway/WP1438/WP1438_rWP1438_r108357/DataNode/f6421>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/956535> .
-
-<https://identifiers.org/ncbigene/956530>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "neuraminidase";
-        dc:identifier       <https://identifiers.org/ncbigene/956530>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "956530";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1438/WP1438_rWP1438_r108357/DataNode/a84e3>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/956530> .
-
-<https://identifiers.org/ncbigene/3802042>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "PB1-F2 protein";
-        dc:identifier       <https://identifiers.org/ncbigene/3802042>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "3802042";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1438/WP1438_rWP1438_r108357/DataNode/a59c3>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/3802042> .
+<http://rdf.wikipathways.org/Pathway/WP1438_r108357/WP/Interaction/id2ad9cb40>
+        rdf:type            wp:Interaction , wp:DirectedInteraction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1438_r108357>;
+        dcterms:references  <https://identifiers.org/pubmed/18803879>;
+        cito:cites          <https://identifiers.org/pubmed/18803879>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1438_r108357/Interaction/id2ad9cb40>;
+        wp:participants     <https://identifiers.org/ncbigene/596> , <https://identifiers.org/ensembl/ENSG00000207562>;
+        wp:source           <https://identifiers.org/ensembl/ENSG00000207562>;
+        wp:target           <https://identifiers.org/ncbigene/596> .
 
 <https://identifiers.org/ensembl/ENSG00000207562>
         rdf:type            wp:DataNode;
@@ -123,35 +92,29 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000207562>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000207562";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1438/WP1438_rWP1438_r108357/DataNode/e36c8>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1438_r108357/WP/Interaction/id2ad9cb40> , <https://identifiers.org/wikipathways/WP1438_r108357>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1438_r108357/DataNode/e36c8>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000207562> .
 
-<https://identifiers.org/hmdb/HMDB0000230>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "N-Acetylneuraminic acid";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000230>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000230";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1438/WP1438_rWP1438_r108357/DataNode/ebff7>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000230> .
-
-<https://identifiers.org/hmdb/HMDB0000125>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Glutathione";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000125>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000125";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1438/WP1438_rWP1438_r108357/DataNode/b8f5b>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000125> .
-
-<https://identifiers.org/ncbigene/956532>
+<https://identifiers.org/ncbigene/596>
         rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "NS2";
-        dc:identifier       <https://identifiers.org/ncbigene/956532>;
+        rdfs:label          "BCL2";
+        dc:identifier       <https://identifiers.org/ncbigene/596>;
         dc:source           "Entrez Gene";
-        dcterms:identifier  "956532";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1438/WP1438_rWP1438_r108357/DataNode/db55d>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/956532> .
+        dcterms:identifier  "596";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1438_r108357/WP/Interaction/id2ad9cb40> , <http://rdf.wikipathways.org/Pathway/WP1438_r108357/WP/Interaction/id976f8730> , <https://identifiers.org/wikipathways/WP1438_r108357> , <http://rdf.wikipathways.org/Pathway/WP1438_r108357/WP/Interaction/idec44d2dc>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1438_r108357/DataNode/b804b>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/596> .
+
+<https://identifiers.org/ncbigene/956531>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "nucleocapsid protein";
+        dc:identifier       <https://identifiers.org/ncbigene/956531>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "956531";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1438_r108357> , <http://rdf.wikipathways.org/Pathway/WP1438_r108357/Complex/b0576>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1438_r108357/DataNode/dc619>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/956531> .
 
 <https://identifiers.org/ncbigene/956528>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -159,5 +122,146 @@
         dc:identifier       <https://identifiers.org/ncbigene/956528>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "956528";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1438/WP1438_rWP1438_r108357/DataNode/f83bc>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1438_r108357> , <http://rdf.wikipathways.org/Pathway/WP1438_r108357/Complex/b0576>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1438_r108357/DataNode/f83bc>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/956528> .
+
+<https://identifiers.org/ncbigene/3802042>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "PB1-F2 protein";
+        dc:identifier       <https://identifiers.org/ncbigene/3802042>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "3802042";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1438_r108357/Complex/b0576> , <https://identifiers.org/wikipathways/WP1438_r108357>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1438_r108357/DataNode/a59c3>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/3802042> .
+
+<https://identifiers.org/ncbigene/956532>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "NS2";
+        dc:identifier       <https://identifiers.org/ncbigene/956532>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "956532";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1438_r108357/Complex/b0576> , <https://identifiers.org/wikipathways/WP1438_r108357>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1438_r108357/DataNode/db55d>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/956532> .
+
+<https://identifiers.org/ncbigene/956529>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "haemagglutinin";
+        dc:identifier       <https://identifiers.org/ncbigene/956529>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "956529";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1438_r108357/Complex/b0576> , <https://identifiers.org/wikipathways/WP1438_r108357>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1438_r108357/DataNode/f0c1f> , <http://rdf.wikipathways.org/Pathway/WP1438_r108357/DataNode/b421e>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/956529> .
+
+<https://identifiers.org/pubmed/18803879>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "18803879";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1438_r108357/WP/Interaction/id2ad9cb40>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/18803879> .
+
+<https://identifiers.org/hmdb/HMDB0000125>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Glutathione";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000125>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0000125";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1438_r108357> , <http://rdf.wikipathways.org/Pathway/WP1438_r108357/WP/Interaction/id9c3ee376> , <http://rdf.wikipathways.org/Pathway/WP1438_r108357/WP/Interaction/idf919ddd>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1438_r108357/DataNode/b8f5b>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000125> .
+
+<http://rdf.wikipathways.org/Pathway/WP1438_r108357/ComplexBinding/b0576>
+        rdf:type          wp:Interaction , wp:Binding , wp:ComplexBinding;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1438_r108357>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1438_r108357/Group/b0576>;
+        wp:participants   <https://identifiers.org/ncbigene/956536> , <https://identifiers.org/ncbigene/956530> , <https://identifiers.org/ncbigene/3802042> , <https://identifiers.org/ncbigene/956534> , <http://rdf.wikipathways.org/Pathway/WP1438_r108357/Complex/b0576> , <https://identifiers.org/ncbigene/956528> , <https://identifiers.org/ncbigene/956527> , <https://identifiers.org/ncbigene/956531> , <https://identifiers.org/ncbigene/956535> , <https://identifiers.org/ncbigene/956529> , <https://identifiers.org/ncbigene/956533> , <https://identifiers.org/ncbigene/956532> .
+
+<https://identifiers.org/ncbigene/956533>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "NS1";
+        dc:identifier       <https://identifiers.org/ncbigene/956533>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "956533";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1438_r108357/Complex/b0576> , <https://identifiers.org/wikipathways/WP1438_r108357>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1438_r108357/DataNode/c8013>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/956533> .
+
+<http://rdf.wikipathways.org/Pathway/WP1438_r108357/WP/Interaction/id976f8730>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1438_r108357>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1438_r108357/Interaction/id976f8730>;
+        wp:participants   <https://identifiers.org/ncbigene/596>;
+        wp:source         <https://identifiers.org/ncbigene/596> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP1438&oldid=r108357>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<http://rdf.wikipathways.org/Pathway/WP1438_r108357/WP/Interaction/id9c3ee376>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1438_r108357>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1438_r108357/Interaction/id9c3ee376>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000125>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000125> .
+
+<http://rdf.wikipathways.org/Pathway/WP1438_r108357/WP/Interaction/idf919ddd>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1438_r108357>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1438_r108357/Interaction/idf919ddd>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000125>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000125> .
+
+<http://rdf.wikipathways.org/Pathway/WP1438_r108357/ComplexBinding/ad199>
+        rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1438_r108357>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1438_r108357/Group/ad199>;
+        wp:participants   <https://identifiers.org/ncbigene/956535> , <https://identifiers.org/ncbigene/956536> , <http://rdf.wikipathways.org/Pathway/WP1438_r108357/Complex/ad199> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP1438&oldid=r108357>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<https://identifiers.org/ncbigene/956534>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "polymerase 1";
+        dc:identifier       <https://identifiers.org/ncbigene/956534>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "956534";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1438_r108357> , <http://rdf.wikipathways.org/Pathway/WP1438_r108357/Complex/b0576>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1438_r108357/DataNode/c95e3>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/956534> .
+
+<http://rdf.wikipathways.org/Pathway/WP1438_r108357/Complex/b0576>
+        rdf:type          wp:DataNode , wp:Complex;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1438_r108357>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1438_r108357/Group/b0576>;
+        wp:participants   <https://identifiers.org/ncbigene/956533> , <https://identifiers.org/ncbigene/3802042> , <https://identifiers.org/ncbigene/956532> , <https://identifiers.org/ncbigene/956528> , <https://identifiers.org/ncbigene/956535> , <https://identifiers.org/ncbigene/956534> , <https://identifiers.org/ncbigene/956530> , <https://identifiers.org/ncbigene/956527> , <https://identifiers.org/ncbigene/956529> , <https://identifiers.org/ncbigene/956536> , <https://identifiers.org/ncbigene/956531> .
+
+<http://rdf.wikipathways.org/Pathway/WP1438_r108357/Complex/ad199>
+        rdf:type          wp:Complex , wp:DataNode;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1438_r108357>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1438_r108357/Group/ad199>;
+        wp:participants   <https://identifiers.org/ncbigene/956535> , <https://identifiers.org/ncbigene/956536> .
+
+<https://identifiers.org/hmdb/HMDB0000230>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "N-Acetylneuraminic acid";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000230>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0000230";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1438_r108357>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1438_r108357/DataNode/ebff7>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000230> .
+
+<https://identifiers.org/ncbigene/956535>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "PA";
+        dc:identifier       <https://identifiers.org/ncbigene/956535>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "956535";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1438_r108357/Complex/b0576> , <https://identifiers.org/wikipathways/WP1438_r108357> , <http://rdf.wikipathways.org/Pathway/WP1438_r108357/Complex/ad199>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1438_r108357/DataNode/fa294> , <http://rdf.wikipathways.org/Pathway/WP1438_r108357/DataNode/f6421>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/956535> .

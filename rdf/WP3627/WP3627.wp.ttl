@@ -16,70 +16,37 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/wikipathways/WP3627/WP3627_rWP3627_r119388>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP3627/WP3627>;
-        dc:source            "WikiPathways";
-        dc:title             "Gut-liver indole metabolism "@en;
-        dcterms:description  "Dietary tryptophane is metabolised by the gut microbiome to indole and IPA which reaches the human blood system. Indole is further metabolized into indoxyl sulfate which also reached the blood.";
-        dcterms:identifier   "WP3627/WP3627";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP3627/WP3627_rWP3627_r119388>;
-        wp:organismName      "Homo sapiens";
-        foaf:page            <http://www.wikipathways.org/instance/WP3627/WP3627_rWP3627_r119388> .
+<http://rdf.wikipathways.org/Pathway/WP3627_r119388/WP/Interaction/idbdf66e04>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3627_r119388>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3627_r119388/Interaction/idbdf66e04>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:43355>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:43355>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:43355> .
 
-<https://identifiers.org/ensembl/ENSG00000130649>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "CYP2E1";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000130649>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000130649";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3627/WP3627_rWP3627_r119388/DataNode/f7b19>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000130649> .
+<http://rdf.wikipathways.org/Pathway/WP3627_r119388/WP/Interaction/idcad00256>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3627_r119388>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3627_r119388/Interaction/idcad00256>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP3627_r119388/WP/Interaction/id92cc91db> , <https://identifiers.org/ec-code/4.1.99.1>;
+        wp:source         <https://identifiers.org/ec-code/4.1.99.1>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP3627_r119388/WP/Interaction/id92cc91db> .
 
-<https://identifiers.org/chebi/CHEBI:16881>
-        rdf:type            wp:DataNode , wp:Metabolite;
-        rdfs:label          "indole";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:16881>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:16881";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3627/WP3627_rWP3627_r119388/DataNode/b2018> , <http://rdf.wikipathways.org/Pathway/WP3627/WP3627_rWP3627_r119388/DataNode/a9db4> , <http://rdf.wikipathways.org/Pathway/WP3627/WP3627_rWP3627_r119388/DataNode/dfda2>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16881> .
+<http://rdf.wikipathways.org/Pathway/WP3627_r119388/WP/Interaction/idd75cad3a>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3627_r119388>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3627_r119388/Interaction/idd75cad3a>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:17840> , <https://identifiers.org/chebi/CHEBI:16881>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:16881>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:17840> .
 
-<https://identifiers.org/chebi/CHEBI:43355>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "indoxyl sulfate";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:43355>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:43355";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3627/WP3627_rWP3627_r119388/DataNode/e70f6> , <http://rdf.wikipathways.org/Pathway/WP3627/WP3627_rWP3627_r119388/DataNode/ebdc8>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:43355> .
-
-<https://identifiers.org/chebi/CHEBI:43580>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "IPA";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:43580>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:43580";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3627/WP3627_rWP3627_r119388/DataNode/ff98a> , <http://rdf.wikipathways.org/Pathway/WP3627/WP3627_rWP3627_r119388/DataNode/aa46d>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:43580> .
-
-<https://identifiers.org/chebi/CHEBI:17840>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "indoxyl";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:17840>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:17840";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3627/WP3627_rWP3627_r119388/DataNode/a1c11>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17840> .
-
-<https://identifiers.org/chebi/CHEBI:27897>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "dietary tryptophan";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:27897>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:27897";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3627/WP3627_rWP3627_r119388/DataNode/f2d0d>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:27897> .
+<http://rdf.wikipathways.org/Pathway/WP3627_r119388/WP/Interaction/id9d000f1a>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3627_r119388>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3627_r119388/Interaction/id9d000f1a>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:43580> , <https://identifiers.org/chebi/CHEBI:16881>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:16881>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:43580> .
 
 <https://identifiers.org/ec-code/4.1.99.1>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -87,5 +54,159 @@
         dc:identifier       <https://identifiers.org/ec-code/4.1.99.1>;
         dc:source           "Enzyme Nomenclature";
         dcterms:identifier  "4.1.99.1";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3627/WP3627_rWP3627_r119388/DataNode/c2d11>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3627_r119388/WP/Interaction/idcad00256> , <https://identifiers.org/wikipathways/WP3627_r119388>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3627_r119388/DataNode/c2d11>;
         foaf:page           <http://www.ebi.ac.uk/intenz/query?cmd=SearchEC&ec=4.1.99.1> .
+
+<http://rdf.wikipathways.org/Pathway/WP3627_r119388/WP/Interaction/id14d637fe>
+        rdf:type          wp:Conversion , wp:Interaction , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3627_r119388> , <http://rdf.wikipathways.org/Pathway/WP3627_r119388/WP/Interaction/ide4680084>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3627_r119388/Interaction/id14d637fe>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:17840> , <https://identifiers.org/chebi/CHEBI:43355>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:17840>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:43355> .
+
+<http://rdf.wikipathways.org/Pathway/WP3627_r119388/WP/Interaction/id92cc91db>
+        rdf:type          wp:Conversion , wp:Interaction , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3627_r119388> , <http://rdf.wikipathways.org/Pathway/WP3627_r119388/WP/Interaction/idcad00256>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3627_r119388/Interaction/id92cc91db>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:27897> , <https://identifiers.org/chebi/CHEBI:16881>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:27897>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:16881> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_9606>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9606" .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3627&oldid=r119388>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<https://identifiers.org/chebi/CHEBI:43580>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "IPA";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:43580>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:43580";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3627_r119388/WP/Interaction/id9d000f1a> , <https://identifiers.org/wikipathways/WP3627_r119388> , <http://rdf.wikipathways.org/Pathway/WP3627_r119388/WP/Interaction/iddf31c619>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3627_r119388/DataNode/ff98a> , <http://rdf.wikipathways.org/Pathway/WP3627_r119388/DataNode/aa46d>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:43580> .
+
+<https://identifiers.org/ensembl/ENSG00000130649>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "CYP2E1";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000130649>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000130649";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3627_r119388/WP/Interaction/id16a530d0> , <https://identifiers.org/wikipathways/WP3627_r119388>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3627_r119388/DataNode/f7b19>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000130649> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3627&oldid=r119388>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<http://rdf.wikipathways.org/Pathway/WP3627_r119388/WP/Interaction/ide4680084>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3627_r119388>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3627_r119388/Interaction/ide4680084>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP3627_r119388/WP/Interaction/id14d637fe>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP3627_r119388/WP/Interaction/id14d637fe> .
+
+<https://identifiers.org/chebi/CHEBI:43355>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "indoxyl sulfate";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:43355>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:43355";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3627_r119388> , <http://rdf.wikipathways.org/Pathway/WP3627_r119388/WP/Interaction/id14d637fe> , <http://rdf.wikipathways.org/Pathway/WP3627_r119388/WP/Interaction/idbdf66e04>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3627_r119388/DataNode/e70f6> , <http://rdf.wikipathways.org/Pathway/WP3627_r119388/DataNode/ebdc8>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:43355> .
+
+<http://rdf.wikipathways.org/Pathway/WP3627_r119388/WP/Interaction/id16a530d0>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3627_r119388>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3627_r119388/Interaction/id16a530d0>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000130649>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000130649> .
+
+<https://identifiers.org/chebi/CHEBI:17840>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "indoxyl";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:17840>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:17840";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3627_r119388/WP/Interaction/idd75cad3a> , <https://identifiers.org/wikipathways/WP3627_r119388> , <http://rdf.wikipathways.org/Pathway/WP3627_r119388/WP/Interaction/id14d637fe>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3627_r119388/DataNode/a1c11>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17840> .
+
+<https://identifiers.org/wikipathways/WP3627_r119388>
+        rdf:type               skos:Collection , wp:Pathway;
+        dc:identifier          <https://identifiers.org/wikipathways/WP3627>;
+        dc:source              "WikiPathways";
+        dc:title               "Gut-liver indole metabolism "@en;
+        dcterms:description    "Dietary tryptophane is metabolised by the gut microbiome to indole and IPA which reaches the human blood system. Indole is further metabolized into indoxyl sulfate which also reached the blood.";
+        dcterms:identifier     "WP3627";
+        dcterms:references     <https://identifiers.org/pubmed/19234110>;
+        cito:cites             <https://identifiers.org/pubmed/19234110>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP3627_r119388>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000002>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606>;
+        wp:organismName        "Homo sapiens";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000002>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3627&oldid=r119388> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3627&oldid=r119388>;
+        foaf:page              <http://www.wikipathways.org/instance/WP3627_r119388> .
+
+<http://rdf.wikipathways.org/Pathway/WP3627_r119388/WP/Interaction/iddfa826dd>
+        rdf:type          wp:Translocation , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3627_r119388>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3627_r119388/Interaction/iddfa826dd>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:16881>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:16881>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:16881> .
+
+<https://identifiers.org/chebi/CHEBI:27897>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "dietary tryptophan";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:27897>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:27897";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3627_r119388/WP/Interaction/id92cc91db> , <https://identifiers.org/wikipathways/WP3627_r119388>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3627_r119388/DataNode/f2d0d>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:27897> .
+
+<https://identifiers.org/wikipathways/WP3627>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP3627_r119388> .
+
+<https://identifiers.org/chebi/CHEBI:16881>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "indole";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:16881>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:16881";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3627_r119388/WP/Interaction/idd75cad3a> , <http://rdf.wikipathways.org/Pathway/WP3627_r119388/WP/Interaction/id2a2a40f> , <http://rdf.wikipathways.org/Pathway/WP3627_r119388/WP/Interaction/iddfa826dd> , <https://identifiers.org/wikipathways/WP3627_r119388> , <http://rdf.wikipathways.org/Pathway/WP3627_r119388/WP/Interaction/id9d000f1a> , <http://rdf.wikipathways.org/Pathway/WP3627_r119388/WP/Interaction/id92cc91db>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3627_r119388/DataNode/b2018> , <http://rdf.wikipathways.org/Pathway/WP3627_r119388/DataNode/a9db4> , <http://rdf.wikipathways.org/Pathway/WP3627_r119388/DataNode/dfda2>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16881> .
+
+<https://identifiers.org/pubmed/19234110>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "19234110";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3627_r119388>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/19234110> .
+
+<http://rdf.wikipathways.org/Pathway/WP3627_r119388/WP/Interaction/iddf31c619>
+        rdf:type          wp:Translocation , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3627_r119388>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3627_r119388/Interaction/iddf31c619>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:43580>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:43580>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:43580> .
+
+<http://rdf.wikipathways.org/Pathway/WP3627_r119388/WP/Interaction/id2a2a40f>
+        rdf:type          wp:Translocation , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3627_r119388>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3627_r119388/Interaction/id2a2a40f>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:16881>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:16881>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:16881> .

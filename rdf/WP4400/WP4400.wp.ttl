@@ -16,25 +16,41 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/wikipathways/WP4400/WP4400_rWP4400_r108112>
-        rdf:type             wp:Pathway , skos:Collection;
-        dc:identifier        <https://identifiers.org/wikipathways/WP4400/WP4400>;
-        dc:source            "WikiPathways";
-        dc:title             "FABP4 in ovarian cancer"@en;
-        dcterms:description  "Regulation of FABP4 in ovarian cancer. FABP4 (fatty acid binding protein) can substantially increase metastatic potential of ovarian cancer cells, and leads to more aggressive disease. Mir-409-3p negatively regulates FABP4 in ovarian cancer cells, and mir-409-3p is decreased in hypoxic conditions. Pink arrows indicates potential therapuetic therapeutic stratgeies; in Gharpure et al, DOPC nanoliposomes containing either miR-409-3p mimic or FABP4 siRNA was shown to inhibit tumor progression. \nDescription was adapted from Gharpure et al.";
-        dcterms:identifier   "WP4400/WP4400";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP4400/WP4400_rWP4400_r108112>;
-        wp:organismName      "Homo sapiens";
-        foaf:page            <http://www.wikipathways.org/instance/WP4400/WP4400_rWP4400_r108112> .
-
 <https://identifiers.org/ensembl/ENSG00000170323>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "FABP4";
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000170323>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000170323";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4400/WP4400_rWP4400_r108112/DataNode/cce25>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4400_r108112/WP/Interaction/d3d71> , <http://rdf.wikipathways.org/Pathway/WP4400_r108112/WP/Interaction/c0459> , <https://identifiers.org/wikipathways/WP4400_r108112>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4400_r108112/DataNode/cce25>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000170323> .
+
+<http://rdf.wikipathways.org/Pathway/WP4400_r108112/WP/Interaction/c0459>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4400_r108112>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4400_r108112/Interaction/c0459>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000170323> , <https://identifiers.org/ensembl/ENSG00000199107>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000199107>;
+        wp:target         <https://identifiers.org/ensembl/ENSG00000170323> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4400&oldid=r108112>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<https://identifiers.org/pubmed/30050129>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "30050129";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4400_r108112>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/30050129> .
+
+<http://rdf.wikipathways.org/Pathway/WP4400_r108112/WP/Interaction/d3d71>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4400_r108112>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4400_r108112/Interaction/d3d71>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000170323>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000170323> .
 
 <https://identifiers.org/ensembl/ENSG00000199107>
         rdf:type            wp:DataNode;
@@ -42,5 +58,42 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000199107>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000199107";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4400/WP4400_rWP4400_r108112/DataNode/d26ef>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4400_r108112/WP/Interaction/b3a49> , <https://identifiers.org/wikipathways/WP4400_r108112> , <http://rdf.wikipathways.org/Pathway/WP4400_r108112/WP/Interaction/c0459>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4400_r108112/DataNode/d26ef>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000199107> .
+
+<http://rdf.wikipathways.org/Pathway/WP4400_r108112/WP/Interaction/b3a49>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4400_r108112>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4400_r108112/Interaction/b3a49>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000199107>;
+        wp:target         <https://identifiers.org/ensembl/ENSG00000199107> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4400&oldid=r108112>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<https://identifiers.org/wikipathways/WP4400>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP4400_r108112> .
+
+<https://identifiers.org/wikipathways/WP4400_r108112>
+        rdf:type               wp:Pathway , skos:Collection;
+        dc:identifier          <https://identifiers.org/wikipathways/WP4400>;
+        dc:source              "WikiPathways";
+        dc:title               "FABP4 in ovarian cancer"@en;
+        dcterms:description    "Regulation of FABP4 in ovarian cancer. FABP4 (fatty acid binding protein) can substantially increase metastatic potential of ovarian cancer cells, and leads to more aggressive disease. Mir-409-3p negatively regulates FABP4 in ovarian cancer cells, and mir-409-3p is decreased in hypoxic conditions. Pink arrows indicates potential therapuetic therapeutic stratgeies; in Gharpure et al, DOPC nanoliposomes containing either miR-409-3p mimic or FABP4 siRNA was shown to inhibit tumor progression. \nDescription was adapted from Gharpure et al.";
+        dcterms:identifier     "WP4400";
+        dcterms:references     <https://identifiers.org/pubmed/30050129>;
+        cito:cites             <https://identifiers.org/pubmed/30050129>;
+        wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_2394>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4400_r108112>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/DOID_2394> , <http://purl.obolibrary.org/obo/PW_0000808> , <http://purl.obolibrary.org/obo/PW_0000605>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606>;
+        wp:organismName        "Homo sapiens";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000808> , <http://purl.obolibrary.org/obo/PW_0000605>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4400&oldid=r108112> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4400&oldid=r108112>;
+        foaf:page              <http://www.wikipathways.org/instance/WP4400_r108112> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_9606>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9606" .

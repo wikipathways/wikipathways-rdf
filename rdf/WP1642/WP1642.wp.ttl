@@ -16,41 +16,15 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/wikipathways/WP1621>
-        rdf:type            wp:Pathway , wp:DataNode;
-        rdfs:label          "Arginine and Proline Metabolism";
-        dc:identifier       <https://identifiers.org/wikipathways/WP1621>;
-        dc:source           "WikiPathways";
-        dcterms:identifier  "WP1621";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1642/WP1642_rWP1642_r126822/DataNode/d9a3c>;
-        foaf:page           <https://www.wikipathways.org/instance/WP1621> .
-
-<https://identifiers.org/myco.tuber/Rv1905c>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "aao";
-        dc:identifier       <https://identifiers.org/myco.tuber/Rv1905c>;
-        dc:source           "TubercuList";
-        dcterms:identifier  "Rv1905c";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1642/WP1642_rWP1642_r126822/DataNode/c7c6e> , <http://rdf.wikipathways.org/Pathway/WP1642/WP1642_rWP1642_r126822/DataNode/b2f69>;
-        foaf:page           <http://tuberculist.epfl.ch/quicksearch.php?gene+name=Rv1905c> .
-
-<https://identifiers.org/ec-code/3.5.3.10>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "ec:3.5.3.10";
-        dc:identifier       <https://identifiers.org/ec-code/3.5.3.10>;
+<https://identifiers.org/ec-code/1.4.1.12>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "ec:1.4.1.12";
+        dc:identifier       <https://identifiers.org/ec-code/1.4.1.12>;
         dc:source           "Enzyme Nomenclature";
-        dcterms:identifier  "3.5.3.10";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1642/WP1642_rWP1642_r126822/DataNode/b37cd>;
-        foaf:page           <http://www.ebi.ac.uk/intenz/query?cmd=SearchEC&ec=3.5.3.10> .
-
-<https://identifiers.org/kegg.compound/C01110>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "5-Amino-2-oxopentanoic acid";
-        dc:identifier       <https://identifiers.org/kegg.compound/C01110>;
-        dc:source           "KEGG Compound";
-        dcterms:identifier  "C01110";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1642/WP1642_rWP1642_r126822/DataNode/aeadb>;
-        foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C01110> .
+        dcterms:identifier  "1.4.1.12";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1642_r126822> , <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/id8516a089> , <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/idf721bd7c>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1642_r126822/DataNode/ad118>;
+        foaf:page           <http://www.ebi.ac.uk/intenz/query?cmd=SearchEC&ec=1.4.1.12> .
 
 <https://identifiers.org/kegg.compound/C00515>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -58,127 +32,53 @@
         dc:identifier       <https://identifiers.org/kegg.compound/C00515>;
         dc:source           "KEGG Compound";
         dcterms:identifier  "C00515";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1642/WP1642_rWP1642_r126822/DataNode/fbecf>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/a8477> , <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/f7296> , <https://identifiers.org/wikipathways/WP1642_r126822> , <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/a6e03> , <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/e7bea> , <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/ed118>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1642_r126822/DataNode/fbecf>;
         foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C00515> .
 
-<https://identifiers.org/ec-code/5.1.1.10>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "ec:5.1.1.10";
-        dc:identifier       <https://identifiers.org/ec-code/5.1.1.10>;
-        dc:source           "Enzyme Nomenclature";
-        dcterms:identifier  "5.1.1.10";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1642/WP1642_rWP1642_r126822/DataNode/b291b>;
-        foaf:page           <http://www.ebi.ac.uk/intenz/query?cmd=SearchEC&ec=5.1.1.10> .
+<http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/id978dfb97>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1642_r126822>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1642_r126822/Interaction/id978dfb97>;
+        wp:participants   <https://identifiers.org/kegg.compound/C01110> , <https://identifiers.org/kegg.compound/C03771>;
+        wp:source         <https://identifiers.org/kegg.compound/C03771>;
+        wp:target         <https://identifiers.org/kegg.compound/C01110> .
 
-<https://identifiers.org/ec-code/5.4.3.5>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "ec:5.4.3.5";
-        dc:identifier       <https://identifiers.org/ec-code/5.4.3.5>;
-        dc:source           "Enzyme Nomenclature";
-        dcterms:identifier  "5.4.3.5";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1642/WP1642_rWP1642_r126822/DataNode/f64a3>;
-        foaf:page           <http://www.ebi.ac.uk/intenz/query?cmd=SearchEC&ec=5.4.3.5> .
+<http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/a88d7>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1642_r126822>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1642_r126822/Interaction/a88d7>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/a8477> , <https://identifiers.org/ec-code/3.5.3.10>;
+        wp:source         <https://identifiers.org/ec-code/3.5.3.10>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/a8477> .
 
-<https://identifiers.org/wikipathways/WP1642/WP1642_rWP1642_r126822>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP1642/WP1642>;
-        dc:source            "WikiPathways";
-        dc:title             "D-arginine and D-ornithine metabolism"@en;
-        dcterms:description  "Description of the D-arginine and D-ornithine metabolism in Mycobacterium tuberculosis.";
-        dcterms:identifier   "WP1642/WP1642";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP1642/WP1642_rWP1642_r126822>;
-        wp:organismName      "Mycobacterium tuberculosis";
-        foaf:page            <http://www.wikipathways.org/instance/WP1642/WP1642_rWP1642_r126822> .
+<http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/b52e8>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1642_r126822>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1642_r126822/Interaction/b52e8>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/a8b6c> , <https://identifiers.org/ec-code/5.1.1.9>;
+        wp:source         <https://identifiers.org/ec-code/5.1.1.9>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/a8b6c> .
 
-<https://identifiers.org/kegg.compound/C03771>
+<https://identifiers.org/kegg.compound/C01110>
         rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "5-Guanidino-2-oxopentanoate";
-        dc:identifier       <https://identifiers.org/kegg.compound/C03771>;
+        rdfs:label          "5-Amino-2-oxopentanoic acid";
+        dc:identifier       <https://identifiers.org/kegg.compound/C01110>;
         dc:source           "KEGG Compound";
-        dcterms:identifier  "C03771";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1642/WP1642_rWP1642_r126822/DataNode/f8de0>;
-        foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C03771> .
+        dcterms:identifier  "C01110";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/ed118> , <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/e7bea> , <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/id978dfb97> , <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/id4e494f4a> , <https://identifiers.org/wikipathways/WP1642_r126822>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1642_r126822/DataNode/aeadb>;
+        foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C01110> .
 
-<https://identifiers.org/ec-code/2.6.1.21>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "2.6.1.21";
-        dc:identifier       <https://identifiers.org/ec-code/2.6.1.21>;
-        dc:source           "Enzyme Nomenclature";
-        dcterms:identifier  "2.6.1.21";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1642/WP1642_rWP1642_r126822/DataNode/cabcb> , <http://rdf.wikipathways.org/Pathway/WP1642/WP1642_rWP1642_r126822/DataNode/a9866>;
-        foaf:page           <http://www.ebi.ac.uk/intenz/query?cmd=SearchEC&ec=2.6.1.21> .
-
-<https://identifiers.org/kegg.compound/C00077>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "L-Ornithine";
-        dc:identifier       <https://identifiers.org/kegg.compound/C00077>;
-        dc:source           "KEGG Compound";
-        dcterms:identifier  "C00077";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1642/WP1642_rWP1642_r126822/DataNode/e90f5>;
-        foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C00077> .
-
-<https://identifiers.org/kegg.compound/C01667>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Bacitracin";
-        dc:identifier       <https://identifiers.org/kegg.compound/C01667>;
-        dc:source           "KEGG Compound";
-        dcterms:identifier  "C01667";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1642/WP1642_rWP1642_r126822/DataNode/fbe02>;
-        foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C01667> .
-
-<https://identifiers.org/kegg.compound/C03564>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "1-Pyrroline-2-carboxylate";
-        dc:identifier       <https://identifiers.org/kegg.compound/C03564>;
-        dc:source           "KEGG Compound";
-        dcterms:identifier  "C03564";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1642/WP1642_rWP1642_r126822/DataNode/b0060>;
-        foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C03564> .
-
-<https://identifiers.org/kegg.compound/C03341>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "2-Amino-4-oxopentanoic acid";
-        dc:identifier       <https://identifiers.org/kegg.compound/C03341>;
-        dc:source           "KEGG Compound";
-        dcterms:identifier  "C03341";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1642/WP1642_rWP1642_r126822/DataNode/f9f3e>;
-        foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C03341> .
-
-<https://identifiers.org/kegg.compound/C00062>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "L-Arginine";
-        dc:identifier       <https://identifiers.org/kegg.compound/C00062>;
-        dc:source           "KEGG Compound";
-        dcterms:identifier  "C00062";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1642/WP1642_rWP1642_r126822/DataNode/d8e85>;
-        foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C00062> .
-
-<https://identifiers.org/ec-code/5.1.1.12>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "ec:5.1.1.12";
-        dc:identifier       <https://identifiers.org/ec-code/5.1.1.12>;
-        dc:source           "Enzyme Nomenclature";
-        dcterms:identifier  "5.1.1.12";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1642/WP1642_rWP1642_r126822/DataNode/fc858>;
-        foaf:page           <http://www.ebi.ac.uk/intenz/query?cmd=SearchEC&ec=5.1.1.12> .
-
-<https://identifiers.org/ec-code/5.1.1.9>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "ec:5.1.1.9";
-        dc:identifier       <https://identifiers.org/ec-code/5.1.1.9>;
-        dc:source           "Enzyme Nomenclature";
-        dcterms:identifier  "5.1.1.9";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1642/WP1642_rWP1642_r126822/DataNode/fa72c> , <http://rdf.wikipathways.org/Pathway/WP1642/WP1642_rWP1642_r126822/DataNode/de7c9>;
-        foaf:page           <http://www.ebi.ac.uk/intenz/query?cmd=SearchEC&ec=5.1.1.9> .
-
-<https://identifiers.org/kegg.compound/C03943>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "(2R,4S)-2,4-Diaminopentanoate";
-        dc:identifier       <https://identifiers.org/kegg.compound/C03943>;
-        dc:source           "KEGG Compound";
-        dcterms:identifier  "C03943";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1642/WP1642_rWP1642_r126822/DataNode/b48d0>;
-        foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C03943> .
+<https://identifiers.org/wikipathways/WP1621>
+        rdf:type            wp:Pathway , wp:DataNode;
+        rdfs:label          "Arginine and Proline Metabolism";
+        dc:identifier       <https://identifiers.org/wikipathways/WP1621>;
+        dc:source           "WikiPathways";
+        dcterms:identifier  "WP1621";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/idc9f4585f> , <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/id3c67ab5> , <https://identifiers.org/wikipathways/WP1642_r126822>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1642_r126822/DataNode/d9a3c>;
+        foaf:page           <https://www.wikipathways.org/instance/WP1621> .
 
 <https://identifiers.org/kegg.compound/C00792>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -186,14 +86,344 @@
         dc:identifier       <https://identifiers.org/kegg.compound/C00792>;
         dc:source           "KEGG Compound";
         dcterms:identifier  "C00792";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1642/WP1642_rWP1642_r126822/DataNode/ff833>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1642_r126822> , <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/a6597> , <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/a8b6c> , <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/a8477> , <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/idac179b45>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1642_r126822/DataNode/ff833>;
         foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C00792> .
 
-<https://identifiers.org/ec-code/1.4.1.12>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "ec:1.4.1.12";
-        dc:identifier       <https://identifiers.org/ec-code/1.4.1.12>;
+<https://identifiers.org/wikipathways/WP1642>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP1642_r126822> .
+
+<http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/ed118>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/cb189> , <https://identifiers.org/wikipathways/WP1642_r126822>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1642_r126822/Interaction/ed118>;
+        wp:participants   <https://identifiers.org/kegg.compound/C00515> , <https://identifiers.org/kegg.compound/C01110>;
+        wp:source         <https://identifiers.org/kegg.compound/C01110>;
+        wp:target         <https://identifiers.org/kegg.compound/C00515> .
+
+<http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/b86a5>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1642_r126822>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1642_r126822/Interaction/b86a5>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/a6e03> , <https://identifiers.org/ec-code/5.4.3.5>;
+        wp:source         <https://identifiers.org/ec-code/5.4.3.5>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/a6e03> .
+
+<http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/a6e03>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/b86a5> , <https://identifiers.org/wikipathways/WP1642_r126822>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1642_r126822/Interaction/a6e03>;
+        wp:participants   <https://identifiers.org/kegg.compound/C00515> , <https://identifiers.org/kegg.compound/C03943>;
+        wp:source         <https://identifiers.org/kegg.compound/C03943>;
+        wp:target         <https://identifiers.org/kegg.compound/C00515> .
+
+<http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/cb189>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1642_r126822>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1642_r126822/Interaction/cb189>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/ed118> , <https://identifiers.org/ec-code/2.6.1.21>;
+        wp:source         <https://identifiers.org/ec-code/2.6.1.21>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/ed118> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP1642&oldid=r126822>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/e7bea>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/d96a1> , <https://identifiers.org/wikipathways/WP1642_r126822>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1642_r126822/Interaction/e7bea>;
+        wp:participants   <https://identifiers.org/kegg.compound/C01110> , <https://identifiers.org/kegg.compound/C00515>;
+        wp:source         <https://identifiers.org/kegg.compound/C00515>;
+        wp:target         <https://identifiers.org/kegg.compound/C01110> .
+
+<https://identifiers.org/ec-code/5.1.1.12>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "ec:5.1.1.12";
+        dc:identifier       <https://identifiers.org/ec-code/5.1.1.12>;
         dc:source           "Enzyme Nomenclature";
-        dcterms:identifier  "1.4.1.12";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1642/WP1642_rWP1642_r126822/DataNode/ad118>;
-        foaf:page           <http://www.ebi.ac.uk/intenz/query?cmd=SearchEC&ec=1.4.1.12> .
+        dcterms:identifier  "5.1.1.12";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/f8b12> , <https://identifiers.org/wikipathways/WP1642_r126822>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1642_r126822/DataNode/fc858>;
+        foaf:page           <http://www.ebi.ac.uk/intenz/query?cmd=SearchEC&ec=5.1.1.12> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP1642&oldid=r126822>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/a6597>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/a1d91> , <https://identifiers.org/wikipathways/WP1642_r126822>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1642_r126822/Interaction/a6597>;
+        wp:participants   <https://identifiers.org/kegg.compound/C00792> , <https://identifiers.org/kegg.compound/C03771>;
+        wp:source         <https://identifiers.org/kegg.compound/C03771>;
+        wp:target         <https://identifiers.org/kegg.compound/C00792> .
+
+<http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/id8516a089>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1642_r126822>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1642_r126822/Interaction/id8516a089>;
+        wp:participants   <https://identifiers.org/kegg.compound/C03341> , <https://identifiers.org/ec-code/1.4.1.12>;
+        wp:source         <https://identifiers.org/ec-code/1.4.1.12>;
+        wp:target         <https://identifiers.org/kegg.compound/C03341> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_1773>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "1773" .
+
+<https://identifiers.org/ec-code/5.4.3.5>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "ec:5.4.3.5";
+        dc:identifier       <https://identifiers.org/ec-code/5.4.3.5>;
+        dc:source           "Enzyme Nomenclature";
+        dcterms:identifier  "5.4.3.5";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/b86a5> , <https://identifiers.org/wikipathways/WP1642_r126822>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1642_r126822/DataNode/f64a3>;
+        foaf:page           <http://www.ebi.ac.uk/intenz/query?cmd=SearchEC&ec=5.4.3.5> .
+
+<http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/bfa5b>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1642_r126822>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1642_r126822/Interaction/bfa5b>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/f7296> , <https://identifiers.org/ec-code/5.1.1.10>;
+        wp:source         <https://identifiers.org/ec-code/5.1.1.10>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/f7296> .
+
+<http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/a1d91>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1642_r126822>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1642_r126822/Interaction/a1d91>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/a6597> , <https://identifiers.org/ec-code/2.6.1.21>;
+        wp:source         <https://identifiers.org/ec-code/2.6.1.21>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/a6597> .
+
+<https://identifiers.org/myco.tuber/Rv1905c>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "aao";
+        dc:identifier       <https://identifiers.org/myco.tuber/Rv1905c>;
+        dc:source           "TubercuList";
+        dcterms:identifier  "Rv1905c";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/a3420> , <https://identifiers.org/wikipathways/WP1642_r126822> , <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/d96a1>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1642_r126822/DataNode/b2f69> , <http://rdf.wikipathways.org/Pathway/WP1642_r126822/DataNode/c7c6e>;
+        foaf:page           <http://tuberculist.epfl.ch/quicksearch.php?gene+name=Rv1905c> .
+
+<https://identifiers.org/kegg.compound/C03771>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "5-Guanidino-2-oxopentanoate";
+        dc:identifier       <https://identifiers.org/kegg.compound/C03771>;
+        dc:source           "KEGG Compound";
+        dcterms:identifier  "C03771";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1642_r126822> , <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/idac179b45> , <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/id978dfb97> , <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/a6597>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1642_r126822/DataNode/f8de0>;
+        foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C03771> .
+
+<https://identifiers.org/kegg.compound/C03564>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "1-Pyrroline-2-carboxylate";
+        dc:identifier       <https://identifiers.org/kegg.compound/C03564>;
+        dc:source           "KEGG Compound";
+        dcterms:identifier  "C03564";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/id4e494f4a> , <https://identifiers.org/wikipathways/WP1642_r126822>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1642_r126822/DataNode/b0060>;
+        foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C03564> .
+
+<http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/id4e494f4a>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1642_r126822>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1642_r126822/Interaction/id4e494f4a>;
+        wp:participants   <https://identifiers.org/kegg.compound/C03564> , <https://identifiers.org/kegg.compound/C01110>;
+        wp:source         <https://identifiers.org/kegg.compound/C01110>;
+        wp:target         <https://identifiers.org/kegg.compound/C03564> .
+
+<http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/f8b12>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1642_r126822>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1642_r126822/Interaction/f8b12>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/f7296> , <https://identifiers.org/ec-code/5.1.1.12>;
+        wp:source         <https://identifiers.org/ec-code/5.1.1.12>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/f7296> .
+
+<http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/a8b6c>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/b52e8> , <https://identifiers.org/wikipathways/WP1642_r126822>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1642_r126822/Interaction/a8b6c>;
+        wp:participants   <https://identifiers.org/kegg.compound/C00062> , <https://identifiers.org/kegg.compound/C00792>;
+        wp:source         <https://identifiers.org/kegg.compound/C00792>;
+        wp:target         <https://identifiers.org/kegg.compound/C00062> .
+
+<https://identifiers.org/ec-code/3.5.3.10>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "ec:3.5.3.10";
+        dc:identifier       <https://identifiers.org/ec-code/3.5.3.10>;
+        dc:source           "Enzyme Nomenclature";
+        dcterms:identifier  "3.5.3.10";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1642_r126822> , <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/a88d7>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1642_r126822/DataNode/b37cd>;
+        foaf:page           <http://www.ebi.ac.uk/intenz/query?cmd=SearchEC&ec=3.5.3.10> .
+
+<https://identifiers.org/kegg.compound/C03943>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "(2R,4S)-2,4-Diaminopentanoate";
+        dc:identifier       <https://identifiers.org/kegg.compound/C03943>;
+        dc:source           "KEGG Compound";
+        dcterms:identifier  "C03943";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/idf721bd7c> , <https://identifiers.org/wikipathways/WP1642_r126822> , <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/a6e03>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1642_r126822/DataNode/b48d0>;
+        foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C03943> .
+
+<http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/a3420>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1642_r126822>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1642_r126822/Interaction/a3420>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/idac179b45> , <https://identifiers.org/myco.tuber/Rv1905c>;
+        wp:source         <https://identifiers.org/myco.tuber/Rv1905c>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/idac179b45> .
+
+<http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/cd668>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1642_r126822>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1642_r126822/Interaction/cd668>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/f7296> , <https://identifiers.org/ec-code/5.1.1.9>;
+        wp:source         <https://identifiers.org/ec-code/5.1.1.9>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/f7296> .
+
+<http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/a8477>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/a88d7> , <https://identifiers.org/wikipathways/WP1642_r126822>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1642_r126822/Interaction/a8477>;
+        wp:participants   <https://identifiers.org/kegg.compound/C00515> , <https://identifiers.org/kegg.compound/C00792>;
+        wp:source         <https://identifiers.org/kegg.compound/C00792>;
+        wp:target         <https://identifiers.org/kegg.compound/C00515> .
+
+<https://identifiers.org/kegg.compound/C00062>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "L-Arginine";
+        dc:identifier       <https://identifiers.org/kegg.compound/C00062>;
+        dc:source           "KEGG Compound";
+        dcterms:identifier  "C00062";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/idc9f4585f> , <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/a8b6c> , <https://identifiers.org/wikipathways/WP1642_r126822>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1642_r126822/DataNode/d8e85>;
+        foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C00062> .
+
+<http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/idac179b45>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/a3420> , <https://identifiers.org/wikipathways/WP1642_r126822>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1642_r126822/Interaction/idac179b45>;
+        wp:participants   <https://identifiers.org/kegg.compound/C00792> , <https://identifiers.org/kegg.compound/C03771>;
+        wp:source         <https://identifiers.org/kegg.compound/C03771>;
+        wp:target         <https://identifiers.org/kegg.compound/C00792> .
+
+<http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/d96a1>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1642_r126822>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1642_r126822/Interaction/d96a1>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/e7bea> , <https://identifiers.org/myco.tuber/Rv1905c>;
+        wp:source         <https://identifiers.org/myco.tuber/Rv1905c>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/e7bea> .
+
+<https://identifiers.org/wikipathways/WP1642_r126822>
+        rdf:type               wp:Pathway , skos:Collection;
+        dc:identifier          <https://identifiers.org/wikipathways/WP1642>;
+        dc:source              "WikiPathways";
+        dc:title               "D-arginine and D-ornithine metabolism"@en;
+        dcterms:description    "Description of the D-arginine and D-ornithine metabolism in Mycobacterium tuberculosis.";
+        dcterms:identifier     "WP1642";
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP1642_r126822>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000082>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_1773>;
+        wp:organismName        "Mycobacterium tuberculosis";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000082>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP1642&oldid=r126822> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP1642&oldid=r126822>;
+        foaf:page              <http://www.wikipathways.org/instance/WP1642_r126822> .
+
+<https://identifiers.org/kegg.compound/C01667>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Bacitracin";
+        dc:identifier       <https://identifiers.org/kegg.compound/C01667>;
+        dc:source           "KEGG Compound";
+        dcterms:identifier  "C01667";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1642_r126822>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1642_r126822/DataNode/fbe02>;
+        foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C01667> .
+
+<http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/idc9f4585f>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1642_r126822>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1642_r126822/Interaction/idc9f4585f>;
+        wp:participants   <https://identifiers.org/wikipathways/WP1621> , <https://identifiers.org/kegg.compound/C00062>;
+        wp:source         <https://identifiers.org/kegg.compound/C00062>;
+        wp:target         <https://identifiers.org/wikipathways/WP1621> .
+
+<http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/id3c67ab5>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1642_r126822>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1642_r126822/Interaction/id3c67ab5>;
+        wp:participants   <https://identifiers.org/wikipathways/WP1621> , <https://identifiers.org/kegg.compound/C00077>;
+        wp:source         <https://identifiers.org/kegg.compound/C00077>;
+        wp:target         <https://identifiers.org/wikipathways/WP1621> .
+
+<http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/idf721bd7c>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1642_r126822>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1642_r126822/Interaction/idf721bd7c>;
+        wp:participants   <https://identifiers.org/kegg.compound/C03943> , <https://identifiers.org/ec-code/1.4.1.12>;
+        wp:source         <https://identifiers.org/ec-code/1.4.1.12>;
+        wp:target         <https://identifiers.org/kegg.compound/C03943> .
+
+<https://identifiers.org/ec-code/5.1.1.10>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "ec:5.1.1.10";
+        dc:identifier       <https://identifiers.org/ec-code/5.1.1.10>;
+        dc:source           "Enzyme Nomenclature";
+        dcterms:identifier  "5.1.1.10";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/bfa5b> , <https://identifiers.org/wikipathways/WP1642_r126822>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1642_r126822/DataNode/b291b>;
+        foaf:page           <http://www.ebi.ac.uk/intenz/query?cmd=SearchEC&ec=5.1.1.10> .
+
+<https://identifiers.org/kegg.compound/C00077>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "L-Ornithine";
+        dc:identifier       <https://identifiers.org/kegg.compound/C00077>;
+        dc:source           "KEGG Compound";
+        dcterms:identifier  "C00077";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1642_r126822> , <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/f7296> , <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/id3c67ab5>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1642_r126822/DataNode/e90f5>;
+        foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C00077> .
+
+<https://identifiers.org/ec-code/2.6.1.21>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "2.6.1.21";
+        dc:identifier       <https://identifiers.org/ec-code/2.6.1.21>;
+        dc:source           "Enzyme Nomenclature";
+        dcterms:identifier  "2.6.1.21";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1642_r126822> , <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/cb189> , <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/a1d91>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1642_r126822/DataNode/a9866> , <http://rdf.wikipathways.org/Pathway/WP1642_r126822/DataNode/cabcb>;
+        foaf:page           <http://www.ebi.ac.uk/intenz/query?cmd=SearchEC&ec=2.6.1.21> .
+
+<https://identifiers.org/kegg.compound/C03341>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "2-Amino-4-oxopentanoic acid";
+        dc:identifier       <https://identifiers.org/kegg.compound/C03341>;
+        dc:source           "KEGG Compound";
+        dcterms:identifier  "C03341";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/id8516a089> , <https://identifiers.org/wikipathways/WP1642_r126822>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1642_r126822/DataNode/f9f3e>;
+        foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C03341> .
+
+<https://identifiers.org/ec-code/5.1.1.9>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "ec:5.1.1.9";
+        dc:identifier       <https://identifiers.org/ec-code/5.1.1.9>;
+        dc:source           "Enzyme Nomenclature";
+        dcterms:identifier  "5.1.1.9";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/cd668> , <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/b52e8> , <https://identifiers.org/wikipathways/WP1642_r126822>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1642_r126822/DataNode/de7c9> , <http://rdf.wikipathways.org/Pathway/WP1642_r126822/DataNode/fa72c>;
+        foaf:page           <http://www.ebi.ac.uk/intenz/query?cmd=SearchEC&ec=5.1.1.9> .
+
+<http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/f7296>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1642_r126822> , <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/f8b12> , <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/bfa5b> , <http://rdf.wikipathways.org/Pathway/WP1642_r126822/WP/Interaction/cd668>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1642_r126822/Interaction/f7296>;
+        wp:participants   <https://identifiers.org/kegg.compound/C00077> , <https://identifiers.org/kegg.compound/C00515>;
+        wp:source         <https://identifiers.org/kegg.compound/C00077>;
+        wp:target         <https://identifiers.org/kegg.compound/C00515> .

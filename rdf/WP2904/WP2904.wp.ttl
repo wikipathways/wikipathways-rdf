@@ -16,16 +16,19 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/wikipathways/WP2904/WP2904_rWP2904_r117927>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP2904/WP2904>;
-        dc:source            "WikiPathways";
-        dc:title             "miR302-367 promoting cardiomyocyte proliferation"@en;
-        dcterms:description  "The paper describes this pathway as \"Proposed model of miR302-367 promoting cardiomyocyte proliferation through regulation of Hippo pathway kinases.\"";
-        dcterms:identifier   "WP2904/WP2904";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP2904/WP2904_rWP2904_r117927>;
-        wp:organismName      "Mus musculus";
-        foaf:page            <http://www.wikipathways.org/instance/WP2904/WP2904_rWP2904_r117927> .
+<https://identifiers.org/wikipathways/WP2904>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP2904_r117927> .
+
+<http://rdf.wikipathways.org/Pathway/WP2904_r117927/WP/Interaction/ida843ba0e>
+        rdf:type          wp:Stimulation , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2904_r117927>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2904_r117927/Interaction/ida843ba0e>;
+        wp:participants   <https://identifiers.org/uniprot/P46938>;
+        wp:source         <https://identifiers.org/uniprot/P46938> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP2904&oldid=r117927>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
 
 <https://identifiers.org/ensembl/ENSMUSG00000065413>
         rdf:type            wp:DataNode;
@@ -33,17 +36,31 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000065413>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSMUSG00000065413";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2904/WP2904_rWP2904_r117927/DataNode/e0a6b>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2904_r117927>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2904_r117927/DataNode/e0a6b>;
         foaf:page           <https://www.ensembl.org/id/ENSMUSG00000065413> .
 
-<https://identifiers.org/uniprot/P46938>
-        rdf:type            wp:Protein , wp:DataNode;
-        rdfs:label          "Yap";
-        dc:identifier       <https://identifiers.org/uniprot/P46938>;
-        dc:source           "Uniprot-TrEMBL";
-        dcterms:identifier  "P46938";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2904/WP2904_rWP2904_r117927/DataNode/e3852> , <http://rdf.wikipathways.org/Pathway/WP2904/WP2904_rWP2904_r117927/DataNode/fdca1>;
-        foaf:page           <http://www.uniprot.org/uniprot/P46938> .
+<http://purl.obolibrary.org/obo/NCBITaxon_10090>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "10090" .
+
+<https://identifiers.org/wikipathways/WP2904_r117927>
+        rdf:type                wp:Pathway , skos:Collection;
+        dc:identifier           <https://identifiers.org/wikipathways/WP2904>;
+        dc:source               "WikiPathways";
+        dc:title                "miR302-367 promoting cardiomyocyte proliferation"@en;
+        dcterms:description     "The paper describes this pathway as \"Proposed model of miR302-367 promoting cardiomyocyte proliferation through regulation of Hippo pathway kinases.\"";
+        dcterms:identifier      "WP2904";
+        dcterms:references      <https://identifiers.org/pubmed/25787764>;
+        cito:cites              <https://identifiers.org/pubmed/25787764>;
+        wp:cellTypeOntologyTag  <http://purl.obolibrary.org/obo/CL_0000746>;
+        wp:isAbout              <http://rdf.wikipathways.org/Pathway/WP2904_r117927>;
+        wp:ontologyTag          <http://purl.obolibrary.org/obo/PW_0000004> , <http://purl.obolibrary.org/obo/CL_0000746>;
+        wp:organism             <http://purl.obolibrary.org/obo/NCBITaxon_10090>;
+        wp:organismName         "Mus musculus";
+        wp:pathwayOntologyTag   <http://purl.obolibrary.org/obo/PW_0000004>;
+        foaf:img                <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP2904&oldid=r117927> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP2904&oldid=r117927>;
+        foaf:page               <http://www.wikipathways.org/instance/WP2904_r117927> .
 
 <https://identifiers.org/ensembl/ENSMUSG00000032591>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -51,8 +68,31 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000032591>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSMUSG00000032591";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2904/WP2904_rWP2904_r117927/DataNode/d40ad>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2904_r117927>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2904_r117927/DataNode/d40ad>;
         foaf:page           <https://www.ensembl.org/id/ENSMUSG00000032591> .
+
+<https://identifiers.org/uniprot/P46938>
+        rdf:type            wp:DataNode , wp:Protein;
+        rdfs:label          "Yap";
+        dc:identifier       <https://identifiers.org/uniprot/P46938>;
+        dc:source           "Uniprot-TrEMBL";
+        dcterms:identifier  "P46938";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2904_r117927/WP/Interaction/id8b773749> , <https://identifiers.org/wikipathways/WP2904_r117927> , <http://rdf.wikipathways.org/Pathway/WP2904_r117927/WP/Interaction/ida843ba0e>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2904_r117927/DataNode/fdca1> , <http://rdf.wikipathways.org/Pathway/WP2904_r117927/DataNode/e3852>;
+        foaf:page           <http://www.uniprot.org/uniprot/P46938> .
+
+<http://rdf.wikipathways.org/Pathway/WP2904_r117927/WP/Interaction/id8b773749>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2904_r117927>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2904_r117927/Interaction/id8b773749>;
+        wp:participants   <https://identifiers.org/uniprot/P46938>;
+        wp:source         <https://identifiers.org/uniprot/P46938>;
+        wp:target         <https://identifiers.org/uniprot/P46938> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP2904&oldid=r117927>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
 
 <https://identifiers.org/ensembl/ENSMUSG00000065482>
         rdf:type            wp:DataNode;
@@ -60,7 +100,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000065482>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSMUSG00000065482";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2904/WP2904_rWP2904_r117927/DataNode/f82b6>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2904_r117927>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2904_r117927/DataNode/f82b6>;
         foaf:page           <https://www.ensembl.org/id/ENSMUSG00000065482> .
 
 <https://identifiers.org/ensembl/ENSMUSG00000021959>
@@ -69,8 +110,16 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000021959>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSMUSG00000021959";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2904/WP2904_rWP2904_r117927/DataNode/bcd51>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2904_r117927>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2904_r117927/DataNode/bcd51>;
         foaf:page           <https://www.ensembl.org/id/ENSMUSG00000021959> .
+
+<https://identifiers.org/pubmed/25787764>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "25787764";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2904_r117927>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/25787764> .
 
 <https://identifiers.org/ensembl/ENSMUSG00000065552>
         rdf:type            wp:DataNode;
@@ -78,7 +127,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000065552>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSMUSG00000065552";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2904/WP2904_rWP2904_r117927/DataNode/e6474>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2904_r117927>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2904_r117927/DataNode/e6474>;
         foaf:page           <https://www.ensembl.org/id/ENSMUSG00000065552> .
 
 <https://identifiers.org/ensembl/ENSMUSG00000076252>
@@ -87,7 +137,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000076252>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSMUSG00000076252";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2904/WP2904_rWP2904_r117927/DataNode/a4962>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2904_r117927>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2904_r117927/DataNode/a4962>;
         foaf:page           <https://www.ensembl.org/id/ENSMUSG00000076252> .
 
 <https://identifiers.org/ensembl/ENSMUSG00000065447>
@@ -96,7 +147,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000065447>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSMUSG00000065447";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2904/WP2904_rWP2904_r117927/DataNode/f44b4>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2904_r117927>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2904_r117927/DataNode/f44b4>;
         foaf:page           <https://www.ensembl.org/id/ENSMUSG00000065447> .
 
 <https://identifiers.org/ensembl/ENSMUSG00000006262>
@@ -105,5 +157,6 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000006262>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSMUSG00000006262";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2904/WP2904_rWP2904_r117927/DataNode/a07fb>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2904_r117927>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2904_r117927/DataNode/a07fb>;
         foaf:page           <https://www.ensembl.org/id/ENSMUSG00000006262> .

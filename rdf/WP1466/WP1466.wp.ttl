@@ -16,23 +16,94 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
+<https://identifiers.org/wikipathways/WP1466_r126353>
+        rdf:type               skos:Collection , wp:Pathway;
+        dc:identifier          <https://identifiers.org/wikipathways/WP1466>;
+        dc:source              "WikiPathways";
+        dc:title               "Response regulator aspartate phosphatase interactions"@en;
+        dcterms:identifier     "WP1466";
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP1466_r126353>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000439>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_1423>;
+        wp:organismName        "Bacillus subtilis";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000439>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP1466&oldid=r126353> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP1466&oldid=r126353>;
+        foaf:page              <http://www.wikipathways.org/instance/WP1466_r126353> .
+
+<http://rdf.wikipathways.org/Pathway/WP1466_r126353/WP/Interaction/idcdc38f74>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1466_r126353>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1466_r126353/Interaction/idcdc38f74>;
+        wp:participants   <https://identifiers.org/ensembl/EBBACG00000000285> , <https://identifiers.org/ensembl/EBBACG00000000680>;
+        wp:source         <https://identifiers.org/ensembl/EBBACG00000000680>;
+        wp:target         <https://identifiers.org/ensembl/EBBACG00000000285> .
+
+<http://rdf.wikipathways.org/Pathway/WP1466_r126353/WP/Interaction/id51df5487>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1466_r126353>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1466_r126353/Interaction/id51df5487>;
+        wp:participants   <https://identifiers.org/ensembl/EBBACG00000000284> , <https://identifiers.org/ensembl/EBBACG00000000285>;
+        wp:source         <https://identifiers.org/ensembl/EBBACG00000000285>;
+        wp:target         <https://identifiers.org/ensembl/EBBACG00000000284> .
+
+<https://identifiers.org/wikipathways/WP1466>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP1466_r126353> .
+
 <https://identifiers.org/ensembl/EBBACG00000000285>
         rdf:type            wp:GeneProduct , wp:DataNode;
         rdfs:label          "rapE";
         dc:identifier       <https://identifiers.org/ensembl/EBBACG00000000285>;
         dc:source           "Ensembl";
         dcterms:identifier  "EBBACG00000000285";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1466/WP1466_rWP1466_r126353/DataNode/a20b6>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1466_r126353/WP/Interaction/idcdc38f74> , <https://identifiers.org/wikipathways/WP1466_r126353> , <http://rdf.wikipathways.org/Pathway/WP1466_r126353/WP/Interaction/id51df5487>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1466_r126353/DataNode/a20b6>;
         foaf:page           <https://www.ensembl.org/id/EBBACG00000000285> .
 
+<http://rdf.wikipathways.org/Pathway/WP1466_r126353/WP/Interaction/idfa32beea>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1466_r126353>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1466_r126353/Interaction/idfa32beea>;
+        wp:participants   <https://identifiers.org/ensembl/EBBACG00000000844> , <https://identifiers.org/ensembl/EBBACG00000000326>;
+        wp:source         <https://identifiers.org/ensembl/EBBACG00000000326>;
+        wp:target         <https://identifiers.org/ensembl/EBBACG00000000844> .
+
+<http://rdf.wikipathways.org/Pathway/WP1466_r126353/WP/Interaction/ide04fda90>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1466_r126353>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1466_r126353/Interaction/ide04fda90>;
+        wp:participants   <https://identifiers.org/ensembl/EBBACG00000000326> , <https://identifiers.org/ensembl/EBBACG00000000284>;
+        wp:source         <https://identifiers.org/ensembl/EBBACG00000000284>;
+        wp:target         <https://identifiers.org/ensembl/EBBACG00000000326> .
+
 <https://identifiers.org/ensembl/EBBACG00000000844>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "rapA";
         dc:identifier       <https://identifiers.org/ensembl/EBBACG00000000844>;
         dc:source           "Ensembl";
         dcterms:identifier  "EBBACG00000000844";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1466/WP1466_rWP1466_r126353/DataNode/b808c>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1466_r126353/WP/Interaction/idd63817b2> , <https://identifiers.org/wikipathways/WP1466_r126353> , <http://rdf.wikipathways.org/Pathway/WP1466_r126353/WP/Interaction/idfa32beea> , <http://rdf.wikipathways.org/Pathway/WP1466_r126353/WP/Interaction/id1610521e>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1466_r126353/DataNode/b808c>;
         foaf:page           <https://www.ensembl.org/id/EBBACG00000000844> .
+
+<http://rdf.wikipathways.org/Pathway/WP1466_r126353/WP/Interaction/id1610521e>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1466_r126353>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1466_r126353/Interaction/id1610521e>;
+        wp:participants   <https://identifiers.org/ensembl/EBBACG00000000844> , <https://identifiers.org/ensembl/EBBACG00000000284>;
+        wp:source         <https://identifiers.org/ensembl/EBBACG00000000284>;
+        wp:target         <https://identifiers.org/ensembl/EBBACG00000000844> .
+
+<http://rdf.wikipathways.org/Pathway/WP1466_r126353/WP/Interaction/idd537d84a>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1466_r126353>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1466_r126353/Interaction/idd537d84a>;
+        wp:participants   <https://identifiers.org/ensembl/EBBACG00000000680> , <https://identifiers.org/ensembl/EBBACG00000000284>;
+        wp:source         <https://identifiers.org/ensembl/EBBACG00000000284>;
+        wp:target         <https://identifiers.org/ensembl/EBBACG00000000680> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP1466&oldid=r126353>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
 
 <https://identifiers.org/ensembl/EBBACG00000000326>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -40,7 +111,8 @@
         dc:identifier       <https://identifiers.org/ensembl/EBBACG00000000326>;
         dc:source           "Ensembl";
         dcterms:identifier  "EBBACG00000000326";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1466/WP1466_rWP1466_r126353/DataNode/cfbb9>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1466_r126353/WP/Interaction/idfa32beea> , <https://identifiers.org/wikipathways/WP1466_r126353> , <http://rdf.wikipathways.org/Pathway/WP1466_r126353/WP/Interaction/ide04fda90>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1466_r126353/DataNode/cfbb9>;
         foaf:page           <https://www.ensembl.org/id/EBBACG00000000326> .
 
 <https://identifiers.org/ensembl/EBBACG00000000284>
@@ -49,18 +121,13 @@
         dc:identifier       <https://identifiers.org/ensembl/EBBACG00000000284>;
         dc:source           "Ensembl";
         dcterms:identifier  "EBBACG00000000284";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1466/WP1466_rWP1466_r126353/DataNode/f5867> , <http://rdf.wikipathways.org/Pathway/WP1466/WP1466_rWP1466_r126353/DataNode/d6ac7>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1466_r126353> , <http://rdf.wikipathways.org/Pathway/WP1466_r126353/WP/Interaction/id1610521e> , <http://rdf.wikipathways.org/Pathway/WP1466_r126353/WP/Interaction/idd537d84a> , <http://rdf.wikipathways.org/Pathway/WP1466_r126353/WP/Interaction/ide04fda90> , <http://rdf.wikipathways.org/Pathway/WP1466_r126353/WP/Interaction/idd63817b2> , <http://rdf.wikipathways.org/Pathway/WP1466_r126353/WP/Interaction/id51df5487>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1466_r126353/DataNode/d6ac7> , <http://rdf.wikipathways.org/Pathway/WP1466_r126353/DataNode/f5867>;
         foaf:page           <https://www.ensembl.org/id/EBBACG00000000284> .
 
-<https://identifiers.org/wikipathways/WP1466/WP1466_rWP1466_r126353>
-        rdf:type            skos:Collection , wp:Pathway;
-        dc:identifier       <https://identifiers.org/wikipathways/WP1466/WP1466>;
-        dc:source           "WikiPathways";
-        dc:title            "Response regulator aspartate phosphatase interactions"@en;
-        dcterms:identifier  "WP1466/WP1466";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1466/WP1466_rWP1466_r126353>;
-        wp:organismName     "Bacillus subtilis";
-        foaf:page           <http://www.wikipathways.org/instance/WP1466/WP1466_rWP1466_r126353> .
+<http://purl.obolibrary.org/obo/NCBITaxon_1423>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "1423" .
 
 <https://identifiers.org/ensembl/EBBACG00000000680>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -68,5 +135,18 @@
         dc:identifier       <https://identifiers.org/ensembl/EBBACG00000000680>;
         dc:source           "Ensembl";
         dcterms:identifier  "EBBACG00000000680";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1466/WP1466_rWP1466_r126353/DataNode/bef4f>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1466_r126353/WP/Interaction/idd537d84a> , <http://rdf.wikipathways.org/Pathway/WP1466_r126353/WP/Interaction/idcdc38f74> , <https://identifiers.org/wikipathways/WP1466_r126353>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1466_r126353/DataNode/bef4f>;
         foaf:page           <https://www.ensembl.org/id/EBBACG00000000680> .
+
+<http://rdf.wikipathways.org/Pathway/WP1466_r126353/WP/Interaction/idd63817b2>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1466_r126353>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1466_r126353/Interaction/idd63817b2>;
+        wp:participants   <https://identifiers.org/ensembl/EBBACG00000000284> , <https://identifiers.org/ensembl/EBBACG00000000844>;
+        wp:source         <https://identifiers.org/ensembl/EBBACG00000000844>;
+        wp:target         <https://identifiers.org/ensembl/EBBACG00000000284> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP1466&oldid=r126353>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .

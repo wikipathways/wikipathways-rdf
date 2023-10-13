@@ -16,32 +16,138 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
+<https://identifiers.org/wikipathways/WP4763>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP4763_r108519> .
+
+<http://rdf.wikipathways.org/Pathway/WP4763_r108519/WP/Interaction/idc2c87159>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4763_r108519>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4763_r108519/Interaction/idc2c87159>;
+        wp:participants   <https://identifiers.org/uniprot/Q9R210>;
+        wp:source         <https://identifiers.org/uniprot/Q9R210>;
+        wp:target         <https://identifiers.org/uniprot/Q9R210> .
+
+<https://identifiers.org/interpro/IPR000308>
+        rdf:type            wp:DataNode , wp:Protein;
+        rdfs:label          "14-3-3  protein family";
+        dc:identifier       <https://identifiers.org/interpro/IPR000308>;
+        dc:source           "InterPro";
+        dcterms:identifier  "IPR000308";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4763_r108519/Complex/a5176> , <https://identifiers.org/wikipathways/WP4763_r108519>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4763_r108519/DataNode/a42b5>;
+        foaf:page           <http://www.ebi.ac.uk/interpro/DisplayIproEntry?ac=IPR000308> .
+
+<http://rdf.wikipathways.org/Pathway/WP4763_r108519/WP/Interaction/id6ca3ddf4>
+        rdf:type          wp:Stimulation , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4763_r108519>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4763_r108519/Interaction/id6ca3ddf4>;
+        wp:participants   <https://identifiers.org/uniprot/O70343>;
+        wp:source         <https://identifiers.org/uniprot/O70343> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_10090>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "10090" .
+
+<https://identifiers.org/wikipathways/WP4763_r108519>
+        rdf:type                wp:Pathway , skos:Collection;
+        dc:identifier           <https://identifiers.org/wikipathways/WP4763>;
+        dc:source               "WikiPathways";
+        dc:title                "Regulation of Pgc1a expression by a Gsk3b-Tfeb signaling axis in skeletal muscle"@en;
+        dcterms:description     "In (skeletal) muscle cells, PGC-1 signaling controls mitochondrial biogenesis and oxidative substrate metabolism. PGC-1 signaling disturbance in skeletal muscle is linked to several chronic diseases. This pathway depicts the mechanism in which inhibition of GSK-3β increases Pgc-1α abundance, through dephosphorylation of Tfeb [https://doi.org/10.1016/j.bbamcr.2019.118610 Theeuwes et al, 2019]. This reaction allows Tfeb to translocate to the nucleus, where it stimulates the transcription of the PPARGC1A gene to the Pgc-1α protein. Phosphorylation of Tfeb leads to binding with members of the 14-3-3 protein family, which disables transport into the nucleus. If the dephosphorylation of Tfeb through Gsk-3β is a direct or indirect reaction is as of yet unknown.";
+        dcterms:identifier      "WP4763";
+        cito:cites              <https://identifiers.org/pubmed/25561726> , <https://identifiers.org/pubmed/27617930> , <https://identifiers.org/pubmed/12606497> , <https://identifiers.org/pubmed/31738957>;
+        wp:cellTypeOntologyTag  <http://purl.obolibrary.org/obo/CL_0008002>;
+        wp:isAbout              <http://rdf.wikipathways.org/Pathway/WP4763_r108519>;
+        wp:ontologyTag          <http://purl.obolibrary.org/obo/PW_0001355> , <http://purl.obolibrary.org/obo/CL_0008002>;
+        wp:organism             <http://purl.obolibrary.org/obo/NCBITaxon_10090>;
+        wp:organismName         "Mus musculus";
+        wp:pathwayOntologyTag   <http://purl.obolibrary.org/obo/PW_0001355>;
+        foaf:img                <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4763&oldid=r108519> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4763&oldid=r108519>;
+        foaf:page               <http://www.wikipathways.org/instance/WP4763_r108519> .
+
+<https://identifiers.org/uniprot/O70343>
+        rdf:type            wp:DataNode , wp:Protein;
+        rdfs:label          "Pgc-1α";
+        dc:identifier       <https://identifiers.org/uniprot/O70343>;
+        dc:source           "Uniprot-TrEMBL";
+        dcterms:identifier  "O70343";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4763_r108519> , <http://rdf.wikipathways.org/Pathway/WP4763_r108519/WP/Interaction/c8b5d> , <http://rdf.wikipathways.org/Pathway/WP4763_r108519/WP/Interaction/id6ca3ddf4>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4763_r108519/DataNode/a1e8e>;
+        foaf:page           <http://www.uniprot.org/uniprot/O70343> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4763&oldid=r108519>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<http://rdf.wikipathways.org/Pathway/WP4763_r108519/WP/Interaction/c8b5d>
+        rdf:type            wp:DirectedInteraction , wp:TranscriptionTranslation , wp:Interaction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4763_r108519> , <http://rdf.wikipathways.org/Pathway/WP4763_r108519/WP/Interaction/id24c52389>;
+        dcterms:references  <https://identifiers.org/pubmed/31738957>;
+        cito:cites          <https://identifiers.org/pubmed/31738957>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4763_r108519/Interaction/c8b5d>;
+        wp:participants     <https://identifiers.org/ncbigene/19017> , <https://identifiers.org/uniprot/O70343>;
+        wp:source           <https://identifiers.org/ncbigene/19017>;
+        wp:target           <https://identifiers.org/uniprot/O70343> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4763&oldid=r108519>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<http://rdf.wikipathways.org/Pathway/WP4763_r108519/WP/Interaction/id4b875a32>
+        rdf:type            wp:DirectedInteraction , wp:Translocation , wp:Interaction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4763_r108519>;
+        dcterms:references  <https://identifiers.org/pubmed/25561726>;
+        cito:cites          <https://identifiers.org/pubmed/25561726>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4763_r108519/Interaction/id4b875a32>;
+        wp:participants     <https://identifiers.org/uniprot/Q9R210>;
+        wp:source           <https://identifiers.org/uniprot/Q9R210>;
+        wp:target           <https://identifiers.org/uniprot/Q9R210> .
+
+<https://identifiers.org/pubmed/31738957>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "31738957";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4763_r108519/WP/Interaction/c8b5d> , <http://rdf.wikipathways.org/Pathway/WP4763_r108519/WP/Interaction/c0ef1> , <http://rdf.wikipathways.org/Pathway/WP4763_r108519/WP/Interaction/id3993a83> , <http://rdf.wikipathways.org/Pathway/WP4763_r108519/WP/Interaction/id24c52389> , <https://identifiers.org/ncbigene/19017>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/31738957> .
+
+<http://rdf.wikipathways.org/Pathway/WP4763_r108519/ComplexBinding/a5176>
+        rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4763_r108519>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4763_r108519/Group/a5176>;
+        wp:participants   <https://identifiers.org/uniprot/Q9R210> , <https://identifiers.org/interpro/IPR000308> , <http://rdf.wikipathways.org/Pathway/WP4763_r108519/Complex/a5176> .
+
+<https://identifiers.org/pubmed/25561726>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "25561726";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4763_r108519/WP/Interaction/id4b875a32>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/25561726> .
+
+<http://rdf.wikipathways.org/Pathway/WP4763_r108519/Complex/a5176>
+        rdf:type          wp:Complex , wp:DataNode;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4763_r108519>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4763_r108519/Group/a5176>;
+        wp:participants   <https://identifiers.org/uniprot/Q9R210> , <https://identifiers.org/interpro/IPR000308> .
+
 <https://identifiers.org/pubchem.compound/9956119>
         rdf:type            wp:Metabolite , wp:DataNode;
         rdfs:label          "CHIR99021";
         dc:identifier       <https://identifiers.org/pubchem.compound/9956119>;
         dc:source           "PubChem-compound";
         dcterms:identifier  "9956119";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4763/WP4763_rWP4763_r108519/DataNode/afa97>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4763_r108519/WP/Interaction/id966e285c> , <https://identifiers.org/wikipathways/WP4763_r108519>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4763_r108519/DataNode/afa97>;
         foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=9956119> .
 
-<https://identifiers.org/uniprot/Q9WV60>
-        rdf:type            wp:Protein , wp:DataNode;
-        rdfs:label          "Gsk-3β";
-        dc:identifier       <https://identifiers.org/uniprot/Q9WV60>;
-        dc:source           "Uniprot-TrEMBL";
-        dcterms:identifier  "Q9WV60";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4763/WP4763_rWP4763_r108519/DataNode/c0b71>;
-        foaf:page           <http://www.uniprot.org/uniprot/Q9WV60> .
-
-<https://identifiers.org/uniprot/O70343>
-        rdf:type            wp:Protein , wp:DataNode;
-        rdfs:label          "Pgc-1α";
-        dc:identifier       <https://identifiers.org/uniprot/O70343>;
-        dc:source           "Uniprot-TrEMBL";
-        dcterms:identifier  "O70343";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4763/WP4763_rWP4763_r108519/DataNode/a1e8e>;
-        foaf:page           <http://www.uniprot.org/uniprot/O70343> .
+<http://rdf.wikipathways.org/Pathway/WP4763_r108519/WP/Interaction/id966e285c>
+        rdf:type            wp:Interaction , wp:Inhibition , wp:DirectedInteraction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4763_r108519>;
+        dcterms:references  <https://identifiers.org/pubmed/12606497>;
+        cito:cites          <https://identifiers.org/pubmed/12606497>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4763_r108519/Interaction/id966e285c>;
+        wp:participants     <https://identifiers.org/pubchem.compound/9956119> , <https://identifiers.org/uniprot/Q9WV60>;
+        wp:source           <https://identifiers.org/pubchem.compound/9956119>;
+        wp:target           <https://identifiers.org/uniprot/Q9WV60> .
 
 <https://identifiers.org/uniprot/Q9R210>
         rdf:type            wp:DataNode , wp:Protein;
@@ -49,34 +155,72 @@
         dc:identifier       <https://identifiers.org/uniprot/Q9R210>;
         dc:source           "Uniprot-TrEMBL";
         dcterms:identifier  "Q9R210";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4763/WP4763_rWP4763_r108519/DataNode/b4ed2> , <http://rdf.wikipathways.org/Pathway/WP4763/WP4763_rWP4763_r108519/DataNode/c88d8> , <http://rdf.wikipathways.org/Pathway/WP4763/WP4763_rWP4763_r108519/DataNode/d295e> , <http://rdf.wikipathways.org/Pathway/WP4763/WP4763_rWP4763_r108519/DataNode/aee77>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4763_r108519/Complex/a5176> , <http://rdf.wikipathways.org/Pathway/WP4763_r108519/WP/Interaction/idc2c87159> , <http://rdf.wikipathways.org/Pathway/WP4763_r108519/WP/Interaction/id24c52389> , <http://rdf.wikipathways.org/Pathway/WP4763_r108519/WP/Interaction/id4b875a32> , <http://rdf.wikipathways.org/Pathway/WP4763_r108519/WP/Interaction/id3993a83> , <https://identifiers.org/wikipathways/WP4763_r108519>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4763_r108519/DataNode/b4ed2> , <http://rdf.wikipathways.org/Pathway/WP4763_r108519/DataNode/c88d8> , <http://rdf.wikipathways.org/Pathway/WP4763_r108519/DataNode/d295e> , <http://rdf.wikipathways.org/Pathway/WP4763_r108519/DataNode/aee77>;
         foaf:page           <http://www.uniprot.org/uniprot/Q9R210> .
 
-<https://identifiers.org/interpro/IPR000308>
-        rdf:type            wp:Protein , wp:DataNode;
-        rdfs:label          "14-3-3  protein family";
-        dc:identifier       <https://identifiers.org/interpro/IPR000308>;
-        dc:source           "InterPro";
-        dcterms:identifier  "IPR000308";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4763/WP4763_rWP4763_r108519/DataNode/a42b5>;
-        foaf:page           <http://www.ebi.ac.uk/interpro/DisplayIproEntry?ac=IPR000308> .
+<http://rdf.wikipathways.org/Pathway/WP4763_r108519/WP/Interaction/c0ef1>
+        rdf:type            wp:Interaction , wp:DirectedInteraction , wp:Stimulation;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4763_r108519>;
+        dcterms:references  <https://identifiers.org/pubmed/31738957> , <https://identifiers.org/pubmed/27617930>;
+        cito:cites          <https://identifiers.org/pubmed/27617930> , <https://identifiers.org/pubmed/31738957>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4763_r108519/Interaction/c0ef1>;
+        wp:participants     <https://identifiers.org/uniprot/Q9WV60> , <http://rdf.wikipathways.org/Pathway/WP4763_r108519/WP/Interaction/id3993a83>;
+        wp:source           <https://identifiers.org/uniprot/Q9WV60>;
+        wp:target           <http://rdf.wikipathways.org/Pathway/WP4763_r108519/WP/Interaction/id3993a83> .
 
 <https://identifiers.org/ncbigene/19017>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "PPARGC1A  promotor";
         dc:identifier       <https://identifiers.org/ncbigene/19017>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "19017";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4763/WP4763_rWP4763_r108519/DataNode/f7138>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4763_r108519> , <http://rdf.wikipathways.org/Pathway/WP4763_r108519/WP/Interaction/c8b5d>;
+        dcterms:references  <https://identifiers.org/pubmed/31738957>;
+        cito:cites          <https://identifiers.org/pubmed/31738957>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4763_r108519/DataNode/f7138>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/19017> .
 
-<https://identifiers.org/wikipathways/WP4763/WP4763_rWP4763_r108519>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP4763/WP4763>;
-        dc:source            "WikiPathways";
-        dc:title             "Regulation of Pgc1a expression by a Gsk3b-Tfeb signaling axis in skeletal muscle"@en;
-        dcterms:description  "In (skeletal) muscle cells, PGC-1 signaling controls mitochondrial biogenesis and oxidative substrate metabolism. PGC-1 signaling disturbance in skeletal muscle is linked to several chronic diseases. This pathway depicts the mechanism in which inhibition of GSK-3β increases Pgc-1α abundance, through dephosphorylation of Tfeb [https://doi.org/10.1016/j.bbamcr.2019.118610 Theeuwes et al, 2019]. This reaction allows Tfeb to translocate to the nucleus, where it stimulates the transcription of the PPARGC1A gene to the Pgc-1α protein. Phosphorylation of Tfeb leads to binding with members of the 14-3-3 protein family, which disables transport into the nucleus. If the dephosphorylation of Tfeb through Gsk-3β is a direct or indirect reaction is as of yet unknown.";
-        dcterms:identifier   "WP4763/WP4763";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP4763/WP4763_rWP4763_r108519>;
-        wp:organismName      "Mus musculus";
-        foaf:page            <http://www.wikipathways.org/instance/WP4763/WP4763_rWP4763_r108519> .
+<https://identifiers.org/uniprot/Q9WV60>
+        rdf:type            wp:DataNode , wp:Protein;
+        rdfs:label          "Gsk-3β";
+        dc:identifier       <https://identifiers.org/uniprot/Q9WV60>;
+        dc:source           "Uniprot-TrEMBL";
+        dcterms:identifier  "Q9WV60";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4763_r108519/WP/Interaction/c0ef1> , <http://rdf.wikipathways.org/Pathway/WP4763_r108519/WP/Interaction/id966e285c> , <https://identifiers.org/wikipathways/WP4763_r108519>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4763_r108519/DataNode/c0b71>;
+        foaf:page           <http://www.uniprot.org/uniprot/Q9WV60> .
+
+<https://identifiers.org/pubmed/27617930>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "27617930";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4763_r108519/WP/Interaction/c0ef1>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/27617930> .
+
+<https://identifiers.org/pubmed/12606497>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "12606497";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4763_r108519/WP/Interaction/id966e285c>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/12606497> .
+
+<http://rdf.wikipathways.org/Pathway/WP4763_r108519/WP/Interaction/id24c52389>
+        rdf:type            wp:Stimulation , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4763_r108519>;
+        dcterms:references  <https://identifiers.org/pubmed/31738957>;
+        cito:cites          <https://identifiers.org/pubmed/31738957>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4763_r108519/Interaction/id24c52389>;
+        wp:participants     <http://rdf.wikipathways.org/Pathway/WP4763_r108519/WP/Interaction/c8b5d> , <https://identifiers.org/uniprot/Q9R210>;
+        wp:source           <https://identifiers.org/uniprot/Q9R210>;
+        wp:target           <http://rdf.wikipathways.org/Pathway/WP4763_r108519/WP/Interaction/c8b5d> .
+
+<http://rdf.wikipathways.org/Pathway/WP4763_r108519/WP/Interaction/id3993a83>
+        rdf:type            wp:DirectedInteraction , wp:Conversion , wp:Interaction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4763_r108519> , <http://rdf.wikipathways.org/Pathway/WP4763_r108519/WP/Interaction/c0ef1>;
+        dcterms:references  <https://identifiers.org/pubmed/31738957>;
+        cito:cites          <https://identifiers.org/pubmed/31738957>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4763_r108519/Interaction/id3993a83>;
+        wp:participants     <https://identifiers.org/uniprot/Q9R210>;
+        wp:source           <https://identifiers.org/uniprot/Q9R210>;
+        wp:target           <https://identifiers.org/uniprot/Q9R210> .

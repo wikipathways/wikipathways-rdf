@@ -22,7 +22,8 @@
         dc:identifier       <https://identifiers.org/sgd/S000001589>;
         dc:source           "SGD";
         dcterms:identifier  "S000001589";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP432/WP432_rWP432_r89547/DataNode/f88>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP432_r89547>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP432_r89547/DataNode/f88>;
         foaf:page           <http://www.yeastgenome.org/locus/S000001589> .
 
 <https://identifiers.org/sgd/S000004150>
@@ -31,7 +32,8 @@
         dc:identifier       <https://identifiers.org/sgd/S000004150>;
         dc:source           "SGD";
         dcterms:identifier  "S000004150";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP432/WP432_rWP432_r89547/DataNode/c62>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP432_r89547>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP432_r89547/DataNode/c62>;
         foaf:page           <http://www.yeastgenome.org/locus/S000004150> .
 
 <https://identifiers.org/sgd/S000004017>
@@ -40,19 +42,28 @@
         dc:identifier       <https://identifiers.org/sgd/S000004017>;
         dc:source           "SGD";
         dcterms:identifier  "S000004017";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP432/WP432_rWP432_r89547/DataNode/b87>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP432_r89547>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP432_r89547/DataNode/b87>;
         foaf:page           <http://www.yeastgenome.org/locus/S000004017> .
 
-<https://identifiers.org/wikipathways/WP432/WP432_rWP432_r89547>
-        rdf:type             wp:Pathway , skos:Collection;
-        dc:identifier        <https://identifiers.org/wikipathways/WP432/WP432>;
-        dc:source            "WikiPathways";
-        dc:title             "Asparagine degradation"@en;
-        dcterms:description  "ter Schure, E.G. et al suggest that in yeast, degradation of nitrogen sources yields either ammonia or glutamate. \nSOURCE: SGD pathways, http://pathway.yeastgenome.org/server.html";
-        dcterms:identifier   "WP432/WP432";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP432/WP432_rWP432_r89547>;
-        wp:organismName      "Saccharomyces cerevisiae";
-        foaf:page            <http://www.wikipathways.org/instance/WP432/WP432_rWP432_r89547> .
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP432&oldid=r89547>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<https://identifiers.org/pubmed/10640599>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "10640599";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP432_r89547>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/10640599> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_4932>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "4932" .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP432&oldid=r89547>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
 
 <https://identifiers.org/sgd/S000004148>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -60,8 +71,40 @@
         dc:identifier       <https://identifiers.org/sgd/S000004148>;
         dc:source           "SGD";
         dcterms:identifier  "S000004148";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP432/WP432_rWP432_r89547/DataNode/be1>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP432_r89547>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP432_r89547/DataNode/be1>;
         foaf:page           <http://www.yeastgenome.org/locus/S000004148> .
+
+<https://identifiers.org/wikipathways/WP432_r89547>
+        rdf:type               skos:Collection , wp:Pathway;
+        dc:identifier          <https://identifiers.org/wikipathways/WP432>;
+        dc:source              "WikiPathways";
+        dc:title               "Asparagine degradation"@en;
+        dcterms:description    "ter Schure, E.G. et al suggest that in yeast, degradation of nitrogen sources yields either ammonia or glutamate. \nSOURCE: SGD pathways, http://pathway.yeastgenome.org/server.html";
+        dcterms:identifier     "WP432";
+        dcterms:references     <https://identifiers.org/pubmed/10640599>;
+        cito:cites             <https://identifiers.org/pubmed/10640599>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP432_r89547>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0001083>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_4932>;
+        wp:organismName        "Saccharomyces cerevisiae";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0001083>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP432&oldid=r89547> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP432&oldid=r89547>;
+        foaf:page              <http://www.wikipathways.org/instance/WP432_r89547> .
+
+<http://rdf.wikipathways.org/Pathway/WP432_r89547/WP/Interaction/id67eb511>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP432_r89547>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP432_r89547/Interaction/id67eb511>;
+        wp:participants   <https://identifiers.org/cas/70-47-3>;
+        wp:source         <https://identifiers.org/cas/70-47-3> .
+
+<http://rdf.wikipathways.org/Pathway/WP432_r89547/WP/Interaction/idb6e0f93b>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP432_r89547>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP432_r89547/Interaction/idb6e0f93b>;
+        wp:participants   <https://identifiers.org/cas/56-86-0>;
+        wp:target         <https://identifiers.org/cas/56-86-0> .
 
 <https://identifiers.org/sgd/S000004145>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -69,16 +112,18 @@
         dc:identifier       <https://identifiers.org/sgd/S000004145>;
         dc:source           "SGD";
         dcterms:identifier  "S000004145";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP432/WP432_rWP432_r89547/DataNode/b2e>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP432_r89547>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP432_r89547/DataNode/b2e>;
         foaf:page           <http://www.yeastgenome.org/locus/S000004145> .
 
 <https://identifiers.org/cas/70-47-3>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "L-asparagine";
         dc:identifier       <https://identifiers.org/cas/70-47-3>;
         dc:source           "CAS";
         dcterms:identifier  "70-47-3";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP432/WP432_rWP432_r89547/DataNode/f5f>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP432_r89547/WP/Interaction/id67eb511> , <https://identifiers.org/wikipathways/WP432_r89547>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP432_r89547/DataNode/f5f>;
         foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=70-47-3> .
 
 <https://identifiers.org/sgd/S000004147>
@@ -87,7 +132,8 @@
         dc:identifier       <https://identifiers.org/sgd/S000004147>;
         dc:source           "SGD";
         dcterms:identifier  "S000004147";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP432/WP432_rWP432_r89547/DataNode/d49>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP432_r89547>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP432_r89547/DataNode/d49>;
         foaf:page           <http://www.yeastgenome.org/locus/S000004147> .
 
 <https://identifiers.org/sgd/S000002729>
@@ -96,14 +142,19 @@
         dc:identifier       <https://identifiers.org/sgd/S000002729>;
         dc:source           "SGD";
         dcterms:identifier  "S000002729";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP432/WP432_rWP432_r89547/DataNode/b18>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP432_r89547>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP432_r89547/DataNode/b18>;
         foaf:page           <http://www.yeastgenome.org/locus/S000002729> .
 
+<https://identifiers.org/wikipathways/WP432>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP432_r89547> .
+
 <https://identifiers.org/cas/56-86-0>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "L-glutamate";
         dc:identifier       <https://identifiers.org/cas/56-86-0>;
         dc:source           "CAS";
         dcterms:identifier  "56-86-0";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP432/WP432_rWP432_r89547/DataNode/dd8>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP432_r89547> , <http://rdf.wikipathways.org/Pathway/WP432_r89547/WP/Interaction/idb6e0f93b>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP432_r89547/DataNode/dd8>;
         foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=56-86-0> .

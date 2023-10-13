@@ -16,24 +16,14 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/wikipathways/WP5077/WP5077_rWP5077_r122821>
-        rdf:type             wp:Pathway , skos:Collection;
-        dc:identifier        <https://identifiers.org/wikipathways/WP5077/WP5077>;
-        dc:source            "WikiPathways";
-        dc:title             "Response to acute ibuprofen exposure"@en;
-        dcterms:description  "Pathway that describes the biological response found in Daphnia magna after exposure to ibuprofen.\n\nWarning: Gene identifiers are based on the full names in the Additional File 1 as the article does not contains accession numbers for the Daphnia genes. Search in Ensembl returned on several occasions multiple potential hits where one was randomly selected. ";
-        dcterms:identifier   "WP5077/WP5077";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP5077/WP5077_rWP5077_r122821>;
-        wp:organismName      "Daphnia magna";
-        foaf:page            <http://www.wikipathways.org/instance/WP5077/WP5077_rWP5077_r122821> .
-
 <https://identifiers.org/chebi/CHEBI:64482>
         rdf:type            wp:Metabolite , wp:DataNode;
         rdfs:label          "Phospahtidylcholine";
         dc:identifier       <https://identifiers.org/chebi/CHEBI:64482>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:64482";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5077/WP5077_rWP5077_r122821/DataNode/ddea4>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5077_r122821>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5077_r122821/DataNode/ddea4>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:64482> .
 
 <https://identifiers.org/ensembl/APZ42_024669>
@@ -42,7 +32,8 @@
         dc:identifier       <https://identifiers.org/ensembl/APZ42_024669>;
         dc:source           "Ensembl";
         dcterms:identifier  "APZ42_024669";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5077/WP5077_rWP5077_r122821/DataNode/c3801>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5077_r122821>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5077_r122821/DataNode/c3801>;
         foaf:page           <https://www.ensembl.org/id/APZ42_024669> .
 
 <https://identifiers.org/chebi/CHEBI:49172>
@@ -51,7 +42,8 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:49172>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:49172";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5077/WP5077_rWP5077_r122821/DataNode/fbca2>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5077_r122821>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5077_r122821/DataNode/fbca2>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:49172> .
 
 <https://identifiers.org/ensembl/APZ42_014858>
@@ -60,8 +52,37 @@
         dc:identifier       <https://identifiers.org/ensembl/APZ42_014858>;
         dc:source           "Ensembl";
         dcterms:identifier  "APZ42_014858";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5077/WP5077_rWP5077_r122821/DataNode/fb82b>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5077_r122821>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5077_r122821/DataNode/fb82b>;
         foaf:page           <https://www.ensembl.org/id/APZ42_014858> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP5077&oldid=r122821>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<https://identifiers.org/pubmed/18291039>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "18291039";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5077_r122821>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/18291039> .
+
+<https://identifiers.org/wikipathways/WP5077_r122821>
+        rdf:type               wp:Pathway , skos:Collection;
+        dc:identifier          <https://identifiers.org/wikipathways/WP5077>;
+        dc:source              "WikiPathways";
+        dc:title               "Response to acute ibuprofen exposure"@en;
+        dcterms:description    "Pathway that describes the biological response found in Daphnia magna after exposure to ibuprofen.\n\nWarning: Gene identifiers are based on the full names in the Additional File 1 as the article does not contains accession numbers for the Daphnia genes. Search in Ensembl returned on several occasions multiple potential hits where one was randomly selected. ";
+        dcterms:identifier     "WP5077";
+        dcterms:references     <https://identifiers.org/pubmed/18291039>;
+        cito:cites             <https://identifiers.org/pubmed/18291039>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP5077_r122821>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000754>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_35525>;
+        wp:organismName        "Daphnia magna";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000754>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP5077&oldid=r122821> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP5077&oldid=r122821>;
+        foaf:page              <http://www.wikipathways.org/instance/WP5077_r122821> .
 
 <https://identifiers.org/ensembl/APZ42_018910>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -69,7 +90,8 @@
         dc:identifier       <https://identifiers.org/ensembl/APZ42_018910>;
         dc:source           "Ensembl";
         dcterms:identifier  "APZ42_018910";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5077/WP5077_rWP5077_r122821/DataNode/a51c5>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5077_r122821>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5077_r122821/DataNode/a51c5>;
         foaf:page           <https://www.ensembl.org/id/APZ42_018910> .
 
 <https://identifiers.org/ensembl/APZ42_020436>
@@ -78,16 +100,22 @@
         dc:identifier       <https://identifiers.org/ensembl/APZ42_020436>;
         dc:source           "Ensembl";
         dcterms:identifier  "APZ42_020436";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5077/WP5077_rWP5077_r122821/DataNode/feb42>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5077_r122821>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5077_r122821/DataNode/feb42>;
         foaf:page           <https://www.ensembl.org/id/APZ42_020436> .
 
+<http://purl.obolibrary.org/obo/NCBITaxon_35525>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "35525" .
+
 <https://identifiers.org/ensembl/APZ42_024578>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "ACS";
         dc:identifier       <https://identifiers.org/ensembl/APZ42_024578>;
         dc:source           "Ensembl";
         dcterms:identifier  "APZ42_024578";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5077/WP5077_rWP5077_r122821/DataNode/bd95f> , <http://rdf.wikipathways.org/Pathway/WP5077/WP5077_rWP5077_r122821/DataNode/bd75e>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5077_r122821>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5077_r122821/DataNode/bd75e> , <http://rdf.wikipathways.org/Pathway/WP5077_r122821/DataNode/bd95f>;
         foaf:page           <https://www.ensembl.org/id/APZ42_024578> .
 
 <https://identifiers.org/ensembl/APZ42_030648>
@@ -96,8 +124,13 @@
         dc:identifier       <https://identifiers.org/ensembl/APZ42_030648>;
         dc:source           "Ensembl";
         dcterms:identifier  "APZ42_030648";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5077/WP5077_rWP5077_r122821/DataNode/c54fe>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5077_r122821>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5077_r122821/DataNode/c54fe>;
         foaf:page           <https://www.ensembl.org/id/APZ42_030648> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP5077&oldid=r122821>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
 
 <https://identifiers.org/ensembl/APZ42_018388>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -105,8 +138,12 @@
         dc:identifier       <https://identifiers.org/ensembl/APZ42_018388>;
         dc:source           "Ensembl";
         dcterms:identifier  "APZ42_018388";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5077/WP5077_rWP5077_r122821/DataNode/d190d>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5077_r122821>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5077_r122821/DataNode/d190d>;
         foaf:page           <https://www.ensembl.org/id/APZ42_018388> .
+
+<https://identifiers.org/wikipathways/WP5077>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP5077_r122821> .
 
 <https://identifiers.org/ensembl/APZ42_029151>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -114,7 +151,8 @@
         dc:identifier       <https://identifiers.org/ensembl/APZ42_029151>;
         dc:source           "Ensembl";
         dcterms:identifier  "APZ42_029151";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5077/WP5077_rWP5077_r122821/DataNode/eef0d>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5077_r122821>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5077_r122821/DataNode/eef0d>;
         foaf:page           <https://www.ensembl.org/id/APZ42_029151> .
 
 <https://identifiers.org/ensembl/APZ42_021009>
@@ -123,5 +161,6 @@
         dc:identifier       <https://identifiers.org/ensembl/APZ42_021009>;
         dc:source           "Ensembl";
         dcterms:identifier  "APZ42_021009";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5077/WP5077_rWP5077_r122821/DataNode/e80c4>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5077_r122821>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5077_r122821/DataNode/e80c4>;
         foaf:page           <https://www.ensembl.org/id/APZ42_021009> .

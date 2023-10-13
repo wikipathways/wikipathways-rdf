@@ -16,16 +16,37 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/wikipathways/WP2928/WP2928_rWP2928_r118946>
-        rdf:type             wp:Pathway , skos:Collection;
-        dc:identifier        <https://identifiers.org/wikipathways/WP2928/WP2928>;
-        dc:source            "WikiPathways";
-        dc:title             "miR-222 in exercise-induced cardiac growth"@en;
-        dcterms:description  "miR-222 is necessary for exercise-induced cardiac growth and protects against pathological cardiac remodeling.";
-        dcterms:identifier   "WP2928/WP2928";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP2928/WP2928_rWP2928_r118946>;
-        wp:organismName      "Mus musculus";
-        foaf:page            <http://www.wikipathways.org/instance/WP2928/WP2928_rWP2928_r118946> .
+<http://purl.obolibrary.org/obo/NCBITaxon_10090>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "10090" .
+
+<https://identifiers.org/wikipathways/WP2928>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP2928_r118946> .
+
+<https://identifiers.org/pubmed/25863248>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "25863248";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2928_r118946>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/25863248> .
+
+<https://identifiers.org/wikipathways/WP2928_r118946>
+        rdf:type                skos:Collection , wp:Pathway;
+        dc:identifier           <https://identifiers.org/wikipathways/WP2928>;
+        dc:source               "WikiPathways";
+        dc:title                "miR-222 in exercise-induced cardiac growth"@en;
+        dcterms:description     "miR-222 is necessary for exercise-induced cardiac growth and protects against pathological cardiac remodeling.";
+        dcterms:identifier      "WP2928";
+        dcterms:references      <https://identifiers.org/pubmed/25863248>;
+        cito:cites              <https://identifiers.org/pubmed/25863248>;
+        wp:cellTypeOntologyTag  <http://purl.obolibrary.org/obo/CL_0000746>;
+        wp:isAbout              <http://rdf.wikipathways.org/Pathway/WP2928_r118946>;
+        wp:ontologyTag          <http://purl.obolibrary.org/obo/PW_0000808> , <http://purl.obolibrary.org/obo/CL_0000746> , <http://purl.obolibrary.org/obo/PW_0000004>;
+        wp:organism             <http://purl.obolibrary.org/obo/NCBITaxon_10090>;
+        wp:organismName         "Mus musculus";
+        wp:pathwayOntologyTag   <http://purl.obolibrary.org/obo/PW_0000808> , <http://purl.obolibrary.org/obo/PW_0000004>;
+        foaf:img                <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP2928&oldid=r118946> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP2928&oldid=r118946>;
+        foaf:page               <http://www.wikipathways.org/instance/WP2928_r118946> .
 
 <https://identifiers.org/ensembl/ENSMUSG00000021972>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -33,8 +54,13 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000021972>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSMUSG00000021972";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2928/WP2928_rWP2928_r118946/DataNode/eada6>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2928_r118946> , <http://rdf.wikipathways.org/Pathway/WP2928_r118946/WP/Interaction/ac720> , <http://rdf.wikipathways.org/Pathway/WP2928_r118946/WP/Interaction/idc62262fa>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2928_r118946/DataNode/eada6>;
         foaf:page           <https://www.ensembl.org/id/ENSMUSG00000021972> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP2928&oldid=r118946>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
 
 <https://identifiers.org/ensembl/ENSMUSG00000061436>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -42,7 +68,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000061436>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSMUSG00000061436";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2928/WP2928_rWP2928_r118946/DataNode/ee50c>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2928_r118946>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2928_r118946/DataNode/ee50c>;
         foaf:page           <https://www.ensembl.org/id/ENSMUSG00000061436> .
 
 <https://identifiers.org/ensembl/ENSMUSG00000003031>
@@ -51,7 +78,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000003031>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSMUSG00000003031";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2928/WP2928_rWP2928_r118946/DataNode/da55b>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2928_r118946/WP/Interaction/id3388e8cc> , <http://rdf.wikipathways.org/Pathway/WP2928_r118946/WP/Interaction/id456aac16> , <https://identifiers.org/wikipathways/WP2928_r118946>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2928_r118946/DataNode/da55b>;
         foaf:page           <https://www.ensembl.org/id/ENSMUSG00000003031> .
 
 <https://identifiers.org/ensembl/ENSMUSG00000065471>
@@ -60,8 +88,17 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000065471>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSMUSG00000065471";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2928/WP2928_rWP2928_r118946/DataNode/f0c6a>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2928_r118946/WP/Interaction/idc62262fa> , <https://identifiers.org/wikipathways/WP2928_r118946> , <http://rdf.wikipathways.org/Pathway/WP2928_r118946/WP/Interaction/idbe43a34b> , <http://rdf.wikipathways.org/Pathway/WP2928_r118946/WP/Interaction/id3388e8cc>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2928_r118946/DataNode/f0c6a>;
         foaf:page           <https://www.ensembl.org/id/ENSMUSG00000065471> .
+
+<http://rdf.wikipathways.org/Pathway/WP2928_r118946/WP/Interaction/idc62262fa>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2928_r118946>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2928_r118946/Interaction/idc62262fa>;
+        wp:participants   <https://identifiers.org/ensembl/ENSMUSG00000021972> , <https://identifiers.org/ensembl/ENSMUSG00000065471>;
+        wp:source         <https://identifiers.org/ensembl/ENSMUSG00000065471>;
+        wp:target         <https://identifiers.org/ensembl/ENSMUSG00000021972> .
 
 <https://identifiers.org/ensembl/ENSMUSG00000008730>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -69,5 +106,39 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000008730>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSMUSG00000008730";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2928/WP2928_rWP2928_r118946/DataNode/f37b0>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2928_r118946>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2928_r118946/DataNode/f37b0>;
         foaf:page           <https://www.ensembl.org/id/ENSMUSG00000008730> .
+
+<http://rdf.wikipathways.org/Pathway/WP2928_r118946/WP/Interaction/id456aac16>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2928_r118946>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2928_r118946/Interaction/id456aac16>;
+        wp:participants   <https://identifiers.org/ensembl/ENSMUSG00000003031>;
+        wp:source         <https://identifiers.org/ensembl/ENSMUSG00000003031> .
+
+<http://rdf.wikipathways.org/Pathway/WP2928_r118946/WP/Interaction/id3388e8cc>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2928_r118946>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2928_r118946/Interaction/id3388e8cc>;
+        wp:participants   <https://identifiers.org/ensembl/ENSMUSG00000003031> , <https://identifiers.org/ensembl/ENSMUSG00000065471>;
+        wp:source         <https://identifiers.org/ensembl/ENSMUSG00000065471>;
+        wp:target         <https://identifiers.org/ensembl/ENSMUSG00000003031> .
+
+<http://rdf.wikipathways.org/Pathway/WP2928_r118946/WP/Interaction/idbe43a34b>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2928_r118946>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2928_r118946/Interaction/idbe43a34b>;
+        wp:participants   <https://identifiers.org/ensembl/ENSMUSG00000065471>;
+        wp:target         <https://identifiers.org/ensembl/ENSMUSG00000065471> .
+
+<http://rdf.wikipathways.org/Pathway/WP2928_r118946/WP/Interaction/ac720>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2928_r118946>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2928_r118946/Interaction/ac720>;
+        wp:participants   <https://identifiers.org/ensembl/ENSMUSG00000021972>;
+        wp:source         <https://identifiers.org/ensembl/ENSMUSG00000021972> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP2928&oldid=r118946>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .

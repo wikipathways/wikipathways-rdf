@@ -16,41 +16,31 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/hmdb/HMDB0001126>
-        rdf:type            wp:DataNode , wp:Metabolite;
-        rdfs:label          "Nornicotine";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0001126>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0001126";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3185/WP3185_rWP3185_r117574/DataNode/c40da> , <http://rdf.wikipathways.org/Pathway/WP3185/WP3185_rWP3185_r117574/DataNode/e2740> , <http://rdf.wikipathways.org/Pathway/WP3185/WP3185_rWP3185_r117574/DataNode/f0663> , <http://rdf.wikipathways.org/Pathway/WP3185/WP3185_rWP3185_r117574/DataNode/f4fcd>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001126> .
-
-<https://identifiers.org/ensembl/ENSBTAG00000020597>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "FMO3";
-        dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000020597>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSBTAG00000020597";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3185/WP3185_rWP3185_r117574/DataNode/c704a>;
-        foaf:page           <https://www.ensembl.org/id/ENSBTAG00000020597> .
-
-<https://identifiers.org/hmdb/HMDB0001272>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Nicotine-Gluc";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0001272>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0001272";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3185/WP3185_rWP3185_r117574/DataNode/e822f> , <http://rdf.wikipathways.org/Pathway/WP3185/WP3185_rWP3185_r117574/DataNode/c2bbe>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001272> .
-
 <https://identifiers.org/ensembl/ENSBTAG00000047815>
         rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "CYP2A6";
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000047815>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000047815";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3185/WP3185_rWP3185_r117574/DataNode/e0177> , <http://rdf.wikipathways.org/Pathway/WP3185/WP3185_rWP3185_r117574/DataNode/f3939> , <http://rdf.wikipathways.org/Pathway/WP3185/WP3185_rWP3185_r117574/DataNode/c73b6>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id16ff35b> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/ideec053cb> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id1103a475> , <https://identifiers.org/wikipathways/WP3185_r117574>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3185_r117574/DataNode/c73b6> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/DataNode/f3939> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/DataNode/e0177>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000047815> .
+
+<http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/ide65566fe>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3185_r117574>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3185_r117574/Interaction/ide65566fe>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001013>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001013>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001013> .
+
+<http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id7c70628e>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/ideec053cb> , <https://identifiers.org/wikipathways/WP3185_r117574>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3185_r117574/Interaction/id7c70628e>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001126> , <https://identifiers.org/hmdb/HMDB0001046>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001046>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001126> .
 
 <https://identifiers.org/hmdb/HMDB0001390>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -58,35 +48,85 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0001390>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0001390";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3185/WP3185_rWP3185_r117574/DataNode/f8eb3> , <http://rdf.wikipathways.org/Pathway/WP3185/WP3185_rWP3185_r117574/DataNode/a3d56>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id1e624d4b> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/idf76e3d2e> , <https://identifiers.org/wikipathways/WP3185_r117574> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/ida07b9435>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3185_r117574/DataNode/f8eb3> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/DataNode/a3d56>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001390> .
 
-<https://identifiers.org/hmdb/HMDB0001204>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "3'-Hydroxycotinine glucuronide";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0001204>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0001204";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3185/WP3185_rWP3185_r117574/DataNode/bc957> , <http://rdf.wikipathways.org/Pathway/WP3185/WP3185_rWP3185_r117574/DataNode/b4967>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001204> .
+<http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/idc005334f>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3185_r117574>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3185_r117574/Interaction/idc005334f>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001126>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001126>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001126> .
 
-<https://identifiers.org/hmdb/HMDB0001013>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Cotinineglucuronide";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0001013>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0001013";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3185/WP3185_rWP3185_r117574/DataNode/f8f23> , <http://rdf.wikipathways.org/Pathway/WP3185/WP3185_rWP3185_r117574/DataNode/f47ac>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001013> .
+<http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id92b39cf9>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3185_r117574>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3185_r117574/Interaction/id92b39cf9>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001272>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001272>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001272> .
 
-<https://identifiers.org/hmdb/HMDB0001046>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Cotinine";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0001046>;
+<http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id9d06dec1>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3185_r117574> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id1103a475>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3185_r117574/Interaction/id9d06dec1>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001427> , <https://identifiers.org/hmdb/HMDB0001046>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001046>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001427> .
+
+<http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id550f9c16>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3185_r117574>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3185_r117574/Interaction/id550f9c16>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001411> , <https://identifiers.org/hmdb/HMDB0001046>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001046>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001411> .
+
+<https://identifiers.org/hmdb/HMDB0001427>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "5'-Hydroxycotinine";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0001427>;
         dc:source           "HMDB";
-        dcterms:identifier  "HMDB0001046";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3185/WP3185_rWP3185_r117574/DataNode/fb9f6> , <http://rdf.wikipathways.org/Pathway/WP3185/WP3185_rWP3185_r117574/DataNode/afd8d>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001046> .
+        dcterms:identifier  "HMDB0001427";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id31efe745> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id9d06dec1> , <https://identifiers.org/wikipathways/WP3185_r117574>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3185_r117574/DataNode/b6d51> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/DataNode/c19cd>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001427> .
+
+<http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id16ff35b>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3185_r117574>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3185_r117574/Interaction/id16ff35b>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/ida07b9435> , <https://identifiers.org/ensembl/ENSBTAG00000047815>;
+        wp:source         <https://identifiers.org/ensembl/ENSBTAG00000047815>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/ida07b9435> .
+
+<https://identifiers.org/ensembl/ENSBTAG00000020597>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "FMO3";
+        dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000020597>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSBTAG00000020597";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3185_r117574> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/ideb54f1da>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3185_r117574/DataNode/c704a>;
+        foaf:page           <https://www.ensembl.org/id/ENSBTAG00000020597> .
+
+<http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id8d074529>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3185_r117574>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3185_r117574/Interaction/id8d074529>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001934> , <https://identifiers.org/hmdb/HMDB0001497>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001497>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001934> .
+
+<http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/ida840ab26>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3185_r117574>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3185_r117574/Interaction/ida840ab26>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001272> , <https://identifiers.org/hmdb/HMDB0001934>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001934>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001272> .
 
 <https://identifiers.org/hmdb/HMDB0001934>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -94,17 +134,51 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0001934>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0001934";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3185/WP3185_rWP3185_r117574/DataNode/e91eb> , <http://rdf.wikipathways.org/Pathway/WP3185/WP3185_rWP3185_r117574/DataNode/d07db>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/ida840ab26> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id287d8ec9> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/idb96ead43> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id40cb18b1> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id8d074529> , <https://identifiers.org/wikipathways/WP3185_r117574>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3185_r117574/DataNode/e91eb> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/DataNode/d07db>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001934> .
 
-<https://identifiers.org/ensembl/ENSBTAG00000009725>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "AOX1";
-        dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000009725>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSBTAG00000009725";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3185/WP3185_rWP3185_r117574/DataNode/f1f1a>;
-        foaf:page           <https://www.ensembl.org/id/ENSBTAG00000009725> .
+<http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/ida830b2a7>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3185_r117574>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3185_r117574/Interaction/ida830b2a7>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001013> , <https://identifiers.org/hmdb/HMDB0001046>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001046>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001013> .
+
+<http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/ideec053cb>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3185_r117574>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3185_r117574/Interaction/ideec053cb>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id7c70628e> , <https://identifiers.org/ensembl/ENSBTAG00000047815>;
+        wp:source         <https://identifiers.org/ensembl/ENSBTAG00000047815>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id7c70628e> .
+
+<http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id40cb18b1>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3185_r117574>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3185_r117574/Interaction/id40cb18b1>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001010> , <https://identifiers.org/hmdb/HMDB0001934>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001934>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001010> .
+
+<http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id9e72607f>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3185_r117574> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id6d05b34e>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3185_r117574/Interaction/id9e72607f>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001046> , <https://identifiers.org/hmdb/HMDB0001010>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001010>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001046> .
+
+<https://identifiers.org/hmdb/HMDB0001497>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Nicotine-N-oxide";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0001497>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0001497";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/idb96ead43> , <https://identifiers.org/wikipathways/WP3185_r117574> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/idd5891279> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id8d074529>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3185_r117574/DataNode/e7216> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/DataNode/c42db>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001497> .
 
 <https://identifiers.org/hmdb/HMDB0001010>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -112,44 +186,68 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0001010>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0001010";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3185/WP3185_rWP3185_r117574/DataNode/f3df4>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id40cb18b1> , <https://identifiers.org/wikipathways/WP3185_r117574> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id9e72607f>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3185_r117574/DataNode/f3df4>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001010> .
 
-<https://identifiers.org/ensembl/ENSBTAG00000003871>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "CYP2B6";
-        dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000003871>;
+<http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id287d8ec9>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3185_r117574>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3185_r117574/Interaction/id287d8ec9>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001126> , <https://identifiers.org/hmdb/HMDB0001934>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001934>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001126> .
+
+<https://identifiers.org/ensembl/ENSBTAG00000009725>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "AOX1";
+        dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000009725>;
         dc:source           "Ensembl";
-        dcterms:identifier  "ENSBTAG00000003871";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3185/WP3185_rWP3185_r117574/DataNode/a91b7>;
-        foaf:page           <https://www.ensembl.org/id/ENSBTAG00000003871> .
+        dcterms:identifier  "ENSBTAG00000009725";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3185_r117574> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id6d05b34e>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3185_r117574/DataNode/f1f1a>;
+        foaf:page           <https://www.ensembl.org/id/ENSBTAG00000009725> .
 
-<https://identifiers.org/hmdb/HMDB0001427>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "5'-Hydroxycotinine";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0001427>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0001427";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3185/WP3185_rWP3185_r117574/DataNode/c19cd> , <http://rdf.wikipathways.org/Pathway/WP3185/WP3185_rWP3185_r117574/DataNode/b6d51>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001427> .
+<http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/idb0961cc3>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3185_r117574>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3185_r117574/Interaction/idb0961cc3>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001411>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001411>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001411> .
 
-<https://identifiers.org/hmdb/HMDB0001497>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Nicotine-N-oxide";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0001497>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0001497";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3185/WP3185_rWP3185_r117574/DataNode/e7216> , <http://rdf.wikipathways.org/Pathway/WP3185/WP3185_rWP3185_r117574/DataNode/c42db>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001497> .
+<http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id1103a475>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3185_r117574>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3185_r117574/Interaction/id1103a475>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id9d06dec1> , <https://identifiers.org/ensembl/ENSBTAG00000047815>;
+        wp:source         <https://identifiers.org/ensembl/ENSBTAG00000047815>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id9d06dec1> .
 
-<https://identifiers.org/hmdb/HMDB0001411>
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3185&oldid=r117574>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<https://identifiers.org/hmdb/HMDB0001272>
         rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Cotinine N-oxide";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0001411>;
+        rdfs:label          "Nicotine-Gluc";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0001272>;
         dc:source           "HMDB";
-        dcterms:identifier  "HMDB0001411";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3185/WP3185_rWP3185_r117574/DataNode/d514f> , <http://rdf.wikipathways.org/Pathway/WP3185/WP3185_rWP3185_r117574/DataNode/d2361>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001411> .
+        dcterms:identifier  "HMDB0001272";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3185_r117574> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/ida840ab26> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id92b39cf9>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3185_r117574/DataNode/e822f> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/DataNode/c2bbe>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001272> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3185&oldid=r117574>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_9913>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9913" .
+
+<https://identifiers.org/wikipathways/WP3185>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP3185_r117574> .
 
 <https://identifiers.org/ensembl/ENSBTAG00000048275>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -157,16 +255,178 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000048275>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000048275";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3185/WP3185_rWP3185_r117574/DataNode/e5307>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3185_r117574>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3185_r117574/DataNode/e5307>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000048275> .
 
-<https://identifiers.org/wikipathways/WP3185/WP3185_rWP3185_r117574>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP3185/WP3185>;
-        dc:source            "WikiPathways";
-        dc:title             "Nicotine metabolism"@en;
-        dcterms:description  "";
-        dcterms:identifier   "WP3185/WP3185";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP3185/WP3185_rWP3185_r117574>;
-        wp:organismName      "Bos taurus";
-        foaf:page            <http://www.wikipathways.org/instance/WP3185/WP3185_rWP3185_r117574> .
+<https://identifiers.org/ensembl/ENSBTAG00000003871>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "CYP2B6";
+        dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000003871>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSBTAG00000003871";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3185_r117574>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3185_r117574/DataNode/a91b7>;
+        foaf:page           <https://www.ensembl.org/id/ENSBTAG00000003871> .
+
+<http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id54ab0d28>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3185_r117574>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3185_r117574/Interaction/id54ab0d28>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001126>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001126>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001126> .
+
+<http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id897f2ea7>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3185_r117574>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3185_r117574/Interaction/id897f2ea7>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001126>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001126>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001126> .
+
+<http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/idd5891279>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3185_r117574>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3185_r117574/Interaction/idd5891279>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001497>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001497>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001497> .
+
+<http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/ida07b9435>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3185_r117574> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id16ff35b>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3185_r117574/Interaction/ida07b9435>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001390> , <https://identifiers.org/hmdb/HMDB0001046>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001046>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001390> .
+
+<https://identifiers.org/hmdb/HMDB0001411>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Cotinine N-oxide";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0001411>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0001411";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/idb0961cc3> , <https://identifiers.org/wikipathways/WP3185_r117574> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id550f9c16>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3185_r117574/DataNode/d2361> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/DataNode/d514f>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001411> .
+
+<https://identifiers.org/hmdb/HMDB0001204>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "3'-Hydroxycotinine glucuronide";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0001204>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0001204";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id29d07d3f> , <https://identifiers.org/wikipathways/WP3185_r117574> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/idf76e3d2e>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3185_r117574/DataNode/bc957> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/DataNode/b4967>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001204> .
+
+<http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id93f790b3>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3185_r117574>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3185_r117574/Interaction/id93f790b3>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001046>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001046>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001046> .
+
+<http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id29d07d3f>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3185_r117574>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3185_r117574/Interaction/id29d07d3f>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001204>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001204>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001204> .
+
+<http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id6d05b34e>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3185_r117574>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3185_r117574/Interaction/id6d05b34e>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id9e72607f> , <https://identifiers.org/ensembl/ENSBTAG00000009725>;
+        wp:source         <https://identifiers.org/ensembl/ENSBTAG00000009725>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id9e72607f> .
+
+<https://identifiers.org/wikipathways/WP3185_r117574>
+        rdf:type                skos:Collection , wp:Pathway;
+        dc:identifier           <https://identifiers.org/wikipathways/WP3185>;
+        dc:source               "WikiPathways";
+        dc:title                "Nicotine metabolism"@en;
+        dcterms:description     "";
+        dcterms:identifier      "WP3185";
+        wp:cellTypeOntologyTag  <http://purl.obolibrary.org/obo/CL_0000182>;
+        wp:isAbout              <http://rdf.wikipathways.org/Pathway/WP3185_r117574>;
+        wp:ontologyTag          <http://purl.obolibrary.org/obo/CL_0000182> , <http://purl.obolibrary.org/obo/PW_0000721>;
+        wp:organism             <http://purl.obolibrary.org/obo/NCBITaxon_9913>;
+        wp:organismName         "Bos taurus";
+        wp:pathwayOntologyTag   <http://purl.obolibrary.org/obo/PW_0000721>;
+        foaf:img                <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3185&oldid=r117574> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3185&oldid=r117574>;
+        foaf:page               <http://www.wikipathways.org/instance/WP3185_r117574> .
+
+<https://identifiers.org/hmdb/HMDB0001046>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Cotinine";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0001046>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0001046";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/ida07b9435> , <https://identifiers.org/wikipathways/WP3185_r117574> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id7c70628e> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id9e72607f> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id93f790b3> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/ida830b2a7> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id9d06dec1> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id550f9c16>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3185_r117574/DataNode/fb9f6> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/DataNode/afd8d>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001046> .
+
+<http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/idb96ead43>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/ideb54f1da> , <https://identifiers.org/wikipathways/WP3185_r117574>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3185_r117574/Interaction/idb96ead43>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001497> , <https://identifiers.org/hmdb/HMDB0001934>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001934>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001497> .
+
+<http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id31efe745>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3185_r117574>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3185_r117574/Interaction/id31efe745>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001427>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001427>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001427> .
+
+<http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/ideb54f1da>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3185_r117574>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3185_r117574/Interaction/ideb54f1da>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/idb96ead43> , <https://identifiers.org/ensembl/ENSBTAG00000020597>;
+        wp:source         <https://identifiers.org/ensembl/ENSBTAG00000020597>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/idb96ead43> .
+
+<https://identifiers.org/hmdb/HMDB0001013>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Cotinineglucuronide";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0001013>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0001013";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/ide65566fe> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/ida830b2a7> , <https://identifiers.org/wikipathways/WP3185_r117574>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3185_r117574/DataNode/f47ac> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/DataNode/f8f23>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001013> .
+
+<http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id1e624d4b>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3185_r117574>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3185_r117574/Interaction/id1e624d4b>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001390>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001390>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001390> .
+
+<https://identifiers.org/hmdb/HMDB0001126>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Nornicotine";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0001126>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0001126";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id287d8ec9> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/idc005334f> , <https://identifiers.org/wikipathways/WP3185_r117574> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id897f2ea7> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id7c70628e> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/id54ab0d28>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3185_r117574/DataNode/f0663> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/DataNode/c40da> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/DataNode/f4fcd> , <http://rdf.wikipathways.org/Pathway/WP3185_r117574/DataNode/e2740>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001126> .
+
+<http://rdf.wikipathways.org/Pathway/WP3185_r117574/WP/Interaction/idf76e3d2e>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3185_r117574>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3185_r117574/Interaction/idf76e3d2e>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001204> , <https://identifiers.org/hmdb/HMDB0001390>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001390>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001204> .

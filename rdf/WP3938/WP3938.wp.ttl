@@ -16,13 +16,25 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
+<http://purl.obolibrary.org/obo/NCBITaxon_9606>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9606" .
+
+<http://rdf.wikipathways.org/Pathway/WP3938_r120650/WP/Interaction/id456aac16>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3938_r120650>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3938_r120650/Interaction/id456aac16>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000111276>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000111276> .
+
 <https://identifiers.org/mirbase/MI0000299>
         rdf:type            wp:DataNode;
         rdfs:label          "MIR222";
         dc:identifier       <https://identifiers.org/mirbase/MI0000299>;
         dc:source           "miRBase Sequence";
         dcterms:identifier  "MI0000299";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3938/WP3938_rWP3938_r120650/DataNode/f0c6a>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3938_r120650/WP/Interaction/idc62262fa> , <http://rdf.wikipathways.org/Pathway/WP3938_r120650/WP/Interaction/idbe43a34b> , <https://identifiers.org/wikipathways/WP3938_r120650> , <http://rdf.wikipathways.org/Pathway/WP3938_r120650/WP/Interaction/id3388e8cc>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3938_r120650/DataNode/f0c6a>;
         foaf:page           <http://www.mirbase.org/cgi-bin/mirna_entry.pl?acc=MI0000299> .
 
 <https://identifiers.org/ensembl/ENSG00000064393>
@@ -31,19 +43,34 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000064393>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000064393";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3938/WP3938_rWP3938_r120650/DataNode/ee50c>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3938_r120650>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3938_r120650/DataNode/ee50c>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000064393> .
 
-<https://identifiers.org/wikipathways/WP3938/WP3938_rWP3938_r120650>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP3938/WP3938>;
-        dc:source            "WikiPathways";
-        dc:title             "miR-222 in exercise-induced cardiac growth"@en;
-        dcterms:description  "miR-222 is necessary for exercise-induced cardiac growth and protects against pathological cardiac remodeling.\n\nProteins on this pathway have targeted assays available via the [https://assays.cancer.gov/available_assays?wp_id=WP3938 CPTAC Assay Portal].";
-        dcterms:identifier   "WP3938/WP3938";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP3938/WP3938_rWP3938_r120650>;
-        wp:organismName      "Homo sapiens";
-        foaf:page            <http://www.wikipathways.org/instance/WP3938/WP3938_rWP3938_r120650> .
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3938&oldid=r120650>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<https://identifiers.org/pubmed/25863248>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "25863248";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3938_r120650>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/25863248> .
+
+<https://identifiers.org/wikipathways/WP3938>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP3938_r120650> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3938&oldid=r120650>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<http://rdf.wikipathways.org/Pathway/WP3938_r120650/WP/Interaction/ac720>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3938_r120650>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3938_r120650/Interaction/ac720>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000147421>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000147421> .
 
 <https://identifiers.org/ensembl/ENSG00000163349>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -51,23 +78,67 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000163349>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000163349";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3938/WP3938_rWP3938_r120650/DataNode/f37b0>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3938_r120650>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3938_r120650/DataNode/f37b0>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000163349> .
 
 <https://identifiers.org/ensembl/ENSG00000147421>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "HMBOX1";
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000147421>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000147421";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3938/WP3938_rWP3938_r120650/DataNode/eada6>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3938_r120650> , <http://rdf.wikipathways.org/Pathway/WP3938_r120650/WP/Interaction/ac720> , <http://rdf.wikipathways.org/Pathway/WP3938_r120650/WP/Interaction/idc62262fa>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3938_r120650/DataNode/eada6>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000147421> .
 
+<http://rdf.wikipathways.org/Pathway/WP3938_r120650/WP/Interaction/id3388e8cc>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3938_r120650>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3938_r120650/Interaction/id3388e8cc>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000111276> , <https://identifiers.org/mirbase/MI0000299>;
+        wp:source         <https://identifiers.org/mirbase/MI0000299>;
+        wp:target         <https://identifiers.org/ensembl/ENSG00000111276> .
+
+<http://rdf.wikipathways.org/Pathway/WP3938_r120650/WP/Interaction/idbe43a34b>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3938_r120650>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3938_r120650/Interaction/idbe43a34b>;
+        wp:participants   <https://identifiers.org/mirbase/MI0000299>;
+        wp:target         <https://identifiers.org/mirbase/MI0000299> .
+
 <https://identifiers.org/ensembl/ENSG00000111276>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "CDKN1B";
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000111276>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000111276";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3938/WP3938_rWP3938_r120650/DataNode/da55b>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3938_r120650> , <http://rdf.wikipathways.org/Pathway/WP3938_r120650/WP/Interaction/id3388e8cc> , <http://rdf.wikipathways.org/Pathway/WP3938_r120650/WP/Interaction/id456aac16>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3938_r120650/DataNode/da55b>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000111276> .
+
+<http://rdf.wikipathways.org/Pathway/WP3938_r120650/WP/Interaction/idc62262fa>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3938_r120650>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3938_r120650/Interaction/idc62262fa>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000147421> , <https://identifiers.org/mirbase/MI0000299>;
+        wp:source         <https://identifiers.org/mirbase/MI0000299>;
+        wp:target         <https://identifiers.org/ensembl/ENSG00000147421> .
+
+<https://identifiers.org/wikipathways/WP3938_r120650>
+        rdf:type                wp:Pathway , skos:Collection;
+        dc:identifier           <https://identifiers.org/wikipathways/WP3938>;
+        dc:source               "WikiPathways";
+        dc:title                "miR-222 in exercise-induced cardiac growth"@en;
+        dcterms:description     "miR-222 is necessary for exercise-induced cardiac growth and protects against pathological cardiac remodeling.\n\nProteins on this pathway have targeted assays available via the [https://assays.cancer.gov/available_assays?wp_id=WP3938 CPTAC Assay Portal].";
+        dcterms:identifier      "WP3938";
+        dcterms:references      <https://identifiers.org/pubmed/25863248>;
+        cito:cites              <https://identifiers.org/pubmed/25863248>;
+        wp:cellTypeOntologyTag  <http://purl.obolibrary.org/obo/CL_0000746>;
+        wp:isAbout              <http://rdf.wikipathways.org/Pathway/WP3938_r120650>;
+        wp:ontologyTag          <http://purl.obolibrary.org/obo/PW_0000808> , <http://purl.obolibrary.org/obo/CL_0000746> , <http://purl.obolibrary.org/obo/PW_0000004>;
+        wp:organism             <http://purl.obolibrary.org/obo/NCBITaxon_9606>;
+        wp:organismName         "Homo sapiens";
+        wp:pathwayOntologyTag   <http://purl.obolibrary.org/obo/PW_0000808> , <http://purl.obolibrary.org/obo/PW_0000004>;
+        foaf:img                <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3938&oldid=r120650> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3938&oldid=r120650>;
+        foaf:page               <http://www.wikipathways.org/instance/WP3938_r120650> .

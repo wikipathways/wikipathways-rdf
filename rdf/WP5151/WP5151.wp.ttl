@@ -16,16 +16,78 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/wikipathways/WP5151/WP5151_rWP5151_r126030>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP5151/WP5151>;
-        dc:source            "WikiPathways";
-        dc:title             "Sialylation "@en;
-        dcterms:description  "This pathway describes the biosynthesis, activation and transfer of the sialic acid Neu5Ac to glycoproteins. Sialic acids are acidic sugar molecules that commonly occur as the terminal sugar as part of glycoproteins and glycolipids on the surface of cells. Sialylated conjugates play important roles in many processes, including cell recognition and signaling, neuronal development, cancer metastasis and bacterial or viral infection. The two most commonly mammalian sialic acids are N-acetylneuraminic acid (Neu5Ac) and N-glycolylneuraminic acid (Neu5Gc). \nThis pathway was modeled based on figure 1 from [https://europepmc.org/article/MED/31979120 Zhou et al].\n";
-        dcterms:identifier   "WP5151/WP5151";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP5151/WP5151_rWP5151_r126030>;
-        wp:organismName      "Homo sapiens";
-        foaf:page            <http://www.wikipathways.org/instance/WP5151/WP5151_rWP5151_r126030> .
+<https://identifiers.org/wikipathways/WP5151>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP5151_r126030> .
+
+<https://identifiers.org/pubmed/31979120>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "31979120";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5151_r126030>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/31979120> .
+
+<https://identifiers.org/ncbigene/55907>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "CMAS";
+        dc:identifier       <https://identifiers.org/ncbigene/55907>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "55907";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id2861a9d5> , <https://identifiers.org/wikipathways/WP5151_r126030>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5151_r126030/DataNode/e1e40>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/55907> .
+
+<http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id6eeec57e>
+        rdf:type          wp:Interaction , wp:Conversion , wp:DirectedInteraction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id107b816a> , <https://identifiers.org/wikipathways/WP5151_r126030>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5151_r126030/Interaction/id6eeec57e>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:63153> , <https://identifiers.org/chebi/CHEBI:28273>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:63153>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:28273> .
+
+<http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id7177a6b7>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5151_r126030>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5151_r126030/Interaction/id7177a6b7>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id6e36dba5> , <https://identifiers.org/ncbigene/54187>;
+        wp:source         <https://identifiers.org/ncbigene/54187>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id6e36dba5> .
+
+<http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id11f5bcbd>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id1bac0f4c> , <https://identifiers.org/wikipathways/WP5151_r126030>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5151_r126030/Interaction/id11f5bcbd>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:16556>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:16556>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:16556> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_9606>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9606" .
+
+<https://identifiers.org/wikipathways/WP5151_r126030>
+        rdf:type               skos:Collection , wp:Pathway;
+        dc:identifier          <https://identifiers.org/wikipathways/WP5151>;
+        dc:source              "WikiPathways";
+        dc:title               "Sialylation "@en;
+        dcterms:description    "This pathway describes the biosynthesis, activation and transfer of the sialic acid Neu5Ac to glycoproteins. Sialic acids are acidic sugar molecules that commonly occur as the terminal sugar as part of glycoproteins and glycolipids on the surface of cells. Sialylated conjugates play important roles in many processes, including cell recognition and signaling, neuronal development, cancer metastasis and bacterial or viral infection. The two most commonly mammalian sialic acids are N-acetylneuraminic acid (Neu5Ac) and N-glycolylneuraminic acid (Neu5Gc). \nThis pathway was modeled based on figure 1 from [https://europepmc.org/article/MED/31979120 Zhou et al].\n";
+        dcterms:identifier     "WP5151";
+        dcterms:references     <https://identifiers.org/pubmed/31979120>;
+        cito:cites             <https://identifiers.org/pubmed/31979120>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP5151_r126030>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000004> , <http://purl.obolibrary.org/obo/PW_0000432>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606>;
+        wp:organismName        "Homo sapiens";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000004> , <http://purl.obolibrary.org/obo/PW_0000432>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP5151&oldid=r126030> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP5151&oldid=r126030>;
+        foaf:page              <http://www.wikipathways.org/instance/WP5151_r126030> .
+
+<http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id1bac0f4c>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5151_r126030>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5151_r126030/Interaction/id1bac0f4c>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id11f5bcbd> , <https://identifiers.org/ncbigene/10559>;
+        wp:source         <https://identifiers.org/ncbigene/10559>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id11f5bcbd> .
 
 <https://identifiers.org/chebi/CHEBI:16264>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -33,26 +95,19 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:16264>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:16264";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5151/WP5151_rWP5151_r126030/DataNode/ae91a>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5151_r126030> , <http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id9668a7c0> , <http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id622e9ad0>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5151_r126030/DataNode/ae91a>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16264> .
 
-<https://identifiers.org/ncbigene/55907>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "CMAS";
-        dc:identifier       <https://identifiers.org/ncbigene/55907>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "55907";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5151/WP5151_rWP5151_r126030/DataNode/e1e40>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/55907> .
-
-<https://identifiers.org/chebi/CHEBI:27438>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "N-acetylneuraminic acid 9-phosphate";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:27438>;
+<https://identifiers.org/chebi/CHEBI:28273>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "aldehydo-N-acetyl-D-mannosamine 6-phosphate";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:28273>;
         dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:27438";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5151/WP5151_rWP5151_r126030/DataNode/f4af8>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:27438> .
+        dcterms:identifier  "CHEBI:28273";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5151_r126030> , <http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id6e36dba5> , <http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id6eeec57e>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5151_r126030/DataNode/e41f6>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:28273> .
 
 <https://identifiers.org/chebi/CHEBI:17234>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -60,17 +115,9 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:17234>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:17234";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5151/WP5151_rWP5151_r126030/DataNode/ae4c5>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id622e9ad0> , <https://identifiers.org/wikipathways/WP5151_r126030>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5151_r126030/DataNode/ae4c5>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17234> .
-
-<https://identifiers.org/chebi/CHEBI:17012>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "N-acetylneuraminic acid";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:17012>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:17012";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5151/WP5151_rWP5151_r126030/DataNode/d16e6>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17012> .
 
 <https://identifiers.org/ncbigene/10559>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -78,29 +125,17 @@
         dc:identifier       <https://identifiers.org/ncbigene/10559>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "10559";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5151/WP5151_rWP5151_r126030/DataNode/efa54>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id1bac0f4c> , <https://identifiers.org/wikipathways/WP5151_r126030>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5151_r126030/DataNode/efa54>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/10559> .
 
-<https://identifiers.org/chebi/CHEBI:63153>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "N-acetyl-D-mannosamine";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:63153>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:63153";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5151/WP5151_rWP5151_r126030/DataNode/bedf2>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:63153> .
-
-<https://identifiers.org/chebi/CHEBI:28273>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "aldehydo-N-acetyl-D-mannosamine 6-phosphate";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:28273>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:28273";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5151/WP5151_rWP5151_r126030/DataNode/e41f6>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:28273> .
-
-<http://rdf.wikipathways.org/Pathway/WP5151/WP5151_rWP5151_r126030/WP/Interaction/id6524ad95>
-        rdf:type  wp:Interaction .
+<http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id107b816a>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5151_r126030>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5151_r126030/Interaction/id107b816a>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id6eeec57e> , <https://identifiers.org/ncbigene/10020>;
+        wp:source         <https://identifiers.org/ncbigene/10020>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id6eeec57e> .
 
 <https://identifiers.org/ncbigene/54187>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -108,17 +143,120 @@
         dc:identifier       <https://identifiers.org/ncbigene/54187>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "54187";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5151/WP5151_rWP5151_r126030/DataNode/b156d> , <http://rdf.wikipathways.org/Pathway/WP5151/WP5151_rWP5151_r126030/DataNode/c46ff>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id7177a6b7> , <http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id47096713> , <https://identifiers.org/wikipathways/WP5151_r126030>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5151_r126030/DataNode/c46ff> , <http://rdf.wikipathways.org/Pathway/WP5151_r126030/DataNode/b156d>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/54187> .
 
+<https://identifiers.org/chebi/CHEBI:17012>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "N-acetylneuraminic acid";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:17012>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:17012";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5151_r126030> , <http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id7828786> , <http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id647c2596>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5151_r126030/DataNode/d16e6>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17012> .
+
+<https://identifiers.org/chebi/CHEBI:63153>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "N-acetyl-D-mannosamine";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:63153>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:63153";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5151_r126030> , <http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id6eeec57e> , <http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id9668a7c0>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5151_r126030/DataNode/bedf2>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:63153> .
+
+<http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id9668a7c0>
+        rdf:type          wp:Interaction , wp:Conversion , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5151_r126030> , <http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id306120fe>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5151_r126030/Interaction/id9668a7c0>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:63153> , <https://identifiers.org/chebi/CHEBI:16264>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:16264>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:63153> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP5151&oldid=r126030>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id622e9ad0>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5151_r126030>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5151_r126030/Interaction/id622e9ad0>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:16264> , <https://identifiers.org/chebi/CHEBI:17234>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:17234>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:16264> .
+
+<http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id647c2596>
+        rdf:type          wp:Interaction , wp:Conversion , wp:DirectedInteraction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id2861a9d5> , <https://identifiers.org/wikipathways/WP5151_r126030>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5151_r126030/Interaction/id647c2596>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:17012> , <https://identifiers.org/chebi/CHEBI:16556>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:17012>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:16556> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP5151&oldid=r126030>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<https://identifiers.org/chebi/CHEBI:27438>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "N-acetylneuraminic acid 9-phosphate";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:27438>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:27438";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id6e36dba5> , <https://identifiers.org/wikipathways/WP5151_r126030> , <http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id7828786>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5151_r126030/DataNode/f4af8>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:27438> .
+
+<http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/idb9b8c49f>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5151_r126030>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5151_r126030/Interaction/idb9b8c49f>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:16556>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:16556> .
+
+<http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id306120fe>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5151_r126030>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5151_r126030/Interaction/id306120fe>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id9668a7c0> , <https://identifiers.org/ncbigene/10020>;
+        wp:source         <https://identifiers.org/ncbigene/10020>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id9668a7c0> .
+
+<http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id2861a9d5>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5151_r126030>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5151_r126030/Interaction/id2861a9d5>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id647c2596> , <https://identifiers.org/ncbigene/55907>;
+        wp:source         <https://identifiers.org/ncbigene/55907>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id647c2596> .
+
+<http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id7828786>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id47096713> , <https://identifiers.org/wikipathways/WP5151_r126030>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5151_r126030/Interaction/id7828786>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:27438> , <https://identifiers.org/chebi/CHEBI:17012>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:27438>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:17012> .
+
 <https://identifiers.org/ncbigene/10020>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "GNE";
         dc:identifier       <https://identifiers.org/ncbigene/10020>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "10020";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5151/WP5151_rWP5151_r126030/DataNode/d0eee>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5151_r126030> , <http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id306120fe> , <http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id107b816a>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5151_r126030/DataNode/d0eee>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/10020> .
+
+<http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id6e36dba5>
+        rdf:type          wp:Conversion , wp:Interaction , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5151_r126030> , <http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id7177a6b7>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5151_r126030/Interaction/id6e36dba5>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:27438> , <https://identifiers.org/chebi/CHEBI:28273>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:28273>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:27438> .
 
 <https://identifiers.org/chebi/CHEBI:16556>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -126,5 +264,14 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:16556>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:16556";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5151/WP5151_rWP5151_r126030/DataNode/cbe91> , <http://rdf.wikipathways.org/Pathway/WP5151/WP5151_rWP5151_r126030/DataNode/a342e>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5151_r126030> , <http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/idb9b8c49f> , <http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id647c2596> , <http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id11f5bcbd>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5151_r126030/DataNode/cbe91> , <http://rdf.wikipathways.org/Pathway/WP5151_r126030/DataNode/a342e>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16556> .
+
+<http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id47096713>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5151_r126030>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5151_r126030/Interaction/id47096713>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id7828786> , <https://identifiers.org/ncbigene/54187>;
+        wp:source         <https://identifiers.org/ncbigene/54187>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP5151_r126030/WP/Interaction/id7828786> .

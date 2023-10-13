@@ -17,22 +17,54 @@
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
 <https://identifiers.org/hmdb/HMDB0000221>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "NADPH";
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000221>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0000221";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/e5766>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP999_r125338> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/ide16f3c42>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/e5766>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000221> .
 
 <https://identifiers.org/wikipathways/WP111>
-        rdf:type            wp:Pathway , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Pathway;
         rdfs:label          "Electron Transport Chain";
         dc:identifier       <https://identifiers.org/wikipathways/WP111>;
         dc:source           "WikiPathways";
         dcterms:identifier  "WP111";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/e10ab>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/badc0> , <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/e10ab>;
         foaf:page           <https://www.wikipathways.org/instance/WP111> .
+
+<https://identifiers.org/pubmed/6998725>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "6998725";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP999_r125338>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/6998725> .
+
+<https://identifiers.org/pubmed/7961626>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "7961626";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id68dda630>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/7961626> .
+
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/a738c>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/a738c>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001206> , <https://identifiers.org/wikipathways/WP1847>;
+        wp:source         <https://identifiers.org/wikipathways/WP1847>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001206> .
+
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/fe634>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/fe634>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/ef149> , <https://identifiers.org/ensembl/ENSBTAG00000009462>;
+        wp:source         <https://identifiers.org/ensembl/ENSBTAG00000009462>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/ef149> .
 
 <https://identifiers.org/hmdb/HMDB0001341>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -40,17 +72,51 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0001341>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0001341";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/e271d>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/e271d>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001341> .
 
+<https://identifiers.org/pubmed/8187868>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "8187868";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id68dda630> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id17b35470>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/8187868> .
+
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/idcc3e07ab>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/idcc3e07ab>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/f598e> , <https://identifiers.org/ensembl/ENSBTAG00000006429>;
+        wp:source         <https://identifiers.org/ensembl/ENSBTAG00000006429>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/f598e> .
+
 <https://identifiers.org/hmdb/HMDB0001206>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "acetyl-CoA";
         dc:identifier       <https://identifiers.org/hmdb/HMDB0001206>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0001206";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/d9ef6>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/ad4b7> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id3729ec34> , <https://identifiers.org/wikipathways/WP999_r125338> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/a738c> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/bddc9>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/d9ef6>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001206> .
+
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/idcebb8f2>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/idcebb8f2>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0013111>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0013111> .
+
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id68dda630>
+        rdf:type            wp:Interaction , wp:DirectedInteraction , wp:Conversion;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/ide16f3c42> , <https://identifiers.org/wikipathways/WP999_r125338> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id8c25b382> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/iddc8ee953>;
+        dcterms:references  <https://identifiers.org/pubmed/7961626> , <https://identifiers.org/pubmed/12234803> , <https://identifiers.org/pubmed/3052428> , <https://identifiers.org/pubmed/8187868>;
+        cito:cites          <https://identifiers.org/pubmed/3052428> , <https://identifiers.org/pubmed/8187868> , <https://identifiers.org/pubmed/12234803> , <https://identifiers.org/pubmed/7961626>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/id68dda630>;
+        wp:participants     <https://identifiers.org/hmdb/HMDB0000208> , <https://identifiers.org/hmdb/HMDB0000193>;
+        wp:source           <https://identifiers.org/hmdb/HMDB0000208>;
+        wp:target           <https://identifiers.org/hmdb/HMDB0000193> .
 
 <https://identifiers.org/ensembl/ENSBTAG00000016266>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -58,8 +124,30 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000016266>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000016266";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/ddb56>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/ddb56>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000016266> .
+
+<https://identifiers.org/pubmed/10672230>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "10672230";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id56459e3d>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/10672230> .
+
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id449050c>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/id449050c>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0002111>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0002111> .
+
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id9f8f19fa>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/id9f8f19fa>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001487>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001487> .
 
 <https://identifiers.org/wikipathways/WP1847>
         rdf:type            wp:Pathway , wp:DataNode;
@@ -67,16 +155,25 @@
         dc:identifier       <https://identifiers.org/wikipathways/WP1847>;
         dc:source           "WikiPathways";
         dcterms:identifier  "WP1847";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/bb44a>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP999_r125338> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/a738c>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/bb44a>;
         foaf:page           <https://www.wikipathways.org/instance/WP1847> .
 
+<https://identifiers.org/pubmed/12234803>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "12234803";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id68dda630>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/12234803> .
+
 <https://identifiers.org/hmdb/HMDB0000156>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "(S)-malate";
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000156>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0000156";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/c53f3>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/ef149> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/f4d6d> , <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/c53f3>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000156> .
 
 <https://identifiers.org/hmdb/HMDB0001201>
@@ -85,7 +182,8 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0001201>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0001201";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/f85a0>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/f85a0>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001201> .
 
 <https://identifiers.org/hmdb/HMDB0001022>
@@ -94,8 +192,24 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0001022>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0001022";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/ffbe6>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/b0fb0> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id56459e3d> , <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/ffbe6>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001022> .
+
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/ida41d6b5c>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/ida41d6b5c>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001423>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001423> .
+
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id1135975e>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/id1135975e>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id17b35470> , <https://identifiers.org/hmdb/HMDB0000902>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000902>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id17b35470> .
 
 <https://identifiers.org/hmdb/HMDB0001967>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -103,7 +217,8 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0001967>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0001967";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/f4381> , <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/f5407> , <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/ea9a4>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id8c25b382> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id1e6d1dd6> , <https://identifiers.org/wikipathways/WP999_r125338> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/idaed0e1f7>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/f4381> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/f5407> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/ea9a4>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001967> .
 
 <https://identifiers.org/ensembl/ENSBTAG00000015853>
@@ -112,8 +227,44 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000015853>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000015853";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/d0245>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/d0245>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000015853> .
+
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/iddcae2bba>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/iddcae2bba>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001487>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001487> .
+
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/bddc9>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/bddc9>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001206> , <https://identifiers.org/wikipathways/WP534>;
+        wp:source         <https://identifiers.org/wikipathways/WP534>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001206> .
+
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/cbc1e>
+        rdf:type            wp:Interaction , wp:DirectedInteraction;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/dece7> , <https://identifiers.org/wikipathways/WP999_r125338>;
+        dcterms:references  <https://identifiers.org/pubmed/13018271> , <https://identifiers.org/pubmed/949837>;
+        cito:cites          <https://identifiers.org/pubmed/13018271> , <https://identifiers.org/pubmed/949837>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/cbc1e>;
+        wp:participants     <https://identifiers.org/hmdb/HMDB0000094> , <https://identifiers.org/hmdb/HMDB0000072>;
+        wp:source           <https://identifiers.org/hmdb/HMDB0000094>;
+        wp:target           <https://identifiers.org/hmdb/HMDB0000072> .
+
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/b0fb0>
+        rdf:type            wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP999_r125338>;
+        dcterms:references  <https://identifiers.org/pubmed/9765290>;
+        cito:cites          <https://identifiers.org/pubmed/9765290>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/b0fb0>;
+        wp:participants     <https://identifiers.org/hmdb/HMDB0000254> , <https://identifiers.org/hmdb/HMDB0001022>;
+        wp:source           <https://identifiers.org/hmdb/HMDB0000254>;
+        wp:target           <https://identifiers.org/hmdb/HMDB0001022> .
 
 <https://identifiers.org/ensembl/ENSBTAG00000046019>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -121,8 +272,12 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000046019>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000046019";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/b5f1a>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/b5f1a>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000046019> .
+
+<https://identifiers.org/wikipathways/WP999>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP999_r125338> .
 
 <https://identifiers.org/hmdb/HMDB0000208>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -130,8 +285,17 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000208>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0000208";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/da75d>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id17b35470> , <https://identifiers.org/wikipathways/WP999_r125338> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id56459e3d> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id68dda630>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/da75d>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000208> .
+
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/badc0>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/badc0>;
+        wp:participants   <https://identifiers.org/wikipathways/WP111> , <https://identifiers.org/hmdb/HMDB0000254>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000254>;
+        wp:target         <https://identifiers.org/wikipathways/WP111> .
 
 <https://identifiers.org/hmdb/HMDB0000223>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -139,17 +303,47 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000223>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0000223";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/a39f2>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP999_r125338> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/ef149> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/ccfec>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/a39f2>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000223> .
 
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/idd2b546ff>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/idd2b546ff>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001487>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001487> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP999&oldid=r125338>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
 <https://identifiers.org/hmdb/HMDB0000072>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "cis-aconitate";
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000072>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0000072";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/ab88e>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/f598e> , <https://identifiers.org/wikipathways/WP999_r125338> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/cbc1e>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/ab88e>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000072> .
+
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/ef149>
+        rdf:type            wp:Interaction , wp:DirectedInteraction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP999_r125338> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/fe634>;
+        dcterms:references  <https://identifiers.org/pubmed/7730304> , <https://identifiers.org/pubmed/7730305>;
+        cito:cites          <https://identifiers.org/pubmed/7730304> , <https://identifiers.org/pubmed/7730305>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/ef149>;
+        wp:participants     <https://identifiers.org/hmdb/HMDB0000156> , <https://identifiers.org/hmdb/HMDB0000223>;
+        wp:source           <https://identifiers.org/hmdb/HMDB0000223>;
+        wp:target           <https://identifiers.org/hmdb/HMDB0000156> .
+
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id109b1520>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/id109b1520>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000217>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000217> .
 
 <https://identifiers.org/ensembl/ENSBTAG00000006075>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -157,8 +351,41 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000006075>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000006075";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/c57b3>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/c57b3>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000006075> .
+
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id3944502d>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/id3944502d>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id56459e3d> , <https://identifiers.org/hmdb/HMDB0000902>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000902>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id56459e3d> .
+
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id7df46aa7>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/id7df46aa7>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000902>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000902> .
+
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id17b35470>
+        rdf:type            wp:Interaction , wp:Conversion , wp:DirectedInteraction;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id1135975e> , <https://identifiers.org/wikipathways/WP999_r125338>;
+        dcterms:references  <https://identifiers.org/pubmed/3724458> , <https://identifiers.org/pubmed/8187868>;
+        cito:cites          <https://identifiers.org/pubmed/8187868> , <https://identifiers.org/pubmed/3724458>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/id17b35470>;
+        wp:participants     <https://identifiers.org/hmdb/HMDB0000193> , <https://identifiers.org/hmdb/HMDB0000208>;
+        wp:source           <https://identifiers.org/hmdb/HMDB0000193>;
+        wp:target           <https://identifiers.org/hmdb/HMDB0000208> .
+
+<https://identifiers.org/pubmed/3052428>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "3052428";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id68dda630>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/3052428> .
 
 <https://identifiers.org/hmdb/HMDB0001072>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -166,17 +393,43 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0001072>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0001072";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/a8ee4>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/idf7e247ae> , <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/a8ee4>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001072> .
 
+<https://identifiers.org/pubmed/7060582>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "7060582";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/ccfec>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/7060582> .
+
 <https://identifiers.org/hmdb/HMDB0000193>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "D-threo-Isocitrate";
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000193>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0000193";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/b96da>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP999_r125338> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id68dda630> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id17b35470> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/f598e>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/b96da>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000193> .
+
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/f598e>
+        rdf:type            wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP999_r125338> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/idcc3e07ab>;
+        dcterms:references  <https://identifiers.org/pubmed/949837> , <https://identifiers.org/pubmed/13018271>;
+        cito:cites          <https://identifiers.org/pubmed/949837> , <https://identifiers.org/pubmed/13018271>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/f598e>;
+        wp:participants     <https://identifiers.org/hmdb/HMDB0000072> , <https://identifiers.org/hmdb/HMDB0000193>;
+        wp:source           <https://identifiers.org/hmdb/HMDB0000072>;
+        wp:target           <https://identifiers.org/hmdb/HMDB0000193> .
+
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id90d187b4>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/id90d187b4>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001429>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001429> .
 
 <https://identifiers.org/hmdb/HMDB0000902>
         rdf:type            wp:DataNode , wp:Metabolite;
@@ -184,7 +437,8 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000902>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0000902";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/eb68a> , <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/bcff7> , <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/d65f9>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP999_r125338> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id7df46aa7> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id1135975e> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id3944502d>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/d65f9> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/eb68a> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/bcff7>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000902> .
 
 <https://identifiers.org/ensembl/ENSBTAG00000001908>
@@ -193,7 +447,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000001908>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000001908";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/f1927>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/f1927>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000001908> .
 
 <https://identifiers.org/hmdb/HMDB0001423>
@@ -202,7 +457,8 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0001423>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0001423";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/e1568> , <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/d568e> , <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/ea5a6>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id2bf0d3a0> , <https://identifiers.org/wikipathways/WP999_r125338> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/ida41d6b5c> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id5439474b>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/d568e> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/e1568> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/ea5a6>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001423> .
 
 <https://identifiers.org/ensembl/ENSBTAG00000006227>
@@ -211,8 +467,17 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000006227>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000006227";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/ee392>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/ee392>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000006227> .
+
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/e6e22>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/e6e22>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/ccfec> , <https://identifiers.org/ensembl/ENSBTAG00000004371>;
+        wp:source         <https://identifiers.org/ensembl/ENSBTAG00000004371>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/ccfec> .
 
 <https://identifiers.org/ensembl/ENSBTAG00000008314>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -220,35 +485,57 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000008314>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000008314";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/e2231>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/e2231>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000008314> .
 
 <https://identifiers.org/ensembl/ENSBTAG00000004371>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "CS";
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000004371>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000004371";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/e6311>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/e6e22> , <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/e6311>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000004371> .
 
+<http://purl.obolibrary.org/obo/NCBITaxon_9913>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9913" .
+
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/iddc8ee953>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/iddc8ee953>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id68dda630> , <https://identifiers.org/ensembl/ENSBTAG00000014093>;
+        wp:source         <https://identifiers.org/ensembl/ENSBTAG00000014093>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id68dda630> .
+
 <https://identifiers.org/ensembl/ENSBTAG00000009541>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "SUCLG2";
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000009541>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000009541";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/bd36e>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP999_r125338>;
+        dcterms:references  <https://identifiers.org/pubmed/15234968>;
+        cito:cites          <https://identifiers.org/pubmed/15234968>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/bd36e>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000009541> .
 
 <https://identifiers.org/wikipathways/WP534>
-        rdf:type            wp:Pathway , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Pathway;
         rdfs:label          "Glucose metabolism";
         dc:identifier       <https://identifiers.org/wikipathways/WP534>;
         dc:source           "WikiPathways";
         dcterms:identifier  "WP534";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/f8db5>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/bddc9> , <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/f8db5>;
         foaf:page           <https://www.wikipathways.org/instance/WP534> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP999&oldid=r125338>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
 
 <https://identifiers.org/hmdb/HMDB0001429>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -256,8 +543,17 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0001429>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0001429";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/ac299>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id90d187b4> , <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/ac299>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001429> .
+
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/ed903>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/idf7e247ae> , <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/ed903>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000134> , <https://identifiers.org/hmdb/HMDB0000254>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000254>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000134> .
 
 <https://identifiers.org/hmdb/HMDB0000217>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -265,19 +561,47 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000217>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0000217";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/b5c93>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id109b1520> , <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/b5c93>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000217> .
 
-<https://identifiers.org/wikipathways/WP999/WP999_rWP999_r125338>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP999/WP999>;
-        dc:source            "WikiPathways";
-        dc:title             "TCA cycle"@en;
-        dcterms:description  "The [[wikipedia:citric_acid_cycle|citric acid cycle]], also known as the tricarboxylic acid cycle (TCA cycle) or the Krebs cycle, (or rarely, the Szent-Gyorgyi-Krebs cycle) is a series of enzyme-catalysed chemical reactions of central importance in all living cells that use oxygen as part of cellular respiration. In eukaryotes, the citric acid cycle occurs in the matrix of the mitochondrion. The components and reactions of the citric acid cycle were established by seminal work from both [[wikipedia:Albert_Szent-Gyorgyi|Albert Szent-Gyorgyi]] and [[wikipedia:Hans_Krebs|Hans Krebs]]. \nSource: Wikipedia ([[wikipedia:citric_acid_cycle]])";
-        dcterms:identifier   "WP999/WP999";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338>;
-        wp:organismName      "Bos taurus";
-        foaf:page            <http://www.wikipathways.org/instance/WP999/WP999_rWP999_r125338> .
+<https://identifiers.org/pubmed/3724458>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "3724458";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id17b35470>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/3724458> .
+
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/ide16f3c42>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/ide16f3c42>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id68dda630> , <https://identifiers.org/hmdb/HMDB0000221>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000221>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id68dda630> .
+
+<https://identifiers.org/pubmed/949837>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "949837";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/f598e> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/cbc1e>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/949837> .
+
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/ccad3>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/ccad3>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/f4d6d> , <https://identifiers.org/ensembl/ENSBTAG00000021688>;
+        wp:source         <https://identifiers.org/ensembl/ENSBTAG00000021688>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/f4d6d> .
+
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id8c25b382>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/id8c25b382>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id68dda630> , <https://identifiers.org/hmdb/HMDB0001967>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001967>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id68dda630> .
 
 <https://identifiers.org/hmdb/HMDB0000094>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -285,16 +609,18 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000094>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0000094";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/e95eb>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/db91a> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/cbc1e> , <https://identifiers.org/wikipathways/WP999_r125338> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/ccfec>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/e95eb>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000094> .
 
 <https://identifiers.org/ensembl/ENSBTAG00000009462>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "MDH2";
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000009462>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000009462";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/fd8f9>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/fe634> , <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/fd8f9>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000009462> .
 
 <https://identifiers.org/ensembl/ENSBTAG00000001059>
@@ -303,17 +629,83 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000001059>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000001059";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/cea45>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/cea45>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000001059> .
 
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id1e6d1dd6>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/id1e6d1dd6>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001967>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001967> .
+
 <https://identifiers.org/ensembl/ENSBTAG00000014093>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "IDH2";
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000014093>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000014093";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/dd5a4>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/iddc8ee953> , <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/dd5a4>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000014093> .
+
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/idc714ef2a>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/idc714ef2a>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0002111>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0002111> .
+
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/idf7e247ae>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/idf7e247ae>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/ed903> , <https://identifiers.org/hmdb/HMDB0001072>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001072>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/ed903> .
+
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/ccfec>
+        rdf:type            wp:Interaction , wp:DirectedInteraction;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id3729ec34> , <https://identifiers.org/wikipathways/WP999_r125338> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/e6e22>;
+        dcterms:references  <https://identifiers.org/pubmed/7060582>;
+        cito:cites          <https://identifiers.org/pubmed/7060582>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/ccfec>;
+        wp:participants     <https://identifiers.org/hmdb/HMDB0000223> , <https://identifiers.org/hmdb/HMDB0000094>;
+        wp:source           <https://identifiers.org/hmdb/HMDB0000223>;
+        wp:target           <https://identifiers.org/hmdb/HMDB0000094> .
+
+<https://identifiers.org/pubmed/7730304>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "7730304";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/ef149>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/7730304> .
+
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id5439474b>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/id5439474b>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id56459e3d> , <https://identifiers.org/hmdb/HMDB0001423>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001423>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id56459e3d> .
+
+<https://identifiers.org/wikipathways/WP999_r125338>
+        rdf:type               skos:Collection , wp:Pathway;
+        dc:identifier          <https://identifiers.org/wikipathways/WP999>;
+        dc:source              "WikiPathways";
+        dc:title               "TCA cycle"@en;
+        dcterms:description    "The [[wikipedia:citric_acid_cycle|citric acid cycle]], also known as the tricarboxylic acid cycle (TCA cycle) or the Krebs cycle, (or rarely, the Szent-Gyorgyi-Krebs cycle) is a series of enzyme-catalysed chemical reactions of central importance in all living cells that use oxygen as part of cellular respiration. In eukaryotes, the citric acid cycle occurs in the matrix of the mitochondrion. The components and reactions of the citric acid cycle were established by seminal work from both [[wikipedia:Albert_Szent-Gyorgyi|Albert Szent-Gyorgyi]] and [[wikipedia:Hans_Krebs|Hans Krebs]]. \nSource: Wikipedia ([[wikipedia:citric_acid_cycle]])";
+        dcterms:identifier     "WP999";
+        dcterms:references     <https://identifiers.org/pubmed/6998725>;
+        cito:cites             <https://identifiers.org/pubmed/3052428> , <https://identifiers.org/pubmed/7730304> , <https://identifiers.org/pubmed/10672230> , <https://identifiers.org/pubmed/6998725> , <https://identifiers.org/pubmed/7730305> , <https://identifiers.org/pubmed/949837> , <https://identifiers.org/pubmed/8187868> , <https://identifiers.org/pubmed/9765290> , <https://identifiers.org/pubmed/15234968> , <https://identifiers.org/pubmed/3724458> , <https://identifiers.org/pubmed/7060582> , <https://identifiers.org/pubmed/13018271> , <https://identifiers.org/pubmed/12234803> , <https://identifiers.org/pubmed/7961626>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP999_r125338>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000026>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9913>;
+        wp:organismName        "Bos taurus";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000026>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP999&oldid=r125338> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP999&oldid=r125338>;
+        foaf:page              <http://www.wikipathways.org/instance/WP999_r125338> .
 
 <https://identifiers.org/wikipathways/WP143>
         rdf:type            wp:Pathway , wp:DataNode;
@@ -321,8 +713,19 @@
         dc:identifier       <https://identifiers.org/wikipathways/WP143>;
         dc:source           "WikiPathways";
         dcterms:identifier  "WP143";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/b09de>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/ad4b7> , <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/b09de>;
         foaf:page           <https://www.wikipathways.org/instance/WP143> .
+
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id56459e3d>
+        rdf:type            wp:Interaction , wp:Conversion , wp:DirectedInteraction;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id5439474b> , <https://identifiers.org/wikipathways/WP999_r125338> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id3944502d>;
+        dcterms:references  <https://identifiers.org/pubmed/10672230>;
+        cito:cites          <https://identifiers.org/pubmed/10672230>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/id56459e3d>;
+        wp:participants     <https://identifiers.org/hmdb/HMDB0000208> , <https://identifiers.org/hmdb/HMDB0001022>;
+        wp:source           <https://identifiers.org/hmdb/HMDB0000208>;
+        wp:target           <https://identifiers.org/hmdb/HMDB0001022> .
 
 <https://identifiers.org/hmdb/HMDB0001273>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -330,7 +733,8 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0001273>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0001273";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/bc5b7>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/bc5b7>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001273> .
 
 <https://identifiers.org/ensembl/ENSBTAG00000006463>
@@ -339,7 +743,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000006463>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000006463";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/c6452>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/c6452>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000006463> .
 
 <https://identifiers.org/hmdb/HMDB0002111>
@@ -348,8 +753,17 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0002111>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0002111";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/c02ba> , <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/cae57> , <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/d7980> , <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/ac347>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/idc940c637> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/idc714ef2a> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id449050c> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/ide8f04d6b> , <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/ac347> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/d7980> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/c02ba> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/cae57>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0002111> .
+
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id3729ec34>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/id3729ec34>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/ccfec> , <https://identifiers.org/hmdb/HMDB0001206>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001206>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/ccfec> .
 
 <https://identifiers.org/ensembl/ENSBTAG00000018813>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -357,17 +771,26 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000018813>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000018813";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/a61f3>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/a61f3>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000018813> .
 
 <https://identifiers.org/hmdb/HMDB0013111>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "ubiquinol-10";
         dc:identifier       <https://identifiers.org/hmdb/HMDB0013111>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0013111";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/c5215>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP999_r125338> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/idcebb8f2>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/c5215>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0013111> .
+
+<https://identifiers.org/pubmed/15234968>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "15234968";
+        dcterms:isPartOf    <https://identifiers.org/ensembl/ENSBTAG00000009541>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/15234968> .
 
 <https://identifiers.org/hmdb/HMDB0000538>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -375,8 +798,31 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000538>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0000538";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/c7118>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/c7118>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000538> .
+
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/idc940c637>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/idc940c637>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0002111>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0002111> .
+
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/ad4b7>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/ad4b7>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001206> , <https://identifiers.org/wikipathways/WP143>;
+        wp:source         <https://identifiers.org/wikipathways/WP143>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001206> .
+
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/idaed0e1f7>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/idaed0e1f7>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001967>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001967> .
 
 <https://identifiers.org/ensembl/ENSBTAG00000006029>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -384,17 +830,41 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000006029>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000006029";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/f381d>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/f381d>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000006029> .
 
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/f4d6d>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP999_r125338> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/ccad3>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/f4d6d>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000134> , <https://identifiers.org/hmdb/HMDB0000156>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000156>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000134> .
+
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/ide8f04d6b>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/ide8f04d6b>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0002111>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0002111> .
+
 <https://identifiers.org/ensembl/ENSBTAG00000021688>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "FH";
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000021688>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000021688";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/fbddc>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP999_r125338> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/ccad3>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/fbddc>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000021688> .
+
+<https://identifiers.org/pubmed/7730305>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "7730305";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/ef149>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/7730305> .
 
 <https://identifiers.org/hmdb/HMDB0000254>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -402,16 +872,32 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000254>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0000254";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/c6beb>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/b0fb0> , <https://identifiers.org/wikipathways/WP999_r125338> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/ed903> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/badc0>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/c6beb>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000254> .
 
+<https://identifiers.org/pubmed/9765290>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "9765290";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/b0fb0>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/9765290> .
+
+<https://identifiers.org/pubmed/13018271>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "13018271";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/f598e> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/cbc1e>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/13018271> .
+
 <https://identifiers.org/hmdb/HMDB0000134>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "fumarate";
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000134>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0000134";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/fc117>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP999_r125338> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/ed903> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/f4d6d>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/fc117>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000134> .
 
 <https://identifiers.org/wikipathways/WP357>
@@ -420,7 +906,8 @@
         dc:identifier       <https://identifiers.org/wikipathways/WP357>;
         dc:source           "WikiPathways";
         dcterms:identifier  "WP357";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/f21aa>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP999_r125338> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/db91a>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/f21aa>;
         foaf:page           <https://www.wikipathways.org/instance/WP357> .
 
 <https://identifiers.org/hmdb/HMDB0001487>
@@ -429,8 +916,16 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0001487>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0001487";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/f30d1> , <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/bc872> , <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/ab312>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id9f8f19fa> , <https://identifiers.org/wikipathways/WP999_r125338> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/iddcae2bba> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/idd2b546ff>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/ab312> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/f30d1> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/bc872>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001487> .
+
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/id2bf0d3a0>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/id2bf0d3a0>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001423>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001423> .
 
 <https://identifiers.org/ensembl/ENSBTAG00000006429>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -438,5 +933,22 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000006429>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000006429";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/d1c04> , <http://rdf.wikipathways.org/Pathway/WP999/WP999_rWP999_r125338/DataNode/bdef5>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/dece7> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/idcc3e07ab> , <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/d1c04> , <http://rdf.wikipathways.org/Pathway/WP999_r125338/DataNode/bdef5>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000006429> .
+
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/dece7>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/dece7>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/cbc1e> , <https://identifiers.org/ensembl/ENSBTAG00000006429>;
+        wp:source         <https://identifiers.org/ensembl/ENSBTAG00000006429>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/cbc1e> .
+
+<http://rdf.wikipathways.org/Pathway/WP999_r125338/WP/Interaction/db91a>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP999_r125338>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP999_r125338/Interaction/db91a>;
+        wp:participants   <https://identifiers.org/wikipathways/WP357> , <https://identifiers.org/hmdb/HMDB0000094>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000094>;
+        wp:target         <https://identifiers.org/wikipathways/WP357> .

@@ -16,14 +16,33 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
+<http://rdf.wikipathways.org/Pathway/WP2943_r117758/WP/Interaction/id67b13f5d>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2943_r117758>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2943_r117758/Interaction/id67b13f5d>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP2943_r117758/WP/Interaction/id3fdb2042> , <https://identifiers.org/ncbigene/23405>;
+        wp:source         <https://identifiers.org/ncbigene/23405>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP2943_r117758/WP/Interaction/id3fdb2042> .
+
+<https://identifiers.org/wikipathways/WP2943>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP2943_r117758> .
+
 <https://identifiers.org/ncbigene/23405>
         rdf:type            wp:GeneProduct , wp:DataNode;
         rdfs:label          "DICER1";
         dc:identifier       <https://identifiers.org/ncbigene/23405>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "23405";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2943/WP2943_rWP2943_r117758/DataNode/a5e3d>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2943_r117758/WP/Interaction/id285ee7f2> , <https://identifiers.org/wikipathways/WP2943_r117758> , <http://rdf.wikipathways.org/Pathway/WP2943_r117758/WP/Interaction/id67b13f5d>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2943_r117758/DataNode/a5e3d>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/23405> .
+
+<http://rdf.wikipathways.org/Pathway/WP2943_r117758/WP/Interaction/id3fdb2042>
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP2943_r117758/WP/Interaction/id67b13f5d> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP2943&oldid=r117758>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
 
 <https://identifiers.org/mirbase.mature/MIMAT0000617>
         rdf:type            wp:DataNode;
@@ -31,7 +50,8 @@
         dc:identifier       <https://identifiers.org/mirbase.mature/MIMAT0000617>;
         dc:source           "miRBase mature sequence";
         dcterms:identifier  "MIMAT0000617";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2943/WP2943_rWP2943_r117758/DataNode/c13ed>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2943_r117758>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2943_r117758/DataNode/c13ed>;
         foaf:page           <http://www.mirbase.org/cgi-bin/mature.pl?mature_acc=MIMAT0000617> .
 
 <https://identifiers.org/mirbase.mature/MIMAT0000682>
@@ -40,19 +60,16 @@
         dc:identifier       <https://identifiers.org/mirbase.mature/MIMAT0000682>;
         dc:source           "miRBase mature sequence";
         dcterms:identifier  "MIMAT0000682";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2943/WP2943_rWP2943_r117758/DataNode/e8574>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2943_r117758>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2943_r117758/DataNode/e8574>;
         foaf:page           <http://www.mirbase.org/cgi-bin/mature.pl?mature_acc=MIMAT0000682> .
 
-<https://identifiers.org/wikipathways/WP2943/WP2943_rWP2943_r117758>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP2943/WP2943>;
-        dc:source            "WikiPathways";
-        dc:title             "Hypoxia-mediated EMT and stemness"@en;
-        dcterms:description  "Model of hypoxia mediated EMT and stemness.";
-        dcterms:identifier   "WP2943/WP2943";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP2943/WP2943_rWP2943_r117758>;
-        wp:organismName      "Homo sapiens";
-        foaf:page            <http://www.wikipathways.org/instance/WP2943/WP2943_rWP2943_r117758> .
+<http://rdf.wikipathways.org/Pathway/WP2943_r117758/WP/Interaction/id285ee7f2>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2943_r117758>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2943_r117758/Interaction/id285ee7f2>;
+        wp:participants   <https://identifiers.org/ncbigene/23405>;
+        wp:target         <https://identifiers.org/ncbigene/23405> .
 
 <https://identifiers.org/mirbase.mature/MIMAT0000318>
         rdf:type            wp:DataNode;
@@ -60,14 +77,55 @@
         dc:identifier       <https://identifiers.org/mirbase.mature/MIMAT0000318>;
         dc:source           "miRBase mature sequence";
         dcterms:identifier  "MIMAT0000318";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2943/WP2943_rWP2943_r117758/DataNode/d0147>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2943_r117758>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2943_r117758/DataNode/d0147>;
         foaf:page           <http://www.mirbase.org/cgi-bin/mature.pl?mature_acc=MIMAT0000318> .
 
+<https://identifiers.org/wikipathways/WP2943_r117758>
+        rdf:type               skos:Collection , wp:Pathway;
+        dc:identifier          <https://identifiers.org/wikipathways/WP2943>;
+        dc:source              "WikiPathways";
+        dc:title               "Hypoxia-mediated EMT and stemness"@en;
+        dcterms:description    "Model of hypoxia mediated EMT and stemness.";
+        dcterms:identifier     "WP2943";
+        dcterms:references     <https://identifiers.org/pubmed/25351418>;
+        cito:cites             <https://identifiers.org/pubmed/25351418>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP2943_r117758>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000004>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606>;
+        wp:organismName        "Homo sapiens";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000004>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP2943&oldid=r117758> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP2943&oldid=r117758>;
+        foaf:page              <http://www.wikipathways.org/instance/WP2943_r117758> .
+
 <https://identifiers.org/ncbigene/6935>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "ZEB1";
         dc:identifier       <https://identifiers.org/ncbigene/6935>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "6935";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2943/WP2943_rWP2943_r117758/DataNode/d0b22>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2943_r117758> , <http://rdf.wikipathways.org/Pathway/WP2943_r117758/WP/Interaction/id604fcd2c>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2943_r117758/DataNode/d0b22>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/6935> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP2943&oldid=r117758>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<https://identifiers.org/pubmed/25351418>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "25351418";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2943_r117758>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/25351418> .
+
+<http://rdf.wikipathways.org/Pathway/WP2943_r117758/WP/Interaction/id604fcd2c>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2943_r117758>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2943_r117758/Interaction/id604fcd2c>;
+        wp:participants   <https://identifiers.org/ncbigene/6935>;
+        wp:source         <https://identifiers.org/ncbigene/6935> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_9606>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9606" .

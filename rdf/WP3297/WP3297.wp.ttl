@@ -16,70 +16,24 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/mirbase.mature/MIMAT0000449>
-        rdf:type            wp:DataNode;
-        rdfs:label          "hsa-miR-146a-5p";
-        dc:identifier       <https://identifiers.org/mirbase.mature/MIMAT0000449>;
-        dc:source           "miRBase mature sequence";
-        dcterms:identifier  "MIMAT0000449";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3297/WP3297_rWP3297_r106734/DataNode/ae8d8>;
-        foaf:page           <http://www.mirbase.org/cgi-bin/mature.pl?mature_acc=MIMAT0000449> .
-
-<https://identifiers.org/ncbigene/7124>
-        rdf:type            wp:DataNode;
-        rdfs:label          "TNFalpha mRNA";
-        dc:identifier       <https://identifiers.org/ncbigene/7124>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "7124";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3297/WP3297_rWP3297_r106734/DataNode/c27e5>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/7124> .
-
-<https://identifiers.org/ensembl/ENSG00000127528>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "KLF2";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000127528>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000127528";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3297/WP3297_rWP3297_r106734/DataNode/fdb5f>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000127528> .
-
-<https://identifiers.org/ensembl/ENSG00000178568>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "ERBB4";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000178568>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000178568";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3297/WP3297_rWP3297_r106734/DataNode/c8f0a>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000178568> .
-
 <https://identifiers.org/ensembl/ENSG00000172179>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "Prolactin";
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000172179>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000172179";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3297/WP3297_rWP3297_r106734/DataNode/afa3f>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3297_r106734/WP/Interaction/id274c462a> , <https://identifiers.org/wikipathways/WP3297_r106734>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3297_r106734/DataNode/afa3f>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000172179> .
 
-<https://identifiers.org/wikipathways/WP3297/WP3297_rWP3297_r106734>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP3297/WP3297>;
-        dc:source            "WikiPathways";
-        dc:title             "EV release from cardiac cells and their functional effects"@en;
-        dcterms:description  "Summary of reported EV release from cardiac cells in culture and their functional effects. EV release has been reported in numerous cell lines and primary cultures, both at baseline and in response to stimuli. Transfer of EVs between cell types has been demonstrated as well as delivery of cargo.\n\nNote that this pathway represents a review of multiple studies in multiple organisms. This pathway displays the human orthologs.\n\nHUVEC: human aortic endothelial cell\n\nHMEC-1: human microvascular endothelial cell\n\nHASMC: human aortic smooth muscle cell\n\nNRVM: neonatal rat ventricular myocyte.\n\n\nAdapted from Danielson KM, Das S. Extracellular Vesicles in Heart Disease: Excitement for the Future? Exosomes Microvesicles, 2014. http://www.ncbi.nlm.nih.gov/pubmed/25429310";
-        dcterms:identifier   "WP3297/WP3297";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP3297/WP3297_rWP3297_r106734>;
-        wp:organismName      "Homo sapiens";
-        foaf:page            <http://www.wikipathways.org/instance/WP3297/WP3297_rWP3297_r106734> .
-
-<https://identifiers.org/ensembl/ENSG00000207782>
-        rdf:type            wp:DataNode;
-        rdfs:label          "MIR150";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000207782>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000207782";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3297/WP3297_rWP3297_r106734/DataNode/c16a4>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000207782> .
+<http://rdf.wikipathways.org/Pathway/WP3297_r106734/WP/Interaction/ide1d26d18>
+        rdf:type            wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3297_r106734>;
+        dcterms:references  <https://identifiers.org/pubmed/22327366>;
+        cito:cites          <https://identifiers.org/pubmed/22327366>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3297_r106734/Interaction/ide1d26d18>;
+        wp:participants     <https://identifiers.org/ensembl/ENSG00000127528>;
+        wp:source           <https://identifiers.org/ensembl/ENSG00000127528> .
 
 <https://identifiers.org/hmdb/HMDB0000742>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -87,62 +41,60 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000742>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0000742";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3297/WP3297_rWP3297_r106734/DataNode/aeae7>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3297_r106734>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3297_r106734/DataNode/aeae7>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000742> .
 
-<https://identifiers.org/mirbase.mature/MIMAT0000437>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "hsa-miR-145-5p";
-        dc:identifier       <https://identifiers.org/mirbase.mature/MIMAT0000437>;
+<http://rdf.wikipathways.org/Pathway/WP3297_r106734/WP/Interaction/id274c462a>
+        rdf:type            wp:Interaction , wp:DirectedInteraction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3297_r106734>;
+        dcterms:references  <https://identifiers.org/pubmed/23619365>;
+        cito:cites          <https://identifiers.org/pubmed/23619365>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3297_r106734/Interaction/id274c462a>;
+        wp:participants     <https://identifiers.org/ensembl/ENSG00000283733> , <https://identifiers.org/ensembl/ENSG00000172179>;
+        wp:source           <https://identifiers.org/ensembl/ENSG00000172179>;
+        wp:target           <https://identifiers.org/ensembl/ENSG00000283733> .
+
+<https://identifiers.org/pubmed/23619365>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "23619365";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3297_r106734/WP/Interaction/id274c462a>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/23619365> .
+
+<https://identifiers.org/mirbase.mature/MIMAT0000449>
+        rdf:type            wp:DataNode;
+        rdfs:label          "hsa-miR-146a-5p";
+        dc:identifier       <https://identifiers.org/mirbase.mature/MIMAT0000449>;
         dc:source           "miRBase mature sequence";
-        dcterms:identifier  "MIMAT0000437";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3297/WP3297_rWP3297_r106734/DataNode/f4341>;
-        foaf:page           <http://www.mirbase.org/cgi-bin/mature.pl?mature_acc=MIMAT0000437> .
+        dcterms:identifier  "MIMAT0000449";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3297_r106734>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3297_r106734/DataNode/ae8d8>;
+        foaf:page           <http://www.mirbase.org/cgi-bin/mature.pl?mature_acc=MIMAT0000449> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_9606>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9606" .
+
+<https://identifiers.org/ensembl/ENSG00000178568>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "ERBB4";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000178568>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000178568";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3297_r106734/WP/Interaction/id669fb5e3> , <https://identifiers.org/wikipathways/WP3297_r106734>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3297_r106734/DataNode/c8f0a>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000178568> .
 
 <https://identifiers.org/ensembl/ENSG00000143333>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "RGS16";
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000143333>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000143333";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3297/WP3297_rWP3297_r106734/DataNode/f363f>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3297_r106734/WP/Interaction/id8dc821cd> , <http://rdf.wikipathways.org/Pathway/WP3297_r106734/WP/Interaction/idc01508b1> , <https://identifiers.org/wikipathways/WP3297_r106734>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3297_r106734/DataNode/f363f>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000143333> .
-
-<https://identifiers.org/ensembl/ENSG00000199161>
-        rdf:type            wp:DataNode;
-        rdfs:label          "MIR126";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000199161>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000199161";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3297/WP3297_rWP3297_r106734/DataNode/bd93d>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000199161> .
-
-<https://identifiers.org/ensembl/ENSG00000118513>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "C-Myb";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000118513>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000118513";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3297/WP3297_rWP3297_r106734/DataNode/a6ab0>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000118513> .
-
-<https://identifiers.org/ensembl/ENSG00000284182>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "MIR143";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000284182>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000284182";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3297/WP3297_rWP3297_r106734/DataNode/b0b42>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000284182> .
-
-<https://identifiers.org/ensembl/ENSG00000107562>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "CXCL12";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000107562>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000107562";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3297/WP3297_rWP3297_r106734/DataNode/d6295>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000107562> .
 
 <https://identifiers.org/chebi/CHEBI:60151>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -150,17 +102,139 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:60151>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:60151";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3297/WP3297_rWP3297_r106734/DataNode/b2f10>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3297_r106734>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3297_r106734/DataNode/b2f10>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:60151> .
 
-<https://identifiers.org/hmdb/HMDB0000108>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Ethanol";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000108>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000108";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3297/WP3297_rWP3297_r106734/DataNode/af87a> , <http://rdf.wikipathways.org/Pathway/WP3297/WP3297_rWP3297_r106734/DataNode/a0fef>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000108> .
+<http://rdf.wikipathways.org/Pathway/WP3297_r106734/WP/Interaction/id23304253>
+        rdf:type            wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3297_r106734>;
+        dcterms:references  <https://identifiers.org/pubmed/20603081>;
+        cito:cites          <https://identifiers.org/pubmed/20603081>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3297_r106734/Interaction/id23304253>;
+        wp:participants     <https://identifiers.org/ensembl/ENSG00000207782>;
+        wp:target           <https://identifiers.org/ensembl/ENSG00000207782> .
+
+<https://identifiers.org/wikipathways/WP3297_r106734>
+        rdf:type               skos:Collection , wp:Pathway;
+        dc:identifier          <https://identifiers.org/wikipathways/WP3297>;
+        dc:source              "WikiPathways";
+        dc:title               "EV release from cardiac cells and their functional effects"@en;
+        dcterms:description    "Summary of reported EV release from cardiac cells in culture and their functional effects. EV release has been reported in numerous cell lines and primary cultures, both at baseline and in response to stimuli. Transfer of EVs between cell types has been demonstrated as well as delivery of cargo.\n\nNote that this pathway represents a review of multiple studies in multiple organisms. This pathway displays the human orthologs.\n\nHUVEC: human aortic endothelial cell\n\nHMEC-1: human microvascular endothelial cell\n\nHASMC: human aortic smooth muscle cell\n\nNRVM: neonatal rat ventricular myocyte.\n\n\nAdapted from Danielson KM, Das S. Extracellular Vesicles in Heart Disease: Excitement for the Future? Exosomes Microvesicles, 2014. http://www.ncbi.nlm.nih.gov/pubmed/25429310";
+        dcterms:identifier     "WP3297";
+        dcterms:references     <https://identifiers.org/pubmed/25429310>;
+        cito:cites             <https://identifiers.org/pubmed/22327366> , <https://identifiers.org/pubmed/19996457> , <https://identifiers.org/pubmed/25429310> , <https://identifiers.org/pubmed/23619365> , <https://identifiers.org/pubmed/20603081>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP3297_r106734>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000004>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606>;
+        wp:organismName        "Homo sapiens";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000004>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3297&oldid=r106734> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3297&oldid=r106734>;
+        foaf:page              <http://www.wikipathways.org/instance/WP3297_r106734> .
+
+<http://rdf.wikipathways.org/Pathway/WP3297_r106734/WP/Interaction/id5b71f0f7>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3297_r106734>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3297_r106734/Interaction/id5b71f0f7>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000118513> , <https://identifiers.org/ensembl/ENSG00000207782>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000207782>;
+        wp:target         <https://identifiers.org/ensembl/ENSG00000118513> .
+
+<https://identifiers.org/pubmed/25429310>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "25429310";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3297_r106734>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/25429310> .
+
+<http://rdf.wikipathways.org/Pathway/WP3297_r106734/WP/Interaction/idb3912a04>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3297_r106734>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3297_r106734/Interaction/idb3912a04>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000118513>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000118513> .
+
+<https://identifiers.org/pubmed/22327366>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "22327366";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3297_r106734/WP/Interaction/ide1d26d18>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/22327366> .
+
+<https://identifiers.org/pubmed/20603081>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "20603081";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3297_r106734/WP/Interaction/id23304253>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/20603081> .
+
+<https://identifiers.org/ensembl/ENSG00000107562>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "CXCL12";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000107562>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000107562";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3297_r106734> , <http://rdf.wikipathways.org/Pathway/WP3297_r106734/WP/Interaction/idc01508b1>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3297_r106734/DataNode/d6295>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000107562> .
+
+<https://identifiers.org/ensembl/ENSG00000284182>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "MIR143";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000284182>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000284182";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3297_r106734>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3297_r106734/DataNode/b0b42>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000284182> .
+
+<http://rdf.wikipathways.org/Pathway/WP3297_r106734/WP/Interaction/id8dc821cd>
+        rdf:type            wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3297_r106734>;
+        dcterms:references  <https://identifiers.org/pubmed/19996457>;
+        cito:cites          <https://identifiers.org/pubmed/19996457>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3297_r106734/Interaction/id8dc821cd>;
+        wp:participants     <https://identifiers.org/ensembl/ENSG00000143333>;
+        wp:target           <https://identifiers.org/ensembl/ENSG00000143333> .
+
+<https://identifiers.org/ensembl/ENSG00000199161>
+        rdf:type            wp:DataNode;
+        rdfs:label          "MIR126";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000199161>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000199161";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3297_r106734>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3297_r106734/DataNode/bd93d>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000199161> .
+
+<http://rdf.wikipathways.org/Pathway/WP3297_r106734/WP/Interaction/idcf81ed9e>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3297_r106734>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3297_r106734/Interaction/idcf81ed9e>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000108>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000108>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000108> .
+
+<https://identifiers.org/pubmed/19996457>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "19996457";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3297_r106734/WP/Interaction/id8dc821cd>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/19996457> .
+
+<https://identifiers.org/mirbase.mature/MIMAT0000437>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "hsa-miR-145-5p";
+        dc:identifier       <https://identifiers.org/mirbase.mature/MIMAT0000437>;
+        dc:source           "miRBase mature sequence";
+        dcterms:identifier  "MIMAT0000437";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3297_r106734>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3297_r106734/DataNode/f4341>;
+        foaf:page           <http://www.mirbase.org/cgi-bin/mature.pl?mature_acc=MIMAT0000437> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3297&oldid=r106734>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
 
 <https://identifiers.org/ensembl/ENSG00000283733>
         rdf:type            wp:DataNode;
@@ -168,5 +242,78 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000283733>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000283733";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3297/WP3297_rWP3297_r106734/DataNode/ba43e>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3297_r106734/WP/Interaction/id274c462a> , <https://identifiers.org/wikipathways/WP3297_r106734>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3297_r106734/DataNode/ba43e>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000283733> .
+
+<https://identifiers.org/ensembl/ENSG00000207782>
+        rdf:type            wp:DataNode;
+        rdfs:label          "MIR150";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000207782>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000207782";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3297_r106734/WP/Interaction/id5b71f0f7> , <https://identifiers.org/wikipathways/WP3297_r106734> , <http://rdf.wikipathways.org/Pathway/WP3297_r106734/WP/Interaction/id23304253>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3297_r106734/DataNode/c16a4>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000207782> .
+
+<https://identifiers.org/ncbigene/7124>
+        rdf:type            wp:DataNode;
+        rdfs:label          "TNFalpha mRNA";
+        dc:identifier       <https://identifiers.org/ncbigene/7124>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "7124";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3297_r106734>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3297_r106734/DataNode/c27e5>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/7124> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3297&oldid=r106734>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<https://identifiers.org/ensembl/ENSG00000118513>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "C-Myb";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000118513>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000118513";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3297_r106734/WP/Interaction/id5b71f0f7> , <https://identifiers.org/wikipathways/WP3297_r106734> , <http://rdf.wikipathways.org/Pathway/WP3297_r106734/WP/Interaction/idb3912a04>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3297_r106734/DataNode/a6ab0>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000118513> .
+
+<https://identifiers.org/hmdb/HMDB0000108>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Ethanol";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000108>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0000108";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3297_r106734/WP/Interaction/idcf81ed9e> , <https://identifiers.org/wikipathways/WP3297_r106734>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3297_r106734/DataNode/af87a> , <http://rdf.wikipathways.org/Pathway/WP3297_r106734/DataNode/a0fef>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000108> .
+
+<http://rdf.wikipathways.org/Pathway/WP3297_r106734/WP/Interaction/idc01508b1>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3297_r106734>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3297_r106734/Interaction/idc01508b1>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000107562> , <https://identifiers.org/ensembl/ENSG00000143333>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000143333>;
+        wp:target         <https://identifiers.org/ensembl/ENSG00000107562> .
+
+<https://identifiers.org/ensembl/ENSG00000127528>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "KLF2";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000127528>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000127528";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3297_r106734/WP/Interaction/ide1d26d18> , <https://identifiers.org/wikipathways/WP3297_r106734>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3297_r106734/DataNode/fdb5f>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000127528> .
+
+<http://rdf.wikipathways.org/Pathway/WP3297_r106734/WP/Interaction/id669fb5e3>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3297_r106734>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3297_r106734/Interaction/id669fb5e3>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000178568>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000178568> .
+
+<https://identifiers.org/wikipathways/WP3297>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP3297_r106734> .

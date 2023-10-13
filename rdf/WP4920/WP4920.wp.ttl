@@ -16,32 +16,84 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/chebi/CHEBI:16238>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "FAD";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:16238>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:16238";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4920/WP4920_rWP4920_r117791/DataNode/aba89>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16238> .
-
-<https://identifiers.org/ensembl/ENSG00000205138>
+<https://identifiers.org/ensembl/ENSG00000143252>
         rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "SDHAF1";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000205138>;
+        rdfs:label          "SDHC";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000143252>;
         dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000205138";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4920/WP4920_rWP4920_r117791/DataNode/a19ff> , <http://rdf.wikipathways.org/Pathway/WP4920/WP4920_rWP4920_r117791/DataNode/c12ba> , <http://rdf.wikipathways.org/Pathway/WP4920/WP4920_rWP4920_r117791/DataNode/e88b1> , <http://rdf.wikipathways.org/Pathway/WP4920/WP4920_rWP4920_r117791/DataNode/c68e7>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000205138> .
+        dcterms:identifier  "ENSG00000143252";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4920_r117791> , <http://rdf.wikipathways.org/Pathway/WP4920_r117791/Complex/cab70>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4920_r117791/DataNode/aeca1> , <http://rdf.wikipathways.org/Pathway/WP4920_r117791/DataNode/dc52c>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000143252> .
 
-<https://identifiers.org/ensembl/ENSG00000117118>
-        rdf:type            wp:DataNode , wp:GeneProduct;
-        rdfs:label          "SDHB";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000117118>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000117118";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4920/WP4920_rWP4920_r117791/DataNode/a2fbb> , <http://rdf.wikipathways.org/Pathway/WP4920/WP4920_rWP4920_r117791/DataNode/c2416> , <http://rdf.wikipathways.org/Pathway/WP4920/WP4920_rWP4920_r117791/DataNode/b7fa1> , <http://rdf.wikipathways.org/Pathway/WP4920/WP4920_rWP4920_r117791/DataNode/c7265>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000117118> .
+<http://purl.obolibrary.org/obo/NCBITaxon_9606>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9606" .
+
+<http://rdf.wikipathways.org/Pathway/WP4920_r117791/ComplexBinding/cab70>
+        rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4920_r117791>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4920_r117791/Group/cab70>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000117118> , <https://identifiers.org/ensembl/ENSG00000073578> , <http://rdf.wikipathways.org/Pathway/WP4920_r117791/Complex/cab70> , <https://identifiers.org/ensembl/ENSG00000204370> , <https://identifiers.org/ensembl/ENSG00000143252> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4920&oldid=r117791>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<http://rdf.wikipathways.org/Pathway/WP4920_r117791/WP/Interaction/eee5d>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4920_r117791>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4920_r117791/Interaction/eee5d>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000154079>;
+        wp:target         <https://identifiers.org/ensembl/ENSG00000154079> .
+
+<http://rdf.wikipathways.org/Pathway/WP4920_r117791/Complex/cab70>
+        rdf:type          wp:Complex , wp:DataNode;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4920_r117791>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4920_r117791/Group/cab70>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000073578> , <https://identifiers.org/ensembl/ENSG00000143252> , <https://identifiers.org/ensembl/ENSG00000117118> , <https://identifiers.org/ensembl/ENSG00000204370> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4920&oldid=r117791>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<https://identifiers.org/wikipathways/WP4920>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP4920_r117791> .
+
+<http://rdf.wikipathways.org/Pathway/WP4920_r117791/WP/Interaction/f672e>
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP4920_r117791/WP/Interaction/ad58f> .
+
+<https://identifiers.org/pubmed/30030361>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "30030361";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4920_r117791>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/30030361> .
+
+<http://rdf.wikipathways.org/Pathway/WP4920_r117791/WP/Interaction/ad58f>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4920_r117791>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4920_r117791/Interaction/ad58f>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4920_r117791/WP/Interaction/f672e> , <https://identifiers.org/ensembl/ENSG00000154079>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000154079>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4920_r117791/WP/Interaction/f672e> .
+
+<https://identifiers.org/wikipathways/WP4920_r117791>
+        rdf:type               wp:Pathway , skos:Collection;
+        dc:identifier          <https://identifiers.org/wikipathways/WP4920>;
+        dc:source              "WikiPathways";
+        dc:title               "Mitochondrial complex II assembly"@en;
+        dcterms:description    "Complex II or succinate dehydrogenase (quinone) is shared between the TCA cycle and the ETC. It has no proton pumping activity. It is composed of four  subunits encoded by nDNA. Two subunits are hydrophillic, SDHA and SDHB, and two subunits are hydrophobic: SDHC and SDHD. Complex II assembly occurs through the independent maturation of these subunits mediated by subunit-specific chaperones.";
+        dcterms:identifier     "WP4920";
+        dcterms:references     <https://identifiers.org/pubmed/30030361>;
+        cito:cites             <https://identifiers.org/pubmed/30030361>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4920_r117791>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0001059> , <http://purl.obolibrary.org/obo/PW_0000034>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606>;
+        wp:organismName        "Homo sapiens";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000034> , <http://purl.obolibrary.org/obo/PW_0001059>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4920&oldid=r117791> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4920&oldid=r117791>;
+        foaf:page              <http://www.wikipathways.org/instance/WP4920_r117791> .
 
 <https://identifiers.org/ensembl/ENSG00000154079>
         rdf:type            wp:DataNode , wp:GeneProduct;
@@ -49,55 +101,9 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000154079>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000154079";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4920/WP4920_rWP4920_r117791/DataNode/f4e80> , <http://rdf.wikipathways.org/Pathway/WP4920/WP4920_rWP4920_r117791/DataNode/f1c12> , <http://rdf.wikipathways.org/Pathway/WP4920/WP4920_rWP4920_r117791/DataNode/be104>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4920_r117791/WP/Interaction/ad58f> , <https://identifiers.org/wikipathways/WP4920_r117791> , <http://rdf.wikipathways.org/Pathway/WP4920_r117791/WP/Interaction/eee5d>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4920_r117791/DataNode/f1c12> , <http://rdf.wikipathways.org/Pathway/WP4920_r117791/DataNode/be104> , <http://rdf.wikipathways.org/Pathway/WP4920_r117791/DataNode/f4e80>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000154079> .
-
-<https://identifiers.org/ensembl/ENSG00000143252>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "SDHC";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000143252>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000143252";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4920/WP4920_rWP4920_r117791/DataNode/aeca1> , <http://rdf.wikipathways.org/Pathway/WP4920/WP4920_rWP4920_r117791/DataNode/dc52c>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000143252> .
-
-<https://identifiers.org/ensembl/ENSG00000204370>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "SDHD";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000204370>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000204370";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4920/WP4920_rWP4920_r117791/DataNode/c93a7> , <http://rdf.wikipathways.org/Pathway/WP4920/WP4920_rWP4920_r117791/DataNode/bbb94>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000204370> .
-
-<https://identifiers.org/wikipathways/WP4920/WP4920_rWP4920_r117791>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP4920/WP4920>;
-        dc:source            "WikiPathways";
-        dc:title             "Mitochondrial complex II assembly"@en;
-        dcterms:description  "Complex II or succinate dehydrogenase (quinone) is shared between the TCA cycle and the ETC. It has no proton pumping activity. It is composed of four  subunits encoded by nDNA. Two subunits are hydrophillic, SDHA and SDHB, and two subunits are hydrophobic: SDHC and SDHD. Complex II assembly occurs through the independent maturation of these subunits mediated by subunit-specific chaperones.";
-        dcterms:identifier   "WP4920/WP4920";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP4920/WP4920_rWP4920_r117791>;
-        wp:organismName      "Homo sapiens";
-        foaf:page            <http://www.wikipathways.org/instance/WP4920/WP4920_rWP4920_r117791> .
-
-<https://identifiers.org/ensembl/ENSG00000167985>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "SDHAF2";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000167985>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000167985";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4920/WP4920_rWP4920_r117791/DataNode/cdfce> , <http://rdf.wikipathways.org/Pathway/WP4920/WP4920_rWP4920_r117791/DataNode/bc2c8>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000167985> .
-
-<https://identifiers.org/ensembl/ENSG00000073578>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "SDHA";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000073578>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000073578";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4920/WP4920_rWP4920_r117791/DataNode/d4271> , <http://rdf.wikipathways.org/Pathway/WP4920/WP4920_rWP4920_r117791/DataNode/a2ede> , <http://rdf.wikipathways.org/Pathway/WP4920/WP4920_rWP4920_r117791/DataNode/c5075> , <http://rdf.wikipathways.org/Pathway/WP4920/WP4920_rWP4920_r117791/DataNode/d336e>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000073578> .
 
 <https://identifiers.org/ensembl/ENSG00000196636>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -105,5 +111,84 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000196636>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000196636";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4920/WP4920_rWP4920_r117791/DataNode/c997f> , <http://rdf.wikipathways.org/Pathway/WP4920/WP4920_rWP4920_r117791/DataNode/f1ed0> , <http://rdf.wikipathways.org/Pathway/WP4920/WP4920_rWP4920_r117791/DataNode/ad807>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4920_r117791> , <http://rdf.wikipathways.org/Pathway/WP4920_r117791/WP/Interaction/fb2f1>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4920_r117791/DataNode/ad807> , <http://rdf.wikipathways.org/Pathway/WP4920_r117791/DataNode/f1ed0> , <http://rdf.wikipathways.org/Pathway/WP4920_r117791/DataNode/c997f>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000196636> .
+
+<https://identifiers.org/chebi/CHEBI:16238>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "FAD";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:16238>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:16238";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4920_r117791>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4920_r117791/DataNode/aba89>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16238> .
+
+<https://identifiers.org/ensembl/ENSG00000167985>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "SDHAF2";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000167985>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000167985";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4920_r117791/WP/Interaction/e4d88> , <https://identifiers.org/wikipathways/WP4920_r117791>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4920_r117791/DataNode/bc2c8> , <http://rdf.wikipathways.org/Pathway/WP4920_r117791/DataNode/cdfce>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000167985> .
+
+<https://identifiers.org/ensembl/ENSG00000117118>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "SDHB";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000117118>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000117118";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4920_r117791/Complex/cab70> , <https://identifiers.org/wikipathways/WP4920_r117791>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4920_r117791/DataNode/c2416> , <http://rdf.wikipathways.org/Pathway/WP4920_r117791/DataNode/a2fbb> , <http://rdf.wikipathways.org/Pathway/WP4920_r117791/DataNode/b7fa1> , <http://rdf.wikipathways.org/Pathway/WP4920_r117791/DataNode/c7265>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000117118> .
+
+<https://identifiers.org/ensembl/ENSG00000205138>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "SDHAF1";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000205138>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000205138";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4920_r117791>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4920_r117791/DataNode/a19ff> , <http://rdf.wikipathways.org/Pathway/WP4920_r117791/DataNode/c68e7> , <http://rdf.wikipathways.org/Pathway/WP4920_r117791/DataNode/c12ba> , <http://rdf.wikipathways.org/Pathway/WP4920_r117791/DataNode/e88b1>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000205138> .
+
+<http://rdf.wikipathways.org/Pathway/WP4920_r117791/WP/Interaction/e4d88>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4920_r117791>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4920_r117791/Interaction/e4d88>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000167985>;
+        wp:target         <https://identifiers.org/ensembl/ENSG00000167985> .
+
+<https://identifiers.org/ensembl/ENSG00000073578>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "SDHA";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000073578>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000073578";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4920_r117791/Complex/cab70> , <https://identifiers.org/wikipathways/WP4920_r117791>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4920_r117791/DataNode/d336e> , <http://rdf.wikipathways.org/Pathway/WP4920_r117791/DataNode/a2ede> , <http://rdf.wikipathways.org/Pathway/WP4920_r117791/DataNode/d4271> , <http://rdf.wikipathways.org/Pathway/WP4920_r117791/DataNode/c5075>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000073578> .
+
+<http://rdf.wikipathways.org/Pathway/WP4920_r117791/WP/Interaction/d797f>
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP4920_r117791/WP/Interaction/fb2f1> .
+
+<https://identifiers.org/ensembl/ENSG00000204370>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "SDHD";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000204370>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000204370";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4920_r117791> , <http://rdf.wikipathways.org/Pathway/WP4920_r117791/Complex/cab70>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4920_r117791/DataNode/c93a7> , <http://rdf.wikipathways.org/Pathway/WP4920_r117791/DataNode/bbb94>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000204370> .
+
+<http://rdf.wikipathways.org/Pathway/WP4920_r117791/WP/Interaction/fb2f1>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4920_r117791>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4920_r117791/Interaction/fb2f1>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4920_r117791/WP/Interaction/d797f> , <https://identifiers.org/ensembl/ENSG00000196636>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000196636>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4920_r117791/WP/Interaction/d797f> .

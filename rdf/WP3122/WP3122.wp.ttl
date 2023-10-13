@@ -16,13 +16,17 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
+<https://identifiers.org/wikipathways/WP3122>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP3122_r105919> .
+
 <https://identifiers.org/ensembl/ENSBTAG00000004736>
         rdf:type            wp:GeneProduct , wp:DataNode;
         rdfs:label          "GRB2";
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000004736>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000004736";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3122/WP3122_rWP3122_r105919/DataNode/dc7bd>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3122_r105919>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3122_r105919/DataNode/dc7bd>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000004736> .
 
 <https://identifiers.org/ensembl/ENSBTAG00000011643>
@@ -31,8 +35,28 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000011643>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000011643";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3122/WP3122_rWP3122_r105919/DataNode/d3463>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3122_r105919>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3122_r105919/DataNode/d3463>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000011643> .
+
+<https://identifiers.org/wikipathways/WP3122_r105919>
+        rdf:type               wp:Pathway , skos:Collection;
+        dc:identifier          <https://identifiers.org/wikipathways/WP3122>;
+        dc:source              "WikiPathways";
+        dc:title               "Pilocytic astrocytoma"@en;
+        dcterms:description    "In  this pathway shows the signaling in the development and behavior of the disease. receptor tyrosine kinase(rtk) is expressed in tumor endothelial cells of adult glioblastomas.NF1 and BRAF genes induced the tumor growth.";
+        dcterms:identifier     "WP3122";
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP3122_r105919>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000711>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9913>;
+        wp:organismName        "Bos taurus";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000711>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3122&oldid=r105919> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3122&oldid=r105919>;
+        foaf:page              <http://www.wikipathways.org/instance/WP3122_r105919> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3122&oldid=r105919>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
 
 <https://identifiers.org/hmdb/HMDB0001440>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -40,7 +64,8 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0001440>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0001440";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3122/WP3122_rWP3122_r105919/DataNode/bba61>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3122_r105919>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3122_r105919/DataNode/bba61>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001440> .
 
 <https://identifiers.org/ensembl/ENSBTAG00000002048>
@@ -49,19 +74,9 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000002048>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000002048";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3122/WP3122_rWP3122_r105919/DataNode/e9996>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3122_r105919> , <http://rdf.wikipathways.org/Pathway/WP3122_r105919/WP/Interaction/id72891f69>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3122_r105919/DataNode/e9996>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000002048> .
-
-<https://identifiers.org/wikipathways/WP3122/WP3122_rWP3122_r105919>
-        rdf:type             wp:Pathway , skos:Collection;
-        dc:identifier        <https://identifiers.org/wikipathways/WP3122/WP3122>;
-        dc:source            "WikiPathways";
-        dc:title             "Pilocytic astrocytoma"@en;
-        dcterms:description  "In  this pathway shows the signaling in the development and behavior of the disease. receptor tyrosine kinase(rtk) is expressed in tumor endothelial cells of adult glioblastomas.NF1 and BRAF genes induced the tumor growth.";
-        dcterms:identifier   "WP3122/WP3122";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP3122/WP3122_rWP3122_r105919>;
-        wp:organismName      "Bos taurus";
-        foaf:page            <http://www.wikipathways.org/instance/WP3122/WP3122_rWP3122_r105919> .
 
 <https://identifiers.org/hmdb/HMDB0000960>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -69,8 +84,17 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000960>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0000960";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3122/WP3122_rWP3122_r105919/DataNode/f28d9>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3122_r105919>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3122_r105919/DataNode/f28d9>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000960> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_9913>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9913" .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3122&oldid=r105919>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
 
 <https://identifiers.org/ensembl/ENSBTAG00000011829>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -78,5 +102,13 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000011829>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000011829";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3122/WP3122_rWP3122_r105919/DataNode/f3f73>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3122_r105919>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3122_r105919/DataNode/f3f73>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000011829> .
+
+<http://rdf.wikipathways.org/Pathway/WP3122_r105919/WP/Interaction/id72891f69>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3122_r105919>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3122_r105919/Interaction/id72891f69>;
+        wp:participants   <https://identifiers.org/ensembl/ENSBTAG00000002048>;
+        wp:target         <https://identifiers.org/ensembl/ENSBTAG00000002048> .

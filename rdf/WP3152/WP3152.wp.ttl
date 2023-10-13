@@ -16,25 +16,47 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/wikipathways/WP3152/WP3152_rWP3152_r117495>
-        rdf:type             wp:Pathway , skos:Collection;
-        dc:identifier        <https://identifiers.org/wikipathways/WP3152/WP3152>;
-        dc:source            "WikiPathways";
-        dc:title             "Diclofenac metabolic pathway"@en;
-        dcterms:description  "CYP metabolism of the diclofenac drug.";
-        dcterms:identifier   "WP3152/WP3152";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP3152/WP3152_rWP3152_r117495>;
-        wp:organismName      "Bos taurus";
-        foaf:page            <http://www.wikipathways.org/instance/WP3152/WP3152_rWP3152_r117495> .
+<http://rdf.wikipathways.org/Pathway/WP3152_r117495/WP/Interaction/id913aca5b>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3152_r117495>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3152_r117495/Interaction/id913aca5b>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP3152_r117495/WP/Interaction/idf950b039>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP3152_r117495/WP/Interaction/idf950b039> .
 
-<https://identifiers.org/ensembl/ENSBTAG00000020375>
-        rdf:type            wp:DataNode , wp:Protein;
-        rdfs:label          "CYP2C8" , "CYP2C19" , "CYP2C18";
-        dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000020375>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSBTAG00000020375";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3152/WP3152_rWP3152_r117495/DataNode/e7aad> , <http://rdf.wikipathways.org/Pathway/WP3152/WP3152_rWP3152_r117495/DataNode/d1021> , <http://rdf.wikipathways.org/Pathway/WP3152/WP3152_rWP3152_r117495/DataNode/c820a>;
-        foaf:page           <https://www.ensembl.org/id/ENSBTAG00000020375> .
+<https://identifiers.org/pubchem.compound/3033>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "diclofenac";
+        dc:identifier       <https://identifiers.org/pubchem.compound/3033>;
+        dc:source           "PubChem-compound";
+        dcterms:identifier  "3033";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3152_r117495> , <http://rdf.wikipathways.org/Pathway/WP3152_r117495/WP/Interaction/idf27d9fd4> , <http://rdf.wikipathways.org/Pathway/WP3152_r117495/WP/Interaction/id101e6313> , <http://rdf.wikipathways.org/Pathway/WP3152_r117495/WP/Interaction/id8da001ed>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3152_r117495/DataNode/e8252>;
+        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=3033> .
+
+<https://identifiers.org/wikipathways/WP3152_r117495>
+        rdf:type               skos:Collection , wp:Pathway;
+        dc:identifier          <https://identifiers.org/wikipathways/WP3152>;
+        dc:source              "WikiPathways";
+        dc:title               "Diclofenac metabolic pathway"@en;
+        dcterms:description    "CYP metabolism of the diclofenac drug.";
+        dcterms:identifier     "WP3152";
+        dcterms:references     <https://identifiers.org/pubmed/10449188>;
+        cito:cites             <https://identifiers.org/pubmed/10449188>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP3152_r117495>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000375>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9913>;
+        wp:organismName        "Bos taurus";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000375>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3152&oldid=r117495> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3152&oldid=r117495>;
+        foaf:page              <http://www.wikipathways.org/instance/WP3152_r117495> .
+
+<http://rdf.wikipathways.org/Pathway/WP3152_r117495/WP/Interaction/idf950b039>
+        rdf:type          wp:DirectedInteraction , wp:Interaction , wp:Conversion;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP3152_r117495/WP/Interaction/id913aca5b> , <https://identifiers.org/wikipathways/WP3152_r117495>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3152_r117495/Interaction/idf950b039>;
+        wp:participants   <https://identifiers.org/pubchem.compound/3052566> , <https://identifiers.org/pubchem.compound/3052567>;
+        wp:source         <https://identifiers.org/pubchem.compound/3052566>;
+        wp:target         <https://identifiers.org/pubchem.compound/3052567> .
 
 <https://identifiers.org/pubchem.compound/10065052>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -42,44 +64,80 @@
         dc:identifier       <https://identifiers.org/pubchem.compound/10065052>;
         dc:source           "PubChem-compound";
         dcterms:identifier  "10065052";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3152/WP3152_rWP3152_r117495/DataNode/b876b>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3152_r117495> , <http://rdf.wikipathways.org/Pathway/WP3152_r117495/WP/Interaction/id206a96dc>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3152_r117495/DataNode/b876b>;
         foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=10065052> .
 
-<https://identifiers.org/pubchem.compound/112230>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "3'-Hydroxydiclofenac";
-        dc:identifier       <https://identifiers.org/pubchem.compound/112230>;
-        dc:source           "PubChem-compound";
-        dcterms:identifier  "112230";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3152/WP3152_rWP3152_r117495/DataNode/dd575>;
-        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=112230> .
+<http://purl.obolibrary.org/obo/NCBITaxon_9913>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9913" .
 
-<https://identifiers.org/pubchem.compound/3052567>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "4',5-Dihydroxydiclofenac";
-        dc:identifier       <https://identifiers.org/pubchem.compound/3052567>;
-        dc:source           "PubChem-compound";
-        dcterms:identifier  "3052567";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3152/WP3152_rWP3152_r117495/DataNode/fed6d>;
-        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=3052567> .
+<http://rdf.wikipathways.org/Pathway/WP3152_r117495/WP/Interaction/id206a96dc>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3152_r117495>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3152_r117495/Interaction/id206a96dc>;
+        wp:participants   <https://identifiers.org/pubchem.compound/10065052> , <https://identifiers.org/pubchem.compound/3052566>;
+        wp:source         <https://identifiers.org/pubchem.compound/3052566>;
+        wp:target         <https://identifiers.org/pubchem.compound/10065052> .
 
-<https://identifiers.org/ensembl/ENSBTAG00000003871>
-        rdf:type            wp:Protein , wp:DataNode;
-        rdfs:label          "CYP2B6";
-        dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000003871>;
+<http://rdf.wikipathways.org/Pathway/WP3152_r117495/WP/Interaction/id8770e4e5>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3152_r117495>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3152_r117495/Interaction/id8770e4e5>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP3152_r117495/WP/Interaction/id101e6313>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP3152_r117495/WP/Interaction/id101e6313> .
+
+<http://rdf.wikipathways.org/Pathway/WP3152_r117495/WP/Interaction/id101e6313>
+        rdf:type          wp:Conversion , wp:Interaction , wp:DirectedInteraction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP3152_r117495/WP/Interaction/id8770e4e5> , <https://identifiers.org/wikipathways/WP3152_r117495>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3152_r117495/Interaction/id101e6313>;
+        wp:participants   <https://identifiers.org/pubchem.compound/3033> , <https://identifiers.org/pubchem.compound/112230>;
+        wp:source         <https://identifiers.org/pubchem.compound/3033>;
+        wp:target         <https://identifiers.org/pubchem.compound/112230> .
+
+<http://rdf.wikipathways.org/Pathway/WP3152_r117495/WP/Interaction/id8da001ed>
+        rdf:type          wp:Interaction , wp:Conversion , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3152_r117495> , <http://rdf.wikipathways.org/Pathway/WP3152_r117495/WP/Interaction/ide4de82d6>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3152_r117495/Interaction/id8da001ed>;
+        wp:participants   <https://identifiers.org/pubchem.compound/116545> , <https://identifiers.org/pubchem.compound/3033>;
+        wp:source         <https://identifiers.org/pubchem.compound/3033>;
+        wp:target         <https://identifiers.org/pubchem.compound/116545> .
+
+<https://identifiers.org/pubmed/10449188>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "10449188";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3152_r117495>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/10449188> .
+
+<http://rdf.wikipathways.org/Pathway/WP3152_r117495/WP/Interaction/idf27d9fd4>
+        rdf:type          wp:DirectedInteraction , wp:Conversion , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP3152_r117495/WP/Interaction/idfdcd0f07> , <https://identifiers.org/wikipathways/WP3152_r117495>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3152_r117495/Interaction/idf27d9fd4>;
+        wp:participants   <https://identifiers.org/pubchem.compound/3033> , <https://identifiers.org/pubchem.compound/3052566>;
+        wp:source         <https://identifiers.org/pubchem.compound/3033>;
+        wp:target         <https://identifiers.org/pubchem.compound/3052566> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3152&oldid=r117495>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<https://identifiers.org/ensembl/ENSBTAG00000020375>
+        rdf:type            wp:DataNode , wp:Protein;
+        rdfs:label          "CYP2C8" , "CYP2C19" , "CYP2C18";
+        dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000020375>;
         dc:source           "Ensembl";
-        dcterms:identifier  "ENSBTAG00000003871";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3152/WP3152_rWP3152_r117495/DataNode/bc661>;
-        foaf:page           <https://www.ensembl.org/id/ENSBTAG00000003871> .
+        dcterms:identifier  "ENSBTAG00000020375";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3152_r117495>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3152_r117495/DataNode/e7aad> , <http://rdf.wikipathways.org/Pathway/WP3152_r117495/DataNode/c820a> , <http://rdf.wikipathways.org/Pathway/WP3152_r117495/DataNode/d1021>;
+        foaf:page           <https://www.ensembl.org/id/ENSBTAG00000020375> .
 
-<https://identifiers.org/pubchem.compound/116545>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "4'-hydroxydiclofenac";
-        dc:identifier       <https://identifiers.org/pubchem.compound/116545>;
-        dc:source           "PubChem-compound";
-        dcterms:identifier  "116545";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3152/WP3152_rWP3152_r117495/DataNode/d0dce>;
-        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=116545> .
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3152&oldid=r117495>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<https://identifiers.org/wikipathways/WP3152>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP3152_r117495> .
 
 <https://identifiers.org/pubchem.compound/3052566>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -87,14 +145,61 @@
         dc:identifier       <https://identifiers.org/pubchem.compound/3052566>;
         dc:source           "PubChem-compound";
         dcterms:identifier  "3052566";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3152/WP3152_rWP3152_r117495/DataNode/c0ffe>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3152_r117495/WP/Interaction/idf27d9fd4> , <http://rdf.wikipathways.org/Pathway/WP3152_r117495/WP/Interaction/idf950b039> , <http://rdf.wikipathways.org/Pathway/WP3152_r117495/WP/Interaction/id206a96dc> , <https://identifiers.org/wikipathways/WP3152_r117495>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3152_r117495/DataNode/c0ffe>;
         foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=3052566> .
 
-<https://identifiers.org/pubchem.compound/3033>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "diclofenac";
-        dc:identifier       <https://identifiers.org/pubchem.compound/3033>;
+<http://rdf.wikipathways.org/Pathway/WP3152_r117495/WP/Interaction/idfdcd0f07>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3152_r117495>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3152_r117495/Interaction/idfdcd0f07>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP3152_r117495/WP/Interaction/idf27d9fd4> , <https://identifiers.org/ensembl/ENSBTAG00000003871>;
+        wp:source         <https://identifiers.org/ensembl/ENSBTAG00000003871>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP3152_r117495/WP/Interaction/idf27d9fd4> .
+
+<https://identifiers.org/pubchem.compound/3052567>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "4',5-Dihydroxydiclofenac";
+        dc:identifier       <https://identifiers.org/pubchem.compound/3052567>;
         dc:source           "PubChem-compound";
-        dcterms:identifier  "3033";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3152/WP3152_rWP3152_r117495/DataNode/e8252>;
-        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=3033> .
+        dcterms:identifier  "3052567";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3152_r117495/WP/Interaction/idf950b039> , <https://identifiers.org/wikipathways/WP3152_r117495>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3152_r117495/DataNode/fed6d>;
+        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=3052567> .
+
+<https://identifiers.org/pubchem.compound/116545>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "4'-hydroxydiclofenac";
+        dc:identifier       <https://identifiers.org/pubchem.compound/116545>;
+        dc:source           "PubChem-compound";
+        dcterms:identifier  "116545";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3152_r117495> , <http://rdf.wikipathways.org/Pathway/WP3152_r117495/WP/Interaction/id8da001ed>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3152_r117495/DataNode/d0dce>;
+        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=116545> .
+
+<http://rdf.wikipathways.org/Pathway/WP3152_r117495/WP/Interaction/ide4de82d6>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3152_r117495>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3152_r117495/Interaction/ide4de82d6>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP3152_r117495/WP/Interaction/id8da001ed>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP3152_r117495/WP/Interaction/id8da001ed> .
+
+<https://identifiers.org/pubchem.compound/112230>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "3'-Hydroxydiclofenac";
+        dc:identifier       <https://identifiers.org/pubchem.compound/112230>;
+        dc:source           "PubChem-compound";
+        dcterms:identifier  "112230";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3152_r117495/WP/Interaction/id101e6313> , <https://identifiers.org/wikipathways/WP3152_r117495>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3152_r117495/DataNode/dd575>;
+        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=112230> .
+
+<https://identifiers.org/ensembl/ENSBTAG00000003871>
+        rdf:type            wp:DataNode , wp:Protein;
+        rdfs:label          "CYP2B6";
+        dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000003871>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSBTAG00000003871";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3152_r117495/WP/Interaction/idfdcd0f07> , <https://identifiers.org/wikipathways/WP3152_r117495>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3152_r117495/DataNode/bc661>;
+        foaf:page           <https://www.ensembl.org/id/ENSBTAG00000003871> .

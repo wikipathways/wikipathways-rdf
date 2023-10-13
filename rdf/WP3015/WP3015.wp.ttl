@@ -16,40 +16,73 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3015&oldid=r118606>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<http://rdf.wikipathways.org/Pathway/WP3015_r118606/WP/Interaction/d3d33>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3015_r118606>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3015_r118606/Interaction/d3d33>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP3015_r118606/WP/Interaction/c20c2> , <https://identifiers.org/reactome/5400401>;
+        wp:source         <https://identifiers.org/reactome/5400401>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP3015_r118606/WP/Interaction/c20c2> .
+
 <https://identifiers.org/reactome/5400401>
         rdf:type            wp:Protein , wp:DataNode;
         rdfs:label          "Homologues of NAD dependent epimerase/dehydratase family domain containing protein (LOC_OS04G52730.1)";
         dc:identifier       <https://identifiers.org/reactome/5400401>;
         dc:source           "Reactome";
         dcterms:identifier  "5400401";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3015/WP3015_rWP3015_r118606/DataNode/ae28c>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3015_r118606> , <http://rdf.wikipathways.org/Pathway/WP3015_r118606/WP/Interaction/d3d33>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3015_r118606/DataNode/ae28c>;
         foaf:page           <https://reactome.org/content/detail/5400401> .
 
-<http://rdf.wikipathways.org/Pathway/WP3015/WP3015_rWP3015_r118606/WP/Interaction/d55c9>
-        rdf:type  wp:Interaction .
+<http://rdf.wikipathways.org/Pathway/WP3015_r118606/WP/Interaction/fecd5>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3015_r118606>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3015_r118606/Interaction/fecd5>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:17983>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:17983> .
+
+<https://identifiers.org/wikipathways/WP3015_r118606>
+        rdf:type               wp:Pathway , skos:Collection;
+        dc:identifier          <https://identifiers.org/wikipathways/WP3015>;
+        dc:source              "WikiPathways";
+        dc:title               "UDP-L-arabinose biosynthesis I from UDP-xylose"@en;
+        dcterms:description    "This event has been computationally inferred from an event that has been demonstrated in another species.<p>The inference is based on Ensembl Compara orthology projection. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped ortholog or paralog are inferred to the other species. High-level events are also inferred for these events to allow for easier navigation.<p>Details of projection methods and parameters may be found <a href=\"/projection.html\">here.</a><p>\n\nSource:[http://plantreactome.gramene.org/ Plant Reactome].";
+        dcterms:identifier     "WP3015";
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP3015_r118606>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000147>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_3702>;
+        wp:organismName        "Arabidopsis thaliana";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000147>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3015&oldid=r118606> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3015&oldid=r118606>;
+        foaf:page              <http://www.wikipathways.org/instance/WP3015_r118606> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3015&oldid=r118606>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_3702>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "3702" .
+
+<http://rdf.wikipathways.org/Pathway/WP3015_r118606/WP/Interaction/d55c9>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3015_r118606>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3015_r118606/Interaction/d55c9>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP3015_r118606/WP/Interaction/c20c2> , <https://identifiers.org/chebi/CHEBI:16082> .
 
 <https://identifiers.org/chebi/CHEBI:17983>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "UDP-L-arabinose";
         dc:identifier       <https://identifiers.org/chebi/CHEBI:17983>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:17983";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3015/WP3015_rWP3015_r118606/DataNode/ee2ca>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3015_r118606> , <http://rdf.wikipathways.org/Pathway/WP3015_r118606/WP/Interaction/fecd5>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3015_r118606/DataNode/ee2ca>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17983> .
-
-<http://rdf.wikipathways.org/Pathway/WP3015/WP3015_rWP3015_r118606/WP/Interaction/c20c2>
-        rdf:type  wp:Interaction .
-
-<https://identifiers.org/wikipathways/WP3015/WP3015_rWP3015_r118606>
-        rdf:type             wp:Pathway , skos:Collection;
-        dc:identifier        <https://identifiers.org/wikipathways/WP3015/WP3015>;
-        dc:source            "WikiPathways";
-        dc:title             "UDP-L-arabinose biosynthesis I from UDP-xylose"@en;
-        dcterms:description  "This event has been computationally inferred from an event that has been demonstrated in another species.<p>The inference is based on Ensembl Compara orthology projection. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped ortholog or paralog are inferred to the other species. High-level events are also inferred for these events to allow for easier navigation.<p>Details of projection methods and parameters may be found <a href=\"/projection.html\">here.</a><p>\n\nSource:[http://plantreactome.gramene.org/ Plant Reactome].";
-        dcterms:identifier   "WP3015/WP3015";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP3015/WP3015_rWP3015_r118606>;
-        wp:organismName      "Arabidopsis thaliana";
-        foaf:page            <http://www.wikipathways.org/instance/WP3015/WP3015_rWP3015_r118606> .
 
 <https://identifiers.org/chebi/CHEBI:16082>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -57,5 +90,12 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:16082>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:16082";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3015/WP3015_rWP3015_r118606/DataNode/e1945>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3015_r118606/WP/Interaction/d55c9> , <https://identifiers.org/wikipathways/WP3015_r118606>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3015_r118606/DataNode/e1945>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16082> .
+
+<http://rdf.wikipathways.org/Pathway/WP3015_r118606/WP/Interaction/c20c2>
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP3015_r118606/WP/Interaction/d3d33> , <http://rdf.wikipathways.org/Pathway/WP3015_r118606/WP/Interaction/d55c9> .
+
+<https://identifiers.org/wikipathways/WP3015>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP3015_r118606> .

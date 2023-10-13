@@ -16,35 +16,29 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/ncbigene/47091>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "COMT";
-        dc:identifier       <https://identifiers.org/ncbigene/47091>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "47091";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125/WP125_rWP125_r120778/DataNode/fee>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/47091> .
+<http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id4b50687c>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP125_r120778/Interaction/id4b50687c>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/iddb8b7e6f> , <https://identifiers.org/ensembl/ENSG00000129673>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000129673>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/iddb8b7e6f> .
 
-<http://rdf.wikipathways.org/Pathway/WP125/WP125_rWP125_r120778/WP/Interaction/idd1f34fa5>
-        rdf:type  wp:Interaction .
+<http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id76b2c747>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP125_r120778/Interaction/id76b2c747>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/ida84c3e1d> , <https://identifiers.org/ncbigene/35190>;
+        wp:source         <https://identifiers.org/ncbigene/35190>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/ida84c3e1d> .
 
-<https://identifiers.org/chebi/CHEBI:17295>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Phenylalanine";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:17295>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:17295";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125/WP125_rWP125_r120778/DataNode/d0c>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17295> .
-
-<https://identifiers.org/ncbigene/38871>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Hn";
-        dc:identifier       <https://identifiers.org/ncbigene/38871>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "38871";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125/WP125_rWP125_r120778/DataNode/b87>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/38871> .
+<http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/idd104962a>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP125_r120778> , <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id27c2de69>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP125_r120778/Interaction/idd104962a>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000068> , <https://identifiers.org/hmdb/HMDB0000216>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000216>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000068> .
 
 <https://identifiers.org/ncbigene/38484>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -52,26 +46,31 @@
         dc:identifier       <https://identifiers.org/ncbigene/38484>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "38484";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125/WP125_rWP125_r120778/DataNode/fea>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125_r120778/DataNode/fea>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/38484> .
 
-<https://identifiers.org/ncbigene/36076>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Hdc";
-        dc:identifier       <https://identifiers.org/ncbigene/36076>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "36076";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125/WP125_rWP125_r120778/DataNode/dd3>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/36076> .
+<https://identifiers.org/wikipathways/WP125_r120778>
+        rdf:type               skos:Collection , wp:Pathway;
+        dc:identifier          <https://identifiers.org/wikipathways/WP125>;
+        dc:source              "WikiPathways";
+        dc:title               "Biogenic amine synthesis"@en;
+        dcterms:description    "Biogenic amines are one of two broad classes of classical neurotransmitters (the other being amino acids) and include: acetylcholine, serotonin, histamine, and the catecholamines epinephrine, norepinephrine, and dopamine. \n\nSource: http://www.whatislife.com/reader2/Metabolism/pathway/Neurotransmitter.html";
+        dcterms:identifier     "WP125";
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP125_r120778>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0001234>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_7227>;
+        wp:organismName        "Drosophila melanogaster";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0001234>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP125&oldid=r120778> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP125&oldid=r120778>;
+        foaf:page              <http://www.wikipathways.org/instance/WP125_r120778> .
 
-<https://identifiers.org/hmdb/HMDB0000870>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Histamine";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000870>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000870";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125/WP125_rWP125_r120778/DataNode/e57>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB00870> .
+<http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/idc3fc1e16>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/iddfc7a809> , <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP125_r120778/Interaction/idc3fc1e16>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000259>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000259> .
 
 <https://identifiers.org/hmdb/HMDB0000895>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -79,64 +78,100 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000895>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0000895";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125/WP125_rWP125_r120778/DataNode/eef>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP125_r120778> , <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/idf88410e9> , <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id673b19a9>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125_r120778/DataNode/eef>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB00895> .
 
-<https://identifiers.org/wikipathways/WP125/WP125_rWP125_r120778>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP125/WP125>;
-        dc:source            "WikiPathways";
-        dc:title             "Biogenic amine synthesis"@en;
-        dcterms:description  "Biogenic amines are one of two broad classes of classical neurotransmitters (the other being amino acids) and include: acetylcholine, serotonin, histamine, and the catecholamines epinephrine, norepinephrine, and dopamine. \n\nSource: http://www.whatislife.com/reader2/Metabolism/pathway/Neurotransmitter.html";
-        dcterms:identifier   "WP125/WP125";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP125/WP125_rWP125_r120778>;
-        wp:organismName      "Drosophila melanogaster";
-        foaf:page            <http://www.wikipathways.org/instance/WP125/WP125_rWP125_r120778> .
+<http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/ida2e721d3>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP125_r120778/Interaction/ida2e721d3>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:16865> , <https://identifiers.org/chebi/CHEBI:14321>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:14321>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:16865> .
 
-<https://identifiers.org/chebi/CHEBI:16865>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "GABA";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:16865>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:16865";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125/WP125_rWP125_r120778/DataNode/cd4>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16865> .
-
-<https://identifiers.org/hmdb/HMDB0000068>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Epinephrine";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000068>;
+<https://identifiers.org/hmdb/HMDB0000097>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Choline";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000097>;
         dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000068";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125/WP125_rWP125_r120778/DataNode/a1d>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB00068> .
+        dcterms:identifier  "HMDB0000097";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP125_r120778> , <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id673b19a9>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125_r120778/DataNode/e0b>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB00097> .
 
-<https://identifiers.org/hmdb/HMDB0000929>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Tryptophan";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000929>;
+<https://identifiers.org/wikipathways/WP125>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP125_r120778> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP125&oldid=r120778>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<https://identifiers.org/ncbigene/31718>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "Tbh";
+        dc:identifier       <https://identifiers.org/ncbigene/31718>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "31718";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/ide9360691> , <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125_r120778/DataNode/d90>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/31718> .
+
+<http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/ida17cf06>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP125_r120778/Interaction/ida17cf06>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id92136dc9> , <https://identifiers.org/ncbigene/38871>;
+        wp:source         <https://identifiers.org/ncbigene/38871>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id92136dc9> .
+
+<https://identifiers.org/ncbigene/38871>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "Hn";
+        dc:identifier       <https://identifiers.org/ncbigene/38871>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "38871";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP125_r120778> , <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/ida17cf06>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125_r120778/DataNode/b87>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/38871> .
+
+<http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id673b19a9>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP125_r120778> , <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id5d87b716>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP125_r120778/Interaction/id673b19a9>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000895> , <https://identifiers.org/hmdb/HMDB0000097>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000097>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000895> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_7227>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "7227" .
+
+<http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/idc4a54dad>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP125_r120778> , <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id1a45c497>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP125_r120778/Interaction/idc4a54dad>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000472> , <https://identifiers.org/hmdb/HMDB0000929>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000929>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000472> .
+
+<https://identifiers.org/hmdb/HMDB0001389>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Melatonin";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0001389>;
         dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000929";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125/WP125_rWP125_r120778/DataNode/f26>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB00929> .
+        dcterms:identifier  "HMDB0001389";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id6059e92e> , <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125_r120778/DataNode/f57>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB01389> .
 
-<https://identifiers.org/ensembl/ENSG00000129673>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "AANAT";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000129673>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000129673";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125/WP125_rWP125_r120778/DataNode/e05>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000129673> .
-
-<https://identifiers.org/ensembl/ENSG00000141744>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "PNMT";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000141744>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000141744";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125/WP125_rWP125_r120778/DataNode/aee>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000141744> .
+<http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id18f6eb19>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/idb9dc333c> , <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP125_r120778/Interaction/id18f6eb19>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000073> , <https://identifiers.org/hmdb/HMDB0000181>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000181>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000073> .
 
 <https://identifiers.org/hmdb/HMDB0000177>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -144,116 +179,35 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000177>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0000177";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125/WP125_rWP125_r120778/DataNode/ca9>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id2f13564f> , <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125_r120778/DataNode/ca9>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB00177> .
 
-<https://identifiers.org/hmdb/HMDB0001389>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Melatonin";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0001389>;
+<https://identifiers.org/hmdb/HMDB0000870>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Histamine";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000870>;
         dc:source           "HMDB";
-        dcterms:identifier  "HMDB0001389";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125/WP125_rWP125_r120778/DataNode/f57>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB01389> .
+        dcterms:identifier  "HMDB0000870";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id2f13564f> , <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125_r120778/DataNode/e57>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB00870> .
 
-<https://identifiers.org/ensembl/ENSG00000087085>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "ACHE";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000087085>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000087085";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125/WP125_rWP125_r120778/DataNode/a5a>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000087085> .
+<http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id81e483e7>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP125_r120778/Interaction/id81e483e7>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id6059e92e> , <https://identifiers.org/ensembl/ENSG00000196433>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000196433>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id6059e92e> .
 
-<https://identifiers.org/hmdb/HMDB0000097>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Choline";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000097>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000097";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125/WP125_rWP125_r120778/DataNode/e0b>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB00097> .
-
-<https://identifiers.org/ncbigene/38746>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "ple";
-        dc:identifier       <https://identifiers.org/ncbigene/38746>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "38746";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125/WP125_rWP125_r120778/DataNode/c00>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/38746> .
-
-<https://identifiers.org/ncbigene/42249>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Cha";
-        dc:identifier       <https://identifiers.org/ncbigene/42249>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "42249";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125/WP125_rWP125_r120778/DataNode/f50>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/42249> .
-
-<https://identifiers.org/hmdb/HMDB0000181>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "L-Dopa";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000181>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000181";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125/WP125_rWP125_r120778/DataNode/edf>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB00181> .
-
-<https://identifiers.org/ncbigene/38121>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Trh";
-        dc:identifier       <https://identifiers.org/ncbigene/38121>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "38121";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125/WP125_rWP125_r120778/DataNode/a6c>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/38121> .
-
-<https://identifiers.org/hmdb/HMDB0000073>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Dopamine";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000073>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000073";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125/WP125_rWP125_r120778/DataNode/a72>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB00073> .
-
-<https://identifiers.org/hmdb/HMDB0001238>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Acetylserotonin";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0001238>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0001238";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125/WP125_rWP125_r120778/DataNode/e44>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB01238> .
-
-<https://identifiers.org/hmdb/HMDB0000259>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Serotonin";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000259>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000259";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125/WP125_rWP125_r120778/DataNode/f80>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB00259> .
-
-<https://identifiers.org/hmdb/HMDB0000216>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Norepinephrine";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000216>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000216";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125/WP125_rWP125_r120778/DataNode/bda>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB00216> .
-
-<https://identifiers.org/ncbigene/35190>
-        rdf:type            wp:DataNode , wp:GeneProduct;
-        rdfs:label          "Ddc";
-        dc:identifier       <https://identifiers.org/ncbigene/35190>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "35190";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125/WP125_rWP125_r120778/DataNode/a69> , <http://rdf.wikipathways.org/Pathway/WP125/WP125_rWP125_r120778/DataNode/b4f> , <http://rdf.wikipathways.org/Pathway/WP125/WP125_rWP125_r120778/DataNode/f02>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/35190> .
+<http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id5dbf6c28>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP125_r120778/Interaction/id5dbf6c28>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id354ffaa9> , <https://identifiers.org/ncbigene/38746>;
+        wp:source         <https://identifiers.org/ncbigene/38746>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id354ffaa9> .
 
 <https://identifiers.org/ensembl/ENSG00000196433>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -261,56 +215,119 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000196433>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000196433";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125/WP125_rWP125_r120778/DataNode/ee2>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP125_r120778> , <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id81e483e7>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125_r120778/DataNode/ee2>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000196433> .
 
-<https://identifiers.org/chebi/CHEBI:14321>
+<http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id354ffaa9>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id5dbf6c28> , <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP125_r120778/Interaction/id354ffaa9>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000181> , <https://identifiers.org/chebi/CHEBI:17895>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:17895>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000181> .
+
+<http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id5d87b716>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP125_r120778/Interaction/id5d87b716>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id673b19a9> , <https://identifiers.org/ncbigene/42249>;
+        wp:source         <https://identifiers.org/ncbigene/42249>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id673b19a9> .
+
+<https://identifiers.org/ensembl/ENSG00000129673>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "AANAT";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000129673>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000129673";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id4b50687c> , <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125_r120778/DataNode/e05>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000129673> .
+
+<http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id2c149275>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/ide9360691> , <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP125_r120778/Interaction/id2c149275>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000216> , <https://identifiers.org/hmdb/HMDB0000073>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000073>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000216> .
+
+<http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id2f13564f>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP125_r120778/Interaction/id2f13564f>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000870> , <https://identifiers.org/hmdb/HMDB0000177>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000177>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000870> .
+
+<https://identifiers.org/chebi/CHEBI:16865>
         rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "GABA";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:16865>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:16865";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/ida2e721d3> , <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125_r120778/DataNode/cd4>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16865> .
+
+<https://identifiers.org/hmdb/HMDB0000216>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Norepinephrine";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000216>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0000216";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/idd104962a> , <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id2c149275> , <https://identifiers.org/wikipathways/WP125_r120778> , <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/idc7419291>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125_r120778/DataNode/bda>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB00216> .
+
+<https://identifiers.org/ensembl/ENSG00000141744>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "PNMT";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000141744>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000141744";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP125_r120778> , <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id27c2de69>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125_r120778/DataNode/aee>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000141744> .
+
+<http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/idc7419291>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP125_r120778/Interaction/idc7419291>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id17a31b2> , <https://identifiers.org/hmdb/HMDB0000216> .
+
+<http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id17a31b2>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/idc7419291> , <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP125_r120778/Interaction/id17a31b2>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000073>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000073> .
+
+<http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id6059e92e>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id81e483e7> , <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP125_r120778/Interaction/id6059e92e>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001389> , <https://identifiers.org/hmdb/HMDB0001238>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001238>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001389> .
+
+<https://identifiers.org/chebi/CHEBI:14321>
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "Glutamate";
         dc:identifier       <https://identifiers.org/chebi/CHEBI:14321>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:14321";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125/WP125_rWP125_r120778/DataNode/d56>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/ida2e721d3> , <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125_r120778/DataNode/d56>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:14321> .
 
-<https://identifiers.org/chebi/CHEBI:17895>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Tyrosine";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:17895>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:17895";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125/WP125_rWP125_r120778/DataNode/ac2>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17895> .
-
-<http://rdf.wikipathways.org/Pathway/WP125/WP125_rWP125_r120778/WP/Interaction/idc7419291>
-        rdf:type  wp:Interaction .
-
-<https://identifiers.org/ncbigene/31718>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Tbh";
-        dc:identifier       <https://identifiers.org/ncbigene/31718>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "31718";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125/WP125_rWP125_r120778/DataNode/d90>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/31718> .
-
-<https://identifiers.org/ensembl/ENSG00000136750>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "GAD2";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000136750>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000136750";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125/WP125_rWP125_r120778/DataNode/e2b>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000136750> .
-
-<https://identifiers.org/ensembl/ENSG00000189221>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "MAOA";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000189221>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000189221";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125/WP125_rWP125_r120778/DataNode/f07> , <http://rdf.wikipathways.org/Pathway/WP125/WP125_rWP125_r120778/DataNode/e80>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000189221> .
+<http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/idf88410e9>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP125_r120778> , <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id43d70321>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP125_r120778/Interaction/idf88410e9>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000895>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000895> .
 
 <https://identifiers.org/hmdb/HMDB0000472>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -318,5 +335,258 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000472>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0000472";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125/WP125_rWP125_r120778/DataNode/fc8>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/ida84c3e1d> , <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/idc4a54dad> , <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125_r120778/DataNode/fc8>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB00472> .
+
+<http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/ide9360691>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP125_r120778/Interaction/ide9360691>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id2c149275> , <https://identifiers.org/ncbigene/31718>;
+        wp:source         <https://identifiers.org/ncbigene/31718>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id2c149275> .
+
+<http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/idd1f34fa5>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP125_r120778/Interaction/idd1f34fa5>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000068> .
+
+<https://identifiers.org/hmdb/HMDB0000073>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Dopamine";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000073>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0000073";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id17a31b2> , <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id18f6eb19> , <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id2c149275> , <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125_r120778/DataNode/a72>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB00073> .
+
+<http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id1a45c497>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP125_r120778/Interaction/id1a45c497>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/idc4a54dad> , <https://identifiers.org/ncbigene/38121>;
+        wp:source         <https://identifiers.org/ncbigene/38121>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/idc4a54dad> .
+
+<https://identifiers.org/ncbigene/42249>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "Cha";
+        dc:identifier       <https://identifiers.org/ncbigene/42249>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "42249";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id5d87b716> , <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125_r120778/DataNode/f50>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/42249> .
+
+<https://identifiers.org/ncbigene/36076>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "Hdc";
+        dc:identifier       <https://identifiers.org/ncbigene/36076>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "36076";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125_r120778/DataNode/dd3>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/36076> .
+
+<https://identifiers.org/ncbigene/35190>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "Ddc";
+        dc:identifier       <https://identifiers.org/ncbigene/35190>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "35190";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id76b2c747> , <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/idb9dc333c> , <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125_r120778/DataNode/f02> , <http://rdf.wikipathways.org/Pathway/WP125_r120778/DataNode/b4f> , <http://rdf.wikipathways.org/Pathway/WP125_r120778/DataNode/a69>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/35190> .
+
+<http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/idb9dc333c>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP125_r120778/Interaction/idb9dc333c>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id18f6eb19> , <https://identifiers.org/ncbigene/35190>;
+        wp:source         <https://identifiers.org/ncbigene/35190>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id18f6eb19> .
+
+<https://identifiers.org/ensembl/ENSG00000189221>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "MAOA";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000189221>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000189221";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP125_r120778> , <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/iddfc7a809>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125_r120778/DataNode/e80> , <http://rdf.wikipathways.org/Pathway/WP125_r120778/DataNode/f07>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000189221> .
+
+<https://identifiers.org/hmdb/HMDB0000929>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Tryptophan";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000929>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0000929";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP125_r120778> , <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/idc4a54dad>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125_r120778/DataNode/f26>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB00929> .
+
+<https://identifiers.org/chebi/CHEBI:17295>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Phenylalanine";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:17295>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:17295";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP125_r120778> , <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id92136dc9>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125_r120778/DataNode/d0c>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17295> .
+
+<https://identifiers.org/hmdb/HMDB0000181>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "L-Dopa";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000181>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0000181";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id18f6eb19> , <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id354ffaa9> , <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125_r120778/DataNode/edf>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB00181> .
+
+<http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id43d70321>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP125_r120778/Interaction/id43d70321>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/idf88410e9> , <https://identifiers.org/ensembl/ENSG00000087085>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000087085>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/idf88410e9> .
+
+<https://identifiers.org/ncbigene/38121>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "Trh";
+        dc:identifier       <https://identifiers.org/ncbigene/38121>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "38121";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id1a45c497> , <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125_r120778/DataNode/a6c>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/38121> .
+
+<https://identifiers.org/ncbigene/38746>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "ple";
+        dc:identifier       <https://identifiers.org/ncbigene/38746>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "38746";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id5dbf6c28> , <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125_r120778/DataNode/c00>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/38746> .
+
+<http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id92136dc9>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/ida17cf06> , <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP125_r120778/Interaction/id92136dc9>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:17895> , <https://identifiers.org/chebi/CHEBI:17295>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:17295>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:17895> .
+
+<http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/iddb8b7e6f>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP125_r120778> , <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id4b50687c>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP125_r120778/Interaction/iddb8b7e6f>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001238> , <https://identifiers.org/hmdb/HMDB0000259>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000259>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001238> .
+
+<https://identifiers.org/hmdb/HMDB0000259>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Serotonin";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000259>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0000259";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/iddb8b7e6f> , <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/idc3fc1e16> , <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/ida84c3e1d> , <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125_r120778/DataNode/f80>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB00259> .
+
+<https://identifiers.org/hmdb/HMDB0001238>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Acetylserotonin";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0001238>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0001238";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/iddb8b7e6f> , <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id6059e92e> , <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125_r120778/DataNode/e44>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB01238> .
+
+<https://identifiers.org/ensembl/ENSG00000136750>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "GAD2";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000136750>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000136750";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125_r120778/DataNode/e2b>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000136750> .
+
+<http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/ida84c3e1d>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP125_r120778> , <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id76b2c747>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP125_r120778/Interaction/ida84c3e1d>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000259> , <https://identifiers.org/hmdb/HMDB0000472>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000472>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000259> .
+
+<http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/iddfc7a809>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP125_r120778/Interaction/iddfc7a809>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/idc3fc1e16> , <https://identifiers.org/ensembl/ENSG00000189221>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000189221>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/idc3fc1e16> .
+
+<http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id27c2de69>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP125_r120778/Interaction/id27c2de69>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/idd104962a> , <https://identifiers.org/ensembl/ENSG00000141744>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000141744>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/idd104962a> .
+
+<https://identifiers.org/chebi/CHEBI:17895>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Tyrosine";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:17895>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:17895";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id354ffaa9> , <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id92136dc9> , <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125_r120778/DataNode/ac2>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17895> .
+
+<https://identifiers.org/ncbigene/47091>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "COMT";
+        dc:identifier       <https://identifiers.org/ncbigene/47091>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "47091";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP125_r120778>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125_r120778/DataNode/fee>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/47091> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP125&oldid=r120778>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<https://identifiers.org/hmdb/HMDB0000068>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Epinephrine";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000068>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0000068";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP125_r120778> , <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/idd1f34fa5> , <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/idd104962a>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125_r120778/DataNode/a1d>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB00068> .
+
+<https://identifiers.org/ensembl/ENSG00000087085>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "ACHE";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000087085>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000087085";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP125_r120778> , <http://rdf.wikipathways.org/Pathway/WP125_r120778/WP/Interaction/id43d70321>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP125_r120778/DataNode/a5a>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000087085> .

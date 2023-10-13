@@ -16,79 +16,53 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/ensembl/b1264>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "trpE";
-        dc:identifier       <https://identifiers.org/ensembl/b1264>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "b1264";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2886/WP2886_rWP2886_r106102/DataNode/dfd10>;
-        foaf:page           <https://www.ensembl.org/id/b1264> .
-
-<https://identifiers.org/chebi/CHEBI:35181>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "4-amino-4-deoxychorismate";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:35181>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:35181";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2886/WP2886_rWP2886_r106102/DataNode/a0bec>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:35181> .
-
-<https://identifiers.org/ensembl/b1812>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "pabB";
-        dc:identifier       <https://identifiers.org/ensembl/b1812>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "b1812";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2886/WP2886_rWP2886_r106102/DataNode/d2f31>;
-        foaf:page           <https://www.ensembl.org/id/b1812> .
-
 <https://identifiers.org/hmdb/HMDB0012199>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "Chorismate";
         dc:identifier       <https://identifiers.org/hmdb/HMDB0012199>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0012199";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2886/WP2886_rWP2886_r106102/DataNode/c0dd6> , <http://rdf.wikipathways.org/Pathway/WP2886/WP2886_rWP2886_r106102/DataNode/b1ad2>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/e98d3> , <https://identifiers.org/wikipathways/WP2886_r106102> , <http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/id86cff85a>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2886_r106102/DataNode/b1ad2> , <http://rdf.wikipathways.org/Pathway/WP2886_r106102/DataNode/c0dd6>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0012199> .
 
-<https://identifiers.org/ensembl/b3360>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "pabA";
-        dc:identifier       <https://identifiers.org/ensembl/b3360>;
+<http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/ebaa4>
+        rdf:type          wp:Interaction , wp:Conversion , wp:DirectedInteraction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/c052f> , <https://identifiers.org/wikipathways/WP2886_r106102>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2886_r106102/Interaction/ebaa4>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001392> , <https://identifiers.org/hmdb/HMDB0001169>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001392>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001169> .
+
+<http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/c052f>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2886_r106102>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2886_r106102/Interaction/c052f>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/ebaa4>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/ebaa4> .
+
+<http://rdf.wikipathways.org/Pathway/WP2886_r106102/Complex/c7eb2>
+        rdf:type          wp:Complex , wp:DataNode;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2886_r106102>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2886_r106102/Group/c7eb2>;
+        wp:participants   <https://identifiers.org/ensembl/b1812> , <https://identifiers.org/ensembl/b3360> .
+
+<http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/cfc29>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2886_r106102>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2886_r106102/Interaction/cfc29>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/b8b81>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/b8b81> .
+
+<https://identifiers.org/ensembl/b1096>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "pabC";
+        dc:identifier       <https://identifiers.org/ensembl/b1096>;
         dc:source           "Ensembl";
-        dcterms:identifier  "b3360";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2886/WP2886_rWP2886_r106102/DataNode/a9000>;
-        foaf:page           <https://www.ensembl.org/id/b3360> .
-
-<https://identifiers.org/wikipathways/WP2886/WP2886_rWP2886_r106102>
-        rdf:type             wp:Pathway , skos:Collection;
-        dc:identifier        <https://identifiers.org/wikipathways/WP2886/WP2886>;
-        dc:source            "WikiPathways";
-        dc:title             "Acetaminophen synthesis"@en;
-        dcterms:description  "Synthetic biology approaches to acetaminophen production. The first reaction path in E.coli has been successfully tested experimentally. The second path in Synechocystis is proposed hypothetically by Menezes, et al. in a study considering synthetic biology approaches to resource utilization on future space missions.";
-        dcterms:identifier   "WP2886/WP2886";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP2886/WP2886_rWP2886_r106102>;
-        wp:organismName      "Escherichia coli";
-        foaf:page            <http://www.wikipathways.org/instance/WP2886/WP2886_rWP2886_r106102> .
-
-<https://identifiers.org/ensembl/b1463>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "nhoA";
-        dc:identifier       <https://identifiers.org/ensembl/b1463>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "b1463";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2886/WP2886_rWP2886_r106102/DataNode/ef6e1> , <http://rdf.wikipathways.org/Pathway/WP2886/WP2886_rWP2886_r106102/DataNode/dcaa9>;
-        foaf:page           <https://www.ensembl.org/id/b1463> .
-
-<https://identifiers.org/pubchem.compound/227>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Anthranilate";
-        dc:identifier       <https://identifiers.org/pubchem.compound/227>;
-        dc:source           "PubChem-compound";
-        dcterms:identifier  "227";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2886/WP2886_rWP2886_r106102/DataNode/eee8b>;
-        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=227> .
+        dcterms:identifier  "b1096";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2886_r106102> , <http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/d3676>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2886_r106102/DataNode/bc862>;
+        foaf:page           <https://www.ensembl.org/id/b1096> .
 
 <https://identifiers.org/hmdb/HMDB0000051>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -96,17 +70,212 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000051>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0000051";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2886/WP2886_rWP2886_r106102/DataNode/e919d>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/id624bba49> , <https://identifiers.org/wikipathways/WP2886_r106102>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2886_r106102/DataNode/e919d>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000051> .
 
-<https://identifiers.org/hmdb/HMDB0001392>
+<https://identifiers.org/chebi/CHEBI:35181>
         rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "4-amino-4-deoxychorismate";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:35181>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:35181";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2886_r106102> , <http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/e2ef2> , <http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/id86cff85a>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2886_r106102/DataNode/a0bec>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:35181> .
+
+<http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/d3676>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2886_r106102>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2886_r106102/Interaction/d3676>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/e2ef2> , <https://identifiers.org/ensembl/b1096>;
+        wp:source         <https://identifiers.org/ensembl/b1096>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/e2ef2> .
+
+<http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/df102>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2886_r106102>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2886_r106102/Interaction/df102>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/a6519> , <https://identifiers.org/ensembl/b1463>;
+        wp:source         <https://identifiers.org/ensembl/b1463>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/a6519> .
+
+<https://identifiers.org/wikipathways/WP2886>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP2886_r106102> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP2886&oldid=r106102>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP2886&oldid=r106102>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<https://identifiers.org/hmdb/HMDB0001392>
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "p-Aminobenzoic acid";
         dc:identifier       <https://identifiers.org/hmdb/HMDB0001392>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0001392";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2886/WP2886_rWP2886_r106102/DataNode/f5e5c>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/ebaa4> , <https://identifiers.org/wikipathways/WP2886_r106102> , <http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/e2ef2>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2886_r106102/DataNode/f5e5c>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001392> .
+
+<http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/a953f>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2886_r106102>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2886_r106102/Interaction/a953f>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/bfb79> , <https://identifiers.org/ensembl/b1463>;
+        wp:source         <https://identifiers.org/ensembl/b1463>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/bfb79> .
+
+<http://rdf.wikipathways.org/Pathway/WP2886_r106102/ComplexBinding/c7eb2>
+        rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2886_r106102>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2886_r106102/Group/c7eb2>;
+        wp:participants   <https://identifiers.org/ensembl/b1812> , <https://identifiers.org/ensembl/b3360> , <http://rdf.wikipathways.org/Pathway/WP2886_r106102/Complex/c7eb2> .
+
+<http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/id86cff85a>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2886_r106102>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2886_r106102/Interaction/id86cff85a>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:35181> , <https://identifiers.org/hmdb/HMDB0012199>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0012199>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:35181> .
+
+<https://identifiers.org/pubmed/25376875>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "25376875";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2886_r106102>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/25376875> .
+
+<http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/ef9ea>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2886_r106102>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2886_r106102/Interaction/ef9ea>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/e98d3> , <https://identifiers.org/ensembl/b1264>;
+        wp:source         <https://identifiers.org/ensembl/b1264>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/e98d3> .
+
+<http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/b8b81>
+        rdf:type          wp:Interaction , wp:Conversion , wp:DirectedInteraction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/cfc29> , <https://identifiers.org/wikipathways/WP2886_r106102>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2886_r106102/Interaction/b8b81>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001169> , <https://identifiers.org/pubchem.compound/227>;
+        wp:source         <https://identifiers.org/pubchem.compound/227>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001169> .
+
+<https://identifiers.org/pubchem.compound/227>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Anthranilate";
+        dc:identifier       <https://identifiers.org/pubchem.compound/227>;
+        dc:source           "PubChem-compound";
+        dcterms:identifier  "227";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/e98d3> , <https://identifiers.org/wikipathways/WP2886_r106102> , <http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/b8b81>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2886_r106102/DataNode/eee8b>;
+        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=227> .
+
+<http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/id624bba49>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2886_r106102>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2886_r106102/Interaction/id624bba49>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/e98d3> , <https://identifiers.org/hmdb/HMDB0000051> .
+
+<https://identifiers.org/ensembl/b1812>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "pabB";
+        dc:identifier       <https://identifiers.org/ensembl/b1812>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "b1812";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2886_r106102/Complex/c7eb2> , <https://identifiers.org/wikipathways/WP2886_r106102>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2886_r106102/DataNode/d2f31>;
+        foaf:page           <https://www.ensembl.org/id/b1812> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_562>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "562" .
+
+<https://identifiers.org/ensembl/b1264>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "trpE";
+        dc:identifier       <https://identifiers.org/ensembl/b1264>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "b1264";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/ef9ea> , <https://identifiers.org/wikipathways/WP2886_r106102>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2886_r106102/DataNode/dfd10>;
+        foaf:page           <https://www.ensembl.org/id/b1264> .
+
+<https://identifiers.org/hmdb/HMDB0001859>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Acetaminophen";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0001859>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0001859";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2886_r106102> , <http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/bfb79> , <http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/a6519>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2886_r106102/DataNode/d50e1> , <http://rdf.wikipathways.org/Pathway/WP2886_r106102/DataNode/e2953>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001859> .
+
+<https://identifiers.org/ensembl/b1463>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "nhoA";
+        dc:identifier       <https://identifiers.org/ensembl/b1463>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "b1463";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2886_r106102> , <http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/df102> , <http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/a953f>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2886_r106102/DataNode/ef6e1> , <http://rdf.wikipathways.org/Pathway/WP2886_r106102/DataNode/dcaa9>;
+        foaf:page           <https://www.ensembl.org/id/b1463> .
+
+<https://identifiers.org/wikipathways/WP2886_r106102>
+        rdf:type               wp:Pathway , skos:Collection;
+        dc:identifier          <https://identifiers.org/wikipathways/WP2886>;
+        dc:source              "WikiPathways";
+        dc:title               "Acetaminophen synthesis"@en;
+        dcterms:description    "Synthetic biology approaches to acetaminophen production. The first reaction path in E.coli has been successfully tested experimentally. The second path in Synechocystis is proposed hypothetically by Menezes, et al. in a study considering synthetic biology approaches to resource utilization on future space missions.";
+        dcterms:identifier     "WP2886";
+        dcterms:references     <https://identifiers.org/pubmed/25376875>;
+        cito:cites             <https://identifiers.org/pubmed/25376875>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP2886_r106102>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0001524> , <http://purl.obolibrary.org/obo/PW_0000002> , <http://purl.obolibrary.org/obo/PW_0000754>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_562>;
+        wp:organismName        "Escherichia coli";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000754> , <http://purl.obolibrary.org/obo/PW_0000002> , <http://purl.obolibrary.org/obo/PW_0001524>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP2886&oldid=r106102> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP2886&oldid=r106102>;
+        foaf:page              <http://www.wikipathways.org/instance/WP2886_r106102> .
+
+<https://identifiers.org/ensembl/b3360>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "pabA";
+        dc:identifier       <https://identifiers.org/ensembl/b3360>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "b3360";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2886_r106102/Complex/c7eb2> , <https://identifiers.org/wikipathways/WP2886_r106102>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2886_r106102/DataNode/a9000>;
+        foaf:page           <https://www.ensembl.org/id/b3360> .
+
+<http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/e98d3>
+        rdf:type          wp:Conversion , wp:Interaction , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2886_r106102> , <http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/ef9ea> , <http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/id624bba49>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2886_r106102/Interaction/e98d3>;
+        wp:participants   <https://identifiers.org/pubchem.compound/227> , <https://identifiers.org/hmdb/HMDB0012199>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0012199>;
+        wp:target         <https://identifiers.org/pubchem.compound/227> .
+
+<http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/a6519>
+        rdf:type          wp:DirectedInteraction , wp:Interaction , wp:Conversion;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/df102> , <https://identifiers.org/wikipathways/WP2886_r106102>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2886_r106102/Interaction/a6519>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001169> , <https://identifiers.org/hmdb/HMDB0001859>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001169>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001859> .
+
+<http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/e2ef2>
+        rdf:type          wp:Conversion , wp:Interaction , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2886_r106102> , <http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/d3676>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2886_r106102/Interaction/e2ef2>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:35181> , <https://identifiers.org/hmdb/HMDB0001392>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:35181>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001392> .
 
 <https://identifiers.org/hmdb/HMDB0001169>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -114,26 +283,14 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0001169>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0001169";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2886/WP2886_rWP2886_r106102/DataNode/a83ca> , <http://rdf.wikipathways.org/Pathway/WP2886/WP2886_rWP2886_r106102/DataNode/e33c5>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/ebaa4> , <http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/bfb79> , <https://identifiers.org/wikipathways/WP2886_r106102> , <http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/a6519> , <http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/b8b81>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2886_r106102/DataNode/a83ca> , <http://rdf.wikipathways.org/Pathway/WP2886_r106102/DataNode/e33c5>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001169> .
 
-<http://rdf.wikipathways.org/Pathway/WP2886/WP2886_rWP2886_r106102/WP/Interaction/id624bba49>
-        rdf:type  wp:Interaction .
-
-<https://identifiers.org/ensembl/b1096>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "pabC";
-        dc:identifier       <https://identifiers.org/ensembl/b1096>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "b1096";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2886/WP2886_rWP2886_r106102/DataNode/bc862>;
-        foaf:page           <https://www.ensembl.org/id/b1096> .
-
-<https://identifiers.org/hmdb/HMDB0001859>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Acetaminophen";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0001859>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0001859";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2886/WP2886_rWP2886_r106102/DataNode/e2953> , <http://rdf.wikipathways.org/Pathway/WP2886/WP2886_rWP2886_r106102/DataNode/d50e1>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001859> .
+<http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/bfb79>
+        rdf:type          wp:Interaction , wp:DirectedInteraction , wp:Conversion;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2886_r106102> , <http://rdf.wikipathways.org/Pathway/WP2886_r106102/WP/Interaction/a953f>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2886_r106102/Interaction/bfb79>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001859> , <https://identifiers.org/hmdb/HMDB0001169>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001169>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001859> .

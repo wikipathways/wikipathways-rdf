@@ -16,13 +16,21 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
+<https://identifiers.org/pubmed/20399894>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "20399894";
+        dcterms:isPartOf    <https://identifiers.org/ncbigene/9971>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/20399894> .
+
 <https://identifiers.org/ncbigene/6822>
         rdf:type            wp:GeneProduct , wp:DataNode;
         rdfs:label          "SULT2A1";
         dc:identifier       <https://identifiers.org/ncbigene/6822>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "6822";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2879/WP2879_rWP2879_r116462/DataNode/d29ba>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2879_r116462>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2879_r116462/DataNode/d29ba>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/6822> .
 
 <https://identifiers.org/ncbigene/8431>
@@ -31,7 +39,10 @@
         dc:identifier       <https://identifiers.org/ncbigene/8431>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "8431";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2879/WP2879_rWP2879_r116462/DataNode/dac23> , <http://rdf.wikipathways.org/Pathway/WP2879/WP2879_rWP2879_r116462/DataNode/d1437>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2879_r116462>;
+        dcterms:references  <https://identifiers.org/pubmed/15581595>;
+        cito:cites          <https://identifiers.org/pubmed/15581595>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2879_r116462/DataNode/dac23> , <http://rdf.wikipathways.org/Pathway/WP2879_r116462/DataNode/d1437>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/8431> .
 
 <https://identifiers.org/ncbigene/570>
@@ -40,7 +51,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/570>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "570";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2879/WP2879_rWP2879_r116462/DataNode/e8f80>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2879_r116462>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2879_r116462/DataNode/e8f80>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/570> .
 
 <https://identifiers.org/ncbigene/10998>
@@ -49,7 +61,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/10998>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "10998";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2879/WP2879_rWP2879_r116462/DataNode/fa11e>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2879_r116462>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2879_r116462/DataNode/fa11e>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/10998> .
 
 <https://identifiers.org/chebi/CHEBI:48705>
@@ -58,8 +71,13 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:48705>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:48705";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2879/WP2879_rWP2879_r116462/DataNode/e5711> , <http://rdf.wikipathways.org/Pathway/WP2879/WP2879_rWP2879_r116462/DataNode/cb913> , <http://rdf.wikipathways.org/Pathway/WP2879/WP2879_rWP2879_r116462/DataNode/bee75> , <http://rdf.wikipathways.org/Pathway/WP2879/WP2879_rWP2879_r116462/DataNode/d4189>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2879_r116462/WP/Interaction/f7449> , <http://rdf.wikipathways.org/Pathway/WP2879_r116462/Complex/a291a> , <https://identifiers.org/wikipathways/WP2879_r116462> , <http://rdf.wikipathways.org/Pathway/WP2879_r116462/Complex/a77ac> , <http://rdf.wikipathways.org/Pathway/WP2879_r116462/Complex/cd57f>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2879_r116462/DataNode/d4189> , <http://rdf.wikipathways.org/Pathway/WP2879_r116462/DataNode/e5711> , <http://rdf.wikipathways.org/Pathway/WP2879_r116462/DataNode/cb913> , <http://rdf.wikipathways.org/Pathway/WP2879_r116462/DataNode/bee75>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:48705> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_9606>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9606" .
 
 <https://identifiers.org/ncbigene/6256>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -67,8 +85,13 @@
         dc:identifier       <https://identifiers.org/ncbigene/6256>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "6256";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2879/WP2879_rWP2879_r116462/DataNode/b32ae> , <http://rdf.wikipathways.org/Pathway/WP2879/WP2879_rWP2879_r116462/DataNode/fe9c0> , <http://rdf.wikipathways.org/Pathway/WP2879/WP2879_rWP2879_r116462/DataNode/af061>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2879_r116462/Complex/a77ac> , <http://rdf.wikipathways.org/Pathway/WP2879_r116462/Complex/a291a> , <https://identifiers.org/wikipathways/WP2879_r116462> , <http://rdf.wikipathways.org/Pathway/WP2879_r116462/WP/Interaction/c7b31>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2879_r116462/DataNode/b32ae> , <http://rdf.wikipathways.org/Pathway/WP2879_r116462/DataNode/fe9c0> , <http://rdf.wikipathways.org/Pathway/WP2879_r116462/DataNode/af061>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/6256> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP2879&oldid=r116462>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
 
 <https://identifiers.org/ncbigene/1576>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -76,8 +99,15 @@
         dc:identifier       <https://identifiers.org/ncbigene/1576>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "1576";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2879/WP2879_rWP2879_r116462/DataNode/f8caf>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2879_r116462>;
+        dcterms:references  <https://identifiers.org/pubmed/15581595>;
+        cito:cites          <https://identifiers.org/pubmed/15581595>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2879_r116462/DataNode/f8caf>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/1576> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP2879&oldid=r116462>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
 
 <https://identifiers.org/ncbigene/7363>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -85,7 +115,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/7363>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "7363";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2879/WP2879_rWP2879_r116462/DataNode/f08f4>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2879_r116462>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2879_r116462/DataNode/f08f4>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/7363> .
 
 <https://identifiers.org/ncbigene/6554>
@@ -94,28 +125,54 @@
         dc:identifier       <https://identifiers.org/ncbigene/6554>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "6554";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2879/WP2879_rWP2879_r116462/DataNode/e0930>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2879_r116462>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2879_r116462/DataNode/e0930>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/6554> .
 
-<https://identifiers.org/wikipathways/WP2879/WP2879_rWP2879_r116462>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP2879/WP2879>;
-        dc:source            "WikiPathways";
-        dc:title             "Farnesoid X receptor pathway"@en;
-        dcterms:description  "The farnesoid X receptor (FXR, a.k.a. NR1H4) is a nuclear receptor that responds to levels of bile acids present in the body and regulates many processes related to bile acids synthesis and transport. \n\nProteins on this pathway have targeted assays available via the [https://assays.cancer.gov/available_assays?wp_id=WP2879 CPTAC Assay Portal]";
-        dcterms:identifier   "WP2879/WP2879";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP2879/WP2879_rWP2879_r116462>;
-        wp:organismName      "Homo sapiens";
-        foaf:page            <http://www.wikipathways.org/instance/WP2879/WP2879_rWP2879_r116462> .
+<http://rdf.wikipathways.org/Pathway/WP2879_r116462/WP/Interaction/f42b4>
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP2879_r116462/WP/Interaction/c7b31> .
+
+<https://identifiers.org/pubmed/15581595>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "15581595";
+        dcterms:isPartOf    <https://identifiers.org/ncbigene/10891> , <https://identifiers.org/ncbigene/1576> , <https://identifiers.org/ncbigene/9965> , <https://identifiers.org/ncbigene/8431> , <https://identifiers.org/ncbigene/1581>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/15581595> .
 
 <https://identifiers.org/ncbigene/9965>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "FGF19";
         dc:identifier       <https://identifiers.org/ncbigene/9965>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "9965";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2879/WP2879_rWP2879_r116462/DataNode/f0121>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2879_r116462>;
+        dcterms:references  <https://identifiers.org/pubmed/15581595>;
+        cito:cites          <https://identifiers.org/pubmed/15581595>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2879_r116462/DataNode/f0121>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/9965> .
+
+<http://rdf.wikipathways.org/Pathway/WP2879_r116462/ComplexBinding/a291a>
+        rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2879_r116462>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2879_r116462/Group/a291a>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:48705> , <https://identifiers.org/ncbigene/6256> , <https://identifiers.org/ncbigene/9971> , <http://rdf.wikipathways.org/Pathway/WP2879_r116462/Complex/a291a> .
+
+<https://identifiers.org/wikipathways/WP2879_r116462>
+        rdf:type               skos:Collection , wp:Pathway;
+        dc:identifier          <https://identifiers.org/wikipathways/WP2879>;
+        dc:source              "WikiPathways";
+        dc:title               "Farnesoid X receptor pathway"@en;
+        dcterms:description    "The farnesoid X receptor (FXR, a.k.a. NR1H4) is a nuclear receptor that responds to levels of bile acids present in the body and regulates many processes related to bile acids synthesis and transport. \n\nProteins on this pathway have targeted assays available via the [https://assays.cancer.gov/available_assays?wp_id=WP2879 CPTAC Assay Portal]";
+        dcterms:identifier     "WP2879";
+        dcterms:references     <https://identifiers.org/pubmed/24261707>;
+        cito:cites             <https://identifiers.org/pubmed/20399894> , <https://identifiers.org/pubmed/15581595> , <https://identifiers.org/pubmed/24261707>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP2879_r116462>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0001093>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606>;
+        wp:organismName        "Homo sapiens";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0001093>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP2879&oldid=r116462> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP2879&oldid=r116462>;
+        foaf:page              <http://www.wikipathways.org/instance/WP2879_r116462> .
 
 <https://identifiers.org/ncbigene/8647>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -123,7 +180,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/8647>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "8647";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2879/WP2879_rWP2879_r116462/DataNode/ba8ea>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2879_r116462>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2879_r116462/DataNode/ba8ea>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/8647> .
 
 <https://identifiers.org/ncbigene/5244>
@@ -132,8 +190,15 @@
         dc:identifier       <https://identifiers.org/ncbigene/5244>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "5244";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2879/WP2879_rWP2879_r116462/DataNode/b636d>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2879_r116462>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2879_r116462/DataNode/b636d>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/5244> .
+
+<http://rdf.wikipathways.org/Pathway/WP2879_r116462/Complex/a291a>
+        rdf:type          wp:Complex , wp:DataNode;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2879_r116462>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2879_r116462/Group/a291a>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:48705> , <https://identifiers.org/ncbigene/6256> , <https://identifiers.org/ncbigene/9971> .
 
 <https://identifiers.org/ncbigene/8660>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -141,7 +206,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/8660>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "8660";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2879/WP2879_rWP2879_r116462/DataNode/e3a72>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2879_r116462>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2879_r116462/DataNode/e3a72>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/8660> .
 
 <https://identifiers.org/ncbigene/1581>
@@ -150,8 +216,26 @@
         dc:identifier       <https://identifiers.org/ncbigene/1581>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "1581";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2879/WP2879_rWP2879_r116462/DataNode/b1b19>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2879_r116462>;
+        dcterms:references  <https://identifiers.org/pubmed/15581595>;
+        cito:cites          <https://identifiers.org/pubmed/15581595>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2879_r116462/DataNode/b1b19>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/1581> .
+
+<https://identifiers.org/wikipathways/WP2879>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP2879_r116462> .
+
+<http://rdf.wikipathways.org/Pathway/WP2879_r116462/ComplexBinding/cd57f>
+        rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2879_r116462>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2879_r116462/Group/cd57f>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:48705> , <https://identifiers.org/ncbigene/9971> , <http://rdf.wikipathways.org/Pathway/WP2879_r116462/Complex/cd57f> .
+
+<http://rdf.wikipathways.org/Pathway/WP2879_r116462/Complex/cd57f>
+        rdf:type          wp:Complex , wp:DataNode;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2879_r116462>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2879_r116462/Group/cd57f>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:48705> , <https://identifiers.org/ncbigene/9971> .
 
 <https://identifiers.org/ncbigene/1582>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -159,11 +243,23 @@
         dc:identifier       <https://identifiers.org/ncbigene/1582>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "1582";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2879/WP2879_rWP2879_r116462/DataNode/cd425>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2879_r116462>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2879_r116462/DataNode/cd425>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/1582> .
 
-<http://rdf.wikipathways.org/Pathway/WP2879/WP2879_rWP2879_r116462/WP/Interaction/c7b31>
-        rdf:type  wp:Interaction .
+<http://rdf.wikipathways.org/Pathway/WP2879_r116462/WP/Interaction/c7b31>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2879_r116462>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2879_r116462/Interaction/c7b31>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP2879_r116462/WP/Interaction/f42b4> , <https://identifiers.org/ncbigene/6256> .
+
+<http://rdf.wikipathways.org/Pathway/WP2879_r116462/WP/Interaction/f7449>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2879_r116462>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2879_r116462/Interaction/f7449>;
+        wp:participants   <https://identifiers.org/ncbigene/9971> , <https://identifiers.org/chebi/CHEBI:48705>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:48705>;
+        wp:target         <https://identifiers.org/ncbigene/9971> .
 
 <https://identifiers.org/ncbigene/2289>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -171,7 +267,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/2289>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "2289";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2879/WP2879_rWP2879_r116462/DataNode/f4732>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2879_r116462>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2879_r116462/DataNode/f4732>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/2289> .
 
 <https://identifiers.org/ncbigene/117283>
@@ -180,7 +277,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/117283>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "117283";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2879/WP2879_rWP2879_r116462/DataNode/cf1e8>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2879_r116462>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2879_r116462/DataNode/cf1e8>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/117283> .
 
 <https://identifiers.org/ncbigene/9971>
@@ -189,16 +287,22 @@
         dc:identifier       <https://identifiers.org/ncbigene/9971>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "9971";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2879/WP2879_rWP2879_r116462/DataNode/f8ef6> , <http://rdf.wikipathways.org/Pathway/WP2879/WP2879_rWP2879_r116462/DataNode/a6074> , <http://rdf.wikipathways.org/Pathway/WP2879/WP2879_rWP2879_r116462/DataNode/c282c> , <http://rdf.wikipathways.org/Pathway/WP2879/WP2879_rWP2879_r116462/DataNode/e5b44>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2879_r116462/Complex/a291a> , <http://rdf.wikipathways.org/Pathway/WP2879_r116462/Complex/a77ac> , <http://rdf.wikipathways.org/Pathway/WP2879_r116462/WP/Interaction/f7449> , <http://rdf.wikipathways.org/Pathway/WP2879_r116462/Complex/cd57f> , <https://identifiers.org/wikipathways/WP2879_r116462>;
+        dcterms:references  <https://identifiers.org/pubmed/20399894>;
+        cito:cites          <https://identifiers.org/pubmed/20399894>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2879_r116462/DataNode/a6074> , <http://rdf.wikipathways.org/Pathway/WP2879_r116462/DataNode/f8ef6> , <http://rdf.wikipathways.org/Pathway/WP2879_r116462/DataNode/c282c> , <http://rdf.wikipathways.org/Pathway/WP2879_r116462/DataNode/e5b44>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/9971> .
 
 <https://identifiers.org/ncbigene/10891>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "PPARGC1A";
         dc:identifier       <https://identifiers.org/ncbigene/10891>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "10891";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2879/WP2879_rWP2879_r116462/DataNode/caef5>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2879_r116462>;
+        dcterms:references  <https://identifiers.org/pubmed/15581595>;
+        cito:cites          <https://identifiers.org/pubmed/15581595>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2879_r116462/DataNode/caef5>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/10891> .
 
 <https://identifiers.org/ncbigene/11309>
@@ -207,5 +311,25 @@
         dc:identifier       <https://identifiers.org/ncbigene/11309>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "11309";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2879/WP2879_rWP2879_r116462/DataNode/fc85e>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2879_r116462>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2879_r116462/DataNode/fc85e>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/11309> .
+
+<http://rdf.wikipathways.org/Pathway/WP2879_r116462/ComplexBinding/a77ac>
+        rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2879_r116462>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2879_r116462/Group/a77ac>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:48705> , <https://identifiers.org/ncbigene/6256> , <https://identifiers.org/ncbigene/9971> , <http://rdf.wikipathways.org/Pathway/WP2879_r116462/Complex/a77ac> .
+
+<https://identifiers.org/pubmed/24261707>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "24261707";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2879_r116462>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/24261707> .
+
+<http://rdf.wikipathways.org/Pathway/WP2879_r116462/Complex/a77ac>
+        rdf:type          wp:Complex , wp:DataNode;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2879_r116462>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2879_r116462/Group/a77ac>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:48705> , <https://identifiers.org/ncbigene/6256> , <https://identifiers.org/ncbigene/9971> .

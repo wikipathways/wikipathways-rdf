@@ -16,52 +16,12 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/ensembl/WBGene00000214>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "ASP-1";
-        dc:identifier       <https://identifiers.org/ensembl/WBGene00000214>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "WBGene00000214";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3648/WP3648_rWP3648_r118060/DataNode/c1666>;
-        foaf:page           <https://www.ensembl.org/id/WBGene00000214> .
-
-<https://identifiers.org/wikipathways/WP3648/WP3648_rWP3648_r118060>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP3648/WP3648>;
-        dc:source            "WikiPathways";
-        dc:title             "Crystal toxin triggered necrosis pathway"@en;
-        dcterms:description  "This pathway is modeled on a description provided in Zhang et al. under the title \"A deficiency in the necrosis pathway confers tolerance to Cry6Aa\". Cry6Aa binds to the calcium channel ITR-1 and increases intracellular Ca2+ levels. Ca2+ binds to and activates Calpain TRA-3 which promotes cysteine protease activity. Cysteine Protease activates VHA-12 that uses ATP to increase pH of the cytosol. The increase in H+ concentration signals to the ASP-1/ASP-3/ASP-4 complex which leads to activation of killer cathepsin protease and leads to cell necrosis.";
-        dcterms:identifier   "WP3648/WP3648";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP3648/WP3648_rWP3648_r118060>;
-        wp:organismName      "Caenorhabditis elegans";
-        foaf:page            <http://www.wikipathways.org/instance/WP3648/WP3648_rWP3648_r118060> .
-
-<https://identifiers.org/uniprot/Q45757>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Cry6Aa";
-        dc:identifier       <https://identifiers.org/uniprot/Q45757>;
-        dc:source           "Uniprot-TrEMBL";
-        dcterms:identifier  "Q45757";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3648/WP3648_rWP3648_r118060/DataNode/f08f8>;
-        foaf:page           <http://www.uniprot.org/uniprot/Q45757> .
-
-<https://identifiers.org/ensembl/WBGene00000216>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "ASP-3";
-        dc:identifier       <https://identifiers.org/ensembl/WBGene00000216>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "WBGene00000216";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3648/WP3648_rWP3648_r118060/DataNode/f60b1>;
-        foaf:page           <https://www.ensembl.org/id/WBGene00000216> .
-
-<https://identifiers.org/ensembl/WBGene00000783>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Killer Cathepsin Protease";
-        dc:identifier       <https://identifiers.org/ensembl/WBGene00000783>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "WBGene00000783";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3648/WP3648_rWP3648_r118060/DataNode/bf0ec>;
-        foaf:page           <https://www.ensembl.org/id/WBGene00000783> .
+<https://identifiers.org/pubmed/26795495>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "26795495";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3648_r118060>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/26795495> .
 
 <https://identifiers.org/hmdb/HMDB0001532>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -69,35 +29,9 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0001532>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0001532";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3648/WP3648_rWP3648_r118060/DataNode/f1657>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3648_r118060> , <http://rdf.wikipathways.org/Pathway/WP3648_r118060/WP/Interaction/id813fb8ea>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3648_r118060/DataNode/f1657>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001532> .
-
-<https://identifiers.org/pubchem.compound/1038>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "H+";
-        dc:identifier       <https://identifiers.org/pubchem.compound/1038>;
-        dc:source           "PubChem-compound";
-        dcterms:identifier  "1038";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3648/WP3648_rWP3648_r118060/DataNode/e14eb>;
-        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=1038> .
-
-<https://identifiers.org/ensembl/WBGene00002173>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "ITR-1 Channel";
-        dc:identifier       <https://identifiers.org/ensembl/WBGene00002173>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "WBGene00002173";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3648/WP3648_rWP3648_r118060/DataNode/a37fd>;
-        foaf:page           <https://www.ensembl.org/id/WBGene00002173> .
-
-<https://identifiers.org/ensembl/WBGene00000217>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "ASP-4";
-        dc:identifier       <https://identifiers.org/ensembl/WBGene00000217>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "WBGene00000217";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3648/WP3648_rWP3648_r118060/DataNode/f8f2d>;
-        foaf:page           <https://www.ensembl.org/id/WBGene00000217> .
 
 <https://identifiers.org/ensembl/WBGene00006606>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -105,8 +39,12 @@
         dc:identifier       <https://identifiers.org/ensembl/WBGene00006606>;
         dc:source           "Ensembl";
         dcterms:identifier  "WBGene00006606";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3648/WP3648_rWP3648_r118060/DataNode/fd1b5>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3648_r118060> , <http://rdf.wikipathways.org/Pathway/WP3648_r118060/WP/Interaction/idc5d9770a> , <http://rdf.wikipathways.org/Pathway/WP3648_r118060/WP/Interaction/ida2813241>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3648_r118060/DataNode/fd1b5>;
         foaf:page           <https://www.ensembl.org/id/WBGene00006606> .
+
+<https://identifiers.org/wikipathways/WP3648>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP3648_r118060> .
 
 <https://identifiers.org/pubchem.compound/271>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -114,8 +52,167 @@
         dc:identifier       <https://identifiers.org/pubchem.compound/271>;
         dc:source           "PubChem-compound";
         dcterms:identifier  "271";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3648/WP3648_rWP3648_r118060/DataNode/abed4>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3648_r118060/WP/Interaction/idc5d9770a> , <http://rdf.wikipathways.org/Pathway/WP3648_r118060/WP/Interaction/ide6f61a07> , <https://identifiers.org/wikipathways/WP3648_r118060>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3648_r118060/DataNode/abed4>;
         foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=271> .
+
+<https://identifiers.org/pubchem.compound/1038>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "H+";
+        dc:identifier       <https://identifiers.org/pubchem.compound/1038>;
+        dc:source           "PubChem-compound";
+        dcterms:identifier  "1038";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3648_r118060> , <http://rdf.wikipathways.org/Pathway/WP3648_r118060/WP/Interaction/id29138a11>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3648_r118060/DataNode/e14eb>;
+        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=1038> .
+
+<http://rdf.wikipathways.org/Pathway/WP3648_r118060/WP/Interaction/id3640fc5e>
+        rdf:type          wp:Binding , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3648_r118060>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3648_r118060/Interaction/id3640fc5e>;
+        wp:participants   <https://identifiers.org/ensembl/WBGene00002173> , <https://identifiers.org/uniprot/Q45757>;
+        wp:source         <https://identifiers.org/uniprot/Q45757>;
+        wp:target         <https://identifiers.org/ensembl/WBGene00002173> .
+
+<https://identifiers.org/ensembl/WBGene00002173>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "ITR-1 Channel";
+        dc:identifier       <https://identifiers.org/ensembl/WBGene00002173>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "WBGene00002173";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3648_r118060> , <http://rdf.wikipathways.org/Pathway/WP3648_r118060/WP/Interaction/ide6f61a07> , <http://rdf.wikipathways.org/Pathway/WP3648_r118060/WP/Interaction/id3640fc5e>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3648_r118060/DataNode/a37fd>;
+        foaf:page           <https://www.ensembl.org/id/WBGene00002173> .
+
+<https://identifiers.org/ensembl/WBGene00000214>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "ASP-1";
+        dc:identifier       <https://identifiers.org/ensembl/WBGene00000214>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "WBGene00000214";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3648_r118060> , <http://rdf.wikipathways.org/Pathway/WP3648_r118060/Complex/a064f>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3648_r118060/DataNode/c1666>;
+        foaf:page           <https://www.ensembl.org/id/WBGene00000214> .
+
+<http://rdf.wikipathways.org/Pathway/WP3648_r118060/WP/Interaction/ida2813241>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3648_r118060>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3648_r118060/Interaction/ida2813241>;
+        wp:participants   <https://identifiers.org/ensembl/WBGene00000543> , <https://identifiers.org/ensembl/WBGene00006606>;
+        wp:source         <https://identifiers.org/ensembl/WBGene00006606>;
+        wp:target         <https://identifiers.org/ensembl/WBGene00000543> .
+
+<http://rdf.wikipathways.org/Pathway/WP3648_r118060/WP/Interaction/idc5d9770a>
+        rdf:type          wp:Binding , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3648_r118060>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3648_r118060/Interaction/idc5d9770a>;
+        wp:participants   <https://identifiers.org/ensembl/WBGene00006606> , <https://identifiers.org/pubchem.compound/271>;
+        wp:source         <https://identifiers.org/pubchem.compound/271>;
+        wp:target         <https://identifiers.org/ensembl/WBGene00006606> .
+
+<http://rdf.wikipathways.org/Pathway/WP3648_r118060/Complex/a064f>
+        rdf:type          wp:Complex , wp:DataNode;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3648_r118060>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3648_r118060/Group/a064f>;
+        wp:participants   <https://identifiers.org/ensembl/WBGene00000217> , <https://identifiers.org/ensembl/WBGene00000216> , <https://identifiers.org/ensembl/WBGene00000214> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_6239>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "6239" .
+
+<http://rdf.wikipathways.org/Pathway/WP3648_r118060/WP/Interaction/id29138a11>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3648_r118060>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3648_r118060/Interaction/id29138a11>;
+        wp:participants   <https://identifiers.org/pubchem.compound/1038> , <https://identifiers.org/ensembl/WBGene00006921>;
+        wp:source         <https://identifiers.org/ensembl/WBGene00006921>;
+        wp:target         <https://identifiers.org/pubchem.compound/1038> .
+
+<https://identifiers.org/wikipathways/WP3648_r118060>
+        rdf:type               skos:Collection , wp:Pathway;
+        dc:identifier          <https://identifiers.org/wikipathways/WP3648>;
+        dc:source              "WikiPathways";
+        dc:title               "Crystal toxin triggered necrosis pathway"@en;
+        dcterms:description    "This pathway is modeled on a description provided in Zhang et al. under the title \"A deficiency in the necrosis pathway confers tolerance to Cry6Aa\". Cry6Aa binds to the calcium channel ITR-1 and increases intracellular Ca2+ levels. Ca2+ binds to and activates Calpain TRA-3 which promotes cysteine protease activity. Cysteine Protease activates VHA-12 that uses ATP to increase pH of the cytosol. The increase in H+ concentration signals to the ASP-1/ASP-3/ASP-4 complex which leads to activation of killer cathepsin protease and leads to cell necrosis.";
+        dcterms:identifier     "WP3648";
+        dcterms:references     <https://identifiers.org/pubmed/26795495>;
+        cito:cites             <https://identifiers.org/pubmed/26795495>;
+        wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_9159>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP3648_r118060>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/DOID_9159> , <http://purl.obolibrary.org/obo/PW_0000003> , <http://purl.obolibrary.org/obo/PW_0000279>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_6239>;
+        wp:organismName        "Caenorhabditis elegans";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000279> , <http://purl.obolibrary.org/obo/PW_0000003>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3648&oldid=r118060> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3648&oldid=r118060>;
+        foaf:page              <http://www.wikipathways.org/instance/WP3648_r118060> .
+
+<https://identifiers.org/uniprot/Q45757>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "Cry6Aa";
+        dc:identifier       <https://identifiers.org/uniprot/Q45757>;
+        dc:source           "Uniprot-TrEMBL";
+        dcterms:identifier  "Q45757";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3648_r118060> , <http://rdf.wikipathways.org/Pathway/WP3648_r118060/WP/Interaction/id3640fc5e>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3648_r118060/DataNode/f08f8>;
+        foaf:page           <http://www.uniprot.org/uniprot/Q45757> .
+
+<https://identifiers.org/ensembl/WBGene00000783>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "Killer Cathepsin Protease";
+        dc:identifier       <https://identifiers.org/ensembl/WBGene00000783>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "WBGene00000783";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3648_r118060>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3648_r118060/DataNode/bf0ec>;
+        foaf:page           <https://www.ensembl.org/id/WBGene00000783> .
+
+<http://rdf.wikipathways.org/Pathway/WP3648_r118060/WP/Interaction/id3760c419>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3648_r118060>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3648_r118060/Interaction/id3760c419>;
+        wp:participants   <https://identifiers.org/ensembl/WBGene00006921> , <https://identifiers.org/ensembl/WBGene00000543>;
+        wp:source         <https://identifiers.org/ensembl/WBGene00000543>;
+        wp:target         <https://identifiers.org/ensembl/WBGene00006921> .
+
+<http://rdf.wikipathways.org/Pathway/WP3648_r118060/WP/Interaction/ide6f61a07>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3648_r118060>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3648_r118060/Interaction/ide6f61a07>;
+        wp:participants   <https://identifiers.org/pubchem.compound/271> , <https://identifiers.org/ensembl/WBGene00002173>;
+        wp:source         <https://identifiers.org/ensembl/WBGene00002173>;
+        wp:target         <https://identifiers.org/pubchem.compound/271> .
+
+<https://identifiers.org/ensembl/WBGene00000216>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "ASP-3";
+        dc:identifier       <https://identifiers.org/ensembl/WBGene00000216>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "WBGene00000216";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3648_r118060/Complex/a064f> , <https://identifiers.org/wikipathways/WP3648_r118060>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3648_r118060/DataNode/f60b1>;
+        foaf:page           <https://www.ensembl.org/id/WBGene00000216> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3648&oldid=r118060>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<http://rdf.wikipathways.org/Pathway/WP3648_r118060/WP/Interaction/id813fb8ea>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3648_r118060>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3648_r118060/Interaction/id813fb8ea>;
+        wp:participants   <https://identifiers.org/ensembl/WBGene00006921> , <https://identifiers.org/hmdb/HMDB0001532>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001532>;
+        wp:target         <https://identifiers.org/ensembl/WBGene00006921> .
+
+<http://rdf.wikipathways.org/Pathway/WP3648_r118060/ComplexBinding/a064f>
+        rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3648_r118060>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3648_r118060/Group/a064f>;
+        wp:participants   <https://identifiers.org/ensembl/WBGene00000217> , <https://identifiers.org/ensembl/WBGene00000216> , <https://identifiers.org/ensembl/WBGene00000214> , <http://rdf.wikipathways.org/Pathway/WP3648_r118060/Complex/a064f> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3648&oldid=r118060>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
 
 <https://identifiers.org/ensembl/WBGene00006921>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -123,8 +220,19 @@
         dc:identifier       <https://identifiers.org/ensembl/WBGene00006921>;
         dc:source           "Ensembl";
         dcterms:identifier  "WBGene00006921";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3648/WP3648_rWP3648_r118060/DataNode/bb1f4>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3648_r118060/WP/Interaction/id3760c419> , <http://rdf.wikipathways.org/Pathway/WP3648_r118060/WP/Interaction/id813fb8ea> , <http://rdf.wikipathways.org/Pathway/WP3648_r118060/WP/Interaction/id29138a11> , <https://identifiers.org/wikipathways/WP3648_r118060>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3648_r118060/DataNode/bb1f4>;
         foaf:page           <https://www.ensembl.org/id/WBGene00006921> .
+
+<https://identifiers.org/ensembl/WBGene00000217>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "ASP-4";
+        dc:identifier       <https://identifiers.org/ensembl/WBGene00000217>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "WBGene00000217";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3648_r118060/Complex/a064f> , <https://identifiers.org/wikipathways/WP3648_r118060>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3648_r118060/DataNode/f8f2d>;
+        foaf:page           <https://www.ensembl.org/id/WBGene00000217> .
 
 <https://identifiers.org/ensembl/WBGene00000543>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -132,5 +240,6 @@
         dc:identifier       <https://identifiers.org/ensembl/WBGene00000543>;
         dc:source           "Ensembl";
         dcterms:identifier  "WBGene00000543";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3648/WP3648_rWP3648_r118060/DataNode/da060>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3648_r118060/WP/Interaction/ida2813241> , <http://rdf.wikipathways.org/Pathway/WP3648_r118060/WP/Interaction/id3760c419> , <https://identifiers.org/wikipathways/WP3648_r118060>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3648_r118060/DataNode/da060>;
         foaf:page           <https://www.ensembl.org/id/WBGene00000543> .

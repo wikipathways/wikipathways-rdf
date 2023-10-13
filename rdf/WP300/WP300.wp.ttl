@@ -16,13 +16,25 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP300&oldid=r71890>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<https://identifiers.org/wikipathways/WP300>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP300_r71890> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_10090>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "10090" .
+
 <https://identifiers.org/ncbigene/77683>
         rdf:type            wp:GeneProduct , wp:DataNode;
         rdfs:label          "EHMT1";
         dc:identifier       <https://identifiers.org/ncbigene/77683>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "77683";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP300/WP300_rWP300_r71890/DataNode/c6f>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP300_r71890>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP300_r71890/DataNode/c6f>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/77683> .
 
 <https://identifiers.org/ncbigene/107435>
@@ -31,7 +43,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/107435>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "107435";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP300/WP300_rWP300_r71890/DataNode/aee>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP300_r71890/WP/Interaction/e8fae> , <https://identifiers.org/wikipathways/WP300_r71890> , <http://rdf.wikipathways.org/Pathway/WP300_r71890/WP/Interaction/bcbf2>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP300_r71890/DataNode/aee>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/107435> .
 
 <https://identifiers.org/ncbigene/433759>
@@ -40,8 +53,24 @@
         dc:identifier       <https://identifiers.org/ncbigene/433759>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "433759";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP300/WP300_rWP300_r71890/DataNode/a80>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP300_r71890>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP300_r71890/DataNode/a80>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/433759> .
+
+<https://identifiers.org/wikipathways/WP300_r71890>
+        rdf:type               wp:Pathway , skos:Collection;
+        dc:identifier          <https://identifiers.org/wikipathways/WP300>;
+        dc:source              "WikiPathways";
+        dc:title               "Histone modifications"@en;
+        dcterms:description    "";
+        dcterms:identifier     "WP300";
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP300_r71890>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0001338>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_10090>;
+        wp:organismName        "Mus musculus";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0001338>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP300&oldid=r71890> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP300&oldid=r71890>;
+        foaf:page              <http://www.wikipathways.org/instance/WP300_r71890> .
 
 <https://identifiers.org/ncbigene/110147>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -49,19 +78,27 @@
         dc:identifier       <https://identifiers.org/ncbigene/110147>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "110147";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP300/WP300_rWP300_r71890/DataNode/ef1>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP300_r71890>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP300_r71890/DataNode/ef1>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/110147> .
 
-<https://identifiers.org/wikipathways/WP300/WP300_rWP300_r71890>
-        rdf:type             wp:Pathway , skos:Collection;
-        dc:identifier        <https://identifiers.org/wikipathways/WP300/WP300>;
-        dc:source            "WikiPathways";
-        dc:title             "Histone modifications"@en;
-        dcterms:description  "";
-        dcterms:identifier   "WP300/WP300";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP300/WP300_rWP300_r71890>;
-        wp:organismName      "Mus musculus";
-        foaf:page            <http://www.wikipathways.org/instance/WP300/WP300_rWP300_r71890> .
+<http://rdf.wikipathways.org/Pathway/WP300_r71890/WP/Interaction/e8fae>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP300_r71890>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP300_r71890/Interaction/e8fae>;
+        wp:participants   <https://identifiers.org/ncbigene/107435>;
+        wp:source         <https://identifiers.org/ncbigene/107435> .
+
+<http://rdf.wikipathways.org/Pathway/WP300_r71890/WP/Interaction/bcbf2>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP300_r71890>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP300_r71890/Interaction/bcbf2>;
+        wp:participants   <https://identifiers.org/ncbigene/107435>;
+        wp:target         <https://identifiers.org/ncbigene/107435> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP300&oldid=r71890>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
 
 <https://identifiers.org/ncbigene/15182>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -69,5 +106,6 @@
         dc:identifier       <https://identifiers.org/ncbigene/15182>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "15182";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP300/WP300_rWP300_r71890/DataNode/b0b>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP300_r71890>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP300_r71890/DataNode/b0b>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/15182> .

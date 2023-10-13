@@ -16,23 +16,61 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
+<http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/id616273b4>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP256_r125521> , <http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/id27a4832>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP256_r125521/Interaction/id616273b4>;
+        wp:participants   <https://identifiers.org/cas/6027-13-0>;
+        wp:target         <https://identifiers.org/cas/6027-13-0> .
+
+<http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/id9e1b3e7c>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP256_r125521>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP256_r125521/Interaction/id9e1b3e7c>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/id9ea9edaa> , <https://identifiers.org/cas/56-45-1> .
+
+<https://identifiers.org/wikipathways/WP256_r125521>
+        rdf:type               wp:Pathway , skos:Collection;
+        dc:identifier          <https://identifiers.org/wikipathways/WP256>;
+        dc:source              "WikiPathways";
+        dc:title               "Cysteine biosynthesis from homoserine"@en;
+        dcterms:description    "O-Acetyl-L-homoserine sulfhydrylase participates in an alternative pathway of L-homocysteine synthesis. Cysteine can then be produced by the reverse transsulfuration pathway, which involves the conversion of homocysteine to cysteine with the help of a cystathionine intermediate. This process takes place in two steps: First, cystathionine-synthase (Cys4p) catalyzes a -displacement reaction, whereby the thiol group of homocysteine replaces the hydroxyl group of serine, resulting in the formation of cystathionine. Second, cystathionine-lyase (Cys3p) catalyzes an ,-elimination reaction, which hydrolyzes cystathionine to generate cysteine, -ketobutyrate, and ammonia.";
+        dcterms:identifier     "WP256";
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP256_r125521>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000049>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_4932>;
+        wp:organismName        "Saccharomyces cerevisiae";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000049>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP256&oldid=r125521> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP256&oldid=r125521>;
+        foaf:page              <http://www.wikipathways.org/instance/WP256_r125521> .
+
 <https://identifiers.org/hmdb/HMDB0000051>
         rdf:type            wp:Metabolite , wp:DataNode;
         rdfs:label          "NH3";
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000051>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0000051";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP256/WP256_rWP256_r125521/DataNode/da810>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP256_r125521>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP256_r125521/DataNode/da810>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000051> .
 
 <https://identifiers.org/sgd/S000004294>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "MET17";
         dc:identifier       <https://identifiers.org/sgd/S000004294>;
         dc:source           "SGD";
         dcterms:identifier  "S000004294";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP256/WP256_rWP256_r125521/DataNode/aab>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/id27a4832> , <https://identifiers.org/wikipathways/WP256_r125521>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP256_r125521/DataNode/aab>;
         foaf:page           <http://www.yeastgenome.org/locus/S000004294> .
+
+<http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/idf1fcd1eb>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP256_r125521>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP256_r125521/Interaction/idf1fcd1eb>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/id9ea9edaa> , <https://identifiers.org/sgd/S000003387>;
+        wp:source         <https://identifiers.org/sgd/S000003387>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/id9ea9edaa> .
 
 <https://identifiers.org/cas/56-88-2>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -40,16 +78,18 @@
         dc:identifier       <https://identifiers.org/cas/56-88-2>;
         dc:source           "CAS";
         dcterms:identifier  "56-88-2";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP256/WP256_rWP256_r125521/DataNode/b4f>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP256_r125521> , <http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/id9ea9edaa> , <http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/id7213483a>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP256_r125521/DataNode/b4f>;
         foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=56-88-2> .
 
 <https://identifiers.org/sgd/S000005221>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "MET2";
         dc:identifier       <https://identifiers.org/sgd/S000005221>;
         dc:source           "SGD";
         dcterms:identifier  "S000005221";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP256/WP256_rWP256_r125521/DataNode/c0e>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP256_r125521> , <http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/id48cbb21>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP256_r125521/DataNode/c0e>;
         foaf:page           <http://www.yeastgenome.org/locus/S000005221> .
 
 <https://identifiers.org/hmdb/HMDB0000005>
@@ -58,19 +98,26 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000005>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0000005";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP256/WP256_rWP256_r125521/DataNode/d800c>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP256_r125521>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP256_r125521/DataNode/d800c>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000005> .
 
-<http://rdf.wikipathways.org/Pathway/WP256/WP256_rWP256_r125521/WP/Interaction/idd6b9a0d0>
-        rdf:type  wp:Interaction .
+<http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/id2c49f638>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP256_r125521>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP256_r125521/Interaction/id2c49f638>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/id7213483a> , <https://identifiers.org/sgd/S000000010>;
+        wp:source         <https://identifiers.org/sgd/S000000010>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/id7213483a> .
 
 <https://identifiers.org/cas/56-45-1>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "L-serine";
         dc:identifier       <https://identifiers.org/cas/56-45-1>;
         dc:source           "CAS";
         dcterms:identifier  "56-45-1";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP256/WP256_rWP256_r125521/DataNode/f61>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP256_r125521> , <http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/id9e1b3e7c>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP256_r125521/DataNode/f61>;
         foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=56-45-1> .
 
 <https://identifiers.org/cas/72-89-9>
@@ -79,73 +126,148 @@
         dc:identifier       <https://identifiers.org/cas/72-89-9>;
         dc:source           "CAS";
         dcterms:identifier  "72-89-9";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP256/WP256_rWP256_r125521/DataNode/eea>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP256_r125521> , <http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/idd6b9a0d0>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP256_r125521/DataNode/eea>;
         foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=72-89-9> .
 
-<http://rdf.wikipathways.org/Pathway/WP256/WP256_rWP256_r125521/WP/Interaction/id9e1b3e7c>
-        rdf:type  wp:Interaction .
+<http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/id27a4832>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP256_r125521>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP256_r125521/Interaction/id27a4832>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/id616273b4> , <https://identifiers.org/sgd/S000004294>;
+        wp:source         <https://identifiers.org/sgd/S000004294>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/id616273b4> .
 
-<http://rdf.wikipathways.org/Pathway/WP256/WP256_rWP256_r125521/WP/Interaction/ideea6f397>
-        rdf:type  wp:Interaction .
+<https://identifiers.org/wikipathways/WP256>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP256_r125521> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP256&oldid=r125521>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/id86cc2585>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP256_r125521>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP256_r125521/Interaction/id86cc2585> .
+
+<http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/id1ad1f615>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP256_r125521>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP256_r125521/Interaction/id1ad1f615> .
+
+<http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/id7213483a>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP256_r125521> , <http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/id2c49f638>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP256_r125521/Interaction/id7213483a>;
+        wp:participants   <https://identifiers.org/cas/52-90-4> , <https://identifiers.org/cas/56-88-2>;
+        wp:source         <https://identifiers.org/cas/56-88-2>;
+        wp:target         <https://identifiers.org/cas/52-90-4> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_4932>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "4932" .
 
 <https://identifiers.org/cas/672-15-1>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "homoserine";
         dc:identifier       <https://identifiers.org/cas/672-15-1>;
         dc:source           "CAS";
         dcterms:identifier  "672-15-1";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP256/WP256_rWP256_r125521/DataNode/dd8>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP256_r125521> , <http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/id8277d737>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP256_r125521/DataNode/dd8>;
         foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=672-15-1> .
 
+<http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/idb88ab4b2>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP256_r125521>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP256_r125521/Interaction/idb88ab4b2> .
+
+<http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/id48cbb21>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP256_r125521>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP256_r125521/Interaction/id48cbb21>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/id8277d737> , <https://identifiers.org/sgd/S000005221>;
+        wp:source         <https://identifiers.org/sgd/S000005221>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/id8277d737> .
+
+<http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/id8277d737>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/idd6b9a0d0> , <https://identifiers.org/wikipathways/WP256_r125521> , <http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/id48cbb21>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP256_r125521/Interaction/id8277d737>;
+        wp:participants   <https://identifiers.org/cas/672-15-1>;
+        wp:source         <https://identifiers.org/cas/672-15-1> .
+
 <https://identifiers.org/sgd/S000000010>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "CYS3";
         dc:identifier       <https://identifiers.org/sgd/S000000010>;
         dc:source           "SGD";
         dcterms:identifier  "S000000010";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP256/WP256_rWP256_r125521/DataNode/e43>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP256_r125521> , <http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/id2c49f638>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP256_r125521/DataNode/e43>;
         foaf:page           <http://www.yeastgenome.org/locus/S000000010> .
 
 <https://identifiers.org/cas/52-90-4>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "L-cysteine";
         dc:identifier       <https://identifiers.org/cas/52-90-4>;
         dc:source           "CAS";
         dcterms:identifier  "52-90-4";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP256/WP256_rWP256_r125521/DataNode/c9f>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/id7213483a> , <https://identifiers.org/wikipathways/WP256_r125521>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP256_r125521/DataNode/c9f>;
         foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=52-90-4> .
 
-<https://identifiers.org/wikipathways/WP256/WP256_rWP256_r125521>
-        rdf:type             wp:Pathway , skos:Collection;
-        dc:identifier        <https://identifiers.org/wikipathways/WP256/WP256>;
-        dc:source            "WikiPathways";
-        dc:title             "Cysteine biosynthesis from homoserine"@en;
-        dcterms:description  "O-Acetyl-L-homoserine sulfhydrylase participates in an alternative pathway of L-homocysteine synthesis. Cysteine can then be produced by the reverse transsulfuration pathway, which involves the conversion of homocysteine to cysteine with the help of a cystathionine intermediate. This process takes place in two steps: First, cystathionine-synthase (Cys4p) catalyzes a -displacement reaction, whereby the thiol group of homocysteine replaces the hydroxyl group of serine, resulting in the formation of cystathionine. Second, cystathionine-lyase (Cys3p) catalyzes an ,-elimination reaction, which hydrolyzes cystathionine to generate cysteine, -ketobutyrate, and ammonia.";
-        dcterms:identifier   "WP256/WP256";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP256/WP256_rWP256_r125521>;
-        wp:organismName      "Saccharomyces cerevisiae";
-        foaf:page            <http://www.wikipathways.org/instance/WP256/WP256_rWP256_r125521> .
-
 <https://identifiers.org/cas/64885-97-8>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "Coenzyme A";
         dc:identifier       <https://identifiers.org/cas/64885-97-8>;
         dc:source           "CAS";
         dcterms:identifier  "64885-97-8";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP256/WP256_rWP256_r125521/DataNode/fd2>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP256_r125521> , <http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/id9feaee14>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP256_r125521/DataNode/fd2>;
         foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=64885-97-8> .
 
+<http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/id9ea9edaa>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/idf1fcd1eb> , <https://identifiers.org/wikipathways/WP256_r125521> , <http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/id9e1b3e7c>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP256_r125521/Interaction/id9ea9edaa>;
+        wp:participants   <https://identifiers.org/cas/56-88-2> , <https://identifiers.org/cas/6027-13-0>;
+        wp:source         <https://identifiers.org/cas/6027-13-0>;
+        wp:target         <https://identifiers.org/cas/56-88-2> .
+
 <https://identifiers.org/cas/64-19-7>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "acetate";
         dc:identifier       <https://identifiers.org/cas/64-19-7>;
         dc:source           "CAS";
         dcterms:identifier  "64-19-7";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP256/WP256_rWP256_r125521/DataNode/ca3>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP256_r125521> , <http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/iddc206820>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP256_r125521/DataNode/ca3>;
         foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=64-19-7> .
 
-<http://rdf.wikipathways.org/Pathway/WP256/WP256_rWP256_r125521/WP/Interaction/id1ad1f615>
-        rdf:type  wp:Interaction .
+<http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/idd6b9a0d0>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP256_r125521>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP256_r125521/Interaction/idd6b9a0d0>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/id8277d737> , <https://identifiers.org/cas/72-89-9> .
+
+<http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/iddc206820>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP256_r125521>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP256_r125521/Interaction/iddc206820>;
+        wp:participants   <https://identifiers.org/cas/64-19-7>;
+        wp:target         <https://identifiers.org/cas/64-19-7> .
+
+<http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/id9feaee14>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP256_r125521>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP256_r125521/Interaction/id9feaee14>;
+        wp:participants   <https://identifiers.org/cas/64885-97-8>;
+        wp:target         <https://identifiers.org/cas/64885-97-8> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP256&oldid=r125521>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
 
 <https://identifiers.org/sgd/S000003387>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -153,14 +275,16 @@
         dc:identifier       <https://identifiers.org/sgd/S000003387>;
         dc:source           "SGD";
         dcterms:identifier  "S000003387";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP256/WP256_rWP256_r125521/DataNode/a05>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/idf1fcd1eb> , <https://identifiers.org/wikipathways/WP256_r125521>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP256_r125521/DataNode/a05>;
         foaf:page           <http://www.yeastgenome.org/locus/S000003387> .
 
 <https://identifiers.org/cas/6027-13-0>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "homocysteine";
         dc:identifier       <https://identifiers.org/cas/6027-13-0>;
         dc:source           "CAS";
         dcterms:identifier  "6027-13-0";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP256/WP256_rWP256_r125521/DataNode/acb>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/id9ea9edaa> , <http://rdf.wikipathways.org/Pathway/WP256_r125521/WP/Interaction/id616273b4> , <https://identifiers.org/wikipathways/WP256_r125521>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP256_r125521/DataNode/acb>;
         foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=6027-13-0> .

@@ -16,43 +16,57 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/hmdb/HMDB0059597>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Hydrogen Ion";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0059597>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0059597";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2488/WP2488_rWP2488_r106101/DataNode/fa996> , <http://rdf.wikipathways.org/Pathway/WP2488/WP2488_rWP2488_r106101/DataNode/e9898>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0059597> .
+<http://rdf.wikipathways.org/Pathway/WP2488_r106101/WP/Interaction/cd63a>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2488_r106101>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2488_r106101/Interaction/cd63a>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000250>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000250> .
 
-<https://identifiers.org/hmdb/HMDB0000902>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "NAD";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000902>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000902";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2488/WP2488_rWP2488_r106101/DataNode/c2159>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000902> .
+<https://identifiers.org/pubmed/15137942>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "15137942";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2488_r106101>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/15137942> .
 
-<https://identifiers.org/wikipathways/WP2488/WP2488_rWP2488_r106101>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP2488/WP2488>;
-        dc:source            "WikiPathways";
-        dc:title             "NAD salvage pathway III"@en;
-        dcterms:description  "In addition to de novo synthesis of NAD (NAD biosynthesis II (from tryptophan)) and regeneration from nicotinamide degradation products and extracellular nicotinate (NAD salvage pathway I), yeast posseses an additional route for synthesizing NAD, called the nicotinamide riboside salvage pathway [Bieganowsk04]. In this pathway 1-(β-D ribofuranosyl)nicotinamide is converted to β-nicotinamide D-ribonucleotide and subsequently to NAD+, in reactions catalyzed by the enzymes nicotinamide riboside kinase and nicotinamide mononucleotide adenylyltransferase [Bieganowsk04].\n\nBacteria that lack the enzymes for de novo NAD biosynthesis are able to convert extracellular NAD to less polar degradation products, which are then imported into the cell and processed back to NAD via 1-(β-D ribofuranosyl)nicotinamide (see NAD salvage pathway II) [Bieganowsk04]. However, the genes that those bacteria utilize to convert the extracellular NAD into 1-(β-D ribofuranosyl)nicotinamide have not been identified in fungi or animals, which may have only the later part of the pathway, as described here [Bieganowsk04].";
-        dcterms:identifier   "WP2488/WP2488";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP2488/WP2488_rWP2488_r106101>;
-        wp:organismName      "Escherichia coli";
-        foaf:page            <http://www.wikipathways.org/instance/WP2488/WP2488_rWP2488_r106101> .
+<http://rdf.wikipathways.org/Pathway/WP2488_r106101/WP/Interaction/fa4f7>
+        rdf:type          wp:DirectedInteraction , wp:Interaction , wp:Conversion;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2488_r106101> , <http://rdf.wikipathways.org/Pathway/WP2488_r106101/WP/Interaction/caff5>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2488_r106101/Interaction/fa4f7>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000902> , <https://identifiers.org/hmdb/HMDB0000229>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000229>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000902> .
+
+<https://identifiers.org/pubmed/16078372>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "16078372";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2488_r106101>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/16078372> .
 
 <https://identifiers.org/hmdb/HMDB0000250>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "Pyrophosphate";
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000250>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0000250";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2488/WP2488_rWP2488_r106101/DataNode/fe8a9>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2488_r106101/WP/Interaction/cd63a> , <https://identifiers.org/wikipathways/WP2488_r106101>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2488_r106101/DataNode/fe8a9>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000250> .
+
+<https://identifiers.org/pubmed/4349027>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "4349027";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2488_r106101>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/4349027> .
+
+<http://rdf.wikipathways.org/Pathway/WP2488_r106101/WP/Interaction/eb74f>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2488_r106101>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2488_r106101/Interaction/eb74f>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP2488_r106101/WP/Interaction/cab23> , <https://identifiers.org/hmdb/HMDB0000538> .
 
 <https://identifiers.org/hmdb/HMDB0000229>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -60,26 +74,71 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000229>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0000229";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2488/WP2488_rWP2488_r106101/DataNode/a007c>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2488_r106101/WP/Interaction/fa4f7> , <http://rdf.wikipathways.org/Pathway/WP2488_r106101/WP/Interaction/cab23> , <https://identifiers.org/wikipathways/WP2488_r106101>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2488_r106101/DataNode/a007c>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000229> .
 
-<https://identifiers.org/hmdb/HMDB0000538>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Adenosine triphosphate";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000538>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000538";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2488/WP2488_rWP2488_r106101/DataNode/fe249> , <http://rdf.wikipathways.org/Pathway/WP2488/WP2488_rWP2488_r106101/DataNode/a2e41>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000538> .
+<https://identifiers.org/pubmed/12446641>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "12446641";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2488_r106101>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/12446641> .
+
+<https://identifiers.org/pubmed/14724176>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "14724176";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2488_r106101>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/14724176> .
+
+<http://rdf.wikipathways.org/Pathway/WP2488_r106101/WP/Interaction/cab23>
+        rdf:type          wp:DirectedInteraction , wp:Interaction , wp:Conversion;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP2488_r106101/WP/Interaction/eb74f> , <https://identifiers.org/wikipathways/WP2488_r106101> , <http://rdf.wikipathways.org/Pathway/WP2488_r106101/WP/Interaction/e32bb>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2488_r106101/Interaction/cab23>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000855> , <https://identifiers.org/hmdb/HMDB0000229>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000855>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000229> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP2488&oldid=r106101>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<https://identifiers.org/pubmed/8086213>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "8086213";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2488_r106101>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/8086213> .
+
+<https://identifiers.org/pubmed/18029306>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "18029306";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2488_r106101>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/18029306> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP2488&oldid=r106101>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
 
 <https://identifiers.org/ensembl/EBESCG00000001171>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "nadR";
         dc:identifier       <https://identifiers.org/ensembl/EBESCG00000001171>;
         dc:source           "Ensembl";
         dcterms:identifier  "EBESCG00000001171";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2488/WP2488_rWP2488_r106101/DataNode/b8533> , <http://rdf.wikipathways.org/Pathway/WP2488/WP2488_rWP2488_r106101/DataNode/ccb07>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2488_r106101/WP/Interaction/e32bb> , <http://rdf.wikipathways.org/Pathway/WP2488_r106101/WP/Interaction/caff5> , <https://identifiers.org/wikipathways/WP2488_r106101>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2488_r106101/DataNode/b8533> , <http://rdf.wikipathways.org/Pathway/WP2488_r106101/DataNode/ccb07>;
         foaf:page           <https://www.ensembl.org/id/EBESCG00000001171> .
+
+<http://rdf.wikipathways.org/Pathway/WP2488_r106101/WP/Interaction/caff5>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2488_r106101>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2488_r106101/Interaction/caff5>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP2488_r106101/WP/Interaction/fa4f7> , <https://identifiers.org/ensembl/EBESCG00000001171>;
+        wp:source         <https://identifiers.org/ensembl/EBESCG00000001171>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP2488_r106101/WP/Interaction/fa4f7> .
 
 <https://identifiers.org/hmdb/HMDB0001341>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -87,20 +146,92 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0001341>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0001341";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2488/WP2488_rWP2488_r106101/DataNode/c1244>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2488_r106101>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2488_r106101/DataNode/c1244>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001341> .
 
-<http://rdf.wikipathways.org/Pathway/WP2488/WP2488_rWP2488_r106101/WP/Interaction/eb74f>
-        rdf:type  wp:Interaction .
+<https://identifiers.org/hmdb/HMDB0000538>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Adenosine triphosphate";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000538>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0000538";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2488_r106101> , <http://rdf.wikipathways.org/Pathway/WP2488_r106101/WP/Interaction/eb74f>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2488_r106101/DataNode/fe249> , <http://rdf.wikipathways.org/Pathway/WP2488_r106101/DataNode/a2e41>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000538> .
 
-<http://rdf.wikipathways.org/Pathway/WP2488/WP2488_rWP2488_r106101/WP/Interaction/id775698e8>
-        rdf:type  wp:Interaction .
+<http://purl.obolibrary.org/obo/NCBITaxon_562>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "562" .
+
+<https://identifiers.org/wikipathways/WP2488_r106101>
+        rdf:type               skos:Collection , wp:Pathway;
+        dc:identifier          <https://identifiers.org/wikipathways/WP2488>;
+        dc:source              "WikiPathways";
+        dc:title               "NAD salvage pathway III"@en;
+        dcterms:description    "In addition to de novo synthesis of NAD (NAD biosynthesis II (from tryptophan)) and regeneration from nicotinamide degradation products and extracellular nicotinate (NAD salvage pathway I), yeast posseses an additional route for synthesizing NAD, called the nicotinamide riboside salvage pathway [Bieganowsk04]. In this pathway 1-(β-D ribofuranosyl)nicotinamide is converted to β-nicotinamide D-ribonucleotide and subsequently to NAD+, in reactions catalyzed by the enzymes nicotinamide riboside kinase and nicotinamide mononucleotide adenylyltransferase [Bieganowsk04].\n\nBacteria that lack the enzymes for de novo NAD biosynthesis are able to convert extracellular NAD to less polar degradation products, which are then imported into the cell and processed back to NAD via 1-(β-D ribofuranosyl)nicotinamide (see NAD salvage pathway II) [Bieganowsk04]. However, the genes that those bacteria utilize to convert the extracellular NAD into 1-(β-D ribofuranosyl)nicotinamide have not been identified in fungi or animals, which may have only the later part of the pathway, as described here [Bieganowsk04].";
+        dcterms:identifier     "WP2488";
+        dcterms:references     <https://identifiers.org/pubmed/14724176> , <https://identifiers.org/pubmed/8086213> , <https://identifiers.org/pubmed/15137942> , <https://identifiers.org/pubmed/12648681> , <https://identifiers.org/pubmed/10464228> , <https://identifiers.org/pubmed/16078372> , <https://identifiers.org/pubmed/4349027> , <https://identifiers.org/pubmed/18029306> , <https://identifiers.org/pubmed/12446641>;
+        cito:cites             <https://identifiers.org/pubmed/8086213> , <https://identifiers.org/pubmed/18029306> , <https://identifiers.org/pubmed/15137942> , <https://identifiers.org/pubmed/12648681> , <https://identifiers.org/pubmed/4349027> , <https://identifiers.org/pubmed/10464228> , <https://identifiers.org/pubmed/16078372> , <https://identifiers.org/pubmed/14724176> , <https://identifiers.org/pubmed/12446641>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP2488_r106101>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000220> , <http://purl.obolibrary.org/obo/PW_0000219> , <http://purl.obolibrary.org/obo/PW_0000868>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_562>;
+        wp:organismName        "Escherichia coli";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000868> , <http://purl.obolibrary.org/obo/PW_0000220> , <http://purl.obolibrary.org/obo/PW_0000219>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP2488&oldid=r106101> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP2488&oldid=r106101>;
+        foaf:page              <http://www.wikipathways.org/instance/WP2488_r106101> .
+
+<http://rdf.wikipathways.org/Pathway/WP2488_r106101/WP/Interaction/e32bb>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2488_r106101>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2488_r106101/Interaction/e32bb>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP2488_r106101/WP/Interaction/cab23> , <https://identifiers.org/ensembl/EBESCG00000001171>;
+        wp:source         <https://identifiers.org/ensembl/EBESCG00000001171>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP2488_r106101/WP/Interaction/cab23> .
 
 <https://identifiers.org/hmdb/HMDB0000855>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "Nicotinamide riboside";
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000855>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0000855";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2488/WP2488_rWP2488_r106101/DataNode/b3e50>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2488_r106101> , <http://rdf.wikipathways.org/Pathway/WP2488_r106101/WP/Interaction/cab23>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2488_r106101/DataNode/b3e50>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000855> .
+
+<https://identifiers.org/pubmed/12648681>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "12648681";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2488_r106101>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/12648681> .
+
+<https://identifiers.org/hmdb/HMDB0059597>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Hydrogen Ion";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0059597>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0059597";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2488_r106101>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2488_r106101/DataNode/e9898> , <http://rdf.wikipathways.org/Pathway/WP2488_r106101/DataNode/fa996>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0059597> .
+
+<https://identifiers.org/pubmed/10464228>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "10464228";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2488_r106101>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/10464228> .
+
+<https://identifiers.org/hmdb/HMDB0000902>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "NAD";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000902>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0000902";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2488_r106101/WP/Interaction/fa4f7> , <https://identifiers.org/wikipathways/WP2488_r106101>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2488_r106101/DataNode/c2159>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000902> .
+
+<https://identifiers.org/wikipathways/WP2488>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP2488_r106101> .

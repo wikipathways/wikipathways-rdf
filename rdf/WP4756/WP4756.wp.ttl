@@ -22,7 +22,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/1511>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "1511";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/c9ca8>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/e54f1> , <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/c9ca8>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/1511> .
 
 <https://identifiers.org/hgnc.symbol/CALM3>
@@ -31,8 +32,17 @@
         dc:identifier       <https://identifiers.org/hgnc.symbol/CALM3>;
         dc:source           "HGNC";
         dcterms:identifier  "CALM3";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/f44e9>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/f44e9>;
         foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/CALM3> .
+
+<http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/f3a74>
+        rdf:type          wp:Interaction , wp:DirectedInteraction , wp:Conversion;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/e54f1> , <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4756_r120634/Interaction/f3a74>;
+        wp:participants   <https://identifiers.org/pubchem.compound/3081372> , <https://identifiers.org/hmdb/HMDB0001035>;
+        wp:source         <https://identifiers.org/pubchem.compound/3081372>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001035> .
 
 <https://identifiers.org/hgnc.symbol/ATF6B>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -40,8 +50,25 @@
         dc:identifier       <https://identifiers.org/hgnc.symbol/ATF6B>;
         dc:source           "HGNC";
         dcterms:identifier  "ATF6B";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/e6684>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/e6684>;
         foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/ATF6B> .
+
+<http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/id2b90d2db>
+        rdf:type          wp:Interaction , wp:DirectedInteraction , wp:Conversion;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4756_r120634> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/id92bd2c48> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/id7da050c4>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4756_r120634/Interaction/id2b90d2db>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:16581> , <https://identifiers.org/chebi/CHEBI:16113>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:16113>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:16581> .
+
+<http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/id792de397>
+        rdf:type          wp:Stimulation , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4756_r120634/Interaction/id792de397>;
+        wp:participants   <https://identifiers.org/hgnc.symbol/PLCB2> , <https://identifiers.org/hgnc.symbol/GNAQ>;
+        wp:source         <https://identifiers.org/hgnc.symbol/GNAQ>;
+        wp:target         <https://identifiers.org/hgnc.symbol/PLCB2> .
 
 <https://identifiers.org/hgnc.symbol/CREB1>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -49,8 +76,26 @@
         dc:identifier       <https://identifiers.org/hgnc.symbol/CREB1>;
         dc:source           "HGNC";
         dcterms:identifier  "CREB1";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/af393>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/af393>;
         foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/CREB1> .
+
+<https://identifiers.org/wikipathways/WP4756_r120634>
+        rdf:type               wp:Pathway , skos:Collection;
+        dc:identifier          <https://identifiers.org/wikipathways/WP4756>;
+        dc:source              "WikiPathways";
+        dc:title               "Renin-angiotensin-aldosterone system (RAAS)"@en;
+        dcterms:description    "The pathway leading angiotensinogen to aldosterone";
+        dcterms:identifier     "WP4756";
+        cito:cites             <https://identifiers.org/pubmed/15134803> , <https://identifiers.org/pubmed/18035185> , <https://identifiers.org/pubmed/15947886> , <https://identifiers.org/pubmed/15174896>;
+        wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_10763>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4756_r120634>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/DOID_10763> , <http://purl.obolibrary.org/obo/PW_0000773> , <http://purl.obolibrary.org/obo/PW_0000245> , <http://purl.obolibrary.org/obo/PW_0000492> , <http://purl.obolibrary.org/obo/PW_0001228>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606>;
+        wp:organismName        "Homo sapiens";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0001228> , <http://purl.obolibrary.org/obo/PW_0000773> , <http://purl.obolibrary.org/obo/PW_0000245> , <http://purl.obolibrary.org/obo/PW_0000492>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4756&oldid=r120634> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4756&oldid=r120634>;
+        foaf:page              <http://www.wikipathways.org/instance/WP4756_r120634> .
 
 <https://identifiers.org/hgnc.symbol/CALML4>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -58,8 +103,24 @@
         dc:identifier       <https://identifiers.org/hgnc.symbol/CALML4>;
         dc:source           "HGNC";
         dcterms:identifier  "CALML4";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/ca502>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/ca502>;
         foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/CALML4> .
+
+<https://identifiers.org/pubmed/18035185>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "18035185";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/e54f1> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/a0cae> , <https://identifiers.org/ncbigene/186>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/18035185> .
+
+<http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/a76b3>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/d8d51> , <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4756_r120634/Interaction/a76b3>;
+        wp:participants   <https://identifiers.org/pubchem.compound/3081372> , <https://identifiers.org/ncbigene/183>;
+        wp:source         <https://identifiers.org/ncbigene/183>;
+        wp:target         <https://identifiers.org/pubchem.compound/3081372> .
 
 <https://identifiers.org/hgnc.symbol/ATF1>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -67,7 +128,8 @@
         dc:identifier       <https://identifiers.org/hgnc.symbol/ATF1>;
         dc:source           "HGNC";
         dcterms:identifier  "ATF1";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/f58a7>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/f58a7>;
         foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/ATF1> .
 
 <https://identifiers.org/hgnc.symbol/ITPR2>
@@ -76,8 +138,24 @@
         dc:identifier       <https://identifiers.org/hgnc.symbol/ITPR2>;
         dc:source           "HGNC";
         dcterms:identifier  "ITPR2";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/cb6a9>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/cb6a9>;
         foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/ITPR2> .
+
+<http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/a45d0>
+        rdf:type          wp:Interaction , wp:DirectedInteraction , wp:Conversion;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/a0cae> , <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4756_r120634/Interaction/a45d0>;
+        wp:participants   <https://identifiers.org/pubchem.compound/3081372> , <https://identifiers.org/hmdb/HMDB0001035>;
+        wp:source         <https://identifiers.org/pubchem.compound/3081372>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001035> .
+
+<https://identifiers.org/pubmed/15947886>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "15947886";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/cc259> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/a2807> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/a8677> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/idd220153a>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/15947886> .
 
 <https://identifiers.org/hgnc.symbol/CAMK2D>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -85,7 +163,8 @@
         dc:identifier       <https://identifiers.org/hgnc.symbol/CAMK2D>;
         dc:source           "HGNC";
         dcterms:identifier  "CAMK2D";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/f9da5>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/f9da5>;
         foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/CAMK2D> .
 
 <https://identifiers.org/ncbigene/185>
@@ -94,16 +173,26 @@
         dc:identifier       <https://identifiers.org/ncbigene/185>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "185";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/f0ff0>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/f3670> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/idc5e84d9d> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/a1dd5> , <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/f0ff0>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/185> .
 
+<http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/d8d51>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4756_r120634/Interaction/d8d51>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/a76b3> , <https://identifiers.org/ncbigene/5972>;
+        wp:source         <https://identifiers.org/ncbigene/5972>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/a76b3> .
+
 <https://identifiers.org/chebi/CHEBI:35457>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "ACE Inhibitor";
         dc:identifier       <https://identifiers.org/chebi/CHEBI:35457>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:35457";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/d9620>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/c353b> , <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/d9620>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:35457> .
 
 <https://identifiers.org/chebi/CHEBI:16485>
@@ -112,7 +201,8 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:16485>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:16485";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/a159a>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/a5038> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/idda4284de> , <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/a159a>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16485> .
 
 <https://identifiers.org/hmdb/HMDB0001035>
@@ -121,17 +211,45 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0001035>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0001035";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/ca3ad>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/f3a74> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/a45d0> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/d6ce1> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/a1dd5> , <https://identifiers.org/wikipathways/WP4756_r120634> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/d74bc>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/ca3ad>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001035> .
 
 <https://identifiers.org/hgnc.symbol/CYP11A1>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "CYP11A1";
         dc:identifier       <https://identifiers.org/hgnc.symbol/CYP11A1>;
         dc:source           "HGNC";
         dcterms:identifier  "CYP11A1";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/a5262>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/id92bd2c48> , <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/a5262>;
         foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/CYP11A1> .
+
+<http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/e54f1>
+        rdf:type            wp:Catalysis , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634>;
+        dcterms:references  <https://identifiers.org/pubmed/18035185>;
+        cito:cites          <https://identifiers.org/pubmed/18035185>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/Interaction/e54f1>;
+        wp:participants     <https://identifiers.org/ncbigene/1511> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/f3a74>;
+        wp:source           <https://identifiers.org/ncbigene/1511>;
+        wp:target           <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/f3a74> .
+
+<http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/a84e7>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4756_r120634/Interaction/a84e7>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/d74bc> , <https://identifiers.org/ncbigene/1636>;
+        wp:source         <https://identifiers.org/ncbigene/1636>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/d74bc> .
+
+<http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/id92bd2c48>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4756_r120634/Interaction/id92bd2c48>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/id2b90d2db> , <https://identifiers.org/hgnc.symbol/CYP11A1>;
+        wp:source         <https://identifiers.org/hgnc.symbol/CYP11A1>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/id2b90d2db> .
 
 <https://identifiers.org/hgnc.symbol/CAMK1G>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -139,7 +257,8 @@
         dc:identifier       <https://identifiers.org/hgnc.symbol/CAMK1G>;
         dc:source           "HGNC";
         dcterms:identifier  "CAMK1G";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/cf99e>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/cf99e>;
         foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/CAMK1G> .
 
 <https://identifiers.org/hgnc.symbol/CALML5>
@@ -148,8 +267,25 @@
         dc:identifier       <https://identifiers.org/hgnc.symbol/CALML5>;
         dc:source           "HGNC";
         dcterms:identifier  "CALML5";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/ade6c>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/ade6c>;
         foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/CALML5> .
+
+<http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/id1bbcf86a>
+        rdf:type          wp:Stimulation , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4756_r120634/Interaction/id1bbcf86a>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/id9faf7457> , <https://identifiers.org/hgnc.symbol/HSD3B1>;
+        wp:source         <https://identifiers.org/hgnc.symbol/HSD3B1>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/id9faf7457> .
+
+<http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/a5038>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/a8677> , <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4756_r120634/Interaction/a5038>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000037> , <https://identifiers.org/chebi/CHEBI:16485>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:16485>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000037> .
 
 <https://identifiers.org/hgnc.symbol/ATF2>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -157,7 +293,8 @@
         dc:identifier       <https://identifiers.org/hgnc.symbol/ATF2>;
         dc:source           "HGNC";
         dcterms:identifier  "ATF2";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/e1c44>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/e1c44>;
         foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/ATF2> .
 
 <https://identifiers.org/hgnc.symbol/ITPR3>
@@ -166,8 +303,19 @@
         dc:identifier       <https://identifiers.org/hgnc.symbol/ITPR3>;
         dc:source           "HGNC";
         dcterms:identifier  "ITPR3";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/d26fb>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/d26fb>;
         foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/ITPR3> .
+
+<http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/a0cae>
+        rdf:type            wp:DirectedInteraction , wp:Catalysis , wp:Interaction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634>;
+        dcterms:references  <https://identifiers.org/pubmed/18035185>;
+        cito:cites          <https://identifiers.org/pubmed/18035185>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/Interaction/a0cae>;
+        wp:participants     <https://identifiers.org/ncbigene/1215> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/a45d0>;
+        wp:source           <https://identifiers.org/ncbigene/1215>;
+        wp:target           <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/a45d0> .
 
 <https://identifiers.org/hgnc.symbol/CAMK4>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -175,25 +323,45 @@
         dc:identifier       <https://identifiers.org/hgnc.symbol/CAMK4>;
         dc:source           "HGNC";
         dcterms:identifier  "CAMK4";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/a6580>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/a6580>;
         foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/CAMK4> .
 
 <https://identifiers.org/ncbigene/186>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "AGTR2";
         dc:identifier       <https://identifiers.org/ncbigene/186>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "186";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/cc44e>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/d6ce1>;
+        dcterms:references  <https://identifiers.org/pubmed/18035185>;
+        cito:cites          <https://identifiers.org/pubmed/18035185>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/cc44e>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/186> .
 
+<https://identifiers.org/pubmed/15134803>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "15134803";
+        dcterms:isPartOf    <https://identifiers.org/hmdb/HMDB0000037>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/15134803> .
+
+<http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/a1dd5>
+        rdf:type          wp:Binding , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4756_r120634/Interaction/a1dd5>;
+        wp:participants   <https://identifiers.org/ncbigene/185> , <https://identifiers.org/hmdb/HMDB0001035>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001035>;
+        wp:target         <https://identifiers.org/ncbigene/185> .
+
 <https://identifiers.org/hgnc.symbol/STAR>
-        rdf:type            wp:Protein , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Protein;
         rdfs:label          "STAR";
         dc:identifier       <https://identifiers.org/hgnc.symbol/STAR>;
         dc:source           "HGNC";
         dcterms:identifier  "STAR";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/aacd0>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/id7da050c4>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/aacd0>;
         foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/STAR> .
 
 <https://identifiers.org/hgnc.symbol/CREB3>
@@ -202,7 +370,8 @@
         dc:identifier       <https://identifiers.org/hgnc.symbol/CREB3>;
         dc:source           "HGNC";
         dcterms:identifier  "CREB3";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/fd906>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/fd906>;
         foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/CREB3> .
 
 <https://identifiers.org/hgnc.symbol/CALML6>
@@ -211,8 +380,17 @@
         dc:identifier       <https://identifiers.org/hgnc.symbol/CALML6>;
         dc:source           "HGNC";
         dcterms:identifier  "CALML6";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/c0a3d>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/c0a3d>;
         foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/CALML6> .
+
+<http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/id9faf7457>
+        rdf:type          wp:Interaction , wp:Conversion , wp:DirectedInteraction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/id83e3abf4> , <https://identifiers.org/wikipathways/WP4756_r120634> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/id1bbcf86a>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4756_r120634/Interaction/id9faf7457>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:16581> , <https://identifiers.org/chebi/CHEBI:17026>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:16581>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:17026> .
 
 <https://identifiers.org/hgnc.symbol/CREB3L1>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -220,8 +398,17 @@
         dc:identifier       <https://identifiers.org/hgnc.symbol/CREB3L1>;
         dc:source           "HGNC";
         dcterms:identifier  "CREB3L1";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/e4115>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/e4115>;
         foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/CREB3L1> .
+
+<http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/id83e3abf4>
+        rdf:type          wp:Stimulation , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4756_r120634/Interaction/id83e3abf4>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/id9faf7457> , <https://identifiers.org/hgnc.symbol/HSD3B2>;
+        wp:source         <https://identifiers.org/hgnc.symbol/HSD3B2>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/id9faf7457> .
 
 <https://identifiers.org/hmdb/HMDB0000037>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -229,8 +416,29 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000037>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0000037";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/a2b83>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/a5038> , <https://identifiers.org/wikipathways/WP4756_r120634>;
+        dcterms:references  <https://identifiers.org/pubmed/15134803>;
+        cito:cites          <https://identifiers.org/pubmed/15134803>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/a2b83>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000037> .
+
+<http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/a8677>
+        rdf:type            wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634>;
+        dcterms:references  <https://identifiers.org/pubmed/15947886>;
+        cito:cites          <https://identifiers.org/pubmed/15947886>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/Interaction/a8677>;
+        wp:participants     <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/a5038> , <https://identifiers.org/hgnc.symbol/CYP11B2>;
+        wp:source           <https://identifiers.org/hgnc.symbol/CYP11B2>;
+        wp:target           <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/a5038> .
+
+<http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/idc5e08d2a>
+        rdf:type          wp:Stimulation , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4756_r120634/Interaction/idc5e08d2a>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:16595> , <https://identifiers.org/hgnc.symbol/PLCB2>;
+        wp:source         <https://identifiers.org/hgnc.symbol/PLCB2>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:16595> .
 
 <https://identifiers.org/ncbigene/5972>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -238,7 +446,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/5972>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "5972";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/e0a11>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/d8d51>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/e0a11>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/5972> .
 
 <https://identifiers.org/hgnc.symbol/CYP21A2>
@@ -247,25 +456,50 @@
         dc:identifier       <https://identifiers.org/hgnc.symbol/CYP21A2>;
         dc:source           "HGNC";
         dcterms:identifier  "CYP21A2";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/b3847>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/idd220153a> , <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/b3847>;
         foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/CYP21A2> .
 
+<http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/idd220153a>
+        rdf:type            wp:DirectedInteraction , wp:Stimulation , wp:Interaction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634>;
+        dcterms:references  <https://identifiers.org/pubmed/15947886>;
+        cito:cites          <https://identifiers.org/pubmed/15947886>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/Interaction/idd220153a>;
+        wp:participants     <https://identifiers.org/hgnc.symbol/CYP21A2> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/idc7732157>;
+        wp:source           <https://identifiers.org/hgnc.symbol/CYP21A2>;
+        wp:target           <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/idc7732157> .
+
+<http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/d74bc>
+        rdf:type          wp:Interaction , wp:DirectedInteraction , wp:Conversion;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/a84e7> , <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4756_r120634/Interaction/d74bc>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001035> , <https://identifiers.org/pubchem.compound/3081372>;
+        wp:source         <https://identifiers.org/pubchem.compound/3081372>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001035> .
+
 <https://identifiers.org/chebi/CHEBI:16581>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "Pregnenolone";
         dc:identifier       <https://identifiers.org/chebi/CHEBI:16581>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:16581";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/f59c7>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/id9faf7457> , <https://identifiers.org/wikipathways/WP4756_r120634> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/id2b90d2db>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/f59c7>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16581> .
 
+<http://purl.obolibrary.org/obo/NCBITaxon_9606>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9606" .
+
 <https://identifiers.org/chebi/CHEBI:16113>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "Cholesterol";
         dc:identifier       <https://identifiers.org/chebi/CHEBI:16113>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:16113";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/c9733>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/id2b90d2db>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/c9733>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16113> .
 
 <https://identifiers.org/chebi/CHEBI:16973>
@@ -274,7 +508,8 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:16973>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:16973";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/beba6>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/idc7732157> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/ide73d7e64> , <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/beba6>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16973> .
 
 <https://identifiers.org/ncbigene/1215>
@@ -283,7 +518,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/1215>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "1215";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/de1e4>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/a0cae>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/de1e4>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/1215> .
 
 <https://identifiers.org/hgnc.symbol/CREB3L2>
@@ -292,7 +528,8 @@
         dc:identifier       <https://identifiers.org/hgnc.symbol/CREB3L2>;
         dc:source           "HGNC";
         dcterms:identifier  "CREB3L2";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/b1585>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/b1585>;
         foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/CREB3L2> .
 
 <https://identifiers.org/chebi/CHEBI:17026>
@@ -301,7 +538,8 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:17026>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:17026";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/c127e>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/id9faf7457> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/idc7732157>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/c127e>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17026> .
 
 <https://identifiers.org/hgnc.symbol/CAMK2A>
@@ -310,19 +548,17 @@
         dc:identifier       <https://identifiers.org/hgnc.symbol/CAMK2A>;
         dc:source           "HGNC";
         dcterms:identifier  "CAMK2A";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/d73b4>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/d73b4>;
         foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/CAMK2A> .
 
-<https://identifiers.org/wikipathways/WP4756/WP4756_rWP4756_r120634>
-        rdf:type             wp:Pathway , skos:Collection;
-        dc:identifier        <https://identifiers.org/wikipathways/WP4756/WP4756>;
-        dc:source            "WikiPathways";
-        dc:title             "Renin-angiotensin-aldosterone system (RAAS)"@en;
-        dcterms:description  "The pathway leading angiotensinogen to aldosterone";
-        dcterms:identifier   "WP4756/WP4756";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634>;
-        wp:organismName      "Homo sapiens";
-        foaf:page            <http://www.wikipathways.org/instance/WP4756/WP4756_rWP4756_r120634> .
+<http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/d6ce1>
+        rdf:type          wp:Binding , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4756_r120634/Interaction/d6ce1>;
+        wp:participants   <https://identifiers.org/ncbigene/186> , <https://identifiers.org/hmdb/HMDB0001035>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001035>;
+        wp:target         <https://identifiers.org/ncbigene/186> .
 
 <https://identifiers.org/hgnc.symbol/ATF4>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -330,7 +566,8 @@
         dc:identifier       <https://identifiers.org/hgnc.symbol/ATF4>;
         dc:source           "HGNC";
         dcterms:identifier  "ATF4";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/f9517>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/f9517>;
         foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/ATF4> .
 
 <https://identifiers.org/hgnc.symbol/CALM1>
@@ -339,16 +576,18 @@
         dc:identifier       <https://identifiers.org/hgnc.symbol/CALM1>;
         dc:source           "HGNC";
         dcterms:identifier  "CALM1";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/be303>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/be303>;
         foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/CALM1> .
 
 <https://identifiers.org/chebi/CHEBI:16595>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "IP3";
         dc:identifier       <https://identifiers.org/chebi/CHEBI:16595>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:16595";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/a6c6a>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/idc5e08d2a>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/a6c6a>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16595> .
 
 <https://identifiers.org/hgnc.symbol/CAMK2G>
@@ -357,7 +596,8 @@
         dc:identifier       <https://identifiers.org/hgnc.symbol/CAMK2G>;
         dc:source           "HGNC";
         dcterms:identifier  "CAMK2G";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/aebde>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/aebde>;
         foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/CAMK2G> .
 
 <https://identifiers.org/pubchem.compound/3081372>
@@ -366,7 +606,8 @@
         dc:identifier       <https://identifiers.org/pubchem.compound/3081372>;
         dc:source           "PubChem-compound";
         dcterms:identifier  "3081372";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/d6a08>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/f3a74> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/a45d0> , <https://identifiers.org/wikipathways/WP4756_r120634> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/a76b3> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/d74bc>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/d6a08>;
         foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=3081372> .
 
 <https://identifiers.org/hgnc.symbol/CAMK1D>
@@ -375,16 +616,36 @@
         dc:identifier       <https://identifiers.org/hgnc.symbol/CAMK1D>;
         dc:source           "HGNC";
         dcterms:identifier  "CAMK1D";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/b0ef3>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/b0ef3>;
         foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/CAMK1D> .
 
+<http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/a2807>
+        rdf:type            wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634>;
+        dcterms:references  <https://identifiers.org/pubmed/15947886>;
+        cito:cites          <https://identifiers.org/pubmed/15947886>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/Interaction/a2807>;
+        wp:participants     <https://identifiers.org/hgnc.symbol/CYP11B2> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/ide73d7e64>;
+        wp:source           <https://identifiers.org/hgnc.symbol/CYP11B2>;
+        wp:target           <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/ide73d7e64> .
+
+<http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/c353b>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4756_r120634/Interaction/c353b>;
+        wp:participants   <https://identifiers.org/ncbigene/1636> , <https://identifiers.org/chebi/CHEBI:35457>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:35457>;
+        wp:target         <https://identifiers.org/ncbigene/1636> .
+
 <https://identifiers.org/hgnc.symbol/PLCB2>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "PLCB2";
         dc:identifier       <https://identifiers.org/hgnc.symbol/PLCB2>;
         dc:source           "HGNC";
         dcterms:identifier  "PLCB2";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/dade8>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/idc5e08d2a> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/id792de397> , <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/dade8>;
         foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/PLCB2> .
 
 <https://identifiers.org/hgnc.symbol/HSD3B1>
@@ -393,8 +654,12 @@
         dc:identifier       <https://identifiers.org/hgnc.symbol/HSD3B1>;
         dc:source           "HGNC";
         dcterms:identifier  "HSD3B1";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/cd673>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/id1bbcf86a>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/cd673>;
         foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/HSD3B1> .
+
+<https://identifiers.org/wikipathways/WP4756>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP4756_r120634> .
 
 <https://identifiers.org/hgnc.symbol/CREB5>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -402,8 +667,24 @@
         dc:identifier       <https://identifiers.org/hgnc.symbol/CREB5>;
         dc:source           "HGNC";
         dcterms:identifier  "CREB5";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/ce19e>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/ce19e>;
         foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/CREB5> .
+
+<http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/id7da050c4>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4756_r120634/Interaction/id7da050c4>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/id2b90d2db> , <https://identifiers.org/hgnc.symbol/STAR>;
+        wp:source         <https://identifiers.org/hgnc.symbol/STAR>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/id2b90d2db> .
+
+<http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/f3670>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4756_r120634/Interaction/f3670>;
+        wp:participants   <https://identifiers.org/ncbigene/185>;
+        wp:target         <https://identifiers.org/ncbigene/185> .
 
 <https://identifiers.org/hgnc.symbol/CREB3L3>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -411,8 +692,17 @@
         dc:identifier       <https://identifiers.org/hgnc.symbol/CREB3L3>;
         dc:source           "HGNC";
         dcterms:identifier  "CREB3L3";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/a7e7b>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/a7e7b>;
         foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/CREB3L3> .
+
+<http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/ide73d7e64>
+        rdf:type          wp:DirectedInteraction , wp:Interaction , wp:Conversion;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4756_r120634> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/a2807>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4756_r120634/Interaction/ide73d7e64>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:16827> , <https://identifiers.org/chebi/CHEBI:16973>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:16973>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:16827> .
 
 <https://identifiers.org/hgnc.symbol/CAMK1>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -420,8 +710,17 @@
         dc:identifier       <https://identifiers.org/hgnc.symbol/CAMK1>;
         dc:source           "HGNC";
         dcterms:identifier  "CAMK1";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/ede76>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/ede76>;
         foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/CAMK1> .
+
+<http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/idda4284de>
+        rdf:type          wp:DirectedInteraction , wp:Conversion , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/cc259> , <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4756_r120634/Interaction/idda4284de>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:16485> , <https://identifiers.org/chebi/CHEBI:16827>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:16827>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:16485> .
 
 <https://identifiers.org/hgnc.symbol/CAMK2B>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -429,16 +728,18 @@
         dc:identifier       <https://identifiers.org/hgnc.symbol/CAMK2B>;
         dc:source           "HGNC";
         dcterms:identifier  "CAMK2B";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/e538a>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/e538a>;
         foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/CAMK2B> .
 
 <https://identifiers.org/ncbigene/183>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "AGT";
         dc:identifier       <https://identifiers.org/ncbigene/183>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "183";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/e89d5>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/a76b3> , <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/e89d5>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/183> .
 
 <https://identifiers.org/ncbigene/1636>
@@ -447,17 +748,25 @@
         dc:identifier       <https://identifiers.org/ncbigene/1636>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "1636";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/ef1f3>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/c353b> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/a84e7>;
+        dcterms:references  <https://identifiers.org/pubmed/15174896>;
+        cito:cites          <https://identifiers.org/pubmed/15174896>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/ef1f3>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/1636> .
 
 <https://identifiers.org/hgnc.symbol/CYP11B2>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "CYP11B2";
         dc:identifier       <https://identifiers.org/hgnc.symbol/CYP11B2>;
         dc:source           "HGNC";
         dcterms:identifier  "CYP11B2";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/bb9f1>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/a8677> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/cc259> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/a2807>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/bb9f1>;
         foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/CYP11B2> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4756&oldid=r120634>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
 
 <https://identifiers.org/hgnc.symbol/CALM2>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -465,8 +774,38 @@
         dc:identifier       <https://identifiers.org/hgnc.symbol/CALM2>;
         dc:source           "HGNC";
         dcterms:identifier  "CALM2";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/d2be4>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/d2be4>;
         foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/CALM2> .
+
+<http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/cc259>
+        rdf:type            wp:Catalysis , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634>;
+        dcterms:references  <https://identifiers.org/pubmed/15947886>;
+        cito:cites          <https://identifiers.org/pubmed/15947886>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/Interaction/cc259>;
+        wp:participants     <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/idda4284de> , <https://identifiers.org/hgnc.symbol/CYP11B2>;
+        wp:source           <https://identifiers.org/hgnc.symbol/CYP11B2>;
+        wp:target           <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/idda4284de> .
+
+<http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/idc5e84d9d>
+        rdf:type          wp:Stimulation , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4756_r120634/Interaction/idc5e84d9d>;
+        wp:participants   <https://identifiers.org/hgnc.symbol/GNAQ> , <https://identifiers.org/ncbigene/185>;
+        wp:source         <https://identifiers.org/ncbigene/185>;
+        wp:target         <https://identifiers.org/hgnc.symbol/GNAQ> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4756&oldid=r120634>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<https://identifiers.org/pubmed/15174896>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "15174896";
+        dcterms:isPartOf    <https://identifiers.org/ncbigene/1636>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/15174896> .
 
 <https://identifiers.org/hgnc.symbol/CALML3>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -474,8 +813,19 @@
         dc:identifier       <https://identifiers.org/hgnc.symbol/CALML3>;
         dc:source           "HGNC";
         dcterms:identifier  "CALML3";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/c618f>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/c618f>;
         foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/CALML3> .
+
+<https://identifiers.org/hgnc.symbol/HSD3B2>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "HSD3B2";
+        dc:identifier       <https://identifiers.org/hgnc.symbol/HSD3B2>;
+        dc:source           "HGNC";
+        dcterms:identifier  "HSD3B2";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/id83e3abf4> , <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/a623e>;
+        foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/HSD3B2> .
 
 <https://identifiers.org/chebi/CHEBI:22984>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -483,25 +833,18 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:22984>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:22984";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/f6131>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/f6131>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:22984> .
 
-<https://identifiers.org/hgnc.symbol/HSD3B2>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "HSD3B2";
-        dc:identifier       <https://identifiers.org/hgnc.symbol/HSD3B2>;
-        dc:source           "HGNC";
-        dcterms:identifier  "HSD3B2";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/a623e>;
-        foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/HSD3B2> .
-
 <https://identifiers.org/hgnc.symbol/GNAQ>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "GNAQ";
         dc:identifier       <https://identifiers.org/hgnc.symbol/GNAQ>;
         dc:source           "HGNC";
         dcterms:identifier  "GNAQ";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/f4c17>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/idc5e84d9d> , <https://identifiers.org/wikipathways/WP4756_r120634> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/id792de397>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/f4c17>;
         foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/GNAQ> .
 
 <https://identifiers.org/hgnc.symbol/ITPR1>
@@ -510,8 +853,17 @@
         dc:identifier       <https://identifiers.org/hgnc.symbol/ITPR1>;
         dc:source           "HGNC";
         dcterms:identifier  "ITPR1";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/c363f>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/c363f>;
         foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/ITPR1> .
+
+<http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/idc7732157>
+        rdf:type          wp:Interaction , wp:Conversion , wp:DirectedInteraction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/idd220153a> , <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4756_r120634/Interaction/idc7732157>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:16973> , <https://identifiers.org/chebi/CHEBI:17026>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:17026>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:16973> .
 
 <https://identifiers.org/hgnc.symbol/CREB3L4>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -519,7 +871,8 @@
         dc:identifier       <https://identifiers.org/hgnc.symbol/CREB3L4>;
         dc:source           "HGNC";
         dcterms:identifier  "CREB3L4";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/f8881>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/f8881>;
         foaf:page           <https://www.genenames.org/data/gene-symbol-report/#!/symbol/CREB3L4> .
 
 <https://identifiers.org/chebi/CHEBI:16827>
@@ -528,5 +881,6 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:16827>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:16827";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756/WP4756_rWP4756_r120634/DataNode/b56f1>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4756_r120634> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/ide73d7e64> , <http://rdf.wikipathways.org/Pathway/WP4756_r120634/WP/Interaction/idda4284de>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4756_r120634/DataNode/b56f1>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16827> .

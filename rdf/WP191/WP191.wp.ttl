@@ -16,26 +16,26 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/sgd/S000006239>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "GLN1";
-        dc:identifier       <https://identifiers.org/sgd/S000006239>;
-        dc:source           "SGD";
-        dcterms:identifier  "S000006239";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP191/WP191_rWP191_r117344/DataNode/d95>;
-        foaf:page           <http://www.yeastgenome.org/locus/S000006239> .
-
-<http://rdf.wikipathways.org/Pathway/WP191/WP191_rWP191_r117344/WP/Interaction/idf9d39910>
-        rdf:type  wp:Interaction .
-
 <https://identifiers.org/sgd/S000002330>
         rdf:type            wp:GeneProduct , wp:DataNode;
         rdfs:label          "GLT1";
         dc:identifier       <https://identifiers.org/sgd/S000002330>;
         dc:source           "SGD";
         dcterms:identifier  "S000002330";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP191/WP191_rWP191_r117344/DataNode/d93>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP191_r117344>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP191_r117344/DataNode/d93>;
         foaf:page           <http://www.yeastgenome.org/locus/S000002330> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP191&oldid=r117344>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<https://identifiers.org/pubmed/8672488>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "8672488";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP191_r117344>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/8672488> .
 
 <https://identifiers.org/cas/58-64-0>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -43,55 +43,36 @@
         dc:identifier       <https://identifiers.org/cas/58-64-0>;
         dc:source           "CAS";
         dcterms:identifier  "58-64-0";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP191/WP191_rWP191_r117344/DataNode/eba>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP191_r117344>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP191_r117344/DataNode/eba>;
         foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=58-64-0> .
 
-<https://identifiers.org/cas/1927-31-7>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "ATP";
-        dc:identifier       <https://identifiers.org/cas/1927-31-7>;
-        dc:source           "CAS";
-        dcterms:identifier  "1927-31-7";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP191/WP191_rWP191_r117344/DataNode/bc7>;
-        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=1927-31-7> .
-
-<https://identifiers.org/sgd/S000000058>
+<https://identifiers.org/sgd/S000005902>
         rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "GDH3";
-        dc:identifier       <https://identifiers.org/sgd/S000000058>;
+        rdfs:label          "GDH1";
+        dc:identifier       <https://identifiers.org/sgd/S000005902>;
         dc:source           "SGD";
-        dcterms:identifier  "S000000058";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP191/WP191_rWP191_r117344/DataNode/d90>;
-        foaf:page           <http://www.yeastgenome.org/locus/S000000058> .
+        dcterms:identifier  "S000005902";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP191_r117344>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP191_r117344/DataNode/fe9>;
+        foaf:page           <http://www.yeastgenome.org/locus/S000005902> .
 
-<https://identifiers.org/cas/53-57-6>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "NADPH";
-        dc:identifier       <https://identifiers.org/cas/53-57-6>;
-        dc:source           "CAS";
-        dcterms:identifier  "53-57-6";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP191/WP191_rWP191_r117344/DataNode/f79> , <http://rdf.wikipathways.org/Pathway/WP191/WP191_rWP191_r117344/DataNode/c45>;
-        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=53-57-6> .
+<http://rdf.wikipathways.org/Pathway/WP191_r117344/WP/Interaction/id464d410b>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP191_r117344>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP191_r117344/Interaction/id464d410b> .
 
-<https://identifiers.org/wikipathways/WP191/WP191_rWP191_r117344>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP191/WP191>;
-        dc:source            "WikiPathways";
-        dc:title             "Glutamate biosynthesis superpathway"@en;
-        dcterms:description  "Yeast cells contain 3 pathways for the synthesis of glutamate.  Two pathways are mediated by two isoforms of glutamate dehydrogenase, encoded by GDH1 and GDH3 (CITS: [2989290])(CITS: [9287019]).  The third pathway is driven by the combined activities of glutamine synthetase and glutamate synthase, encoded by GLN1 and GLT1, respectively (CITS: [2570348])(CITS: [8923741]).  Studies of GDH1 and GDH3 regulation indicate that the cell uses these isoforms under different growth conditions (CITS: [11562373]).  Expression of GDH3 is induced by ethanol and repressed by glucose, whereas GDH1 expression is high in either carbon source.  Gdh1p uses alpha-ketoglutarate at a higher rate than Gdh3p.  Thus, under fermentative growth conditions, Gdh1p drives glutamate biosynthesis, whereas in nonfermentable or limiting carbon sources, Gdh3p is the key isoform involved in balancing distribution of alpha-ketoglutarate to glutamate biosynthesis and energy metabolism. \nSOURCE: SGD pathways, http://pathway.yeastgenome.org/server.html";
-        dcterms:identifier   "WP191/WP191";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP191/WP191_rWP191_r117344>;
-        wp:organismName      "Saccharomyces cerevisiae";
-        foaf:page            <http://www.wikipathways.org/instance/WP191/WP191_rWP191_r117344> .
+<http://rdf.wikipathways.org/Pathway/WP191_r117344/WP/Interaction/ide096039c>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP191_r117344>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP191_r117344/Interaction/ide096039c>;
+        wp:participants   <https://identifiers.org/cas/56-85-9>;
+        wp:target         <https://identifiers.org/cas/56-85-9> .
 
-<https://identifiers.org/sgd/S000004954>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "IDP3";
-        dc:identifier       <https://identifiers.org/sgd/S000004954>;
-        dc:source           "SGD";
-        dcterms:identifier  "S000004954";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP191/WP191_rWP191_r117344/DataNode/c22>;
-        foaf:page           <http://www.yeastgenome.org/locus/S000004954> .
+<http://rdf.wikipathways.org/Pathway/WP191_r117344/WP/Interaction/ida432cd6>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP191_r117344>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP191_r117344/Interaction/ida432cd6> .
 
 <https://identifiers.org/cas/14265-44-2>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -99,7 +80,8 @@
         dc:identifier       <https://identifiers.org/cas/14265-44-2>;
         dc:source           "CAS";
         dcterms:identifier  "14265-44-2";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP191/WP191_rWP191_r117344/DataNode/e2d>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP191_r117344>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP191_r117344/DataNode/e2d>;
         foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=14265-44-2> .
 
 <https://identifiers.org/sgd/S000002224>
@@ -108,44 +90,19 @@
         dc:identifier       <https://identifiers.org/sgd/S000002224>;
         dc:source           "SGD";
         dcterms:identifier  "S000002224";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP191/WP191_rWP191_r117344/DataNode/d9d>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP191_r117344>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP191_r117344/DataNode/d9d>;
         foaf:page           <http://www.yeastgenome.org/locus/S000002224> .
 
-<https://identifiers.org/cas/53-84-9>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "NADH";
-        dc:identifier       <https://identifiers.org/cas/53-84-9>;
-        dc:source           "CAS";
-        dcterms:identifier  "53-84-9";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP191/WP191_rWP191_r117344/DataNode/e7c>;
-        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=53-84-9> .
-
-<https://identifiers.org/sgd/S000004164>
+<https://identifiers.org/sgd/S000000058>
         rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "IDP2";
-        dc:identifier       <https://identifiers.org/sgd/S000004164>;
+        rdfs:label          "GDH3";
+        dc:identifier       <https://identifiers.org/sgd/S000000058>;
         dc:source           "SGD";
-        dcterms:identifier  "S000004164";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP191/WP191_rWP191_r117344/DataNode/d01>;
-        foaf:page           <http://www.yeastgenome.org/locus/S000004164> .
-
-<https://identifiers.org/cas/56-85-9>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "L-glutamine";
-        dc:identifier       <https://identifiers.org/cas/56-85-9>;
-        dc:source           "CAS";
-        dcterms:identifier  "56-85-9";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP191/WP191_rWP191_r117344/DataNode/fd5>;
-        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=56-85-9> .
-
-<https://identifiers.org/sgd/S000005902>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "GDH1";
-        dc:identifier       <https://identifiers.org/sgd/S000005902>;
-        dc:source           "SGD";
-        dcterms:identifier  "S000005902";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP191/WP191_rWP191_r117344/DataNode/fe9>;
-        foaf:page           <http://www.yeastgenome.org/locus/S000005902> .
+        dcterms:identifier  "S000000058";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP191_r117344>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP191_r117344/DataNode/d90>;
+        foaf:page           <http://www.yeastgenome.org/locus/S000000058> .
 
 <https://identifiers.org/cas/56-86-0>
         rdf:type            wp:DataNode , wp:Metabolite;
@@ -153,8 +110,104 @@
         dc:identifier       <https://identifiers.org/cas/56-86-0>;
         dc:source           "CAS";
         dcterms:identifier  "56-86-0";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP191/WP191_rWP191_r117344/DataNode/fe3> , <http://rdf.wikipathways.org/Pathway/WP191/WP191_rWP191_r117344/DataNode/cb3>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP191_r117344>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP191_r117344/DataNode/cb3> , <http://rdf.wikipathways.org/Pathway/WP191_r117344/DataNode/fe3>;
         foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=56-86-0> .
 
-<http://rdf.wikipathways.org/Pathway/WP191/WP191_rWP191_r117344/WP/Interaction/idde23199>
-        rdf:type  wp:Interaction .
+<https://identifiers.org/wikipathways/WP191_r117344>
+        rdf:type               wp:Pathway , skos:Collection;
+        dc:identifier          <https://identifiers.org/wikipathways/WP191>;
+        dc:source              "WikiPathways";
+        dc:title               "Glutamate biosynthesis superpathway"@en;
+        dcterms:description    "Yeast cells contain 3 pathways for the synthesis of glutamate.  Two pathways are mediated by two isoforms of glutamate dehydrogenase, encoded by GDH1 and GDH3 (CITS: [2989290])(CITS: [9287019]).  The third pathway is driven by the combined activities of glutamine synthetase and glutamate synthase, encoded by GLN1 and GLT1, respectively (CITS: [2570348])(CITS: [8923741]).  Studies of GDH1 and GDH3 regulation indicate that the cell uses these isoforms under different growth conditions (CITS: [11562373]).  Expression of GDH3 is induced by ethanol and repressed by glucose, whereas GDH1 expression is high in either carbon source.  Gdh1p uses alpha-ketoglutarate at a higher rate than Gdh3p.  Thus, under fermentative growth conditions, Gdh1p drives glutamate biosynthesis, whereas in nonfermentable or limiting carbon sources, Gdh3p is the key isoform involved in balancing distribution of alpha-ketoglutarate to glutamate biosynthesis and energy metabolism. \nSOURCE: SGD pathways, http://pathway.yeastgenome.org/server.html";
+        dcterms:identifier     "WP191";
+        dcterms:references     <https://identifiers.org/pubmed/8672488>;
+        cito:cites             <https://identifiers.org/pubmed/8672488>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP191_r117344>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0001262>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_4932>;
+        wp:organismName        "Saccharomyces cerevisiae";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0001262>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP191&oldid=r117344> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP191&oldid=r117344>;
+        foaf:page              <http://www.wikipathways.org/instance/WP191_r117344> .
+
+<https://identifiers.org/sgd/S000004164>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "IDP2";
+        dc:identifier       <https://identifiers.org/sgd/S000004164>;
+        dc:source           "SGD";
+        dcterms:identifier  "S000004164";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP191_r117344>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP191_r117344/DataNode/d01>;
+        foaf:page           <http://www.yeastgenome.org/locus/S000004164> .
+
+<https://identifiers.org/sgd/S000004954>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "IDP3";
+        dc:identifier       <https://identifiers.org/sgd/S000004954>;
+        dc:source           "SGD";
+        dcterms:identifier  "S000004954";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP191_r117344>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP191_r117344/DataNode/c22>;
+        foaf:page           <http://www.yeastgenome.org/locus/S000004954> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_4932>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "4932" .
+
+<https://identifiers.org/cas/53-57-6>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "NADPH";
+        dc:identifier       <https://identifiers.org/cas/53-57-6>;
+        dc:source           "CAS";
+        dcterms:identifier  "53-57-6";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP191_r117344>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP191_r117344/DataNode/c45> , <http://rdf.wikipathways.org/Pathway/WP191_r117344/DataNode/f79>;
+        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=53-57-6> .
+
+<https://identifiers.org/cas/1927-31-7>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "ATP";
+        dc:identifier       <https://identifiers.org/cas/1927-31-7>;
+        dc:source           "CAS";
+        dcterms:identifier  "1927-31-7";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP191_r117344>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP191_r117344/DataNode/bc7>;
+        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=1927-31-7> .
+
+<https://identifiers.org/cas/53-84-9>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "NADH";
+        dc:identifier       <https://identifiers.org/cas/53-84-9>;
+        dc:source           "CAS";
+        dcterms:identifier  "53-84-9";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP191_r117344>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP191_r117344/DataNode/e7c>;
+        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=53-84-9> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP191&oldid=r117344>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<https://identifiers.org/cas/56-85-9>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "L-glutamine";
+        dc:identifier       <https://identifiers.org/cas/56-85-9>;
+        dc:source           "CAS";
+        dcterms:identifier  "56-85-9";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP191_r117344/WP/Interaction/ide096039c> , <https://identifiers.org/wikipathways/WP191_r117344>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP191_r117344/DataNode/fd5>;
+        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=56-85-9> .
+
+<https://identifiers.org/sgd/S000006239>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "GLN1";
+        dc:identifier       <https://identifiers.org/sgd/S000006239>;
+        dc:source           "SGD";
+        dcterms:identifier  "S000006239";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP191_r117344>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP191_r117344/DataNode/d95>;
+        foaf:page           <http://www.yeastgenome.org/locus/S000006239> .
+
+<https://identifiers.org/wikipathways/WP191>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP191_r117344> .

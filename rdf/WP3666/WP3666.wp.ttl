@@ -16,43 +16,59 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/hmdb/HMDB0031331>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Chloroacetic acid";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0031331>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0031331";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3666/WP3666_rWP3666_r117778/DataNode/a72a4>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0031331> .
+<http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/idb0d7f468>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3666_r117778>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3666_r117778/Interaction/idb0d7f468>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0060342> , <https://identifiers.org/hmdb/HMDB0060333>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0060333>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0060342> .
 
-<https://identifiers.org/wikipathways/WP3666/WP3666_rWP3666_r117778>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP3666/WP3666>;
-        dc:source            "WikiPathways";
-        dc:title             "Metabolism of dichloroethylene by CYP450"@en;
-        dcterms:description  "This pathway describes the metabolism of dichloroethylene by Cytochrome P450 enzymes. Source: [http://www.kegg.jp/pathway/ko00980 KEGG Metabolism of xenobiotics by cytochrome P450].";
-        dcterms:identifier   "WP3666/WP3666";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP3666/WP3666_rWP3666_r117778>;
-        wp:organismName      "Homo sapiens";
-        foaf:page            <http://www.wikipathways.org/instance/WP3666/WP3666_rWP3666_r117778> .
+<https://identifiers.org/wikipathways/WP3666>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP3666_r117778> .
 
-<https://identifiers.org/hmdb/HMDB0060452>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Chloroacetyl chloride";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0060452>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0060452";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3666/WP3666_rWP3666_r117778/DataNode/e7a9e>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0060452> .
+<https://identifiers.org/pubmed/9107551>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "9107551";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3666_r117778>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/9107551> .
 
-<https://identifiers.org/hmdb/HMDB0060505>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "S-(2-Chloroacetyl)glutathione";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0060505>;
+<https://identifiers.org/pubchem.compound/6366>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "1,1-Dichloroethylene";
+        dc:identifier       <https://identifiers.org/pubchem.compound/6366>;
+        dc:source           "PubChem-compound";
+        dcterms:identifier  "6366";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/id16ec7325> , <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/id2422afab> , <https://identifiers.org/wikipathways/WP3666_r117778> , <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/iddbffbebb>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3666_r117778/DataNode/ce1ae>;
+        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=6366> .
+
+<http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/id7bbbbad6>
+        rdf:type          wp:Conversion , wp:Interaction , wp:DirectedInteraction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/idc9863f7e> , <https://identifiers.org/wikipathways/WP3666_r117778>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3666_r117778/Interaction/id7bbbbad6>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0060505> , <https://identifiers.org/hmdb/HMDB0060452>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0060452>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0060505> .
+
+<http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/idc9863f7e>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3666_r117778>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3666_r117778/Interaction/idc9863f7e>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/id7bbbbad6> , <https://identifiers.org/kegg.genes/119391>;
+        wp:source         <https://identifiers.org/kegg.genes/119391>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/id7bbbbad6> .
+
+<https://identifiers.org/hmdb/HMDB0060342>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "2-(S-Glutathionyl)acetyl chloride";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0060342>;
         dc:source           "HMDB";
-        dcterms:identifier  "HMDB0060505";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3666/WP3666_rWP3666_r117778/DataNode/a88ee>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0060505> .
+        dcterms:identifier  "HMDB0060342";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/idb0d7f468> , <https://identifiers.org/wikipathways/WP3666_r117778>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3666_r117778/DataNode/be45a>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0060342> .
 
 <https://identifiers.org/ensembl/ENSG00000130649>
         rdf:type            wp:DataNode , wp:GeneProduct;
@@ -60,44 +76,55 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000130649>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000130649";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3666/WP3666_rWP3666_r117778/DataNode/de93c> , <http://rdf.wikipathways.org/Pathway/WP3666/WP3666_rWP3666_r117778/DataNode/c7628> , <http://rdf.wikipathways.org/Pathway/WP3666/WP3666_rWP3666_r117778/DataNode/d164d>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3666_r117778> , <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/id239c7503> , <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/idb5847de2> , <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/idc7073129>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3666_r117778/DataNode/c7628> , <http://rdf.wikipathways.org/Pathway/WP3666_r117778/DataNode/d164d> , <http://rdf.wikipathways.org/Pathway/WP3666_r117778/DataNode/de93c>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000130649> .
 
-<https://identifiers.org/hmdb/HMDB0060342>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "2-(S-Glutathionyl)acetyl chloride";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0060342>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0060342";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3666/WP3666_rWP3666_r117778/DataNode/be45a>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0060342> .
+<http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/id96a37cd>
+        rdf:type          wp:Conversion , wp:Interaction , wp:DirectedInteraction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/d460e> , <https://identifiers.org/wikipathways/WP3666_r117778>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3666_r117778/Interaction/id96a37cd>;
+        wp:participants   <https://identifiers.org/pubchem.compound/11954071> , <https://identifiers.org/hmdb/HMDB0060333>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0060333>;
+        wp:target         <https://identifiers.org/pubchem.compound/11954071> .
 
-<https://identifiers.org/kegg.genes/119391>
-        rdf:type            wp:DataNode , wp:Protein;
-        rdfs:label          "glutathione S-transferase";
-        dc:identifier       <https://identifiers.org/kegg.genes/119391>;
-        dc:source           "KEGG Genes";
-        dcterms:identifier  "119391";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3666/WP3666_rWP3666_r117778/DataNode/a3af1> , <http://rdf.wikipathways.org/Pathway/WP3666/WP3666_rWP3666_r117778/DataNode/d3844> , <http://rdf.wikipathways.org/Pathway/WP3666/WP3666_rWP3666_r117778/DataNode/d27f5>;
-        foaf:page           <http://www.genome.jp/dbget-bin/www_bget?119391> .
+<http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/id2422afab>
+        rdf:type          wp:Interaction , wp:DirectedInteraction , wp:Conversion;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/idc7073129> , <https://identifiers.org/wikipathways/WP3666_r117778>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3666_r117778/Interaction/id2422afab>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0060357> , <https://identifiers.org/pubchem.compound/6366>;
+        wp:source         <https://identifiers.org/pubchem.compound/6366>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0060357> .
 
-<https://identifiers.org/hmdb/HMDB0060333>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "1,1-Dichloroethylene epoxide";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0060333>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0060333";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3666/WP3666_rWP3666_r117778/DataNode/d11cb>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0060333> .
+<http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/idc7073129>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3666_r117778>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3666_r117778/Interaction/idc7073129>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/id2422afab> , <https://identifiers.org/ensembl/ENSG00000130649>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000130649>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/id2422afab> .
 
-<https://identifiers.org/pubchem.compound/11954071>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "2-S-Glutathionyl acetate";
-        dc:identifier       <https://identifiers.org/pubchem.compound/11954071>;
-        dc:source           "PubChem-compound";
-        dcterms:identifier  "11954071";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3666/WP3666_rWP3666_r117778/DataNode/a01b2>;
-        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=11954071> .
+<http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/idf2c67c06>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3666_r117778>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3666_r117778/Interaction/idf2c67c06>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/id291f4365> , <https://identifiers.org/kegg.genes/119391>;
+        wp:source         <https://identifiers.org/kegg.genes/119391>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/id291f4365> .
+
+<https://identifiers.org/pubmed/15298956>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "15298956";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3666_r117778>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/15298956> .
+
+<https://identifiers.org/pubmed/10725110>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "10725110";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3666_r117778>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/10725110> .
 
 <https://identifiers.org/hmdb/HMDB0060357>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -105,32 +132,221 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0060357>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0060357";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3666/WP3666_rWP3666_r117778/DataNode/ebd0f>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/id5366870f> , <https://identifiers.org/wikipathways/WP3666_r117778> , <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/id291f4365> , <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/id2422afab>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3666_r117778/DataNode/ebd0f>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0060357> .
 
-<https://identifiers.org/pubchem.compound/85275>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "2,2-dichloro-1,1-ethanediol";
-        dc:identifier       <https://identifiers.org/pubchem.compound/85275>;
-        dc:source           "PubChem-compound";
-        dcterms:identifier  "85275";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3666/WP3666_rWP3666_r117778/DataNode/c43e1>;
-        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=85275> .
+<http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/id5366870f>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3666_r117778>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3666_r117778/Interaction/id5366870f>;
+        wp:participants   <https://identifiers.org/pubchem.compound/85275> , <https://identifiers.org/hmdb/HMDB0060357>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0060357>;
+        wp:target         <https://identifiers.org/pubchem.compound/85275> .
 
-<https://identifiers.org/pubchem.compound/6366>
+<http://purl.obolibrary.org/obo/NCBITaxon_9606>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9606" .
+
+<https://identifiers.org/pubmed/15987776>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "15987776";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3666_r117778>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/15987776> .
+
+<https://identifiers.org/hmdb/HMDB0031331>
         rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "1,1-Dichloroethylene";
-        dc:identifier       <https://identifiers.org/pubchem.compound/6366>;
-        dc:source           "PubChem-compound";
-        dcterms:identifier  "6366";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3666/WP3666_rWP3666_r117778/DataNode/ce1ae>;
-        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=6366> .
+        rdfs:label          "Chloroacetic acid";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0031331>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0031331";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/idffb491be> , <https://identifiers.org/wikipathways/WP3666_r117778>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3666_r117778/DataNode/a72a4>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0031331> .
+
+<https://identifiers.org/hmdb/HMDB0060452>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Chloroacetyl chloride";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0060452>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0060452";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/id16ec7325> , <https://identifiers.org/wikipathways/WP3666_r117778> , <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/id7bbbbad6> , <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/idffb491be>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3666_r117778/DataNode/e7a9e>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0060452> .
 
 <https://identifiers.org/pubchem.compound/11954070>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "S-(2,2-dichloro-1-hydroxy)-1-ethyl glutathione";
         dc:identifier       <https://identifiers.org/pubchem.compound/11954070>;
         dc:source           "PubChem-compound";
         dcterms:identifier  "11954070";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3666/WP3666_rWP3666_r117778/DataNode/eac4c>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/id291f4365> , <https://identifiers.org/wikipathways/WP3666_r117778>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3666_r117778/DataNode/eac4c>;
         foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=11954070> .
+
+<https://identifiers.org/wikipathways/WP3666_r117778>
+        rdf:type               skos:Collection , wp:Pathway;
+        dc:identifier          <https://identifiers.org/wikipathways/WP3666>;
+        dc:source              "WikiPathways";
+        dc:title               "Metabolism of dichloroethylene by CYP450"@en;
+        dcterms:description    "This pathway describes the metabolism of dichloroethylene by Cytochrome P450 enzymes. Source: [http://www.kegg.jp/pathway/ko00980 KEGG Metabolism of xenobiotics by cytochrome P450].";
+        dcterms:identifier     "WP3666";
+        dcterms:references     <https://identifiers.org/pubmed/15319346> , <https://identifiers.org/pubmed/15298956> , <https://identifiers.org/pubmed/15987776> , <https://identifiers.org/pubmed/12487150> , <https://identifiers.org/pubmed/10570027> , <https://identifiers.org/pubmed/10725110> , <https://identifiers.org/pubmed/4395686> , <https://identifiers.org/pubmed/10490505> , <https://identifiers.org/pubmed/9107551>;
+        cito:cites             <https://identifiers.org/pubmed/10490505> , <https://identifiers.org/pubmed/15987776> , <https://identifiers.org/pubmed/12487150> , <https://identifiers.org/pubmed/10570027> , <https://identifiers.org/pubmed/4395686> , <https://identifiers.org/pubmed/10725110> , <https://identifiers.org/pubmed/9107551> , <https://identifiers.org/pubmed/15298956> , <https://identifiers.org/pubmed/15319346>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP3666_r117778>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000002>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606>;
+        wp:organismName        "Homo sapiens";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000002>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3666&oldid=r117778> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3666&oldid=r117778>;
+        foaf:page              <http://www.wikipathways.org/instance/WP3666_r117778> .
+
+<http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/id16ec7325>
+        rdf:type          wp:Conversion , wp:Interaction , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3666_r117778> , <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/idb5847de2>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3666_r117778/Interaction/id16ec7325>;
+        wp:participants   <https://identifiers.org/pubchem.compound/6366> , <https://identifiers.org/hmdb/HMDB0060452>;
+        wp:source         <https://identifiers.org/pubchem.compound/6366>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0060452> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3666&oldid=r117778>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<https://identifiers.org/pubmed/4395686>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "4395686";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3666_r117778>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/4395686> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3666&oldid=r117778>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/d460e>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3666_r117778>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3666_r117778/Interaction/d460e>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/id96a37cd> , <https://identifiers.org/kegg.genes/119391>;
+        wp:source         <https://identifiers.org/kegg.genes/119391>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/id96a37cd> .
+
+<https://identifiers.org/pubchem.compound/85275>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "2,2-dichloro-1,1-ethanediol";
+        dc:identifier       <https://identifiers.org/pubchem.compound/85275>;
+        dc:source           "PubChem-compound";
+        dcterms:identifier  "85275";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3666_r117778> , <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/id5366870f>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3666_r117778/DataNode/c43e1>;
+        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=85275> .
+
+<https://identifiers.org/kegg.genes/119391>
+        rdf:type            wp:DataNode , wp:Protein;
+        rdfs:label          "glutathione S-transferase";
+        dc:identifier       <https://identifiers.org/kegg.genes/119391>;
+        dc:source           "KEGG Genes";
+        dcterms:identifier  "119391";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/d460e> , <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/idc9863f7e> , <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/idf2c67c06> , <https://identifiers.org/wikipathways/WP3666_r117778>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3666_r117778/DataNode/d27f5> , <http://rdf.wikipathways.org/Pathway/WP3666_r117778/DataNode/a3af1> , <http://rdf.wikipathways.org/Pathway/WP3666_r117778/DataNode/d3844>;
+        foaf:page           <http://www.genome.jp/dbget-bin/www_bget?119391> .
+
+<https://identifiers.org/pubmed/10490505>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "10490505";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3666_r117778>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/10490505> .
+
+<http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/iddbffbebb>
+        rdf:type          wp:Conversion , wp:Interaction , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3666_r117778> , <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/id239c7503>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3666_r117778/Interaction/iddbffbebb>;
+        wp:participants   <https://identifiers.org/pubchem.compound/6366> , <https://identifiers.org/hmdb/HMDB0060333>;
+        wp:source         <https://identifiers.org/pubchem.compound/6366>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0060333> .
+
+<https://identifiers.org/pubmed/15319346>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "15319346";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3666_r117778>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/15319346> .
+
+<http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/idb5847de2>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3666_r117778>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3666_r117778/Interaction/idb5847de2>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/id16ec7325> , <https://identifiers.org/ensembl/ENSG00000130649>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000130649>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/id16ec7325> .
+
+<https://identifiers.org/pubmed/10570027>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "10570027";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3666_r117778>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/10570027> .
+
+<http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/id291f4365>
+        rdf:type          wp:Interaction , wp:DirectedInteraction , wp:Conversion;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3666_r117778> , <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/idf2c67c06>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3666_r117778/Interaction/id291f4365>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0060357> , <https://identifiers.org/pubchem.compound/11954070>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0060357>;
+        wp:target         <https://identifiers.org/pubchem.compound/11954070> .
+
+<http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/id239c7503>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3666_r117778>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3666_r117778/Interaction/id239c7503>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/iddbffbebb> , <https://identifiers.org/ensembl/ENSG00000130649>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000130649>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/iddbffbebb> .
+
+<https://identifiers.org/pubchem.compound/11954071>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "2-S-Glutathionyl acetate";
+        dc:identifier       <https://identifiers.org/pubchem.compound/11954071>;
+        dc:source           "PubChem-compound";
+        dcterms:identifier  "11954071";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3666_r117778> , <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/id96a37cd>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3666_r117778/DataNode/a01b2>;
+        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=11954071> .
+
+<https://identifiers.org/hmdb/HMDB0060333>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "1,1-Dichloroethylene epoxide";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0060333>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0060333";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/idb0d7f468> , <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/id96a37cd> , <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/iddbffbebb> , <https://identifiers.org/wikipathways/WP3666_r117778>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3666_r117778/DataNode/d11cb>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0060333> .
+
+<http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/idffb491be>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3666_r117778>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3666_r117778/Interaction/idffb491be>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0031331> , <https://identifiers.org/hmdb/HMDB0060452>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0060452>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0031331> .
+
+<https://identifiers.org/hmdb/HMDB0060505>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "S-(2-Chloroacetyl)glutathione";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0060505>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0060505";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3666_r117778> , <http://rdf.wikipathways.org/Pathway/WP3666_r117778/WP/Interaction/id7bbbbad6>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3666_r117778/DataNode/a88ee>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0060505> .
+
+<https://identifiers.org/pubmed/12487150>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "12487150";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3666_r117778>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/12487150> .

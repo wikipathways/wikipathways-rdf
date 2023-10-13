@@ -16,25 +16,26 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/wikipathways/WP557/WP557_rWP557_r116935>
-        rdf:type             wp:Pathway , skos:Collection;
-        dc:identifier        <https://identifiers.org/wikipathways/WP557/WP557>;
-        dc:source            "WikiPathways";
-        dc:title             "ACE inhibitor pathway"@en;
-        dcterms:description  "The renin-angiotensin-aldosterone system (RAAS) is central to the control of blood pressure and the target of several types of anti-hypertensive drugs. This pathway depicts a simplified representation of the pharmacodynamics (PD) of RAAS-acting drugs including candidate genes for the pharmacogenomics (PGx) of ACE inhibitors, angiotensin receptor blockers (ARBs), renin inhibitor aliskiren and aldosterone receptor antagonists.\nSource: PharmGKB (http://www.pharmgkb.org/do/serve?objId=PA2023&objCls=Pathway)";
-        dcterms:identifier   "WP557/WP557";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP557/WP557_rWP557_r116935>;
-        wp:organismName      "Rattus norvegicus";
-        foaf:page            <http://www.wikipathways.org/instance/WP557/WP557_rWP557_r116935> .
+<https://identifiers.org/wikipathways/WP557>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP557_r116935> .
 
-<https://identifiers.org/ncbigene/24182>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Agtr2";
-        dc:identifier       <https://identifiers.org/ncbigene/24182>;
+<https://identifiers.org/ncbigene/24903>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "Kng1";
+        dc:identifier       <https://identifiers.org/ncbigene/24903>;
         dc:source           "Entrez Gene";
-        dcterms:identifier  "24182";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP557/WP557_rWP557_r116935/DataNode/c80>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/24182> .
+        dcterms:identifier  "24903";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP557_r116935/WP/Interaction/id8a906e85> , <https://identifiers.org/wikipathways/WP557_r116935>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP557_r116935/DataNode/b90>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/24903> .
+
+<http://rdf.wikipathways.org/Pathway/WP557_r116935/WP/Interaction/id2067a77f>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP557_r116935/WP/Interaction/id32d753c4> , <https://identifiers.org/wikipathways/WP557_r116935>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP557_r116935/Interaction/id2067a77f>;
+        wp:participants   <https://identifiers.org/pubchem.compound/3081372> , <https://identifiers.org/ncbigene/24179>;
+        wp:source         <https://identifiers.org/ncbigene/24179>;
+        wp:target         <https://identifiers.org/pubchem.compound/3081372> .
 
 <https://identifiers.org/ncbigene/25245>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -42,8 +43,116 @@
         dc:identifier       <https://identifiers.org/ncbigene/25245>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "25245";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP557/WP557_rWP557_r116935/DataNode/f7e>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP557_r116935/WP/Interaction/idd0d0680f> , <http://rdf.wikipathways.org/Pathway/WP557_r116935/WP/Interaction/ida74b522d> , <https://identifiers.org/wikipathways/WP557_r116935>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP557_r116935/DataNode/f7e>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/25245> .
+
+<https://identifiers.org/chebi/CHEBI:35457>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "ACE Inhibitor";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:35457>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:35457";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP557_r116935/WP/Interaction/id99f492c6> , <https://identifiers.org/wikipathways/WP557_r116935> , <http://rdf.wikipathways.org/Pathway/WP557_r116935/WP/Interaction/id61316c2a>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP557_r116935/DataNode/dca>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:35457> .
+
+<https://identifiers.org/ncbigene/24600>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "Nos3";
+        dc:identifier       <https://identifiers.org/ncbigene/24600>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "24600";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP557_r116935/WP/Interaction/ida74b522d> , <https://identifiers.org/wikipathways/WP557_r116935>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP557_r116935/DataNode/ada>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/24600> .
+
+<https://identifiers.org/wikipathways/WP557_r116935>
+        rdf:type               wp:Pathway , skos:Collection;
+        dc:identifier          <https://identifiers.org/wikipathways/WP557>;
+        dc:source              "WikiPathways";
+        dc:title               "ACE inhibitor pathway"@en;
+        dcterms:description    "The renin-angiotensin-aldosterone system (RAAS) is central to the control of blood pressure and the target of several types of anti-hypertensive drugs. This pathway depicts a simplified representation of the pharmacodynamics (PD) of RAAS-acting drugs including candidate genes for the pharmacogenomics (PGx) of ACE inhibitors, angiotensin receptor blockers (ARBs), renin inhibitor aliskiren and aldosterone receptor antagonists.\nSource: PharmGKB (http://www.pharmgkb.org/do/serve?objId=PA2023&objCls=Pathway)";
+        dcterms:identifier     "WP557";
+        dcterms:references     <https://identifiers.org/pubmed/17464936>;
+        cito:cites             <https://identifiers.org/pubmed/17464936>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP557_r116935>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0001228>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_10116>;
+        wp:organismName        "Rattus norvegicus";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0001228>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP557&oldid=r116935> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP557&oldid=r116935>;
+        foaf:page              <http://www.wikipathways.org/instance/WP557_r116935> .
+
+<http://rdf.wikipathways.org/Pathway/WP557_r116935/ComplexBinding/f3634>
+        rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP557_r116935>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP557_r116935/Group/f3634>;
+        wp:participants   <https://identifiers.org/ncbigene/24182> , <https://identifiers.org/ncbigene/81638> , <http://rdf.wikipathways.org/Pathway/WP557_r116935/Complex/f3634> .
+
+<https://identifiers.org/ncbigene/24715>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "Ren1";
+        dc:identifier       <https://identifiers.org/ncbigene/24715>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "24715";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP557_r116935> , <http://rdf.wikipathways.org/Pathway/WP557_r116935/WP/Interaction/id32d753c4>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP557_r116935/DataNode/e3f>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/24715> .
+
+<https://identifiers.org/hmdb/HMDB0004246>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Bradykinin";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0004246>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0004246";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP557_r116935/WP/Interaction/id8a906e85> , <http://rdf.wikipathways.org/Pathway/WP557_r116935/WP/Interaction/idd0d0680f> , <https://identifiers.org/wikipathways/WP557_r116935>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP557_r116935/DataNode/ab6>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0004246> .
+
+<http://rdf.wikipathways.org/Pathway/WP557_r116935/WP/Interaction/d147a>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP557_r116935>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP557_r116935/Interaction/d147a>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP557_r116935/WP/Interaction/idd0d0680f> , <https://identifiers.org/ncbigene/24310>;
+        wp:source         <https://identifiers.org/ncbigene/24310>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP557_r116935/WP/Interaction/idd0d0680f> .
+
+<http://rdf.wikipathways.org/Pathway/WP557_r116935/WP/Interaction/idd0d0680f>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP557_r116935> , <http://rdf.wikipathways.org/Pathway/WP557_r116935/WP/Interaction/d147a>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP557_r116935/Interaction/idd0d0680f>;
+        wp:participants   <https://identifiers.org/ncbigene/25245> , <https://identifiers.org/hmdb/HMDB0004246>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0004246>;
+        wp:target         <https://identifiers.org/ncbigene/25245> .
+
+<http://rdf.wikipathways.org/Pathway/WP557_r116935/WP/Interaction/id32d753c4>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP557_r116935>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP557_r116935/Interaction/id32d753c4>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP557_r116935/WP/Interaction/id2067a77f> , <https://identifiers.org/ncbigene/24715>;
+        wp:source         <https://identifiers.org/ncbigene/24715>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP557_r116935/WP/Interaction/id2067a77f> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_10116>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "10116" .
+
+<http://rdf.wikipathways.org/Pathway/WP557_r116935/WP/Interaction/id8a906e85>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP557_r116935>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP557_r116935/Interaction/id8a906e85>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0004246> , <https://identifiers.org/ncbigene/24903>;
+        wp:source         <https://identifiers.org/ncbigene/24903>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0004246> .
+
+<http://rdf.wikipathways.org/Pathway/WP557_r116935/WP/Interaction/a9090>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP557_r116935>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP557_r116935/Interaction/a9090>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP557_r116935/WP/Interaction/idcb6c05c1> , <https://identifiers.org/ncbigene/24310>;
+        wp:source         <https://identifiers.org/ncbigene/24310>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP557_r116935/WP/Interaction/idcb6c05c1> .
 
 <https://identifiers.org/pubchem.compound/3081372>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -51,26 +160,29 @@
         dc:identifier       <https://identifiers.org/pubchem.compound/3081372>;
         dc:source           "PubChem-compound";
         dcterms:identifier  "3081372";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP557/WP557_rWP557_r116935/DataNode/be4>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP557_r116935> , <http://rdf.wikipathways.org/Pathway/WP557_r116935/WP/Interaction/idcb6c05c1> , <http://rdf.wikipathways.org/Pathway/WP557_r116935/WP/Interaction/id2067a77f>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP557_r116935/DataNode/be4>;
         foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=3081372> .
 
-<https://identifiers.org/ncbigene/24715>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Ren1";
-        dc:identifier       <https://identifiers.org/ncbigene/24715>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "24715";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP557/WP557_rWP557_r116935/DataNode/e3f>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/24715> .
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP557&oldid=r116935>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
 
-<https://identifiers.org/ncbigene/81638>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Agtr1";
-        dc:identifier       <https://identifiers.org/ncbigene/81638>;
+<http://rdf.wikipathways.org/Pathway/WP557_r116935/Complex/f3634>
+        rdf:type          wp:Complex , wp:DataNode;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP557_r116935>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP557_r116935/Group/f3634>;
+        wp:participants   <https://identifiers.org/ncbigene/24182> , <https://identifiers.org/ncbigene/81638> .
+
+<https://identifiers.org/ncbigene/24182>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "Agtr2";
+        dc:identifier       <https://identifiers.org/ncbigene/24182>;
         dc:source           "Entrez Gene";
-        dcterms:identifier  "81638";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP557/WP557_rWP557_r116935/DataNode/c69>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/81638> .
+        dcterms:identifier  "24182";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP557_r116935> , <http://rdf.wikipathways.org/Pathway/WP557_r116935/Complex/f3634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP557_r116935/DataNode/c80>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/24182> .
 
 <https://identifiers.org/chebi/CHEBI:27584>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -78,8 +190,30 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:27584>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:27584";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP557/WP557_rWP557_r116935/DataNode/d94>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP557_r116935>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP557_r116935/DataNode/d94>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:27584> .
+
+<https://identifiers.org/ncbigene/24179>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "Agt";
+        dc:identifier       <https://identifiers.org/ncbigene/24179>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "24179";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP557_r116935/WP/Interaction/id2067a77f> , <https://identifiers.org/wikipathways/WP557_r116935>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP557_r116935/DataNode/c47>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/24179> .
+
+<https://identifiers.org/pubmed/17464936>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "17464936";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP557_r116935>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/17464936> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP557&oldid=r116935>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
 
 <https://identifiers.org/hmdb/HMDB0001035>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -87,35 +221,17 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0001035>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0001035";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP557/WP557_rWP557_r116935/DataNode/fc7>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP557_r116935> , <http://rdf.wikipathways.org/Pathway/WP557_r116935/WP/Interaction/idcb6c05c1>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP557_r116935/DataNode/fc7>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001035> .
 
-<https://identifiers.org/ncbigene/24600>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Nos3";
-        dc:identifier       <https://identifiers.org/ncbigene/24600>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "24600";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP557/WP557_rWP557_r116935/DataNode/ada>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/24600> .
-
-<https://identifiers.org/ncbigene/24903>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Kng1";
-        dc:identifier       <https://identifiers.org/ncbigene/24903>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "24903";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP557/WP557_rWP557_r116935/DataNode/b90>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/24903> .
-
-<https://identifiers.org/chebi/CHEBI:35457>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "ACE Inhibitor";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:35457>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:35457";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP557/WP557_rWP557_r116935/DataNode/dca>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:35457> .
+<http://rdf.wikipathways.org/Pathway/WP557_r116935/WP/Interaction/id61316c2a>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP557_r116935>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP557_r116935/Interaction/id61316c2a>;
+        wp:participants   <https://identifiers.org/ncbigene/24310> , <https://identifiers.org/chebi/CHEBI:35457>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:35457>;
+        wp:target         <https://identifiers.org/ncbigene/24310> .
 
 <https://identifiers.org/ncbigene/24310>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -123,23 +239,40 @@
         dc:identifier       <https://identifiers.org/ncbigene/24310>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "24310";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP557/WP557_rWP557_r116935/DataNode/e6f> , <http://rdf.wikipathways.org/Pathway/WP557/WP557_rWP557_r116935/DataNode/ab0>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP557_r116935/WP/Interaction/id99f492c6> , <http://rdf.wikipathways.org/Pathway/WP557_r116935/WP/Interaction/d147a> , <http://rdf.wikipathways.org/Pathway/WP557_r116935/WP/Interaction/a9090> , <https://identifiers.org/wikipathways/WP557_r116935> , <http://rdf.wikipathways.org/Pathway/WP557_r116935/WP/Interaction/id61316c2a>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP557_r116935/DataNode/e6f> , <http://rdf.wikipathways.org/Pathway/WP557_r116935/DataNode/ab0>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/24310> .
 
-<https://identifiers.org/ncbigene/24179>
+<https://identifiers.org/ncbigene/81638>
         rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Agt";
-        dc:identifier       <https://identifiers.org/ncbigene/24179>;
+        rdfs:label          "Agtr1";
+        dc:identifier       <https://identifiers.org/ncbigene/81638>;
         dc:source           "Entrez Gene";
-        dcterms:identifier  "24179";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP557/WP557_rWP557_r116935/DataNode/c47>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/24179> .
+        dcterms:identifier  "81638";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP557_r116935> , <http://rdf.wikipathways.org/Pathway/WP557_r116935/Complex/f3634>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP557_r116935/DataNode/c69>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/81638> .
 
-<https://identifiers.org/hmdb/HMDB0004246>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Bradykinin";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0004246>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0004246";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP557/WP557_rWP557_r116935/DataNode/ab6>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0004246> .
+<http://rdf.wikipathways.org/Pathway/WP557_r116935/WP/Interaction/ida74b522d>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP557_r116935>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP557_r116935/Interaction/ida74b522d>;
+        wp:participants   <https://identifiers.org/ncbigene/24600> , <https://identifiers.org/ncbigene/25245>;
+        wp:source         <https://identifiers.org/ncbigene/25245>;
+        wp:target         <https://identifiers.org/ncbigene/24600> .
+
+<http://rdf.wikipathways.org/Pathway/WP557_r116935/WP/Interaction/idcb6c05c1>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP557_r116935> , <http://rdf.wikipathways.org/Pathway/WP557_r116935/WP/Interaction/a9090>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP557_r116935/Interaction/idcb6c05c1>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001035> , <https://identifiers.org/pubchem.compound/3081372>;
+        wp:source         <https://identifiers.org/pubchem.compound/3081372>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001035> .
+
+<http://rdf.wikipathways.org/Pathway/WP557_r116935/WP/Interaction/id99f492c6>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP557_r116935>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP557_r116935/Interaction/id99f492c6>;
+        wp:participants   <https://identifiers.org/ncbigene/24310> , <https://identifiers.org/chebi/CHEBI:35457>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:35457>;
+        wp:target         <https://identifiers.org/ncbigene/24310> .

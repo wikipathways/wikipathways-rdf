@@ -16,17 +16,13 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/chebi/CHEBI:15831>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "geranyl-geranyl diphosphate";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:15831>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:15831";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2204/WP2204_rWP2204_r123061/DataNode/de7ad>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15831> .
-
-<http://rdf.wikipathways.org/Pathway/WP2204/WP2204_rWP2204_r123061/WP/Interaction/b4fef>
-        rdf:type  wp:Interaction .
+<http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/f1eed>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2204_r123061>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2204_r123061/Interaction/f1eed>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/c3080> , <https://identifiers.org/brenda/5.2.1.12>;
+        wp:source         <https://identifiers.org/brenda/5.2.1.12>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/c3080> .
 
 <https://identifiers.org/pubchem.compound/25245411>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -34,17 +30,154 @@
         dc:identifier       <https://identifiers.org/pubchem.compound/25245411>;
         dc:source           "PubChem-compound";
         dcterms:identifier  "25245411";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2204/WP2204_rWP2204_r123061/DataNode/adb1a>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/c4ca1> , <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/ae14f> , <https://identifiers.org/wikipathways/WP2204_r123061>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2204_r123061/DataNode/adb1a>;
         foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=25245411> .
 
-<https://identifiers.org/pubchem.compound/24883415>
+<http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/ae14f>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/bc86b> , <https://identifiers.org/wikipathways/WP2204_r123061>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2204_r123061/Interaction/ae14f>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:15948> , <https://identifiers.org/pubchem.compound/25245411>;
+        wp:source         <https://identifiers.org/pubchem.compound/25245411>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:15948> .
+
+<https://identifiers.org/chebi/CHEBI:15831>
         rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "prephytoene diphosphate";
-        dc:identifier       <https://identifiers.org/pubchem.compound/24883415>;
-        dc:source           "PubChem-compound";
-        dcterms:identifier  "24883415";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2204/WP2204_rWP2204_r123061/DataNode/d8d80>;
-        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=24883415> .
+        rdfs:label          "geranyl-geranyl diphosphate";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:15831>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:15831";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/ca07a> , <https://identifiers.org/wikipathways/WP2204_r123061>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2204_r123061/DataNode/de7ad>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15831> .
+
+<https://identifiers.org/wikipathways/WP2204_r123061>
+        rdf:type               wp:Pathway , skos:Collection;
+        dc:identifier          <https://identifiers.org/wikipathways/WP2204>;
+        dc:source              "WikiPathways";
+        dc:title               "Lycopene biosynthesis"@en;
+        dcterms:description    "Maize is one of the essential staple cereal crop plant that has the ability to naturally accumulate nutritionally important carotenoids in the edible seed endosperm. The carotenoid pigments are generally C40 isoprenoids that are hydrophobic and synthesized in the plastids. Amyloplast is the kind of plastid found in seed endosperm. The final product all-trans-lycopene synthesized in the final step in this pathway is the founder precursor for carotenoid biosynthesis in plants.";
+        dcterms:identifier     "WP2204";
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP2204_r123061>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000697> , <http://purl.obolibrary.org/obo/PW_0001291>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_4577>;
+        wp:organismName        "Zea mays";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000697> , <http://purl.obolibrary.org/obo/PW_0001291>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP2204&oldid=r123061> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP2204&oldid=r123061>;
+        foaf:page              <http://www.wikipathways.org/instance/WP2204_r123061> .
+
+<http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/b0baa>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2204_r123061>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2204_r123061/Interaction/b0baa>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/fa420> , <https://identifiers.org/brenda/2.5.1.32>;
+        wp:source         <https://identifiers.org/brenda/2.5.1.32>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/fa420> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_4577>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "4577" .
+
+<http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/c26e0>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2204_r123061>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2204_r123061/Interaction/c26e0>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/ca07a> , <https://identifiers.org/brenda/2.5.1.32>;
+        wp:source         <https://identifiers.org/brenda/2.5.1.32>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/ca07a> .
+
+<http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/ca07a>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2204_r123061> , <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/c26e0>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2204_r123061/Interaction/ca07a>;
+        wp:participants   <https://identifiers.org/pubchem.compound/24883415> , <https://identifiers.org/chebi/CHEBI:15831>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:15831>;
+        wp:target         <https://identifiers.org/pubchem.compound/24883415> .
+
+<http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/c8bfa>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/f7f7d> , <https://identifiers.org/wikipathways/WP2204_r123061>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2204_r123061/Interaction/c8bfa>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:48717> , <https://identifiers.org/chebi/CHEBI:61990>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:61990>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:48717> .
+
+<https://identifiers.org/brenda/5.2.1.12>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "EC:5.2.1.12 (Z-ISO)";
+        dc:identifier       <https://identifiers.org/brenda/5.2.1.12>;
+        dc:source           "BRENDA";
+        dcterms:identifier  "5.2.1.12";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/eeb52> , <https://identifiers.org/wikipathways/WP2204_r123061> , <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/f1eed>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2204_r123061/DataNode/b225a>;
+        foaf:page           <http://www.brenda-enzymes.org/enzyme.php?ecno=5.2.1.12> .
+
+<http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/e633a>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2204_r123061>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2204_r123061/Interaction/e633a>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/b2630> , <https://identifiers.org/brenda/5.2.1.13>;
+        wp:source         <https://identifiers.org/brenda/5.2.1.13>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/b2630> .
+
+<http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/b4291>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2204_r123061>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2204_r123061/Interaction/b4291>;
+        wp:participants   <https://identifiers.org/wikipathways/WP2205> , <https://identifiers.org/chebi/CHEBI:15948>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:15948>;
+        wp:target         <https://identifiers.org/wikipathways/WP2205> .
+
+<http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/eba13>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2204_r123061> , <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/a862d>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2204_r123061/Interaction/eba13>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:61990> , <https://identifiers.org/chebi/CHEBI:27787>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:27787>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:61990> .
+
+<http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/eeb52>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2204_r123061>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2204_r123061/Interaction/eeb52>;
+        wp:participants   <https://identifiers.org/brenda/5.2.1.12> .
+
+<https://identifiers.org/chebi/CHEBI:61990>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "15,9-cis-phytofluene";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:61990>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:61990";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/c8bfa> , <https://identifiers.org/wikipathways/WP2204_r123061> , <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/eba13>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2204_r123061/DataNode/de810>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:61990> .
+
+<http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/b2630>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/e633a> , <https://identifiers.org/wikipathways/WP2204_r123061>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2204_r123061/Interaction/b2630>;
+        wp:participants   <https://identifiers.org/pubchem.compound/21606092> , <https://identifiers.org/chebi/CHEBI:62463>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:62463>;
+        wp:target         <https://identifiers.org/pubchem.compound/21606092> .
+
+<http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/c4ca1>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/e625c> , <https://identifiers.org/wikipathways/WP2204_r123061>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2204_r123061/Interaction/c4ca1>;
+        wp:participants   <https://identifiers.org/pubchem.compound/25245411> , <https://identifiers.org/pubchem.compound/21606092>;
+        wp:source         <https://identifiers.org/pubchem.compound/21606092>;
+        wp:target         <https://identifiers.org/pubchem.compound/25245411> .
+
+<https://identifiers.org/chebi/CHEBI:48716>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "9,9'-di-cis-ζ-carotene";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:48716>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:48716";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2204_r123061> , <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/cea9c> , <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/c3080>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2204_r123061/DataNode/d768f>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:48716> .
 
 <https://identifiers.org/brenda/1.3.5.5>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -52,127 +185,51 @@
         dc:identifier       <https://identifiers.org/brenda/1.3.5.5>;
         dc:source           "BRENDA";
         dcterms:identifier  "1.3.5.5";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2204/WP2204_rWP2204_r123061/DataNode/eb500>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/f7f7d> , <https://identifiers.org/wikipathways/WP2204_r123061> , <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/a862d> , <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/e6afe>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2204_r123061/DataNode/eb500>;
         foaf:page           <http://www.brenda-enzymes.org/enzyme.php?ecno=1.3.5.5> .
 
-<https://identifiers.org/chebi/CHEBI:15948>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "all-trans-lycopene";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:15948>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:15948";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2204/WP2204_rWP2204_r123061/DataNode/f3d3f>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15948> .
-
-<https://identifiers.org/wikipathways/WP2205>
-        rdf:type            wp:Pathway , wp:DataNode;
-        rdfs:label          "Carotenoid Biosynthesis";
-        dc:identifier       <https://identifiers.org/wikipathways/WP2205>;
-        dc:source           "WikiPathways";
-        dcterms:identifier  "WP2205";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2204/WP2204_rWP2204_r123061/DataNode/a6c40>;
-        foaf:page           <https://www.wikipathways.org/instance/WP2205> .
-
-<https://identifiers.org/chebi/CHEBI:27787>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "15-cis-phytoene";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:27787>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:27787";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2204/WP2204_rWP2204_r123061/DataNode/fde67>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:27787> .
-
-<https://identifiers.org/chebi/CHEBI:48716>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "9,9'-di-cis-ζ-carotene";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:48716>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:48716";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2204/WP2204_rWP2204_r123061/DataNode/d768f>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:48716> .
-
-<https://identifiers.org/brenda/1.3.5.6>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "EC:1.3.5.6 (ZDS)";
-        dc:identifier       <https://identifiers.org/brenda/1.3.5.6>;
-        dc:source           "BRENDA";
-        dcterms:identifier  "1.3.5.6";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2204/WP2204_rWP2204_r123061/DataNode/fdcd8>;
-        foaf:page           <http://www.brenda-enzymes.org/enzyme.php?ecno=1.3.5.6> .
-
-<http://rdf.wikipathways.org/Pathway/WP2204/WP2204_rWP2204_r123061/WP/Interaction/eb68a>
-        rdf:type  wp:Interaction .
-
-<http://rdf.wikipathways.org/Pathway/WP2204/WP2204_rWP2204_r123061/WP/Interaction/eeb52>
-        rdf:type  wp:Interaction .
-
-<https://identifiers.org/chebi/CHEBI:48717>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "9,15,9'-tri-cis-ζ-carotene";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:48717>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:48717";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2204/WP2204_rWP2204_r123061/DataNode/d6b38>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:48717> .
+<https://identifiers.org/pubchem.compound/24883415>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "prephytoene diphosphate";
+        dc:identifier       <https://identifiers.org/pubchem.compound/24883415>;
+        dc:source           "PubChem-compound";
+        dcterms:identifier  "24883415";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2204_r123061> , <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/fa420> , <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/ca07a>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2204_r123061/DataNode/d8d80>;
+        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=24883415> .
 
 <https://identifiers.org/chebi/CHEBI:62463>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "7,9,9'-cis-neurosporene";
         dc:identifier       <https://identifiers.org/chebi/CHEBI:62463>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:62463";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2204/WP2204_rWP2204_r123061/DataNode/d5bc0>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/b2630> , <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/cea9c> , <https://identifiers.org/wikipathways/WP2204_r123061>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2204_r123061/DataNode/d5bc0>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:62463> .
 
-<https://identifiers.org/brenda/2.5.1.32>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "EC:2.5.1.32 (PSY)";
-        dc:identifier       <https://identifiers.org/brenda/2.5.1.32>;
-        dc:source           "BRENDA";
-        dcterms:identifier  "2.5.1.32";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2204/WP2204_rWP2204_r123061/DataNode/d1cf6>;
-        foaf:page           <http://www.brenda-enzymes.org/enzyme.php?ecno=2.5.1.32> .
+<http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/fa420>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/b0baa> , <https://identifiers.org/wikipathways/WP2204_r123061>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2204_r123061/Interaction/fa420>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:27787> , <https://identifiers.org/pubchem.compound/24883415>;
+        wp:source         <https://identifiers.org/pubchem.compound/24883415>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:27787> .
 
-<https://identifiers.org/brenda/5.2.1.12>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "EC:5.2.1.12 (Z-ISO)";
-        dc:identifier       <https://identifiers.org/brenda/5.2.1.12>;
-        dc:source           "BRENDA";
-        dcterms:identifier  "5.2.1.12";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2204/WP2204_rWP2204_r123061/DataNode/b225a>;
-        foaf:page           <http://www.brenda-enzymes.org/enzyme.php?ecno=5.2.1.12> .
+<http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/c72ed>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2204_r123061>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2204_r123061/Interaction/c72ed>;
+        wp:participants   <https://identifiers.org/brenda/1.3.5.6> .
 
-<https://identifiers.org/pubchem.compound/21606092>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "9'-cis-neurosporene";
-        dc:identifier       <https://identifiers.org/pubchem.compound/21606092>;
-        dc:source           "PubChem-compound";
-        dcterms:identifier  "21606092";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2204/WP2204_rWP2204_r123061/DataNode/ccc2d>;
-        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=21606092> .
-
-<https://identifiers.org/chebi/CHEBI:61990>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "15,9-cis-phytofluene";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:61990>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:61990";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2204/WP2204_rWP2204_r123061/DataNode/de810>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:61990> .
-
-<https://identifiers.org/wikipathways/WP2204/WP2204_rWP2204_r123061>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP2204/WP2204>;
-        dc:source            "WikiPathways";
-        dc:title             "Lycopene biosynthesis"@en;
-        dcterms:description  "Maize is one of the essential staple cereal crop plant that has the ability to naturally accumulate nutritionally important carotenoids in the edible seed endosperm. The carotenoid pigments are generally C40 isoprenoids that are hydrophobic and synthesized in the plastids. Amyloplast is the kind of plastid found in seed endosperm. The final product all-trans-lycopene synthesized in the final step in this pathway is the founder precursor for carotenoid biosynthesis in plants.";
-        dcterms:identifier   "WP2204/WP2204";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP2204/WP2204_rWP2204_r123061>;
-        wp:organismName      "Zea mays";
-        foaf:page            <http://www.wikipathways.org/instance/WP2204/WP2204_rWP2204_r123061> .
-
-<http://rdf.wikipathways.org/Pathway/WP2204/WP2204_rWP2204_r123061/WP/Interaction/c72ed>
-        rdf:type  wp:Interaction .
+<http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/bc86b>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2204_r123061>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2204_r123061/Interaction/bc86b>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/ae14f> , <https://identifiers.org/brenda/5.2.1.13>;
+        wp:source         <https://identifiers.org/brenda/5.2.1.13>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/ae14f> .
 
 <https://identifiers.org/brenda/5.2.1.13>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -180,8 +237,141 @@
         dc:identifier       <https://identifiers.org/brenda/5.2.1.13>;
         dc:source           "BRENDA";
         dcterms:identifier  "5.2.1.13";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2204/WP2204_rWP2204_r123061/DataNode/e6dd1>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2204_r123061> , <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/e633a> , <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/bc86b>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2204_r123061/DataNode/e6dd1>;
         foaf:page           <http://www.brenda-enzymes.org/enzyme.php?ecno=5.2.1.13> .
 
-<http://rdf.wikipathways.org/Pathway/WP2204/WP2204_rWP2204_r123061/WP/Interaction/e6afe>
-        rdf:type  wp:Interaction .
+<https://identifiers.org/brenda/2.5.1.32>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "EC:2.5.1.32 (PSY)";
+        dc:identifier       <https://identifiers.org/brenda/2.5.1.32>;
+        dc:source           "BRENDA";
+        dcterms:identifier  "2.5.1.32";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/b0baa> , <https://identifiers.org/wikipathways/WP2204_r123061> , <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/c26e0>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2204_r123061/DataNode/d1cf6>;
+        foaf:page           <http://www.brenda-enzymes.org/enzyme.php?ecno=2.5.1.32> .
+
+<http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/f7f7d>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2204_r123061>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2204_r123061/Interaction/f7f7d>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/c8bfa> , <https://identifiers.org/brenda/1.3.5.5>;
+        wp:source         <https://identifiers.org/brenda/1.3.5.5>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/c8bfa> .
+
+<https://identifiers.org/chebi/CHEBI:27787>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "15-cis-phytoene";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:27787>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:27787";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2204_r123061> , <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/fa420> , <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/eba13>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2204_r123061/DataNode/fde67>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:27787> .
+
+<http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/e625c>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2204_r123061>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2204_r123061/Interaction/e625c>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/c4ca1> , <https://identifiers.org/brenda/1.3.5.6>;
+        wp:source         <https://identifiers.org/brenda/1.3.5.6>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/c4ca1> .
+
+<https://identifiers.org/chebi/CHEBI:48717>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "9,15,9'-tri-cis-ζ-carotene";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:48717>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:48717";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/c3080> , <https://identifiers.org/wikipathways/WP2204_r123061> , <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/c8bfa>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2204_r123061/DataNode/d6b38>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:48717> .
+
+<http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/c22a2>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2204_r123061>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2204_r123061/Interaction/c22a2>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/cea9c> , <https://identifiers.org/brenda/1.3.5.6>;
+        wp:source         <https://identifiers.org/brenda/1.3.5.6>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/cea9c> .
+
+<https://identifiers.org/brenda/1.3.5.6>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "EC:1.3.5.6 (ZDS)";
+        dc:identifier       <https://identifiers.org/brenda/1.3.5.6>;
+        dc:source           "BRENDA";
+        dcterms:identifier  "1.3.5.6";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/c72ed> , <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/e625c> , <https://identifiers.org/wikipathways/WP2204_r123061> , <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/c22a2>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2204_r123061/DataNode/fdcd8>;
+        foaf:page           <http://www.brenda-enzymes.org/enzyme.php?ecno=1.3.5.6> .
+
+<https://identifiers.org/wikipathways/WP2204>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP2204_r123061> .
+
+<http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/cea9c>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/c22a2> , <https://identifiers.org/wikipathways/WP2204_r123061>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2204_r123061/Interaction/cea9c>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:62463> , <https://identifiers.org/chebi/CHEBI:48716>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:48716>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:62463> .
+
+<http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/c3080>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/f1eed> , <https://identifiers.org/wikipathways/WP2204_r123061>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2204_r123061/Interaction/c3080>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:48716> , <https://identifiers.org/chebi/CHEBI:48717>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:48717>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:48716> .
+
+<https://identifiers.org/wikipathways/WP2205>
+        rdf:type            wp:Pathway , wp:DataNode;
+        rdfs:label          "Carotenoid Biosynthesis";
+        dc:identifier       <https://identifiers.org/wikipathways/WP2205>;
+        dc:source           "WikiPathways";
+        dcterms:identifier  "WP2205";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/b4291> , <https://identifiers.org/wikipathways/WP2204_r123061>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2204_r123061/DataNode/a6c40>;
+        foaf:page           <https://www.wikipathways.org/instance/WP2205> .
+
+<http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/e6afe>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2204_r123061>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2204_r123061/Interaction/e6afe>;
+        wp:participants   <https://identifiers.org/brenda/1.3.5.5> .
+
+<http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/a862d>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2204_r123061>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2204_r123061/Interaction/a862d>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/eba13> , <https://identifiers.org/brenda/1.3.5.5>;
+        wp:source         <https://identifiers.org/brenda/1.3.5.5>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/eba13> .
+
+<https://identifiers.org/pubchem.compound/21606092>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "9'-cis-neurosporene";
+        dc:identifier       <https://identifiers.org/pubchem.compound/21606092>;
+        dc:source           "PubChem-compound";
+        dcterms:identifier  "21606092";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2204_r123061> , <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/b2630> , <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/c4ca1>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2204_r123061/DataNode/ccc2d>;
+        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=21606092> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP2204&oldid=r123061>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<https://identifiers.org/chebi/CHEBI:15948>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "all-trans-lycopene";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:15948>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:15948";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/b4291> , <https://identifiers.org/wikipathways/WP2204_r123061> , <http://rdf.wikipathways.org/Pathway/WP2204_r123061/WP/Interaction/ae14f>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2204_r123061/DataNode/f3d3f>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15948> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP2204&oldid=r123061>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .

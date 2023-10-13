@@ -22,26 +22,98 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:35366>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:35366";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3650/WP3650_rWP3650_r110699/DataNode/edc1b> , <http://rdf.wikipathways.org/Pathway/WP3650/WP3650_rWP3650_r110699/DataNode/abbd7>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3650_r110699/WP/Interaction/id5f2bd57f> , <http://rdf.wikipathways.org/Pathway/WP3650_r110699/WP/Interaction/id5258b26d> , <https://identifiers.org/wikipathways/WP3650_r110699> , <http://rdf.wikipathways.org/Pathway/WP3650_r110699/WP/Interaction/id337e762> , <http://rdf.wikipathways.org/Pathway/WP3650_r110699/WP/Interaction/dc1f6>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3650_r110699/DataNode/edc1b> , <http://rdf.wikipathways.org/Pathway/WP3650_r110699/DataNode/abbd7>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:35366> .
 
-<https://identifiers.org/uniprot/P01323>
-        rdf:type            wp:Protein , wp:DataNode;
-        rdfs:label          "insulin";
-        dc:identifier       <https://identifiers.org/uniprot/P01323>;
-        dc:source           "Uniprot-TrEMBL";
-        dcterms:identifier  "P01323";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3650/WP3650_rWP3650_r110699/DataNode/e8550>;
-        foaf:page           <http://www.uniprot.org/uniprot/P01323> .
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3650&oldid=r110699>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<https://identifiers.org/pubmed/27279214>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "27279214";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3650_r110699>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/27279214> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3650&oldid=r110699>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
 
 <https://identifiers.org/uniprot/P04563>
-        rdf:type            wp:Protein , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Protein;
         rdfs:label          "gastrin";
         dc:identifier       <https://identifiers.org/uniprot/P04563>;
         dc:source           "Uniprot-TrEMBL";
         dcterms:identifier  "P04563";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3650/WP3650_rWP3650_r110699/DataNode/b6e3e>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3650_r110699/WP/Interaction/id1be35cad> , <http://rdf.wikipathways.org/Pathway/WP3650_r110699/WP/Interaction/idc5c77f4d> , <https://identifiers.org/wikipathways/WP3650_r110699>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3650_r110699/DataNode/b6e3e>;
         foaf:page           <http://www.uniprot.org/uniprot/P04563> .
+
+<http://rdf.wikipathways.org/Pathway/WP3650_r110699/WP/Interaction/id5f2bd57f>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3650_r110699>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3650_r110699/Interaction/id5f2bd57f>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:30089> , <https://identifiers.org/chebi/CHEBI:35366>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:35366>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:30089> .
+
+<http://rdf.wikipathways.org/Pathway/WP3650_r110699/WP/Interaction/idc5c77f4d>
+        rdf:type          wp:Stimulation , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3650_r110699>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3650_r110699/Interaction/idc5c77f4d>;
+        wp:participants   <https://identifiers.org/uniprot/P04563>;
+        wp:target         <https://identifiers.org/uniprot/P04563> .
+
+<http://rdf.wikipathways.org/Pathway/WP3650_r110699/WP/Interaction/id79f12e1e>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3650_r110699>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3650_r110699/Interaction/id79f12e1e>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:30089>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:30089>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:30089> .
+
+<https://identifiers.org/wikipathways/WP3650_r110699>
+        rdf:type                wp:Pathway , skos:Collection;
+        dc:identifier           <https://identifiers.org/wikipathways/WP3650>;
+        dc:source               "WikiPathways";
+        dc:title                "Acetate mediated promotion of metabolic syndrome"@en;
+        dcterms:description     "Acetates produced by gut microbes stimulates the parasympathetic nervous system which causes in an increase in the release of the gastrin hormone which triggers insulin release from beta-cells. Prolonged exposure to high acetate levels promote a state of metabolic syndrome.";
+        dcterms:identifier      "WP3650";
+        dcterms:references      <https://identifiers.org/pubmed/27279214>;
+        cito:cites              <https://identifiers.org/pubmed/27279214>;
+        wp:cellTypeOntologyTag  <http://purl.obolibrary.org/obo/CL_0000236> , <http://purl.obolibrary.org/obo/CL_0011102>;
+        wp:diseaseOntologyTag   <http://purl.obolibrary.org/obo/DOID_0060158>;
+        wp:isAbout              <http://rdf.wikipathways.org/Pathway/WP3650_r110699>;
+        wp:ontologyTag          <http://purl.obolibrary.org/obo/CL_0000236> , <http://purl.obolibrary.org/obo/PW_0000013> , <http://purl.obolibrary.org/obo/CL_0011102> , <http://purl.obolibrary.org/obo/DOID_0060158>;
+        wp:organism             <http://purl.obolibrary.org/obo/NCBITaxon_10116>;
+        wp:organismName         "Rattus norvegicus";
+        wp:pathwayOntologyTag   <http://purl.obolibrary.org/obo/PW_0000013>;
+        foaf:img                <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3650&oldid=r110699> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3650&oldid=r110699>;
+        foaf:page               <http://www.wikipathways.org/instance/WP3650_r110699> .
+
+<http://rdf.wikipathways.org/Pathway/WP3650_r110699/WP/Interaction/id337e762>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3650_r110699>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3650_r110699/Interaction/id337e762>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:35366>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:35366>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:35366> .
+
+<https://identifiers.org/uniprot/P01323>
+        rdf:type            wp:DataNode , wp:Protein;
+        rdfs:label          "insulin";
+        dc:identifier       <https://identifiers.org/uniprot/P01323>;
+        dc:source           "Uniprot-TrEMBL";
+        dcterms:identifier  "P01323";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3650_r110699> , <http://rdf.wikipathways.org/Pathway/WP3650_r110699/WP/Interaction/id1be35cad>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3650_r110699/DataNode/e8550>;
+        foaf:page           <http://www.uniprot.org/uniprot/P01323> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_10116>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "10116" .
 
 <https://identifiers.org/chebi/CHEBI:30089>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -49,25 +121,49 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:30089>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:30089";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3650/WP3650_rWP3650_r110699/DataNode/eb774> , <http://rdf.wikipathways.org/Pathway/WP3650/WP3650_rWP3650_r110699/DataNode/eebe1>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3650_r110699/WP/Interaction/id5f2bd57f> , <https://identifiers.org/wikipathways/WP3650_r110699> , <http://rdf.wikipathways.org/Pathway/WP3650_r110699/WP/Interaction/id178b2def> , <http://rdf.wikipathways.org/Pathway/WP3650_r110699/WP/Interaction/id79f12e1e>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3650_r110699/DataNode/eb774> , <http://rdf.wikipathways.org/Pathway/WP3650_r110699/DataNode/eebe1>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:30089> .
 
-<https://identifiers.org/wikipathways/WP3650/WP3650_rWP3650_r110699>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP3650/WP3650>;
-        dc:source            "WikiPathways";
-        dc:title             "Acetate mediated promotion of metabolic syndrome"@en;
-        dcterms:description  "Acetates produced by gut microbes stimulates the parasympathetic nervous system which causes in an increase in the release of the gastrin hormone which triggers insulin release from beta-cells. Prolonged exposure to high acetate levels promote a state of metabolic syndrome.";
-        dcterms:identifier   "WP3650/WP3650";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP3650/WP3650_rWP3650_r110699>;
-        wp:organismName      "Rattus norvegicus";
-        foaf:page            <http://www.wikipathways.org/instance/WP3650/WP3650_rWP3650_r110699> .
+<http://rdf.wikipathways.org/Pathway/WP3650_r110699/WP/Interaction/dc1f6>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3650_r110699>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3650_r110699/Interaction/dc1f6>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:35366>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:35366> .
+
+<http://rdf.wikipathways.org/Pathway/WP3650_r110699/WP/Interaction/id1be35cad>
+        rdf:type          wp:Stimulation , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3650_r110699>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3650_r110699/Interaction/id1be35cad>;
+        wp:participants   <https://identifiers.org/uniprot/P01323> , <https://identifiers.org/uniprot/P04563>;
+        wp:source         <https://identifiers.org/uniprot/P04563>;
+        wp:target         <https://identifiers.org/uniprot/P01323> .
+
+<http://rdf.wikipathways.org/Pathway/WP3650_r110699/WP/Interaction/id5258b26d>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3650_r110699>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3650_r110699/Interaction/id5258b26d>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:35366> , <https://identifiers.org/chebi/CHEBI:17634>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:17634>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:35366> .
+
+<http://rdf.wikipathways.org/Pathway/WP3650_r110699/WP/Interaction/id178b2def>
+        rdf:type          wp:Stimulation , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3650_r110699>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3650_r110699/Interaction/id178b2def>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:30089>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:30089> .
 
 <https://identifiers.org/chebi/CHEBI:17634>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "glucose";
         dc:identifier       <https://identifiers.org/chebi/CHEBI:17634>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:17634";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3650/WP3650_rWP3650_r110699/DataNode/ffae7>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3650_r110699> , <http://rdf.wikipathways.org/Pathway/WP3650_r110699/WP/Interaction/id5258b26d>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3650_r110699/DataNode/ffae7>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17634> .
+
+<https://identifiers.org/wikipathways/WP3650>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP3650_r110699> .

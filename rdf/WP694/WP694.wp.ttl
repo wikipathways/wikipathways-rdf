@@ -16,23 +16,11 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/ensembl/ENSG00000171428>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "NAT1";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000171428>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000171428";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP694/WP694_rWP694_r106139/DataNode/c541c> , <http://rdf.wikipathways.org/Pathway/WP694/WP694_rWP694_r106139/DataNode/c0e47>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000171428> .
-
-<https://identifiers.org/chebi/CHEBI:50471>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Arylamine";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:50471>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:50471";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP694/WP694_rWP694_r106139/DataNode/e147e>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:50471> .
+<http://rdf.wikipathways.org/Pathway/WP694_r106139/Complex/a2de7>
+        rdf:type          wp:Complex , wp:DataNode;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP694_r106139>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP694_r106139/Group/a2de7>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000156006> , <https://identifiers.org/ensembl/ENSG00000171428> .
 
 <https://identifiers.org/ensembl/ENSG00000197165>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -40,17 +28,58 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000197165>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000197165";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP694/WP694_rWP694_r106139/DataNode/c3d82>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP694_r106139> , <http://rdf.wikipathways.org/Pathway/WP694_r106139/Complex/f919a>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP694_r106139/DataNode/c3d82>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000197165> .
 
-<https://identifiers.org/hmdb/HMDB0001250>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "N-Acetylarylamine";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0001250>;
+<https://identifiers.org/hmdb/HMDB0001206>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Acetyl-CoA";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0001206>;
         dc:source           "HMDB";
-        dcterms:identifier  "HMDB0001250";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP694/WP694_rWP694_r106139/DataNode/cbb69>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001250> .
+        dcterms:identifier  "HMDB0001206";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP694_r106139> , <http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/id49484ed3>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP694_r106139/DataNode/d5a3e>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001206> .
+
+<http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/d9c79>
+        rdf:type            wp:Conversion , wp:Interaction , wp:DirectedInteraction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP694_r106139> , <http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/be768>;
+        dcterms:references  <https://identifiers.org/pubmed/7889851>;
+        cito:cites          <https://identifiers.org/pubmed/7889851>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP694_r106139/Interaction/d9c79>;
+        wp:participants     <https://identifiers.org/hmdb/HMDB0001250>;
+        wp:source           <https://identifiers.org/hmdb/HMDB0001250> .
+
+<http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/e2ba7>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP694_r106139>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP694_r106139/Interaction/e2ba7> .
+
+<https://identifiers.org/ensembl/ENSG00000171428>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "NAT1";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000171428>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000171428";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP694_r106139/Complex/bf683> , <http://rdf.wikipathways.org/Pathway/WP694_r106139/Complex/a2de7> , <https://identifiers.org/wikipathways/WP694_r106139>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP694_r106139/DataNode/c541c> , <http://rdf.wikipathways.org/Pathway/WP694_r106139/DataNode/c0e47>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000171428> .
+
+<http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/be768>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP694_r106139>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP694_r106139/Interaction/be768>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/d9c79> , <https://identifiers.org/ensembl/ENSG00000140505>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000140505>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/d9c79> .
+
+<https://identifiers.org/pubmed/24467436>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "24467436";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP694_r106139>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/24467436> .
 
 <https://identifiers.org/ensembl/ENSG00000156006>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -58,8 +87,81 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000156006>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000156006";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP694/WP694_rWP694_r106139/DataNode/fc98b> , <http://rdf.wikipathways.org/Pathway/WP694/WP694_rWP694_r106139/DataNode/d55e5>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP694_r106139> , <http://rdf.wikipathways.org/Pathway/WP694_r106139/Complex/bf683> , <http://rdf.wikipathways.org/Pathway/WP694_r106139/Complex/a2de7>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP694_r106139/DataNode/fc98b> , <http://rdf.wikipathways.org/Pathway/WP694_r106139/DataNode/d55e5>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000156006> .
+
+<http://rdf.wikipathways.org/Pathway/WP694_r106139/ComplexBinding/bf683>
+        rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP694_r106139>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP694_r106139/Group/bf683>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000156006> , <https://identifiers.org/ensembl/ENSG00000171428> , <http://rdf.wikipathways.org/Pathway/WP694_r106139/Complex/bf683> .
+
+<http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/c7852>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP694_r106139>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP694_r106139/Interaction/c7852>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:50471>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:50471> .
+
+<https://identifiers.org/wikipathways/WP694_r106139>
+        rdf:type               skos:Collection , wp:Pathway;
+        dc:identifier          <https://identifiers.org/wikipathways/WP694>;
+        dc:source              "WikiPathways";
+        dc:title               "Arylamine metabolism"@en;
+        dcterms:description    "Simplified scheme of arylamine metabolism pathway. Arylamines are N-acetylated by NAT2 in the liver, transforming them to relatively nonreactive. Alternatively, they may be N-hydroxylated by CYPIA2, trans - ported to the bladder, and undergo O-acetylation by NATI, to form a highly reactive species. [https://www.researchgate.net/figure/Simplified-scheme-of-arylamine-metabolism-pathway-Arylamines-are-N-acetylated-by-NAT2-in_fig2_288003735]";
+        dcterms:identifier     "WP694";
+        dcterms:references     <https://identifiers.org/pubmed/24467436>;
+        cito:cites             <https://identifiers.org/pubmed/7889851> , <https://identifiers.org/pubmed/7834621> , <https://identifiers.org/pubmed/24467436>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP694_r106139>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0001232> , <http://purl.obolibrary.org/obo/PW_0000147>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606>;
+        wp:organismName        "Homo sapiens";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000147> , <http://purl.obolibrary.org/obo/PW_0001232>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP694&oldid=r106139> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP694&oldid=r106139>;
+        foaf:page              <http://www.wikipathways.org/instance/WP694_r106139> .
+
+<http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/c4a29>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP694_r106139>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP694_r106139/Interaction/c4a29>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:50471>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:50471> .
+
+<https://identifiers.org/hmdb/HMDB0001250>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "N-Acetylarylamine";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0001250>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0001250";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/c9255> , <http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/d9c79> , <https://identifiers.org/wikipathways/WP694_r106139> , <http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/a5212>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP694_r106139/DataNode/cbb69>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001250> .
+
+<http://rdf.wikipathways.org/Pathway/WP694_r106139/ComplexBinding/f919a>
+        rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP694_r106139>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP694_r106139/Group/f919a>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000196502> , <https://identifiers.org/ensembl/ENSG00000197165> , <http://rdf.wikipathways.org/Pathway/WP694_r106139/Complex/f919a> .
+
+<https://identifiers.org/wikipathways/WP694>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP694_r106139> .
+
+<http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/f2392>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP694_r106139>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP694_r106139/Interaction/f2392> .
+
+<https://identifiers.org/pubmed/7834621>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "7834621";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/d6849>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/7834621> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP694&oldid=r106139>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
 
 <https://identifiers.org/ncbigene/54600>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -67,26 +169,168 @@
         dc:identifier       <https://identifiers.org/ncbigene/54600>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "54600";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP694/WP694_rWP694_r106139/DataNode/a042b>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP694_r106139/Complex/ba988> , <https://identifiers.org/wikipathways/WP694_r106139>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP694_r106139/DataNode/a042b>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/54600> .
 
+<http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/fdeab>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP694_r106139> , <http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/d9f02>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP694_r106139/Interaction/fdeab>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:13792>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:13792> .
+
+<http://rdf.wikipathways.org/Pathway/WP694_r106139/Complex/bf683>
+        rdf:type          wp:Complex , wp:DataNode;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP694_r106139>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP694_r106139/Group/bf683>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000156006> , <https://identifiers.org/ensembl/ENSG00000171428> .
+
+<https://identifiers.org/pubmed/7889851>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "7889851";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/d9c79> , <http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/d2c5c> , <http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/c9255> , <http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/aa81f>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/7889851> .
+
+<http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/id49484ed3>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP694_r106139>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP694_r106139/Interaction/id49484ed3>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/c9255> , <https://identifiers.org/hmdb/HMDB0001206> .
+
 <https://identifiers.org/hmdb/HMDB0001423>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "Coenzyme A";
         dc:identifier       <https://identifiers.org/hmdb/HMDB0001423>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0001423";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP694/WP694_rWP694_r106139/DataNode/f2bcc>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP694_r106139> , <http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/idb81bc2b4>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP694_r106139/DataNode/f2bcc>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001423> .
 
+<http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/cc844>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP694_r106139>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP694_r106139/Interaction/cc844>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/aa81f> , <https://identifiers.org/ensembl/ENSG00000140505>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000140505>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/aa81f> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_9606>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9606" .
+
+<https://identifiers.org/chebi/CHEBI:50471>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Arylamine";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:50471>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:50471";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/c9255> , <http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/a5212> , <https://identifiers.org/wikipathways/WP694_r106139> , <http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/aa81f> , <http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/c7852> , <http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/c4a29>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP694_r106139/DataNode/e147e>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:50471> .
+
+<http://rdf.wikipathways.org/Pathway/WP694_r106139/Complex/f919a>
+        rdf:type          wp:Complex , wp:DataNode;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP694_r106139>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP694_r106139/Group/f919a>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000196502> , <https://identifiers.org/ensembl/ENSG00000197165> .
+
 <https://identifiers.org/ensembl/ENSG00000140505>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "CYP1A2";
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000140505>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000140505";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP694/WP694_rWP694_r106139/DataNode/bb0f4>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/be768> , <https://identifiers.org/wikipathways/WP694_r106139> , <http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/cc844>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP694_r106139/DataNode/bb0f4>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000140505> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP694&oldid=r106139>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/aa81f>
+        rdf:type            wp:Interaction , wp:Conversion , wp:DirectedInteraction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP694_r106139> , <http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/cc844>;
+        dcterms:references  <https://identifiers.org/pubmed/7889851>;
+        cito:cites          <https://identifiers.org/pubmed/7889851>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP694_r106139/Interaction/aa81f>;
+        wp:participants     <https://identifiers.org/chebi/CHEBI:50471> , <https://identifiers.org/chebi/CHEBI:13792>;
+        wp:source           <https://identifiers.org/chebi/CHEBI:50471>;
+        wp:target           <https://identifiers.org/chebi/CHEBI:13792> .
+
+<http://rdf.wikipathways.org/Pathway/WP694_r106139/ComplexBinding/ba988>
+        rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP694_r106139>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP694_r106139/Group/ba988>;
+        wp:participants   <https://identifiers.org/ncbigene/54657> , <https://identifiers.org/ncbigene/54600> , <http://rdf.wikipathways.org/Pathway/WP694_r106139/Complex/ba988> .
+
+<http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/idb81bc2b4>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP694_r106139>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP694_r106139/Interaction/idb81bc2b4>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001423>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001423> .
+
+<http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/efcb8>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP694_r106139>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP694_r106139/Interaction/efcb8>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/a5212>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/a5212> .
+
+<http://rdf.wikipathways.org/Pathway/WP694_r106139/ComplexBinding/a2de7>
+        rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP694_r106139>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP694_r106139/Group/a2de7>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000156006> , <https://identifiers.org/ensembl/ENSG00000171428> , <http://rdf.wikipathways.org/Pathway/WP694_r106139/Complex/a2de7> .
+
+<http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/d2c5c>
+        rdf:type            wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP694_r106139>;
+        dcterms:references  <https://identifiers.org/pubmed/7889851>;
+        cito:cites          <https://identifiers.org/pubmed/7889851>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP694_r106139/Interaction/d2c5c>;
+        wp:participants     <https://identifiers.org/chebi/CHEBI:13792>;
+        wp:source           <https://identifiers.org/chebi/CHEBI:13792> .
+
+<http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/d9f02>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP694_r106139>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP694_r106139/Interaction/d9f02>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/fdeab>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/fdeab> .
+
+<http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/c9255>
+        rdf:type            wp:Interaction , wp:DirectedInteraction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP694_r106139> , <http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/id49484ed3>;
+        dcterms:references  <https://identifiers.org/pubmed/7889851>;
+        cito:cites          <https://identifiers.org/pubmed/7889851>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP694_r106139/Interaction/c9255>;
+        wp:participants     <https://identifiers.org/hmdb/HMDB0001250> , <https://identifiers.org/chebi/CHEBI:50471>;
+        wp:source           <https://identifiers.org/chebi/CHEBI:50471>;
+        wp:target           <https://identifiers.org/hmdb/HMDB0001250> .
+
+<http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/d6849>
+        rdf:type            wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP694_r106139>;
+        dcterms:references  <https://identifiers.org/pubmed/7834621>;
+        cito:cites          <https://identifiers.org/pubmed/7834621>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP694_r106139/Interaction/d6849>;
+        wp:participants     <https://identifiers.org/chebi/CHEBI:13792>;
+        wp:source           <https://identifiers.org/chebi/CHEBI:13792> .
+
+<https://identifiers.org/ensembl/ENSG00000196502>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "SULT1A1";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000196502>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000196502";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP694_r106139> , <http://rdf.wikipathways.org/Pathway/WP694_r106139/Complex/f919a>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP694_r106139/DataNode/d94ce>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000196502> .
 
 <https://identifiers.org/chebi/CHEBI:13792>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -94,46 +338,30 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:13792>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:13792";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP694/WP694_rWP694_r106139/DataNode/e55d1>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/d2c5c> , <https://identifiers.org/wikipathways/WP694_r106139> , <http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/fdeab> , <http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/d6849> , <http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/aa81f>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP694_r106139/DataNode/e55d1>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:13792> .
 
-<http://rdf.wikipathways.org/Pathway/WP694/WP694_rWP694_r106139/WP/Interaction/id49484ed3>
-        rdf:type  wp:Interaction .
+<http://rdf.wikipathways.org/Pathway/WP694_r106139/Complex/ba988>
+        rdf:type          wp:Complex , wp:DataNode;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP694_r106139>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP694_r106139/Group/ba988>;
+        wp:participants   <https://identifiers.org/ncbigene/54657> , <https://identifiers.org/ncbigene/54600> .
 
-<https://identifiers.org/hmdb/HMDB0001206>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Acetyl-CoA";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0001206>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0001206";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP694/WP694_rWP694_r106139/DataNode/d5a3e>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001206> .
+<http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/a5212>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP694_r106139/WP/Interaction/efcb8> , <https://identifiers.org/wikipathways/WP694_r106139>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP694_r106139/Interaction/a5212>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:50471> , <https://identifiers.org/hmdb/HMDB0001250>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001250>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:50471> .
 
 <https://identifiers.org/ncbigene/54657>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "UGT1A4";
         dc:identifier       <https://identifiers.org/ncbigene/54657>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "54657";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP694/WP694_rWP694_r106139/DataNode/a1f59>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP694_r106139> , <http://rdf.wikipathways.org/Pathway/WP694_r106139/Complex/ba988>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP694_r106139/DataNode/a1f59>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/54657> .
-
-<https://identifiers.org/wikipathways/WP694/WP694_rWP694_r106139>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP694/WP694>;
-        dc:source            "WikiPathways";
-        dc:title             "Arylamine metabolism"@en;
-        dcterms:description  "Simplified scheme of arylamine metabolism pathway. Arylamines are N-acetylated by NAT2 in the liver, transforming them to relatively nonreactive. Alternatively, they may be N-hydroxylated by CYPIA2, trans - ported to the bladder, and undergo O-acetylation by NATI, to form a highly reactive species. [https://www.researchgate.net/figure/Simplified-scheme-of-arylamine-metabolism-pathway-Arylamines-are-N-acetylated-by-NAT2-in_fig2_288003735]";
-        dcterms:identifier   "WP694/WP694";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP694/WP694_rWP694_r106139>;
-        wp:organismName      "Homo sapiens";
-        foaf:page            <http://www.wikipathways.org/instance/WP694/WP694_rWP694_r106139> .
-
-<https://identifiers.org/ensembl/ENSG00000196502>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "SULT1A1";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000196502>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000196502";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP694/WP694_rWP694_r106139/DataNode/d94ce>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000196502> .

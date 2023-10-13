@@ -16,13 +16,20 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
+<http://rdf.wikipathways.org/Pathway/WP3241_r87366/ComplexBinding/ce843>
+        rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3241_r87366>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3241_r87366/Group/ce843>;
+        wp:participants   <https://identifiers.org/ensembl/ENSBTAG00000009906> , <https://identifiers.org/ensembl/ENSBTAG00000019869> , <https://identifiers.org/ensembl/ENSBTAG00000017551> , <http://rdf.wikipathways.org/Pathway/WP3241_r87366/Complex/ce843> .
+
 <https://identifiers.org/ensembl/ENSBTAG00000019869>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "DGCR8";
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000019869>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000019869";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3241/WP3241_rWP3241_r87366/DataNode/d3def>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3241_r87366/Complex/ce843> , <https://identifiers.org/wikipathways/WP3241_r87366>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3241_r87366/DataNode/d3def>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000019869> .
 
 <https://identifiers.org/ensembl/ENSBTAG00000003111>
@@ -31,7 +38,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000003111>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000003111";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3241/WP3241_rWP3241_r87366/DataNode/aa8f3>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3241_r87366> , <http://rdf.wikipathways.org/Pathway/WP3241_r87366/WP/Interaction/idc528e909>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3241_r87366/DataNode/aa8f3>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000003111> .
 
 <https://identifiers.org/ensembl/ENSBTAG00000013225>
@@ -40,8 +48,51 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000013225>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000013225";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3241/WP3241_rWP3241_r87366/DataNode/cec85>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3241_r87366>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3241_r87366/DataNode/cec85>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000013225> .
+
+<http://rdf.wikipathways.org/Pathway/WP3241_r87366/WP/Interaction/ide4997318>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP3241_r87366/WP/Interaction/idc528e909> , <https://identifiers.org/wikipathways/WP3241_r87366>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3241_r87366/Interaction/ide4997318>;
+        wp:participants   <https://identifiers.org/ensembl/ENSBTAG00000009906>;
+        wp:source         <https://identifiers.org/ensembl/ENSBTAG00000009906>;
+        wp:target         <https://identifiers.org/ensembl/ENSBTAG00000009906> .
+
+<http://rdf.wikipathways.org/Pathway/WP3241_r87366/WP/Interaction/idc528e909>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3241_r87366>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3241_r87366/Interaction/idc528e909>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP3241_r87366/WP/Interaction/ide4997318> , <https://identifiers.org/ensembl/ENSBTAG00000003111> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3241&oldid=r87366>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<https://identifiers.org/pubmed/25176654>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "25176654";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3241_r87366>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/25176654> .
+
+<https://identifiers.org/wikipathways/WP3241_r87366>
+        rdf:type               skos:Collection , wp:Pathway;
+        dc:identifier          <https://identifiers.org/wikipathways/WP3241>;
+        dc:source              "WikiPathways";
+        dc:title               "DDX1 as a regulatory component of the Drosha microprocessor"@en;
+        dcterms:description    "Posttranscriptional maturation is a critical step in microRNA (miRNA) biogenesis that determines mature miRNA levels. In addition to core components (Drosha and DGCR8 [DiGeorge syndrome critical region gene 8]) in the microprocessor, regulatory RNA-binding proteins may confer the specificity for recruiting and processing of individual primary miRNAs (pri-miRNAs). Here, we identify DDX1 as a regulatory protein that promotes the expression of a subset of miRNAs, including five members in the microRNA-200 (miR-200) family and four miRNAs in an eight-miRNA signature of a mesenchymal ovarian cancer subtype. A majority of DDX1-dependent miRNAs are induced after DNA damage. This induction is facilitated by the ataxia telangiectasia mutated (ATM)-mediated phosphorylation of DDX1. Inhibiting DDX1 promotes ovarian tumor growth and metastasis in a syngeneic mouse model. Analysis of The Cancer Genome Atlas (TCGA) reveals that low DDX1 levels are associated with poor clinical outcome in patients with serous ovarian cancer. These findings suggest that DDX1 is a key modulator in miRNA maturation and ovarian tumor suppression.";
+        dcterms:identifier     "WP3241";
+        dcterms:references     <https://identifiers.org/pubmed/25176654>;
+        cito:cites             <https://identifiers.org/pubmed/25176654>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP3241_r87366>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000004>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9913>;
+        wp:organismName        "Bos taurus";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000004>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3241&oldid=r87366> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3241&oldid=r87366>;
+        foaf:page              <http://www.wikipathways.org/instance/WP3241_r87366> .
 
 <https://identifiers.org/ensembl/ENSBTAG00000011252>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -49,31 +100,22 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000011252>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000011252";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3241/WP3241_rWP3241_r87366/DataNode/f836e>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3241_r87366>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3241_r87366/DataNode/f836e>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000011252> .
 
 <https://identifiers.org/ensembl/ENSBTAG00000017551>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "DROSHA";
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000017551>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000017551";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3241/WP3241_rWP3241_r87366/DataNode/ff0c0>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3241_r87366> , <http://rdf.wikipathways.org/Pathway/WP3241_r87366/Complex/ce843>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3241_r87366/DataNode/ff0c0>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000017551> .
 
-<https://identifiers.org/wikipathways/WP3241/WP3241_rWP3241_r87366>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP3241/WP3241>;
-        dc:source            "WikiPathways";
-        dc:title             "DDX1 as a regulatory component of the Drosha microprocessor"@en;
-        dcterms:description  "Posttranscriptional maturation is a critical step in microRNA (miRNA) biogenesis that determines mature miRNA levels. In addition to core components (Drosha and DGCR8 [DiGeorge syndrome critical region gene 8]) in the microprocessor, regulatory RNA-binding proteins may confer the specificity for recruiting and processing of individual primary miRNAs (pri-miRNAs). Here, we identify DDX1 as a regulatory protein that promotes the expression of a subset of miRNAs, including five members in the microRNA-200 (miR-200) family and four miRNAs in an eight-miRNA signature of a mesenchymal ovarian cancer subtype. A majority of DDX1-dependent miRNAs are induced after DNA damage. This induction is facilitated by the ataxia telangiectasia mutated (ATM)-mediated phosphorylation of DDX1. Inhibiting DDX1 promotes ovarian tumor growth and metastasis in a syngeneic mouse model. Analysis of The Cancer Genome Atlas (TCGA) reveals that low DDX1 levels are associated with poor clinical outcome in patients with serous ovarian cancer. These findings suggest that DDX1 is a key modulator in miRNA maturation and ovarian tumor suppression.";
-        dcterms:identifier   "WP3241/WP3241";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP3241/WP3241_rWP3241_r87366>;
-        wp:organismName      "Bos taurus";
-        foaf:page            <http://www.wikipathways.org/instance/WP3241/WP3241_rWP3241_r87366> .
-
-<http://rdf.wikipathways.org/Pathway/WP3241/WP3241_rWP3241_r87366/WP/Interaction/idc528e909>
-        rdf:type  wp:Interaction .
+<https://identifiers.org/wikipathways/WP3241>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP3241_r87366> .
 
 <https://identifiers.org/ensembl/ENSBTAG00000008925>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -81,8 +123,23 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000008925>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000008925";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3241/WP3241_rWP3241_r87366/DataNode/e52f5>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3241_r87366>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3241_r87366/DataNode/e52f5>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000008925> .
+
+<http://rdf.wikipathways.org/Pathway/WP3241_r87366/Complex/ce843>
+        rdf:type          wp:Complex , wp:DataNode;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3241_r87366>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3241_r87366/Group/ce843>;
+        wp:participants   <https://identifiers.org/ensembl/ENSBTAG00000009906> , <https://identifiers.org/ensembl/ENSBTAG00000019869> , <https://identifiers.org/ensembl/ENSBTAG00000017551> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3241&oldid=r87366>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_9913>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9913" .
 
 <https://identifiers.org/ensembl/ENSBTAG00000009906>
         rdf:type            wp:DataNode , wp:GeneProduct;
@@ -90,5 +147,6 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000009906>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000009906";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3241/WP3241_rWP3241_r87366/DataNode/f09b8> , <http://rdf.wikipathways.org/Pathway/WP3241/WP3241_rWP3241_r87366/DataNode/e623d> , <http://rdf.wikipathways.org/Pathway/WP3241/WP3241_rWP3241_r87366/DataNode/c3cbb>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3241_r87366/WP/Interaction/ide4997318> , <https://identifiers.org/wikipathways/WP3241_r87366> , <http://rdf.wikipathways.org/Pathway/WP3241_r87366/Complex/ce843>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3241_r87366/DataNode/c3cbb> , <http://rdf.wikipathways.org/Pathway/WP3241_r87366/DataNode/e623d> , <http://rdf.wikipathways.org/Pathway/WP3241_r87366/DataNode/f09b8>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000009906> .

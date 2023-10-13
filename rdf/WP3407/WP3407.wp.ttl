@@ -16,23 +16,29 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/ncbigene/79068>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "FTO";
-        dc:identifier       <https://identifiers.org/ncbigene/79068>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "79068";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3407/WP3407_rWP3407_r124812/DataNode/da83e> , <http://rdf.wikipathways.org/Pathway/WP3407/WP3407_rWP3407_r124812/DataNode/bd803>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/79068> .
-
 <https://identifiers.org/ensembl/ENSG00000142611>
         rdf:type            wp:GeneProduct , wp:DataNode;
         rdfs:label          "PRDM16";
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000142611>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000142611";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3407/WP3407_rWP3407_r124812/DataNode/b70cf>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3407_r124812>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3407_r124812/DataNode/b70cf>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000142611> .
+
+<https://identifiers.org/ncbigene/79068>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "FTO";
+        dc:identifier       <https://identifiers.org/ncbigene/79068>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "79068";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3407_r124812> , <http://rdf.wikipathways.org/Pathway/WP3407_r124812/WP/Interaction/id3088f9b5>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3407_r124812/DataNode/da83e> , <http://rdf.wikipathways.org/Pathway/WP3407_r124812/DataNode/bd803>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/79068> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3407&oldid=r124812>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
 
 <https://identifiers.org/ensembl/ENSG00000109819>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -40,8 +46,27 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000109819>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000109819";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3407/WP3407_rWP3407_r124812/DataNode/d8875>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3407_r124812>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3407_r124812/DataNode/d8875>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000109819> .
+
+<https://identifiers.org/wikipathways/WP3407_r124812>
+        rdf:type               wp:Pathway , skos:Collection;
+        dc:identifier          <https://identifiers.org/wikipathways/WP3407>;
+        dc:source              "WikiPathways";
+        dc:title               "FTO obesity variant mechanism"@en;
+        dcterms:description    "Mechanism underlying the association of FTO locus variants and obesity. The wild type T allele at rs1421085 in the FTO locus comprises a protein-DNA binding motif for ARID5B that represses the transcription of IRX3 and IRX5, which in turn de-represses a set of thermogenic genes, leading to mitochondrial thermogenesis and a browning adipocyte program. The C risk allele, on the other hand, disrupts the binding motif for ARID5B and activates a mesenchymal superenhancer and its targets, IRX3 and IRX5, which represses thermogenesis and leads to a shift to lipid storage, white adipocytes and, thus, increased risk of obesity. \n\n\nIn addition to the primary literature references associated with the pathway, also refer to this blog article providing additional perspective and drug discovery potential by Roger Plenge, \"Article of the week: ARID5B-FTO-IRX3/IRX5 regulatory axis for drug discovery in obesity (NEJM).\" August 21, 2015. http://www.plengegen.com/blog/arid5b-fto-irx3irx5-regulatory-axis-drug-discovery-obesity-nejm/";
+        dcterms:identifier     "WP3407";
+        dcterms:references     <https://identifiers.org/pubmed/26287747> , <https://identifiers.org/pubmed/26287746>;
+        cito:cites             <https://identifiers.org/pubmed/26287747> , <https://identifiers.org/pubmed/26287746>;
+        wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_9970>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP3407_r124812>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000013> , <http://purl.obolibrary.org/obo/DOID_9970> , <http://purl.obolibrary.org/obo/PW_0000540>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606>;
+        wp:organismName        "Homo sapiens";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000540> , <http://purl.obolibrary.org/obo/PW_0000013>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3407&oldid=r124812> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3407&oldid=r124812>;
+        foaf:page              <http://www.wikipathways.org/instance/WP3407_r124812> .
 
 <https://identifiers.org/ensembl/ENSG00000184058>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -49,8 +74,20 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000184058>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000184058";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3407/WP3407_rWP3407_r124812/DataNode/fb31e>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3407_r124812>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3407_r124812/DataNode/fb31e>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000184058> .
+
+<http://rdf.wikipathways.org/Pathway/WP3407_r124812/WP/Interaction/id3088f9b5>
+        rdf:type          wp:Binding , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3407_r124812>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3407_r124812/Interaction/id3088f9b5>;
+        wp:participants   <https://identifiers.org/ncbigene/79068> , <https://identifiers.org/ensembl/ENSG00000150347>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000150347>;
+        wp:target         <https://identifiers.org/ncbigene/79068> .
+
+<https://identifiers.org/wikipathways/WP3407>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP3407_r124812> .
 
 <https://identifiers.org/wikipathways/WP368>
         rdf:type            wp:Pathway , wp:DataNode;
@@ -58,8 +95,20 @@
         dc:identifier       <https://identifiers.org/wikipathways/WP368>;
         dc:source           "WikiPathways";
         dcterms:identifier  "WP368";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3407/WP3407_rWP3407_r124812/DataNode/bdea0>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3407_r124812>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3407_r124812/DataNode/bdea0>;
         foaf:page           <https://www.wikipathways.org/instance/WP368> .
+
+<https://identifiers.org/pubmed/26287747>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "26287747";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3407_r124812>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/26287747> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3407&oldid=r124812>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
 
 <https://identifiers.org/ensembl/ENSG00000150347>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -67,7 +116,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000150347>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000150347";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3407/WP3407_rWP3407_r124812/DataNode/c6fe8>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3407_r124812> , <http://rdf.wikipathways.org/Pathway/WP3407_r124812/WP/Interaction/id3088f9b5>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3407_r124812/DataNode/c6fe8>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000150347> .
 
 <https://identifiers.org/ensembl/ENSG00000176842>
@@ -76,19 +126,16 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000176842>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000176842";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3407/WP3407_rWP3407_r124812/DataNode/d7732>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3407_r124812>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3407_r124812/DataNode/d7732>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000176842> .
 
-<https://identifiers.org/wikipathways/WP3407/WP3407_rWP3407_r124812>
-        rdf:type             wp:Pathway , skos:Collection;
-        dc:identifier        <https://identifiers.org/wikipathways/WP3407/WP3407>;
-        dc:source            "WikiPathways";
-        dc:title             "FTO obesity variant mechanism"@en;
-        dcterms:description  "Mechanism underlying the association of FTO locus variants and obesity. The wild type T allele at rs1421085 in the FTO locus comprises a protein-DNA binding motif for ARID5B that represses the transcription of IRX3 and IRX5, which in turn de-represses a set of thermogenic genes, leading to mitochondrial thermogenesis and a browning adipocyte program. The C risk allele, on the other hand, disrupts the binding motif for ARID5B and activates a mesenchymal superenhancer and its targets, IRX3 and IRX5, which represses thermogenesis and leads to a shift to lipid storage, white adipocytes and, thus, increased risk of obesity. \n\n\nIn addition to the primary literature references associated with the pathway, also refer to this blog article providing additional perspective and drug discovery potential by Roger Plenge, \"Article of the week: ARID5B-FTO-IRX3/IRX5 regulatory axis for drug discovery in obesity (NEJM).\" August 21, 2015. http://www.plengegen.com/blog/arid5b-fto-irx3irx5-regulatory-axis-drug-discovery-obesity-nejm/";
-        dcterms:identifier   "WP3407/WP3407";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP3407/WP3407_rWP3407_r124812>;
-        wp:organismName      "Homo sapiens";
-        foaf:page            <http://www.wikipathways.org/instance/WP3407/WP3407_rWP3407_r124812> .
+<https://identifiers.org/pubmed/26287746>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "26287746";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3407_r124812>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/26287746> .
 
 <https://identifiers.org/ensembl/ENSG00000109424>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -96,7 +143,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000109424>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000109424";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3407/WP3407_rWP3407_r124812/DataNode/f7d14>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3407_r124812>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3407_r124812/DataNode/f7d14>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000109424> .
 
 <https://identifiers.org/ensembl/ENSG00000177508>
@@ -105,5 +153,10 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000177508>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000177508";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3407/WP3407_rWP3407_r124812/DataNode/e1668>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3407_r124812>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3407_r124812/DataNode/e1668>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000177508> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_9606>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9606" .

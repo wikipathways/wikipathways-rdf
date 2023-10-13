@@ -22,8 +22,22 @@
         dc:identifier       <https://identifiers.org/ncbigene/3558>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "3558";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4484/WP4484_rWP4484_r107333/DataNode/f5f57>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4484_r107333>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4484_r107333/DataNode/f5f57>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/3558> .
+
+<http://rdf.wikipathways.org/Pathway/WP4484_r107333/Complex/ad03a>
+        rdf:type          wp:Complex , wp:DataNode;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4484_r107333>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4484_r107333/Group/ad03a>;
+        wp:participants   <https://identifiers.org/ncbigene/3592> .
+
+<http://rdf.wikipathways.org/Pathway/WP4484_r107333/WP/Interaction/id533d00f2>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4484_r107333>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4484_r107333/Interaction/id533d00f2>;
+        wp:participants   <https://identifiers.org/ncbigene/7432>;
+        wp:target         <https://identifiers.org/ncbigene/7432> .
 
 <https://identifiers.org/ncbigene/7040>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -31,11 +45,36 @@
         dc:identifier       <https://identifiers.org/ncbigene/7040>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "7040";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4484/WP4484_rWP4484_r107333/DataNode/e0d5e>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4484_r107333>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4484_r107333/DataNode/e0d5e>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/7040> .
 
-<http://rdf.wikipathways.org/Pathway/WP4484/WP4484_rWP4484_r107333/WP/Interaction/id31bcbf95>
-        rdf:type  wp:Interaction .
+<http://purl.obolibrary.org/obo/NCBITaxon_9606>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9606" .
+
+<https://identifiers.org/wikipathways/WP4484_r107333>
+        rdf:type               wp:Pathway , skos:Collection;
+        dc:identifier          <https://identifiers.org/wikipathways/WP4484>;
+        dc:source              "WikiPathways";
+        dc:title               "Control of immune tolerance by vasoactive intestinal peptide"@en;
+        dcterms:description    "Control of immune tolerance by VIP controls immune homeostasis. \nVasoactive intestinal peptide (VIP) is released from nerve terminals (nervous source) and blood (endocrine source), or produced by T helper 2 (TH2) cells or macrophages (immune source) in response to antigenic and inflammatory stimulation. VIP induces immune tolerance and inhibits the autoimmune response through different non-excluding mechanisms. First, it induces the generation and differentiation of TH2-cell functions and decrease TH1-cell functions through direct actions on differentiating T cells, or indirectly by regulating antigen presenting cell (APC) functions. As a consequence, the inflammatory and autoimmune responses are impaired, and the anti-helminthic and atopic responses are increased, because the infiltration and activation of neutrophils and macrophages by interferon-γ (IFNγ) and the production of complement-activating IgG2 antibodies are avoided. Second, VIP impairs the co-stimulatory activity of APCs on effector T cells, inhibiting subsequent clonal expansion. This avoids the inflammatory response and its cytotoxic effect against the target tissue. Third, VIP induces the generation of regulatory T cells that suppress the activation of autoreactive T cells by producing interleukin-10 (IL-10) and transforming growth factor-β (TGFβ). This effect contributes to the maintenance of an anti-inflammatory state and restores immune tolerance.";
+        dcterms:identifier     "WP4484";
+        dcterms:references     <https://identifiers.org/pubmed/17186031>;
+        cito:cites             <https://identifiers.org/pubmed/17186031>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4484_r107333>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000355> , <http://purl.obolibrary.org/obo/PW_0000818>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606>;
+        wp:organismName        "Homo sapiens";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000355> , <http://purl.obolibrary.org/obo/PW_0000818>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4484&oldid=r107333> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4484&oldid=r107333>;
+        foaf:page              <http://www.wikipathways.org/instance/WP4484_r107333> .
+
+<http://rdf.wikipathways.org/Pathway/WP4484_r107333/ComplexBinding/ad03a>
+        rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4484_r107333>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4484_r107333/Group/ad03a>;
+        wp:participants   <https://identifiers.org/ncbigene/3592> , <http://rdf.wikipathways.org/Pathway/WP4484_r107333/Complex/ad03a> .
 
 <https://identifiers.org/ncbiprotein/AAA61095>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -43,8 +82,23 @@
         dc:identifier       <https://identifiers.org/ncbiprotein/AAA61095>;
         dc:source           "NCBI Protein";
         dcterms:identifier  "AAA61095";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4484/WP4484_rWP4484_r107333/DataNode/b220e>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4484_r107333/WP/Interaction/id31bcbf95> , <https://identifiers.org/wikipathways/WP4484_r107333>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4484_r107333/DataNode/b220e>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/protein/AAA61095> .
+
+<http://rdf.wikipathways.org/Pathway/WP4484_r107333/WP/Interaction/id1f12f338>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4484_r107333>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4484_r107333/Interaction/id1f12f338>;
+        wp:participants   <https://identifiers.org/ncbigene/7432>;
+        wp:source         <https://identifiers.org/ncbigene/7432> .
+
+<http://rdf.wikipathways.org/Pathway/WP4484_r107333/WP/Interaction/id21a7ac98>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4484_r107333>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4484_r107333/Interaction/id21a7ac98>;
+        wp:participants   <https://identifiers.org/ncbigene/7432>;
+        wp:target         <https://identifiers.org/ncbigene/7432> .
 
 <https://identifiers.org/ncbigene/940>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -52,8 +106,16 @@
         dc:identifier       <https://identifiers.org/ncbigene/940>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "940";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4484/WP4484_rWP4484_r107333/DataNode/f80af>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4484_r107333>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4484_r107333/DataNode/f80af>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/940> .
+
+<http://rdf.wikipathways.org/Pathway/WP4484_r107333/WP/Interaction/idb4a4f4f5>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4484_r107333>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4484_r107333/Interaction/idb4a4f4f5>;
+        wp:participants   <https://identifiers.org/ncbigene/7432>;
+        wp:target         <https://identifiers.org/ncbigene/7432> .
 
 <https://identifiers.org/ncbigene/3592>
         rdf:type            wp:DataNode , wp:GeneProduct;
@@ -61,7 +123,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/3592>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "3592";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4484/WP4484_rWP4484_r107333/DataNode/f6b0e> , <http://rdf.wikipathways.org/Pathway/WP4484/WP4484_rWP4484_r107333/DataNode/a57c4>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4484_r107333/Complex/ad03a> , <https://identifiers.org/wikipathways/WP4484_r107333>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4484_r107333/DataNode/f6b0e> , <http://rdf.wikipathways.org/Pathway/WP4484_r107333/DataNode/a57c4>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/3592> .
 
 <https://identifiers.org/ncbigene/355>
@@ -70,17 +133,29 @@
         dc:identifier       <https://identifiers.org/ncbigene/355>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "355";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4484/WP4484_rWP4484_r107333/DataNode/d62cd>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4484_r107333>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4484_r107333/DataNode/d62cd>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/355> .
 
+<http://rdf.wikipathways.org/Pathway/WP4484_r107333/Complex/ce877>
+        rdf:type          wp:Complex , wp:DataNode;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4484_r107333>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4484_r107333/Group/ce877>;
+        wp:participants   <https://identifiers.org/ncbigene/942> , <https://identifiers.org/ncbigene/941> .
+
 <https://identifiers.org/ncbigene/941>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "CD80";
         dc:identifier       <https://identifiers.org/ncbigene/941>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "941";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4484/WP4484_rWP4484_r107333/DataNode/c19e6>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4484_r107333/Complex/ce877> , <https://identifiers.org/wikipathways/WP4484_r107333>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4484_r107333/DataNode/c19e6>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/941> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4484&oldid=r107333>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
 
 <https://identifiers.org/ncbigene/3565>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -88,8 +163,13 @@
         dc:identifier       <https://identifiers.org/ncbigene/3565>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "3565";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4484/WP4484_rWP4484_r107333/DataNode/f792b>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4484_r107333>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4484_r107333/DataNode/f792b>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/3565> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4484&oldid=r107333>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
 
 <https://identifiers.org/ncbigene/942>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -97,19 +177,21 @@
         dc:identifier       <https://identifiers.org/ncbigene/942>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "942";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4484/WP4484_rWP4484_r107333/DataNode/e1074> , <http://rdf.wikipathways.org/Pathway/WP4484/WP4484_rWP4484_r107333/DataNode/ec754>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4484_r107333> , <http://rdf.wikipathways.org/Pathway/WP4484_r107333/Complex/ce877>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4484_r107333/DataNode/e1074> , <http://rdf.wikipathways.org/Pathway/WP4484_r107333/DataNode/ec754>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/942> .
 
-<https://identifiers.org/wikipathways/WP4484/WP4484_rWP4484_r107333>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP4484/WP4484>;
-        dc:source            "WikiPathways";
-        dc:title             "Control of immune tolerance by vasoactive intestinal peptide"@en;
-        dcterms:description  "Control of immune tolerance by VIP controls immune homeostasis. \nVasoactive intestinal peptide (VIP) is released from nerve terminals (nervous source) and blood (endocrine source), or produced by T helper 2 (TH2) cells or macrophages (immune source) in response to antigenic and inflammatory stimulation. VIP induces immune tolerance and inhibits the autoimmune response through different non-excluding mechanisms. First, it induces the generation and differentiation of TH2-cell functions and decrease TH1-cell functions through direct actions on differentiating T cells, or indirectly by regulating antigen presenting cell (APC) functions. As a consequence, the inflammatory and autoimmune responses are impaired, and the anti-helminthic and atopic responses are increased, because the infiltration and activation of neutrophils and macrophages by interferon-γ (IFNγ) and the production of complement-activating IgG2 antibodies are avoided. Second, VIP impairs the co-stimulatory activity of APCs on effector T cells, inhibiting subsequent clonal expansion. This avoids the inflammatory response and its cytotoxic effect against the target tissue. Third, VIP induces the generation of regulatory T cells that suppress the activation of autoreactive T cells by producing interleukin-10 (IL-10) and transforming growth factor-β (TGFβ). This effect contributes to the maintenance of an anti-inflammatory state and restores immune tolerance.";
-        dcterms:identifier   "WP4484/WP4484";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP4484/WP4484_rWP4484_r107333>;
-        wp:organismName      "Homo sapiens";
-        foaf:page            <http://www.wikipathways.org/instance/WP4484/WP4484_rWP4484_r107333> .
+<http://rdf.wikipathways.org/Pathway/WP4484_r107333/WP/Interaction/id31bcbf95>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4484_r107333>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4484_r107333/Interaction/id31bcbf95>;
+        wp:participants   <https://identifiers.org/ncbiprotein/AAA61095> , <https://identifiers.org/reactome/R-HSA-8951502> .
+
+<http://rdf.wikipathways.org/Pathway/WP4484_r107333/ComplexBinding/ce877>
+        rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4484_r107333>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4484_r107333/Group/ce877>;
+        wp:participants   <https://identifiers.org/ncbigene/942> , <https://identifiers.org/ncbigene/941> , <http://rdf.wikipathways.org/Pathway/WP4484_r107333/Complex/ce877> .
 
 <https://identifiers.org/ncbigene/1493>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -117,7 +199,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/1493>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "1493";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4484/WP4484_rWP4484_r107333/DataNode/c8073>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4484_r107333>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4484_r107333/DataNode/c8073>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/1493> .
 
 <https://identifiers.org/ncbigene/3458>
@@ -126,20 +209,33 @@
         dc:identifier       <https://identifiers.org/ncbigene/3458>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "3458";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4484/WP4484_rWP4484_r107333/DataNode/d36fc>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4484_r107333>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4484_r107333/DataNode/d36fc>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/3458> .
 
-<http://rdf.wikipathways.org/Pathway/WP4484/WP4484_rWP4484_r107333/WP/Interaction/id96e4e1f5>
-        rdf:type  wp:Interaction .
-
 <https://identifiers.org/reactome/R-HSA-8951502>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "MHCII";
         dc:identifier       <https://identifiers.org/reactome/R-HSA-8951502>;
         dc:source           "Reactome";
         dcterms:identifier  "R-HSA-8951502";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4484/WP4484_rWP4484_r107333/DataNode/f080c>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4484_r107333> , <http://rdf.wikipathways.org/Pathway/WP4484_r107333/WP/Interaction/id31bcbf95>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4484_r107333/DataNode/f080c>;
         foaf:page           <https://reactome.org/content/detail/R-HSA-8951502> .
+
+<https://identifiers.org/pubmed/17186031>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "17186031";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4484_r107333>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/17186031> .
+
+<http://rdf.wikipathways.org/Pathway/WP4484_r107333/WP/Interaction/idea272f17>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4484_r107333>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4484_r107333/Interaction/idea272f17>;
+        wp:participants   <https://identifiers.org/ncbigene/7432>;
+        wp:target         <https://identifiers.org/ncbigene/7432> .
 
 <https://identifiers.org/ncbigene/3567>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -147,8 +243,12 @@
         dc:identifier       <https://identifiers.org/ncbigene/3567>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "3567";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4484/WP4484_rWP4484_r107333/DataNode/bda2a>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4484_r107333>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4484_r107333/DataNode/bda2a>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/3567> .
+
+<https://identifiers.org/wikipathways/WP4484>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP4484_r107333> .
 
 <https://identifiers.org/ncbigene/7432>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -156,14 +256,16 @@
         dc:identifier       <https://identifiers.org/ncbigene/7432>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "7432";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4484/WP4484_rWP4484_r107333/DataNode/db9f1>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4484_r107333/WP/Interaction/idea272f17> , <http://rdf.wikipathways.org/Pathway/WP4484_r107333/WP/Interaction/id1f12f338> , <https://identifiers.org/wikipathways/WP4484_r107333> , <http://rdf.wikipathways.org/Pathway/WP4484_r107333/WP/Interaction/id533d00f2> , <http://rdf.wikipathways.org/Pathway/WP4484_r107333/WP/Interaction/idb4a4f4f5> , <http://rdf.wikipathways.org/Pathway/WP4484_r107333/WP/Interaction/id21a7ac98>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4484_r107333/DataNode/db9f1>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/7432> .
 
 <https://identifiers.org/ncbigene/3586>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "IL10";
         dc:identifier       <https://identifiers.org/ncbigene/3586>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "3586";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4484/WP4484_rWP4484_r107333/DataNode/e0b55> , <http://rdf.wikipathways.org/Pathway/WP4484/WP4484_rWP4484_r107333/DataNode/f83ca>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4484_r107333>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4484_r107333/DataNode/f83ca> , <http://rdf.wikipathways.org/Pathway/WP4484_r107333/DataNode/e0b55>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/3586> .

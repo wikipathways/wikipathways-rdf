@@ -16,61 +16,85 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/wb/C37A5.9>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "PRY-1";
-        dc:identifier       <https://identifiers.org/wb/C37A5.9>;
-        dc:source           "WormBase";
-        dcterms:identifier  "C37A5.9";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2888/WP2888_rWP2888_r118034/DataNode/a2060> , <http://rdf.wikipathways.org/Pathway/WP2888/WP2888_rWP2888_r118034/DataNode/d648c>;
-        foaf:page           <http://www.wormbase.org/db/gene/gene?name=C37A5.9;class=Gene> .
+<https://identifiers.org/pubmed/1363076>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "1363076";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/idee5213a9>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/1363076> .
+
+<https://identifiers.org/wikipathways/WP2888_r118034>
+        rdf:type               skos:Collection , wp:Pathway;
+        dc:identifier          <https://identifiers.org/wikipathways/WP2888>;
+        dc:source              "WikiPathways";
+        dc:title               "Wnt signaling - Q neuroblast migration"@en;
+        dcterms:description    "One of the functions of the Wnt-signaling pathway in the nematode Caenorhabditis elegans (C. elegans) is to control the proper anterior-posterior axis migration of descendants of the QL and QR neuroblasts. In wild type animals, Wnt signaling is activated in the QL neuroblast to induce expression of the Hox gene mab-5 resulting in the appropriate posterior migration of QL descendants. Any disruption in the Wnt signaling pathway leading to mab-5 expression results in erroneous anterior migration of QL neuroblast descendants.";
+        dcterms:identifier     "WP2888";
+        cito:cites             <https://identifiers.org/pubmed/1363076> , <https://identifiers.org/pubmed/8898225> , <https://identifiers.org/pubmed/12210516> , <https://identifiers.org/pubmed/3308403> , <https://identifiers.org/pubmed/17601533> , <https://identifiers.org/pubmed/9834184> , <https://identifiers.org/pubmed/1346230> , <https://identifiers.org/pubmed/3731276> , <https://identifiers.org/pubmed/12023307>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP2888_r118034>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000008>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_6239>;
+        wp:organismName        "Caenorhabditis elegans";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000008>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP2888&oldid=r118034> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP2888&oldid=r118034>;
+        foaf:page              <http://www.wikipathways.org/instance/WP2888_r118034> .
+
+<http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/ide47f0ec9>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2888_r118034>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2888_r118034/Interaction/ide47f0ec9>;
+        wp:participants   <https://identifiers.org/wb/C08C3.3>;
+        wp:source         <https://identifiers.org/wb/C08C3.3>;
+        wp:target         <https://identifiers.org/wb/C08C3.3> .
 
 <https://identifiers.org/wb/W08D2.1>
-        rdf:type            wp:Protein , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Protein;
         rdfs:label          "EGL-20/Wnt";
         dc:identifier       <https://identifiers.org/wb/W08D2.1>;
         dc:source           "WormBase";
         dcterms:identifier  "W08D2.1";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2888/WP2888_rWP2888_r118034/DataNode/b525d> , <http://rdf.wikipathways.org/Pathway/WP2888/WP2888_rWP2888_r118034/DataNode/c4e84>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/ide6928eb3> , <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/id15007938> , <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/idd72729a1> , <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/idf1c4da7d> , <https://identifiers.org/wikipathways/WP2888_r118034>;
+        dcterms:references  <https://identifiers.org/pubmed/8898225>;
+        cito:cites          <https://identifiers.org/pubmed/8898225>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2888_r118034/DataNode/c4e84> , <http://rdf.wikipathways.org/Pathway/WP2888_r118034/DataNode/b525d>;
         foaf:page           <http://www.wormbase.org/db/gene/gene?name=W08D2.1;class=Gene> .
 
-<https://identifiers.org/wb/WBGene00003241>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "MIG-5";
-        dc:identifier       <https://identifiers.org/wb/WBGene00003241>;
-        dc:source           "WormBase";
-        dcterms:identifier  "WBGene00003241";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2888/WP2888_rWP2888_r118034/DataNode/f6ec2>;
-        foaf:page           <http://www.wormbase.org/db/gene/gene?name=WBGene00003241;class=Gene> .
+<http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/ide6928eb3>
+        rdf:type            wp:Interaction , wp:DirectedInteraction , wp:Conversion;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2888_r118034>;
+        dcterms:references  <https://identifiers.org/pubmed/8898225>;
+        cito:cites          <https://identifiers.org/pubmed/8898225>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2888_r118034/Interaction/ide6928eb3>;
+        wp:participants     <https://identifiers.org/wb/W08D2.1>;
+        wp:source           <https://identifiers.org/wb/W08D2.1>;
+        wp:target           <https://identifiers.org/wb/W08D2.1> .
 
-<https://identifiers.org/wb/Y71F9B.5>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "LIN-17/Frizzled";
-        dc:identifier       <https://identifiers.org/wb/Y71F9B.5>;
-        dc:source           "WormBase";
-        dcterms:identifier  "Y71F9B.5";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2888/WP2888_rWP2888_r118034/DataNode/e9f28>;
-        foaf:page           <http://www.wormbase.org/db/gene/gene?name=Y71F9B.5;class=Gene> .
+<http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/idf1c4da7d>
+        rdf:type            wp:Stimulation , wp:Interaction , wp:DirectedInteraction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2888_r118034>;
+        dcterms:references  <https://identifiers.org/pubmed/12210516>;
+        cito:cites          <https://identifiers.org/pubmed/12210516>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2888_r118034/Interaction/idf1c4da7d>;
+        wp:participants     <https://identifiers.org/wb/W08D2.1> , <https://identifiers.org/wb/Y34D9B.1>;
+        wp:source           <https://identifiers.org/wb/W08D2.1>;
+        wp:target           <https://identifiers.org/wb/Y34D9B.1> .
 
-<https://identifiers.org/wb/C08C3.3>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "mab-5/Hox" , "MAB-5/Hox";
-        dc:identifier       <https://identifiers.org/wb/C08C3.3>;
-        dc:source           "WormBase";
-        dcterms:identifier  "C08C3.3";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2888/WP2888_rWP2888_r118034/DataNode/db574> , <http://rdf.wikipathways.org/Pathway/WP2888/WP2888_rWP2888_r118034/DataNode/dfc80> , <http://rdf.wikipathways.org/Pathway/WP2888/WP2888_rWP2888_r118034/DataNode/a8e98> , <http://rdf.wikipathways.org/Pathway/WP2888/WP2888_rWP2888_r118034/DataNode/f8036>;
-        foaf:page           <http://www.wormbase.org/db/gene/gene?name=C08C3.3;class=Gene> .
+<https://identifiers.org/pubmed/12023307>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "12023307";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/db617> , <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/idf214930b>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/12023307> .
 
-<https://identifiers.org/wikipathways/WP2888/WP2888_rWP2888_r118034>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP2888/WP2888>;
-        dc:source            "WikiPathways";
-        dc:title             "Wnt signaling - Q neuroblast migration"@en;
-        dcterms:description  "One of the functions of the Wnt-signaling pathway in the nematode Caenorhabditis elegans (C. elegans) is to control the proper anterior-posterior axis migration of descendants of the QL and QR neuroblasts. In wild type animals, Wnt signaling is activated in the QL neuroblast to induce expression of the Hox gene mab-5 resulting in the appropriate posterior migration of QL descendants. Any disruption in the Wnt signaling pathway leading to mab-5 expression results in erroneous anterior migration of QL neuroblast descendants.";
-        dcterms:identifier   "WP2888/WP2888";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP2888/WP2888_rWP2888_r118034>;
-        wp:organismName      "Caenorhabditis elegans";
-        foaf:page            <http://www.wikipathways.org/instance/WP2888/WP2888_rWP2888_r118034> .
+<http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/idd72729a1>
+        rdf:type            wp:Stimulation , wp:Interaction , wp:DirectedInteraction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2888_r118034>;
+        dcterms:references  <https://identifiers.org/pubmed/12210516>;
+        cito:cites          <https://identifiers.org/pubmed/12210516>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2888_r118034/Interaction/idd72729a1>;
+        wp:participants     <https://identifiers.org/wb/Y71F9B.5> , <https://identifiers.org/wb/W08D2.1>;
+        wp:source           <https://identifiers.org/wb/W08D2.1>;
+        wp:target           <https://identifiers.org/wb/Y71F9B.5> .
 
 <https://identifiers.org/wb/Y34D9B.1>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -78,8 +102,164 @@
         dc:identifier       <https://identifiers.org/wb/Y34D9B.1>;
         dc:source           "WormBase";
         dcterms:identifier  "Y34D9B.1";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2888/WP2888_rWP2888_r118034/DataNode/d0ed9>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/id7cac3afe> , <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/idf1c4da7d> , <https://identifiers.org/wikipathways/WP2888_r118034>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2888_r118034/DataNode/d0ed9>;
         foaf:page           <http://www.wormbase.org/db/gene/gene?name=Y34D9B.1;class=Gene> .
+
+<http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/id7cac3afe>
+        rdf:type            wp:Stimulation , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2888_r118034>;
+        dcterms:references  <https://identifiers.org/pubmed/8898225> , <https://identifiers.org/pubmed/3308403>;
+        cito:cites          <https://identifiers.org/pubmed/3308403> , <https://identifiers.org/pubmed/8898225>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2888_r118034/Interaction/id7cac3afe>;
+        wp:participants     <https://identifiers.org/wb/Y34D9B.1> , <https://identifiers.org/wb/WBGene00003241>;
+        wp:source           <https://identifiers.org/wb/Y34D9B.1>;
+        wp:target           <https://identifiers.org/wb/WBGene00003241> .
+
+<http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/id7a9b41bd>
+        rdf:type            wp:Stimulation , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2888_r118034>;
+        dcterms:references  <https://identifiers.org/pubmed/3731276> , <https://identifiers.org/pubmed/1346230> , <https://identifiers.org/pubmed/8898225>;
+        cito:cites          <https://identifiers.org/pubmed/3731276> , <https://identifiers.org/pubmed/8898225> , <https://identifiers.org/pubmed/1346230>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2888_r118034/Interaction/id7a9b41bd>;
+        wp:participants     <https://identifiers.org/wb/C08C3.3>;
+        wp:source           <https://identifiers.org/wb/C08C3.3> .
+
+<https://identifiers.org/pubmed/17601533>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "17601533";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/db617> , <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/idf214930b>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/17601533> .
+
+<http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/id15007938>
+        rdf:type            wp:Stimulation , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2888_r118034>;
+        dcterms:references  <https://identifiers.org/pubmed/8898225> , <https://identifiers.org/pubmed/12210516>;
+        cito:cites          <https://identifiers.org/pubmed/12210516> , <https://identifiers.org/pubmed/8898225>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2888_r118034/Interaction/id15007938>;
+        wp:participants     <https://identifiers.org/wb/W08D2.1> , <https://identifiers.org/wb/R06B9.6>;
+        wp:source           <https://identifiers.org/wb/R06B9.6>;
+        wp:target           <https://identifiers.org/wb/W08D2.1> .
+
+<https://identifiers.org/pubmed/9834184>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "9834184";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/db617> , <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/id7ee250dd>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/9834184> .
+
+<https://identifiers.org/pubmed/1346230>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "1346230";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/id7a9b41bd>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/1346230> .
+
+<http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/idaa2d56dd>
+        rdf:type          wp:Stimulation , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2888_r118034>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2888_r118034/Interaction/idaa2d56dd>;
+        wp:participants   <https://identifiers.org/wb/C08C3.3> , <https://identifiers.org/wb/C54D1.6>;
+        wp:source         <https://identifiers.org/wb/C54D1.6>;
+        wp:target         <https://identifiers.org/wb/C08C3.3> .
+
+<https://identifiers.org/wb/Y71F9B.5>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "LIN-17/Frizzled";
+        dc:identifier       <https://identifiers.org/wb/Y71F9B.5>;
+        dc:source           "WormBase";
+        dcterms:identifier  "Y71F9B.5";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/idd72729a1> , <https://identifiers.org/wikipathways/WP2888_r118034> , <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/idee5213a9>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2888_r118034/DataNode/e9f28>;
+        foaf:page           <http://www.wormbase.org/db/gene/gene?name=Y71F9B.5;class=Gene> .
+
+<https://identifiers.org/wb/C37A5.9>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "PRY-1";
+        dc:identifier       <https://identifiers.org/wb/C37A5.9>;
+        dc:source           "WormBase";
+        dcterms:identifier  "C37A5.9";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/idf214930b> , <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/db617> , <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/ide268096c> , <https://identifiers.org/wikipathways/WP2888_r118034>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2888_r118034/DataNode/a2060> , <http://rdf.wikipathways.org/Pathway/WP2888_r118034/DataNode/d648c>;
+        foaf:page           <http://www.wormbase.org/db/gene/gene?name=C37A5.9;class=Gene> .
+
+<https://identifiers.org/pubmed/12210516>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "12210516";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/idf214930b> , <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/idf1c4da7d> , <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/id15007938> , <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/idd72729a1>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/12210516> .
+
+<https://identifiers.org/pubmed/3731276>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "3731276";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/id7a9b41bd>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/3731276> .
+
+<http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/db617>
+        rdf:type            wp:DirectedInteraction , wp:Interaction , wp:Inhibition;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2888_r118034>;
+        dcterms:references  <https://identifiers.org/pubmed/17601533> , <https://identifiers.org/pubmed/9834184> , <https://identifiers.org/pubmed/12023307>;
+        cito:cites          <https://identifiers.org/pubmed/9834184> , <https://identifiers.org/pubmed/12023307> , <https://identifiers.org/pubmed/17601533>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2888_r118034/Interaction/db617>;
+        wp:participants     <https://identifiers.org/wb/C54D1.6> , <https://identifiers.org/wb/C37A5.9>;
+        wp:source           <https://identifiers.org/wb/C37A5.9>;
+        wp:target           <https://identifiers.org/wb/C54D1.6> .
+
+<https://identifiers.org/wb/WBGene00003241>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "MIG-5";
+        dc:identifier       <https://identifiers.org/wb/WBGene00003241>;
+        dc:source           "WormBase";
+        dcterms:identifier  "WBGene00003241";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/id7cac3afe> , <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/idee5213a9> , <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/idf214930b> , <https://identifiers.org/wikipathways/WP2888_r118034>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2888_r118034/DataNode/f6ec2>;
+        foaf:page           <http://www.wormbase.org/db/gene/gene?name=WBGene00003241;class=Gene> .
+
+<http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/id7ee250dd>
+        rdf:type            wp:Stimulation , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2888_r118034>;
+        dcterms:references  <https://identifiers.org/pubmed/9834184>;
+        cito:cites          <https://identifiers.org/pubmed/9834184>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2888_r118034/Interaction/id7ee250dd>;
+        wp:participants     <https://identifiers.org/wb/C54D1.6> , <https://identifiers.org/wb/C08C3.3>;
+        wp:source           <https://identifiers.org/wb/C54D1.6>;
+        wp:target           <https://identifiers.org/wb/C08C3.3> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP2888&oldid=r118034>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_6239>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "6239" .
+
+<http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/id990ab31d>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2888_r118034>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2888_r118034/Interaction/id990ab31d>;
+        wp:participants   <https://identifiers.org/wb/C08C3.3>;
+        wp:source         <https://identifiers.org/wb/C08C3.3>;
+        wp:target         <https://identifiers.org/wb/C08C3.3> .
+
+<http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/idf214930b>
+        rdf:type            wp:Interaction , wp:DirectedInteraction , wp:Inhibition;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2888_r118034>;
+        dcterms:references  <https://identifiers.org/pubmed/12023307> , <https://identifiers.org/pubmed/12210516> , <https://identifiers.org/pubmed/17601533>;
+        cito:cites          <https://identifiers.org/pubmed/12210516> , <https://identifiers.org/pubmed/17601533> , <https://identifiers.org/pubmed/12023307>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2888_r118034/Interaction/idf214930b>;
+        wp:participants     <https://identifiers.org/wb/C37A5.9> , <https://identifiers.org/wb/WBGene00003241>;
+        wp:source           <https://identifiers.org/wb/WBGene00003241>;
+        wp:target           <https://identifiers.org/wb/C37A5.9> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP2888&oldid=r118034>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<https://identifiers.org/wikipathways/WP2888>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP2888_r118034> .
 
 <https://identifiers.org/wb/R06B9.6>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -87,14 +267,58 @@
         dc:identifier       <https://identifiers.org/wb/R06B9.6>;
         dc:source           "WormBase";
         dcterms:identifier  "R06B9.6";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2888/WP2888_rWP2888_r118034/DataNode/f037f>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/id15007938> , <https://identifiers.org/wikipathways/WP2888_r118034>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2888_r118034/DataNode/f037f>;
         foaf:page           <http://www.wormbase.org/db/gene/gene?name=R06B9.6;class=Gene> .
 
 <https://identifiers.org/wb/C54D1.6>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "BAR-1/ beta-Catenin";
         dc:identifier       <https://identifiers.org/wb/C54D1.6>;
         dc:source           "WormBase";
         dcterms:identifier  "C54D1.6";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2888/WP2888_rWP2888_r118034/DataNode/e5a32> , <http://rdf.wikipathways.org/Pathway/WP2888/WP2888_rWP2888_r118034/DataNode/cedf6>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/idaa2d56dd> , <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/ide268096c> , <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/db617> , <https://identifiers.org/wikipathways/WP2888_r118034> , <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/id7ee250dd>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2888_r118034/DataNode/e5a32> , <http://rdf.wikipathways.org/Pathway/WP2888_r118034/DataNode/cedf6>;
         foaf:page           <http://www.wormbase.org/db/gene/gene?name=C54D1.6;class=Gene> .
+
+<https://identifiers.org/pubmed/3308403>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "3308403";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/id7cac3afe>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/3308403> .
+
+<https://identifiers.org/wb/C08C3.3>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "mab-5/Hox" , "MAB-5/Hox";
+        dc:identifier       <https://identifiers.org/wb/C08C3.3>;
+        dc:source           "WormBase";
+        dcterms:identifier  "C08C3.3";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/id990ab31d> , <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/ide47f0ec9> , <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/idaa2d56dd> , <https://identifiers.org/wikipathways/WP2888_r118034> , <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/id7a9b41bd> , <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/id7ee250dd>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2888_r118034/DataNode/dfc80> , <http://rdf.wikipathways.org/Pathway/WP2888_r118034/DataNode/db574> , <http://rdf.wikipathways.org/Pathway/WP2888_r118034/DataNode/a8e98> , <http://rdf.wikipathways.org/Pathway/WP2888_r118034/DataNode/f8036>;
+        foaf:page           <http://www.wormbase.org/db/gene/gene?name=C08C3.3;class=Gene> .
+
+<https://identifiers.org/pubmed/8898225>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "8898225";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/idee5213a9> , <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/id7cac3afe> , <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/id15007938> , <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/ide6928eb3> , <http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/id7a9b41bd> , <https://identifiers.org/wb/W08D2.1>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/8898225> .
+
+<http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/idee5213a9>
+        rdf:type            wp:Interaction , wp:DirectedInteraction , wp:Stimulation;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2888_r118034>;
+        dcterms:references  <https://identifiers.org/pubmed/1363076> , <https://identifiers.org/pubmed/8898225>;
+        cito:cites          <https://identifiers.org/pubmed/8898225> , <https://identifiers.org/pubmed/1363076>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2888_r118034/Interaction/idee5213a9>;
+        wp:participants     <https://identifiers.org/wb/WBGene00003241> , <https://identifiers.org/wb/Y71F9B.5>;
+        wp:source           <https://identifiers.org/wb/Y71F9B.5>;
+        wp:target           <https://identifiers.org/wb/WBGene00003241> .
+
+<http://rdf.wikipathways.org/Pathway/WP2888_r118034/WP/Interaction/ide268096c>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2888_r118034>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2888_r118034/Interaction/ide268096c>;
+        wp:participants   <https://identifiers.org/wb/C54D1.6> , <https://identifiers.org/wb/C37A5.9>;
+        wp:source         <https://identifiers.org/wb/C37A5.9>;
+        wp:target         <https://identifiers.org/wb/C54D1.6> .

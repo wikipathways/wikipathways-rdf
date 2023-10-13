@@ -16,14 +16,8 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/ncbigene/3716>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "JAK1";
-        dc:identifier       <https://identifiers.org/ncbigene/3716>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "3716";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2113/WP2113_rWP2113_r105848/DataNode/e5c12>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/3716> .
+<https://identifiers.org/wikipathways/WP2113>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP2113_r105848> .
 
 <https://identifiers.org/ncbigene/7297>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -31,64 +25,34 @@
         dc:identifier       <https://identifiers.org/ncbigene/7297>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "7297";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2113/WP2113_rWP2113_r105848/DataNode/c88d5>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2113_r105848>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2113_r105848/DataNode/c88d5>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/7297> .
 
-<https://identifiers.org/wikipathways/WP2113/WP2113_rWP2113_r105848>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP2113/WP2113>;
-        dc:source            "WikiPathways";
-        dc:title             "Type III interferon signaling"@en;
-        dcterms:description  "The recently identified type III interferon group consists of three IFN-λ (lambda) genes encoding molecules called IFN-λ1, IFN-λ2 and IFN-λ3 (also called IL29, IL28A and IL28B respectively). These IFNs signal through a receptor complex consisting of IL10R2 (also called CRF2-4) and IFNLR1 (also called CRF2-12).\n\nProteins on this pathway have targeted assays available via the [https://assays.cancer.gov/available_assays?wp_id=WP2113 CPTAC Assay Portal].";
-        dcterms:identifier   "WP2113/WP2113";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP2113/WP2113_rWP2113_r105848>;
-        wp:organismName      "Homo sapiens";
-        foaf:page            <http://www.wikipathways.org/instance/WP2113/WP2113_rWP2113_r105848> .
+<https://identifiers.org/wikipathways/WP2113_r105848>
+        rdf:type               wp:Pathway , skos:Collection;
+        dc:identifier          <https://identifiers.org/wikipathways/WP2113>;
+        dc:source              "WikiPathways";
+        dc:title               "Type III interferon signaling"@en;
+        dcterms:description    "The recently identified type III interferon group consists of three IFN-λ (lambda) genes encoding molecules called IFN-λ1, IFN-λ2 and IFN-λ3 (also called IL29, IL28A and IL28B respectively). These IFNs signal through a receptor complex consisting of IL10R2 (also called CRF2-4) and IFNLR1 (also called CRF2-12).\n\nProteins on this pathway have targeted assays available via the [https://assays.cancer.gov/available_assays?wp_id=WP2113 CPTAC Assay Portal].";
+        dcterms:identifier     "WP2113";
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP2113_r105848>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000892> , <http://purl.obolibrary.org/obo/PW_0000893> , <http://purl.obolibrary.org/obo/PW_0000209> , <http://purl.obolibrary.org/obo/PW_0000891>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606>;
+        wp:organismName        "Homo sapiens";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000893> , <http://purl.obolibrary.org/obo/PW_0000892> , <http://purl.obolibrary.org/obo/PW_0000891> , <http://purl.obolibrary.org/obo/PW_0000209>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP2113&oldid=r105848> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP2113&oldid=r105848>;
+        foaf:page              <http://www.wikipathways.org/instance/WP2113_r105848> .
 
-<https://identifiers.org/ncbigene/282616>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "IL28A";
-        dc:identifier       <https://identifiers.org/ncbigene/282616>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "282616";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2113/WP2113_rWP2113_r105848/DataNode/eb7e9>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/282616> .
+<http://purl.obolibrary.org/obo/NCBITaxon_9606>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9606" .
 
-<https://identifiers.org/ncbigene/3588>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "IL10RB";
-        dc:identifier       <https://identifiers.org/ncbigene/3588>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "3588";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2113/WP2113_rWP2113_r105848/DataNode/a02a0>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/3588> .
-
-<https://identifiers.org/ncbigene/6773>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "STAT2";
-        dc:identifier       <https://identifiers.org/ncbigene/6773>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "6773";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2113/WP2113_rWP2113_r105848/DataNode/c38be>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/6773> .
-
-<https://identifiers.org/ncbigene/282618>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "IL29";
-        dc:identifier       <https://identifiers.org/ncbigene/282618>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "282618";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2113/WP2113_rWP2113_r105848/DataNode/d26ec>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/282618> .
-
-<https://identifiers.org/ncbigene/163702>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "IL28RA";
-        dc:identifier       <https://identifiers.org/ncbigene/163702>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "163702";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2113/WP2113_rWP2113_r105848/DataNode/f78d0>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/163702> .
+<http://rdf.wikipathways.org/Pathway/WP2113_r105848/ComplexBinding/c9062>
+        rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2113_r105848>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2113_r105848/Group/c9062>;
+        wp:participants   <https://identifiers.org/ncbigene/6772> , <http://rdf.wikipathways.org/Pathway/WP2113_r105848/Complex/c9062> .
 
 <https://identifiers.org/ncbigene/10379>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -96,8 +60,25 @@
         dc:identifier       <https://identifiers.org/ncbigene/10379>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "10379";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2113/WP2113_rWP2113_r105848/DataNode/fdbcc>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2113_r105848>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2113_r105848/DataNode/fdbcc>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/10379> .
+
+<https://identifiers.org/ncbigene/3588>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "IL10RB";
+        dc:identifier       <https://identifiers.org/ncbigene/3588>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "3588";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2113_r105848>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2113_r105848/DataNode/a02a0>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/3588> .
+
+<http://rdf.wikipathways.org/Pathway/WP2113_r105848/Complex/c9062>
+        rdf:type          wp:Complex , wp:DataNode;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2113_r105848>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2113_r105848/Group/c9062>;
+        wp:participants   <https://identifiers.org/ncbigene/6772> .
 
 <https://identifiers.org/ncbigene/6772>
         rdf:type            wp:DataNode , wp:GeneProduct;
@@ -105,8 +86,46 @@
         dc:identifier       <https://identifiers.org/ncbigene/6772>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "6772";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2113/WP2113_rWP2113_r105848/DataNode/eaf54> , <http://rdf.wikipathways.org/Pathway/WP2113/WP2113_rWP2113_r105848/DataNode/bb515> , <http://rdf.wikipathways.org/Pathway/WP2113/WP2113_rWP2113_r105848/DataNode/b7ba1>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2113_r105848> , <http://rdf.wikipathways.org/Pathway/WP2113_r105848/Complex/c9062>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2113_r105848/DataNode/eaf54> , <http://rdf.wikipathways.org/Pathway/WP2113_r105848/DataNode/b7ba1> , <http://rdf.wikipathways.org/Pathway/WP2113_r105848/DataNode/bb515>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/6772> .
+
+<http://rdf.wikipathways.org/Pathway/WP2113_r105848/WP/Interaction/id7ddc5757>
+        rdf:type          wp:Binding , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2113_r105848>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2113_r105848/Interaction/id7ddc5757>;
+        wp:participants   <https://identifiers.org/ncbigene/282616>;
+        wp:source         <https://identifiers.org/ncbigene/282616> .
+
+<https://identifiers.org/ncbigene/282616>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "IL28A";
+        dc:identifier       <https://identifiers.org/ncbigene/282616>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "282616";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2113_r105848> , <http://rdf.wikipathways.org/Pathway/WP2113_r105848/WP/Interaction/id7ddc5757>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2113_r105848/DataNode/eb7e9>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/282616> .
+
+<https://identifiers.org/ncbigene/3716>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "JAK1";
+        dc:identifier       <https://identifiers.org/ncbigene/3716>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "3716";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2113_r105848>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2113_r105848/DataNode/e5c12>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/3716> .
+
+<https://identifiers.org/ncbigene/6773>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "STAT2";
+        dc:identifier       <https://identifiers.org/ncbigene/6773>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "6773";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2113_r105848>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2113_r105848/DataNode/c38be>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/6773> .
 
 <https://identifiers.org/ncbigene/282617>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -114,5 +133,48 @@
         dc:identifier       <https://identifiers.org/ncbigene/282617>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "282617";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2113/WP2113_rWP2113_r105848/DataNode/caf9d>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2113_r105848/WP/Interaction/idce034040> , <https://identifiers.org/wikipathways/WP2113_r105848>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2113_r105848/DataNode/caf9d>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/282617> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP2113&oldid=r105848>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<https://identifiers.org/ncbigene/163702>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "IL28RA";
+        dc:identifier       <https://identifiers.org/ncbigene/163702>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "163702";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2113_r105848>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2113_r105848/DataNode/f78d0>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/163702> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP2113&oldid=r105848>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<https://identifiers.org/ncbigene/282618>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "IL29";
+        dc:identifier       <https://identifiers.org/ncbigene/282618>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "282618";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2113_r105848> , <http://rdf.wikipathways.org/Pathway/WP2113_r105848/WP/Interaction/idc2022868>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2113_r105848/DataNode/d26ec>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/282618> .
+
+<http://rdf.wikipathways.org/Pathway/WP2113_r105848/WP/Interaction/idc2022868>
+        rdf:type          wp:Binding , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2113_r105848>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2113_r105848/Interaction/idc2022868>;
+        wp:participants   <https://identifiers.org/ncbigene/282618>;
+        wp:source         <https://identifiers.org/ncbigene/282618> .
+
+<http://rdf.wikipathways.org/Pathway/WP2113_r105848/WP/Interaction/idce034040>
+        rdf:type          wp:Binding , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2113_r105848>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2113_r105848/Interaction/idce034040>;
+        wp:participants   <https://identifiers.org/ncbigene/282617>;
+        wp:source         <https://identifiers.org/ncbigene/282617> .

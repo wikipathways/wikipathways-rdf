@@ -16,22 +16,24 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/ensembl/ENSG00000159593>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "NAE1";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000159593>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000159593";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4860/WP4860_rWP4860_r124635/DataNode/d10c6>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000159593> .
+<https://identifiers.org/wikidata/Q89227548>
+        rdf:type            wp:Protein , wp:DataNode;
+        rdfs:label          "orf10";
+        dc:identifier       <https://identifiers.org/wikidata/Q89227548>;
+        dc:source           "Wikidata";
+        dcterms:identifier  "Q89227548";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4860_r124635> , <http://rdf.wikipathways.org/Pathway/WP4860_r124635/Complex/d5d70>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4860_r124635/DataNode/cb26a>;
+        foaf:page           <https://scholia.toolforge.org/Q89227548> .
 
 <https://identifiers.org/ensembl/ENSG00000103363>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "ELOB";
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000103363>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000103363";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4860/WP4860_rWP4860_r124635/DataNode/e4a09>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4860_r124635/Complex/d5d70> , <https://identifiers.org/wikipathways/WP4860_r124635>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4860_r124635/DataNode/e4a09>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000103363> .
 
 <https://identifiers.org/wikidata/Q25100575>
@@ -40,17 +42,9 @@
         dc:identifier       <https://identifiers.org/wikidata/Q25100575>;
         dc:source           "Wikidata";
         dcterms:identifier  "Q25100575";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4860/WP4860_rWP4860_r124635/DataNode/dda75>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4860_r124635>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4860_r124635/DataNode/dda75>;
         foaf:page           <https://scholia.toolforge.org/Q25100575> .
-
-<https://identifiers.org/wikidata/Q89227548>
-        rdf:type            wp:Protein , wp:DataNode;
-        rdfs:label          "orf10";
-        dc:identifier       <https://identifiers.org/wikidata/Q89227548>;
-        dc:source           "Wikidata";
-        dcterms:identifier  "Q89227548";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4860/WP4860_rWP4860_r124635/DataNode/cb26a>;
-        foaf:page           <https://scholia.toolforge.org/Q89227548> .
 
 <https://identifiers.org/wikipathways/WP183>
         rdf:type            wp:Pathway , wp:DataNode;
@@ -58,26 +52,42 @@
         dc:identifier       <https://identifiers.org/wikipathways/WP183>;
         dc:source           "WikiPathways";
         dcterms:identifier  "WP183";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4860/WP4860_rWP4860_r124635/DataNode/e5bba>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4860_r124635/WP/Interaction/id92c39589> , <https://identifiers.org/wikipathways/WP4860_r124635>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4860_r124635/DataNode/e5bba>;
         foaf:page           <https://www.wikipathways.org/instance/WP183> .
 
-<https://identifiers.org/ensembl/ENSG00000162378>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "ZYG11B";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000162378>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000162378";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4860/WP4860_rWP4860_r124635/DataNode/b75da>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000162378> .
+<http://purl.obolibrary.org/obo/NCBITaxon_9606>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9606" .
+
+<https://identifiers.org/pubmed/17304241>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "17304241";
+        dcterms:isPartOf    <https://identifiers.org/ensembl/ENSG00000162378>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/17304241> .
+
+<http://rdf.wikipathways.org/Pathway/WP4860_r124635/ComplexBinding/d5d70>
+        rdf:type          wp:Binding , wp:ComplexBinding , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4860_r124635>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4860_r124635/Group/d5d70>;
+        wp:participants   <https://identifiers.org/wikidata/Q89227548> , <https://identifiers.org/ensembl/ENSG00000100387> , <https://identifiers.org/ensembl/ENSG00000103363> , <http://rdf.wikipathways.org/Pathway/WP4860_r124635/Complex/d5d70> , <https://identifiers.org/ensembl/ENSG00000154582> , <https://identifiers.org/ensembl/ENSG00000067955> , <https://identifiers.org/ensembl/ENSG00000162378> , <https://identifiers.org/ensembl/ENSG00000108094> .
 
 <https://identifiers.org/ensembl/ENSG00000154582>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "ELOC";
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000154582>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000154582";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4860/WP4860_rWP4860_r124635/DataNode/e916f>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4860_r124635> , <http://rdf.wikipathways.org/Pathway/WP4860_r124635/Complex/d5d70>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4860_r124635/DataNode/e916f>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000154582> .
+
+<http://rdf.wikipathways.org/Pathway/WP4860_r124635/Complex/d5d70>
+        rdf:type          wp:DataNode , wp:Complex;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4860_r124635>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4860_r124635/Group/d5d70>;
+        wp:participants   <https://identifiers.org/wikidata/Q89227548> , <https://identifiers.org/ensembl/ENSG00000108094> , <https://identifiers.org/ensembl/ENSG00000103363> , <https://identifiers.org/ensembl/ENSG00000100387> , <https://identifiers.org/ensembl/ENSG00000154582> , <https://identifiers.org/ensembl/ENSG00000067955> , <https://identifiers.org/ensembl/ENSG00000162378> .
 
 <https://identifiers.org/ensembl/ENSG00000144744>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -85,43 +95,123 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000144744>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000144744";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4860/WP4860_rWP4860_r124635/DataNode/a87a8>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4860_r124635> , <http://rdf.wikipathways.org/Pathway/WP4860_r124635/Complex/ebe43>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4860_r124635/DataNode/a87a8>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000144744> .
 
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4860&oldid=r124635>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<http://rdf.wikipathways.org/Pathway/WP4860_r124635/WP/Interaction/id92c39589>
+        rdf:type            wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4860_r124635>;
+        dcterms:references  <https://identifiers.org/pubmed/22088887>;
+        cito:cites          <https://identifiers.org/pubmed/22088887>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4860_r124635/Interaction/id92c39589>;
+        wp:participants     <https://identifiers.org/wikipathways/WP183>;
+        wp:target           <https://identifiers.org/wikipathways/WP183> .
+
+<https://identifiers.org/pubmed/32353859>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "32353859";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4860_r124635>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/32353859> .
+
+<https://identifiers.org/wikipathways/WP4860_r124635>
+        rdf:type                wp:Pathway , skos:Collection;
+        dc:identifier           <https://identifiers.org/wikipathways/WP4860>;
+        dc:source               "WikiPathways";
+        dc:title                "Hijack of ubiquitination by SARS-CoV-2"@en;
+        dcterms:description     "SARS-CoV-2 includes a novel Orf10 that interacts with muliple members of the Cullin 2 ubiquitin ligase complex as determined by AP-MS (Gordon 2020). The strongest interaction is with ZYG11B, a substrate adaptor for CUL2. By binding this complex, Orf10 might be able to hijack its activity. The hijacking of ubiquitination machinery is a common strategy of viruses to direct the degradation of viral restriction factors, for example. Also depicted here is the required neddylation (N8) of CUL2 by the NAE enzyme complex. The ability of this enzyme to transfer N8 to CUL2 is inhibited by the small molecule Pevonedistat.";
+        dcterms:identifier      "WP4860";
+        dcterms:references      <https://identifiers.org/pubmed/32353859>;
+        cito:cites              <https://identifiers.org/pubmed/22088887> , <https://identifiers.org/pubmed/32353859> , <https://identifiers.org/pubmed/17304241>;
+        wp:cellTypeOntologyTag  <http://purl.obolibrary.org/obo/CL_2000001>;
+        wp:diseaseOntologyTag   <http://purl.obolibrary.org/obo/DOID_2945> , <http://purl.obolibrary.org/obo/DOID_0080600> , <http://purl.obolibrary.org/obo/DOID_934>;
+        wp:isAbout              <http://rdf.wikipathways.org/Pathway/WP4860_r124635>;
+        wp:ontologyTag          <http://purl.obolibrary.org/obo/PW_0000294> , <http://purl.obolibrary.org/obo/PW_0000013> , <http://purl.obolibrary.org/obo/PW_0000004> , <http://purl.obolibrary.org/obo/DOID_2945> , <http://purl.obolibrary.org/obo/CL_2000001> , <http://purl.obolibrary.org/obo/DOID_0080600> , <http://purl.obolibrary.org/obo/DOID_934>;
+        wp:organism             <http://purl.obolibrary.org/obo/NCBITaxon_9606>;
+        wp:organismName         "Homo sapiens";
+        wp:pathwayOntologyTag   <http://purl.obolibrary.org/obo/PW_0000013> , <http://purl.obolibrary.org/obo/PW_0000004> , <http://purl.obolibrary.org/obo/PW_0000294>;
+        foaf:img                <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4860&oldid=r124635> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4860&oldid=r124635>;
+        foaf:page               <http://www.wikipathways.org/instance/WP4860_r124635> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4860&oldid=r124635>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<https://identifiers.org/ensembl/ENSG00000159593>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "NAE1";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000159593>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000159593";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4860_r124635/Complex/ebe43> , <https://identifiers.org/wikipathways/WP4860_r124635>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4860_r124635/DataNode/d10c6>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000159593> .
+
+<https://identifiers.org/pubmed/22088887>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "22088887";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4860_r124635/WP/Interaction/id92c39589>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/22088887> .
+
+<https://identifiers.org/wikipathways/WP4860>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP4860_r124635> .
+
 <https://identifiers.org/ensembl/ENSG00000108094>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "CUL2";
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000108094>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000108094";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4860/WP4860_rWP4860_r124635/DataNode/d8af8>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4860_r124635> , <http://rdf.wikipathways.org/Pathway/WP4860_r124635/Complex/d5d70>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4860_r124635/DataNode/d8af8>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000108094> .
 
-<https://identifiers.org/ensembl/ENSG00000100387>
+<https://identifiers.org/ensembl/ENSG00000162378>
         rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "RBX1";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000100387>;
+        rdfs:label          "ZYG11B";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000162378>;
         dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000100387";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4860/WP4860_rWP4860_r124635/DataNode/a7eea>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000100387> .
+        dcterms:identifier  "ENSG00000162378";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4860_r124635/Complex/d5d70> , <https://identifiers.org/wikipathways/WP4860_r124635>;
+        dcterms:references  <https://identifiers.org/pubmed/17304241>;
+        cito:cites          <https://identifiers.org/pubmed/17304241>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4860_r124635/DataNode/b75da>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000162378> .
 
 <https://identifiers.org/ensembl/ENSG00000067955>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "E2";
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000067955>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000067955";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4860/WP4860_rWP4860_r124635/DataNode/ac58a>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4860_r124635> , <http://rdf.wikipathways.org/Pathway/WP4860_r124635/Complex/d5d70>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4860_r124635/DataNode/ac58a>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000067955> .
 
-<https://identifiers.org/wikipathways/WP4860/WP4860_rWP4860_r124635>
-        rdf:type             wp:Pathway , skos:Collection;
-        dc:identifier        <https://identifiers.org/wikipathways/WP4860/WP4860>;
-        dc:source            "WikiPathways";
-        dc:title             "Hijack of ubiquitination by SARS-CoV-2"@en;
-        dcterms:description  "SARS-CoV-2 includes a novel Orf10 that interacts with muliple members of the Cullin 2 ubiquitin ligase complex as determined by AP-MS (Gordon 2020). The strongest interaction is with ZYG11B, a substrate adaptor for CUL2. By binding this complex, Orf10 might be able to hijack its activity. The hijacking of ubiquitination machinery is a common strategy of viruses to direct the degradation of viral restriction factors, for example. Also depicted here is the required neddylation (N8) of CUL2 by the NAE enzyme complex. The ability of this enzyme to transfer N8 to CUL2 is inhibited by the small molecule Pevonedistat.";
-        dcterms:identifier   "WP4860/WP4860";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP4860/WP4860_rWP4860_r124635>;
-        wp:organismName      "Homo sapiens";
-        foaf:page            <http://www.wikipathways.org/instance/WP4860/WP4860_rWP4860_r124635> .
+<http://rdf.wikipathways.org/Pathway/WP4860_r124635/ComplexBinding/ebe43>
+        rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4860_r124635>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4860_r124635/Group/ebe43>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000144744> , <https://identifiers.org/ensembl/ENSG00000159593> , <http://rdf.wikipathways.org/Pathway/WP4860_r124635/Complex/ebe43> .
+
+<http://rdf.wikipathways.org/Pathway/WP4860_r124635/Complex/ebe43>
+        rdf:type          wp:Complex , wp:DataNode;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4860_r124635>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4860_r124635/Group/ebe43>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000144744> , <https://identifiers.org/ensembl/ENSG00000159593> .
+
+<https://identifiers.org/ensembl/ENSG00000100387>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "RBX1";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000100387>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000100387";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4860_r124635/Complex/d5d70> , <https://identifiers.org/wikipathways/WP4860_r124635>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4860_r124635/DataNode/a7eea>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000100387> .

@@ -22,7 +22,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/79746>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "79746";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/d1d>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/d1d>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/79746> .
 
 <https://identifiers.org/ncbigene/55902>
@@ -31,17 +32,27 @@
         dc:identifier       <https://identifiers.org/ncbigene/55902>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "55902";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/c63>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/c63>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/55902> .
 
 <https://identifiers.org/kegg.compound/C04618>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "Crotonoyl-ACP";
         dc:identifier       <https://identifiers.org/kegg.compound/C04618>;
         dc:source           "KEGG Compound";
         dcterms:identifier  "C04618";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/b9c37>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP357_r125347> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/a4f5a> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/c51e1>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/b9c37>;
         foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C04618> .
+
+<http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/b91d1>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP357_r125347/Interaction/b91d1>;
+        wp:participants   <https://identifiers.org/kegg.compound/C16520> , <https://identifiers.org/chebi/CHEBI:3247>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:3247>;
+        wp:target         <https://identifiers.org/kegg.compound/C16520> .
 
 <https://identifiers.org/ensembl/ENSG00000131069>
         rdf:type            wp:Protein , wp:DataNode;
@@ -49,8 +60,32 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000131069>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000131069";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/ae215>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/bd13d> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/ce8d4> , <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/ae215>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000131069> .
+
+<http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/b29ab>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP357_r125347/Interaction/b29ab>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:37554> , <https://identifiers.org/chebi/CHEBI:15904>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:15904>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:37554> .
+
+<http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/bd13d>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/ca1ad> , <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP357_r125347/Interaction/bd13d>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:2393> , <https://identifiers.org/ensembl/ENSG00000131069>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000131069>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:2393> .
+
+<http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/e43be>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP357_r125347/Interaction/e43be>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:17984>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:17984> .
 
 <https://identifiers.org/ncbigene/23305>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -58,8 +93,17 @@
         dc:identifier       <https://identifiers.org/ncbigene/23305>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "23305";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/fdd>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/fdd>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/23305> .
+
+<http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/ce8d4>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/d8cbb> , <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP357_r125347/Interaction/ce8d4>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000131069> , <https://identifiers.org/wikidata/Q59811305>;
+        wp:source         <https://identifiers.org/wikidata/Q59811305>;
+        wp:target         <https://identifiers.org/ensembl/ENSG00000131069> .
 
 <https://identifiers.org/ncbigene/2194>
         rdf:type            wp:DataNode , wp:GeneProduct;
@@ -67,25 +111,30 @@
         dc:identifier       <https://identifiers.org/ncbigene/2194>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "2194";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/e08> , <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/ab2> , <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/d1e> , <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/b16> , <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/ce0> , <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/f06> , <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/c2a> , <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/da7>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/d54c1> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/f0970> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/aefbe> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/d4391> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/b84ed> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/bdded> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/d8cbb> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/ca1ad> , <https://identifiers.org/wikipathways/WP357_r125347> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/fc61e>;
+        dcterms:references  <https://identifiers.org/pubmed/3790257>;
+        cito:cites          <https://identifiers.org/pubmed/3790257>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/ab2> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/da7> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/d1e> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/ce0> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/e08> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/f06> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/b16> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/c2a>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/2194> .
 
 <https://identifiers.org/wikipathways/WP78>
-        rdf:type            wp:Pathway , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Pathway;
         rdfs:label          "TCA Cycle";
         dc:identifier       <https://identifiers.org/wikipathways/WP78>;
         dc:source           "WikiPathways";
         dcterms:identifier  "WP78";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/e33f2>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/ff7d4> , <https://identifiers.org/wikipathways/WP357_r125347> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/e3c75> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/efe5c>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/e33f2>;
         foaf:page           <https://www.wikipathways.org/instance/WP78> .
 
 <https://identifiers.org/wikidata/Q59811305>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "Acetyl-ACP";
         dc:identifier       <https://identifiers.org/wikidata/Q59811305>;
         dc:source           "Wikidata";
         dcterms:identifier  "Q59811305";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/b2343>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/c7b2b> , <https://identifiers.org/wikipathways/WP357_r125347> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/ce8d4>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/b2343>;
         foaf:page           <https://scholia.toolforge.org/Q59811305> .
 
 <https://identifiers.org/cas/524-14-1>
@@ -94,7 +143,10 @@
         dc:identifier       <https://identifiers.org/cas/524-14-1>;
         dc:source           "CAS";
         dcterms:identifier  "524-14-1";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/ae0>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/d15fa> , <https://identifiers.org/wikipathways/WP357_r125347> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/d85ec> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/e8091>;
+        dcterms:references  <https://identifiers.org/pubmed/3790257>;
+        cito:cites          <https://identifiers.org/pubmed/3790257>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/ae0>;
         foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=524-14-1> .
 
 <https://identifiers.org/ncbigene/2181>
@@ -103,19 +155,9 @@
         dc:identifier       <https://identifiers.org/ncbigene/2181>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "2181";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/dd3>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/dd3>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/2181> .
-
-<https://identifiers.org/wikipathways/WP357/WP357_rWP357_r125347>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP357/WP357>;
-        dc:source            "WikiPathways";
-        dc:title             "Fatty acid biosynthesis"@en;
-        dcterms:description  "The production of fatty acids from acetyl-CoA and NADPH through the use of enzymes known as fatty acid synthases is referred to as fatty acid synthesis. This biological process occurs within the cytoplasm of cells. The majority of acetyl-CoA that is transformed into fatty acids originates from carbohydrates through the glycolytic pathway.\n\nProteins on this pathway have targeted assays available via the [https://assays.cancer.gov/available_assays?wp_id=WP357 CPTAC Assay Portal]";
-        dcterms:identifier   "WP357/WP357";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347>;
-        wp:organismName      "Homo sapiens";
-        foaf:page            <http://www.wikipathways.org/instance/WP357/WP357_rWP357_r125347> .
 
 <https://identifiers.org/ncbigene/1666>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -123,26 +165,80 @@
         dc:identifier       <https://identifiers.org/ncbigene/1666>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "1666";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/fb8>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/fb8>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/1666> .
 
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP357&oldid=r125347>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
 <https://identifiers.org/kegg.compound/C16520>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "Palmitoyl-ACP";
         dc:identifier       <https://identifiers.org/kegg.compound/C16520>;
         dc:source           "KEGG Compound";
         dcterms:identifier  "C16520";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/dfc5e>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/b91d1> , <https://identifiers.org/wikipathways/WP357_r125347> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/f566f>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/dfc5e>;
         foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C16520> .
 
+<http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/d31bb>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP357_r125347/Interaction/d31bb>;
+        wp:participants   <https://identifiers.org/wikipathways/WP325> , <https://identifiers.org/chebi/CHEBI:37554>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:37554>;
+        wp:target         <https://identifiers.org/wikipathways/WP325> .
+
+<http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/d4391>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP357_r125347/Interaction/d4391>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/f566f> , <https://identifiers.org/ncbigene/2194>;
+        wp:source         <https://identifiers.org/ncbigene/2194>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/f566f> .
+
+<http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/f3b8c>
+        rdf:type          wp:DirectedInteraction , wp:Conversion , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/e25dc> , <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP357_r125347/Interaction/f3b8c>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:57318> , <https://identifiers.org/chebi/CHEBI:57347>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:57347>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:57318> .
+
+<http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/ff7d4>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP357_r125347/Interaction/ff7d4>;
+        wp:participants   <https://identifiers.org/chemspider/29081> , <https://identifiers.org/wikipathways/WP78>;
+        wp:source         <https://identifiers.org/wikipathways/WP78>;
+        wp:target         <https://identifiers.org/chemspider/29081> .
+
+<http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/a89b0>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP357_r125347/Interaction/a89b0>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/ff2e6> , <https://identifiers.org/ncbigene/6319>;
+        wp:source         <https://identifiers.org/ncbigene/6319>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/ff2e6> .
+
 <https://identifiers.org/wikipathways/WP325>
-        rdf:type            wp:Pathway , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Pathway;
         rdfs:label          "Triacylglyceride Synthesis pathway";
         dc:identifier       <https://identifiers.org/wikipathways/WP325>;
         dc:source           "WikiPathways";
         dcterms:identifier  "WP325";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/f589f>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP357_r125347> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/d31bb>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/f589f>;
         foaf:page           <https://www.wikipathways.org/instance/WP325> .
+
+<http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/c51e1>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/f0970> , <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP357_r125347/Interaction/c51e1>;
+        wp:participants   <https://identifiers.org/kegg.compound/C04618>;
+        wp:target         <https://identifiers.org/kegg.compound/C04618> .
 
 <https://identifiers.org/ncbigene/47>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -150,16 +246,25 @@
         dc:identifier       <https://identifiers.org/ncbigene/47>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "47";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/d7f>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP357_r125347> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/f5db7>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/d7f>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/47> .
 
+<http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/c15f6>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP357_r125347/Interaction/c15f6>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:57318>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:57318> .
+
 <https://identifiers.org/chemspider/29081>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "Citrate";
         dc:identifier       <https://identifiers.org/chemspider/29081>;
         dc:source           "Chemspider";
         dcterms:identifier  "29081";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/e37>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP357_r125347> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/ff7d4> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/d3826>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/e37>;
         foaf:page           <http://www.chemspider.com/Chemical-Structure.29081.html> .
 
 <https://identifiers.org/kegg.compound/C01209>
@@ -168,7 +273,8 @@
         dc:identifier       <https://identifiers.org/kegg.compound/C01209>;
         dc:source           "KEGG Compound";
         dcterms:identifier  "C01209";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/cd4c8>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/d85ec> , <https://identifiers.org/wikipathways/WP357_r125347> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/b3a0e>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/cd4c8>;
         foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C01209> .
 
 <https://identifiers.org/ncbigene/51102>
@@ -177,16 +283,18 @@
         dc:identifier       <https://identifiers.org/ncbigene/51102>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "51102";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/f2d>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/f2d>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/51102> .
 
 <https://identifiers.org/ncbigene/3033>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "HADHSC";
         dc:identifier       <https://identifiers.org/ncbigene/3033>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "3033";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/dec>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/e25dc> , <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/dec>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/3033> .
 
 <https://identifiers.org/chebi/CHEBI:17984>
@@ -195,8 +303,17 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:17984>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:17984";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/fd1>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/e43be> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/ff2e6> , <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/fd1>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17984> .
+
+<http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/c3029>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/dae8f> , <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP357_r125347/Interaction/c3029>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:30744> , <https://identifiers.org/chebi/CHEBI:15361>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:15361>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:30744> .
 
 <https://identifiers.org/ncbigene/2182>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -204,17 +321,49 @@
         dc:identifier       <https://identifiers.org/ncbigene/2182>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "2182";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/bd8>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/bd8>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/2182> .
 
+<http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/dae8f>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP357_r125347/Interaction/dae8f>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/c3029> , <https://identifiers.org/ncbigene/5091>;
+        wp:source         <https://identifiers.org/ncbigene/5091>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/c3029> .
+
+<http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/fc61e>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP357_r125347/Interaction/fc61e>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/b3a0e> , <https://identifiers.org/ncbigene/2194>;
+        wp:source         <https://identifiers.org/ncbigene/2194>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/b3a0e> .
+
+<http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/d54c1>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP357_r125347/Interaction/d54c1>;
+        wp:participants   <https://identifiers.org/ncbigene/2194>;
+        wp:source         <https://identifiers.org/ncbigene/2194> .
+
 <https://identifiers.org/chemspider/440215>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "Palmitate";
         dc:identifier       <https://identifiers.org/chemspider/440215>;
         dc:source           "Chemspider";
         dcterms:identifier  "440215";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/c5e>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/f566f> , <https://identifiers.org/wikipathways/WP357_r125347> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/cbdf7>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/c5e>;
         foaf:page           <http://www.chemspider.com/Chemical-Structure.440215.html> .
+
+<http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/abf75>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/b84ed> , <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP357_r125347/Interaction/abf75>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:2393>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:2393> .
 
 <https://identifiers.org/ncbigene/10449>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -222,7 +371,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/10449>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "10449";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/ebd>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP357_r125347> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/ac35b>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/ebd>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/10449> .
 
 <https://identifiers.org/ncbigene/55825>
@@ -231,7 +381,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/55825>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "55825";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/b22>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/b22>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/55825> .
 
 <https://identifiers.org/chebi/CHEBI:15361>
@@ -240,17 +391,75 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:15361>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:15361";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/e68>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/c3029> , <https://identifiers.org/wikipathways/WP357_r125347> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/e3c75>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/e68>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15361> .
 
+<http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/d85ec>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP357_r125347> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/aefbe>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP357_r125347/Interaction/d85ec>;
+        wp:participants   <https://identifiers.org/kegg.compound/C01209> , <https://identifiers.org/cas/524-14-1>;
+        wp:source         <https://identifiers.org/cas/524-14-1>;
+        wp:target         <https://identifiers.org/kegg.compound/C01209> .
+
+<http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/e8091>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP357_r125347/Interaction/e8091>;
+        wp:participants   <https://identifiers.org/cas/524-14-1> , <https://identifiers.org/chebi/CHEBI:15351>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:15351>;
+        wp:target         <https://identifiers.org/cas/524-14-1> .
+
 <https://identifiers.org/chebi/CHEBI:15904>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "Long-Chain fatty acid";
         dc:identifier       <https://identifiers.org/chebi/CHEBI:15904>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:15904";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/eea>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP357_r125347> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/ff2e6> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/b29ab>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/eea>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15904> .
+
+<http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/b84ed>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP357_r125347/Interaction/b84ed>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/abf75> , <https://identifiers.org/ncbigene/2194>;
+        wp:source         <https://identifiers.org/ncbigene/2194>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/abf75> .
+
+<http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/f566f>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP357_r125347> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/d4391>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP357_r125347/Interaction/f566f>;
+        wp:participants   <https://identifiers.org/chemspider/440215> , <https://identifiers.org/kegg.compound/C16520>;
+        wp:source         <https://identifiers.org/kegg.compound/C16520>;
+        wp:target         <https://identifiers.org/chemspider/440215> .
+
+<http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/e25dc>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP357_r125347/Interaction/e25dc>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/f3b8c> , <https://identifiers.org/ncbigene/3033>;
+        wp:source         <https://identifiers.org/ncbigene/3033>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/f3b8c> .
+
+<http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/ca1ad>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP357_r125347/Interaction/ca1ad>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/bd13d> , <https://identifiers.org/ncbigene/2194>;
+        wp:source         <https://identifiers.org/ncbigene/2194>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/bd13d> .
+
+<http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/d8cbb>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP357_r125347/Interaction/d8cbb>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/ce8d4> , <https://identifiers.org/ncbigene/2194>;
+        wp:source         <https://identifiers.org/ncbigene/2194>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/ce8d4> .
 
 <https://identifiers.org/ncbigene/55268>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -258,26 +467,85 @@
         dc:identifier       <https://identifiers.org/ncbigene/55268>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "55268";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/b9a>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/b9a>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/55268> .
 
+<https://identifiers.org/wikipathways/WP357_r125347>
+        rdf:type               wp:Pathway , skos:Collection;
+        dc:identifier          <https://identifiers.org/wikipathways/WP357>;
+        dc:source              "WikiPathways";
+        dc:title               "Fatty acid biosynthesis"@en;
+        dcterms:description    "The production of fatty acids from acetyl-CoA and NADPH through the use of enzymes known as fatty acid synthases is referred to as fatty acid synthesis. This biological process occurs within the cytoplasm of cells. The majority of acetyl-CoA that is transformed into fatty acids originates from carbohydrates through the glycolytic pathway.\n\nProteins on this pathway have targeted assays available via the [https://assays.cancer.gov/available_assays?wp_id=WP357 CPTAC Assay Portal]";
+        dcterms:identifier     "WP357";
+        cito:cites             <https://identifiers.org/pubmed/3790257>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP357_r125347>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000029>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606>;
+        wp:organismName        "Homo sapiens";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000029>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP357&oldid=r125347> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP357&oldid=r125347>;
+        foaf:page              <http://www.wikipathways.org/instance/WP357_r125347> .
+
 <https://identifiers.org/chebi/CHEBI:57318>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "3-L-Hydroxyacyl-CoA";
         dc:identifier       <https://identifiers.org/chebi/CHEBI:57318>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:57318";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/a16f2>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/f3b8c> , <https://identifiers.org/wikipathways/WP357_r125347> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/c15f6>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/a16f2>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:57318> .
 
+<http://purl.obolibrary.org/obo/NCBITaxon_9606>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9606" .
+
+<http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/bdded>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP357_r125347/Interaction/bdded>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/c7b2b> , <https://identifiers.org/ncbigene/2194>;
+        wp:source         <https://identifiers.org/ncbigene/2194>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/c7b2b> .
+
 <https://identifiers.org/chebi/CHEBI:2393>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "Acetoacetyl-ACP";
         dc:identifier       <https://identifiers.org/chebi/CHEBI:2393>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:2393";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/ddba3>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/b3a0e> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/bd13d> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/abf75> , <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/ddba3>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:2393> .
+
+<http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/aefbe>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP357_r125347/Interaction/aefbe>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/d85ec> , <https://identifiers.org/ncbigene/2194>;
+        wp:source         <https://identifiers.org/ncbigene/2194>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/d85ec> .
+
+<http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/a4f5a>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP357_r125347/Interaction/a4f5a>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:3247> , <https://identifiers.org/kegg.compound/C04618>;
+        wp:source         <https://identifiers.org/kegg.compound/C04618>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:3247> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP357&oldid=r125347>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/ac35b>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP357_r125347/Interaction/ac35b>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/cbdf7> , <https://identifiers.org/ncbigene/10449>;
+        wp:source         <https://identifiers.org/ncbigene/10449>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/cbdf7> .
 
 <https://identifiers.org/ncbigene/51703>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -285,7 +553,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/51703>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "51703";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/afd>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/afd>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/51703> .
 
 <https://identifiers.org/ncbigene/55862>
@@ -294,25 +563,28 @@
         dc:identifier       <https://identifiers.org/ncbigene/55862>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "55862";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/bc7>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/bc7>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/55862> .
 
 <https://identifiers.org/chebi/CHEBI:57347>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "3-ketoacyl-CoA";
         dc:identifier       <https://identifiers.org/chebi/CHEBI:57347>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:57347";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/f51a8>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/f3b8c> , <https://identifiers.org/wikipathways/WP357_r125347> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/cbdf7>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/f51a8>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:57347> .
 
 <https://identifiers.org/chebi/CHEBI:30744>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "Oxaloacetate";
         dc:identifier       <https://identifiers.org/chebi/CHEBI:30744>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:30744";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/bb3>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/c3029> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/efe5c> , <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/bb3>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:30744> .
 
 <https://identifiers.org/ncbigene/1891>
@@ -321,8 +593,17 @@
         dc:identifier       <https://identifiers.org/ncbigene/1891>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "1891";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/fea>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/fea>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/1891> .
+
+<http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/c7b2b>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP357_r125347> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/bdded>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP357_r125347/Interaction/c7b2b>;
+        wp:participants   <https://identifiers.org/wikidata/Q59811305> , <https://identifiers.org/chebi/CHEBI:15351>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:15351>;
+        wp:target         <https://identifiers.org/wikidata/Q59811305> .
 
 <https://identifiers.org/ncbigene/31>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -330,8 +611,56 @@
         dc:identifier       <https://identifiers.org/ncbigene/31>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "31";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/baf>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/baf>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/31> .
+
+<http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/d15fa>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP357_r125347/Interaction/d15fa>;
+        wp:participants   <https://identifiers.org/cas/524-14-1> , <https://identifiers.org/chebi/CHEBI:3247>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:3247>;
+        wp:target         <https://identifiers.org/cas/524-14-1> .
+
+<http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/f5db7>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP357_r125347/Interaction/f5db7>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/d3826> , <https://identifiers.org/ncbigene/47>;
+        wp:source         <https://identifiers.org/ncbigene/47>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/d3826> .
+
+<http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/e3c75>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP357_r125347/Interaction/e3c75>;
+        wp:participants   <https://identifiers.org/wikipathways/WP78> , <https://identifiers.org/chebi/CHEBI:15361>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:15361>;
+        wp:target         <https://identifiers.org/wikipathways/WP78> .
+
+<http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/cbdf7>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP357_r125347> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/ac35b>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP357_r125347/Interaction/cbdf7>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:57347> , <https://identifiers.org/chemspider/440215>;
+        wp:source         <https://identifiers.org/chemspider/440215>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:57347> .
+
+<http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/ff2e6>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP357_r125347> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/a89b0>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP357_r125347/Interaction/ff2e6>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:15904> , <https://identifiers.org/chebi/CHEBI:17984>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:17984>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:15904> .
+
+<https://identifiers.org/pubmed/3790257>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "3790257";
+        dcterms:isPartOf    <https://identifiers.org/cas/524-14-1> , <https://identifiers.org/ncbigene/2194>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/3790257> .
 
 <https://identifiers.org/chebi/CHEBI:3247>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -339,16 +668,18 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:3247>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:3247";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/d50f3>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/d15fa> , <https://identifiers.org/wikipathways/WP357_r125347> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/a4f5a> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/b91d1>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/d50f3>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:3247> .
 
 <https://identifiers.org/ncbigene/5091>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "PC";
         dc:identifier       <https://identifiers.org/ncbigene/5091>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "5091";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/eb8>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/dae8f> , <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/eb8>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/5091> .
 
 <https://identifiers.org/ncbigene/6319>
@@ -357,16 +688,18 @@
         dc:identifier       <https://identifiers.org/ncbigene/6319>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "6319";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/c38>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP357_r125347> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/a89b0>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/c38>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/6319> .
 
 <https://identifiers.org/chebi/CHEBI:37554>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "Fatty acyl CoA";
         dc:identifier       <https://identifiers.org/chebi/CHEBI:37554>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:37554";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/c0384>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/d31bb> , <https://identifiers.org/wikipathways/WP357_r125347> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/b29ab>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/c0384>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37554> .
 
 <https://identifiers.org/ncbigene/1892>
@@ -375,8 +708,17 @@
         dc:identifier       <https://identifiers.org/ncbigene/1892>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "1892";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/aea>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/aea>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/1892> .
+
+<http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/efe5c>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP357_r125347/Interaction/efe5c>;
+        wp:participants   <https://identifiers.org/wikipathways/WP78> , <https://identifiers.org/chebi/CHEBI:30744>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:30744>;
+        wp:target         <https://identifiers.org/wikipathways/WP78> .
 
 <https://identifiers.org/ncbigene/32>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -384,8 +726,12 @@
         dc:identifier       <https://identifiers.org/ncbigene/32>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "32";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/e26>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/e26>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/32> .
+
+<https://identifiers.org/wikipathways/WP357>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP357_r125347> .
 
 <https://identifiers.org/ncbigene/2180>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -393,14 +739,40 @@
         dc:identifier       <https://identifiers.org/ncbigene/2180>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "2180";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/e6c>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/e6c>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/2180> .
 
+<http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/b3a0e>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/fc61e> , <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP357_r125347/Interaction/b3a0e>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:2393> , <https://identifiers.org/kegg.compound/C01209>;
+        wp:source         <https://identifiers.org/kegg.compound/C01209>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:2393> .
+
 <https://identifiers.org/chebi/CHEBI:15351>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "Acetyl-CoA";
         dc:identifier       <https://identifiers.org/chebi/CHEBI:15351>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:15351";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357/WP357_rWP357_r125347/DataNode/bfc>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP357_r125347> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/d3826> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/c7b2b> , <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/e8091>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP357_r125347/DataNode/bfc>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15351> .
+
+<http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/d3826>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/f5db7> , <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP357_r125347/Interaction/d3826>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:15351> , <https://identifiers.org/chemspider/29081>;
+        wp:source         <https://identifiers.org/chemspider/29081>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:15351> .
+
+<http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/f0970>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP357_r125347>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP357_r125347/Interaction/f0970>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/c51e1> , <https://identifiers.org/ncbigene/2194>;
+        wp:source         <https://identifiers.org/ncbigene/2194>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP357_r125347/WP/Interaction/c51e1> .

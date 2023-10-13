@@ -16,14 +16,43 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
+<https://identifiers.org/ensembl/ENSG00000173511>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "VEGFB";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000173511>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000173511";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3593_r117786>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3593_r117786/DataNode/b3047>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000173511> .
+
 <https://identifiers.org/ensembl/ENSG00000112715>
         rdf:type            wp:GeneProduct , wp:DataNode;
         rdfs:label          "VEGFA";
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000112715>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000112715";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3593/WP3593_rWP3593_r117786/DataNode/a9fc2>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3593_r117786>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3593_r117786/DataNode/a9fc2>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000112715> .
+
+<https://identifiers.org/pubmed/25903473>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "25903473";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3593_r117786>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/25903473> .
+
+<https://identifiers.org/wikipathways/WP3593>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP3593_r117786> .
+
+<http://rdf.wikipathways.org/Pathway/WP3593_r117786/WP/Interaction/id4f6bb02a>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3593_r117786>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3593_r117786/Interaction/id4f6bb02a>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000100644> , <https://identifiers.org/ensembl/ENSG00000166135>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000166135>;
+        wp:target         <https://identifiers.org/ensembl/ENSG00000100644> .
 
 <https://identifiers.org/ensembl/ENSG00000164683>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -31,7 +60,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000164683>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000164683";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3593/WP3593_rWP3593_r117786/DataNode/c3813>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3593_r117786>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3593_r117786/DataNode/c3813>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000164683> .
 
 <https://identifiers.org/ensembl/ENSG00000150630>
@@ -40,17 +70,23 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000150630>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000150630";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3593/WP3593_rWP3593_r117786/DataNode/bd27c>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3593_r117786>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3593_r117786/DataNode/bd27c>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000150630> .
 
 <https://identifiers.org/ensembl/ENSG00000100644>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "HIF1A";
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000100644>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000100644";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3593/WP3593_rWP3593_r117786/DataNode/a9e99> , <http://rdf.wikipathways.org/Pathway/WP3593/WP3593_rWP3593_r117786/DataNode/c1945>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3593_r117786/WP/Interaction/id4f6bb02a> , <https://identifiers.org/wikipathways/WP3593_r117786>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3593_r117786/DataNode/a9e99> , <http://rdf.wikipathways.org/Pathway/WP3593_r117786/DataNode/c1945>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000100644> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3593&oldid=r117786>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
 
 <https://identifiers.org/ensembl/ENSG00000166135>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -58,7 +94,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000166135>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000166135";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3593/WP3593_rWP3593_r117786/DataNode/b4193>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3593_r117786> , <http://rdf.wikipathways.org/Pathway/WP3593_r117786/WP/Interaction/id4f6bb02a>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3593_r117786/DataNode/b4193>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000166135> .
 
 <https://identifiers.org/ensembl/ENSG00000114315>
@@ -67,7 +104,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000114315>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000114315";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3593/WP3593_rWP3593_r117786/DataNode/a1278>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3593_r117786>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3593_r117786/DataNode/a1278>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000114315> .
 
 <https://identifiers.org/mirbase/MI0000253>
@@ -76,19 +114,9 @@
         dc:identifier       <https://identifiers.org/mirbase/MI0000253>;
         dc:source           "miRBase Sequence";
         dcterms:identifier  "MI0000253";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3593/WP3593_rWP3593_r117786/DataNode/be13d>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3593_r117786>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3593_r117786/DataNode/be13d>;
         foaf:page           <http://www.mirbase.org/cgi-bin/mirna_entry.pl?acc=MI0000253> .
-
-<https://identifiers.org/wikipathways/WP3593/WP3593_rWP3593_r117786>
-        rdf:type             wp:Pathway , skos:Collection;
-        dc:identifier        <https://identifiers.org/wikipathways/WP3593/WP3593>;
-        dc:source            "WikiPathways";
-        dc:title             "MicroRNA for targeting cancer growth and vascularization in glioblastoma"@en;
-        dcterms:description  "miR-148a and miR-31 target the factor inhibiting hypoxia (FIH1) to promote downstream HIF1α and Notch signaling";
-        dcterms:identifier   "WP3593/WP3593";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP3593/WP3593_rWP3593_r117786>;
-        wp:organismName      "Homo sapiens";
-        foaf:page            <http://www.wikipathways.org/instance/WP3593/WP3593_rWP3593_r117786> .
 
 <https://identifiers.org/mirbase/MI0000089>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -96,14 +124,32 @@
         dc:identifier       <https://identifiers.org/mirbase/MI0000089>;
         dc:source           "miRBase Sequence";
         dcterms:identifier  "MI0000089";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3593/WP3593_rWP3593_r117786/DataNode/a5c7d>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3593_r117786>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3593_r117786/DataNode/a5c7d>;
         foaf:page           <http://www.mirbase.org/cgi-bin/mirna_entry.pl?acc=MI0000089> .
 
-<https://identifiers.org/ensembl/ENSG00000173511>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "VEGFB";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000173511>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000173511";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3593/WP3593_rWP3593_r117786/DataNode/b3047>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000173511> .
+<https://identifiers.org/wikipathways/WP3593_r117786>
+        rdf:type               skos:Collection , wp:Pathway;
+        dc:identifier          <https://identifiers.org/wikipathways/WP3593>;
+        dc:source              "WikiPathways";
+        dc:title               "MicroRNA for targeting cancer growth and vascularization in glioblastoma"@en;
+        dcterms:description    "miR-148a and miR-31 target the factor inhibiting hypoxia (FIH1) to promote downstream HIF1α and Notch signaling";
+        dcterms:identifier     "WP3593";
+        dcterms:references     <https://identifiers.org/pubmed/25903473>;
+        cito:cites             <https://identifiers.org/pubmed/25903473>;
+        wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_3068>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP3593_r117786>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/DOID_3068> , <http://purl.obolibrary.org/obo/PW_0000808> , <http://purl.obolibrary.org/obo/PW_0000711>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606>;
+        wp:organismName        "Homo sapiens";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000808> , <http://purl.obolibrary.org/obo/PW_0000711>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3593&oldid=r117786> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3593&oldid=r117786>;
+        foaf:page              <http://www.wikipathways.org/instance/WP3593_r117786> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3593&oldid=r117786>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_9606>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9606" .

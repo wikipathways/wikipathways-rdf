@@ -16,32 +16,45 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/pubchem.compound/3084979>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Momilactone B";
-        dc:identifier       <https://identifiers.org/pubchem.compound/3084979>;
-        dc:source           "PubChem-compound";
-        dcterms:identifier  "3084979";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2209/WP2209_rWP2209_r117419/DataNode/a88d5>;
-        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=3084979> .
+<https://identifiers.org/pubmed/17326606>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "17326606";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2209_r117419>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/17326606> .
 
-<https://identifiers.org/wikipathways/WP2210>
-        rdf:type            wp:Pathway , wp:DataNode;
-        rdfs:label          "Oryzalexin S biosynthesis";
-        dc:identifier       <https://identifiers.org/wikipathways/WP2210>;
-        dc:source           "WikiPathways";
-        dcterms:identifier  "WP2210";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2209/WP2209_rWP2209_r117419/DataNode/ba6d6>;
-        foaf:page           <https://www.wikipathways.org/instance/WP2210> .
+<http://rdf.wikipathways.org/Pathway/WP2209_r117419/WP/Interaction/idafe356a8>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2209_r117419> , <http://rdf.wikipathways.org/Pathway/WP2209_r117419/WP/Interaction/id77a79e95>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2209_r117419/Interaction/idafe356a8>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:57533>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:57533> .
 
-<https://identifiers.org/chebi/CHEBI:57533>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Geranylgeranyl Diphosphate";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:57533>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:57533";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2209/WP2209_rWP2209_r117419/DataNode/ec836>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:57533> .
+<http://rdf.wikipathways.org/Pathway/WP2209_r117419/WP/Interaction/f8ae3>
+        rdf:type          wp:Stimulation , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2209_r117419>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2209_r117419/Interaction/f8ae3> .
+
+<https://identifiers.org/pubmed/1536568>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "1536568";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2209_r117419>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/1536568> .
+
+<http://rdf.wikipathways.org/Pathway/WP2209_r117419/WP/Interaction/id8330bd89>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP2209_r117419/WP/Interaction/idb672b846> , <https://identifiers.org/wikipathways/WP2209_r117419>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2209_r117419/Interaction/id8330bd89>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:49191>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:49191> .
+
+<https://identifiers.org/pubmed/21620514>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "21620514";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2209_r117419>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/21620514> .
 
 <https://identifiers.org/chebi/CHEBI:49191>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -49,19 +62,155 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:49191>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:49191";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2209/WP2209_rWP2209_r117419/DataNode/ab6cf>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2209_r117419/WP/Interaction/id8330bd89> , <http://rdf.wikipathways.org/Pathway/WP2209_r117419/WP/Interaction/id5cd98ef6> , <https://identifiers.org/wikipathways/WP2209_r117419>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2209_r117419/DataNode/ab6cf>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:49191> .
 
-<https://identifiers.org/wikipathways/WP2209/WP2209_rWP2209_r117419>
-        rdf:type             wp:Pathway , skos:Collection;
-        dc:identifier        <https://identifiers.org/wikipathways/WP2209/WP2209>;
-        dc:source            "WikiPathways";
-        dc:title             "Momilactone biosynthesis"@en;
-        dcterms:description  "Phytoalexins Momilactone A and B accumulate in rice husks. Both compounds act in multiple ways such as (1) growth inhibitors involved in seed dormancy, (2) play an important role in the rice plant defense system against pathogens and insects and (3) contribute to allelopathy where they inhibit the growth of weeds. They are also known to be induced by the jasmonic acid plant growth hormone.";
-        dcterms:identifier   "WP2209/WP2209";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP2209/WP2209_rWP2209_r117419>;
-        wp:organismName      "Oryza sativa";
-        foaf:page            <http://www.wikipathways.org/instance/WP2209/WP2209_rWP2209_r117419> .
+<https://identifiers.org/pubchem.compound/3084979>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Momilactone B";
+        dc:identifier       <https://identifiers.org/pubchem.compound/3084979>;
+        dc:source           "PubChem-compound";
+        dcterms:identifier  "3084979";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2209_r117419> , <http://rdf.wikipathways.org/Pathway/WP2209_r117419/WP/Interaction/id5cd98ef6>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2209_r117419/DataNode/a88d5>;
+        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=3084979> .
+
+<http://rdf.wikipathways.org/Pathway/WP2209_r117419/WP/Interaction/id77a79e95>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2209_r117419>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2209_r117419/Interaction/id77a79e95>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP2209_r117419/WP/Interaction/idafe356a8>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP2209_r117419/WP/Interaction/idafe356a8> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_4530>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "4530" .
+
+<https://identifiers.org/pubmed/8651702>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "8651702";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2209_r117419>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/8651702> .
+
+<https://identifiers.org/pubmed/18584489>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "18584489";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2209_r117419>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/18584489> .
+
+<https://identifiers.org/pubmed/22313783>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "22313783";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2209_r117419>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/22313783> .
+
+<http://rdf.wikipathways.org/Pathway/WP2209_r117419/WP/Interaction/id77962885>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2209_r117419>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2209_r117419/Interaction/id77962885>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP2209_r117419/WP/Interaction/idb8ccff23>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP2209_r117419/WP/Interaction/idb8ccff23> .
+
+<https://identifiers.org/pubmed/17872948>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "17872948";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2209_r117419>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/17872948> .
+
+<http://rdf.wikipathways.org/Pathway/WP2209_r117419/WP/Interaction/id573c6003>
+        rdf:type          wp:Stimulation , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2209_r117419>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2209_r117419/Interaction/id573c6003> .
+
+<https://identifiers.org/pubmed/20615111>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "20615111";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2209_r117419>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/20615111> .
+
+<https://identifiers.org/pubmed/21175892>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "21175892";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2209_r117419>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/21175892> .
+
+<http://rdf.wikipathways.org/Pathway/WP2209_r117419/WP/Interaction/idb672b846>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2209_r117419>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2209_r117419/Interaction/idb672b846>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP2209_r117419/WP/Interaction/id8330bd89>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP2209_r117419/WP/Interaction/id8330bd89> .
+
+<https://identifiers.org/wikipathways/WP2210>
+        rdf:type            wp:Pathway , wp:DataNode;
+        rdfs:label          "Oryzalexin S biosynthesis";
+        dc:identifier       <https://identifiers.org/wikipathways/WP2210>;
+        dc:source           "WikiPathways";
+        dcterms:identifier  "WP2210";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2209_r117419/WP/Interaction/id3f9cb38a> , <https://identifiers.org/wikipathways/WP2209_r117419>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2209_r117419/DataNode/ba6d6>;
+        foaf:page           <https://www.wikipathways.org/instance/WP2210> .
+
+<https://identifiers.org/pubmed/20170980>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "20170980";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2209_r117419>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/20170980> .
+
+<http://rdf.wikipathways.org/Pathway/WP2209_r117419/WP/Interaction/a50f4>
+        rdf:type          wp:Stimulation , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2209_r117419>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2209_r117419/Interaction/a50f4> .
+
+<https://identifiers.org/pubmed/16861806>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "16861806";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2209_r117419>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/16861806> .
+
+<http://rdf.wikipathways.org/Pathway/WP2209_r117419/WP/Interaction/id3f9cb38a>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2209_r117419>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2209_r117419/Interaction/id3f9cb38a>;
+        wp:participants   <https://identifiers.org/wikipathways/WP2210>;
+        wp:target         <https://identifiers.org/wikipathways/WP2210> .
+
+<https://identifiers.org/wikipathways/WP2209>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP2209_r117419> .
+
+<http://rdf.wikipathways.org/Pathway/WP2209_r117419/WP/Interaction/ided7dbe1f>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2209_r117419>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2209_r117419/Interaction/ided7dbe1f>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:57533> , <https://identifiers.org/wikipathways/WP2211>;
+        wp:source         <https://identifiers.org/wikipathways/WP2211>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:57533> .
+
+<https://identifiers.org/pubmed/19635799>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "19635799";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2209_r117419>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/19635799> .
+
+<https://identifiers.org/chebi/CHEBI:57533>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Geranylgeranyl Diphosphate";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:57533>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:57533";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2209_r117419> , <http://rdf.wikipathways.org/Pathway/WP2209_r117419/WP/Interaction/ided7dbe1f> , <http://rdf.wikipathways.org/Pathway/WP2209_r117419/WP/Interaction/idafe356a8>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2209_r117419/DataNode/ec836>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:57533> .
 
 <https://identifiers.org/wikipathways/WP2211>
         rdf:type            wp:Pathway , wp:DataNode;
@@ -69,5 +218,115 @@
         dc:identifier       <https://identifiers.org/wikipathways/WP2211>;
         dc:source           "WikiPathways";
         dcterms:identifier  "WP2211";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2209/WP2209_rWP2209_r117419/DataNode/d49bd>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2209_r117419/WP/Interaction/ided7dbe1f> , <https://identifiers.org/wikipathways/WP2209_r117419>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2209_r117419/DataNode/d49bd>;
         foaf:page           <https://www.wikipathways.org/instance/WP2211> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP2209&oldid=r117419>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP2209&oldid=r117419>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<http://rdf.wikipathways.org/Pathway/WP2209_r117419/WP/Interaction/id736e043e>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2209_r117419>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2209_r117419/Interaction/id736e043e> .
+
+<http://rdf.wikipathways.org/Pathway/WP2209_r117419/WP/Interaction/a3171>
+        rdf:type          wp:Stimulation , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2209_r117419>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2209_r117419/Interaction/a3171> .
+
+<http://rdf.wikipathways.org/Pathway/WP2209_r117419/WP/Interaction/idb8ccff23>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2209_r117419> , <http://rdf.wikipathways.org/Pathway/WP2209_r117419/WP/Interaction/id77962885>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2209_r117419/Interaction/idb8ccff23> .
+
+<https://identifiers.org/pubmed/15299118>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "15299118";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2209_r117419>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/15299118> .
+
+<https://identifiers.org/pubmed/17931745>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "17931745";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2209_r117419>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/17931745> .
+
+<https://identifiers.org/pubmed/18943541>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "18943541";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2209_r117419>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/18943541> .
+
+<http://rdf.wikipathways.org/Pathway/WP2209_r117419/WP/Interaction/id5cd98ef6>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2209_r117419>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2209_r117419/Interaction/id5cd98ef6>;
+        wp:participants   <https://identifiers.org/pubchem.compound/3084979> , <https://identifiers.org/chebi/CHEBI:49191>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:49191>;
+        wp:target         <https://identifiers.org/pubchem.compound/3084979> .
+
+<http://rdf.wikipathways.org/Pathway/WP2209_r117419/WP/Interaction/f9cda>
+        rdf:type          wp:Stimulation , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2209_r117419>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2209_r117419/Interaction/f9cda> .
+
+<https://identifiers.org/wikipathways/WP2209_r117419>
+        rdf:type               skos:Collection , wp:Pathway;
+        dc:identifier          <https://identifiers.org/wikipathways/WP2209>;
+        dc:source              "WikiPathways";
+        dc:title               "Momilactone biosynthesis"@en;
+        dcterms:description    "Phytoalexins Momilactone A and B accumulate in rice husks. Both compounds act in multiple ways such as (1) growth inhibitors involved in seed dormancy, (2) play an important role in the rice plant defense system against pathogens and insects and (3) contribute to allelopathy where they inhibit the growth of weeds. They are also known to be induced by the jasmonic acid plant growth hormone.";
+        dcterms:identifier     "WP2209";
+        dcterms:references     <https://identifiers.org/pubmed/8651702> , <https://identifiers.org/pubmed/12005050> , <https://identifiers.org/pubmed/15388982> , <https://identifiers.org/pubmed/16861806> , <https://identifiers.org/pubmed/17326606> , <https://identifiers.org/pubmed/18584489> , <https://identifiers.org/pubmed/21620514> , <https://identifiers.org/pubmed/21175892> , <https://identifiers.org/pubmed/20170980> , <https://identifiers.org/pubmed/1536568> , <https://identifiers.org/pubmed/15299118> , <https://identifiers.org/pubmed/18256463> , <https://identifiers.org/pubmed/19635799> , <https://identifiers.org/pubmed/21758010> , <https://identifiers.org/pubmed/17872948> , <https://identifiers.org/pubmed/17931745> , <https://identifiers.org/pubmed/22215377> , <https://identifiers.org/pubmed/18943541> , <https://identifiers.org/pubmed/22313783> , <https://identifiers.org/pubmed/20615111>;
+        cito:cites             <https://identifiers.org/pubmed/19635799> , <https://identifiers.org/pubmed/17326606> , <https://identifiers.org/pubmed/15388982> , <https://identifiers.org/pubmed/18256463> , <https://identifiers.org/pubmed/22313783> , <https://identifiers.org/pubmed/20170980> , <https://identifiers.org/pubmed/16861806> , <https://identifiers.org/pubmed/8651702> , <https://identifiers.org/pubmed/22215377> , <https://identifiers.org/pubmed/21175892> , <https://identifiers.org/pubmed/21620514> , <https://identifiers.org/pubmed/17872948> , <https://identifiers.org/pubmed/18584489> , <https://identifiers.org/pubmed/12005050> , <https://identifiers.org/pubmed/1536568> , <https://identifiers.org/pubmed/15299118> , <https://identifiers.org/pubmed/17931745> , <https://identifiers.org/pubmed/21758010> , <https://identifiers.org/pubmed/20615111> , <https://identifiers.org/pubmed/18943541>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP2209_r117419>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0001402> , <http://purl.obolibrary.org/obo/PW_0000251>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_4530>;
+        wp:organismName        "Oryza sativa";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000251> , <http://purl.obolibrary.org/obo/PW_0001402>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP2209&oldid=r117419> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP2209&oldid=r117419>;
+        foaf:page              <http://www.wikipathways.org/instance/WP2209_r117419> .
+
+<https://identifiers.org/pubmed/12005050>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "12005050";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2209_r117419>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/12005050> .
+
+<https://identifiers.org/pubmed/22215377>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "22215377";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2209_r117419>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/22215377> .
+
+<https://identifiers.org/pubmed/21758010>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "21758010";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2209_r117419>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/21758010> .
+
+<https://identifiers.org/pubmed/15388982>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "15388982";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2209_r117419>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/15388982> .
+
+<https://identifiers.org/pubmed/18256463>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "18256463";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2209_r117419>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/18256463> .

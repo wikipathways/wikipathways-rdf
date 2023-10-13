@@ -17,13 +17,76 @@
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
 <https://identifiers.org/cas/60802-29-1>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "Xylulose-5-Phosphate";
         dc:identifier       <https://identifiers.org/cas/60802-29-1>;
         dc:source           "CAS";
         dcterms:identifier  "60802-29-1";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP134/WP134_rWP134_r126271/DataNode/c46b6>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP134_r126271> , <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/d9910>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP134_r126271/DataNode/c46b6>;
         foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=60802-29-1> .
+
+<http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/aec8c>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP134_r126271>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP134_r126271/Interaction/aec8c>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/e13b9> , <https://identifiers.org/ncbigene/7086>;
+        wp:source         <https://identifiers.org/ncbigene/7086>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/e13b9> .
+
+<http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/d9910>
+        rdf:type          wp:DirectedInteraction , wp:Conversion , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/b3e00> , <https://identifiers.org/wikipathways/WP134_r126271>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP134_r126271/Interaction/d9910>;
+        wp:participants   <https://identifiers.org/cas/4151-19-3> , <https://identifiers.org/cas/60802-29-1>;
+        wp:source         <https://identifiers.org/cas/4151-19-3>;
+        wp:target         <https://identifiers.org/cas/60802-29-1> .
+
+<https://identifiers.org/cas/4151-19-3>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Ribulose-5-Phosphate";
+        dc:identifier       <https://identifiers.org/cas/4151-19-3>;
+        dc:source           "CAS";
+        dcterms:identifier  "4151-19-3";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/d9910> , <https://identifiers.org/wikipathways/WP134_r126271> , <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/b8f1b> , <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/a84fe>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP134_r126271/DataNode/b0ec0>;
+        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=4151-19-3> .
+
+<https://identifiers.org/ncbigene/6888>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "TALDO1";
+        dc:identifier       <https://identifiers.org/ncbigene/6888>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "6888";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/ae258> , <https://identifiers.org/wikipathways/WP134_r126271>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP134_r126271/DataNode/ad840>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/6888> .
+
+<http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/a84fe>
+        rdf:type          wp:Interaction , wp:Conversion , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP134_r126271> , <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/ca813>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP134_r126271/Interaction/a84fe>;
+        wp:participants   <https://identifiers.org/cas/4151-19-3> , <https://identifiers.org/cas/3615-55-2>;
+        wp:source         <https://identifiers.org/cas/4151-19-3>;
+        wp:target         <https://identifiers.org/cas/3615-55-2> .
+
+<http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/f7161>
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/e9777> .
+
+<https://identifiers.org/wikipathways/WP134_r126271>
+        rdf:type               wp:Pathway , skos:Collection;
+        dc:identifier          <https://identifiers.org/wikipathways/WP134>;
+        dc:source              "WikiPathways";
+        dc:title               "Pentose phosphate metabolism"@en;
+        dcterms:description    "Pentose phosphate, phosphogluconate, or hexose monophsphate pathway oxidizes glucose-6-phosphate to fructose-6-phosphate and glyceraldehyde-3-P. NADP+ is the electron acceptor. The pathways yields NADPH as well as 5, 4, and 7 carbon intermediaries for synthesis of nucleotides.\n\n\nProteins on this pathway have targeted assays available via the [https://assays.cancer.gov/available_assays?wp_id=WP134 CPTAC Assay Portal]";
+        dcterms:identifier     "WP134";
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP134_r126271>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000045>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606>;
+        wp:organismName        "Homo sapiens";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000045>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP134&oldid=r126271> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP134&oldid=r126271>;
+        foaf:page              <http://www.wikipathways.org/instance/WP134_r126271> .
 
 <https://identifiers.org/hmdb/HMDB0001127>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -31,55 +94,9 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0001127>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0001127";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP134/WP134_rWP134_r126271/DataNode/b135d>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/b34c5> , <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/a5dec> , <https://identifiers.org/wikipathways/WP134_r126271>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP134_r126271/DataNode/b135d>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001127> .
-
-<https://identifiers.org/hmdb/HMDB0001316>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "6-Phosphogluconate";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0001316>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0001316";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP134/WP134_rWP134_r126271/DataNode/ada39>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001316> .
-
-<https://identifiers.org/hmdb/HMDB0001112>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Glyceraldehyde-3-phosphate";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0001112>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0001112";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP134/WP134_rWP134_r126271/DataNode/eab0c> , <http://rdf.wikipathways.org/Pathway/WP134/WP134_rWP134_r126271/DataNode/cfe61>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001112> .
-
-<https://identifiers.org/wikipathways/WP134/WP134_rWP134_r126271>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP134/WP134>;
-        dc:source            "WikiPathways";
-        dc:title             "Pentose phosphate metabolism"@en;
-        dcterms:description  "Pentose phosphate, phosphogluconate, or hexose monophsphate pathway oxidizes glucose-6-phosphate to fructose-6-phosphate and glyceraldehyde-3-P. NADP+ is the electron acceptor. The pathways yields NADPH as well as 5, 4, and 7 carbon intermediaries for synthesis of nucleotides.\n\n\nProteins on this pathway have targeted assays available via the [https://assays.cancer.gov/available_assays?wp_id=WP134 CPTAC Assay Portal]";
-        dcterms:identifier   "WP134/WP134";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP134/WP134_rWP134_r126271>;
-        wp:organismName      "Homo sapiens";
-        foaf:page            <http://www.wikipathways.org/instance/WP134/WP134_rWP134_r126271> .
-
-<https://identifiers.org/hmdb/HMDB0000124>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Fructose-6-Phosphate";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000124>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000124";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP134/WP134_rWP134_r126271/DataNode/e6275>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000124> .
-
-<https://identifiers.org/wikipathways/WP534>
-        rdf:type            wp:Pathway , wp:DataNode;
-        rdfs:label          "Glycolysis/Gluconeogenesis";
-        dc:identifier       <https://identifiers.org/wikipathways/WP534>;
-        dc:source           "WikiPathways";
-        dcterms:identifier  "WP534";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP134/WP134_rWP134_r126271/DataNode/a7562>;
-        foaf:page           <https://www.wikipathways.org/instance/WP534> .
 
 <https://identifiers.org/hmdb/HMDB0001321>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -87,116 +104,51 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0001321>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0001321";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP134/WP134_rWP134_r126271/DataNode/fe09e>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP134_r126271>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP134_r126271/DataNode/fe09e>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001321> .
 
-<https://identifiers.org/ncbigene/25796>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "PGLS";
-        dc:identifier       <https://identifiers.org/ncbigene/25796>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "25796";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP134/WP134_rWP134_r126271/DataNode/db137>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/25796> .
-
-<https://identifiers.org/ncbigene/7086>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "TKT";
-        dc:identifier       <https://identifiers.org/ncbigene/7086>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "7086";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP134/WP134_rWP134_r126271/DataNode/e926f> , <http://rdf.wikipathways.org/Pathway/WP134/WP134_rWP134_r126271/DataNode/a59da>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/7086> .
-
-<https://identifiers.org/ncbigene/5226>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "PGD";
-        dc:identifier       <https://identifiers.org/ncbigene/5226>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "5226";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP134/WP134_rWP134_r126271/DataNode/d7dcb>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/5226> .
-
-<https://identifiers.org/cas/3615-55-2>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "D-Ribose-5-Phosphate";
-        dc:identifier       <https://identifiers.org/cas/3615-55-2>;
-        dc:source           "CAS";
-        dcterms:identifier  "3615-55-2";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP134/WP134_rWP134_r126271/DataNode/a77bb>;
-        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=3615-55-2> .
-
-<https://identifiers.org/cas/56-73-5>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Glucose-6-Phosphate";
-        dc:identifier       <https://identifiers.org/cas/56-73-5>;
-        dc:source           "CAS";
-        dcterms:identifier  "56-73-5";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP134/WP134_rWP134_r126271/DataNode/daa9a>;
-        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=56-73-5> .
-
-<https://identifiers.org/ncbigene/2539>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "G6PD";
-        dc:identifier       <https://identifiers.org/ncbigene/2539>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "2539";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP134/WP134_rWP134_r126271/DataNode/a2f88>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/2539> .
-
-<https://identifiers.org/ncbigene/6888>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "TALDO1";
-        dc:identifier       <https://identifiers.org/ncbigene/6888>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "6888";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP134/WP134_rWP134_r126271/DataNode/ad840>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/6888> .
-
-<https://identifiers.org/cas/4151-19-3>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Ribulose-5-Phosphate";
-        dc:identifier       <https://identifiers.org/cas/4151-19-3>;
-        dc:source           "CAS";
-        dcterms:identifier  "4151-19-3";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP134/WP134_rWP134_r126271/DataNode/b0ec0>;
-        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=4151-19-3> .
-
-<https://identifiers.org/cas/2646-35-7>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Sedoheptulose-7-Phosphate";
-        dc:identifier       <https://identifiers.org/cas/2646-35-7>;
-        dc:source           "CAS";
-        dcterms:identifier  "2646-35-7";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP134/WP134_rWP134_r126271/DataNode/a62a3>;
-        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=2646-35-7> .
-
-<https://identifiers.org/ncbigene/6120>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "RPE";
-        dc:identifier       <https://identifiers.org/ncbigene/6120>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "6120";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP134/WP134_rWP134_r126271/DataNode/b1aba>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/6120> .
-
-<https://identifiers.org/cas/643-13-0>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Fructose-6-Phosphate";
-        dc:identifier       <https://identifiers.org/cas/643-13-0>;
-        dc:source           "CAS";
-        dcterms:identifier  "643-13-0";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP134/WP134_rWP134_r126271/DataNode/c4dd7>;
-        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=643-13-0> .
+<http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/fae91>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP134_r126271>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP134_r126271/Interaction/fae91>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/a5dec> , <https://identifiers.org/ncbigene/2539>;
+        wp:source         <https://identifiers.org/ncbigene/2539>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/a5dec> .
 
 <https://identifiers.org/wikipathways/WP404>
-        rdf:type            wp:Pathway , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Pathway;
         rdfs:label          "Nucleotide  Biosynthesis";
         dc:identifier       <https://identifiers.org/wikipathways/WP404>;
         dc:source           "WikiPathways";
         dcterms:identifier  "WP404";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP134/WP134_rWP134_r126271/DataNode/c5b8d>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/a8b93> , <https://identifiers.org/wikipathways/WP134_r126271>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP134_r126271/DataNode/c5b8d>;
         foaf:page           <https://www.wikipathways.org/instance/WP404> .
+
+<http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/b8f1b>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/b208e> , <https://identifiers.org/wikipathways/WP134_r126271>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP134_r126271/Interaction/b8f1b>;
+        wp:participants   <https://identifiers.org/cas/4151-19-3> , <https://identifiers.org/hmdb/HMDB0001316>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001316>;
+        wp:target         <https://identifiers.org/cas/4151-19-3> .
+
+<http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/ae258>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP134_r126271>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP134_r126271/Interaction/ae258>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/d0690> , <https://identifiers.org/ncbigene/6888>;
+        wp:source         <https://identifiers.org/ncbigene/6888>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/d0690> .
+
+<http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/bdbac>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP134_r126271>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP134_r126271/Interaction/bdbac>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/fb5d9> , <https://identifiers.org/ncbigene/7086>;
+        wp:source         <https://identifiers.org/ncbigene/7086>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/fb5d9> .
 
 <https://identifiers.org/ncbigene/22934>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -204,5 +156,249 @@
         dc:identifier       <https://identifiers.org/ncbigene/22934>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "22934";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP134/WP134_rWP134_r126271/DataNode/a793b>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/ca813> , <https://identifiers.org/wikipathways/WP134_r126271>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP134_r126271/DataNode/a793b>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/22934> .
+
+<http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/a968e>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP134_r126271>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP134_r126271/Interaction/a968e>;
+        wp:participants   <https://identifiers.org/cas/56-73-5>;
+        wp:target         <https://identifiers.org/cas/56-73-5> .
+
+<https://identifiers.org/ncbigene/2539>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "G6PD";
+        dc:identifier       <https://identifiers.org/ncbigene/2539>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "2539";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/fae91> , <https://identifiers.org/wikipathways/WP134_r126271>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP134_r126271/DataNode/a2f88>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/2539> .
+
+<https://identifiers.org/wikipathways/WP134>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP134_r126271> .
+
+<http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/fb5d9>
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/bdbac> .
+
+<https://identifiers.org/hmdb/HMDB0000124>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Fructose-6-Phosphate";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000124>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0000124";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP134_r126271>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP134_r126271/DataNode/e6275>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000124> .
+
+<https://identifiers.org/ncbigene/7086>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "TKT";
+        dc:identifier       <https://identifiers.org/ncbigene/7086>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "7086";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/e9777> , <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/aec8c> , <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/bdbac> , <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/d86c2> , <https://identifiers.org/wikipathways/WP134_r126271>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP134_r126271/DataNode/e926f> , <http://rdf.wikipathways.org/Pathway/WP134_r126271/DataNode/a59da>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/7086> .
+
+<http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/ca813>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP134_r126271>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP134_r126271/Interaction/ca813>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/a84fe> , <https://identifiers.org/ncbigene/22934>;
+        wp:source         <https://identifiers.org/ncbigene/22934>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/a84fe> .
+
+<http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/a8b93>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP134_r126271>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP134_r126271/Interaction/a8b93>;
+        wp:participants   <https://identifiers.org/wikipathways/WP404> , <https://identifiers.org/cas/3615-55-2>;
+        wp:source         <https://identifiers.org/cas/3615-55-2>;
+        wp:target         <https://identifiers.org/wikipathways/WP404> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_9606>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9606" .
+
+<http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/acfcd>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP134_r126271>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP134_r126271/Interaction/acfcd>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/b34c5> , <https://identifiers.org/ncbigene/25796>;
+        wp:source         <https://identifiers.org/ncbigene/25796>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/b34c5> .
+
+<https://identifiers.org/hmdb/HMDB0001316>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "6-Phosphogluconate";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0001316>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0001316";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/b34c5> , <https://identifiers.org/wikipathways/WP134_r126271> , <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/b8f1b>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP134_r126271/DataNode/ada39>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001316> .
+
+<https://identifiers.org/wikipathways/WP534>
+        rdf:type            wp:Pathway , wp:DataNode;
+        rdfs:label          "Glycolysis/Gluconeogenesis";
+        dc:identifier       <https://identifiers.org/wikipathways/WP534>;
+        dc:source           "WikiPathways";
+        dcterms:identifier  "WP534";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP134_r126271>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP134_r126271/DataNode/a7562>;
+        foaf:page           <https://www.wikipathways.org/instance/WP534> .
+
+<http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/b208e>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP134_r126271>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP134_r126271/Interaction/b208e>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/b8f1b> , <https://identifiers.org/ncbigene/5226>;
+        wp:source         <https://identifiers.org/ncbigene/5226>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/b8f1b> .
+
+<http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/a5dec>
+        rdf:type          wp:DirectedInteraction , wp:Interaction , wp:Conversion;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/fae91> , <https://identifiers.org/wikipathways/WP134_r126271>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP134_r126271/Interaction/a5dec>;
+        wp:participants   <https://identifiers.org/cas/56-73-5> , <https://identifiers.org/hmdb/HMDB0001127>;
+        wp:source         <https://identifiers.org/cas/56-73-5>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001127> .
+
+<https://identifiers.org/ncbigene/5226>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "PGD";
+        dc:identifier       <https://identifiers.org/ncbigene/5226>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "5226";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/b208e> , <https://identifiers.org/wikipathways/WP134_r126271>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP134_r126271/DataNode/d7dcb>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/5226> .
+
+<http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/b3e00>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP134_r126271>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP134_r126271/Interaction/b3e00>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/d9910> , <https://identifiers.org/ncbigene/6120>;
+        wp:source         <https://identifiers.org/ncbigene/6120>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/d9910> .
+
+<https://identifiers.org/cas/3615-55-2>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "D-Ribose-5-Phosphate";
+        dc:identifier       <https://identifiers.org/cas/3615-55-2>;
+        dc:source           "CAS";
+        dcterms:identifier  "3615-55-2";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/a84fe> , <https://identifiers.org/wikipathways/WP134_r126271> , <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/a8b93>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP134_r126271/DataNode/a77bb>;
+        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=3615-55-2> .
+
+<https://identifiers.org/ncbigene/6120>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "RPE";
+        dc:identifier       <https://identifiers.org/ncbigene/6120>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "6120";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/b3e00> , <https://identifiers.org/wikipathways/WP134_r126271>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP134_r126271/DataNode/b1aba>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/6120> .
+
+<https://identifiers.org/ncbigene/25796>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "PGLS";
+        dc:identifier       <https://identifiers.org/ncbigene/25796>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "25796";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP134_r126271> , <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/acfcd>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP134_r126271/DataNode/db137>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/25796> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP134&oldid=r126271>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<https://identifiers.org/hmdb/HMDB0001112>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Glyceraldehyde-3-phosphate";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0001112>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0001112";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP134_r126271>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP134_r126271/DataNode/cfe61> , <http://rdf.wikipathways.org/Pathway/WP134_r126271/DataNode/eab0c>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001112> .
+
+<http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/d86c2>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP134_r126271>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP134_r126271/Interaction/d86c2>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/bd29e> , <https://identifiers.org/ncbigene/7086>;
+        wp:source         <https://identifiers.org/ncbigene/7086>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/bd29e> .
+
+<http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/d0690>
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/ae258> .
+
+<http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/e9777>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP134_r126271>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP134_r126271/Interaction/e9777>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/f7161> , <https://identifiers.org/ncbigene/7086>;
+        wp:source         <https://identifiers.org/ncbigene/7086>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/f7161> .
+
+<http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/b34c5>
+        rdf:type          wp:DirectedInteraction , wp:Interaction , wp:Conversion;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/acfcd> , <https://identifiers.org/wikipathways/WP134_r126271>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP134_r126271/Interaction/b34c5>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001316> , <https://identifiers.org/hmdb/HMDB0001127>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001127>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001316> .
+
+<https://identifiers.org/cas/2646-35-7>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Sedoheptulose-7-Phosphate";
+        dc:identifier       <https://identifiers.org/cas/2646-35-7>;
+        dc:source           "CAS";
+        dcterms:identifier  "2646-35-7";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP134_r126271>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP134_r126271/DataNode/a62a3>;
+        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=2646-35-7> .
+
+<http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/e13b9>
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/aec8c> .
+
+<http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/bd29e>
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/d86c2> .
+
+<https://identifiers.org/cas/56-73-5>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Glucose-6-Phosphate";
+        dc:identifier       <https://identifiers.org/cas/56-73-5>;
+        dc:source           "CAS";
+        dcterms:identifier  "56-73-5";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/a968e> , <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/c1f78> , <https://identifiers.org/wikipathways/WP134_r126271> , <http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/a5dec>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP134_r126271/DataNode/daa9a>;
+        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=56-73-5> .
+
+<https://identifiers.org/cas/643-13-0>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Fructose-6-Phosphate";
+        dc:identifier       <https://identifiers.org/cas/643-13-0>;
+        dc:source           "CAS";
+        dcterms:identifier  "643-13-0";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP134_r126271>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP134_r126271/DataNode/c4dd7>;
+        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=643-13-0> .
+
+<http://rdf.wikipathways.org/Pathway/WP134_r126271/WP/Interaction/c1f78>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP134_r126271>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP134_r126271/Interaction/c1f78>;
+        wp:participants   <https://identifiers.org/cas/56-73-5>;
+        wp:target         <https://identifiers.org/cas/56-73-5> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP134&oldid=r126271>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .

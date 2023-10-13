@@ -16,64 +16,33 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/ncbigene/100314293>
-        rdf:type            wp:DataNode;
-        rdfs:label          "Mir219-2";
-        dc:identifier       <https://identifiers.org/ncbigene/100314293>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "100314293";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2811/WP2811_rWP2811_r117000/DataNode/b00b3> , <http://rdf.wikipathways.org/Pathway/WP2811/WP2811_rWP2811_r117000/DataNode/c988a> , <http://rdf.wikipathways.org/Pathway/WP2811/WP2811_rWP2811_r117000/DataNode/a72c8>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/100314293> .
+<https://identifiers.org/pubmed/24339157>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "24339157";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2811_r117000>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/24339157> .
 
-<https://identifiers.org/wikipathways/WP2811/WP2811_rWP2811_r117000>
-        rdf:type             wp:Pathway , skos:Collection;
-        dc:identifier        <https://identifiers.org/wikipathways/WP2811/WP2811>;
-        dc:source            "WikiPathways";
-        dc:title             "mir219 in oligodendrocyte differentiation and myelination"@en;
-        dcterms:description  "Young and environmentally enriched exosomes deliver functional miR-219 that impacts oligodendrocyte differentiation and myelination. Schematic illustration of the involvement of miR-219 in oligodendrocyte differentiation. \nUpon exposure to nutritive exosomes, neural stem cells preferentially enter the oligodendrocyte lineage due to the inhibition of the proneurogenic factor NeuroD1. miR-219 also suppresses expression of a number of other factors that inhibit OPC differentiation, such as PDGFRα, a receptor for a mitogenic factor that promotes proliferation and prohibits differentiation. Finally, miR-219 decreases levels of ELOVL7, a regulator of lipid metabolism whose over-activity could lead to demyelination.";
-        dcterms:identifier   "WP2811/WP2811";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP2811/WP2811_rWP2811_r117000>;
-        wp:organismName      "Rattus norvegicus";
-        foaf:page            <http://www.wikipathways.org/instance/WP2811/WP2811_rWP2811_r117000> .
+<https://identifiers.org/wikipathways/WP2811_r117000>
+        rdf:type                skos:Collection , wp:Pathway;
+        dc:identifier           <https://identifiers.org/wikipathways/WP2811>;
+        dc:source               "WikiPathways";
+        dc:title                "mir219 in oligodendrocyte differentiation and myelination"@en;
+        dcterms:description     "Young and environmentally enriched exosomes deliver functional miR-219 that impacts oligodendrocyte differentiation and myelination. Schematic illustration of the involvement of miR-219 in oligodendrocyte differentiation. \nUpon exposure to nutritive exosomes, neural stem cells preferentially enter the oligodendrocyte lineage due to the inhibition of the proneurogenic factor NeuroD1. miR-219 also suppresses expression of a number of other factors that inhibit OPC differentiation, such as PDGFRα, a receptor for a mitogenic factor that promotes proliferation and prohibits differentiation. Finally, miR-219 decreases levels of ELOVL7, a regulator of lipid metabolism whose over-activity could lead to demyelination.";
+        dcterms:identifier      "WP2811";
+        dcterms:references      <https://identifiers.org/pubmed/20223198> , <https://identifiers.org/pubmed/24339157>;
+        cito:cites              <https://identifiers.org/pubmed/20223198> , <https://identifiers.org/pubmed/24339157>;
+        wp:cellTypeOntologyTag  <http://purl.obolibrary.org/obo/CL_0000540> , <http://purl.obolibrary.org/obo/CL_0000468>;
+        wp:isAbout              <http://rdf.wikipathways.org/Pathway/WP2811_r117000>;
+        wp:ontologyTag          <http://purl.obolibrary.org/obo/CL_0000468> , <http://purl.obolibrary.org/obo/PW_0000004> , <http://purl.obolibrary.org/obo/CL_0000540>;
+        wp:organism             <http://purl.obolibrary.org/obo/NCBITaxon_10116>;
+        wp:organismName         "Rattus norvegicus";
+        wp:pathwayOntologyTag   <http://purl.obolibrary.org/obo/PW_0000004>;
+        foaf:img                <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP2811&oldid=r117000> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP2811&oldid=r117000>;
+        foaf:page               <http://www.wikipathways.org/instance/WP2811_r117000> .
 
-<https://identifiers.org/ensembl/ENSRNOG00000010450>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Elovl7";
-        dc:identifier       <https://identifiers.org/ensembl/ENSRNOG00000010450>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSRNOG00000010450";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2811/WP2811_rWP2811_r117000/DataNode/c00c2>;
-        foaf:page           <https://www.ensembl.org/id/ENSRNOG00000010450> .
-
-<https://identifiers.org/ensembl/ENSRNOG00000002244>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Pdgfra";
-        dc:identifier       <https://identifiers.org/ensembl/ENSRNOG00000002244>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSRNOG00000002244";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2811/WP2811_rWP2811_r117000/DataNode/e453a>;
-        foaf:page           <https://www.ensembl.org/id/ENSRNOG00000002244> .
-
-<https://identifiers.org/ensembl/ENSRNOG00000061851>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Foxj3";
-        dc:identifier       <https://identifiers.org/ensembl/ENSRNOG00000061851>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSRNOG00000061851";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2811/WP2811_rWP2811_r117000/DataNode/d98ab>;
-        foaf:page           <https://www.ensembl.org/id/ENSRNOG00000061851> .
-
-<http://rdf.wikipathways.org/Pathway/WP2811/WP2811_rWP2811_r117000/WP/Interaction/id6be7eff6>
-        rdf:type  wp:Interaction .
-
-<https://identifiers.org/ncbigene/100314058>
-        rdf:type            wp:DataNode;
-        rdfs:label          "Mir219-1";
-        dc:identifier       <https://identifiers.org/ncbigene/100314058>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "100314058";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2811/WP2811_rWP2811_r117000/DataNode/d2fcc> , <http://rdf.wikipathways.org/Pathway/WP2811/WP2811_rWP2811_r117000/DataNode/cae8d> , <http://rdf.wikipathways.org/Pathway/WP2811/WP2811_rWP2811_r117000/DataNode/a4777>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/100314058> .
+<http://rdf.wikipathways.org/Pathway/WP2811_r117000/WP/Interaction/d6670>
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP2811_r117000/WP/Interaction/id60a8e7b9> .
 
 <https://identifiers.org/ensembl/ENSRNOG00000013850>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -81,26 +50,41 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSRNOG00000013850>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSRNOG00000013850";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2811/WP2811_rWP2811_r117000/DataNode/eb5f7>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2811_r117000>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2811_r117000/DataNode/eb5f7>;
         foaf:page           <https://www.ensembl.org/id/ENSRNOG00000013850> .
 
-<https://identifiers.org/ensembl/ENSRNOG00000004423>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Zfp238";
-        dc:identifier       <https://identifiers.org/ensembl/ENSRNOG00000004423>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSRNOG00000004423";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2811/WP2811_rWP2811_r117000/DataNode/ffd0f>;
-        foaf:page           <https://www.ensembl.org/id/ENSRNOG00000004423> .
+<http://rdf.wikipathways.org/Pathway/WP2811_r117000/WP/Interaction/id60a8e7b9>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2811_r117000>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2811_r117000/Interaction/id60a8e7b9>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP2811_r117000/WP/Interaction/d6670> , <https://identifiers.org/ensembl/ENSRNOG00000010450>;
+        wp:source         <https://identifiers.org/ensembl/ENSRNOG00000010450>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP2811_r117000/WP/Interaction/d6670> .
 
 <https://identifiers.org/ensembl/ENSRNOG00000005609>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "Neurod1";
         dc:identifier       <https://identifiers.org/ensembl/ENSRNOG00000005609>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSRNOG00000005609";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2811/WP2811_rWP2811_r117000/DataNode/e9289>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2811_r117000/WP/Interaction/id6be7eff6> , <https://identifiers.org/wikipathways/WP2811_r117000>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2811_r117000/DataNode/e9289>;
         foaf:page           <https://www.ensembl.org/id/ENSRNOG00000005609> .
+
+<https://identifiers.org/ensembl/ENSRNOG00000002244>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "Pdgfra";
+        dc:identifier       <https://identifiers.org/ensembl/ENSRNOG00000002244>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSRNOG00000002244";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2811_r117000>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2811_r117000/DataNode/e453a>;
+        foaf:page           <https://www.ensembl.org/id/ENSRNOG00000002244> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_10116>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "10116" .
 
 <https://identifiers.org/ensembl/ENSRNOG00000020514>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -108,5 +92,83 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSRNOG00000020514>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSRNOG00000020514";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2811/WP2811_rWP2811_r117000/DataNode/b961f>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2811_r117000>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2811_r117000/DataNode/b961f>;
         foaf:page           <https://www.ensembl.org/id/ENSRNOG00000020514> .
+
+<https://identifiers.org/ncbigene/100314293>
+        rdf:type            wp:DataNode;
+        rdfs:label          "Mir219-2";
+        dc:identifier       <https://identifiers.org/ncbigene/100314293>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "100314293";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2811_r117000>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2811_r117000/DataNode/c988a> , <http://rdf.wikipathways.org/Pathway/WP2811_r117000/DataNode/b00b3> , <http://rdf.wikipathways.org/Pathway/WP2811_r117000/DataNode/a72c8>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/100314293> .
+
+<https://identifiers.org/ensembl/ENSRNOG00000061851>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "Foxj3";
+        dc:identifier       <https://identifiers.org/ensembl/ENSRNOG00000061851>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSRNOG00000061851";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2811_r117000>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2811_r117000/DataNode/d98ab>;
+        foaf:page           <https://www.ensembl.org/id/ENSRNOG00000061851> .
+
+<http://rdf.wikipathways.org/Pathway/WP2811_r117000/WP/Interaction/id6be7eff6>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2811_r117000>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2811_r117000/Interaction/id6be7eff6>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP2811_r117000/WP/Interaction/id708674c7> , <https://identifiers.org/ensembl/ENSRNOG00000005609> .
+
+<https://identifiers.org/ncbigene/100314058>
+        rdf:type            wp:DataNode;
+        rdfs:label          "Mir219-1";
+        dc:identifier       <https://identifiers.org/ncbigene/100314058>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "100314058";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2811_r117000>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2811_r117000/DataNode/a4777> , <http://rdf.wikipathways.org/Pathway/WP2811_r117000/DataNode/cae8d> , <http://rdf.wikipathways.org/Pathway/WP2811_r117000/DataNode/d2fcc>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/100314058> .
+
+<https://identifiers.org/ensembl/ENSRNOG00000010450>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "Elovl7";
+        dc:identifier       <https://identifiers.org/ensembl/ENSRNOG00000010450>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSRNOG00000010450";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2811_r117000/WP/Interaction/id60a8e7b9> , <https://identifiers.org/wikipathways/WP2811_r117000>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2811_r117000/DataNode/c00c2>;
+        foaf:page           <https://www.ensembl.org/id/ENSRNOG00000010450> .
+
+<https://identifiers.org/wikipathways/WP2811>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP2811_r117000> .
+
+<https://identifiers.org/pubmed/20223198>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "20223198";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2811_r117000>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/20223198> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP2811&oldid=r117000>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP2811&oldid=r117000>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<http://rdf.wikipathways.org/Pathway/WP2811_r117000/WP/Interaction/id708674c7>
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP2811_r117000/WP/Interaction/id6be7eff6> .
+
+<https://identifiers.org/ensembl/ENSRNOG00000004423>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "Zfp238";
+        dc:identifier       <https://identifiers.org/ensembl/ENSRNOG00000004423>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSRNOG00000004423";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2811_r117000>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2811_r117000/DataNode/ffd0f>;
+        foaf:page           <https://www.ensembl.org/id/ENSRNOG00000004423> .

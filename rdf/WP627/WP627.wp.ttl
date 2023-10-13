@@ -16,52 +16,79 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/tair.locus/AT2G19450>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "TAG1";
-        dc:identifier       <https://identifiers.org/tair.locus/AT2G19450>;
-        dc:source           "TAIR";
-        dcterms:identifier  "AT2G19450";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP627/WP627_rWP627_r117255/DataNode/f6225>;
-        foaf:page           <http://arabidopsis.org/servlets/TairObject?type=locus&name=AT2G19450> .
+<http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/b883b>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP627_r117255>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP627_r117255/Interaction/b883b>;
+        wp:participants   <https://identifiers.org/cas/85-61-0>;
+        wp:target         <https://identifiers.org/cas/85-61-0> .
 
-<https://identifiers.org/tair.locus/AT4G00400>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "acyltransferase";
-        dc:identifier       <https://identifiers.org/tair.locus/AT4G00400>;
+<https://identifiers.org/kegg.compound/C00157>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "a phosphatidylcholine";
+        dc:identifier       <https://identifiers.org/kegg.compound/C00157>;
+        dc:source           "KEGG Compound";
+        dcterms:identifier  "C00157";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP627_r117255> , <http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/e44f9>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP627_r117255/DataNode/dfc72>;
+        foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C00157> .
+
+<https://identifiers.org/chebi/CHEBI:17855>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "a triacylglycerol";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:17855>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:17855";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/b3e07> , <http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/cb60b> , <https://identifiers.org/wikipathways/WP627_r117255>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP627_r117255/DataNode/f547e>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17855> .
+
+<https://identifiers.org/pubmed/10571850>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "10571850";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP627_r117255>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/10571850> .
+
+<http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/be291>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP627_r117255>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP627_r117255/Interaction/be291>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/d4ff9> , <https://identifiers.org/kegg.compound/C00001> .
+
+<https://identifiers.org/tair.locus/AT5G13640>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "PDAT";
+        dc:identifier       <https://identifiers.org/tair.locus/AT5G13640>;
         dc:source           "TAIR";
-        dcterms:identifier  "AT4G00400";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP627/WP627_rWP627_r117255/DataNode/f0a4d>;
-        foaf:page           <http://arabidopsis.org/servlets/TairObject?type=locus&name=AT4G00400> .
+        dcterms:identifier  "AT5G13640";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/f0f62> , <https://identifiers.org/wikipathways/WP627_r117255>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP627_r117255/DataNode/c74df>;
+        foaf:page           <http://arabidopsis.org/servlets/TairObject?type=locus&name=AT5G13640> .
+
+<http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/a36aa>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP627_r117255> , <http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/b2dfd> , <http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/e488b>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP627_r117255/Interaction/a36aa>;
+        wp:participants   <https://identifiers.org/kegg.compound/C00416>;
+        wp:target         <https://identifiers.org/kegg.compound/C00416> .
 
 <https://identifiers.org/kegg.compound/C00093>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "sn-glyceryl-3-phosphate";
         dc:identifier       <https://identifiers.org/kegg.compound/C00093>;
         dc:source           "KEGG Compound";
         dcterms:identifier  "C00093";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP627/WP627_rWP627_r117255/DataNode/f22e7>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/beaeb> , <https://identifiers.org/wikipathways/WP627_r117255>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP627_r117255/DataNode/f22e7>;
         foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C00093> .
 
-<https://identifiers.org/tair.locus/AT1G32200>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "glycerol-3-phosphate acyltransferase";
-        dc:identifier       <https://identifiers.org/tair.locus/AT1G32200>;
-        dc:source           "TAIR";
-        dcterms:identifier  "AT1G32200";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP627/WP627_rWP627_r117255/DataNode/a103c>;
-        foaf:page           <http://arabidopsis.org/servlets/TairObject?type=locus&name=AT1G32200> .
-
-<https://identifiers.org/wikipathways/WP627/WP627_rWP627_r117255>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP627/WP627>;
-        dc:source            "WikiPathways";
-        dc:title             "Triacylglycerol biosynthesis"@en;
-        dcterms:description  "Triacylglycerol (TAG) is the major lipid reserve in plants and animals. The assembly of TAG occurs in the endoplasmic reticulum (ER). Four consecutive reactions are catalyzed by ER membrane bound enzymes. The two intermediates, phosphatidate and 1,2-diacylglycerol, are also substrates for the synthesis of membrane lipids glycosylglycerides and phosphoglycerides. Thus, the last step in the pathway, catalyzed by diacylglycerol acyltransferase, is the only dedicated step in triacylglycerol synthesis.\n\nThe traditional Kennedy pathway does not include the reaction (EC 2.3.1.158, phospholipid:diacylglycerol acyltransferase, PDAT) where phospholipid is utilized as the acyl donor in TAG formation. The role of the PDAT route in TAG biosynthesis was clearly shown in yeast[ Dahlqvist00 ]. PDAT activity in plants was demonstrated in a few oil seed plants including caster bean[ Dahlqvist00 ]. The caster bean seeds have a high content of ricinoleat in the seed oil. Ricinoleat and other unusual fatty acids are modified from acyl groups linked to phospholipids, and transferred to TAG afterwards. PDAT was proposed playing an important role in the last step. However, the contribution of PDAT to TAG biosynthesis in other plants is not clear. Overexpressing or knockout of the Arabidopsis PDAT had no effect on TAG biosynthesis[ Stahl04 , Mhaske05 ].\n\nThe constitution of different species of saturated and unsaturated fatty acids at the sn-1, sn-2, and sn-3 positions of the glycerol backbone varies among different plants, and is determined by substrate specificities of the three acyltransferases involved in this pathway. The composition of distinct fatty acids in TAG determines the quality and property of lipids of different plants, and also contributes to cold temperature sensitivity of different plants. \n\nThe pathway and description were copied from Gramene and AraCyc: http://pathway.gramene.org/ARA/NEW-IMAGE?object=TRIGLSYN-PWY";
-        dcterms:identifier   "WP627/WP627";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP627/WP627_rWP627_r117255>;
-        wp:organismName      "Arabidopsis thaliana";
-        foaf:page            <http://www.wikipathways.org/instance/WP627/WP627_rWP627_r117255> .
+<http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/b3e07>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/d6e81> , <https://identifiers.org/wikipathways/WP627_r117255>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP627_r117255/Interaction/b3e07>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:17855>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:17855> .
 
 <https://identifiers.org/kegg.compound/C00416>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -69,62 +96,53 @@
         dc:identifier       <https://identifiers.org/kegg.compound/C00416>;
         dc:source           "KEGG Compound";
         dcterms:identifier  "C00416";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP627/WP627_rWP627_r117255/DataNode/fcefb>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP627_r117255> , <http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/d4ff9> , <http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/a36aa>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP627_r117255/DataNode/fcefb>;
         foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C00416> .
 
+<https://identifiers.org/tair.locus/AT2G19450>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "TAG1";
+        dc:identifier       <https://identifiers.org/tair.locus/AT2G19450>;
+        dc:source           "TAIR";
+        dcterms:identifier  "AT2G19450";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP627_r117255>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP627_r117255/DataNode/f6225>;
+        foaf:page           <http://arabidopsis.org/servlets/TairObject?type=locus&name=AT2G19450> .
+
 <https://identifiers.org/cas/14265-44-2>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "Phosphate";
         dc:identifier       <https://identifiers.org/cas/14265-44-2>;
         dc:source           "CAS";
         dcterms:identifier  "14265-44-2";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP627/WP627_rWP627_r117255/DataNode/a3b5d>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/a4727> , <https://identifiers.org/wikipathways/WP627_r117255>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP627_r117255/DataNode/a3b5d>;
         foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=14265-44-2> .
 
-<https://identifiers.org/tair.locus/AT3G11430>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "1-acylglycerol-3-phosphate O-acyltransferase";
-        dc:identifier       <https://identifiers.org/tair.locus/AT3G11430>;
-        dc:source           "TAIR";
-        dcterms:identifier  "AT3G11430";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP627/WP627_rWP627_r117255/DataNode/a4c8a>;
-        foaf:page           <http://arabidopsis.org/servlets/TairObject?type=locus&name=AT3G11430> .
+<https://identifiers.org/pubmed/15907694>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "15907694";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP627_r117255>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/15907694> .
 
-<https://identifiers.org/chebi/CHEBI:37554>
-        rdf:type            wp:DataNode , wp:Metabolite;
-        rdfs:label          "a fatty acyl CoA";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:37554>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:37554";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP627/WP627_rWP627_r117255/DataNode/c4606> , <http://rdf.wikipathways.org/Pathway/WP627/WP627_rWP627_r117255/DataNode/cce93> , <http://rdf.wikipathways.org/Pathway/WP627/WP627_rWP627_r117255/DataNode/e1b4f>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37554> .
+<http://purl.obolibrary.org/obo/NCBITaxon_3702>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "3702" .
 
-<https://identifiers.org/chebi/CHEBI:17855>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "a triacylglycerol";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:17855>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:17855";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP627/WP627_rWP627_r117255/DataNode/f547e>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17855> .
+<http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/caf1e>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP627_r117255>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP627_r117255/Interaction/caf1e>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/beaeb> , <https://identifiers.org/chebi/CHEBI:37554> .
 
-<https://identifiers.org/kegg.compound/C00157>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "a phosphatidylcholine";
-        dc:identifier       <https://identifiers.org/kegg.compound/C00157>;
-        dc:source           "KEGG Compound";
-        dcterms:identifier  "C00157";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP627/WP627_rWP627_r117255/DataNode/dfc72>;
-        foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C00157> .
-
-<https://identifiers.org/tair.locus/AT5G13640>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "PDAT";
-        dc:identifier       <https://identifiers.org/tair.locus/AT5G13640>;
-        dc:source           "TAIR";
-        dcterms:identifier  "AT5G13640";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP627/WP627_rWP627_r117255/DataNode/c74df>;
-        foaf:page           <http://arabidopsis.org/servlets/TairObject?type=locus&name=AT5G13640> .
+<https://identifiers.org/pubmed/10829075>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "10829075";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP627_r117255>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/10829075> .
 
 <https://identifiers.org/tair.locus/AT3G18220>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -132,23 +150,95 @@
         dc:identifier       <https://identifiers.org/tair.locus/AT3G18220>;
         dc:source           "TAIR";
         dcterms:identifier  "AT3G18220";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP627/WP627_rWP627_r117255/DataNode/f38d3>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP627_r117255>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP627_r117255/DataNode/f38d3>;
         foaf:page           <http://arabidopsis.org/servlets/TairObject?type=locus&name=AT3G18220> .
 
-<https://identifiers.org/tair.locus/AT3G02600>
+<https://identifiers.org/tair.locus/AT3G11430>
         rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "LPP3";
-        dc:identifier       <https://identifiers.org/tair.locus/AT3G02600>;
+        rdfs:label          "1-acylglycerol-3-phosphate O-acyltransferase";
+        dc:identifier       <https://identifiers.org/tair.locus/AT3G11430>;
         dc:source           "TAIR";
-        dcterms:identifier  "AT3G02600";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP627/WP627_rWP627_r117255/DataNode/f4722>;
-        foaf:page           <http://arabidopsis.org/servlets/TairObject?type=locus&name=AT3G02600> .
+        dcterms:identifier  "AT3G11430";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP627_r117255> , <http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/e488b>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP627_r117255/DataNode/a4c8a>;
+        foaf:page           <http://arabidopsis.org/servlets/TairObject?type=locus&name=AT3G11430> .
 
-<http://rdf.wikipathways.org/Pathway/WP627/WP627_rWP627_r117255/WP/Interaction/be291>
-        rdf:type  wp:Interaction .
+<http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/e44f9>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP627_r117255>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP627_r117255/Interaction/e44f9>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/cb60b> , <https://identifiers.org/kegg.compound/C00157>;
+        wp:source         <https://identifiers.org/kegg.compound/C00157>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/cb60b> .
 
-<http://rdf.wikipathways.org/Pathway/WP627/WP627_rWP627_r117255/WP/Interaction/d6e81>
-        rdf:type  wp:Interaction .
+<https://identifiers.org/tair.locus/AT4G00400>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "acyltransferase";
+        dc:identifier       <https://identifiers.org/tair.locus/AT4G00400>;
+        dc:source           "TAIR";
+        dcterms:identifier  "AT4G00400";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP627_r117255>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP627_r117255/DataNode/f0a4d>;
+        foaf:page           <http://arabidopsis.org/servlets/TairObject?type=locus&name=AT4G00400> .
+
+<http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/beaeb>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/caf1e> , <https://identifiers.org/wikipathways/WP627_r117255>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP627_r117255/Interaction/beaeb>;
+        wp:participants   <https://identifiers.org/kegg.compound/C00093>;
+        wp:source         <https://identifiers.org/kegg.compound/C00093> .
+
+<http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/b2dfd>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP627_r117255>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP627_r117255/Interaction/b2dfd>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/a36aa> , <https://identifiers.org/chebi/CHEBI:37554> .
+
+<https://identifiers.org/wikipathways/WP627_r117255>
+        rdf:type               skos:Collection , wp:Pathway;
+        dc:identifier          <https://identifiers.org/wikipathways/WP627>;
+        dc:source              "WikiPathways";
+        dc:title               "Triacylglycerol biosynthesis"@en;
+        dcterms:description    "Triacylglycerol (TAG) is the major lipid reserve in plants and animals. The assembly of TAG occurs in the endoplasmic reticulum (ER). Four consecutive reactions are catalyzed by ER membrane bound enzymes. The two intermediates, phosphatidate and 1,2-diacylglycerol, are also substrates for the synthesis of membrane lipids glycosylglycerides and phosphoglycerides. Thus, the last step in the pathway, catalyzed by diacylglycerol acyltransferase, is the only dedicated step in triacylglycerol synthesis.\n\nThe traditional Kennedy pathway does not include the reaction (EC 2.3.1.158, phospholipid:diacylglycerol acyltransferase, PDAT) where phospholipid is utilized as the acyl donor in TAG formation. The role of the PDAT route in TAG biosynthesis was clearly shown in yeast[ Dahlqvist00 ]. PDAT activity in plants was demonstrated in a few oil seed plants including caster bean[ Dahlqvist00 ]. The caster bean seeds have a high content of ricinoleat in the seed oil. Ricinoleat and other unusual fatty acids are modified from acyl groups linked to phospholipids, and transferred to TAG afterwards. PDAT was proposed playing an important role in the last step. However, the contribution of PDAT to TAG biosynthesis in other plants is not clear. Overexpressing or knockout of the Arabidopsis PDAT had no effect on TAG biosynthesis[ Stahl04 , Mhaske05 ].\n\nThe constitution of different species of saturated and unsaturated fatty acids at the sn-1, sn-2, and sn-3 positions of the glycerol backbone varies among different plants, and is determined by substrate specificities of the three acyltransferases involved in this pathway. The composition of distinct fatty acids in TAG determines the quality and property of lipids of different plants, and also contributes to cold temperature sensitivity of different plants. \n\nThe pathway and description were copied from Gramene and AraCyc: http://pathway.gramene.org/ARA/NEW-IMAGE?object=TRIGLSYN-PWY";
+        dcterms:identifier     "WP627";
+        dcterms:references     <https://identifiers.org/pubmed/10829075> , <https://identifiers.org/pubmed/15247387> , <https://identifiers.org/pubmed/10571850> , <https://identifiers.org/pubmed/15907694>;
+        cito:cites             <https://identifiers.org/pubmed/10571850> , <https://identifiers.org/pubmed/15907694> , <https://identifiers.org/pubmed/15247387> , <https://identifiers.org/pubmed/10829075>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP627_r117255>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000736>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_3702>;
+        wp:organismName        "Arabidopsis thaliana";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000736>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP627&oldid=r117255> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP627&oldid=r117255>;
+        foaf:page              <http://www.wikipathways.org/instance/WP627_r117255> .
+
+<http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/c1186>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP627_r117255>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP627_r117255/Interaction/c1186>;
+        wp:participants   <https://identifiers.org/cas/85-61-0>;
+        wp:target         <https://identifiers.org/cas/85-61-0> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP627&oldid=r117255>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<https://identifiers.org/tair.locus/AT1G32200>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "glycerol-3-phosphate acyltransferase";
+        dc:identifier       <https://identifiers.org/tair.locus/AT1G32200>;
+        dc:source           "TAIR";
+        dcterms:identifier  "AT1G32200";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP627_r117255>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP627_r117255/DataNode/a103c>;
+        foaf:page           <http://arabidopsis.org/servlets/TairObject?type=locus&name=AT1G32200> .
+
+<https://identifiers.org/pubmed/15247387>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "15247387";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP627_r117255>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/15247387> .
 
 <https://identifiers.org/tair.locus/AT1G15080>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -156,41 +246,31 @@
         dc:identifier       <https://identifiers.org/tair.locus/AT1G15080>;
         dc:source           "TAIR";
         dcterms:identifier  "AT1G15080";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP627/WP627_rWP627_r117255/DataNode/e6bde>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP627_r117255>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP627_r117255/DataNode/e6bde>;
         foaf:page           <http://arabidopsis.org/servlets/TairObject?type=locus&name=AT1G15080> .
 
-<http://rdf.wikipathways.org/Pathway/WP627/WP627_rWP627_r117255/WP/Interaction/b2dfd>
-        rdf:type  wp:Interaction .
+<http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/a4727>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP627_r117255>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP627_r117255/Interaction/a4727>;
+        wp:participants   <https://identifiers.org/cas/14265-44-2>;
+        wp:target         <https://identifiers.org/cas/14265-44-2> .
 
-<http://rdf.wikipathways.org/Pathway/WP627/WP627_rWP627_r117255/WP/Interaction/caf1e>
-        rdf:type  wp:Interaction .
+<http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/f0f62>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP627_r117255>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP627_r117255/Interaction/f0f62>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/cb60b> , <https://identifiers.org/tair.locus/AT5G13640>;
+        wp:source         <https://identifiers.org/tair.locus/AT5G13640>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/cb60b> .
 
-<https://identifiers.org/cas/85-61-0>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Coenzyme A";
-        dc:identifier       <https://identifiers.org/cas/85-61-0>;
-        dc:source           "CAS";
-        dcterms:identifier  "85-61-0";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP627/WP627_rWP627_r117255/DataNode/ae85d> , <http://rdf.wikipathways.org/Pathway/WP627/WP627_rWP627_r117255/DataNode/b6e8b> , <http://rdf.wikipathways.org/Pathway/WP627/WP627_rWP627_r117255/DataNode/bbd42>;
-        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=85-61-0> .
-
-<https://identifiers.org/kegg.compound/C00001>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Water";
-        dc:identifier       <https://identifiers.org/kegg.compound/C00001>;
-        dc:source           "KEGG Compound";
-        dcterms:identifier  "C00001";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP627/WP627_rWP627_r117255/DataNode/c5ca5>;
-        foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C00001> .
-
-<https://identifiers.org/tair.locus/AT3G51520>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "diacylglycerol acyltransferase";
-        dc:identifier       <https://identifiers.org/tair.locus/AT3G51520>;
-        dc:source           "TAIR";
-        dcterms:identifier  "AT3G51520";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP627/WP627_rWP627_r117255/DataNode/d5463>;
-        foaf:page           <http://arabidopsis.org/servlets/TairObject?type=locus&name=AT3G51520> .
+<http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/cb60b>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/f0f62> , <http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/e44f9> , <https://identifiers.org/wikipathways/WP627_r117255>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP627_r117255/Interaction/cb60b>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:17855>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:17855> .
 
 <https://identifiers.org/tair.locus/AT2G01180>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -198,5 +278,91 @@
         dc:identifier       <https://identifiers.org/tair.locus/AT2G01180>;
         dc:source           "TAIR";
         dcterms:identifier  "AT2G01180";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP627/WP627_rWP627_r117255/DataNode/ee79e>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP627_r117255>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP627_r117255/DataNode/ee79e>;
         foaf:page           <http://arabidopsis.org/servlets/TairObject?type=locus&name=AT2G01180> .
+
+<https://identifiers.org/wikipathways/WP627>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP627_r117255> .
+
+<https://identifiers.org/kegg.compound/C00001>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Water";
+        dc:identifier       <https://identifiers.org/kegg.compound/C00001>;
+        dc:source           "KEGG Compound";
+        dcterms:identifier  "C00001";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP627_r117255> , <http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/be291>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP627_r117255/DataNode/c5ca5>;
+        foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C00001> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP627&oldid=r117255>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<https://identifiers.org/cas/85-61-0>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Coenzyme A";
+        dc:identifier       <https://identifiers.org/cas/85-61-0>;
+        dc:source           "CAS";
+        dcterms:identifier  "85-61-0";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/b883b> , <http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/e4a34> , <http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/c1186> , <https://identifiers.org/wikipathways/WP627_r117255>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP627_r117255/DataNode/ae85d> , <http://rdf.wikipathways.org/Pathway/WP627_r117255/DataNode/bbd42> , <http://rdf.wikipathways.org/Pathway/WP627_r117255/DataNode/b6e8b>;
+        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=85-61-0> .
+
+<https://identifiers.org/tair.locus/AT3G51520>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "diacylglycerol acyltransferase";
+        dc:identifier       <https://identifiers.org/tair.locus/AT3G51520>;
+        dc:source           "TAIR";
+        dcterms:identifier  "AT3G51520";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP627_r117255>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP627_r117255/DataNode/d5463>;
+        foaf:page           <http://arabidopsis.org/servlets/TairObject?type=locus&name=AT3G51520> .
+
+<http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/e488b>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP627_r117255>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP627_r117255/Interaction/e488b>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/a36aa> , <https://identifiers.org/tair.locus/AT3G11430>;
+        wp:source         <https://identifiers.org/tair.locus/AT3G11430>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/a36aa> .
+
+<http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/d6e81>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP627_r117255>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP627_r117255/Interaction/d6e81>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/b3e07> , <https://identifiers.org/chebi/CHEBI:37554> .
+
+<https://identifiers.org/chebi/CHEBI:37554>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "a fatty acyl CoA";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:37554>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:37554";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/caf1e> , <http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/d6e81> , <http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/b2dfd> , <https://identifiers.org/wikipathways/WP627_r117255>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP627_r117255/DataNode/cce93> , <http://rdf.wikipathways.org/Pathway/WP627_r117255/DataNode/e1b4f> , <http://rdf.wikipathways.org/Pathway/WP627_r117255/DataNode/c4606>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37554> .
+
+<http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/d4ff9>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/be291> , <https://identifiers.org/wikipathways/WP627_r117255>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP627_r117255/Interaction/d4ff9>;
+        wp:participants   <https://identifiers.org/kegg.compound/C00416>;
+        wp:source         <https://identifiers.org/kegg.compound/C00416> .
+
+<http://rdf.wikipathways.org/Pathway/WP627_r117255/WP/Interaction/e4a34>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP627_r117255>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP627_r117255/Interaction/e4a34>;
+        wp:participants   <https://identifiers.org/cas/85-61-0>;
+        wp:target         <https://identifiers.org/cas/85-61-0> .
+
+<https://identifiers.org/tair.locus/AT3G02600>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "LPP3";
+        dc:identifier       <https://identifiers.org/tair.locus/AT3G02600>;
+        dc:source           "TAIR";
+        dcterms:identifier  "AT3G02600";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP627_r117255>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP627_r117255/DataNode/f4722>;
+        foaf:page           <http://arabidopsis.org/servlets/TairObject?type=locus&name=AT3G02600> .

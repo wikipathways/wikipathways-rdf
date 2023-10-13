@@ -17,33 +17,55 @@
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
 <https://identifiers.org/ensembl/ENSG00000116016>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "HIF2A";
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000116016>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000116016";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3678/WP3678_rWP3678_r117647/DataNode/ea2b4>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3678_r117647> , <http://rdf.wikipathways.org/Pathway/WP3678_r117647/WP/Interaction/idb4cf4be7>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3678_r117647/DataNode/ea2b4>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000116016> .
 
-<https://identifiers.org/wikipathways/WP3678/WP3678_rWP3678_r117647>
-        rdf:type             wp:Pathway , skos:Collection;
-        dc:identifier        <https://identifiers.org/wikipathways/WP3678/WP3678>;
-        dc:source            "WikiPathways";
-        dc:title             "Amplification and expansion of oncogenic pathways as metastatic traits"@en;
-        dcterms:description  "This pathway is based on Figure 4 of \"Origins of metastatic traits.\"(See Bibliography).The majority of cancer cells released from tumors die off, so cancer biologists are trying to figure out exactly what gives certain cells the ability to colonize other distant organs. Specific genes and mediators of metastasis have been identified, but it remains mostly unknown how cancer cells acquire these traits.\nMetastatic traits acquired by a quantitative gain in pathway output: These pathways demonstrate metastatic traits acquired by a quantitative gain in pathway output. The PI3K-Akt signaling pathway, which is augmented by VCAM-1 and SRC, leads to increased cell survival, a significant metastatic trait. Similarly, TCF augments the output of the NOTCH and, along with periostin, Wnt signaling pathways. As the signaling of these pathways increases, the metastatic and oncogenic potential of the cell also increase.\nMetastatic traits acquired by a qualitative expansion of pathway output: This pathway demonstrates metastatic traits acquired by a qualitative expansion of pathway output. Loss of the von Hippel-Lindau tumor suppressor (VHL) in renal cell carcinoma leads to increased activation of hypoxia-inducible transcription factors (HIFs). Histone H3K27 and CYTIP give the VHL-HIF pathway access to new target genes. Each of these new target genes, in this case CXCR4, VEGFA, and CYTIP, lead to an increase in a metastatic trait. Here, the level of metastatic fitness is not linearly proportional to pathway activity; rather, the pathway activates an additional set of factors that affect metastatic fitness.\n\nProteins on this pathway have targeted assays available via the [https://assays.cancer.gov/available_assays?wp_id=WP3678 CPTAC Assay Portal]";
-        dcterms:identifier   "WP3678/WP3678";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP3678/WP3678_rWP3678_r117647>;
-        wp:organismName      "Homo sapiens";
-        foaf:page            <http://www.wikipathways.org/instance/WP3678/WP3678_rWP3678_r117647> .
+<http://rdf.wikipathways.org/Pathway/WP3678_r117647/WP/Interaction/ida9857630>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3678_r117647>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3678_r117647/Interaction/ida9857630>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000105851>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000105851> .
+
+<http://rdf.wikipathways.org/Pathway/WP3678_r117647/WP/Interaction/idbf2b360a>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3678_r117647>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3678_r117647/Interaction/idbf2b360a>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000148400> , <https://identifiers.org/ensembl/ENSG00000041982>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000041982>;
+        wp:target         <https://identifiers.org/ensembl/ENSG00000148400> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3678&oldid=r117647>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
 
 <https://identifiers.org/ensembl/ENSG00000148400>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "NOTCH";
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000148400>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000148400";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3678/WP3678_rWP3678_r117647/DataNode/cad8d>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3678_r117647/WP/Interaction/id41253cf7> , <http://rdf.wikipathways.org/Pathway/WP3678_r117647/WP/Interaction/idbf2b360a> , <http://rdf.wikipathways.org/Pathway/WP3678_r117647/WP/Interaction/id50afed69> , <https://identifiers.org/wikipathways/WP3678_r117647>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3678_r117647/DataNode/cad8d>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000148400> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3678&oldid=r117647>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<http://rdf.wikipathways.org/Pathway/WP3678_r117647/WP/Interaction/id2cef955c>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3678_r117647>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3678_r117647/Interaction/id2cef955c>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP3678_r117647/WP/Interaction/id1626b60e> , <https://identifiers.org/ensembl/ENSG00000162692>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000162692>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP3678_r117647/WP/Interaction/id1626b60e> .
 
 <https://identifiers.org/ensembl/ENSG00000115165>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -51,26 +73,89 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000115165>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000115165";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3678/WP3678_rWP3678_r117647/DataNode/b15ca>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3678_r117647> , <http://rdf.wikipathways.org/Pathway/WP3678_r117647/WP/Interaction/id45cb9535>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3678_r117647/DataNode/b15ca>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000115165> .
 
+<http://purl.obolibrary.org/obo/NCBITaxon_9606>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9606" .
+
+<http://rdf.wikipathways.org/Pathway/WP3678_r117647/WP/Interaction/id79bfbb>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3678_r117647>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3678_r117647/Interaction/id79bfbb>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000121966>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000121966> .
+
+<http://rdf.wikipathways.org/Pathway/WP3678_r117647/WP/Interaction/id45cb9535>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3678_r117647>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3678_r117647/Interaction/id45cb9535>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000115165>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000115165> .
+
+<http://rdf.wikipathways.org/Pathway/WP3678_r117647/WP/Interaction/id41253cf7>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3678_r117647>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3678_r117647/Interaction/id41253cf7>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000148400>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000148400> .
+
+<http://rdf.wikipathways.org/Pathway/WP3678_r117647/WP/Interaction/id9f3cb22b>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3678_r117647>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3678_r117647/Interaction/id9f3cb22b>;
+        wp:participants   <https://identifiers.org/uniprot/P09544> , <https://identifiers.org/ensembl/ENSG00000133110>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000133110>;
+        wp:target         <https://identifiers.org/uniprot/P09544> .
+
 <https://identifiers.org/ensembl/ENSG00000121966>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "CXCR4";
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000121966>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000121966";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3678/WP3678_rWP3678_r117647/DataNode/d9ba8>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3678_r117647> , <http://rdf.wikipathways.org/Pathway/WP3678_r117647/WP/Interaction/id79bfbb>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3678_r117647/DataNode/d9ba8>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000121966> .
 
 <https://identifiers.org/ensembl/ENSG00000162692>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "VCAM1";
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000162692>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000162692";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3678/WP3678_rWP3678_r117647/DataNode/a3926>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3678_r117647> , <http://rdf.wikipathways.org/Pathway/WP3678_r117647/WP/Interaction/id2cef955c>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3678_r117647/DataNode/a3926>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000162692> .
+
+<http://rdf.wikipathways.org/Pathway/WP3678_r117647/WP/Interaction/id2be1dfe3>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3678_r117647>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3678_r117647/Interaction/id2be1dfe3>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP3678_r117647/WP/Interaction/id9be9c788> , <https://identifiers.org/ensembl/ENSG00000197122>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000197122>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP3678_r117647/WP/Interaction/id9be9c788> .
+
+<http://rdf.wikipathways.org/Pathway/WP3678_r117647/WP/Interaction/idb4cf4be7>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3678_r117647>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3678_r117647/Interaction/idb4cf4be7>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000116016> , <https://identifiers.org/ensembl/ENSG00000134086>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000134086>;
+        wp:target         <https://identifiers.org/ensembl/ENSG00000116016> .
+
+<http://rdf.wikipathways.org/Pathway/WP3678_r117647/WP/Interaction/id50afed69>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3678_r117647>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3678_r117647/Interaction/id50afed69>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000148400> , <https://identifiers.org/ensembl/ENSG00000101384>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000101384>;
+        wp:target         <https://identifiers.org/ensembl/ENSG00000148400> .
+
+<https://identifiers.org/wikipathways/WP3678>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP3678_r117647> .
 
 <https://identifiers.org/ensembl/ENSG00000197122>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -78,7 +163,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000197122>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000197122";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3678/WP3678_rWP3678_r117647/DataNode/a3c5e>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3678_r117647> , <http://rdf.wikipathways.org/Pathway/WP3678_r117647/WP/Interaction/id2be1dfe3>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3678_r117647/DataNode/a3c5e>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000197122> .
 
 <https://identifiers.org/ensembl/ENSG00000152284>
@@ -87,7 +173,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000152284>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000152284";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3678/WP3678_rWP3678_r117647/DataNode/ad2da>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3678_r117647>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3678_r117647/DataNode/ad2da>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000152284> .
 
 <https://identifiers.org/ensembl/ENSG00000112715>
@@ -96,35 +183,78 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000112715>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000112715";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3678/WP3678_rWP3678_r117647/DataNode/ae6fc>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3678_r117647/WP/Interaction/id510e3f81> , <https://identifiers.org/wikipathways/WP3678_r117647>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3678_r117647/DataNode/ae6fc>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000112715> .
 
+<http://rdf.wikipathways.org/Pathway/WP3678_r117647/WP/Interaction/id510e3f81>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3678_r117647>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3678_r117647/Interaction/id510e3f81>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000112715>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000112715> .
+
 <https://identifiers.org/ensembl/ENSG00000134086>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "VHL";
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000134086>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000134086";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3678/WP3678_rWP3678_r117647/DataNode/a5f20>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3678_r117647/WP/Interaction/idb4cf4be7> , <https://identifiers.org/wikipathways/WP3678_r117647>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3678_r117647/DataNode/a5f20>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000134086> .
 
+<http://rdf.wikipathways.org/Pathway/WP3678_r117647/WP/Interaction/id8e6edf13>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3678_r117647>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3678_r117647/Interaction/id8e6edf13>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000105851>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000105851> .
+
+<https://identifiers.org/pubmed/24135279>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "24135279";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3678_r117647>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/24135279> .
+
 <https://identifiers.org/ensembl/ENSG00000101384>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "JAGGED";
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000101384>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000101384";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3678/WP3678_rWP3678_r117647/DataNode/b19b1>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3678_r117647> , <http://rdf.wikipathways.org/Pathway/WP3678_r117647/WP/Interaction/id50afed69>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3678_r117647/DataNode/b19b1>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000101384> .
 
 <https://identifiers.org/ensembl/ENSG00000133110>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "Periostin";
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000133110>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000133110";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3678/WP3678_rWP3678_r117647/DataNode/a5211>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3678_r117647> , <http://rdf.wikipathways.org/Pathway/WP3678_r117647/WP/Interaction/id9f3cb22b>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3678_r117647/DataNode/a5211>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000133110> .
+
+<https://identifiers.org/wikipathways/WP3678_r117647>
+        rdf:type               wp:Pathway , skos:Collection;
+        dc:identifier          <https://identifiers.org/wikipathways/WP3678>;
+        dc:source              "WikiPathways";
+        dc:title               "Amplification and expansion of oncogenic pathways as metastatic traits"@en;
+        dcterms:description    "This pathway is based on Figure 4 of \"Origins of metastatic traits.\"(See Bibliography).The majority of cancer cells released from tumors die off, so cancer biologists are trying to figure out exactly what gives certain cells the ability to colonize other distant organs. Specific genes and mediators of metastasis have been identified, but it remains mostly unknown how cancer cells acquire these traits.\nMetastatic traits acquired by a quantitative gain in pathway output: These pathways demonstrate metastatic traits acquired by a quantitative gain in pathway output. The PI3K-Akt signaling pathway, which is augmented by VCAM-1 and SRC, leads to increased cell survival, a significant metastatic trait. Similarly, TCF augments the output of the NOTCH and, along with periostin, Wnt signaling pathways. As the signaling of these pathways increases, the metastatic and oncogenic potential of the cell also increase.\nMetastatic traits acquired by a qualitative expansion of pathway output: This pathway demonstrates metastatic traits acquired by a qualitative expansion of pathway output. Loss of the von Hippel-Lindau tumor suppressor (VHL) in renal cell carcinoma leads to increased activation of hypoxia-inducible transcription factors (HIFs). Histone H3K27 and CYTIP give the VHL-HIF pathway access to new target genes. Each of these new target genes, in this case CXCR4, VEGFA, and CYTIP, lead to an increase in a metastatic trait. Here, the level of metastatic fitness is not linearly proportional to pathway activity; rather, the pathway activates an additional set of factors that affect metastatic fitness.\n\nProteins on this pathway have targeted assays available via the [https://assays.cancer.gov/available_assays?wp_id=WP3678 CPTAC Assay Portal]";
+        dcterms:identifier     "WP3678";
+        dcterms:references     <https://identifiers.org/pubmed/24135279>;
+        cito:cites             <https://identifiers.org/pubmed/24135279>;
+        wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_14175> , <http://purl.obolibrary.org/obo/DOID_162>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP3678_r117647>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/DOID_162> , <http://purl.obolibrary.org/obo/PW_0000605> , <http://purl.obolibrary.org/obo/DOID_14175> , <http://purl.obolibrary.org/obo/PW_0000013>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606>;
+        wp:organismName        "Homo sapiens";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000605> , <http://purl.obolibrary.org/obo/PW_0000013>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3678&oldid=r117647> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3678&oldid=r117647>;
+        foaf:page              <http://www.wikipathways.org/instance/WP3678_r117647> .
 
 <https://identifiers.org/ensembl/ENSG00000138795>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -132,16 +262,25 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000138795>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000138795";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3678/WP3678_rWP3678_r117647/DataNode/c0ef1>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3678_r117647>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3678_r117647/DataNode/c0ef1>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000138795> .
 
+<http://rdf.wikipathways.org/Pathway/WP3678_r117647/WP/Interaction/id1626b60e>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP3678_r117647/WP/Interaction/id2cef955c> , <https://identifiers.org/wikipathways/WP3678_r117647>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3678_r117647/Interaction/id1626b60e>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000105851>;
+        wp:target         <https://identifiers.org/ensembl/ENSG00000105851> .
+
 <https://identifiers.org/ensembl/ENSG00000041982>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "TNC";
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000041982>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000041982";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3678/WP3678_rWP3678_r117647/DataNode/be47f>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3678_r117647/WP/Interaction/idbf2b360a> , <https://identifiers.org/wikipathways/WP3678_r117647>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3678_r117647/DataNode/be47f>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000041982> .
 
 <https://identifiers.org/ensembl/ENSG00000081059>
@@ -150,7 +289,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000081059>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000081059";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3678/WP3678_rWP3678_r117647/DataNode/bb140>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3678_r117647>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3678_r117647/DataNode/bb140>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000081059> .
 
 <https://identifiers.org/uniprot/P09544>
@@ -159,17 +299,26 @@
         dc:identifier       <https://identifiers.org/uniprot/P09544>;
         dc:source           "Uniprot-TrEMBL";
         dcterms:identifier  "P09544";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3678/WP3678_rWP3678_r117647/DataNode/e797c>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3678_r117647> , <http://rdf.wikipathways.org/Pathway/WP3678_r117647/WP/Interaction/id9f3cb22b>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3678_r117647/DataNode/e797c>;
         foaf:page           <http://www.uniprot.org/uniprot/P09544> .
 
 <https://identifiers.org/ensembl/ENSG00000105851>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "PI3K";
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000105851>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000105851";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3678/WP3678_rWP3678_r117647/DataNode/be576> , <http://rdf.wikipathways.org/Pathway/WP3678/WP3678_rWP3678_r117647/DataNode/bb01c>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3678_r117647/WP/Interaction/id9be9c788> , <https://identifiers.org/wikipathways/WP3678_r117647> , <http://rdf.wikipathways.org/Pathway/WP3678_r117647/WP/Interaction/id8e6edf13> , <http://rdf.wikipathways.org/Pathway/WP3678_r117647/WP/Interaction/id1626b60e> , <http://rdf.wikipathways.org/Pathway/WP3678_r117647/WP/Interaction/ida9857630>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3678_r117647/DataNode/be576> , <http://rdf.wikipathways.org/Pathway/WP3678_r117647/DataNode/bb01c>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000105851> .
+
+<http://rdf.wikipathways.org/Pathway/WP3678_r117647/WP/Interaction/id9be9c788>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3678_r117647> , <http://rdf.wikipathways.org/Pathway/WP3678_r117647/WP/Interaction/id2be1dfe3>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3678_r117647/Interaction/id9be9c788>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000105851>;
+        wp:target         <https://identifiers.org/ensembl/ENSG00000105851> .
 
 <https://identifiers.org/ensembl/ENSG00000148737>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -177,5 +326,6 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000148737>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000148737";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3678/WP3678_rWP3678_r117647/DataNode/b7dc2>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3678_r117647>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3678_r117647/DataNode/b7dc2>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000148737> .

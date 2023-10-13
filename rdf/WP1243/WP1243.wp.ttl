@@ -16,14 +16,52 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/ensembl/ENSMUSG00000021493>
+<http://rdf.wikipathways.org/Pathway/WP1243_r89985/ComplexBinding/ac09f>
+        rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1243_r89985>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1243_r89985/Group/ac09f>;
+        wp:participants   <https://identifiers.org/ensembl/ENSMUSG00000028284> , <https://identifiers.org/ensembl/ENSMUSG00000027164> , <https://identifiers.org/ensembl/ENSMUSG00000020700> , <http://rdf.wikipathways.org/Pathway/WP1243_r89985/Complex/ac09f> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP1243&oldid=r89985>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<https://identifiers.org/ensembl/ENSMUSG00000020941>
         rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Pdlim7";
-        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000021493>;
+        rdfs:label          "Map3k14";
+        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000020941>;
         dc:source           "Ensembl";
-        dcterms:identifier  "ENSMUSG00000021493";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243/WP1243_rWP1243_r89985/DataNode/afc47>;
-        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000021493> .
+        dcterms:identifier  "ENSMUSG00000020941";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1243_r89985>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243_r89985/DataNode/ddef3>;
+        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000020941> .
+
+<https://identifiers.org/pubmed/18089854>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "18089854";
+        dcterms:isPartOf    <https://identifiers.org/ensembl/ENSMUSG00000026166>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/18089854> .
+
+<https://identifiers.org/pubmed/16477006>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "16477006";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1243_r89985>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/16477006> .
+
+<https://identifiers.org/ensembl/ENSMUSG00000004221>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "Ikbkg";
+        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000004221>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSMUSG00000004221";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1243_r89985> , <http://rdf.wikipathways.org/Pathway/WP1243_r89985/Complex/f60ba>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243_r89985/DataNode/e30d7>;
+        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000004221> .
+
+<https://identifiers.org/wikipathways/WP1243>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP1243_r89985> .
 
 <https://identifiers.org/ensembl/ENSMUSG00000024401>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -31,17 +69,36 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000024401>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSMUSG00000024401";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243/WP1243_rWP1243_r89985/DataNode/aa138>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1243_r89985/Complex/da048> , <https://identifiers.org/wikipathways/WP1243_r89985>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243_r89985/DataNode/aa138>;
         foaf:page           <https://www.ensembl.org/id/ENSMUSG00000024401> .
 
-<https://identifiers.org/ensembl/ENSMUSG00000004221>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Ikbkg";
-        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000004221>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSMUSG00000004221";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243/WP1243_rWP1243_r89985/DataNode/e30d7>;
-        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000004221> .
+<https://identifiers.org/wikipathways/WP1243_r89985>
+        rdf:type               wp:Pathway , skos:Collection;
+        dc:identifier          <https://identifiers.org/wikipathways/WP1243>;
+        dc:source              "WikiPathways";
+        dc:title               "EBV LMP1 signaling"@en;
+        dcterms:description    "based on science-slides...";
+        dcterms:identifier     "WP1243";
+        dcterms:references     <https://identifiers.org/pubmed/16446357> , <https://identifiers.org/pubmed/16477006>;
+        cito:cites             <https://identifiers.org/pubmed/18052967> , <https://identifiers.org/pubmed/18089854> , <https://identifiers.org/pubmed/16446357> , <https://identifiers.org/pubmed/16477006>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP1243_r89985>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0001057>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_10090>;
+        wp:organismName        "Mus musculus";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0001057>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP1243&oldid=r89985> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP1243&oldid=r89985>;
+        foaf:page              <http://www.wikipathways.org/instance/WP1243_r89985> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP1243&oldid=r89985>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<http://rdf.wikipathways.org/Pathway/WP1243_r89985/Complex/ac09f>
+        rdf:type          wp:Complex , wp:DataNode;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1243_r89985>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1243_r89985/Group/ac09f>;
+        wp:participants   <https://identifiers.org/ensembl/ENSMUSG00000028284> , <https://identifiers.org/ensembl/ENSMUSG00000027164> , <https://identifiers.org/ensembl/ENSMUSG00000020700> .
 
 <https://identifiers.org/ensembl/ENSMUSG00000031392>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -49,37 +106,185 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000031392>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSMUSG00000031392";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243/WP1243_rWP1243_r89985/DataNode/d6f8a>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1243_r89985>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243_r89985/DataNode/d6f8a>;
         foaf:page           <https://www.ensembl.org/id/ENSMUSG00000031392> .
 
-<https://identifiers.org/wikipathways/WP1243/WP1243_rWP1243_r89985>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP1243/WP1243>;
-        dc:source            "WikiPathways";
-        dc:title             "EBV LMP1 signaling"@en;
-        dcterms:description  "based on science-slides...";
-        dcterms:identifier   "WP1243/WP1243";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP1243/WP1243_rWP1243_r89985>;
-        wp:organismName      "Mus musculus";
-        foaf:page            <http://www.wikipathways.org/instance/WP1243/WP1243_rWP1243_r89985> .
+<http://rdf.wikipathways.org/Pathway/WP1243_r89985/ComplexBinding/f60ba>
+        rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1243_r89985>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1243_r89985/Group/f60ba>;
+        wp:participants   <https://identifiers.org/ensembl/ENSMUSG00000004221> , <https://identifiers.org/ensembl/ENSMUSG00000025199> , <http://rdf.wikipathways.org/Pathway/WP1243_r89985/Complex/f60ba> , <https://identifiers.org/ncbigene/15519> , <https://identifiers.org/ensembl/ENSMUSG00000031537> .
+
+<https://identifiers.org/ncbigene/12675>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "Chuk";
+        dc:identifier       <https://identifiers.org/ncbigene/12675>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "12675";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1243_r89985>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243_r89985/DataNode/e037d>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/12675> .
+
+<http://rdf.wikipathways.org/Pathway/WP1243_r89985/ComplexBinding/bf111>
+        rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1243_r89985>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1243_r89985/Group/bf111>;
+        wp:participants   <https://identifiers.org/ensembl/ENSMUSG00000024927> , <https://identifiers.org/ensembl/ENSMUSG00000028163> , <http://rdf.wikipathways.org/Pathway/WP1243_r89985/Complex/bf111> .
+
+<https://identifiers.org/ensembl/ENSMUSG00000035042>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "Ccl5";
+        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000035042>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSMUSG00000035042";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1243_r89985/Complex/da048> , <https://identifiers.org/wikipathways/WP1243_r89985>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243_r89985/DataNode/d99bc>;
+        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000035042> .
+
+<https://identifiers.org/ensembl/ENSMUSG00000024927>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "Rela";
+        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000024927>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSMUSG00000024927";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1243_r89985/Complex/bf111> , <http://rdf.wikipathways.org/Pathway/WP1243_r89985/Complex/c9894> , <https://identifiers.org/wikipathways/WP1243_r89985>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243_r89985/DataNode/ea1c5> , <http://rdf.wikipathways.org/Pathway/WP1243_r89985/DataNode/f1e98> , <http://rdf.wikipathways.org/Pathway/WP1243_r89985/DataNode/c654d> , <http://rdf.wikipathways.org/Pathway/WP1243_r89985/DataNode/de3bc> , <http://rdf.wikipathways.org/Pathway/WP1243_r89985/DataNode/b78f8> , <http://rdf.wikipathways.org/Pathway/WP1243_r89985/DataNode/ac1fa>;
+        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000024927> .
+
+<http://rdf.wikipathways.org/Pathway/WP1243_r89985/ComplexBinding/da048>
+        rdf:type          wp:Interaction , wp:Binding , wp:ComplexBinding;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1243_r89985>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1243_r89985/Group/da048>;
+        wp:participants   <https://identifiers.org/ensembl/ENSMUSG00000048806> , <https://identifiers.org/ensembl/ENSMUSG00000024401> , <http://rdf.wikipathways.org/Pathway/WP1243_r89985/Complex/da048> , <https://identifiers.org/ensembl/ENSMUSG00000026166> , <https://identifiers.org/ensembl/ENSMUSG00000035042> .
+
+<http://rdf.wikipathways.org/Pathway/WP1243_r89985/ComplexBinding/c9894>
+        rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1243_r89985>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1243_r89985/Group/c9894>;
+        wp:participants   <https://identifiers.org/ensembl/ENSMUSG00000024927> , <https://identifiers.org/ensembl/ENSMUSG00000028163> , <http://rdf.wikipathways.org/Pathway/WP1243_r89985/Complex/c9894> .
+
+<https://identifiers.org/ensembl/ENSMUSG00000026875>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "Traf1";
+        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000026875>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSMUSG00000026875";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1243_r89985>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243_r89985/DataNode/d7aa9>;
+        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000026875> .
+
+<https://identifiers.org/ensembl/ENSMUSG00000031537>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "Ikbkb";
+        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000031537>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSMUSG00000031537";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1243_r89985/Complex/f60ba> , <https://identifiers.org/wikipathways/WP1243_r89985>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243_r89985/DataNode/d075b>;
+        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000031537> .
+
+<https://identifiers.org/pubmed/16446357>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "16446357";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1243_r89985>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/16446357> .
+
+<https://identifiers.org/pubmed/18052967>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "18052967";
+        dcterms:isPartOf    <https://identifiers.org/ensembl/ENSMUSG00000026166>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/18052967> .
+
+<https://identifiers.org/ensembl/ENSMUSG00000021936>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "Mapk8";
+        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000021936>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSMUSG00000021936";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1243_r89985>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243_r89985/DataNode/a947d>;
+        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000021936> .
+
+<http://rdf.wikipathways.org/Pathway/WP1243_r89985/Complex/f60ba>
+        rdf:type          wp:Complex , wp:DataNode;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1243_r89985>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1243_r89985/Group/f60ba>;
+        wp:participants   <https://identifiers.org/ncbigene/15519> , <https://identifiers.org/ensembl/ENSMUSG00000004221> , <https://identifiers.org/ensembl/ENSMUSG00000025199> , <https://identifiers.org/ensembl/ENSMUSG00000031537> .
+
+<https://identifiers.org/ensembl/ENSMUSG00000021493>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "Pdlim7";
+        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000021493>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSMUSG00000021493";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1243_r89985>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243_r89985/DataNode/afc47>;
+        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000021493> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_10090>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "10090" .
+
+<http://rdf.wikipathways.org/Pathway/WP1243_r89985/Complex/bf111>
+        rdf:type          wp:Complex , wp:DataNode;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1243_r89985>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1243_r89985/Group/bf111>;
+        wp:participants   <https://identifiers.org/ensembl/ENSMUSG00000024927> , <https://identifiers.org/ensembl/ENSMUSG00000028163> .
+
+<https://identifiers.org/ncbigene/15519>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "Hsp90aa1";
+        dc:identifier       <https://identifiers.org/ncbigene/15519>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "15519";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1243_r89985/Complex/f60ba> , <https://identifiers.org/wikipathways/WP1243_r89985>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243_r89985/DataNode/f4a8a>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/15519> .
+
+<https://identifiers.org/ensembl/ENSMUSG00000028163>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "Nfkb1";
+        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000028163>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSMUSG00000028163";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1243_r89985/Complex/bf111> , <http://rdf.wikipathways.org/Pathway/WP1243_r89985/Complex/c9894> , <https://identifiers.org/wikipathways/WP1243_r89985>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243_r89985/DataNode/d8d5e> , <http://rdf.wikipathways.org/Pathway/WP1243_r89985/DataNode/fd2e9> , <http://rdf.wikipathways.org/Pathway/WP1243_r89985/DataNode/d6a50> , <http://rdf.wikipathways.org/Pathway/WP1243_r89985/DataNode/ec132>;
+        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000028163> .
+
+<http://rdf.wikipathways.org/Pathway/WP1243_r89985/Complex/da048>
+        rdf:type          wp:Complex , wp:DataNode;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1243_r89985>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1243_r89985/Group/da048>;
+        wp:participants   <https://identifiers.org/ensembl/ENSMUSG00000026166> , <https://identifiers.org/ensembl/ENSMUSG00000035042> , <https://identifiers.org/ensembl/ENSMUSG00000048806> , <https://identifiers.org/ensembl/ENSMUSG00000024401> .
+
+<https://identifiers.org/ensembl/ENSMUSG00000027164>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "Traf6";
+        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000027164>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSMUSG00000027164";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1243_r89985/Complex/ac09f> , <https://identifiers.org/wikipathways/WP1243_r89985>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243_r89985/DataNode/d3218>;
+        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000027164> .
+
+<http://rdf.wikipathways.org/Pathway/WP1243_r89985/Complex/c9894>
+        rdf:type          wp:Complex , wp:DataNode;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1243_r89985>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1243_r89985/Group/c9894>;
+        wp:participants   <https://identifiers.org/ensembl/ENSMUSG00000024927> , <https://identifiers.org/ensembl/ENSMUSG00000028163> .
 
 <https://identifiers.org/ensembl/ENSMUSG00000025199>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "Chuk";
         dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000025199>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSMUSG00000025199";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243/WP1243_rWP1243_r89985/DataNode/d4eb4>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1243_r89985> , <http://rdf.wikipathways.org/Pathway/WP1243_r89985/Complex/f60ba>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243_r89985/DataNode/d4eb4>;
         foaf:page           <https://www.ensembl.org/id/ENSMUSG00000025199> .
-
-<https://identifiers.org/ensembl/ENSMUSG00000048806>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Ifnb1";
-        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000048806>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSMUSG00000048806";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243/WP1243_rWP1243_r89985/DataNode/c9e20>;
-        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000048806> .
 
 <https://identifiers.org/ensembl/ENSMUSG00000028284>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -87,7 +292,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000028284>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSMUSG00000028284";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243/WP1243_rWP1243_r89985/DataNode/de222> , <http://rdf.wikipathways.org/Pathway/WP1243/WP1243_rWP1243_r89985/DataNode/d5d41>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1243_r89985> , <http://rdf.wikipathways.org/Pathway/WP1243_r89985/Complex/ac09f>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243_r89985/DataNode/d5d41> , <http://rdf.wikipathways.org/Pathway/WP1243_r89985/DataNode/de222>;
         foaf:page           <https://www.ensembl.org/id/ENSMUSG00000028284> .
 
 <https://identifiers.org/ensembl/ENSMUSG00000063358>
@@ -96,38 +302,29 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000063358>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSMUSG00000063358";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243/WP1243_rWP1243_r89985/DataNode/f1ada>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1243_r89985>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243_r89985/DataNode/f1ada>;
         foaf:page           <https://www.ensembl.org/id/ENSMUSG00000063358> .
 
-<https://identifiers.org/ensembl/ENSMUSG00000035042>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Ccl5";
-        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000035042>;
+<https://identifiers.org/ensembl/ENSMUSG00000048806>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "Ifnb1";
+        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000048806>;
         dc:source           "Ensembl";
-        dcterms:identifier  "ENSMUSG00000035042";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243/WP1243_rWP1243_r89985/DataNode/d99bc>;
-        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000035042> .
+        dcterms:identifier  "ENSMUSG00000048806";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1243_r89985/Complex/da048> , <https://identifiers.org/wikipathways/WP1243_r89985>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243_r89985/DataNode/c9e20>;
+        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000048806> .
 
-<http://rdf.wikipathways.org/Pathway/WP1243/WP1243_rWP1243_r89985/WP/Interaction/d2794>
-        rdf:type  wp:Interaction .
-
-<https://identifiers.org/ncbigene/15519>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Hsp90aa1";
-        dc:identifier       <https://identifiers.org/ncbigene/15519>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "15519";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243/WP1243_rWP1243_r89985/DataNode/f4a8a>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/15519> .
-
-<https://identifiers.org/ensembl/ENSMUSG00000020941>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Map3k14";
-        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000020941>;
+<https://identifiers.org/ensembl/ENSMUSG00000025225>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "Nfkb2";
+        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000025225>;
         dc:source           "Ensembl";
-        dcterms:identifier  "ENSMUSG00000020941";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243/WP1243_rWP1243_r89985/DataNode/ddef3>;
-        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000020941> .
+        dcterms:identifier  "ENSMUSG00000025225";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1243_r89985>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243_r89985/DataNode/bfb9c> , <http://rdf.wikipathways.org/Pathway/WP1243_r89985/DataNode/a90a5>;
+        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000025225> .
 
 <https://identifiers.org/ensembl/ENSMUSG00000031887>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -135,101 +332,28 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000031887>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSMUSG00000031887";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243/WP1243_rWP1243_r89985/DataNode/c8ff5>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1243_r89985>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243_r89985/DataNode/c8ff5>;
         foaf:page           <https://www.ensembl.org/id/ENSMUSG00000031887> .
 
-<https://identifiers.org/ensembl/ENSMUSG00000026875>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Traf1";
-        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000026875>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSMUSG00000026875";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243/WP1243_rWP1243_r89985/DataNode/d7aa9>;
-        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000026875> .
-
-<https://identifiers.org/ensembl/ENSMUSG00000021936>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Mapk8";
-        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000021936>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSMUSG00000021936";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243/WP1243_rWP1243_r89985/DataNode/a947d>;
-        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000021936> .
-
-<https://identifiers.org/ensembl/ENSMUSG00000031537>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Ikbkb";
-        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000031537>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSMUSG00000031537";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243/WP1243_rWP1243_r89985/DataNode/d075b>;
-        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000031537> .
-
-<https://identifiers.org/ensembl/ENSMUSG00000027164>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Traf6";
-        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000027164>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSMUSG00000027164";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243/WP1243_rWP1243_r89985/DataNode/d3218>;
-        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000027164> .
-
-<https://identifiers.org/ncbigene/12675>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Chuk";
-        dc:identifier       <https://identifiers.org/ncbigene/12675>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "12675";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243/WP1243_rWP1243_r89985/DataNode/e037d>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/12675> .
-
 <https://identifiers.org/ensembl/ENSMUSG00000026166>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "Ccl20";
         dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000026166>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSMUSG00000026166";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243/WP1243_rWP1243_r89985/DataNode/eeba2>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1243_r89985> , <http://rdf.wikipathways.org/Pathway/WP1243_r89985/Complex/da048>;
+        dcterms:references  <https://identifiers.org/pubmed/18089854> , <https://identifiers.org/pubmed/18052967>;
+        cito:cites          <https://identifiers.org/pubmed/18089854> , <https://identifiers.org/pubmed/18052967>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243_r89985/DataNode/eeba2>;
         foaf:page           <https://www.ensembl.org/id/ENSMUSG00000026166> .
 
 <https://identifiers.org/ensembl/ENSMUSG00000020700>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "Map3k3";
         dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000020700>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSMUSG00000020700";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243/WP1243_rWP1243_r89985/DataNode/a289c>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1243_r89985/Complex/ac09f> , <https://identifiers.org/wikipathways/WP1243_r89985>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243_r89985/DataNode/a289c>;
         foaf:page           <https://www.ensembl.org/id/ENSMUSG00000020700> .
-
-<http://rdf.wikipathways.org/Pathway/WP1243/WP1243_rWP1243_r89985/WP/Interaction/b2b2d>
-        rdf:type  wp:Interaction .
-
-<https://identifiers.org/ensembl/ENSMUSG00000028163>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Nfkb1";
-        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000028163>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSMUSG00000028163";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243/WP1243_rWP1243_r89985/DataNode/fd2e9> , <http://rdf.wikipathways.org/Pathway/WP1243/WP1243_rWP1243_r89985/DataNode/d6a50> , <http://rdf.wikipathways.org/Pathway/WP1243/WP1243_rWP1243_r89985/DataNode/ec132> , <http://rdf.wikipathways.org/Pathway/WP1243/WP1243_rWP1243_r89985/DataNode/d8d5e>;
-        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000028163> .
-
-<https://identifiers.org/ensembl/ENSMUSG00000024927>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Rela";
-        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000024927>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSMUSG00000024927";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243/WP1243_rWP1243_r89985/DataNode/c654d> , <http://rdf.wikipathways.org/Pathway/WP1243/WP1243_rWP1243_r89985/DataNode/ac1fa> , <http://rdf.wikipathways.org/Pathway/WP1243/WP1243_rWP1243_r89985/DataNode/ea1c5> , <http://rdf.wikipathways.org/Pathway/WP1243/WP1243_rWP1243_r89985/DataNode/b78f8> , <http://rdf.wikipathways.org/Pathway/WP1243/WP1243_rWP1243_r89985/DataNode/de3bc> , <http://rdf.wikipathways.org/Pathway/WP1243/WP1243_rWP1243_r89985/DataNode/f1e98>;
-        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000024927> .
-
-<https://identifiers.org/ensembl/ENSMUSG00000025225>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Nfkb2";
-        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000025225>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSMUSG00000025225";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1243/WP1243_rWP1243_r89985/DataNode/bfb9c> , <http://rdf.wikipathways.org/Pathway/WP1243/WP1243_rWP1243_r89985/DataNode/a90a5>;
-        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000025225> .
-
-<http://rdf.wikipathways.org/Pathway/WP1243/WP1243_rWP1243_r89985/WP/Interaction/ba0ee>
-        rdf:type  wp:Interaction .

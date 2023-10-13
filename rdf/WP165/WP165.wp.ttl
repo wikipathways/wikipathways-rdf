@@ -16,119 +16,80 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/sgd/S000000892>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "TRP2";
-        dc:identifier       <https://identifiers.org/sgd/S000000892>;
-        dc:source           "SGD";
-        dcterms:identifier  "S000000892";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP165/WP165_rWP165_r117354/DataNode/aa9>;
-        foaf:page           <http://www.yeastgenome.org/locus/S000000892> .
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP165&oldid=r117354>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
 
-<https://identifiers.org/chebi/CHEBI:18299>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Indole-3-glycerophosphate";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:18299>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:18299";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP165/WP165_rWP165_r117354/DataNode/e7794>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:18299> .
+<http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/id9378298e>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP165_r117354>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP165_r117354/Interaction/id9378298e>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/idfb9fb71d> , <https://identifiers.org/sgd/S000002414>;
+        wp:source         <https://identifiers.org/sgd/S000002414>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/idfb9fb71d> .
 
-<http://rdf.wikipathways.org/Pathway/WP165/WP165_rWP165_r117354/WP/Interaction/idc36a8891>
-        rdf:type  wp:Interaction .
+<https://identifiers.org/pubmed/1943992>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "1943992";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP165_r117354>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/1943992> .
+
+<http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/idd06dbed4>
+        rdf:type          wp:Interaction , wp:Conversion , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP165_r117354> , <http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/id74c4c2f> , <http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/id93a34b82>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP165_r117354/Interaction/idd06dbed4>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:7091> , <https://identifiers.org/chebi/CHEBI:16567>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:16567>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:7091> .
+
+<http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/idf6659a2>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP165_r117354>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP165_r117354/Interaction/idf6659a2>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/id4309bead> , <https://identifiers.org/cas/56-45-1> .
 
 <https://identifiers.org/sgd/S000002994>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "TRP5";
         dc:identifier       <https://identifiers.org/sgd/S000002994>;
         dc:source           "SGD";
         dcterms:identifier  "S000002994";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP165/WP165_rWP165_r117354/DataNode/e91>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP165_r117354> , <http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/ida6f0d3ca>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP165_r117354/DataNode/e91>;
         foaf:page           <http://www.yeastgenome.org/locus/S000002994> .
 
-<https://identifiers.org/cas/2466-09-3>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "pyrophosphate";
-        dc:identifier       <https://identifiers.org/cas/2466-09-3>;
-        dc:source           "CAS";
-        dcterms:identifier  "2466-09-3";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP165/WP165_rWP165_r117354/DataNode/c09>;
-        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=2466-09-3> .
+<https://identifiers.org/wikipathways/WP165_r117354>
+        rdf:type               wp:Pathway , skos:Collection;
+        dc:identifier          <https://identifiers.org/wikipathways/WP165>;
+        dc:source              "WikiPathways";
+        dc:title               "Tryptophan biosynthesis"@en;
+        dcterms:description    "Biosynthesis of the aromatic amino acids tryptophan, tyrosine, and phenylalanine proceeds via a common pathway to chorismate, at which point the pathway branches (CITS:[Jones][1943992]).  One branch proceeds to tryptophan, and the other to tyrosine and phenylalanine (CITS:[Jones]).  The series of reactions to chorismate, called the shikimate pathway, and the series of reactions from chorismate to tryptophan have been found to be common to all eukaryotes and prokaryotes studied thus far (as reported in (CITS:[1943992])). In contrast, there appears to be two separate routes from chorismate to tyrosine and phenylalanine, only one of which has been found in S. cerevisiae (CITS:[1943992]).  Aromatic amino acid biosynthesis in S. cerevisiae is controlled by a combination of feedback inhibition, activation of enzyme activity, and regulation of enzyme synthesis (CITS:[Jones][1943992]).  The first step in the tryptophan branch is feedback inhibited by tryptophan, and the first step in the phenylalanine-tyrosine branch is feedback inhibited by tyrosine and activated by tryptophan (CITS:[1943992]).  The transcriptional activator GCN4 regulates most of the genes encoding for the aromatic amino acid biosynthetic enzymes; however, no GCN4 regulation was found for TRP1 of the tryptophan branch, TYR1 of the tyrosine branch or ARO7 of the tyrosine and phenylalanine branch (CITS:[1943992]). \nSOURCE: SGD pathways, http://pathway.yeastgenome.org/server.html\nBased on http://pathway.yeastgenome.org/biocyc/";
+        dcterms:identifier     "WP165";
+        dcterms:references     <https://identifiers.org/pubmed/1943992> , <https://identifiers.org/pubmed/6323449> , <https://identifiers.org/pubmed/10790693>;
+        cito:cites             <https://identifiers.org/pubmed/1943992> , <https://identifiers.org/pubmed/6323449> , <https://identifiers.org/pubmed/10790693>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP165_r117354>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0001280>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_4932>;
+        wp:organismName        "Saccharomyces cerevisiae";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0001280>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP165&oldid=r117354> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP165&oldid=r117354>;
+        foaf:page              <http://www.wikipathways.org/instance/WP165_r117354> .
 
-<https://identifiers.org/sgd/S000002762>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "TRP4";
-        dc:identifier       <https://identifiers.org/sgd/S000002762>;
-        dc:source           "SGD";
-        dcterms:identifier  "S000002762";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP165/WP165_rWP165_r117354/DataNode/d04>;
-        foaf:page           <http://www.yeastgenome.org/locus/S000002762> .
+<https://identifiers.org/pubmed/10790693>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "10790693";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP165_r117354>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/10790693> .
 
-<https://identifiers.org/chebi/CHEBI:16567>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "anthranilate";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:16567>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:16567";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP165/WP165_rWP165_r117354/DataNode/e42b0>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16567> .
-
-<https://identifiers.org/chebi/CHEBI:17333>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "chorismate";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:17333>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:17333";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP165/WP165_rWP165_r117354/DataNode/c79>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17333> .
-
-<https://identifiers.org/cas/591-57-1>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "glyceraldehyde-3-phosphate";
-        dc:identifier       <https://identifiers.org/cas/591-57-1>;
-        dc:source           "CAS";
-        dcterms:identifier  "591-57-1";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP165/WP165_rWP165_r117354/DataNode/dd3>;
-        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=591-57-1> .
-
-<https://identifiers.org/cas/97-55-2>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "PRPP";
-        dc:identifier       <https://identifiers.org/cas/97-55-2>;
-        dc:source           "CAS";
-        dcterms:identifier  "97-55-2";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP165/WP165_rWP165_r117354/DataNode/b31>;
-        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=97-55-2> .
-
-<https://identifiers.org/cas/56-45-1>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "L-serine";
-        dc:identifier       <https://identifiers.org/cas/56-45-1>;
-        dc:source           "CAS";
-        dcterms:identifier  "56-45-1";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP165/WP165_rWP165_r117354/DataNode/db8>;
-        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=56-45-1> .
-
-<http://rdf.wikipathways.org/Pathway/WP165/WP165_rWP165_r117354/WP/Interaction/id93a34b82>
-        rdf:type  wp:Interaction .
-
-<https://identifiers.org/sgd/S000001694>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "TRP3";
-        dc:identifier       <https://identifiers.org/sgd/S000001694>;
-        dc:source           "SGD";
-        dcterms:identifier  "S000001694";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP165/WP165_rWP165_r117354/DataNode/bca> , <http://rdf.wikipathways.org/Pathway/WP165/WP165_rWP165_r117354/DataNode/aec>;
-        foaf:page           <http://www.yeastgenome.org/locus/S000001694> .
-
-<https://identifiers.org/cas/73-22-3>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "L-tryptophan";
-        dc:identifier       <https://identifiers.org/cas/73-22-3>;
-        dc:source           "CAS";
-        dcterms:identifier  "73-22-3";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP165/WP165_rWP165_r117354/DataNode/eb7>;
-        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=73-22-3> .
+<http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/id4309bead>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP165_r117354> , <http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/idf6659a2> , <http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/ida6f0d3ca>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP165_r117354/Interaction/id4309bead>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:18299> , <https://identifiers.org/cas/73-22-3>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:18299>;
+        wp:target         <https://identifiers.org/cas/73-22-3> .
 
 <https://identifiers.org/cas/56-86-0>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -136,17 +97,56 @@
         dc:identifier       <https://identifiers.org/cas/56-86-0>;
         dc:source           "CAS";
         dcterms:identifier  "56-86-0";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP165/WP165_rWP165_r117354/DataNode/fda>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP165_r117354>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP165_r117354/DataNode/fda>;
         foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=56-86-0> .
 
+<http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/idfb3f6361>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP165_r117354> , <http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/id7b4fad73>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP165_r117354/Interaction/idfb3f6361>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:18299>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:18299> .
+
 <https://identifiers.org/sgd/S000002414>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "TRP1";
         dc:identifier       <https://identifiers.org/sgd/S000002414>;
         dc:source           "SGD";
         dcterms:identifier  "S000002414";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP165/WP165_rWP165_r117354/DataNode/d88>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP165_r117354> , <http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/id9378298e>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP165_r117354/DataNode/d88>;
         foaf:page           <http://www.yeastgenome.org/locus/S000002414> .
+
+<https://identifiers.org/cas/591-57-1>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "glyceraldehyde-3-phosphate";
+        dc:identifier       <https://identifiers.org/cas/591-57-1>;
+        dc:source           "CAS";
+        dcterms:identifier  "591-57-1";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP165_r117354>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP165_r117354/DataNode/dd3>;
+        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=591-57-1> .
+
+<https://identifiers.org/sgd/S000002762>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "TRP4";
+        dc:identifier       <https://identifiers.org/sgd/S000002762>;
+        dc:source           "SGD";
+        dcterms:identifier  "S000002762";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP165_r117354> , <http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/id74c4c2f>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP165_r117354/DataNode/d04>;
+        foaf:page           <http://www.yeastgenome.org/locus/S000002762> .
+
+<https://identifiers.org/cas/73-22-3>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "L-tryptophan";
+        dc:identifier       <https://identifiers.org/cas/73-22-3>;
+        dc:source           "CAS";
+        dcterms:identifier  "73-22-3";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/id4309bead> , <https://identifiers.org/wikipathways/WP165_r117354>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP165_r117354/DataNode/eb7>;
+        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=73-22-3> .
 
 <https://identifiers.org/chebi/CHEBI:15361>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -154,29 +154,17 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:15361>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:15361";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP165/WP165_rWP165_r117354/DataNode/f10ea>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP165_r117354>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP165_r117354/DataNode/f10ea>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15361> .
 
-<https://identifiers.org/chebi/CHEBI:16526>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "carbon dioxide";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:16526>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:16526";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP165/WP165_rWP165_r117354/DataNode/bdf6c>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16526> .
-
-<http://rdf.wikipathways.org/Pathway/WP165/WP165_rWP165_r117354/WP/Interaction/idf6659a2>
-        rdf:type  wp:Interaction .
-
-<https://identifiers.org/chebi/CHEBI:15377>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "water";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:15377>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:15377";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP165/WP165_rWP165_r117354/DataNode/de0a1> , <http://rdf.wikipathways.org/Pathway/WP165/WP165_rWP165_r117354/DataNode/f13ab>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15377> .
+<http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/id7b4fad73>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP165_r117354>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP165_r117354/Interaction/id7b4fad73>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/idfb3f6361> , <https://identifiers.org/sgd/S000001694>;
+        wp:source         <https://identifiers.org/sgd/S000001694>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/idfb3f6361> .
 
 <https://identifiers.org/chebi/CHEBI:7091>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -184,19 +172,136 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:7091>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:7091";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP165/WP165_rWP165_r117354/DataNode/bdc81>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/idfb9fb71d> , <http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/idd06dbed4> , <https://identifiers.org/wikipathways/WP165_r117354>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP165_r117354/DataNode/bdc81>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:7091> .
 
-<https://identifiers.org/wikipathways/WP165/WP165_rWP165_r117354>
-        rdf:type             wp:Pathway , skos:Collection;
-        dc:identifier        <https://identifiers.org/wikipathways/WP165/WP165>;
-        dc:source            "WikiPathways";
-        dc:title             "Tryptophan biosynthesis"@en;
-        dcterms:description  "Biosynthesis of the aromatic amino acids tryptophan, tyrosine, and phenylalanine proceeds via a common pathway to chorismate, at which point the pathway branches (CITS:[Jones][1943992]).  One branch proceeds to tryptophan, and the other to tyrosine and phenylalanine (CITS:[Jones]).  The series of reactions to chorismate, called the shikimate pathway, and the series of reactions from chorismate to tryptophan have been found to be common to all eukaryotes and prokaryotes studied thus far (as reported in (CITS:[1943992])). In contrast, there appears to be two separate routes from chorismate to tyrosine and phenylalanine, only one of which has been found in S. cerevisiae (CITS:[1943992]).  Aromatic amino acid biosynthesis in S. cerevisiae is controlled by a combination of feedback inhibition, activation of enzyme activity, and regulation of enzyme synthesis (CITS:[Jones][1943992]).  The first step in the tryptophan branch is feedback inhibited by tryptophan, and the first step in the phenylalanine-tyrosine branch is feedback inhibited by tyrosine and activated by tryptophan (CITS:[1943992]).  The transcriptional activator GCN4 regulates most of the genes encoding for the aromatic amino acid biosynthetic enzymes; however, no GCN4 regulation was found for TRP1 of the tryptophan branch, TYR1 of the tyrosine branch or ARO7 of the tyrosine and phenylalanine branch (CITS:[1943992]). \nSOURCE: SGD pathways, http://pathway.yeastgenome.org/server.html\nBased on http://pathway.yeastgenome.org/biocyc/";
-        dcterms:identifier   "WP165/WP165";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP165/WP165_rWP165_r117354>;
-        wp:organismName      "Saccharomyces cerevisiae";
-        foaf:page            <http://www.wikipathways.org/instance/WP165/WP165_rWP165_r117354> .
+<http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/id74c4c2f>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP165_r117354>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP165_r117354/Interaction/id74c4c2f>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/idd06dbed4> , <https://identifiers.org/sgd/S000002762>;
+        wp:source         <https://identifiers.org/sgd/S000002762>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/idd06dbed4> .
+
+<https://identifiers.org/chebi/CHEBI:18299>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Indole-3-glycerophosphate";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:18299>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:18299";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/id4309bead> , <https://identifiers.org/wikipathways/WP165_r117354> , <http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/idfb3f6361>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP165_r117354/DataNode/e7794>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:18299> .
+
+<http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/idc36a8891>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP165_r117354>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP165_r117354/Interaction/idc36a8891>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/id5660f2f> , <https://identifiers.org/cas/56-85-9> .
+
+<https://identifiers.org/pubmed/6323449>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "6323449";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP165_r117354>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/6323449> .
+
+<https://identifiers.org/sgd/S000000892>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "TRP2";
+        dc:identifier       <https://identifiers.org/sgd/S000000892>;
+        dc:source           "SGD";
+        dcterms:identifier  "S000000892";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP165_r117354>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP165_r117354/DataNode/aa9>;
+        foaf:page           <http://www.yeastgenome.org/locus/S000000892> .
+
+<http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/id93a34b82>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP165_r117354>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP165_r117354/Interaction/id93a34b82>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/idd06dbed4> , <https://identifiers.org/cas/97-55-2> .
+
+<https://identifiers.org/chebi/CHEBI:17333>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "chorismate";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:17333>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:17333";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/id5660f2f> , <https://identifiers.org/wikipathways/WP165_r117354>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP165_r117354/DataNode/c79>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17333> .
+
+<https://identifiers.org/cas/97-55-2>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "PRPP";
+        dc:identifier       <https://identifiers.org/cas/97-55-2>;
+        dc:source           "CAS";
+        dcterms:identifier  "97-55-2";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/id93a34b82> , <https://identifiers.org/wikipathways/WP165_r117354>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP165_r117354/DataNode/b31>;
+        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=97-55-2> .
+
+<https://identifiers.org/chebi/CHEBI:16567>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "anthranilate";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:16567>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:16567";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/id5660f2f> , <https://identifiers.org/wikipathways/WP165_r117354> , <http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/idd06dbed4>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP165_r117354/DataNode/e42b0>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16567> .
+
+<https://identifiers.org/chebi/CHEBI:16526>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "carbon dioxide";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:16526>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:16526";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP165_r117354>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP165_r117354/DataNode/bdf6c>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16526> .
+
+<http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/id5660f2f>
+        rdf:type          wp:Interaction , wp:DirectedInteraction , wp:Conversion;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/idc36a8891> , <https://identifiers.org/wikipathways/WP165_r117354>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP165_r117354/Interaction/id5660f2f>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:17333> , <https://identifiers.org/chebi/CHEBI:16567>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:17333>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:16567> .
+
+<http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/idb38f8ff>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP165_r117354>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP165_r117354/Interaction/idb38f8ff>;
+        wp:participants   <https://identifiers.org/cas/2466-09-3>;
+        wp:target         <https://identifiers.org/cas/2466-09-3> .
+
+<https://identifiers.org/cas/2466-09-3>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "pyrophosphate";
+        dc:identifier       <https://identifiers.org/cas/2466-09-3>;
+        dc:source           "CAS";
+        dcterms:identifier  "2466-09-3";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/idb38f8ff> , <https://identifiers.org/wikipathways/WP165_r117354>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP165_r117354/DataNode/c09>;
+        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=2466-09-3> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_4932>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "4932" .
+
+<http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/idfb9fb71d>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP165_r117354> , <http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/id9378298e>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP165_r117354/Interaction/idfb9fb71d>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:7091>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:7091> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP165&oldid=r117354>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
 
 <https://identifiers.org/cas/56-85-9>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -204,5 +309,47 @@
         dc:identifier       <https://identifiers.org/cas/56-85-9>;
         dc:source           "CAS";
         dcterms:identifier  "56-85-9";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP165/WP165_rWP165_r117354/DataNode/f31>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/idc36a8891> , <https://identifiers.org/wikipathways/WP165_r117354>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP165_r117354/DataNode/f31>;
         foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=56-85-9> .
+
+<http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/ida6f0d3ca>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP165_r117354>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP165_r117354/Interaction/ida6f0d3ca>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/id4309bead> , <https://identifiers.org/sgd/S000002994>;
+        wp:source         <https://identifiers.org/sgd/S000002994>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/id4309bead> .
+
+<https://identifiers.org/chebi/CHEBI:15377>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "water";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:15377>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:15377";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP165_r117354>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP165_r117354/DataNode/de0a1> , <http://rdf.wikipathways.org/Pathway/WP165_r117354/DataNode/f13ab>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15377> .
+
+<https://identifiers.org/sgd/S000001694>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "TRP3";
+        dc:identifier       <https://identifiers.org/sgd/S000001694>;
+        dc:source           "SGD";
+        dcterms:identifier  "S000001694";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP165_r117354> , <http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/id7b4fad73>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP165_r117354/DataNode/aec> , <http://rdf.wikipathways.org/Pathway/WP165_r117354/DataNode/bca>;
+        foaf:page           <http://www.yeastgenome.org/locus/S000001694> .
+
+<https://identifiers.org/cas/56-45-1>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "L-serine";
+        dc:identifier       <https://identifiers.org/cas/56-45-1>;
+        dc:source           "CAS";
+        dcterms:identifier  "56-45-1";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP165_r117354/WP/Interaction/idf6659a2> , <https://identifiers.org/wikipathways/WP165_r117354>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP165_r117354/DataNode/db8>;
+        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=56-45-1> .
+
+<https://identifiers.org/wikipathways/WP165>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP165_r117354> .

@@ -16,86 +16,98 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/ensembl/ENSG00000160868>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "CYP3A4";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000160868>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000160868";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2816/WP2816_rWP2816_r117724/DataNode/fb29a> , <http://rdf.wikipathways.org/Pathway/WP2816/WP2816_rWP2816_r117724/DataNode/bd51b>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000160868> .
-
 <https://identifiers.org/ec-code/1.2.1.5>
         rdf:type            wp:Protein , wp:DataNode;
         rdfs:label          "1.2.1.5";
         dc:identifier       <https://identifiers.org/ec-code/1.2.1.5>;
         dc:source           "Enzyme Nomenclature";
         dcterms:identifier  "1.2.1.5";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2816/WP2816_rWP2816_r117724/DataNode/d506d>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2816_r117724/WP/Interaction/id6a66c32a> , <https://identifiers.org/wikipathways/WP2816_r117724>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2816_r117724/DataNode/d506d>;
         foaf:page           <http://www.ebi.ac.uk/intenz/query?cmd=SearchEC&ec=1.2.1.5> .
 
-<https://identifiers.org/hmdb/HMDB0015084>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Felbamate";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0015084>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0015084";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2816/WP2816_rWP2816_r117724/DataNode/fd836>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0015084> .
+<http://purl.obolibrary.org/obo/NCBITaxon_9606>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9606" .
+
+<https://identifiers.org/pubmed/11823110>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "11823110";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2816_r117724/WP/Interaction/id3f269cae>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/11823110> .
+
+<http://rdf.wikipathways.org/Pathway/WP2816_r117724/WP/Interaction/id7c8acb49>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2816_r117724>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2816_r117724/Interaction/id7c8acb49>;
+        wp:participants   <https://identifiers.org/pubchem.compound/10312> , <https://identifiers.org/pubchem.compound/21350391>;
+        wp:source         <https://identifiers.org/pubchem.compound/21350391>;
+        wp:target         <https://identifiers.org/pubchem.compound/10312> .
 
 <https://identifiers.org/ensembl/ENSG00000130649>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "CYP2E1";
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000130649>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000130649";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2816/WP2816_rWP2816_r117724/DataNode/ceb78> , <http://rdf.wikipathways.org/Pathway/WP2816/WP2816_rWP2816_r117724/DataNode/f590e>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2816_r117724>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2816_r117724/DataNode/ceb78> , <http://rdf.wikipathways.org/Pathway/WP2816_r117724/DataNode/f590e>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000130649> .
 
-<https://identifiers.org/chemspider/8575477>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "2-hydroxyfelbamate";
-        dc:identifier       <https://identifiers.org/chemspider/8575477>;
-        dc:source           "Chemspider";
-        dcterms:identifier  "8575477";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2816/WP2816_rWP2816_r117724/DataNode/f01c5>;
-        foaf:page           <http://www.chemspider.com/Chemical-Structure.8575477.html> .
+<http://rdf.wikipathways.org/Pathway/WP2816_r117724/WP/Interaction/id3e56aed>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2816_r117724>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2816_r117724/Interaction/id3e56aed>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP2816_r117724/WP/Interaction/idfed6409> , <https://identifiers.org/ec-code/1.1.1.1>;
+        wp:source         <https://identifiers.org/ec-code/1.1.1.1>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP2816_r117724/WP/Interaction/idfed6409> .
 
-<https://identifiers.org/pubchem.compound/3025746>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "3-carbamoyl-2-phenyl propionic acid";
-        dc:identifier       <https://identifiers.org/pubchem.compound/3025746>;
-        dc:source           "PubChem-compound";
-        dcterms:identifier  "3025746";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2816/WP2816_rWP2816_r117724/DataNode/ea7d2>;
-        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=3025746> .
-
-<https://identifiers.org/chemspider/8096945>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "p-hydroxyfelbamate";
-        dc:identifier       <https://identifiers.org/chemspider/8096945>;
-        dc:source           "Chemspider";
-        dcterms:identifier  "8096945";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2816/WP2816_rWP2816_r117724/DataNode/fcf5a>;
-        foaf:page           <http://www.chemspider.com/Chemical-Structure.8096945.html> .
-
-<https://identifiers.org/pubchem.compound/10312>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "atropaldehyde";
-        dc:identifier       <https://identifiers.org/pubchem.compound/10312>;
-        dc:source           "PubChem-compound";
-        dcterms:identifier  "10312";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2816/WP2816_rWP2816_r117724/DataNode/a51f4>;
-        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=10312> .
+<http://rdf.wikipathways.org/Pathway/WP2816_r117724/WP/Interaction/id3f269cae>
+        rdf:type            wp:DirectedInteraction , wp:Conversion , wp:Interaction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2816_r117724>;
+        dcterms:references  <https://identifiers.org/pubmed/11823110>;
+        cito:cites          <https://identifiers.org/pubmed/11823110>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2816_r117724/Interaction/id3f269cae>;
+        wp:participants     <https://identifiers.org/hmdb/HMDB0015084> , <https://identifiers.org/chemspider/184751>;
+        wp:source           <https://identifiers.org/hmdb/HMDB0015084>;
+        wp:target           <https://identifiers.org/chemspider/184751> .
 
 <https://identifiers.org/pubchem.compound/21350391>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "3-carbamoyl-2-phenyl propionaldehyde";
         dc:identifier       <https://identifiers.org/pubchem.compound/21350391>;
         dc:source           "PubChem-compound";
         dcterms:identifier  "21350391";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2816/WP2816_rWP2816_r117724/DataNode/ed054>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2816_r117724/WP/Interaction/idfed6409> , <https://identifiers.org/wikipathways/WP2816_r117724> , <http://rdf.wikipathways.org/Pathway/WP2816_r117724/WP/Interaction/id7c8acb49> , <http://rdf.wikipathways.org/Pathway/WP2816_r117724/WP/Interaction/idbc4392ed>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2816_r117724/DataNode/ed054>;
         foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=21350391> .
+
+<http://rdf.wikipathways.org/Pathway/WP2816_r117724/WP/Interaction/idb9efe33e>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2816_r117724>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2816_r117724/Interaction/idb9efe33e>;
+        wp:participants   <https://identifiers.org/chemspider/8575477> , <https://identifiers.org/hmdb/HMDB0015084>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0015084>;
+        wp:target         <https://identifiers.org/chemspider/8575477> .
+
+<http://rdf.wikipathways.org/Pathway/WP2816_r117724/WP/Interaction/ida2793a37>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2816_r117724>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2816_r117724/Interaction/ida2793a37>;
+        wp:participants   <https://identifiers.org/chemspider/8096945> , <https://identifiers.org/hmdb/HMDB0015084>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0015084>;
+        wp:target         <https://identifiers.org/chemspider/8096945> .
+
+<https://identifiers.org/chemspider/8575477>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "2-hydroxyfelbamate";
+        dc:identifier       <https://identifiers.org/chemspider/8575477>;
+        dc:source           "Chemspider";
+        dcterms:identifier  "8575477";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2816_r117724/WP/Interaction/idb9efe33e> , <https://identifiers.org/wikipathways/WP2816_r117724>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2816_r117724/DataNode/f01c5>;
+        foaf:page           <http://www.chemspider.com/Chemical-Structure.8575477.html> .
 
 <https://identifiers.org/chemspider/184751>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -103,8 +115,98 @@
         dc:identifier       <https://identifiers.org/chemspider/184751>;
         dc:source           "Chemspider";
         dcterms:identifier  "184751";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2816/WP2816_rWP2816_r117724/DataNode/c6700>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2816_r117724> , <http://rdf.wikipathways.org/Pathway/WP2816_r117724/WP/Interaction/id3f269cae> , <http://rdf.wikipathways.org/Pathway/WP2816_r117724/WP/Interaction/idfed6409>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2816_r117724/DataNode/c6700>;
         foaf:page           <http://www.chemspider.com/Chemical-Structure.184751.html> .
+
+<https://identifiers.org/wikipathways/WP2816>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP2816_r117724> .
+
+<http://rdf.wikipathways.org/Pathway/WP2816_r117724/WP/Interaction/idbc4392ed>
+        rdf:type          wp:Interaction , wp:Conversion , wp:DirectedInteraction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP2816_r117724/WP/Interaction/id6a66c32a> , <https://identifiers.org/wikipathways/WP2816_r117724>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2816_r117724/Interaction/idbc4392ed>;
+        wp:participants   <https://identifiers.org/pubchem.compound/3025746> , <https://identifiers.org/pubchem.compound/21350391>;
+        wp:source         <https://identifiers.org/pubchem.compound/21350391>;
+        wp:target         <https://identifiers.org/pubchem.compound/3025746> .
+
+<https://identifiers.org/pubchem.compound/10312>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "atropaldehyde";
+        dc:identifier       <https://identifiers.org/pubchem.compound/10312>;
+        dc:source           "PubChem-compound";
+        dcterms:identifier  "10312";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2816_r117724> , <http://rdf.wikipathways.org/Pathway/WP2816_r117724/WP/Interaction/id7c8acb49>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2816_r117724/DataNode/a51f4>;
+        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=10312> .
+
+<https://identifiers.org/pubmed/9314612>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "9314612";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2816_r117724>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/9314612> .
+
+<https://identifiers.org/ensembl/ENSG00000160868>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "CYP3A4";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000160868>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000160868";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2816_r117724>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2816_r117724/DataNode/fb29a> , <http://rdf.wikipathways.org/Pathway/WP2816_r117724/DataNode/bd51b>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000160868> .
+
+<http://rdf.wikipathways.org/Pathway/WP2816_r117724/WP/Interaction/idfed6409>
+        rdf:type          wp:Conversion , wp:Interaction , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2816_r117724> , <http://rdf.wikipathways.org/Pathway/WP2816_r117724/WP/Interaction/id3e56aed>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2816_r117724/Interaction/idfed6409>;
+        wp:participants   <https://identifiers.org/pubchem.compound/21350391> , <https://identifiers.org/chemspider/184751>;
+        wp:source         <https://identifiers.org/chemspider/184751>;
+        wp:target         <https://identifiers.org/pubchem.compound/21350391> .
+
+<http://rdf.wikipathways.org/Pathway/WP2816_r117724/WP/Interaction/id6a66c32a>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2816_r117724>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2816_r117724/Interaction/id6a66c32a>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP2816_r117724/WP/Interaction/idbc4392ed> , <https://identifiers.org/ec-code/1.2.1.5>;
+        wp:source         <https://identifiers.org/ec-code/1.2.1.5>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP2816_r117724/WP/Interaction/idbc4392ed> .
+
+<https://identifiers.org/wikipathways/WP2816_r117724>
+        rdf:type               wp:Pathway , skos:Collection;
+        dc:identifier          <https://identifiers.org/wikipathways/WP2816>;
+        dc:source              "WikiPathways";
+        dc:title               "Felbamate metabolism"@en;
+        dcterms:description    "CYP metabolism of felbamate.";
+        dcterms:identifier     "WP2816";
+        dcterms:references     <https://identifiers.org/pubmed/9314612>;
+        cito:cites             <https://identifiers.org/pubmed/9314612> , <https://identifiers.org/pubmed/11823110>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP2816_r117724>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000923> , <http://purl.obolibrary.org/obo/PW_0001229>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606>;
+        wp:organismName        "Homo sapiens";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0001229> , <http://purl.obolibrary.org/obo/PW_0000923>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP2816&oldid=r117724> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP2816&oldid=r117724>;
+        foaf:page              <http://www.wikipathways.org/instance/WP2816_r117724> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP2816&oldid=r117724>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP2816&oldid=r117724>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<https://identifiers.org/hmdb/HMDB0015084>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Felbamate";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0015084>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0015084";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2816_r117724/WP/Interaction/ida2793a37> , <http://rdf.wikipathways.org/Pathway/WP2816_r117724/WP/Interaction/id3f269cae> , <http://rdf.wikipathways.org/Pathway/WP2816_r117724/WP/Interaction/idb9efe33e> , <https://identifiers.org/wikipathways/WP2816_r117724>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2816_r117724/DataNode/fd836>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0015084> .
 
 <https://identifiers.org/ec-code/1.1.1.1>
         rdf:type            wp:Protein , wp:DataNode;
@@ -112,16 +214,26 @@
         dc:identifier       <https://identifiers.org/ec-code/1.1.1.1>;
         dc:source           "Enzyme Nomenclature";
         dcterms:identifier  "1.1.1.1";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2816/WP2816_rWP2816_r117724/DataNode/af4ea>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2816_r117724> , <http://rdf.wikipathways.org/Pathway/WP2816_r117724/WP/Interaction/id3e56aed>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2816_r117724/DataNode/af4ea>;
         foaf:page           <http://www.ebi.ac.uk/intenz/query?cmd=SearchEC&ec=1.1.1.1> .
 
-<https://identifiers.org/wikipathways/WP2816/WP2816_rWP2816_r117724>
-        rdf:type             wp:Pathway , skos:Collection;
-        dc:identifier        <https://identifiers.org/wikipathways/WP2816/WP2816>;
-        dc:source            "WikiPathways";
-        dc:title             "Felbamate metabolism"@en;
-        dcterms:description  "CYP metabolism of felbamate.";
-        dcterms:identifier   "WP2816/WP2816";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP2816/WP2816_rWP2816_r117724>;
-        wp:organismName      "Homo sapiens";
-        foaf:page            <http://www.wikipathways.org/instance/WP2816/WP2816_rWP2816_r117724> .
+<https://identifiers.org/chemspider/8096945>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "p-hydroxyfelbamate";
+        dc:identifier       <https://identifiers.org/chemspider/8096945>;
+        dc:source           "Chemspider";
+        dcterms:identifier  "8096945";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2816_r117724> , <http://rdf.wikipathways.org/Pathway/WP2816_r117724/WP/Interaction/ida2793a37>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2816_r117724/DataNode/fcf5a>;
+        foaf:page           <http://www.chemspider.com/Chemical-Structure.8096945.html> .
+
+<https://identifiers.org/pubchem.compound/3025746>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "3-carbamoyl-2-phenyl propionic acid";
+        dc:identifier       <https://identifiers.org/pubchem.compound/3025746>;
+        dc:source           "PubChem-compound";
+        dcterms:identifier  "3025746";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2816_r117724> , <http://rdf.wikipathways.org/Pathway/WP2816_r117724/WP/Interaction/idbc4392ed>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2816_r117724/DataNode/ea7d2>;
+        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=3025746> .

@@ -16,61 +16,54 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/ec-code/2.5.1.10>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "EC:2.5.1.10 (Farnesyl pyrophosphate synthetase)";
-        dc:identifier       <https://identifiers.org/ec-code/2.5.1.10>;
-        dc:source           "Enzyme Nomenclature";
-        dcterms:identifier  "2.5.1.10";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2211/WP2211_rWP2211_r123063/DataNode/e8e55>;
-        foaf:page           <http://www.ebi.ac.uk/intenz/query?cmd=SearchEC&ec=2.5.1.10> .
-
-<https://identifiers.org/kegg.compound/C00341>
+<https://identifiers.org/chebi/CHEBI:15831>
         rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Geranyl-PP";
-        dc:identifier       <https://identifiers.org/kegg.compound/C00341>;
-        dc:source           "KEGG Compound";
-        dcterms:identifier  "C00341";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2211/WP2211_rWP2211_r123063/DataNode/bc11b>;
-        foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C00341> .
-
-<https://identifiers.org/kegg.compound/C00129>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Delta3-isopentenyl-PP";
-        dc:identifier       <https://identifiers.org/kegg.compound/C00129>;
-        dc:source           "KEGG Compound";
-        dcterms:identifier  "C00129";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2211/WP2211_rWP2211_r123063/DataNode/eb4a5> , <http://rdf.wikipathways.org/Pathway/WP2211/WP2211_rWP2211_r123063/DataNode/d120d> , <http://rdf.wikipathways.org/Pathway/WP2211/WP2211_rWP2211_r123063/DataNode/f7d12>;
-        foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C00129> .
-
-<https://identifiers.org/ec-code/2.5.1.1>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "EC:2.5.1.1 (Geranyl-diphosphate synthase)";
-        dc:identifier       <https://identifiers.org/ec-code/2.5.1.1>;
-        dc:source           "Enzyme Nomenclature";
-        dcterms:identifier  "2.5.1.1";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2211/WP2211_rWP2211_r123063/DataNode/a45cf>;
-        foaf:page           <http://www.ebi.ac.uk/intenz/query?cmd=SearchEC&ec=2.5.1.1> .
+        rdfs:label          "Geranylgeranyl diphosphate";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:15831>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:15831";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/ida3507e27> , <https://identifiers.org/wikipathways/WP2211_r123063>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2211_r123063/DataNode/b9fc8>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15831> .
 
 <https://identifiers.org/wikipathways/WP2212>
-        rdf:type            wp:Pathway , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Pathway;
         rdfs:label          "Methylerythritol phosphate pathway";
         dc:identifier       <https://identifiers.org/wikipathways/WP2212>;
         dc:source           "WikiPathways";
         dcterms:identifier  "WP2212";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2211/WP2211_rWP2211_r123063/DataNode/f0fdd>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2211_r123063> , <http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/id15a83c9f>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2211_r123063/DataNode/f0fdd>;
         foaf:page           <https://www.wikipathways.org/instance/WP2212> .
 
-<https://identifiers.org/wikipathways/WP2211/WP2211_rWP2211_r123063>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP2211/WP2211>;
-        dc:source            "WikiPathways";
-        dc:title             "Geranylgeranyldiphosphate biosynthesis II (plastidic)"@en;
-        dcterms:description  "In plants the geranyl-geranyl diphosphate (GGPP) as a precursor molecule that feeds in the biosynthesis of essential compounds such as chlorophylls, carotenoids, plastoquinones, growth hormone gibberellin and other secondary metabolites. Occurs in plastids.";
-        dcterms:identifier   "WP2211/WP2211";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP2211/WP2211_rWP2211_r123063>;
-        wp:organismName      "Oryza sativa";
-        foaf:page            <http://www.wikipathways.org/instance/WP2211/WP2211_rWP2211_r123063> .
+<https://identifiers.org/pubmed/18256497>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "18256497";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2211_r123063>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/18256497> .
+
+<https://identifiers.org/pubmed/9061016>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "9061016";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2211_r123063>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/9061016> .
+
+<http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/idb3e022e0>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/idb12262c> , <https://identifiers.org/wikipathways/WP2211_r123063> , <http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/id206ac4ab>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2211_r123063/Interaction/idb3e022e0>;
+        wp:participants   <https://identifiers.org/kegg.compound/C00341> , <https://identifiers.org/cas/13058-04-3>;
+        wp:source         <https://identifiers.org/kegg.compound/C00341>;
+        wp:target         <https://identifiers.org/cas/13058-04-3> .
+
+<https://identifiers.org/pubmed/16501255>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "16501255";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2211_r123063>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/16501255> .
 
 <https://identifiers.org/cas/2466-09-3>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -78,29 +71,64 @@
         dc:identifier       <https://identifiers.org/cas/2466-09-3>;
         dc:source           "CAS";
         dcterms:identifier  "2466-09-3";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2211/WP2211_rWP2211_r123063/DataNode/aa664> , <http://rdf.wikipathways.org/Pathway/WP2211/WP2211_rWP2211_r123063/DataNode/b62ef> , <http://rdf.wikipathways.org/Pathway/WP2211/WP2211_rWP2211_r123063/DataNode/c0317>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/id1e219796> , <http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/c9038> , <http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/c8ee2> , <https://identifiers.org/wikipathways/WP2211_r123063>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2211_r123063/DataNode/aa664> , <http://rdf.wikipathways.org/Pathway/WP2211_r123063/DataNode/b62ef> , <http://rdf.wikipathways.org/Pathway/WP2211_r123063/DataNode/c0317>;
         foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=2466-09-3> .
 
-<http://rdf.wikipathways.org/Pathway/WP2211/WP2211_rWP2211_r123063/WP/Interaction/idf1083275>
-        rdf:type  wp:Interaction .
+<https://identifiers.org/pubmed/11522913>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "11522913";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2211_r123063>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/11522913> .
 
-<https://identifiers.org/chebi/CHEBI:15831>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Geranylgeranyl diphosphate";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:15831>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:15831";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2211/WP2211_rWP2211_r123063/DataNode/b9fc8>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15831> .
+<http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/d0763>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2211_r123063>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2211_r123063/Interaction/d0763>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/ida3507e27> , <https://identifiers.org/kegg.compound/C00129>;
+        wp:source         <https://identifiers.org/kegg.compound/C00129>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/ida3507e27> .
 
-<https://identifiers.org/ec-code/2.5.1.29>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "EC:2.5.1.29 (Geranylgeranyl pyrophosphate synthase)";
-        dc:identifier       <https://identifiers.org/ec-code/2.5.1.29>;
-        dc:source           "Enzyme Nomenclature";
-        dcterms:identifier  "2.5.1.29";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2211/WP2211_rWP2211_r123063/DataNode/ac174>;
-        foaf:page           <http://www.ebi.ac.uk/intenz/query?cmd=SearchEC&ec=2.5.1.29> .
+<http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/id1e219796>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2211_r123063>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2211_r123063/Interaction/id1e219796>;
+        wp:participants   <https://identifiers.org/cas/2466-09-3>;
+        wp:target         <https://identifiers.org/cas/2466-09-3> .
+
+<http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/id206ac4ab>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2211_r123063>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2211_r123063/Interaction/id206ac4ab>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/idb3e022e0> , <https://identifiers.org/ec-code/2.5.1.10>;
+        wp:source         <https://identifiers.org/ec-code/2.5.1.10>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/idb3e022e0> .
+
+<https://identifiers.org/wikipathways/WP2211_r123063>
+        rdf:type                skos:Collection , wp:Pathway;
+        dc:identifier           <https://identifiers.org/wikipathways/WP2211>;
+        dc:source               "WikiPathways";
+        dc:title                "Geranylgeranyldiphosphate biosynthesis II (plastidic)"@en;
+        dcterms:description     "In plants the geranyl-geranyl diphosphate (GGPP) as a precursor molecule that feeds in the biosynthesis of essential compounds such as chlorophylls, carotenoids, plastoquinones, growth hormone gibberellin and other secondary metabolites. Occurs in plastids.";
+        dcterms:identifier      "WP2211";
+        dcterms:references      <https://identifiers.org/pubmed/11522913> , <https://identifiers.org/pubmed/17872948> , <https://identifiers.org/pubmed/10353221> , <https://identifiers.org/pubmed/9061016> , <https://identifiers.org/pubmed/1536568> , <https://identifiers.org/pubmed/16501255> , <https://identifiers.org/pubmed/18256497>;
+        cito:cites              <https://identifiers.org/pubmed/16501255> , <https://identifiers.org/pubmed/11522913> , <https://identifiers.org/pubmed/17872948> , <https://identifiers.org/pubmed/18256497> , <https://identifiers.org/pubmed/10353221> , <https://identifiers.org/pubmed/1536568> , <https://identifiers.org/pubmed/9061016>;
+        wp:cellTypeOntologyTag  <http://purl.obolibrary.org/obo/CL_0000610>;
+        wp:isAbout              <http://rdf.wikipathways.org/Pathway/WP2211_r123063>;
+        wp:ontologyTag          <http://purl.obolibrary.org/obo/CL_0000610> , <http://purl.obolibrary.org/obo/PW_0000251>;
+        wp:organism             <http://purl.obolibrary.org/obo/NCBITaxon_4530>;
+        wp:organismName         "Oryza sativa";
+        wp:pathwayOntologyTag   <http://purl.obolibrary.org/obo/PW_0000251>;
+        foaf:img                <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP2211&oldid=r123063> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP2211&oldid=r123063>;
+        foaf:page               <http://www.wikipathways.org/instance/WP2211_r123063> .
+
+<https://identifiers.org/pubmed/1536568>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "1536568";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2211_r123063>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/1536568> .
 
 <https://identifiers.org/cas/13058-04-3>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -108,20 +136,165 @@
         dc:identifier       <https://identifiers.org/cas/13058-04-3>;
         dc:source           "CAS";
         dcterms:identifier  "13058-04-3";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2211/WP2211_rWP2211_r123063/DataNode/ddf5c>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/idb3e022e0> , <http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/ida3507e27> , <https://identifiers.org/wikipathways/WP2211_r123063>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2211_r123063/DataNode/ddf5c>;
         foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=13058-04-3> .
 
-<http://rdf.wikipathways.org/Pathway/WP2211/WP2211_rWP2211_r123063/WP/Interaction/id1f159e35>
-        rdf:type  wp:Interaction .
+<https://identifiers.org/ec-code/2.5.1.10>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "EC:2.5.1.10 (Farnesyl pyrophosphate synthetase)";
+        dc:identifier       <https://identifiers.org/ec-code/2.5.1.10>;
+        dc:source           "Enzyme Nomenclature";
+        dcterms:identifier  "2.5.1.10";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/id206ac4ab> , <https://identifiers.org/wikipathways/WP2211_r123063>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2211_r123063/DataNode/e8e55>;
+        foaf:page           <http://www.ebi.ac.uk/intenz/query?cmd=SearchEC&ec=2.5.1.10> .
 
-<http://rdf.wikipathways.org/Pathway/WP2211/WP2211_rWP2211_r123063/WP/Interaction/idd5d26da>
-        rdf:type  wp:Interaction .
+<https://identifiers.org/pubmed/10353221>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "10353221";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2211_r123063>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/10353221> .
+
+<http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/c9038>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2211_r123063>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2211_r123063/Interaction/c9038>;
+        wp:participants   <https://identifiers.org/cas/2466-09-3>;
+        wp:target         <https://identifiers.org/cas/2466-09-3> .
 
 <https://identifiers.org/cas/358-71-4>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "Dimethylallyl-PP";
         dc:identifier       <https://identifiers.org/cas/358-71-4>;
         dc:source           "CAS";
         dcterms:identifier  "358-71-4";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2211/WP2211_rWP2211_r123063/DataNode/b77de>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2211_r123063> , <http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/id14ee7ceb>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2211_r123063/DataNode/b77de>;
         foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=358-71-4> .
+
+<http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/d039a>
+        rdf:type          wp:Interaction , wp:DirectedInteraction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/de6d5> , <http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/id14ee7ceb> , <https://identifiers.org/wikipathways/WP2211_r123063>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2211_r123063/Interaction/d039a>;
+        wp:participants   <https://identifiers.org/kegg.compound/C00129> , <https://identifiers.org/kegg.compound/C00341>;
+        wp:source         <https://identifiers.org/kegg.compound/C00129>;
+        wp:target         <https://identifiers.org/kegg.compound/C00341> .
+
+<http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/id15a83c9f>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2211_r123063>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2211_r123063/Interaction/id15a83c9f>;
+        wp:participants   <https://identifiers.org/wikipathways/WP2212> , <https://identifiers.org/kegg.compound/C00129>;
+        wp:source         <https://identifiers.org/kegg.compound/C00129>;
+        wp:target         <https://identifiers.org/wikipathways/WP2212> .
+
+<https://identifiers.org/kegg.compound/C00129>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Delta3-isopentenyl-PP";
+        dc:identifier       <https://identifiers.org/kegg.compound/C00129>;
+        dc:source           "KEGG Compound";
+        dcterms:identifier  "C00129";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/id15a83c9f> , <https://identifiers.org/wikipathways/WP2211_r123063> , <http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/d0763> , <http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/idb12262c> , <http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/d039a>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2211_r123063/DataNode/d120d> , <http://rdf.wikipathways.org/Pathway/WP2211_r123063/DataNode/f7d12> , <http://rdf.wikipathways.org/Pathway/WP2211_r123063/DataNode/eb4a5>;
+        foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C00129> .
+
+<http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/id14ee7ceb>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2211_r123063>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2211_r123063/Interaction/id14ee7ceb>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/d039a> , <https://identifiers.org/cas/358-71-4>;
+        wp:source         <https://identifiers.org/cas/358-71-4>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/d039a> .
+
+<http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/c8ee2>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2211_r123063>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2211_r123063/Interaction/c8ee2>;
+        wp:participants   <https://identifiers.org/cas/2466-09-3>;
+        wp:target         <https://identifiers.org/cas/2466-09-3> .
+
+<http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/idb12262c>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2211_r123063>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2211_r123063/Interaction/idb12262c>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/idb3e022e0> , <https://identifiers.org/kegg.compound/C00129>;
+        wp:source         <https://identifiers.org/kegg.compound/C00129>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/idb3e022e0> .
+
+<https://identifiers.org/kegg.compound/C00341>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Geranyl-PP";
+        dc:identifier       <https://identifiers.org/kegg.compound/C00341>;
+        dc:source           "KEGG Compound";
+        dcterms:identifier  "C00341";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/idb3e022e0> , <http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/d039a> , <https://identifiers.org/wikipathways/WP2211_r123063>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2211_r123063/DataNode/bc11b>;
+        foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C00341> .
+
+<https://identifiers.org/ec-code/2.5.1.1>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "EC:2.5.1.1 (Geranyl-diphosphate synthase)";
+        dc:identifier       <https://identifiers.org/ec-code/2.5.1.1>;
+        dc:source           "Enzyme Nomenclature";
+        dcterms:identifier  "2.5.1.1";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/de6d5> , <https://identifiers.org/wikipathways/WP2211_r123063>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2211_r123063/DataNode/a45cf>;
+        foaf:page           <http://www.ebi.ac.uk/intenz/query?cmd=SearchEC&ec=2.5.1.1> .
+
+<http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/de6d5>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2211_r123063>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2211_r123063/Interaction/de6d5>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/d039a> , <https://identifiers.org/ec-code/2.5.1.1>;
+        wp:source         <https://identifiers.org/ec-code/2.5.1.1>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/d039a> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_4530>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "4530" .
+
+<https://identifiers.org/wikipathways/WP2211>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP2211_r123063> .
+
+<http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/ida3507e27>
+        rdf:type          wp:Interaction , wp:DirectedInteraction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/id471f45d8> , <http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/d0763> , <https://identifiers.org/wikipathways/WP2211_r123063>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2211_r123063/Interaction/ida3507e27>;
+        wp:participants   <https://identifiers.org/cas/13058-04-3> , <https://identifiers.org/chebi/CHEBI:15831>;
+        wp:source         <https://identifiers.org/cas/13058-04-3>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:15831> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP2211&oldid=r123063>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/id471f45d8>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2211_r123063>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2211_r123063/Interaction/id471f45d8>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/ida3507e27> , <https://identifiers.org/ec-code/2.5.1.29>;
+        wp:source         <https://identifiers.org/ec-code/2.5.1.29>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/ida3507e27> .
+
+<https://identifiers.org/pubmed/17872948>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "17872948";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2211_r123063>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/17872948> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP2211&oldid=r123063>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<https://identifiers.org/ec-code/2.5.1.29>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "EC:2.5.1.29 (Geranylgeranyl pyrophosphate synthase)";
+        dc:identifier       <https://identifiers.org/ec-code/2.5.1.29>;
+        dc:source           "Enzyme Nomenclature";
+        dcterms:identifier  "2.5.1.29";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2211_r123063> , <http://rdf.wikipathways.org/Pathway/WP2211_r123063/WP/Interaction/id471f45d8>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2211_r123063/DataNode/ac174>;
+        foaf:page           <http://www.ebi.ac.uk/intenz/query?cmd=SearchEC&ec=2.5.1.29> .

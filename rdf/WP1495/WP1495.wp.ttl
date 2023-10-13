@@ -17,22 +17,22 @@
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
 <https://identifiers.org/chebi/CHEBI:53664>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "a-Iminoacetate";
         dc:identifier       <https://identifiers.org/chebi/CHEBI:53664>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:53664";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1495/WP1495_rWP1495_r126384/DataNode/f416f>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1495_r126384> , <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/idc7b937b0> , <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/id565c2b9b>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1495_r126384/DataNode/f416f>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:53664> .
 
-<https://identifiers.org/ncbigene/6472>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "SHMT2";
-        dc:identifier       <https://identifiers.org/ncbigene/6472>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "6472";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1495/WP1495_rWP1495_r126384/DataNode/a7c31>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/6472> .
+<http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/d3439>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1495_r126384>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1495_r126384/Interaction/d3439>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/idd3120515> , <https://identifiers.org/chemspider/4302384>;
+        wp:source         <https://identifiers.org/chemspider/4302384>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/idd3120515> .
 
 <https://identifiers.org/chemspider/97272>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -40,110 +40,9 @@
         dc:identifier       <https://identifiers.org/chemspider/97272>;
         dc:source           "Chemspider";
         dcterms:identifier  "97272";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1495/WP1495_rWP1495_r126384/DataNode/bdbdf>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/idcd4b4dea> , <https://identifiers.org/wikipathways/WP1495_r126384>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1495_r126384/DataNode/bdbdf>;
         foaf:page           <http://www.chemspider.com/Chemical-Structure.97272.html> .
-
-<https://identifiers.org/pubchem.compound/971>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Oxalate";
-        dc:identifier       <https://identifiers.org/pubchem.compound/971>;
-        dc:source           "PubChem-compound";
-        dcterms:identifier  "971";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1495/WP1495_rWP1495_r126384/DataNode/fa412>;
-        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=971> .
-
-<https://identifiers.org/hmdb/HMDB0000123>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Glycine";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000123>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000123";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1495/WP1495_rWP1495_r126384/DataNode/d775a>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000123> .
-
-<http://rdf.wikipathways.org/Pathway/WP1495/WP1495_rWP1495_r126384/WP/Interaction/idcd4b4dea>
-        rdf:type  wp:Interaction .
-
-<https://identifiers.org/ensembl/ENSG00000177000>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "MTHFR";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000177000>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000177000";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1495/WP1495_rWP1495_r126384/DataNode/e180b>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000177000> .
-
-<https://identifiers.org/pubchem.compound/124886>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Glutathione";
-        dc:identifier       <https://identifiers.org/pubchem.compound/124886>;
-        dc:source           "PubChem-compound";
-        dcterms:identifier  "124886";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1495/WP1495_rWP1495_r126384/DataNode/fadfc>;
-        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=124886> .
-
-<https://identifiers.org/ec-code/2.6.1.4>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Glycine Transaminase";
-        dc:identifier       <https://identifiers.org/ec-code/2.6.1.4>;
-        dc:source           "Enzyme Nomenclature";
-        dcterms:identifier  "2.6.1.4";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1495/WP1495_rWP1495_r126384/DataNode/d5114>;
-        foaf:page           <http://www.ebi.ac.uk/intenz/query?cmd=SearchEC&ec=2.6.1.4> .
-
-<https://identifiers.org/chebi/CHEBI:36277>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Bile Salts";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:36277>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:36277";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1495/WP1495_rWP1495_r126384/DataNode/c1617>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:36277> .
-
-<https://identifiers.org/chemspider/4302384>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Glutamate";
-        dc:identifier       <https://identifiers.org/chemspider/4302384>;
-        dc:source           "Chemspider";
-        dcterms:identifier  "4302384";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1495/WP1495_rWP1495_r126384/DataNode/f87e9>;
-        foaf:page           <http://www.chemspider.com/Chemical-Structure.4302384.html> .
-
-<https://identifiers.org/chemspider/597>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Serine";
-        dc:identifier       <https://identifiers.org/chemspider/597>;
-        dc:source           "Chemspider";
-        dcterms:identifier  "597";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1495/WP1495_rWP1495_r126384/DataNode/a9c4a>;
-        foaf:page           <http://www.chemspider.com/Chemical-Structure.597.html> .
-
-<https://identifiers.org/pubchem.compound/586>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Creatine";
-        dc:identifier       <https://identifiers.org/pubchem.compound/586>;
-        dc:source           "PubChem-compound";
-        dcterms:identifier  "586";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1495/WP1495_rWP1495_r126384/DataNode/e4528>;
-        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=586> .
-
-<https://identifiers.org/chebi/CHEBI:30413>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Heme";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:30413>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:30413";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1495/WP1495_rWP1495_r126384/DataNode/ebdd1>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:30413> .
-
-<https://identifiers.org/pubchem.compound/760>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Glyoxalate";
-        dc:identifier       <https://identifiers.org/pubchem.compound/760>;
-        dc:source           "PubChem-compound";
-        dcterms:identifier  "760";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1495/WP1495_rWP1495_r126384/DataNode/f4b93>;
-        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=760> .
 
 <https://identifiers.org/ncbigene/6470>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -151,17 +50,268 @@
         dc:identifier       <https://identifiers.org/ncbigene/6470>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "6470";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1495/WP1495_rWP1495_r126384/DataNode/a5f21>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1495_r126384>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1495_r126384/DataNode/a5f21>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/6470> .
 
-<https://identifiers.org/ec-code/1.4.3.19>
+<http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/id85efbcf3>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1495_r126384>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1495_r126384/Interaction/id85efbcf3>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:30413> , <https://identifiers.org/hmdb/HMDB0000123>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000123>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:30413> .
+
+<https://identifiers.org/chebi/CHEBI:30413>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Heme";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:30413>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:30413";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1495_r126384> , <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/id85efbcf3>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1495_r126384/DataNode/ebdd1>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:30413> .
+
+<http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/idefdfe00e>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1495_r126384>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1495_r126384/Interaction/idefdfe00e>;
+        wp:participants   <https://identifiers.org/pubchem.compound/971> , <https://identifiers.org/pubchem.compound/760>;
+        wp:source         <https://identifiers.org/pubchem.compound/760>;
+        wp:target         <https://identifiers.org/pubchem.compound/971> .
+
+<http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/idd3120515>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/d4811> , <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/d3439> , <https://identifiers.org/wikipathways/WP1495_r126384>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1495_r126384/Interaction/idd3120515>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000123> , <https://identifiers.org/pubchem.compound/760>;
+        wp:source         <https://identifiers.org/pubchem.compound/760>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000123> .
+
+<https://identifiers.org/chebi/CHEBI:36277>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Bile Salts";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:36277>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:36277";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1495_r126384> , <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/id3642edbf>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1495_r126384/DataNode/c1617>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:36277> .
+
+<https://identifiers.org/chemspider/597>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Serine";
+        dc:identifier       <https://identifiers.org/chemspider/597>;
+        dc:source           "Chemspider";
+        dcterms:identifier  "597";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/idea68481b> , <https://identifiers.org/wikipathways/WP1495_r126384> , <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/id77142bed> , <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/ide0d609cf>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1495_r126384/DataNode/a9c4a>;
+        foaf:page           <http://www.chemspider.com/Chemical-Structure.597.html> .
+
+<https://identifiers.org/chemspider/4302384>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Glutamate";
+        dc:identifier       <https://identifiers.org/chemspider/4302384>;
+        dc:source           "Chemspider";
+        dcterms:identifier  "4302384";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1495_r126384> , <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/d3439>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1495_r126384/DataNode/f87e9>;
+        foaf:page           <http://www.chemspider.com/Chemical-Structure.4302384.html> .
+
+<http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/fd4f5>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1495_r126384>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1495_r126384/Interaction/fd4f5>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/id77142bed> , <https://identifiers.org/ensembl/ENSG00000177000>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000177000>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/id77142bed> .
+
+<http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/b7d9c>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1495_r126384>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1495_r126384/Interaction/b7d9c>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/id565c2b9b> , <https://identifiers.org/ec-code/1.4.3.19>;
+        wp:source         <https://identifiers.org/ec-code/1.4.3.19>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/id565c2b9b> .
+
+<https://identifiers.org/ec-code/2.6.1.4>
         rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "Glycine Transaminase";
+        dc:identifier       <https://identifiers.org/ec-code/2.6.1.4>;
+        dc:source           "Enzyme Nomenclature";
+        dcterms:identifier  "2.6.1.4";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1495_r126384> , <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/d4811>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1495_r126384/DataNode/d5114>;
+        foaf:page           <http://www.ebi.ac.uk/intenz/query?cmd=SearchEC&ec=2.6.1.4> .
+
+<http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/id68fdd821>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1495_r126384>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1495_r126384/Interaction/id68fdd821>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:26401> , <https://identifiers.org/hmdb/HMDB0000123>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000123>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:26401> .
+
+<http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/id5c62036>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1495_r126384>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1495_r126384/Interaction/id5c62036>;
+        wp:participants   <https://identifiers.org/pubchem.compound/586> , <https://identifiers.org/hmdb/HMDB0000123>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000123>;
+        wp:target         <https://identifiers.org/pubchem.compound/586> .
+
+<http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/id3642edbf>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1495_r126384>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1495_r126384/Interaction/id3642edbf>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:36277> , <https://identifiers.org/hmdb/HMDB0000123>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000123>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:36277> .
+
+<https://identifiers.org/pubchem.compound/971>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Oxalate";
+        dc:identifier       <https://identifiers.org/pubchem.compound/971>;
+        dc:source           "PubChem-compound";
+        dcterms:identifier  "971";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/idefdfe00e> , <https://identifiers.org/wikipathways/WP1495_r126384>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1495_r126384/DataNode/fa412>;
+        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=971> .
+
+<http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/id565c2b9b>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1495_r126384> , <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/b7d9c>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1495_r126384/Interaction/id565c2b9b>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:53664> , <https://identifiers.org/hmdb/HMDB0000123>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000123>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:53664> .
+
+<http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/id77142bed>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/fd4f5> , <https://identifiers.org/wikipathways/WP1495_r126384> , <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/idcd4b4dea>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1495_r126384/Interaction/id77142bed>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000123> , <https://identifiers.org/chemspider/597>;
+        wp:source         <https://identifiers.org/chemspider/597>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000123> .
+
+<http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/ide0d609cf>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1495_r126384>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1495_r126384/Interaction/ide0d609cf>;
+        wp:participants   <https://identifiers.org/chemspider/597> , <https://identifiers.org/hmdb/HMDB0000123>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000123>;
+        wp:target         <https://identifiers.org/chemspider/597> .
+
+<https://identifiers.org/hmdb/HMDB0000123>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Glycine";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000123>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0000123";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/id68fdd821> , <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/id565c2b9b> , <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/id85efbcf3> , <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/id5c62036> , <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/id4a9f9c7b> , <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/id3642edbf> , <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/ide0d609cf> , <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/idd3120515> , <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/id77142bed> , <https://identifiers.org/wikipathways/WP1495_r126384>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1495_r126384/DataNode/d775a>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000123> .
+
+<https://identifiers.org/ensembl/ENSG00000177000>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "MTHFR";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000177000>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000177000";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1495_r126384> , <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/fd4f5>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1495_r126384/DataNode/e180b>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000177000> .
+
+<http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/idcd4b4dea>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1495_r126384>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1495_r126384/Interaction/idcd4b4dea>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/id77142bed> , <https://identifiers.org/chemspider/97272> .
+
+<https://identifiers.org/ncbigene/6472>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "SHMT2";
+        dc:identifier       <https://identifiers.org/ncbigene/6472>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "6472";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1495_r126384>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1495_r126384/DataNode/a7c31>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/6472> .
+
+<https://identifiers.org/pubchem.compound/124886>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Glutathione";
+        dc:identifier       <https://identifiers.org/pubchem.compound/124886>;
+        dc:source           "PubChem-compound";
+        dcterms:identifier  "124886";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/id4a9f9c7b> , <https://identifiers.org/wikipathways/WP1495_r126384>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1495_r126384/DataNode/fadfc>;
+        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=124886> .
+
+<https://identifiers.org/pubchem.compound/586>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Creatine";
+        dc:identifier       <https://identifiers.org/pubchem.compound/586>;
+        dc:source           "PubChem-compound";
+        dcterms:identifier  "586";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1495_r126384> , <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/id5c62036>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1495_r126384/DataNode/e4528>;
+        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=586> .
+
+<http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/id4a9f9c7b>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1495_r126384>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1495_r126384/Interaction/id4a9f9c7b>;
+        wp:participants   <https://identifiers.org/pubchem.compound/124886> , <https://identifiers.org/hmdb/HMDB0000123>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000123>;
+        wp:target         <https://identifiers.org/pubchem.compound/124886> .
+
+<https://identifiers.org/ec-code/1.4.3.19>
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "Glycine Oxidase";
         dc:identifier       <https://identifiers.org/ec-code/1.4.3.19>;
         dc:source           "Enzyme Nomenclature";
         dcterms:identifier  "1.4.3.19";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1495/WP1495_rWP1495_r126384/DataNode/c7951>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1495_r126384> , <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/b7d9c>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1495_r126384/DataNode/c7951>;
         foaf:page           <http://www.ebi.ac.uk/intenz/query?cmd=SearchEC&ec=1.4.3.19> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_9606>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9606" .
+
+<https://identifiers.org/pubchem.compound/760>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Glyoxalate";
+        dc:identifier       <https://identifiers.org/pubchem.compound/760>;
+        dc:source           "PubChem-compound";
+        dcterms:identifier  "760";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/idefdfe00e> , <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/idd3120515> , <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/idc7b937b0> , <https://identifiers.org/wikipathways/WP1495_r126384>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1495_r126384/DataNode/f4b93>;
+        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=760> .
+
+<https://identifiers.org/wikipathways/WP1495_r126384>
+        rdf:type               skos:Collection , wp:Pathway;
+        dc:identifier          <https://identifiers.org/wikipathways/WP1495>;
+        dc:source              "WikiPathways";
+        dc:title               "Glycine metabolism"@en;
+        dcterms:description    "Glycine is degraded via three pathways. The predominant pathway in animals and plants is the reverse of the glycine synthase pathway. In this context, the enzyme system involved is usually called the glycine cleavage system.\nIn the second pathway, glycine is degraded in two steps. The first step is the reverse of glycine biosynthesis from serine with serine hydroxymethyl transferase. Serine is then converted to pyruvate by serine dehydratase.\nIn the third pathway of glycine degradation, glycine is converted to glyoxylate by D-amino acid oxidase. Glyoxylate is then oxidized by hepatic lactate dehydrogenase to oxalate in an NAD+-dependent reaction.\nDescription source: [https://en.wikipedia.org/wiki/Glycine#Metabolism Wikipedia]";
+        dcterms:identifier     "WP1495";
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP1495_r126384>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000440>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606>;
+        wp:organismName        "Homo sapiens";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000440>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP1495&oldid=r126384> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP1495&oldid=r126384>;
+        foaf:page              <http://www.wikipathways.org/instance/WP1495_r126384> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP1495&oldid=r126384>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP1495&oldid=r126384>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
 
 <https://identifiers.org/chebi/CHEBI:26401>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -169,19 +319,17 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:26401>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:26401";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1495/WP1495_rWP1495_r126384/DataNode/eccb2>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1495_r126384> , <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/id68fdd821>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1495_r126384/DataNode/eccb2>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:26401> .
 
-<https://identifiers.org/wikipathways/WP1495/WP1495_rWP1495_r126384>
-        rdf:type             wp:Pathway , skos:Collection;
-        dc:identifier        <https://identifiers.org/wikipathways/WP1495/WP1495>;
-        dc:source            "WikiPathways";
-        dc:title             "Glycine metabolism"@en;
-        dcterms:description  "Glycine is degraded via three pathways. The predominant pathway in animals and plants is the reverse of the glycine synthase pathway. In this context, the enzyme system involved is usually called the glycine cleavage system.\nIn the second pathway, glycine is degraded in two steps. The first step is the reverse of glycine biosynthesis from serine with serine hydroxymethyl transferase. Serine is then converted to pyruvate by serine dehydratase.\nIn the third pathway of glycine degradation, glycine is converted to glyoxylate by D-amino acid oxidase. Glyoxylate is then oxidized by hepatic lactate dehydrogenase to oxalate in an NAD+-dependent reaction.\nDescription source: [https://en.wikipedia.org/wiki/Glycine#Metabolism Wikipedia]";
-        dcterms:identifier   "WP1495/WP1495";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP1495/WP1495_rWP1495_r126384>;
-        wp:organismName      "Homo sapiens";
-        foaf:page            <http://www.wikipathways.org/instance/WP1495/WP1495_rWP1495_r126384> .
+<http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/idc7b937b0>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1495_r126384>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1495_r126384/Interaction/idc7b937b0>;
+        wp:participants   <https://identifiers.org/pubchem.compound/760> , <https://identifiers.org/chebi/CHEBI:53664>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:53664>;
+        wp:target         <https://identifiers.org/pubchem.compound/760> .
 
 <https://identifiers.org/chemspider/96901>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -189,5 +337,25 @@
         dc:identifier       <https://identifiers.org/chemspider/96901>;
         dc:source           "Chemspider";
         dcterms:identifier  "96901";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1495/WP1495_rWP1495_r126384/DataNode/ed114>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/idea68481b> , <https://identifiers.org/wikipathways/WP1495_r126384>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1495_r126384/DataNode/ed114>;
         foaf:page           <http://www.chemspider.com/Chemical-Structure.96901.html> .
+
+<http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/idea68481b>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1495_r126384>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1495_r126384/Interaction/idea68481b>;
+        wp:participants   <https://identifiers.org/chemspider/96901> , <https://identifiers.org/chemspider/597>;
+        wp:source         <https://identifiers.org/chemspider/597>;
+        wp:target         <https://identifiers.org/chemspider/96901> .
+
+<https://identifiers.org/wikipathways/WP1495>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP1495_r126384> .
+
+<http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/d4811>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1495_r126384>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1495_r126384/Interaction/d4811>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/idd3120515> , <https://identifiers.org/ec-code/2.6.1.4>;
+        wp:source         <https://identifiers.org/ec-code/2.6.1.4>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP1495_r126384/WP/Interaction/idd3120515> .

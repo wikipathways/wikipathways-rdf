@@ -16,14 +16,8 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/ensembl/ENSMUSG00000032125>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Robo4";
-        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000032125>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSMUSG00000032125";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3864/WP3864_rWP3864_r117939/DataNode/ad17e>;
-        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000032125> .
+<https://identifiers.org/wikipathways/WP3864>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP3864_r117939> .
 
 <https://identifiers.org/ensembl/ENSMUSG00000031558>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -31,46 +25,83 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000031558>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSMUSG00000031558";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3864/WP3864_rWP3864_r117939/DataNode/b955c>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3864_r117939> , <http://rdf.wikipathways.org/Pathway/WP3864_r117939/WP/Interaction/idc96ead42>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3864_r117939/DataNode/b955c>;
         foaf:page           <https://www.ensembl.org/id/ENSMUSG00000031558> .
 
-<https://identifiers.org/ensembl/ENSMUSG00000027646>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Src";
-        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000027646>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSMUSG00000027646";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3864/WP3864_rWP3864_r117939/DataNode/e9a5f>;
-        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000027646> .
-
-<https://identifiers.org/wikipathways/WP3864/WP3864_rWP3864_r117939>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP3864/WP3864>;
-        dc:source            "WikiPathways";
-        dc:title             "Robo4 and VEGF signaling pathways crosstalk"@en;
-        dcterms:description  "This pathway is based on Figure 2 of \"Robo4: a guidance receptor that regulates angiogenesis.\" (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2637482/). The gene Robo4 plays a role in regulating vascular stability in mice. Robo4 inhibits the gene Notch1, which regulates tip cell formation, in order to create more tip cells. Robo4 also inhibits cell migration, decreasing vessel complexity. The combination of Slit2 and Robo4 inhibits the activation of Src by VEGF-165 and VEGFR2. This inhibition reduces vascular leakage of Evans Blue from retinal blood vessels. More experimentation is necessary to determine whether Robo4 will inhibit other members of the Src family.";
-        dcterms:identifier   "WP3864/WP3864";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP3864/WP3864_rWP3864_r117939>;
-        wp:organismName      "Mus musculus";
-        foaf:page            <http://www.wikipathways.org/instance/WP3864/WP3864_rWP3864_r117939> .
-
-<https://identifiers.org/ensembl/ENSMUSG00000023951>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Vegfa";
-        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000023951>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSMUSG00000023951";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3864/WP3864_rWP3864_r117939/DataNode/c98ea>;
-        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000023951> .
+<http://rdf.wikipathways.org/Pathway/WP3864_r117939/WP/Interaction/id8f6175b1>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP3864_r117939/WP/Interaction/idc600851e> , <https://identifiers.org/wikipathways/WP3864_r117939>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3864_r117939/Interaction/id8f6175b1>;
+        wp:participants   <https://identifiers.org/ensembl/ENSMUSG00000027646> , <https://identifiers.org/ensembl/ENSMUSG00000062960>;
+        wp:source         <https://identifiers.org/ensembl/ENSMUSG00000062960>;
+        wp:target         <https://identifiers.org/ensembl/ENSMUSG00000027646> .
 
 <https://identifiers.org/ensembl/ENSMUSG00000001847>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "Rac1";
         dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000001847>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSMUSG00000001847";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3864/WP3864_rWP3864_r117939/DataNode/bbf12>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3864_r117939/WP/Interaction/id9cf5d153> , <http://rdf.wikipathways.org/Pathway/WP3864_r117939/WP/Interaction/ida7aa2972> , <https://identifiers.org/wikipathways/WP3864_r117939> , <http://rdf.wikipathways.org/Pathway/WP3864_r117939/WP/Interaction/id14447c5>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3864_r117939/DataNode/bbf12>;
         foaf:page           <https://www.ensembl.org/id/ENSMUSG00000001847> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_10090>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "10090" .
+
+<http://rdf.wikipathways.org/Pathway/WP3864_r117939/WP/Interaction/id9cf5d153>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3864_r117939>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3864_r117939/Interaction/id9cf5d153>;
+        wp:participants   <https://identifiers.org/ensembl/ENSMUSG00000001847>;
+        wp:source         <https://identifiers.org/ensembl/ENSMUSG00000001847> .
+
+<https://identifiers.org/ensembl/ENSMUSG00000027646>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "Src";
+        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000027646>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSMUSG00000027646";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3864_r117939/WP/Interaction/id8f6175b1> , <https://identifiers.org/wikipathways/WP3864_r117939> , <http://rdf.wikipathways.org/Pathway/WP3864_r117939/WP/Interaction/id14447c5>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3864_r117939/DataNode/e9a5f>;
+        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000027646> .
+
+<http://rdf.wikipathways.org/Pathway/WP3864_r117939/WP/Interaction/idc600851e>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3864_r117939>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3864_r117939/Interaction/idc600851e>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP3864_r117939/WP/Interaction/id8f6175b1> , <https://identifiers.org/ensembl/ENSMUSG00000032125>;
+        wp:source         <https://identifiers.org/ensembl/ENSMUSG00000032125>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP3864_r117939/WP/Interaction/id8f6175b1> .
+
+<http://rdf.wikipathways.org/Pathway/WP3864_r117939/WP/Interaction/ida7aa2972>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3864_r117939>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3864_r117939/Interaction/ida7aa2972>;
+        wp:participants   <https://identifiers.org/ensembl/ENSMUSG00000001847>;
+        wp:source         <https://identifiers.org/ensembl/ENSMUSG00000001847> .
+
+<http://rdf.wikipathways.org/Pathway/WP3864_r117939/WP/Interaction/idc96ead42>
+        rdf:type          wp:Binding , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3864_r117939>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3864_r117939/Interaction/idc96ead42>;
+        wp:participants   <https://identifiers.org/ensembl/ENSMUSG00000032125> , <https://identifiers.org/ensembl/ENSMUSG00000031558>;
+        wp:source         <https://identifiers.org/ensembl/ENSMUSG00000031558>;
+        wp:target         <https://identifiers.org/ensembl/ENSMUSG00000032125> .
+
+<http://rdf.wikipathways.org/Pathway/WP3864_r117939/WP/Interaction/ideee2e4f0>
+        rdf:type          wp:Binding , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3864_r117939>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3864_r117939/Interaction/ideee2e4f0>;
+        wp:participants   <https://identifiers.org/ensembl/ENSMUSG00000062960> , <https://identifiers.org/ensembl/ENSMUSG00000023951>;
+        wp:source         <https://identifiers.org/ensembl/ENSMUSG00000023951>;
+        wp:target         <https://identifiers.org/ensembl/ENSMUSG00000062960> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3864&oldid=r117939>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
 
 <https://identifiers.org/ensembl/ENSMUSG00000062960>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -78,5 +109,62 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000062960>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSMUSG00000062960";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3864/WP3864_rWP3864_r117939/DataNode/bb178>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3864_r117939> , <http://rdf.wikipathways.org/Pathway/WP3864_r117939/WP/Interaction/id8f6175b1> , <http://rdf.wikipathways.org/Pathway/WP3864_r117939/WP/Interaction/ideee2e4f0>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3864_r117939/DataNode/bb178>;
         foaf:page           <https://www.ensembl.org/id/ENSMUSG00000062960> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3864&oldid=r117939>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<https://identifiers.org/pubmed/19270536>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "19270536";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3864_r117939>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/19270536> .
+
+<http://rdf.wikipathways.org/Pathway/WP3864_r117939/WP/Interaction/id14447c5>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3864_r117939>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3864_r117939/Interaction/id14447c5>;
+        wp:participants   <https://identifiers.org/ensembl/ENSMUSG00000001847> , <https://identifiers.org/ensembl/ENSMUSG00000027646>;
+        wp:source         <https://identifiers.org/ensembl/ENSMUSG00000027646>;
+        wp:target         <https://identifiers.org/ensembl/ENSMUSG00000001847> .
+
+<https://identifiers.org/wikipathways/WP3864_r117939>
+        rdf:type               skos:Collection , wp:Pathway;
+        dc:identifier          <https://identifiers.org/wikipathways/WP3864>;
+        dc:source              "WikiPathways";
+        dc:title               "Robo4 and VEGF signaling pathways crosstalk"@en;
+        dcterms:description    "This pathway is based on Figure 2 of \"Robo4: a guidance receptor that regulates angiogenesis.\" (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2637482/). The gene Robo4 plays a role in regulating vascular stability in mice. Robo4 inhibits the gene Notch1, which regulates tip cell formation, in order to create more tip cells. Robo4 also inhibits cell migration, decreasing vessel complexity. The combination of Slit2 and Robo4 inhibits the activation of Src by VEGF-165 and VEGFR2. This inhibition reduces vascular leakage of Evans Blue from retinal blood vessels. More experimentation is necessary to determine whether Robo4 will inhibit other members of the Src family.";
+        dcterms:identifier     "WP3864";
+        dcterms:references     <https://identifiers.org/pubmed/19270536>;
+        cito:cites             <https://identifiers.org/pubmed/19270536>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP3864_r117939>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000004> , <http://purl.obolibrary.org/obo/PW_0000204>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_10090>;
+        wp:organismName        "Mus musculus";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000004> , <http://purl.obolibrary.org/obo/PW_0000204>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3864&oldid=r117939> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3864&oldid=r117939>;
+        foaf:page              <http://www.wikipathways.org/instance/WP3864_r117939> .
+
+<https://identifiers.org/ensembl/ENSMUSG00000023951>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "Vegfa";
+        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000023951>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSMUSG00000023951";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3864_r117939> , <http://rdf.wikipathways.org/Pathway/WP3864_r117939/WP/Interaction/ideee2e4f0>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3864_r117939/DataNode/c98ea>;
+        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000023951> .
+
+<https://identifiers.org/ensembl/ENSMUSG00000032125>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "Robo4";
+        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000032125>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSMUSG00000032125";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3864_r117939/WP/Interaction/idc600851e> , <https://identifiers.org/wikipathways/WP3864_r117939> , <http://rdf.wikipathways.org/Pathway/WP3864_r117939/WP/Interaction/idc96ead42>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3864_r117939/DataNode/ad17e>;
+        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000032125> .

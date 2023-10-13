@@ -16,38 +16,15 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<http://rdf.wikipathways.org/Pathway/WP4661/WP4661_rWP4661_r117646/WP/Interaction/f2590>
-        rdf:type  wp:Interaction .
-
-<https://identifiers.org/ensembl/ENSG00000160282>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "FTCD";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000160282>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000160282";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661/WP4661_rWP4661_r117646/DataNode/af14a>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000160282> .
-
-<https://identifiers.org/hmdb/HMDB0000156>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Malate";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000156>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000156";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661/WP4661_rWP4661_r117646/DataNode/e5dc1>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000156> .
-
-<http://rdf.wikipathways.org/Pathway/WP4661/WP4661_rWP4661_r117646/WP/Interaction/b5cbe>
-        rdf:type  wp:Interaction .
-
-<https://identifiers.org/ensembl/ENSG00000084110>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "HAL";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000084110>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000084110";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661/WP4661_rWP4661_r117646/DataNode/d4804>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000084110> .
+<https://identifiers.org/chebi/CHEBI:27384>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "4I-5PROA";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:27384>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:27384";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/f5f0d> , <https://identifiers.org/wikipathways/WP4661_r117646> , <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/ebdd3>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661_r117646/DataNode/b7308>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:27384> .
 
 <https://identifiers.org/chebi/CHEBI:18327>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -55,11 +32,129 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:18327>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:18327";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661/WP4661_rWP4661_r117646/DataNode/e3caf>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/d120f> , <https://identifiers.org/wikipathways/WP4661_r117646> , <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/ebdd3>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661_r117646/DataNode/e3caf>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:18327> .
 
-<http://rdf.wikipathways.org/Pathway/WP4661/WP4661_rWP4661_r117646/WP/Interaction/ce1d2>
-        rdf:type  wp:Interaction .
+<http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/b8916>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4661_r117646> , <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/f7ccc>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4661_r117646/Interaction/b8916>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:16810> , <https://identifiers.org/hmdb/HMDB0000148>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000148>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:16810> .
+
+<http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/d120f>
+        rdf:type          wp:Conversion , wp:Interaction , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4661_r117646> , <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/c5ffb>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4661_r117646/Interaction/d120f>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:18327> , <https://identifiers.org/hmdb/HMDB0000148>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:18327>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000148> .
+
+<https://identifiers.org/wikipathways/WP4661_r117646>
+        rdf:type               skos:Collection , wp:Pathway;
+        dc:identifier          <https://identifiers.org/wikipathways/WP4661>;
+        dc:source              "WikiPathways";
+        dc:title               "Amino acid metabolism pathway excerpt: histidine catabolism extension"@en;
+        dcterms:description    "This pathway was created based on findings from the bachelor thesis project by Kristin Koppelmaa which investigated vitamin D GWAS results. \nThesis DOI: https://figshare.com/articles/From_SNPs_to_Pathways_Functional_Interpretation_of_Vitamin_D_GWAS_Results/8796710.\nThis pathway shows an excerpt of the WikiPathways amino acid metabolism (WP3925) pathway containing the segment between the metabolites histidine and glutamate that was extended. The proteins added to the conversion were AMDHD1 and UROC1. Although the HAL and FTCD proteins were included in the amino acid metabolism pathway previously, the lead SNP rs7487782 which exists in both HAL and AMDHD1, was added to the pathway and linked to these two genes. This variant was mapped to these genes during the analysis of a dataset originating from [https://www.ncbi.nlm.nih.gov/pubmed/29343764 PMID: 29343764].";
+        dcterms:identifier     "WP4661";
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4661_r117646>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0001267>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606>;
+        wp:organismName        "Homo sapiens";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0001267>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4661&oldid=r117646> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4661&oldid=r117646>;
+        foaf:page              <http://www.wikipathways.org/instance/WP4661_r117646> .
+
+<http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/ef527>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4661_r117646>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4661_r117646/Interaction/ef527>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000243>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000243> .
+
+<https://identifiers.org/hmdb/HMDB0000148>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Glutamate";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000148>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0000148";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/d120f> , <https://identifiers.org/wikipathways/WP4661_r117646> , <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/b8916> , <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/a4cfa>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661_r117646/DataNode/dab10>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000148> .
+
+<http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/f5f0d>
+        rdf:type          wp:DirectedInteraction , wp:Conversion , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4661_r117646> , <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/id59bafb8>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4661_r117646/Interaction/f5f0d>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:27384> , <https://identifiers.org/chebi/CHEBI:30817>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:30817>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:27384> .
+
+<http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/bfa52>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4661_r117646>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4661_r117646/Interaction/bfa52>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000223>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000223> .
+
+<http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/f7ccc>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4661_r117646>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4661_r117646/Interaction/f7ccc>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/b8916> , <https://identifiers.org/ensembl/ENSG00000166123>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000166123>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/b8916> .
+
+<https://identifiers.org/ensembl/ENSG00000148672>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "GLUD1";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000148672>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000148672";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4661_r117646> , <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/eb56f>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661_r117646/DataNode/e468e>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000148672> .
+
+<http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/iddf3437a3>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4661_r117646>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4661_r117646/Interaction/iddf3437a3>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000084110>;
+        wp:target         <https://identifiers.org/ensembl/ENSG00000084110> .
+
+<http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/a4269>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4661_r117646>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4661_r117646/Interaction/a4269>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000254> , <https://identifiers.org/hmdb/HMDB0000134> .
+
+<https://identifiers.org/hmdb/HMDB0000156>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Malate";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000156>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0000156";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/f2590> , <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/b5cbe> , <https://identifiers.org/wikipathways/WP4661_r117646>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661_r117646/DataNode/e5dc1>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000156> .
+
+<http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/id59bafb8>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4661_r117646>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4661_r117646/Interaction/id59bafb8>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/f5f0d> , <https://identifiers.org/uniprot/Q96N76>;
+        wp:source         <https://identifiers.org/uniprot/Q96N76>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/f5f0d> .
+
+<http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/c5ffb>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4661_r117646>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4661_r117646/Interaction/c5ffb>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/d120f> , <https://identifiers.org/ensembl/ENSG00000160282>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000160282>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/d120f> .
 
 <https://identifiers.org/hmdb/HMDB0001022>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -67,28 +162,225 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0001022>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0001022";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661/WP4661_rWP4661_r117646/DataNode/a5c85>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4661_r117646> , <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/c8dbf> , <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/d18d0>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661_r117646/DataNode/a5c85>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001022> .
 
-<https://identifiers.org/hmdb/HMDB0000148>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Glutamate";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000148>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000148";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661/WP4661_rWP4661_r117646/DataNode/dab10>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000148> .
+<http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/bc15f>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4661_r117646>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4661_r117646/Interaction/bc15f>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000094> , <https://identifiers.org/hmdb/HMDB0000223> .
 
-<https://identifiers.org/wikipathways/WP4661/WP4661_rWP4661_r117646>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP4661/WP4661>;
-        dc:source            "WikiPathways";
-        dc:title             "Amino acid metabolism pathway excerpt: histidine catabolism extension"@en;
-        dcterms:description  "This pathway was created based on findings from the bachelor thesis project by Kristin Koppelmaa which investigated vitamin D GWAS results. \nThesis DOI: https://figshare.com/articles/From_SNPs_to_Pathways_Functional_Interpretation_of_Vitamin_D_GWAS_Results/8796710.\nThis pathway shows an excerpt of the WikiPathways amino acid metabolism (WP3925) pathway containing the segment between the metabolites histidine and glutamate that was extended. The proteins added to the conversion were AMDHD1 and UROC1. Although the HAL and FTCD proteins were included in the amino acid metabolism pathway previously, the lead SNP rs7487782 which exists in both HAL and AMDHD1, was added to the pathway and linked to these two genes. This variant was mapped to these genes during the analysis of a dataset originating from [https://www.ncbi.nlm.nih.gov/pubmed/29343764 PMID: 29343764].";
-        dcterms:identifier   "WP4661/WP4661";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP4661/WP4661_rWP4661_r117646>;
-        wp:organismName      "Homo sapiens";
-        foaf:page            <http://www.wikipathways.org/instance/WP4661/WP4661_rWP4661_r117646> .
+<https://identifiers.org/hmdb/HMDB0000243>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Pyruvate";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000243>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0000243";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4661_r117646> , <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/ef527>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661_r117646/DataNode/dcf4f>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000243> .
+
+<http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/ebdd3>
+        rdf:type          wp:DirectedInteraction , wp:Conversion , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/idb93fd5c3> , <https://identifiers.org/wikipathways/WP4661_r117646>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4661_r117646/Interaction/ebdd3>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:27384> , <https://identifiers.org/chebi/CHEBI:18327>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:18327>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:27384> .
+
+<https://identifiers.org/chebi/CHEBI:16810>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "2-oxo-glutarate";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:16810>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:16810";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/ce1d2> , <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/d18d0> , <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/a4cfa> , <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/b8916> , <https://identifiers.org/wikipathways/WP4661_r117646>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661_r117646/DataNode/cc058>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16810> .
+
+<https://identifiers.org/wikipathways/WP4661>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP4661_r117646> .
+
+<https://identifiers.org/hmdb/HMDB0000177>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Histidine";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000177>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0000177";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4661_r117646> , <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/a3851>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661_r117646/DataNode/a4099>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000177> .
+
+<http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/d18d0>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4661_r117646>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4661_r117646/Interaction/d18d0>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001022> , <https://identifiers.org/chebi/CHEBI:16810> .
+
+<https://identifiers.org/uniprot/Q96NU7>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "AMDHD1";
+        dc:identifier       <https://identifiers.org/uniprot/Q96NU7>;
+        dc:source           "Uniprot-TrEMBL";
+        dcterms:identifier  "Q96NU7";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4661_r117646> , <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/id25a0d83f> , <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/idb93fd5c3>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661_r117646/DataNode/d1463>;
+        foaf:page           <http://www.uniprot.org/uniprot/Q96NU7> .
+
+<https://identifiers.org/hmdb/HMDB0000223>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Oxaloacetate";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000223>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0000223";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/bc15f> , <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/bfa52> , <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/f2590> , <https://identifiers.org/wikipathways/WP4661_r117646>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661_r117646/DataNode/c3712> , <http://rdf.wikipathways.org/Pathway/WP4661_r117646/DataNode/a4975>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000223> .
+
+<http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/c8dbf>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4661_r117646>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4661_r117646/Interaction/c8dbf>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001022> , <https://identifiers.org/hmdb/HMDB0000254> .
+
+<https://identifiers.org/hmdb/HMDB0000072>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Aconitate";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000072>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0000072";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/c317f> , <https://identifiers.org/wikipathways/WP4661_r117646> , <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/ac94c>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661_r117646/DataNode/d40ac>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000072> .
+
+<http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/c8239>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4661_r117646>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4661_r117646/Interaction/c8239>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000161>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000161> .
+
+<http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/a3851>
+        rdf:type          wp:Interaction , wp:Conversion , wp:DirectedInteraction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/c03f3> , <https://identifiers.org/wikipathways/WP4661_r117646>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4661_r117646/Interaction/a3851>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000177> , <https://identifiers.org/chebi/CHEBI:30817>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000177>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:30817> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4661&oldid=r117646>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/idb93fd5c3>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4661_r117646>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4661_r117646/Interaction/idb93fd5c3>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/ebdd3> , <https://identifiers.org/uniprot/Q96NU7>;
+        wp:source         <https://identifiers.org/uniprot/Q96NU7>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/ebdd3> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4661&oldid=r117646>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<https://identifiers.org/hmdb/HMDB0000193>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "isocitrate";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000193>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0000193";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/c317f> , <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/ce1d2> , <https://identifiers.org/wikipathways/WP4661_r117646>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661_r117646/DataNode/e2c11>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000193> .
+
+<http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/ce1d2>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4661_r117646>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4661_r117646/Interaction/ce1d2>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:16810> , <https://identifiers.org/hmdb/HMDB0000193> .
+
+<http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/c317f>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4661_r117646>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4661_r117646/Interaction/c317f>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000193> , <https://identifiers.org/hmdb/HMDB0000072> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_9606>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9606" .
+
+<http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/c03f3>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4661_r117646>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4661_r117646/Interaction/c03f3>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/a3851> , <https://identifiers.org/ensembl/ENSG00000084110>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000084110>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/a3851> .
+
+<https://identifiers.org/uniprot/Q96N76>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "UROC1";
+        dc:identifier       <https://identifiers.org/uniprot/Q96N76>;
+        dc:source           "Uniprot-TrEMBL";
+        dcterms:identifier  "Q96N76";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/id59bafb8> , <https://identifiers.org/wikipathways/WP4661_r117646>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661_r117646/DataNode/de8d0>;
+        foaf:page           <http://www.uniprot.org/uniprot/Q96N76> .
+
+<http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/ac94c>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4661_r117646>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4661_r117646/Interaction/ac94c>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000072> , <https://identifiers.org/hmdb/HMDB0000094> .
+
+<https://identifiers.org/hmdb/HMDB0000094>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Citrate";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000094>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0000094";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4661_r117646> , <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/ac94c> , <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/bc15f>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661_r117646/DataNode/fcbea>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000094> .
+
+<https://identifiers.org/ensembl/ENSG00000084110>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "HAL";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000084110>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000084110";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4661_r117646> , <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/iddf3437a3> , <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/c03f3>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661_r117646/DataNode/d4804>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000084110> .
+
+<https://identifiers.org/ensembl/ENSG00000160282>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "FTCD";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000160282>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000160282";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/c5ffb> , <https://identifiers.org/wikipathways/WP4661_r117646>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661_r117646/DataNode/af14a>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000160282> .
+
+<http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/a4cfa>
+        rdf:type          wp:Conversion , wp:Interaction , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4661_r117646> , <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/eb56f>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4661_r117646/Interaction/a4cfa>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000148> , <https://identifiers.org/chebi/CHEBI:16810>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:16810>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000148> .
+
+<http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/eb56f>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4661_r117646>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4661_r117646/Interaction/eb56f>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/a4cfa> , <https://identifiers.org/ensembl/ENSG00000148672>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000148672>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/a4cfa> .
 
 <https://identifiers.org/hmdb/HMDB0000161>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -96,7 +388,8 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000161>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0000161";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661/WP4661_rWP4661_r117646/DataNode/d3922>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/c8239> , <https://identifiers.org/wikipathways/WP4661_r117646>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661_r117646/DataNode/d3922>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000161> .
 
 <https://identifiers.org/ensembl/ENSG00000166123>
@@ -105,98 +398,16 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000166123>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000166123";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661/WP4661_rWP4661_r117646/DataNode/c9d9e>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/f7ccc> , <https://identifiers.org/wikipathways/WP4661_r117646>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661_r117646/DataNode/c9d9e>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000166123> .
 
-<https://identifiers.org/hmdb/HMDB0000223>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Oxaloacetate";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000223>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000223";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661/WP4661_rWP4661_r117646/DataNode/a4975> , <http://rdf.wikipathways.org/Pathway/WP4661/WP4661_rWP4661_r117646/DataNode/c3712>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000223> .
-
-<https://identifiers.org/chebi/CHEBI:27384>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "4I-5PROA";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:27384>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:27384";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661/WP4661_rWP4661_r117646/DataNode/b7308>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:27384> .
-
-<https://identifiers.org/hmdb/HMDB0000177>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Histidine";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000177>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000177";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661/WP4661_rWP4661_r117646/DataNode/a4099>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000177> .
-
-<http://rdf.wikipathways.org/Pathway/WP4661/WP4661_rWP4661_r117646/WP/Interaction/c317f>
-        rdf:type  wp:Interaction .
-
-<https://identifiers.org/hmdb/HMDB0000072>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Aconitate";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000072>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000072";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661/WP4661_rWP4661_r117646/DataNode/d40ac>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000072> .
-
-<https://identifiers.org/ensembl/ENSG00000148672>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "GLUD1";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000148672>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000148672";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661/WP4661_rWP4661_r117646/DataNode/e468e>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000148672> .
-
-<https://identifiers.org/hmdb/HMDB0000134>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Fumarate";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000134>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000134";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661/WP4661_rWP4661_r117646/DataNode/f40dc>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000134> .
-
-<https://identifiers.org/hmdb/HMDB0000243>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Pyruvate";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000243>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000243";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661/WP4661_rWP4661_r117646/DataNode/dcf4f>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000243> .
-
-<https://identifiers.org/uniprot/Q96N76>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "UROC1";
-        dc:identifier       <https://identifiers.org/uniprot/Q96N76>;
-        dc:source           "Uniprot-TrEMBL";
-        dcterms:identifier  "Q96N76";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661/WP4661_rWP4661_r117646/DataNode/de8d0>;
-        foaf:page           <http://www.uniprot.org/uniprot/Q96N76> .
-
-<https://identifiers.org/chebi/CHEBI:30817>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "UCA";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:30817>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:30817";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661/WP4661_rWP4661_r117646/DataNode/ebe3c>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:30817> .
-
-<http://rdf.wikipathways.org/Pathway/WP4661/WP4661_rWP4661_r117646/WP/Interaction/c8dbf>
-        rdf:type  wp:Interaction .
-
-<http://rdf.wikipathways.org/Pathway/WP4661/WP4661_rWP4661_r117646/WP/Interaction/a4269>
-        rdf:type  wp:Interaction .
+<http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/id25a0d83f>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4661_r117646>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4661_r117646/Interaction/id25a0d83f>;
+        wp:participants   <https://identifiers.org/uniprot/Q96NU7>;
+        wp:target         <https://identifiers.org/uniprot/Q96NU7> .
 
 <https://identifiers.org/hmdb/HMDB0000254>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -204,50 +415,38 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000254>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0000254";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661/WP4661_rWP4661_r117646/DataNode/d49f0>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/a4269> , <https://identifiers.org/wikipathways/WP4661_r117646> , <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/c8dbf>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661_r117646/DataNode/d49f0>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000254> .
 
-<http://rdf.wikipathways.org/Pathway/WP4661/WP4661_rWP4661_r117646/WP/Interaction/d18d0>
-        rdf:type  wp:Interaction .
+<http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/b5cbe>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4661_r117646>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4661_r117646/Interaction/b5cbe>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000156> , <https://identifiers.org/hmdb/HMDB0000134> .
 
-<https://identifiers.org/uniprot/Q96NU7>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "AMDHD1";
-        dc:identifier       <https://identifiers.org/uniprot/Q96NU7>;
-        dc:source           "Uniprot-TrEMBL";
-        dcterms:identifier  "Q96NU7";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661/WP4661_rWP4661_r117646/DataNode/d1463>;
-        foaf:page           <http://www.uniprot.org/uniprot/Q96NU7> .
-
-<http://rdf.wikipathways.org/Pathway/WP4661/WP4661_rWP4661_r117646/WP/Interaction/bc15f>
-        rdf:type  wp:Interaction .
-
-<https://identifiers.org/hmdb/HMDB0000193>
+<https://identifiers.org/chebi/CHEBI:30817>
         rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "isocitrate";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000193>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000193";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661/WP4661_rWP4661_r117646/DataNode/e2c11>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000193> .
-
-<https://identifiers.org/chebi/CHEBI:16810>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "2-oxo-glutarate";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:16810>;
+        rdfs:label          "UCA";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:30817>;
         dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:16810";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661/WP4661_rWP4661_r117646/DataNode/cc058>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16810> .
+        dcterms:identifier  "CHEBI:30817";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/f5f0d> , <https://identifiers.org/wikipathways/WP4661_r117646> , <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/a3851>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661_r117646/DataNode/ebe3c>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:30817> .
 
-<https://identifiers.org/hmdb/HMDB0000094>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Citrate";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000094>;
+<https://identifiers.org/hmdb/HMDB0000134>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Fumarate";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000134>;
         dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000094";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661/WP4661_rWP4661_r117646/DataNode/fcbea>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000094> .
+        dcterms:identifier  "HMDB0000134";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/b5cbe> , <http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/a4269> , <https://identifiers.org/wikipathways/WP4661_r117646>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4661_r117646/DataNode/f40dc>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000134> .
 
-<http://rdf.wikipathways.org/Pathway/WP4661/WP4661_rWP4661_r117646/WP/Interaction/ac94c>
-        rdf:type  wp:Interaction .
+<http://rdf.wikipathways.org/Pathway/WP4661_r117646/WP/Interaction/f2590>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4661_r117646>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4661_r117646/Interaction/f2590>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000223> , <https://identifiers.org/hmdb/HMDB0000156> .

@@ -16,23 +16,51 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
+<http://rdf.wikipathways.org/Pathway/WP360_r116936/ComplexBinding/a80ed>
+        rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP360_r116936>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP360_r116936/Group/a80ed>;
+        wp:participants   <https://identifiers.org/ncbigene/117098> , <https://identifiers.org/ncbigene/29554> , <http://rdf.wikipathways.org/Pathway/WP360_r116936/Complex/a80ed> .
+
+<http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/id1643ddff>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP360_r116936>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP360_r116936/Interaction/id1643ddff>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/idac1c6748> , <https://identifiers.org/uniprot/CLAT>;
+        wp:source         <https://identifiers.org/uniprot/CLAT>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/idac1c6748> .
+
+<http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/idc34c75b4>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP360_r116936>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP360_r116936/Interaction/idc34c75b4>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/ide24b890d> , <https://identifiers.org/ncbigene/25511>;
+        wp:source         <https://identifiers.org/ncbigene/25511>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/ide24b890d> .
+
 <https://identifiers.org/chebi/CHEBI:49183>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "Phosphatidylcholine";
         dc:identifier       <https://identifiers.org/chebi/CHEBI:49183>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:49183";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP360/WP360_rWP360_r116936/DataNode/a8a6b>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/ide24b890d> , <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/ida1e11656> , <https://identifiers.org/wikipathways/WP360_r116936>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP360_r116936/DataNode/a8a6b>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:49183> .
 
-<https://identifiers.org/uniprot/CLAT>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Chat";
-        dc:identifier       <https://identifiers.org/uniprot/CLAT>;
-        dc:source           "Uniprot-TrEMBL";
-        dcterms:identifier  "CLAT";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP360/WP360_rWP360_r116936/DataNode/c74>;
-        foaf:page           <http://www.uniprot.org/uniprot/CLAT> .
+<https://identifiers.org/hmdb/HMDB0001206>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Acetyl-CoA";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0001206>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0001206";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/id5159a459> , <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/id8acaac8d> , <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/idac1c6748> , <https://identifiers.org/wikipathways/WP360_r116936>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP360_r116936/DataNode/cef45>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001206> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_10116>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "10116" .
 
 <https://identifiers.org/hmdb/HMDB0000895>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -40,8 +68,37 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000895>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0000895";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP360/WP360_rWP360_r116936/DataNode/c79c4>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/id460fa049> , <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/idac1c6748> , <https://identifiers.org/wikipathways/WP360_r116936>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP360_r116936/DataNode/c79c4>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000895> .
+
+<https://identifiers.org/chebi/CHEBI:16436>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Cytidine Diphosphate Choline";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:16436>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:16436";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP360_r116936> , <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/idfd8cfba1> , <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/idf651fcb1>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP360_r116936/DataNode/df2c7>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16436> .
+
+<http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/idac1c6748>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/id1643ddff> , <https://identifiers.org/wikipathways/WP360_r116936> , <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/id10ca69a0>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP360_r116936/Interaction/idac1c6748>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001206> , <https://identifiers.org/hmdb/HMDB0000895>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001206>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000895> .
+
+<https://identifiers.org/ncbigene/83817>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "Ache";
+        dc:identifier       <https://identifiers.org/ncbigene/83817>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "83817";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP360_r116936> , <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/idecad27d4>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP360_r116936/DataNode/bae>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/83817> .
 
 <https://identifiers.org/ncbigene/25373>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -49,91 +106,48 @@
         dc:identifier       <https://identifiers.org/ncbigene/25373>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "25373";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP360/WP360_rWP360_r116936/DataNode/b20>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP360_r116936> , <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/id8a6ee5f2>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP360_r116936/DataNode/b20>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/25373> .
 
-<https://identifiers.org/chebi/CHEBI:16038>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Phosphatidylethanolamine";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:16038>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:16038";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP360/WP360_rWP360_r116936/DataNode/e0236>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16038> .
-
-<https://identifiers.org/ncbigene/117098>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Pdha2";
-        dc:identifier       <https://identifiers.org/ncbigene/117098>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "117098";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP360/WP360_rWP360_r116936/DataNode/e50>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/117098> .
-
-<https://identifiers.org/ncbigene/83817>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Ache";
-        dc:identifier       <https://identifiers.org/ncbigene/83817>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "83817";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP360/WP360_rWP360_r116936/DataNode/bae>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/83817> .
-
-<https://identifiers.org/hmdb/HMDB0000097>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Choline";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000097>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000097";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP360/WP360_rWP360_r116936/DataNode/f5344> , <http://rdf.wikipathways.org/Pathway/WP360/WP360_rWP360_r116936/DataNode/f342b>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000097> .
-
-<https://identifiers.org/chebi/CHEBI:16870>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Glycerophosphocholine";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:16870>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:16870";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP360/WP360_rWP360_r116936/DataNode/f5abf>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16870> .
-
-<https://identifiers.org/chebi/CHEBI:16436>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Cytidine Diphosphate Choline";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:16436>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:16436";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP360/WP360_rWP360_r116936/DataNode/df2c7>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16436> .
-
-<https://identifiers.org/chebi/CHEBI:15361>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Pyruvate from Glycolysis";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:15361>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:15361";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP360/WP360_rWP360_r116936/DataNode/bc331>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15361> .
-
-<https://identifiers.org/wikipathways/WP360/WP360_rWP360_r116936>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP360/WP360>;
-        dc:source            "WikiPathways";
-        dc:title             "Acetylcholine synthesis"@en;
-        dcterms:description  "Acetylcholine is an important neurotransmitter. It can be rapidly released in the synaptic cleft upon activation of the neuron. In the synaptic cleft the compound is degraded rapidly into choline and acetate, this is essential for proper neuronal functioning. Choline and Acetate are taken up into the cytosol and recycled for the next activation.";
-        dcterms:identifier   "WP360/WP360";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP360/WP360_rWP360_r116936>;
-        wp:organismName      "Rattus norvegicus";
-        foaf:page            <http://www.wikipathways.org/instance/WP360/WP360_rWP360_r116936> .
-
 <https://identifiers.org/ncbigene/25511>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "Pemt";
         dc:identifier       <https://identifiers.org/ncbigene/25511>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "25511";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP360/WP360_rWP360_r116936/DataNode/d22>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP360_r116936> , <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/idc34c75b4>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP360_r116936/DataNode/d22>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/25511> .
+
+<https://identifiers.org/hmdb/HMDB0000097>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Choline";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000097>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0000097";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP360_r116936> , <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/id4ee82081> , <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/id96f2484f> , <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/ida03c254f> , <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/id4b79cdb7> , <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/id10ca69a0>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP360_r116936/DataNode/f5344> , <http://rdf.wikipathways.org/Pathway/WP360_r116936/DataNode/f342b>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000097> .
+
+<http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/ida03c254f>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP360_r116936>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP360_r116936/Interaction/ida03c254f>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000097> , <https://identifiers.org/hmdb/HMDB0001565>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001565>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000097> .
+
+<http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/idecad27d4>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP360_r116936>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP360_r116936/Interaction/idecad27d4>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/id460fa049> , <https://identifiers.org/ncbigene/83817>;
+        wp:source         <https://identifiers.org/ncbigene/83817>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/id460fa049> .
+
+<https://identifiers.org/wikipathways/WP360>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP360_r116936> .
 
 <https://identifiers.org/chebi/CHEBI:30089>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -141,29 +155,141 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:30089>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:30089";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP360/WP360_rWP360_r116936/DataNode/c7300>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/id5159a459> , <https://identifiers.org/wikipathways/WP360_r116936> , <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/id460fa049>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP360_r116936/DataNode/c7300>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:30089> .
 
-<https://identifiers.org/ncbigene/140544>
+<http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/ida1e11656>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP360_r116936>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP360_r116936/Interaction/ida1e11656>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:16870> , <https://identifiers.org/chebi/CHEBI:49183>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:49183>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:16870> .
+
+<https://identifiers.org/ncbigene/117098>
         rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "Pdha2";
+        dc:identifier       <https://identifiers.org/ncbigene/117098>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "117098";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP360_r116936> , <http://rdf.wikipathways.org/Pathway/WP360_r116936/Complex/a80ed>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP360_r116936/DataNode/e50>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/117098> .
+
+<https://identifiers.org/chebi/CHEBI:16038>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Phosphatidylethanolamine";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:16038>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:16038";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/ide24b890d> , <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/idf651fcb1> , <https://identifiers.org/wikipathways/WP360_r116936>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP360_r116936/DataNode/e0236>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16038> .
+
+<http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/id96f2484f>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP360_r116936>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP360_r116936/Interaction/id96f2484f>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000097>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000097> .
+
+<https://identifiers.org/chebi/CHEBI:15361>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Pyruvate from Glycolysis";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:15361>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:15361";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/id8acaac8d> , <https://identifiers.org/wikipathways/WP360_r116936>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP360_r116936/DataNode/bc331>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15361> .
+
+<http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/idfd8cfba1>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP360_r116936> , <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/id8a89efbf>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP360_r116936/Interaction/idfd8cfba1>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:16436> , <https://identifiers.org/hmdb/HMDB0001565>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001565>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:16436> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP360&oldid=r116936>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<https://identifiers.org/uniprot/CLAT>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "Chat";
+        dc:identifier       <https://identifiers.org/uniprot/CLAT>;
+        dc:source           "Uniprot-TrEMBL";
+        dcterms:identifier  "CLAT";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP360_r116936> , <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/id1643ddff>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP360_r116936/DataNode/c74>;
+        foaf:page           <http://www.uniprot.org/uniprot/CLAT> .
+
+<http://rdf.wikipathways.org/Pathway/WP360_r116936/Complex/a80ed>
+        rdf:type          wp:Complex , wp:DataNode;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP360_r116936>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP360_r116936/Group/a80ed>;
+        wp:participants   <https://identifiers.org/ncbigene/117098> , <https://identifiers.org/ncbigene/29554> .
+
+<http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/id5159a459>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP360_r116936>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP360_r116936/Interaction/id5159a459>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001206> , <https://identifiers.org/chebi/CHEBI:30089>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:30089>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001206> .
+
+<http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/id8acaac8d>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP360_r116936>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP360_r116936/Interaction/id8acaac8d>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001206> , <https://identifiers.org/chebi/CHEBI:15361>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:15361>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001206> .
+
+<http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/id3a01436c>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/id8a6ee5f2> , <https://identifiers.org/wikipathways/WP360_r116936>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP360_r116936/Interaction/id3a01436c>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001565>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001565> .
+
+<http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/id4ee82081>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP360_r116936>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP360_r116936/Interaction/id4ee82081>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000097>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000097>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000097> .
+
+<http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/id8a89efbf>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP360_r116936>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP360_r116936/Interaction/id8a89efbf>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/idfd8cfba1> , <https://identifiers.org/ncbigene/140544>;
+        wp:source         <https://identifiers.org/ncbigene/140544>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/idfd8cfba1> .
+
+<https://identifiers.org/ncbigene/140544>
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "Pcyt1a";
         dc:identifier       <https://identifiers.org/ncbigene/140544>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "140544";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP360/WP360_rWP360_r116936/DataNode/a5b>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/id8a89efbf> , <https://identifiers.org/wikipathways/WP360_r116936>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP360_r116936/DataNode/a5b>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/140544> .
 
-<https://identifiers.org/ncbigene/29554>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Pdha1";
-        dc:identifier       <https://identifiers.org/ncbigene/29554>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "29554";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP360/WP360_rWP360_r116936/DataNode/af8>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/29554> .
+<http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/id10ca69a0>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP360_r116936>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP360_r116936/Interaction/id10ca69a0>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/idac1c6748> , <https://identifiers.org/hmdb/HMDB0000097> .
 
-<http://rdf.wikipathways.org/Pathway/WP360/WP360_rWP360_r116936/WP/Interaction/id10ca69a0>
-        rdf:type  wp:Interaction .
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP360&oldid=r116936>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
 
 <https://identifiers.org/hmdb/HMDB0001565>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -171,14 +297,90 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0001565>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0001565";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP360/WP360_rWP360_r116936/DataNode/c3288>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/id3a01436c> , <https://identifiers.org/wikipathways/WP360_r116936> , <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/ida03c254f> , <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/idfd8cfba1>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP360_r116936/DataNode/c3288>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001565> .
 
-<https://identifiers.org/hmdb/HMDB0001206>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Acetyl-CoA";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0001206>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0001206";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP360/WP360_rWP360_r116936/DataNode/cef45>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001206> .
+<https://identifiers.org/pubmed/6867732>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "6867732";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP360_r116936>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/6867732> .
+
+<http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/id8a6ee5f2>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP360_r116936>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP360_r116936/Interaction/id8a6ee5f2>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/id3a01436c> , <https://identifiers.org/ncbigene/25373>;
+        wp:source         <https://identifiers.org/ncbigene/25373>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/id3a01436c> .
+
+<https://identifiers.org/wikipathways/WP360_r116936>
+        rdf:type               wp:Pathway , skos:Collection;
+        dc:identifier          <https://identifiers.org/wikipathways/WP360>;
+        dc:source              "WikiPathways";
+        dc:title               "Acetylcholine synthesis"@en;
+        dcterms:description    "Acetylcholine is an important neurotransmitter. It can be rapidly released in the synaptic cleft upon activation of the neuron. In the synaptic cleft the compound is degraded rapidly into choline and acetate, this is essential for proper neuronal functioning. Choline and Acetate are taken up into the cytosol and recycled for the next activation.";
+        dcterms:identifier     "WP360";
+        dcterms:references     <https://identifiers.org/pubmed/6867732>;
+        cito:cites             <https://identifiers.org/pubmed/6867732>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP360_r116936>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000408>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_10116>;
+        wp:organismName        "Rattus norvegicus";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000408>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP360&oldid=r116936> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP360&oldid=r116936>;
+        foaf:page              <http://www.wikipathways.org/instance/WP360_r116936> .
+
+<http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/ide24b890d>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP360_r116936> , <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/idc34c75b4>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP360_r116936/Interaction/ide24b890d>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:49183> , <https://identifiers.org/chebi/CHEBI:16038>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:16038>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:49183> .
+
+<http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/id4b79cdb7>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP360_r116936>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP360_r116936/Interaction/id4b79cdb7>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000097> , <https://identifiers.org/chebi/CHEBI:16870>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:16870>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000097> .
+
+<http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/id460fa049>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/idecad27d4> , <https://identifiers.org/wikipathways/WP360_r116936>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP360_r116936/Interaction/id460fa049>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:30089> , <https://identifiers.org/hmdb/HMDB0000895>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000895>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:30089> .
+
+<https://identifiers.org/ncbigene/29554>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "Pdha1";
+        dc:identifier       <https://identifiers.org/ncbigene/29554>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "29554";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP360_r116936> , <http://rdf.wikipathways.org/Pathway/WP360_r116936/Complex/a80ed>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP360_r116936/DataNode/af8>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/29554> .
+
+<http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/idf651fcb1>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP360_r116936>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP360_r116936/Interaction/idf651fcb1>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:16038> , <https://identifiers.org/chebi/CHEBI:16436>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:16436>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:16038> .
+
+<https://identifiers.org/chebi/CHEBI:16870>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Glycerophosphocholine";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:16870>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:16870";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/id4b79cdb7> , <http://rdf.wikipathways.org/Pathway/WP360_r116936/WP/Interaction/ida1e11656> , <https://identifiers.org/wikipathways/WP360_r116936>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP360_r116936/DataNode/f5abf>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16870> .

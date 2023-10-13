@@ -16,142 +16,104 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/wikipathways/WP554/WP554_rWP554_r126205>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP554/WP554>;
-        dc:source            "WikiPathways";
-        dc:title             "ACE inhibitor pathway"@en;
-        dcterms:description  "The core of this pathway was elucidated over a century ago and involves the conversion of angiotensinogen to angiotensin I (Ang I) by renin, its subsequent conversion to angiotensin II (Ang II) by angiotensin converting enzyme. Ang II activates the angiotensin II receptor type 1 to induce aldosterone synthesis, increasing water and salt resorption and potassium excretion in the kidney and increasing blood pressure.\n\nSource: PharmGKB (https://www.pharmgkb.org/pathway/PA2023)\n\nProteins on this pathway have targeted assays available via the [https://assays.cancer.gov/available_assays?wp_id=WP554 CPTAC Assay Portal]";
-        dcterms:identifier   "WP554/WP554";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP554/WP554_rWP554_r126205>;
-        wp:organismName      "Homo sapiens";
-        foaf:page            <http://www.wikipathways.org/instance/WP554/WP554_rWP554_r126205> .
-
-<https://identifiers.org/ncbigene/1215>
+<https://identifiers.org/ncbigene/1511>
         rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "CMA1";
-        dc:identifier       <https://identifiers.org/ncbigene/1215>;
+        rdfs:label          "CTSG";
+        dc:identifier       <https://identifiers.org/ncbigene/1511>;
         dc:source           "Entrez Gene";
-        dcterms:identifier  "1215";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554/WP554_rWP554_r126205/DataNode/de1e4>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/1215> .
+        dcterms:identifier  "1511";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP554_r126205> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/e54f1>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554_r126205/DataNode/c9ca8>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/1511> .
 
-<https://identifiers.org/ncbigene/7040>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "TGFB1";
-        dc:identifier       <https://identifiers.org/ncbigene/7040>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "7040";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554/WP554_rWP554_r126205/DataNode/becdd>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/7040> .
+<http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/c6bfc>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP554_r126205/Interaction/c6bfc>;
+        wp:participants   <https://identifiers.org/pubchem.compound/114805> , <https://identifiers.org/ncbigene/624>;
+        wp:source         <https://identifiers.org/ncbigene/624>;
+        wp:target         <https://identifiers.org/pubchem.compound/114805> .
 
-<https://identifiers.org/ncbigene/183>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "AGT";
-        dc:identifier       <https://identifiers.org/ncbigene/183>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "183";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554/WP554_rWP554_r126205/DataNode/e89d5>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/183> .
+<http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/d5bc3>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP554_r126205/Interaction/d5bc3>;
+        wp:participants   <https://identifiers.org/ncbigene/1636> , <https://identifiers.org/chebi/CHEBI:35457>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:35457>;
+        wp:target         <https://identifiers.org/ncbigene/1636> .
 
-<https://identifiers.org/ncbigene/1585>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "CYP11B2";
-        dc:identifier       <https://identifiers.org/ncbigene/1585>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "1585";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554/WP554_rWP554_r126205/DataNode/e14ac>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/1585> .
+<http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/bb339>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP554_r126205/Interaction/bb339>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/eaace> , <https://identifiers.org/ncbigene/1585>;
+        wp:source         <https://identifiers.org/ncbigene/1585>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/eaace> .
 
-<https://identifiers.org/chebi/CHEBI:35457>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "ACE Inhibitor";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:35457>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:35457";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554/WP554_rWP554_r126205/DataNode/d9620>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:35457> .
+<http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/e0a2d>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP554_r126205/Interaction/e0a2d>;
+        wp:participants   <https://identifiers.org/ncbigene/185>;
+        wp:source         <https://identifiers.org/ncbigene/185> .
 
-<https://identifiers.org/ncbigene/4306>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "NR3C2";
-        dc:identifier       <https://identifiers.org/ncbigene/4306>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "4306";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554/WP554_rWP554_r126205/DataNode/ec3b5>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/4306> .
+<http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/eaace>
+        rdf:type          wp:DirectedInteraction , wp:Interaction , wp:Conversion;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/bb339> , <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP554_r126205/Interaction/eaace>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000037> , <https://identifiers.org/hmdb/HMDB0000016>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000016>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000037> .
 
-<https://identifiers.org/hmdb/HMDB0000464>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Ca++";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000464>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000464";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554/WP554_rWP554_r126205/DataNode/d519e>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000464> .
+<http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/a6f8b>
+        rdf:type          wp:Binding , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP554_r126205/Interaction/a6f8b>;
+        wp:participants   <https://identifiers.org/ncbigene/623> , <https://identifiers.org/hmdb/HMDB0004246>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0004246>;
+        wp:target         <https://identifiers.org/ncbigene/623> .
 
-<https://identifiers.org/ncbigene/623>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "BDKRB1";
-        dc:identifier       <https://identifiers.org/ncbigene/623>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "623";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554/WP554_rWP554_r126205/DataNode/b4349>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/623> .
+<http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/ee6b5>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP554_r126205/Interaction/ee6b5>;
+        wp:participants   <https://identifiers.org/ncbigene/624>;
+        wp:source         <https://identifiers.org/ncbigene/624> .
 
-<https://identifiers.org/ncbigene/59272>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "ACE2";
-        dc:identifier       <https://identifiers.org/ncbigene/59272>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "59272";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554/WP554_rWP554_r126205/DataNode/e08c8> , <http://rdf.wikipathways.org/Pathway/WP554/WP554_rWP554_r126205/DataNode/e68e0>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/59272> .
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP554&oldid=r126205>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
 
-<https://identifiers.org/ncbigene/4846>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "NOS3";
-        dc:identifier       <https://identifiers.org/ncbigene/4846>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "4846";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554/WP554_rWP554_r126205/DataNode/ab119>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/4846> .
+<https://identifiers.org/pubmed/18035185>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "18035185";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/e54f1> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/a0cae> , <https://identifiers.org/ncbigene/186>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/18035185> .
 
-<https://identifiers.org/hmdb/HMDB0004246>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Bradykinin";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0004246>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0004246";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554/WP554_rWP554_r126205/DataNode/c496e>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0004246> .
+<http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/f8c76>
+        rdf:type          wp:DirectedInteraction , wp:Conversion , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/d8bab> , <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP554_r126205/Interaction/f8c76>;
+        wp:participants   <https://identifiers.org/kegg.compound/C15852> , <https://identifiers.org/chemspider/110354>;
+        wp:source         <https://identifiers.org/chemspider/110354>;
+        wp:target         <https://identifiers.org/kegg.compound/C15852> .
 
-<https://identifiers.org/ncbigene/624>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "BDKRB2";
-        dc:identifier       <https://identifiers.org/ncbigene/624>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "624";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554/WP554_rWP554_r126205/DataNode/f54f5>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/624> .
+<http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/d4ea3>
+        rdf:type          wp:DirectedInteraction , wp:Conversion , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/d5638> , <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP554_r126205/Interaction/d4ea3>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001035> , <https://identifiers.org/chemspider/110354>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001035>;
+        wp:target         <https://identifiers.org/chemspider/110354> .
 
-<https://identifiers.org/ncbigene/5972>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "REN";
-        dc:identifier       <https://identifiers.org/ncbigene/5972>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "5972";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554/WP554_rWP554_r126205/DataNode/e0a11>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/5972> .
-
-<https://identifiers.org/hmdb/HMDB0000016>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Deoxycorticosterone";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000016>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000016";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554/WP554_rWP554_r126205/DataNode/da9ee>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000016> .
+<http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/f3a74>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/e54f1> , <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP554_r126205/Interaction/f3a74>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001035> , <https://identifiers.org/pubchem.compound/3081372>;
+        wp:source         <https://identifiers.org/pubchem.compound/3081372>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001035> .
 
 <https://identifiers.org/ncbigene/185>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -159,80 +121,19 @@
         dc:identifier       <https://identifiers.org/ncbigene/185>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "185";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554/WP554_rWP554_r126205/DataNode/b4811>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP554_r126205> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/c4468> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/e0a2d>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554_r126205/DataNode/b4811>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/185> .
 
-<https://identifiers.org/pubchem.compound/3081372>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Angiotensin I";
-        dc:identifier       <https://identifiers.org/pubchem.compound/3081372>;
-        dc:source           "PubChem-compound";
-        dcterms:identifier  "3081372";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554/WP554_rWP554_r126205/DataNode/d6a08>;
-        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=3081372> .
-
-<https://identifiers.org/kegg.compound/C15851>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Ang 1-9";
-        dc:identifier       <https://identifiers.org/kegg.compound/C15851>;
-        dc:source           "KEGG Compound";
-        dcterms:identifier  "C15851";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554/WP554_rWP554_r126205/DataNode/fbc8b>;
-        foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C15851> .
-
-<https://identifiers.org/ncbigene/186>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "AGTR2";
-        dc:identifier       <https://identifiers.org/ncbigene/186>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "186";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554/WP554_rWP554_r126205/DataNode/b1122>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/186> .
-
-<https://identifiers.org/ncbigene/4142>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "MAS1";
-        dc:identifier       <https://identifiers.org/ncbigene/4142>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "4142";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554/WP554_rWP554_r126205/DataNode/e3012>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/4142> .
-
-<https://identifiers.org/kegg.compound/C15852>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Ang 1-5";
-        dc:identifier       <https://identifiers.org/kegg.compound/C15852>;
-        dc:source           "KEGG Compound";
-        dcterms:identifier  "C15852";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554/WP554_rWP554_r126205/DataNode/b298c>;
-        foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C15852> .
-
-<https://identifiers.org/chemspider/110354>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Ang 1-7";
-        dc:identifier       <https://identifiers.org/chemspider/110354>;
-        dc:source           "Chemspider";
-        dcterms:identifier  "110354";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554/WP554_rWP554_r126205/DataNode/df262>;
-        foaf:page           <http://www.chemspider.com/Chemical-Structure.110354.html> .
-
-<https://identifiers.org/ncbigene/10159>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "ATP6AP2";
-        dc:identifier       <https://identifiers.org/ncbigene/10159>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "10159";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554/WP554_rWP554_r126205/DataNode/ee619>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/10159> .
-
-<https://identifiers.org/ncbigene/1511>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "CTSG";
-        dc:identifier       <https://identifiers.org/ncbigene/1511>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "1511";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554/WP554_rWP554_r126205/DataNode/c9ca8>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/1511> .
+<https://identifiers.org/chebi/CHEBI:35457>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "ACE Inhibitor";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:35457>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:35457";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/d5bc3> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/f3f2e> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/c353b> , <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554_r126205/DataNode/d9620>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:35457> .
 
 <https://identifiers.org/hmdb/HMDB0001035>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -240,8 +141,174 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0001035>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0001035";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554/WP554_rWP554_r126205/DataNode/ca3ad>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP554_r126205> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/d4ea3> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/c4468> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/d74bc> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/a45d0> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/bf0c1> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/f3a74>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554_r126205/DataNode/ca3ad>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001035> .
+
+<http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/aa8ff>
+        rdf:type          wp:Interaction , wp:DirectedInteraction , wp:Conversion;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP554_r126205> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/f744e>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP554_r126205/Interaction/aa8ff>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0004246> , <https://identifiers.org/ncbigene/3827>;
+        wp:source         <https://identifiers.org/ncbigene/3827>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0004246> .
+
+<http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/a76b3>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/d8d51> , <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP554_r126205/Interaction/a76b3>;
+        wp:participants   <https://identifiers.org/pubchem.compound/3081372> , <https://identifiers.org/ncbigene/183>;
+        wp:source         <https://identifiers.org/ncbigene/183>;
+        wp:target         <https://identifiers.org/pubchem.compound/3081372> .
+
+<http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/f744e>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP554_r126205/Interaction/f744e>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/aa8ff> , <https://identifiers.org/ncbigene/1636>;
+        wp:source         <https://identifiers.org/ncbigene/1636>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/aa8ff> .
+
+<https://identifiers.org/pubmed/17464936>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "17464936";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP554_r126205>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/17464936> .
+
+<https://identifiers.org/hmdb/HMDB0004246>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Bradykinin";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0004246>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0004246";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/bed79> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/aa8ff> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/a6f8b> , <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554_r126205/DataNode/c496e>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0004246> .
+
+<https://identifiers.org/ncbigene/623>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "BDKRB1";
+        dc:identifier       <https://identifiers.org/ncbigene/623>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "623";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP554_r126205> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/a6f8b>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554_r126205/DataNode/b4349>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/623> .
+
+<http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/d8d51>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP554_r126205/Interaction/d8d51>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/a76b3> , <https://identifiers.org/ncbigene/5972>;
+        wp:source         <https://identifiers.org/ncbigene/5972>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/a76b3> .
+
+<http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/e2599>
+        rdf:type          wp:TranscriptionTranslation , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP554_r126205/Interaction/e2599>;
+        wp:participants   <https://identifiers.org/ncbigene/1585>;
+        wp:target         <https://identifiers.org/ncbigene/1585> .
+
+<http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/a84e7>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP554_r126205/Interaction/a84e7>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/d74bc> , <https://identifiers.org/ncbigene/1636>;
+        wp:source         <https://identifiers.org/ncbigene/1636>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/d74bc> .
+
+<https://identifiers.org/ncbigene/186>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "AGTR2";
+        dc:identifier       <https://identifiers.org/ncbigene/186>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "186";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP554_r126205> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/bf0c1>;
+        dcterms:references  <https://identifiers.org/pubmed/18035185>;
+        cito:cites          <https://identifiers.org/pubmed/18035185>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554_r126205/DataNode/b1122>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/186> .
+
+<https://identifiers.org/pubmed/15134803>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "15134803";
+        dcterms:isPartOf    <https://identifiers.org/hmdb/HMDB0000037> , <https://identifiers.org/ncbigene/4306> , <https://identifiers.org/ncbigene/1585>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/15134803> .
+
+<http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/afbf9>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP554_r126205/Interaction/afbf9>;
+        wp:participants   <https://identifiers.org/ncbigene/4846> , <https://identifiers.org/ncbigene/624>;
+        wp:source         <https://identifiers.org/ncbigene/624>;
+        wp:target         <https://identifiers.org/ncbigene/4846> .
+
+<https://identifiers.org/hmdb/HMDB0000016>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Deoxycorticosterone";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000016>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0000016";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP554_r126205> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/eaace>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554_r126205/DataNode/da9ee>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000016> .
+
+<http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/dd7bd>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP554_r126205/Interaction/dd7bd>;
+        wp:participants   <https://identifiers.org/chemspider/110354> , <https://identifiers.org/kegg.compound/C15851>;
+        wp:source         <https://identifiers.org/kegg.compound/C15851>;
+        wp:target         <https://identifiers.org/chemspider/110354> .
+
+<http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/e10e0>
+        rdf:type          wp:TranscriptionTranslation , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP554_r126205/Interaction/e10e0>;
+        wp:participants   <https://identifiers.org/ncbigene/7040>;
+        wp:target         <https://identifiers.org/ncbigene/7040> .
+
+<https://identifiers.org/pubmed/18417113>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "18417113";
+        dcterms:isPartOf    <https://identifiers.org/ncbigene/10159>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/18417113> .
+
+<https://identifiers.org/ncbigene/59272>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "ACE2";
+        dc:identifier       <https://identifiers.org/ncbigene/59272>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "59272";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/d5638> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/f0f9a> , <https://identifiers.org/wikipathways/WP554_r126205>;
+        dcterms:references  <https://identifiers.org/pubmed/18449520>;
+        cito:cites          <https://identifiers.org/pubmed/18449520>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554_r126205/DataNode/e68e0> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/DataNode/e08c8>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/59272> .
+
+<https://identifiers.org/chemspider/110354>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Ang 1-7";
+        dc:identifier       <https://identifiers.org/chemspider/110354>;
+        dc:source           "Chemspider";
+        dcterms:identifier  "110354";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/dd7bd> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/f8c76> , <https://identifiers.org/wikipathways/WP554_r126205> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/d4ea3> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/ef46a>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554_r126205/DataNode/df262>;
+        foaf:page           <http://www.chemspider.com/Chemical-Structure.110354.html> .
+
+<https://identifiers.org/hmdb/HMDB0000464>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Ca++";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000464>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0000464";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/f75ef> , <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554_r126205/DataNode/d519e>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000464> .
 
 <https://identifiers.org/hmdb/HMDB0000037>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -249,8 +316,196 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000037>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0000037";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554/WP554_rWP554_r126205/DataNode/b75c3>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP554_r126205> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/eaace> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/a21fb>;
+        dcterms:references  <https://identifiers.org/pubmed/15134803>;
+        cito:cites          <https://identifiers.org/pubmed/15134803>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554_r126205/DataNode/b75c3>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000037> .
+
+<https://identifiers.org/ncbigene/624>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "BDKRB2";
+        dc:identifier       <https://identifiers.org/ncbigene/624>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "624";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/bed79> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/afbf9> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/c6bfc> , <https://identifiers.org/wikipathways/WP554_r126205> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/ee6b5>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554_r126205/DataNode/f54f5>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/624> .
+
+<https://identifiers.org/pubmed/16374430>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "16374430";
+        dcterms:isPartOf    <https://identifiers.org/ncbigene/7040>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/16374430> .
+
+<https://identifiers.org/ncbigene/5972>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "REN";
+        dc:identifier       <https://identifiers.org/ncbigene/5972>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "5972";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP554_r126205> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/ec371> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/d8d51>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554_r126205/DataNode/e0a11>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/5972> .
+
+<http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/a45d0>
+        rdf:type          wp:Interaction , wp:Conversion , wp:DirectedInteraction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/a0cae> , <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP554_r126205/Interaction/a45d0>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001035> , <https://identifiers.org/pubchem.compound/3081372>;
+        wp:source         <https://identifiers.org/pubchem.compound/3081372>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001035> .
+
+<https://identifiers.org/wikipathways/WP554>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP554_r126205> .
+
+<http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/a24b1>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/f0f9a> , <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP554_r126205/Interaction/a24b1>;
+        wp:participants   <https://identifiers.org/pubchem.compound/3081372> , <https://identifiers.org/kegg.compound/C15851>;
+        wp:source         <https://identifiers.org/pubchem.compound/3081372>;
+        wp:target         <https://identifiers.org/kegg.compound/C15851> .
+
+<http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/cc08a>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP554_r126205/Interaction/cc08a>;
+        wp:participants   <https://identifiers.org/ncbigene/10159>;
+        wp:source         <https://identifiers.org/ncbigene/10159> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_9606>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9606" .
+
+<http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/e54f1>
+        rdf:type            wp:Catalysis , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP554_r126205>;
+        dcterms:references  <https://identifiers.org/pubmed/18035185>;
+        cito:cites          <https://identifiers.org/pubmed/18035185>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554_r126205/Interaction/e54f1>;
+        wp:participants     <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/f3a74> , <https://identifiers.org/ncbigene/1511>;
+        wp:source           <https://identifiers.org/ncbigene/1511>;
+        wp:target           <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/f3a74> .
+
+<http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/ec371>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP554_r126205/Interaction/ec371>;
+        wp:participants   <https://identifiers.org/ncbigene/10159> , <https://identifiers.org/ncbigene/5972>;
+        wp:source         <https://identifiers.org/ncbigene/5972>;
+        wp:target         <https://identifiers.org/ncbigene/10159> .
+
+<https://identifiers.org/ncbigene/1215>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "CMA1";
+        dc:identifier       <https://identifiers.org/ncbigene/1215>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "1215";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/a0cae> , <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554_r126205/DataNode/de1e4>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/1215> .
+
+<http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/d74bc>
+        rdf:type          wp:Conversion , wp:Interaction , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP554_r126205> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/a84e7>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP554_r126205/Interaction/d74bc>;
+        wp:participants   <https://identifiers.org/pubchem.compound/3081372> , <https://identifiers.org/hmdb/HMDB0001035>;
+        wp:source         <https://identifiers.org/pubchem.compound/3081372>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001035> .
+
+<http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/d5638>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP554_r126205/Interaction/d5638>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/d4ea3> , <https://identifiers.org/ncbigene/59272>;
+        wp:source         <https://identifiers.org/ncbigene/59272>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/d4ea3> .
+
+<http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/f75ef>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP554_r126205/Interaction/f75ef>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000464>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000464> .
+
+<http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/a0cae>
+        rdf:type            wp:DirectedInteraction , wp:Catalysis , wp:Interaction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP554_r126205>;
+        dcterms:references  <https://identifiers.org/pubmed/18035185>;
+        cito:cites          <https://identifiers.org/pubmed/18035185>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554_r126205/Interaction/a0cae>;
+        wp:participants     <https://identifiers.org/ncbigene/1215> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/a45d0>;
+        wp:source           <https://identifiers.org/ncbigene/1215>;
+        wp:target           <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/a45d0> .
+
+<http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/f3f2e>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP554_r126205/Interaction/f3f2e>;
+        wp:participants   <https://identifiers.org/ncbigene/1636> , <https://identifiers.org/chebi/CHEBI:35457>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:35457>;
+        wp:target         <https://identifiers.org/ncbigene/1636> .
+
+<https://identifiers.org/ncbigene/7040>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "TGFB1";
+        dc:identifier       <https://identifiers.org/ncbigene/7040>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "7040";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/e10e0> , <https://identifiers.org/wikipathways/WP554_r126205>;
+        dcterms:references  <https://identifiers.org/pubmed/16374430>;
+        cito:cites          <https://identifiers.org/pubmed/16374430>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554_r126205/DataNode/becdd>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/7040> .
+
+<https://identifiers.org/ncbigene/4846>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "NOS3";
+        dc:identifier       <https://identifiers.org/ncbigene/4846>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "4846";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/afbf9> , <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554_r126205/DataNode/ab119>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/4846> .
+
+<https://identifiers.org/pubmed/18449520>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "18449520";
+        dcterms:isPartOf    <https://identifiers.org/ncbigene/4142> , <https://identifiers.org/ncbigene/59272>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/18449520> .
+
+<https://identifiers.org/pubchem.compound/3081372>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Angiotensin I";
+        dc:identifier       <https://identifiers.org/pubchem.compound/3081372>;
+        dc:source           "PubChem-compound";
+        dcterms:identifier  "3081372";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP554_r126205> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/a24b1> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/f3a74> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/a76b3> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/a45d0> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/d74bc>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554_r126205/DataNode/d6a08>;
+        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=3081372> .
+
+<https://identifiers.org/ncbigene/4306>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "NR3C2";
+        dc:identifier       <https://identifiers.org/ncbigene/4306>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "4306";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP554_r126205> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/a21fb>;
+        dcterms:references  <https://identifiers.org/pubmed/15134803> , <https://identifiers.org/pubmed/18729003>;
+        cito:cites          <https://identifiers.org/pubmed/15134803> , <https://identifiers.org/pubmed/18729003>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554_r126205/DataNode/ec3b5>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/4306> .
+
+<http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/bf0c1>
+        rdf:type          wp:Binding , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP554_r126205/Interaction/bf0c1>;
+        wp:participants   <https://identifiers.org/ncbigene/186> , <https://identifiers.org/hmdb/HMDB0001035>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001035>;
+        wp:target         <https://identifiers.org/ncbigene/186> .
 
 <https://identifiers.org/pubchem.compound/114805>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -258,17 +513,69 @@
         dc:identifier       <https://identifiers.org/pubchem.compound/114805>;
         dc:source           "PubChem-compound";
         dcterms:identifier  "114805";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554/WP554_rWP554_r126205/DataNode/e01c3>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/c6bfc> , <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554_r126205/DataNode/e01c3>;
         foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=114805> .
 
-<https://identifiers.org/ncbigene/3827>
+<https://identifiers.org/ncbigene/4142>
         rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "KNG1";
-        dc:identifier       <https://identifiers.org/ncbigene/3827>;
+        rdfs:label          "MAS1";
+        dc:identifier       <https://identifiers.org/ncbigene/4142>;
         dc:source           "Entrez Gene";
-        dcterms:identifier  "3827";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554/WP554_rWP554_r126205/DataNode/cc0b4>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/3827> .
+        dcterms:identifier  "4142";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP554_r126205> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/ef46a>;
+        dcterms:references  <https://identifiers.org/pubmed/18449520>;
+        cito:cites          <https://identifiers.org/pubmed/18449520>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554_r126205/DataNode/e3012>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/4142> .
+
+<https://identifiers.org/kegg.compound/C15851>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Ang 1-9";
+        dc:identifier       <https://identifiers.org/kegg.compound/C15851>;
+        dc:source           "KEGG Compound";
+        dcterms:identifier  "C15851";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/a24b1> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/dd7bd> , <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554_r126205/DataNode/fbc8b>;
+        foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C15851> .
+
+<http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/d8bab>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP554_r126205/Interaction/d8bab>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/f8c76> , <https://identifiers.org/ncbigene/1636>;
+        wp:source         <https://identifiers.org/ncbigene/1636>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/f8c76> .
+
+<https://identifiers.org/ncbigene/10159>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "ATP6AP2";
+        dc:identifier       <https://identifiers.org/ncbigene/10159>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "10159";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/ec371> , <https://identifiers.org/wikipathways/WP554_r126205> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/cc08a>;
+        dcterms:references  <https://identifiers.org/pubmed/18417113>;
+        cito:cites          <https://identifiers.org/pubmed/18417113>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554_r126205/DataNode/ee619>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/10159> .
+
+<http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/f0f9a>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP554_r126205/Interaction/f0f9a>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/a24b1> , <https://identifiers.org/ncbigene/59272>;
+        wp:source         <https://identifiers.org/ncbigene/59272>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/a24b1> .
+
+<https://identifiers.org/ncbigene/183>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "AGT";
+        dc:identifier       <https://identifiers.org/ncbigene/183>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "183";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/a76b3> , <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554_r126205/DataNode/e89d5>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/183> .
 
 <https://identifiers.org/ncbigene/1636>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -276,5 +583,117 @@
         dc:identifier       <https://identifiers.org/ncbigene/1636>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "1636";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554/WP554_rWP554_r126205/DataNode/ef1f3> , <http://rdf.wikipathways.org/Pathway/WP554/WP554_rWP554_r126205/DataNode/d046f> , <http://rdf.wikipathways.org/Pathway/WP554/WP554_rWP554_r126205/DataNode/d6f1e>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/f744e> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/d8bab> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/c353b> , <https://identifiers.org/wikipathways/WP554_r126205> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/a84e7> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/f3f2e> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/d5bc3>;
+        dcterms:references  <https://identifiers.org/pubmed/15174896>;
+        cito:cites          <https://identifiers.org/pubmed/15174896>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554_r126205/DataNode/d046f> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/DataNode/ef1f3> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/DataNode/d6f1e>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/1636> .
+
+<http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/a21fb>
+        rdf:type          wp:Binding , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP554_r126205/Interaction/a21fb>;
+        wp:participants   <https://identifiers.org/ncbigene/4306> , <https://identifiers.org/hmdb/HMDB0000037>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000037>;
+        wp:target         <https://identifiers.org/ncbigene/4306> .
+
+<http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/c353b>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP554_r126205/Interaction/c353b>;
+        wp:participants   <https://identifiers.org/ncbigene/1636> , <https://identifiers.org/chebi/CHEBI:35457>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:35457>;
+        wp:target         <https://identifiers.org/ncbigene/1636> .
+
+<https://identifiers.org/ncbigene/3827>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "KNG1";
+        dc:identifier       <https://identifiers.org/ncbigene/3827>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "3827";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP554_r126205> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/aa8ff>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554_r126205/DataNode/cc0b4>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/3827> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP554&oldid=r126205>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/c4468>
+        rdf:type          wp:Binding , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP554_r126205/Interaction/c4468>;
+        wp:participants   <https://identifiers.org/ncbigene/185> , <https://identifiers.org/hmdb/HMDB0001035>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001035>;
+        wp:target         <https://identifiers.org/ncbigene/185> .
+
+<https://identifiers.org/ncbigene/1585>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "CYP11B2";
+        dc:identifier       <https://identifiers.org/ncbigene/1585>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "1585";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP554_r126205> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/e2599> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/bb339>;
+        dcterms:references  <https://identifiers.org/pubmed/15134803>;
+        cito:cites          <https://identifiers.org/pubmed/15134803>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554_r126205/DataNode/e14ac>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/1585> .
+
+<https://identifiers.org/pubmed/15174896>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "15174896";
+        dcterms:isPartOf    <https://identifiers.org/ncbigene/1636>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/15174896> .
+
+<https://identifiers.org/kegg.compound/C15852>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Ang 1-5";
+        dc:identifier       <https://identifiers.org/kegg.compound/C15852>;
+        dc:source           "KEGG Compound";
+        dcterms:identifier  "C15852";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP554_r126205> , <http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/f8c76>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP554_r126205/DataNode/b298c>;
+        foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C15852> .
+
+<https://identifiers.org/pubmed/18729003>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "18729003";
+        dcterms:isPartOf    <https://identifiers.org/ncbigene/4306>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/18729003> .
+
+<http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/ef46a>
+        rdf:type          wp:Binding , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP554_r126205/Interaction/ef46a>;
+        wp:participants   <https://identifiers.org/ncbigene/4142> , <https://identifiers.org/chemspider/110354>;
+        wp:source         <https://identifiers.org/chemspider/110354>;
+        wp:target         <https://identifiers.org/ncbigene/4142> .
+
+<http://rdf.wikipathways.org/Pathway/WP554_r126205/WP/Interaction/bed79>
+        rdf:type          wp:Binding , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP554_r126205>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP554_r126205/Interaction/bed79>;
+        wp:participants   <https://identifiers.org/ncbigene/624> , <https://identifiers.org/hmdb/HMDB0004246>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0004246>;
+        wp:target         <https://identifiers.org/ncbigene/624> .
+
+<https://identifiers.org/wikipathways/WP554_r126205>
+        rdf:type                skos:Collection , wp:Pathway;
+        dc:identifier           <https://identifiers.org/wikipathways/WP554>;
+        dc:source               "WikiPathways";
+        dc:title                "ACE inhibitor pathway"@en;
+        dcterms:description     "The core of this pathway was elucidated over a century ago and involves the conversion of angiotensinogen to angiotensin I (Ang I) by renin, its subsequent conversion to angiotensin II (Ang II) by angiotensin converting enzyme. Ang II activates the angiotensin II receptor type 1 to induce aldosterone synthesis, increasing water and salt resorption and potassium excretion in the kidney and increasing blood pressure.\n\nSource: PharmGKB (https://www.pharmgkb.org/pathway/PA2023)\n\nProteins on this pathway have targeted assays available via the [https://assays.cancer.gov/available_assays?wp_id=WP554 CPTAC Assay Portal]";
+        dcterms:identifier      "WP554";
+        dcterms:references      <https://identifiers.org/pubmed/17464936>;
+        cito:cites              <https://identifiers.org/pubmed/18035185> , <https://identifiers.org/pubmed/16374430> , <https://identifiers.org/pubmed/17464936> , <https://identifiers.org/pubmed/18417113> , <https://identifiers.org/pubmed/15134803> , <https://identifiers.org/pubmed/15174896> , <https://identifiers.org/pubmed/18449520> , <https://identifiers.org/pubmed/18729003>;
+        wp:cellTypeOntologyTag  <http://purl.obolibrary.org/obo/CL_0000650>;
+        wp:diseaseOntologyTag   <http://purl.obolibrary.org/obo/DOID_10763>;
+        wp:isAbout              <http://rdf.wikipathways.org/Pathway/WP554_r126205>;
+        wp:ontologyTag          <http://purl.obolibrary.org/obo/PW_0001228> , <http://purl.obolibrary.org/obo/PW_0000245> , <http://purl.obolibrary.org/obo/DOID_10763> , <http://purl.obolibrary.org/obo/CL_0000650> , <http://purl.obolibrary.org/obo/PW_0000003>;
+        wp:organism             <http://purl.obolibrary.org/obo/NCBITaxon_9606>;
+        wp:organismName         "Homo sapiens";
+        wp:pathwayOntologyTag   <http://purl.obolibrary.org/obo/PW_0001228> , <http://purl.obolibrary.org/obo/PW_0000003> , <http://purl.obolibrary.org/obo/PW_0000245>;
+        foaf:img                <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP554&oldid=r126205> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP554&oldid=r126205>;
+        foaf:page               <http://www.wikipathways.org/instance/WP554_r126205> .

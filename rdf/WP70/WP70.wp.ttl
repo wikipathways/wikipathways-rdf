@@ -16,17 +16,22 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
+<http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/dbca2>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP70_r119989>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP70_r119989/Interaction/dbca2>;
+        wp:participants   <https://identifiers.org/cas/14265-44-2>;
+        wp:target         <https://identifiers.org/cas/14265-44-2> .
+
 <https://identifiers.org/wikipathways/WP253>
-        rdf:type            wp:Pathway , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Pathway;
         rdfs:label          "glycolysis";
         dc:identifier       <https://identifiers.org/wikipathways/WP253>;
         dc:source           "WikiPathways";
         dcterms:identifier  "WP253";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP70/WP70_rWP70_r119989/DataNode/ff889>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP70_r119989> , <http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/d17c9>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP70_r119989/DataNode/ff889>;
         foaf:page           <https://www.wikipathways.org/instance/WP253> .
-
-<http://rdf.wikipathways.org/Pathway/WP70/WP70_rWP70_r119989/WP/Interaction/b3652>
-        rdf:type  wp:Interaction .
 
 <https://identifiers.org/chebi/CHEBI:58429>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -34,29 +39,37 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:58429>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:58429";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP70/WP70_rWP70_r119989/DataNode/cda3e>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP70_r119989> , <http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/b45a1> , <http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/a1e3a>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP70_r119989/DataNode/cda3e>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:58429> .
 
 <https://identifiers.org/chebi/CHEBI:75150>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "glucose-6-phosphate";
         dc:identifier       <https://identifiers.org/chebi/CHEBI:75150>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:75150";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP70/WP70_rWP70_r119989/DataNode/d9edc>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP70_r119989> , <http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/fe8fc>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP70_r119989/DataNode/d9edc>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:75150> .
 
 <https://identifiers.org/cas/58-64-0>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "ADP";
         dc:identifier       <https://identifiers.org/cas/58-64-0>;
         dc:source           "CAS";
         dcterms:identifier  "58-64-0";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP70/WP70_rWP70_r119989/DataNode/d1f7c>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP70_r119989> , <http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/be8cc>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP70_r119989/DataNode/d1f7c>;
         foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=58-64-0> .
 
-<http://rdf.wikipathways.org/Pathway/WP70/WP70_rWP70_r119989/WP/Interaction/e9c40>
-        rdf:type  wp:Interaction .
+<http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/fe8fc>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/db8aa> , <http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/d4887> , <https://identifiers.org/wikipathways/WP70_r119989>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP70_r119989/Interaction/fe8fc>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:75150> , <https://identifiers.org/chebi/CHEBI:15903>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:15903>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:75150> .
 
 <https://identifiers.org/sgd/S000002408>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -64,17 +77,33 @@
         dc:identifier       <https://identifiers.org/sgd/S000002408>;
         dc:source           "SGD";
         dcterms:identifier  "S000002408";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP70/WP70_rWP70_r119989/DataNode/ba981>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP70_r119989>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP70_r119989/DataNode/ba981>;
         foaf:page           <http://www.yeastgenome.org/locus/S000002408> .
 
 <https://identifiers.org/chebi/CHEBI:15903>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "beta-D-Glucose";
         dc:identifier       <https://identifiers.org/chebi/CHEBI:15903>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:15903";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP70/WP70_rWP70_r119989/DataNode/c046e>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/d17c9> , <http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/b45a1> , <https://identifiers.org/wikipathways/WP70_r119989> , <http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/fe8fc> , <http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/d2341>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP70_r119989/DataNode/c046e>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15903> .
+
+<http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/d4887>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP70_r119989>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP70_r119989/Interaction/d4887>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/fe8fc> , <https://identifiers.org/cas/1927-31-7> .
+
+<http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/d7720>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP70_r119989>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP70_r119989/Interaction/d7720>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/a1e3a> , <https://identifiers.org/sgd/S000002481>;
+        wp:source         <https://identifiers.org/sgd/S000002481>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/a1e3a> .
 
 <https://identifiers.org/chebi/CHEBI:75052>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -82,17 +111,55 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:75052>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:75052";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP70/WP70_rWP70_r119989/DataNode/c71b9>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP70_r119989> , <http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/c0180>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP70_r119989/DataNode/c71b9>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:75052> .
 
+<http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/be8cc>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP70_r119989>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP70_r119989/Interaction/be8cc>;
+        wp:participants   <https://identifiers.org/cas/58-64-0>;
+        wp:target         <https://identifiers.org/cas/58-64-0> .
+
+<http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/b45a1>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/e9c40> , <https://identifiers.org/wikipathways/WP70_r119989>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP70_r119989/Interaction/b45a1>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:15903> , <https://identifiers.org/chebi/CHEBI:58429>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:58429>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:15903> .
+
+<http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/c0180>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP70_r119989>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP70_r119989/Interaction/c0180>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:75052>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:75052> .
+
+<http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/a28c4>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP70_r119989>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP70_r119989/Interaction/a28c4>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/d2341> , <https://identifiers.org/chebi/CHEBI:15377> .
+
 <https://identifiers.org/cas/14265-44-2>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "phosphate";
         dc:identifier       <https://identifiers.org/cas/14265-44-2>;
         dc:source           "CAS";
         dcterms:identifier  "14265-44-2";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP70/WP70_rWP70_r119989/DataNode/a8008>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP70_r119989> , <http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/dbca2>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP70_r119989/DataNode/a8008>;
         foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=14265-44-2> .
+
+<http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/db8aa>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP70_r119989>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP70_r119989/Interaction/db8aa>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/fe8fc> , <https://identifiers.org/sgd/S000000545>;
+        wp:source         <https://identifiers.org/sgd/S000000545>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/fe8fc> .
 
 <https://identifiers.org/sgd/S000006230>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -100,31 +167,45 @@
         dc:identifier       <https://identifiers.org/sgd/S000006230>;
         dc:source           "SGD";
         dcterms:identifier  "S000006230";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP70/WP70_rWP70_r119989/DataNode/e81f9>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP70_r119989>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP70_r119989/DataNode/e81f9>;
         foaf:page           <http://www.yeastgenome.org/locus/S000006230> .
 
+<http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/d2341>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/a28c4> , <https://identifiers.org/wikipathways/WP70_r119989>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP70_r119989/Interaction/d2341>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:15903> , <https://identifiers.org/cas/99-20-7>;
+        wp:source         <https://identifiers.org/cas/99-20-7>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:15903> .
+
 <https://identifiers.org/sgd/S000000545>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "GLK1";
         dc:identifier       <https://identifiers.org/sgd/S000000545>;
         dc:source           "SGD";
         dcterms:identifier  "S000000545";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP70/WP70_rWP70_r119989/DataNode/aa3bc>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP70_r119989> , <http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/db8aa>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP70_r119989/DataNode/aa3bc>;
         foaf:page           <http://www.yeastgenome.org/locus/S000000545> .
 
-<http://rdf.wikipathways.org/Pathway/WP70/WP70_rWP70_r119989/WP/Interaction/d4887>
-        rdf:type  wp:Interaction .
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP70&oldid=r119989>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
 
-<https://identifiers.org/wikipathways/WP70/WP70_rWP70_r119989>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP70/WP70>;
-        dc:source            "WikiPathways";
-        dc:title             "Trehalose degradation, low osmolarity"@en;
-        dcterms:description  "Trehalose is a storage carbohydrate that can either be synthesized or obtained from the external environment. To be utilized as a carbon source, trehalase (EC:3.2.1.28) must convert trehalose and water into two molecules of glucose. S. cerevisiae has two trehalase enzymes, one is an acid trehalase encoded by ATH1 and the other is a neutral trehalase encoded by NTH1. The name \"acid\" or \"neutral\" are based on the optimal pH of each enzyme (pH 4.5-5.0 and pH 6.8-7.0, respectively).\n\nEach trehalase enzyme is active in a different subcellular location. Nth1p occurs as homodimer that is located in the cytoplasm, and is required for the hydrolysis of intracellular trehalose. Intracellular trehalose either results from trehalose biosynthesis, or to a lesser degree from uptake of trehalose from the environment via the Mal11p transporter. Ath1p was originally predicted to be a vacuolar protein, but has been experimentally shown to mainly localize in the periplasmic space, with a small fraction also occurring in the cell wall. Extracellular trehalose is hydrolysed into 2 glucose molecules by Ath1p.\n\nSource: http://pathway.yeastgenome.org/YEAST/NEW-IMAGE?object=TREDEG-YEAST-PWY";
-        dcterms:identifier   "WP70/WP70";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP70/WP70_rWP70_r119989>;
-        wp:organismName      "Saccharomyces cerevisiae";
-        foaf:page            <http://www.wikipathways.org/instance/WP70/WP70_rWP70_r119989> .
+<http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/e9c40>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP70_r119989>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP70_r119989/Interaction/e9c40>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/b45a1> , <https://identifiers.org/chebi/CHEBI:15377> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP70&oldid=r119989>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_4932>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "4932" .
 
 <https://identifiers.org/chebi/CHEBI:15377>
         rdf:type            wp:DataNode , wp:Metabolite;
@@ -132,16 +213,18 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:15377>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:15377";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP70/WP70_rWP70_r119989/DataNode/e7152> , <http://rdf.wikipathways.org/Pathway/WP70/WP70_rWP70_r119989/DataNode/f7152> , <http://rdf.wikipathways.org/Pathway/WP70/WP70_rWP70_r119989/DataNode/d35c7>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/b3652> , <http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/e9c40> , <http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/a28c4> , <https://identifiers.org/wikipathways/WP70_r119989>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP70_r119989/DataNode/d35c7> , <http://rdf.wikipathways.org/Pathway/WP70_r119989/DataNode/f7152> , <http://rdf.wikipathways.org/Pathway/WP70_r119989/DataNode/e7152>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15377> .
 
 <https://identifiers.org/cas/1927-31-7>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "ATP";
         dc:identifier       <https://identifiers.org/cas/1927-31-7>;
         dc:source           "CAS";
         dcterms:identifier  "1927-31-7";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP70/WP70_rWP70_r119989/DataNode/ca367>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP70_r119989> , <http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/d4887>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP70_r119989/DataNode/ca367>;
         foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=1927-31-7> .
 
 <https://identifiers.org/sgd/S000000205>
@@ -150,20 +233,59 @@
         dc:identifier       <https://identifiers.org/sgd/S000000205>;
         dc:source           "SGD";
         dcterms:identifier  "S000000205";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP70/WP70_rWP70_r119989/DataNode/d4d5e>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP70_r119989>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP70_r119989/DataNode/d4d5e>;
         foaf:page           <http://www.yeastgenome.org/locus/S000000205> .
 
+<https://identifiers.org/wikipathways/WP70_r119989>
+        rdf:type               skos:Collection , wp:Pathway;
+        dc:identifier          <https://identifiers.org/wikipathways/WP70>;
+        dc:source              "WikiPathways";
+        dc:title               "Trehalose degradation, low osmolarity"@en;
+        dcterms:description    "Trehalose is a storage carbohydrate that can either be synthesized or obtained from the external environment. To be utilized as a carbon source, trehalase (EC:3.2.1.28) must convert trehalose and water into two molecules of glucose. S. cerevisiae has two trehalase enzymes, one is an acid trehalase encoded by ATH1 and the other is a neutral trehalase encoded by NTH1. The name \"acid\" or \"neutral\" are based on the optimal pH of each enzyme (pH 4.5-5.0 and pH 6.8-7.0, respectively).\n\nEach trehalase enzyme is active in a different subcellular location. Nth1p occurs as homodimer that is located in the cytoplasm, and is required for the hydrolysis of intracellular trehalose. Intracellular trehalose either results from trehalose biosynthesis, or to a lesser degree from uptake of trehalose from the environment via the Mal11p transporter. Ath1p was originally predicted to be a vacuolar protein, but has been experimentally shown to mainly localize in the periplasmic space, with a small fraction also occurring in the cell wall. Extracellular trehalose is hydrolysed into 2 glucose molecules by Ath1p.\n\nSource: http://pathway.yeastgenome.org/YEAST/NEW-IMAGE?object=TREDEG-YEAST-PWY";
+        dcterms:identifier     "WP70";
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP70_r119989>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0001300>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_4932>;
+        wp:organismName        "Saccharomyces cerevisiae";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0001300>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP70&oldid=r119989> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP70&oldid=r119989>;
+        foaf:page              <http://www.wikipathways.org/instance/WP70_r119989> .
+
+<http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/d17c9>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP70_r119989>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP70_r119989/Interaction/d17c9>;
+        wp:participants   <https://identifiers.org/wikipathways/WP253> , <https://identifiers.org/chebi/CHEBI:15903>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:15903>;
+        wp:target         <https://identifiers.org/wikipathways/WP253> .
+
 <https://identifiers.org/sgd/S000002481>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "TPS2";
         dc:identifier       <https://identifiers.org/sgd/S000002481>;
         dc:source           "SGD";
         dcterms:identifier  "S000002481";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP70/WP70_rWP70_r119989/DataNode/e365a>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/d7720> , <https://identifiers.org/wikipathways/WP70_r119989>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP70_r119989/DataNode/e365a>;
         foaf:page           <http://www.yeastgenome.org/locus/S000002481> .
 
-<http://rdf.wikipathways.org/Pathway/WP70/WP70_rWP70_r119989/WP/Interaction/a28c4>
-        rdf:type  wp:Interaction .
+<https://identifiers.org/wikipathways/WP70>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP70_r119989> .
+
+<http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/b3652>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP70_r119989>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP70_r119989/Interaction/b3652>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/a1e3a> , <https://identifiers.org/chebi/CHEBI:15377> .
+
+<http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/a1e3a>
+        rdf:type          wp:Interaction , wp:DirectedInteraction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/b3652> , <http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/d7720> , <https://identifiers.org/wikipathways/WP70_r119989>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP70_r119989/Interaction/a1e3a>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:58429> , <https://identifiers.org/cas/99-20-7>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:58429>;
+        wp:target         <https://identifiers.org/cas/99-20-7> .
 
 <https://identifiers.org/cas/99-20-7>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -171,5 +293,6 @@
         dc:identifier       <https://identifiers.org/cas/99-20-7>;
         dc:source           "CAS";
         dcterms:identifier  "99-20-7";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP70/WP70_rWP70_r119989/DataNode/cd231>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/a1e3a> , <https://identifiers.org/wikipathways/WP70_r119989> , <http://rdf.wikipathways.org/Pathway/WP70_r119989/WP/Interaction/d2341>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP70_r119989/DataNode/cd231>;
         foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=99-20-7> .

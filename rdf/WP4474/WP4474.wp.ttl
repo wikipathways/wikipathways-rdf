@@ -16,34 +16,69 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
+<http://rdf.wikipathways.org/Pathway/WP4474_r102094/WP/Interaction/idf9f9c3c3>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4474_r102094>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4474_r102094/Interaction/idf9f9c3c3>;
+        wp:participants   <https://identifiers.org/ensembl/ENSMUSG00000016529>;
+        wp:source         <https://identifiers.org/ensembl/ENSMUSG00000016529>;
+        wp:target         <https://identifiers.org/ensembl/ENSMUSG00000016529> .
+
+<https://identifiers.org/wikipathways/WP4474>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP4474_r102094> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_10090>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "10090" .
+
 <https://identifiers.org/ensembl/ENSMUSG00000035385>
         rdf:type            wp:GeneProduct , wp:DataNode;
         rdfs:label          "Ccl2";
         dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000035385>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSMUSG00000035385";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4474/WP4474_rWP4474_r102094/DataNode/e8529>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4474_r102094>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4474_r102094/DataNode/e8529>;
         foaf:page           <https://www.ensembl.org/id/ENSMUSG00000035385> .
 
+<https://identifiers.org/wikipathways/WP4474_r102094>
+        rdf:type                wp:Pathway , skos:Collection;
+        dc:identifier           <https://identifiers.org/wikipathways/WP4474>;
+        dc:source               "WikiPathways";
+        dc:title                "Circulating monocytes and cardiac macrophages in diastolic dysfunction"@en;
+        dcterms:description     "draft";
+        dcterms:identifier      "WP4474";
+        dcterms:references      <https://identifiers.org/pubmed/29339450>;
+        cito:cites              <https://identifiers.org/pubmed/29339450>;
+        wp:cellTypeOntologyTag  <http://purl.obolibrary.org/obo/CL_0000235> , <http://purl.obolibrary.org/obo/CL_0002393> , <http://purl.obolibrary.org/obo/CL_0000186> , <http://purl.obolibrary.org/obo/CL_0000576>;
+        wp:diseaseOntologyTag   <http://purl.obolibrary.org/obo/DOID_1287> , <http://purl.obolibrary.org/obo/DOID_10763>;
+        wp:isAbout              <http://rdf.wikipathways.org/Pathway/WP4474_r102094>;
+        wp:ontologyTag          <http://purl.obolibrary.org/obo/DOID_1287> , <http://purl.obolibrary.org/obo/CL_0000186> , <http://purl.obolibrary.org/obo/CL_0002393> , <http://purl.obolibrary.org/obo/CL_0000235> , <http://purl.obolibrary.org/obo/CL_0000576> , <http://purl.obolibrary.org/obo/DOID_10763>;
+        wp:organism             <http://purl.obolibrary.org/obo/NCBITaxon_10090>;
+        wp:organismName         "Mus musculus";
+        foaf:img                <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4474&oldid=r102094> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4474&oldid=r102094>;
+        foaf:page               <http://www.wikipathways.org/instance/WP4474_r102094> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4474&oldid=r102094>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
 <https://identifiers.org/ensembl/ENSMUSG00000029304>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "Spp1";
         dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000029304>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSMUSG00000029304";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4474/WP4474_rWP4474_r102094/DataNode/e4474>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4474_r102094> , <http://rdf.wikipathways.org/Pathway/WP4474_r102094/WP/Interaction/iddad3767a> , <http://rdf.wikipathways.org/Pathway/WP4474_r102094/WP/Interaction/ide8612604>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4474_r102094/DataNode/e4474>;
         foaf:page           <https://www.ensembl.org/id/ENSMUSG00000029304> .
 
-<https://identifiers.org/wikipathways/WP4474/WP4474_rWP4474_r102094>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP4474/WP4474>;
-        dc:source            "WikiPathways";
-        dc:title             "Circulating monocytes and cardiac macrophages in diastolic dysfunction"@en;
-        dcterms:description  "draft";
-        dcterms:identifier   "WP4474/WP4474";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP4474/WP4474_rWP4474_r102094>;
-        wp:organismName      "Mus musculus";
-        foaf:page            <http://www.wikipathways.org/instance/WP4474/WP4474_rWP4474_r102094> .
+<http://rdf.wikipathways.org/Pathway/WP4474_r102094/WP/Interaction/id8dc22128>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4474_r102094>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4474_r102094/Interaction/id8dc22128>;
+        wp:participants   <https://identifiers.org/ensembl/ENSMUSG00000016529>;
+        wp:source         <https://identifiers.org/ensembl/ENSMUSG00000016529> .
 
 <https://identifiers.org/ensembl/ENSMUSG00000016529>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -51,8 +86,42 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000016529>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSMUSG00000016529";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4474/WP4474_rWP4474_r102094/DataNode/ecbdb> , <http://rdf.wikipathways.org/Pathway/WP4474/WP4474_rWP4474_r102094/DataNode/f62eb>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4474_r102094> , <http://rdf.wikipathways.org/Pathway/WP4474_r102094/WP/Interaction/idf9f9c3c3> , <http://rdf.wikipathways.org/Pathway/WP4474_r102094/WP/Interaction/id8dc22128>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4474_r102094/DataNode/ecbdb> , <http://rdf.wikipathways.org/Pathway/WP4474_r102094/DataNode/f62eb>;
         foaf:page           <https://www.ensembl.org/id/ENSMUSG00000016529> .
+
+<http://rdf.wikipathways.org/Pathway/WP4474_r102094/WP/Interaction/fd995>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4474_r102094>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4474_r102094/Interaction/fd995>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:26523>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:26523> .
+
+<http://rdf.wikipathways.org/Pathway/WP4474_r102094/WP/Interaction/ide8612604>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4474_r102094>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4474_r102094/Interaction/ide8612604>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4474_r102094/WP/Interaction/id20579a2a> , <https://identifiers.org/ensembl/ENSMUSG00000029304>;
+        wp:source         <https://identifiers.org/ensembl/ENSMUSG00000029304>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4474_r102094/WP/Interaction/id20579a2a> .
+
+<http://rdf.wikipathways.org/Pathway/WP4474_r102094/WP/Interaction/iddad3767a>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4474_r102094>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4474_r102094/Interaction/iddad3767a>;
+        wp:participants   <https://identifiers.org/ensembl/ENSMUSG00000029304>;
+        wp:target         <https://identifiers.org/ensembl/ENSMUSG00000029304> .
+
+<https://identifiers.org/pubmed/29339450>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "29339450";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4474_r102094>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/29339450> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4474&oldid=r102094>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
 
 <https://identifiers.org/chebi/CHEBI:26523>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -60,7 +129,8 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:26523>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:26523";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4474/WP4474_rWP4474_r102094/DataNode/cbe4f> , <http://rdf.wikipathways.org/Pathway/WP4474/WP4474_rWP4474_r102094/DataNode/faf9f> , <http://rdf.wikipathways.org/Pathway/WP4474/WP4474_rWP4474_r102094/DataNode/a0e49>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4474_r102094/WP/Interaction/fd995> , <https://identifiers.org/wikipathways/WP4474_r102094>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4474_r102094/DataNode/cbe4f> , <http://rdf.wikipathways.org/Pathway/WP4474_r102094/DataNode/a0e49> , <http://rdf.wikipathways.org/Pathway/WP4474_r102094/DataNode/faf9f>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:26523> .
 
 <https://identifiers.org/ensembl/ENSMUSG00000049103>
@@ -69,5 +139,9 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000049103>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSMUSG00000049103";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4474/WP4474_rWP4474_r102094/DataNode/b7ea4>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4474_r102094>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4474_r102094/DataNode/b7ea4>;
         foaf:page           <https://www.ensembl.org/id/ENSMUSG00000049103> .
+
+<http://rdf.wikipathways.org/Pathway/WP4474_r102094/WP/Interaction/id20579a2a>
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP4474_r102094/WP/Interaction/ide8612604> .

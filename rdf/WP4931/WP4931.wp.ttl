@@ -16,16 +16,42 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/wikipathways/WP4931/WP4931_rWP4931_r117699>
-        rdf:type             wp:Pathway , skos:Collection;
-        dc:identifier        <https://identifiers.org/wikipathways/WP4931/WP4931>;
-        dc:source            "WikiPathways";
-        dc:title             "Direct reversal repair"@en;
-        dcterms:description  "Direct reversal repair is a mechanism of repair where the damaged area or lesion is repaired directly by specialized proteins. It does not involve breakage of the phosphodiester backbone and doesn't require a reference template unlike the other single-strand repair mechanism.  Methylation of guanine bases is directly reversed by the protein methyl guanine methyl transferase (MGMT). This is an expensive process because each MGMT molecule can be used only once. Methylation of the bases cytosine and adenine  is repaired by ALKBH2 and ALKBH3.\n\nThis pathway is based on information from [http://repairtoire.genesilico.pl/Pathway/4/ REPAIRtoire] and [https://en.wikipedia.org/wiki/Base_excision_repair Wikipedia].";
-        dcterms:identifier   "WP4931/WP4931";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP4931/WP4931_rWP4931_r117699>;
-        wp:organismName      "Homo sapiens";
-        foaf:page            <http://www.wikipathways.org/instance/WP4931/WP4931_rWP4931_r117699> .
+<https://identifiers.org/wikipathways/WP4931_r117699>
+        rdf:type               wp:Pathway , skos:Collection;
+        dc:identifier          <https://identifiers.org/wikipathways/WP4931>;
+        dc:source              "WikiPathways";
+        dc:title               "Direct reversal repair"@en;
+        dcterms:description    "Direct reversal repair is a mechanism of repair where the damaged area or lesion is repaired directly by specialized proteins. It does not involve breakage of the phosphodiester backbone and doesn't require a reference template unlike the other single-strand repair mechanism.  Methylation of guanine bases is directly reversed by the protein methyl guanine methyl transferase (MGMT). This is an expensive process because each MGMT molecule can be used only once. Methylation of the bases cytosine and adenine  is repaired by ALKBH2 and ALKBH3.\n\nThis pathway is based on information from [http://repairtoire.genesilico.pl/Pathway/4/ REPAIRtoire] and [https://en.wikipedia.org/wiki/Base_excision_repair Wikipedia].";
+        dcterms:identifier     "WP4931";
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4931_r117699>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000099>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606>;
+        wp:organismName        "Homo sapiens";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000099>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4931&oldid=r117699> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4931&oldid=r117699>;
+        foaf:page              <http://www.wikipathways.org/instance/WP4931_r117699> .
+
+<https://identifiers.org/ensembl/ENSG00000170430>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "MGMT";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000170430>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000170430";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4931_r117699> , <http://rdf.wikipathways.org/Pathway/WP4931_r117699/WP/Interaction/b603e>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4931_r117699/DataNode/d487f>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000170430> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4931&oldid=r117699>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<http://rdf.wikipathways.org/Pathway/WP4931_r117699/WP/Interaction/b603e>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4931_r117699>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4931_r117699/Interaction/b603e>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4931_r117699/WP/Interaction/af20a> , <https://identifiers.org/ensembl/ENSG00000170430>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000170430>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4931_r117699/WP/Interaction/af20a> .
 
 <https://identifiers.org/ensembl/ENSG00000189046>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -33,7 +59,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000189046>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000189046";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4931/WP4931_rWP4931_r117699/DataNode/bb208>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4931_r117699>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4931_r117699/DataNode/bb208>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000189046> .
 
 <https://identifiers.org/ensembl/ENSG00000166199>
@@ -42,14 +69,20 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000166199>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000166199";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4931/WP4931_rWP4931_r117699/DataNode/bccc3>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4931_r117699>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4931_r117699/DataNode/bccc3>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000166199> .
 
-<https://identifiers.org/ensembl/ENSG00000170430>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "MGMT";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000170430>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000170430";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4931/WP4931_rWP4931_r117699/DataNode/d487f>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000170430> .
+<https://identifiers.org/wikipathways/WP4931>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP4931_r117699> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4931&oldid=r117699>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<http://rdf.wikipathways.org/Pathway/WP4931_r117699/WP/Interaction/af20a>
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP4931_r117699/WP/Interaction/b603e> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_9606>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9606" .

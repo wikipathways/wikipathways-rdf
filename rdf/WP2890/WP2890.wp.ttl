@@ -16,23 +16,82 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/ncbigene/280805>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "GHR";
-        dc:identifier       <https://identifiers.org/ncbigene/280805>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "280805";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2890/WP2890_rWP2890_r117529/DataNode/a4141>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/280805> .
+<http://rdf.wikipathways.org/Pathway/WP2890_r117529/WP/Interaction/ida022371>
+        rdf:type          wp:TranscriptionTranslation , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2890_r117529>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2890_r117529/Interaction/ida022371>;
+        wp:participants   <https://identifiers.org/ncbigene/281239>;
+        wp:source         <https://identifiers.org/ncbigene/281239>;
+        wp:target         <https://identifiers.org/ncbigene/281239> .
 
-<https://identifiers.org/ncbigene/280804>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "GH1";
-        dc:identifier       <https://identifiers.org/ncbigene/280804>;
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP2890&oldid=r117529>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP2890&oldid=r117529>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<https://identifiers.org/pubmed/24166991>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "24166991";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2890_r117529>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/24166991> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_9913>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9913" .
+
+<https://identifiers.org/wikipathways/WP2890_r117529>
+        rdf:type               wp:Pathway , skos:Collection;
+        dc:identifier          <https://identifiers.org/wikipathways/WP2890>;
+        dc:source              "WikiPathways";
+        dc:title               "Growth hormone (GH) signaling"@en;
+        dcterms:description    "The growth Hormone/Insulin-Like Growth Factor axis is a complex system of ligands, binding protein and receptors which the cells use for communication of growth simulating signal. GH is released from the pituitary and by binding to the GH receptor it stimulates longitudinal growth and has anabolic effects on metabolism. Most of the growth-promoting effects of GH are mediated by IGF-1 which is produced mainly in the liver after GH stimulation. IGF-1 has crucial functions especially for embryonic growth and development. This pathway is primarily studied to understand factors that contribute to growth in bos taurus(Jiang et al.)";
+        dcterms:identifier     "WP2890";
+        dcterms:references     <https://identifiers.org/pubmed/24166991>;
+        cito:cites             <https://identifiers.org/pubmed/24166991>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP2890_r117529>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000168>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9913>;
+        wp:organismName        "Bos taurus";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000168>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP2890&oldid=r117529> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP2890&oldid=r117529>;
+        foaf:page              <http://www.wikipathways.org/instance/WP2890_r117529> .
+
+<https://identifiers.org/wikipathways/WP2890>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP2890_r117529> .
+
+<http://rdf.wikipathways.org/Pathway/WP2890_r117529/ComplexBinding/d921d>
+        rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2890_r117529>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2890_r117529/Group/d921d>;
+        wp:participants   <https://identifiers.org/ncbigene/282376> , <http://rdf.wikipathways.org/Pathway/WP2890_r117529/Complex/d921d> .
+
+<http://rdf.wikipathways.org/Pathway/WP2890_r117529/Complex/b06d0>
+        rdf:type          wp:Complex , wp:DataNode;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2890_r117529>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2890_r117529/Group/b06d0>;
+        wp:participants   <https://identifiers.org/ncbigene/525246> , <https://identifiers.org/ncbigene/280805> .
+
+<https://identifiers.org/ncbigene/281239>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "IGF-1";
+        dc:identifier       <https://identifiers.org/ncbigene/281239>;
         dc:source           "Entrez Gene";
-        dcterms:identifier  "280804";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2890/WP2890_rWP2890_r117529/DataNode/a86e0>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/280804> .
+        dcterms:identifier  "281239";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2890_r117529/WP/Interaction/ida022371> , <https://identifiers.org/wikipathways/WP2890_r117529>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2890_r117529/DataNode/f2c8c> , <http://rdf.wikipathways.org/Pathway/WP2890_r117529/DataNode/eadac>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/281239> .
+
+<http://rdf.wikipathways.org/Pathway/WP2890_r117529/WP/Interaction/id8a2e3f70>
+        rdf:type          wp:Binding , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2890_r117529>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2890_r117529/Interaction/id8a2e3f70>;
+        wp:participants   <https://identifiers.org/ncbigene/280805> , <https://identifiers.org/ncbigene/280804>;
+        wp:source         <https://identifiers.org/ncbigene/280804>;
+        wp:target         <https://identifiers.org/ncbigene/280805> .
 
 <https://identifiers.org/ncbigene/525246>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -40,37 +99,9 @@
         dc:identifier       <https://identifiers.org/ncbigene/525246>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "525246";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2890/WP2890_rWP2890_r117529/DataNode/a964f> , <http://rdf.wikipathways.org/Pathway/WP2890/WP2890_rWP2890_r117529/DataNode/ccff7>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2890_r117529/Complex/b06d0> , <https://identifiers.org/wikipathways/WP2890_r117529>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2890_r117529/DataNode/a964f> , <http://rdf.wikipathways.org/Pathway/WP2890_r117529/DataNode/ccff7>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/525246> .
-
-<https://identifiers.org/wikipathways/WP2890/WP2890_rWP2890_r117529>
-        rdf:type             wp:Pathway , skos:Collection;
-        dc:identifier        <https://identifiers.org/wikipathways/WP2890/WP2890>;
-        dc:source            "WikiPathways";
-        dc:title             "Growth hormone (GH) signaling"@en;
-        dcterms:description  "The growth Hormone/Insulin-Like Growth Factor axis is a complex system of ligands, binding protein and receptors which the cells use for communication of growth simulating signal. GH is released from the pituitary and by binding to the GH receptor it stimulates longitudinal growth and has anabolic effects on metabolism. Most of the growth-promoting effects of GH are mediated by IGF-1 which is produced mainly in the liver after GH stimulation. IGF-1 has crucial functions especially for embryonic growth and development. This pathway is primarily studied to understand factors that contribute to growth in bos taurus(Jiang et al.)";
-        dcterms:identifier   "WP2890/WP2890";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP2890/WP2890_rWP2890_r117529>;
-        wp:organismName      "Bos taurus";
-        foaf:page            <http://www.wikipathways.org/instance/WP2890/WP2890_rWP2890_r117529> .
-
-<https://identifiers.org/ncbigene/282376>
-        rdf:type            wp:DataNode , wp:GeneProduct;
-        rdfs:label          "STAT5b";
-        dc:identifier       <https://identifiers.org/ncbigene/282376>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "282376";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2890/WP2890_rWP2890_r117529/DataNode/de1c6> , <http://rdf.wikipathways.org/Pathway/WP2890/WP2890_rWP2890_r117529/DataNode/a6dbe> , <http://rdf.wikipathways.org/Pathway/WP2890/WP2890_rWP2890_r117529/DataNode/bd22a>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/282376> .
-
-<https://identifiers.org/ncbigene/281239>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "IGF-1";
-        dc:identifier       <https://identifiers.org/ncbigene/281239>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "281239";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2890/WP2890_rWP2890_r117529/DataNode/eadac> , <http://rdf.wikipathways.org/Pathway/WP2890/WP2890_rWP2890_r117529/DataNode/f2c8c>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/281239> .
 
 <https://identifiers.org/ncbigene/282261>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -78,5 +109,48 @@
         dc:identifier       <https://identifiers.org/ncbigene/282261>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "282261";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2890/WP2890_rWP2890_r117529/DataNode/b3261>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2890_r117529>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2890_r117529/DataNode/b3261>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/282261> .
+
+<https://identifiers.org/ncbigene/282376>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "STAT5b";
+        dc:identifier       <https://identifiers.org/ncbigene/282376>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "282376";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2890_r117529/Complex/d921d> , <https://identifiers.org/wikipathways/WP2890_r117529>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2890_r117529/DataNode/de1c6> , <http://rdf.wikipathways.org/Pathway/WP2890_r117529/DataNode/bd22a> , <http://rdf.wikipathways.org/Pathway/WP2890_r117529/DataNode/a6dbe>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/282376> .
+
+<http://rdf.wikipathways.org/Pathway/WP2890_r117529/ComplexBinding/b06d0>
+        rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2890_r117529>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2890_r117529/Group/b06d0>;
+        wp:participants   <https://identifiers.org/ncbigene/525246> , <https://identifiers.org/ncbigene/280805> , <http://rdf.wikipathways.org/Pathway/WP2890_r117529/Complex/b06d0> .
+
+<https://identifiers.org/ncbigene/280804>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "GH1";
+        dc:identifier       <https://identifiers.org/ncbigene/280804>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "280804";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2890_r117529> , <http://rdf.wikipathways.org/Pathway/WP2890_r117529/WP/Interaction/id8a2e3f70>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2890_r117529/DataNode/a86e0>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/280804> .
+
+<http://rdf.wikipathways.org/Pathway/WP2890_r117529/Complex/d921d>
+        rdf:type          wp:Complex , wp:DataNode;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2890_r117529>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2890_r117529/Group/d921d>;
+        wp:participants   <https://identifiers.org/ncbigene/282376> .
+
+<https://identifiers.org/ncbigene/280805>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "GHR";
+        dc:identifier       <https://identifiers.org/ncbigene/280805>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "280805";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2890_r117529> , <http://rdf.wikipathways.org/Pathway/WP2890_r117529/Complex/b06d0> , <http://rdf.wikipathways.org/Pathway/WP2890_r117529/WP/Interaction/id8a2e3f70>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2890_r117529/DataNode/a4141>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/280805> .

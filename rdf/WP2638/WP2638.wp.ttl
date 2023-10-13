@@ -16,79 +16,55 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
+<http://purl.obolibrary.org/obo/NCBITaxon_1773>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "1773" .
+
+<http://rdf.wikipathways.org/Pathway/WP2638_r117427/WP/Interaction/ide42af691>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2638_r117427>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2638_r117427/Interaction/ide42af691>;
+        wp:participants   <https://identifiers.org/chemspider/274> , <https://identifiers.org/chemspider/952>;
+        wp:source         <https://identifiers.org/chemspider/952>;
+        wp:target         <https://identifiers.org/chemspider/274> .
+
+<https://identifiers.org/chemspider/4573566>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "L-Malate";
+        dc:identifier       <https://identifiers.org/chemspider/4573566>;
+        dc:source           "Chemspider";
+        dcterms:identifier  "4573566";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2638_r117427> , <http://rdf.wikipathways.org/Pathway/WP2638_r117427/WP/Interaction/id397cd0d>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2638_r117427/DataNode/c083f>;
+        foaf:page           <http://www.chemspider.com/Chemical-Structure.4573566.html> .
+
+<https://identifiers.org/pubmed/21814509>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "21814509";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2638_r117427>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/21814509> .
+
+<http://rdf.wikipathways.org/Pathway/WP2638_r117427/WP/Interaction/idc5f5a153>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2638_r117427>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2638_r117427/Interaction/idc5f5a153>;
+        wp:participants   <https://identifiers.org/chemspider/83179> , <https://identifiers.org/chemspider/952>;
+        wp:source         <https://identifiers.org/chemspider/952>;
+        wp:target         <https://identifiers.org/chemspider/83179> .
+
 <https://identifiers.org/chemspider/29081>
         rdf:type            wp:Metabolite , wp:DataNode;
         rdfs:label          "Citrate";
         dc:identifier       <https://identifiers.org/chemspider/29081>;
         dc:source           "Chemspider";
         dcterms:identifier  "29081";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2638/WP2638_rWP2638_r117427/DataNode/c55a8>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2638_r117427>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2638_r117427/DataNode/c55a8>;
         foaf:page           <http://www.chemspider.com/Chemical-Structure.29081.html> .
 
-<https://identifiers.org/chemspider/4573566>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "L-Malate";
-        dc:identifier       <https://identifiers.org/chemspider/4573566>;
-        dc:source           "Chemspider";
-        dcterms:identifier  "4573566";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2638/WP2638_rWP2638_r117427/DataNode/c083f>;
-        foaf:page           <http://www.chemspider.com/Chemical-Structure.4573566.html> .
-
-<https://identifiers.org/chemspider/96901>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Pyruvate";
-        dc:identifier       <https://identifiers.org/chemspider/96901>;
-        dc:source           "Chemspider";
-        dcterms:identifier  "96901";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2638/WP2638_rWP2638_r117427/DataNode/fbc9b>;
-        foaf:page           <http://www.chemspider.com/Chemical-Structure.96901.html> .
-
-<https://identifiers.org/chemspider/83179>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Succinyl-CoA";
-        dc:identifier       <https://identifiers.org/chemspider/83179>;
-        dc:source           "Chemspider";
-        dcterms:identifier  "83179";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2638/WP2638_rWP2638_r117427/DataNode/c3498> , <http://rdf.wikipathways.org/Pathway/WP2638/WP2638_rWP2638_r117427/DataNode/a0a3f>;
-        foaf:page           <http://www.chemspider.com/Chemical-Structure.83179.html> .
-
-<https://identifiers.org/wikipathways/WP2638/WP2638_rWP2638_r117427>
-        rdf:type             wp:Pathway , skos:Collection;
-        dc:identifier        <https://identifiers.org/wikipathways/WP2638/WP2638>;
-        dc:source            "WikiPathways";
-        dc:title             "Glyoxylate, anapleurotic and succinyl CoA (GAS) pathway"@en;
-        dcterms:description  "Schematic of the GAS pathway which is characterised by flux through the glyoxylate shunt and anaplerotic reactions for oxidation of pyruvate and succinyl CoA synthetase for the generation of succinyl CoA.\n\nFrom: (http://www.plospathogens.org/article/info%3Adoi%2F10.1371%2Fjournal.ppat.1002091)";
-        dcterms:identifier   "WP2638/WP2638";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP2638/WP2638_rWP2638_r117427>;
-        wp:organismName      "Mycobacterium tuberculosis";
-        foaf:page            <http://www.wikipathways.org/instance/WP2638/WP2638_rWP2638_r117427> .
-
-<https://identifiers.org/chemspider/952>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "02";
-        dc:identifier       <https://identifiers.org/chemspider/952>;
-        dc:source           "Chemspider";
-        dcterms:identifier  "952";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2638/WP2638_rWP2638_r117427/DataNode/e9235>;
-        foaf:page           <http://www.chemspider.com/Chemical-Structure.952.html> .
-
-<https://identifiers.org/chemspider/980>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "phosphoenolpyruvate";
-        dc:identifier       <https://identifiers.org/chemspider/980>;
-        dc:source           "Chemspider";
-        dcterms:identifier  "980";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2638/WP2638_rWP2638_r117427/DataNode/b4984>;
-        foaf:page           <http://www.chemspider.com/Chemical-Structure.980.html> .
-
-<https://identifiers.org/chemspider/2849615>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "glyoxylate";
-        dc:identifier       <https://identifiers.org/chemspider/2849615>;
-        dc:source           "Chemspider";
-        dcterms:identifier  "2849615";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2638/WP2638_rWP2638_r117427/DataNode/b7529>;
-        foaf:page           <http://www.chemspider.com/Chemical-Structure.2849615.html> .
+<http://rdf.wikipathways.org/Pathway/WP2638_r117427/WP/Interaction/id32ffb16>
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP2638_r117427/WP/Interaction/id83c0ce1e> .
 
 <https://identifiers.org/chemspider/274>
         rdf:type            wp:DataNode , wp:Metabolite;
@@ -96,7 +72,8 @@
         dc:identifier       <https://identifiers.org/chemspider/274>;
         dc:source           "Chemspider";
         dcterms:identifier  "274";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2638/WP2638_rWP2638_r117427/DataNode/daa31> , <http://rdf.wikipathways.org/Pathway/WP2638/WP2638_rWP2638_r117427/DataNode/f91d0> , <http://rdf.wikipathways.org/Pathway/WP2638/WP2638_rWP2638_r117427/DataNode/ad207>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2638_r117427> , <http://rdf.wikipathways.org/Pathway/WP2638_r117427/WP/Interaction/ide42af691> , <http://rdf.wikipathways.org/Pathway/WP2638_r117427/WP/Interaction/id83c0ce1e>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2638_r117427/DataNode/daa31> , <http://rdf.wikipathways.org/Pathway/WP2638_r117427/DataNode/f91d0> , <http://rdf.wikipathways.org/Pathway/WP2638_r117427/DataNode/ad207>;
         foaf:page           <http://www.chemspider.com/Chemical-Structure.274.html> .
 
 <https://identifiers.org/chemspider/4573809>
@@ -105,23 +82,144 @@
         dc:identifier       <https://identifiers.org/chemspider/4573809>;
         dc:source           "Chemspider";
         dcterms:identifier  "4573809";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2638/WP2638_rWP2638_r117427/DataNode/fb2a2>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2638_r117427>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2638_r117427/DataNode/fb2a2>;
         foaf:page           <http://www.chemspider.com/Chemical-Structure.4573809.html> .
 
-<https://identifiers.org/chemspider/2509917>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Oxaloacetate";
-        dc:identifier       <https://identifiers.org/chemspider/2509917>;
+<https://identifiers.org/chemspider/83179>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Succinyl-CoA";
+        dc:identifier       <https://identifiers.org/chemspider/83179>;
         dc:source           "Chemspider";
-        dcterms:identifier  "2509917";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2638/WP2638_rWP2638_r117427/DataNode/b45a8>;
-        foaf:page           <http://www.chemspider.com/Chemical-Structure.2509917.html> .
+        dcterms:identifier  "83179";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2638_r117427/WP/Interaction/idc5f5a153> , <http://rdf.wikipathways.org/Pathway/WP2638_r117427/WP/Interaction/id32963e3d> , <https://identifiers.org/wikipathways/WP2638_r117427> , <http://rdf.wikipathways.org/Pathway/WP2638_r117427/WP/Interaction/id1d7bb5b7>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2638_r117427/DataNode/c3498> , <http://rdf.wikipathways.org/Pathway/WP2638_r117427/DataNode/a0a3f>;
+        foaf:page           <http://www.chemspider.com/Chemical-Structure.83179.html> .
+
+<http://rdf.wikipathways.org/Pathway/WP2638_r117427/WP/Interaction/id83c0ce1e>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2638_r117427>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2638_r117427/Interaction/id83c0ce1e>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP2638_r117427/WP/Interaction/id32ffb16> , <https://identifiers.org/chemspider/274>;
+        wp:source         <https://identifiers.org/chemspider/274>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP2638_r117427/WP/Interaction/id32ffb16> .
+
+<http://rdf.wikipathways.org/Pathway/WP2638_r117427/WP/Interaction/id7db002ee>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2638_r117427>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2638_r117427/Interaction/id7db002ee>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP2638_r117427/WP/Interaction/id397cd0d> , <https://identifiers.org/chemspider/2849615>;
+        wp:source         <https://identifiers.org/chemspider/2849615>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP2638_r117427/WP/Interaction/id397cd0d> .
 
 <https://identifiers.org/chemspider/140973>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "Succinate";
         dc:identifier       <https://identifiers.org/chemspider/140973>;
         dc:source           "Chemspider";
         dcterms:identifier  "140973";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2638/WP2638_rWP2638_r117427/DataNode/a72dc>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2638_r117427> , <http://rdf.wikipathways.org/Pathway/WP2638_r117427/WP/Interaction/id32963e3d>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2638_r117427/DataNode/a72dc>;
         foaf:page           <http://www.chemspider.com/Chemical-Structure.140973.html> .
+
+<http://rdf.wikipathways.org/Pathway/WP2638_r117427/WP/Interaction/id1d7bb5b7>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2638_r117427>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2638_r117427/Interaction/id1d7bb5b7>;
+        wp:participants   <https://identifiers.org/chemspider/83179>;
+        wp:source         <https://identifiers.org/chemspider/83179>;
+        wp:target         <https://identifiers.org/chemspider/83179> .
+
+<https://identifiers.org/chemspider/2849615>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "glyoxylate";
+        dc:identifier       <https://identifiers.org/chemspider/2849615>;
+        dc:source           "Chemspider";
+        dcterms:identifier  "2849615";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2638_r117427/WP/Interaction/id7db002ee> , <https://identifiers.org/wikipathways/WP2638_r117427>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2638_r117427/DataNode/b7529>;
+        foaf:page           <http://www.chemspider.com/Chemical-Structure.2849615.html> .
+
+<http://rdf.wikipathways.org/Pathway/WP2638_r117427/WP/Interaction/id32963e3d>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2638_r117427>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2638_r117427/Interaction/id32963e3d>;
+        wp:participants   <https://identifiers.org/chemspider/83179> , <https://identifiers.org/chemspider/140973>;
+        wp:source         <https://identifiers.org/chemspider/140973>;
+        wp:target         <https://identifiers.org/chemspider/83179> .
+
+<https://identifiers.org/wikipathways/WP2638_r117427>
+        rdf:type               wp:Pathway , skos:Collection;
+        dc:identifier          <https://identifiers.org/wikipathways/WP2638>;
+        dc:source              "WikiPathways";
+        dc:title               "Glyoxylate, anapleurotic and succinyl CoA (GAS) pathway"@en;
+        dcterms:description    "Schematic of the GAS pathway which is characterised by flux through the glyoxylate shunt and anaplerotic reactions for oxidation of pyruvate and succinyl CoA synthetase for the generation of succinyl CoA.\n\nFrom: (http://www.plospathogens.org/article/info%3Adoi%2F10.1371%2Fjournal.ppat.1002091)";
+        dcterms:identifier     "WP2638";
+        dcterms:references     <https://identifiers.org/pubmed/21814509>;
+        cito:cites             <https://identifiers.org/pubmed/21814509>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP2638_r117427>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000002>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_1773>;
+        wp:organismName        "Mycobacterium tuberculosis";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000002>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP2638&oldid=r117427> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP2638&oldid=r117427>;
+        foaf:page              <http://www.wikipathways.org/instance/WP2638_r117427> .
+
+<https://identifiers.org/wikipathways/WP2638>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP2638_r117427> .
+
+<https://identifiers.org/chemspider/980>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "phosphoenolpyruvate";
+        dc:identifier       <https://identifiers.org/chemspider/980>;
+        dc:source           "Chemspider";
+        dcterms:identifier  "980";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2638_r117427>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2638_r117427/DataNode/b4984>;
+        foaf:page           <http://www.chemspider.com/Chemical-Structure.980.html> .
+
+<https://identifiers.org/chemspider/952>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "02";
+        dc:identifier       <https://identifiers.org/chemspider/952>;
+        dc:source           "Chemspider";
+        dcterms:identifier  "952";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2638_r117427/WP/Interaction/ide42af691> , <http://rdf.wikipathways.org/Pathway/WP2638_r117427/WP/Interaction/idc5f5a153> , <https://identifiers.org/wikipathways/WP2638_r117427>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2638_r117427/DataNode/e9235>;
+        foaf:page           <http://www.chemspider.com/Chemical-Structure.952.html> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP2638&oldid=r117427>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<https://identifiers.org/chemspider/96901>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Pyruvate";
+        dc:identifier       <https://identifiers.org/chemspider/96901>;
+        dc:source           "Chemspider";
+        dcterms:identifier  "96901";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2638_r117427>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2638_r117427/DataNode/fbc9b>;
+        foaf:page           <http://www.chemspider.com/Chemical-Structure.96901.html> .
+
+<https://identifiers.org/chemspider/2509917>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Oxaloacetate";
+        dc:identifier       <https://identifiers.org/chemspider/2509917>;
+        dc:source           "Chemspider";
+        dcterms:identifier  "2509917";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2638_r117427> , <http://rdf.wikipathways.org/Pathway/WP2638_r117427/WP/Interaction/id397cd0d>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2638_r117427/DataNode/b45a8>;
+        foaf:page           <http://www.chemspider.com/Chemical-Structure.2509917.html> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP2638&oldid=r117427>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<http://rdf.wikipathways.org/Pathway/WP2638_r117427/WP/Interaction/id397cd0d>
+        rdf:type          wp:Interaction , wp:DirectedInteraction , wp:Conversion;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2638_r117427> , <http://rdf.wikipathways.org/Pathway/WP2638_r117427/WP/Interaction/id7db002ee>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2638_r117427/Interaction/id397cd0d>;
+        wp:participants   <https://identifiers.org/chemspider/2509917> , <https://identifiers.org/chemspider/4573566>;
+        wp:source         <https://identifiers.org/chemspider/4573566>;
+        wp:target         <https://identifiers.org/chemspider/2509917> .

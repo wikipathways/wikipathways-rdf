@@ -16,79 +16,87 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/ensembl/ENSMUSG00000038776>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Ephx1";
-        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000038776>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSMUSG00000038776";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1262/WP1262_rWP1262_r106843/DataNode/c48fb>;
-        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000038776> .
+<https://identifiers.org/pubmed/11440964>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "11440964";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1262_r106843>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/11440964> .
 
-<https://identifiers.org/ensembl/ENSMUSG00000001663>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Gstt1";
-        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000001663>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSMUSG00000001663";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1262/WP1262_rWP1262_r106843/DataNode/b6f29>;
-        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000001663> .
+<http://rdf.wikipathways.org/Pathway/WP1262_r106843/Complex/bd7b2>
+        rdf:type          wp:Complex , wp:DataNode;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1262_r106843>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1262_r106843/Group/bd7b2>;
+        wp:participants   <https://identifiers.org/ncbigene/14862> , <https://identifiers.org/ensembl/ENSMUSG00000001663> .
+
+<http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/f316a>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/c0f6f> , <https://identifiers.org/wikipathways/WP1262_r106843>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1262_r106843/Interaction/f316a>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0006552> , <https://identifiers.org/pubchem.compound/15558498>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0006552>;
+        wp:target         <https://identifiers.org/pubchem.compound/15558498> .
 
 <https://identifiers.org/pubchem.compound/104757>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "Aflatoxin Q1";
         dc:identifier       <https://identifiers.org/pubchem.compound/104757>;
         dc:source           "PubChem-compound";
         dcterms:identifier  "104757";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1262/WP1262_rWP1262_r106843/DataNode/ebd78>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1262_r106843> , <http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/a9ec0>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1262_r106843/DataNode/ebd78>;
         foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=104757> .
 
-<https://identifiers.org/ncbigene/14862>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Gstm1";
-        dc:identifier       <https://identifiers.org/ncbigene/14862>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "14862";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1262/WP1262_rWP1262_r106843/DataNode/b8659>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/14862> .
+<http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/d2ea3>
+        rdf:type            wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1262_r106843>;
+        dcterms:references  <https://identifiers.org/pubmed/16815959> , <https://identifiers.org/pubmed/16385575>;
+        cito:cites          <https://identifiers.org/pubmed/16385575> , <https://identifiers.org/pubmed/16815959>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1262_r106843/Interaction/d2ea3>;
+        wp:participants     <https://identifiers.org/hmdb/HMDB0006552> , <https://identifiers.org/hmdb/HMDB0006558>;
+        wp:source           <https://identifiers.org/hmdb/HMDB0006552>;
+        wp:target           <https://identifiers.org/hmdb/HMDB0006558> .
 
-<https://identifiers.org/ensembl/ENSMUSG00000028743>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Akr7a5";
-        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000028743>;
+<https://identifiers.org/pubmed/10506113>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "10506113";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1262_r106843>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/10506113> .
+
+<http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/c8ae1>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1262_r106843>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1262_r106843/Interaction/c8ae1>;
+        wp:participants   <https://identifiers.org/pubchem.compound/5460816> , <https://identifiers.org/hmdb/HMDB0006558>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0006558>;
+        wp:target         <https://identifiers.org/pubchem.compound/5460816> .
+
+<https://identifiers.org/pubmed/16385575>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "16385575";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/d2ea3> , <http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/ca368>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/16385575> .
+
+<https://identifiers.org/ensembl/ENSMUSG00000001663>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "Gstt1";
+        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000001663>;
         dc:source           "Ensembl";
-        dcterms:identifier  "ENSMUSG00000028743";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1262/WP1262_rWP1262_r106843/DataNode/a5f5e>;
-        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000028743> .
+        dcterms:identifier  "ENSMUSG00000001663";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1262_r106843> , <http://rdf.wikipathways.org/Pathway/WP1262_r106843/Complex/bd7b2>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1262_r106843/DataNode/b6f29>;
+        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000001663> .
 
-<https://identifiers.org/hmdb/HMDB0006552>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "aflatoxin B1";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0006552>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0006552";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1262/WP1262_rWP1262_r106843/DataNode/df622>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0006552> .
-
-<https://identifiers.org/ensembl/ENSMUSG00000032310>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Cyp1a2";
-        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000032310>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSMUSG00000032310";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1262/WP1262_rWP1262_r106843/DataNode/ca92d> , <http://rdf.wikipathways.org/Pathway/WP1262/WP1262_rWP1262_r106843/DataNode/a6499> , <http://rdf.wikipathways.org/Pathway/WP1262/WP1262_rWP1262_r106843/DataNode/d7dec>;
-        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000032310> .
-
-<https://identifiers.org/wikipathways/WP1262/WP1262_rWP1262_r106843>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP1262/WP1262>;
-        dc:source            "WikiPathways";
-        dc:title             "Aflatoxin B1 metabolism"@en;
-        dcterms:description  "'''Aflatoxins''' are naturally occurring [[wikipedia:mycotoxin|mycotoxin]]s that are produced by many species of ''[[wikipedia:Aspergillus|Aspergillus]]'', a [[wikipedia:fungus|fungus]], most notably ''[[wikipedia:Aspergillus flavus|Aspergillus flavus]]'' and ''[[wikipedia:Aspergillus parasiticus|Aspergillus parasiticus]]''. After entering the body, aflatoxins are metabolized by the liver to a reactive intermediate, aflatoxin M<sub>1</sub>, an [[wikipedia:epoxide|epoxide]]. Aflatoxin B1 is considered the most toxic and is produced by both Aspergillus flavus and Aspergillus parasiticus.\n\nSource: [[wikipedia:Aflatoxin|Wikipedia]]";
-        dcterms:identifier   "WP1262/WP1262";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP1262/WP1262_rWP1262_r106843>;
-        wp:organismName      "Mus musculus";
-        foaf:page            <http://www.wikipathways.org/instance/WP1262/WP1262_rWP1262_r106843> .
+<http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/ca368>
+        rdf:type            wp:DirectedInteraction , wp:Interaction , wp:Conversion;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/bb58c> , <https://identifiers.org/wikipathways/WP1262_r106843>;
+        dcterms:references  <https://identifiers.org/pubmed/16815959> , <https://identifiers.org/pubmed/16385575>;
+        cito:cites          <https://identifiers.org/pubmed/16385575> , <https://identifiers.org/pubmed/16815959>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1262_r106843/Interaction/ca368>;
+        wp:participants     <https://identifiers.org/pubchem.compound/15558498>;
+        wp:source           <https://identifiers.org/pubchem.compound/15558498> .
 
 <https://identifiers.org/pubchem.compound/15558498>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -96,17 +104,39 @@
         dc:identifier       <https://identifiers.org/pubchem.compound/15558498>;
         dc:source           "PubChem-compound";
         dcterms:identifier  "15558498";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1262/WP1262_rWP1262_r106843/DataNode/e3b9e>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/ca368> , <http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/f316a> , <https://identifiers.org/wikipathways/WP1262_r106843>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1262_r106843/DataNode/e3b9e>;
         foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=15558498> .
 
-<https://identifiers.org/pubchem.compound/5460816>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Aflatoxin B1 exo-8,9-epoxide-GSH";
-        dc:identifier       <https://identifiers.org/pubchem.compound/5460816>;
-        dc:source           "PubChem-compound";
-        dcterms:identifier  "5460816";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1262/WP1262_rWP1262_r106843/DataNode/c3289>;
-        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=5460816> .
+<https://identifiers.org/pubmed/16584116>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "16584116";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1262_r106843>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/16584116> .
+
+<http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/a9ec0>
+        rdf:type          wp:DirectedInteraction , wp:Conversion , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1262_r106843> , <http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/b5af9>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1262_r106843/Interaction/a9ec0>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0006552> , <https://identifiers.org/pubchem.compound/104757>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0006552>;
+        wp:target         <https://identifiers.org/pubchem.compound/104757> .
+
+<http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/dccb8>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1262_r106843>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1262_r106843/Interaction/dccb8> .
+
+<https://identifiers.org/hmdb/HMDB0006552>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "aflatoxin B1";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0006552>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0006552";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/bcf85> , <http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/f316a> , <https://identifiers.org/wikipathways/WP1262_r106843> , <http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/a9ec0> , <http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/d2ea3>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1262_r106843/DataNode/df622>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0006552> .
 
 <https://identifiers.org/hmdb/HMDB0006558>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -114,5 +144,225 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0006558>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0006558";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1262/WP1262_rWP1262_r106843/DataNode/e2f80>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/fcfc8> , <http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/c8ae1> , <http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/d2ea3> , <http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/ae829> , <https://identifiers.org/wikipathways/WP1262_r106843>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1262_r106843/DataNode/e2f80>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0006558> .
+
+<http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/b30fd>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1262_r106843>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1262_r106843/Interaction/b30fd> .
+
+<http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/ae829>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1262_r106843>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1262_r106843/Interaction/ae829>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0006558>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0006558> .
+
+<https://identifiers.org/ensembl/ENSMUSG00000032310>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "Cyp1a2";
+        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000032310>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSMUSG00000032310";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1262_r106843> , <http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/c0f6f> , <http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/ab5fb>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1262_r106843/DataNode/a6499> , <http://rdf.wikipathways.org/Pathway/WP1262_r106843/DataNode/d7dec> , <http://rdf.wikipathways.org/Pathway/WP1262_r106843/DataNode/ca92d>;
+        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000032310> .
+
+<http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/c0f6f>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1262_r106843>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1262_r106843/Interaction/c0f6f>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/f316a> , <https://identifiers.org/ensembl/ENSMUSG00000032310>;
+        wp:source         <https://identifiers.org/ensembl/ENSMUSG00000032310>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/f316a> .
+
+<http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/b5af9>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1262_r106843>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1262_r106843/Interaction/b5af9>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/a9ec0>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/a9ec0> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_10090>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "10090" .
+
+<http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/a0fce>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1262_r106843>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1262_r106843/Interaction/a0fce> .
+
+<https://identifiers.org/pubmed/12067245>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "12067245";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1262_r106843>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/12067245> .
+
+<https://identifiers.org/pubchem.compound/5460816>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Aflatoxin B1 exo-8,9-epoxide-GSH";
+        dc:identifier       <https://identifiers.org/pubchem.compound/5460816>;
+        dc:source           "PubChem-compound";
+        dcterms:identifier  "5460816";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1262_r106843> , <http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/c8ae1>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1262_r106843/DataNode/c3289>;
+        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=5460816> .
+
+<http://rdf.wikipathways.org/Pathway/WP1262_r106843/ComplexBinding/bd7b2>
+        rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1262_r106843>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1262_r106843/Group/bd7b2>;
+        wp:participants   <https://identifiers.org/ncbigene/14862> , <https://identifiers.org/ensembl/ENSMUSG00000001663> , <http://rdf.wikipathways.org/Pathway/WP1262_r106843/Complex/bd7b2> .
+
+<https://identifiers.org/ncbigene/14862>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "Gstm1";
+        dc:identifier       <https://identifiers.org/ncbigene/14862>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "14862";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1262_r106843> , <http://rdf.wikipathways.org/Pathway/WP1262_r106843/Complex/bd7b2>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1262_r106843/DataNode/b8659>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/14862> .
+
+<http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/fcfc8>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1262_r106843> , <http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/c5b41>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1262_r106843/Interaction/fcfc8>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0006558>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0006558> .
+
+<http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/c5b41>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1262_r106843>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1262_r106843/Interaction/c5b41>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/fcfc8> , <https://identifiers.org/ensembl/ENSMUSG00000038776>;
+        wp:source         <https://identifiers.org/ensembl/ENSMUSG00000038776>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/fcfc8> .
+
+<http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/ab5fb>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1262_r106843>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1262_r106843/Interaction/ab5fb>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/bcf85> , <https://identifiers.org/ensembl/ENSMUSG00000032310>;
+        wp:source         <https://identifiers.org/ensembl/ENSMUSG00000032310>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/bcf85> .
+
+<https://identifiers.org/pubmed/18949601>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "18949601";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1262_r106843>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/18949601> .
+
+<http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/cfb30>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1262_r106843>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1262_r106843/Interaction/cfb30> .
+
+<http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/bcf85>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1262_r106843> , <http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/ab5fb>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1262_r106843/Interaction/bcf85>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0006552>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0006552> .
+
+<https://identifiers.org/ensembl/ENSMUSG00000038776>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "Ephx1";
+        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000038776>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSMUSG00000038776";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1262_r106843> , <http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/c5b41>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1262_r106843/DataNode/c48fb>;
+        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000038776> .
+
+<https://identifiers.org/pubmed/12724730>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "12724730";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1262_r106843>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/12724730> .
+
+<http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/ccbaa>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1262_r106843>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1262_r106843/Interaction/ccbaa> .
+
+<http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/f1e7e>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1262_r106843>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1262_r106843/Interaction/f1e7e> .
+
+<https://identifiers.org/wikipathways/WP1262_r106843>
+        rdf:type               skos:Collection , wp:Pathway;
+        dc:identifier          <https://identifiers.org/wikipathways/WP1262>;
+        dc:source              "WikiPathways";
+        dc:title               "Aflatoxin B1 metabolism"@en;
+        dcterms:description    "'''Aflatoxins''' are naturally occurring [[wikipedia:mycotoxin|mycotoxin]]s that are produced by many species of ''[[wikipedia:Aspergillus|Aspergillus]]'', a [[wikipedia:fungus|fungus]], most notably ''[[wikipedia:Aspergillus flavus|Aspergillus flavus]]'' and ''[[wikipedia:Aspergillus parasiticus|Aspergillus parasiticus]]''. After entering the body, aflatoxins are metabolized by the liver to a reactive intermediate, aflatoxin M<sub>1</sub>, an [[wikipedia:epoxide|epoxide]]. Aflatoxin B1 is considered the most toxic and is produced by both Aspergillus flavus and Aspergillus parasiticus.\n\nSource: [[wikipedia:Aflatoxin|Wikipedia]]";
+        dcterms:identifier     "WP1262";
+        dcterms:references     <https://identifiers.org/pubmed/10506113> , <https://identifiers.org/pubmed/11440964> , <https://identifiers.org/pubmed/18949601> , <https://identifiers.org/pubmed/11409944> , <https://identifiers.org/pubmed/12724730> , <https://identifiers.org/pubmed/16584116> , <https://identifiers.org/pubmed/16970545> , <https://identifiers.org/pubmed/12067245>;
+        cito:cites             <https://identifiers.org/pubmed/16385575> , <https://identifiers.org/pubmed/11409944> , <https://identifiers.org/pubmed/16815959> , <https://identifiers.org/pubmed/10506113> , <https://identifiers.org/pubmed/11440964> , <https://identifiers.org/pubmed/16584116> , <https://identifiers.org/pubmed/18949601> , <https://identifiers.org/pubmed/16970545> , <https://identifiers.org/pubmed/12067245> , <https://identifiers.org/pubmed/12724730>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP1262_r106843>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0001366>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_10090>;
+        wp:organismName        "Mus musculus";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0001366>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP1262&oldid=r106843> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP1262&oldid=r106843>;
+        foaf:page              <http://www.wikipathways.org/instance/WP1262_r106843> .
+
+<https://identifiers.org/pubmed/16970545>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "16970545";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1262_r106843>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/16970545> .
+
+<https://identifiers.org/pubmed/11409944>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "11409944";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1262_r106843>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/11409944> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP1262&oldid=r106843>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<https://identifiers.org/pubmed/16815959>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "16815959";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/d2ea3> , <http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/ca368>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/16815959> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP1262&oldid=r106843>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/badb2>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1262_r106843>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1262_r106843/Interaction/badb2> .
+
+<https://identifiers.org/ensembl/ENSMUSG00000028743>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "Akr7a5";
+        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000028743>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSMUSG00000028743";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1262_r106843>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1262_r106843/DataNode/a5f5e>;
+        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000028743> .
+
+<https://identifiers.org/wikipathways/WP1262>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP1262_r106843> .
+
+<http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/bb58c>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1262_r106843>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1262_r106843/Interaction/bb58c>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/ca368>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP1262_r106843/WP/Interaction/ca368> .

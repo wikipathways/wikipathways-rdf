@@ -16,62 +16,50 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/ensembl/ENSG00000159216>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "RUNX1";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000159216>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000159216";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3300/WP3300_rWP3300_r102277/DataNode/c539b>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000159216> .
+<https://identifiers.org/wikipathways/WP3300>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP3300_r102277> .
 
 <https://identifiers.org/ensembl/ENSG00000103363>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "ELOB";
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000103363>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000103363";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3300/WP3300_rWP3300_r102277/DataNode/e1005>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3300_r102277/Complex/d80bc> , <https://identifiers.org/wikipathways/WP3300_r102277>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3300_r102277/DataNode/e1005>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000103363> .
 
-<https://identifiers.org/uniprot/P69723>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Vif";
-        dc:identifier       <https://identifiers.org/uniprot/P69723>;
-        dc:source           "Uniprot-TrEMBL";
-        dcterms:identifier  "P69723";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3300/WP3300_rWP3300_r102277/DataNode/ab6fd> , <http://rdf.wikipathways.org/Pathway/WP3300/WP3300_rWP3300_r102277/DataNode/f1596> , <http://rdf.wikipathways.org/Pathway/WP3300/WP3300_rWP3300_r102277/DataNode/effb5>;
-        foaf:page           <http://www.uniprot.org/uniprot/P69723> .
+<http://purl.obolibrary.org/obo/NCBITaxon_9606>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9606" .
 
 <https://identifiers.org/ensembl/ENSG00000154582>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "ELOC";
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000154582>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000154582";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3300/WP3300_rWP3300_r102277/DataNode/c6a19>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3300_r102277> , <http://rdf.wikipathways.org/Pathway/WP3300_r102277/Complex/d80bc>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3300_r102277/DataNode/c6a19>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000154582> .
 
-<http://rdf.wikipathways.org/Pathway/WP3300/WP3300_rWP3300_r102277/WP/Interaction/id92f8e9cb>
-        rdf:type  wp:Interaction .
+<http://rdf.wikipathways.org/Pathway/WP3300_r102277/Complex/d80bc>
+        rdf:type          wp:Complex , wp:DataNode;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3300_r102277>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3300_r102277/Group/d80bc>;
+        wp:participants   <https://identifiers.org/uniprot/P69723> , <https://identifiers.org/ensembl/ENSG00000067955> , <https://identifiers.org/ensembl/ENSG00000103363> , <https://identifiers.org/ensembl/ENSG00000154582> .
 
-<https://identifiers.org/ensembl/ENSG00000100387>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "RBX1";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000100387>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000100387";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3300/WP3300_rWP3300_r102277/DataNode/f18ea>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000100387> .
+<http://rdf.wikipathways.org/Pathway/WP3300_r102277/ComplexBinding/fd910>
+        rdf:type          wp:Binding , wp:Interaction , wp:ComplexBinding;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3300_r102277>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3300_r102277/Group/fd910>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000100387> , <https://identifiers.org/ensembl/ENSG00000170315> , <https://identifiers.org/ensembl/ENSG00000166266> , <http://rdf.wikipathways.org/Pathway/WP3300_r102277/Complex/fd910> , <https://identifiers.org/ensembl/ENSG00000067955> .
 
-<https://identifiers.org/ensembl/ENSG00000239713>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "A3G";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000239713>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000239713";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3300/WP3300_rWP3300_r102277/DataNode/cbd72>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000239713> .
+<http://rdf.wikipathways.org/Pathway/WP3300_r102277/Complex/fd910>
+        rdf:type          wp:Complex , wp:DataNode;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3300_r102277>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3300_r102277/Group/fd910>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000067955> , <https://identifiers.org/ensembl/ENSG00000100387> , <https://identifiers.org/ensembl/ENSG00000170315> , <https://identifiers.org/ensembl/ENSG00000166266> .
 
 <https://identifiers.org/ensembl/ENSG00000166266>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -79,19 +67,68 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000166266>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000166266";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3300/WP3300_rWP3300_r102277/DataNode/b860e>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3300_r102277> , <http://rdf.wikipathways.org/Pathway/WP3300_r102277/Complex/fd910>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3300_r102277/DataNode/b860e>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000166266> .
 
-<https://identifiers.org/wikipathways/WP3300/WP3300_rWP3300_r102277>
-        rdf:type             wp:Pathway , skos:Collection;
-        dc:identifier        <https://identifiers.org/wikipathways/WP3300/WP3300>;
-        dc:source            "WikiPathways";
-        dc:title             "Dual hijack model of Vif in HIV infection"@en;
-        dcterms:description  "By hijacking CBF-b, Vif (Viral infectivity factor, HIV protein) is manipulating the ubquitination machinery and adversely effecting host transcriptional regulation.\nThis pathways was adapted from figure 3 in [https://www.ncbi.nlm.nih.gov/pubmed/23352243 Fraser et al]. Viral proteins are highlighted in yellow.";
-        dcterms:identifier   "WP3300/WP3300";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP3300/WP3300_rWP3300_r102277>;
-        wp:organismName      "Homo sapiens";
-        foaf:page            <http://www.wikipathways.org/instance/WP3300/WP3300_rWP3300_r102277> .
+<https://identifiers.org/ensembl/ENSG00000170315>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "UBB";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000170315>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000170315";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3300_r102277/Complex/fd910> , <https://identifiers.org/wikipathways/WP3300_r102277>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3300_r102277/DataNode/d881f>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000170315> .
+
+<https://identifiers.org/pubmed/23352243>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "23352243";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3300_r102277>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/23352243> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3300&oldid=r102277>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3300&oldid=r102277>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<http://rdf.wikipathways.org/Pathway/WP3300_r102277/WP/Interaction/id92f8e9cb>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3300_r102277>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3300_r102277/Interaction/id92f8e9cb>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP3300_r102277/WP/Interaction/id989addc4> , <https://identifiers.org/uniprot/P69723> .
+
+<https://identifiers.org/ensembl/ENSG00000159216>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "RUNX1";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000159216>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000159216";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3300_r102277>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3300_r102277/DataNode/c539b>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000159216> .
+
+<https://identifiers.org/wikipathways/WP3300_r102277>
+        rdf:type               skos:Collection , wp:Pathway;
+        dc:identifier          <https://identifiers.org/wikipathways/WP3300>;
+        dc:source              "WikiPathways";
+        dc:title               "Dual hijack model of Vif in HIV infection"@en;
+        dcterms:description    "By hijacking CBF-b, Vif (Viral infectivity factor, HIV protein) is manipulating the ubquitination machinery and adversely effecting host transcriptional regulation.\nThis pathways was adapted from figure 3 in [https://www.ncbi.nlm.nih.gov/pubmed/23352243 Fraser et al]. Viral proteins are highlighted in yellow.";
+        dcterms:identifier     "WP3300";
+        dcterms:references     <https://identifiers.org/pubmed/23352243>;
+        cito:cites             <https://identifiers.org/pubmed/23352243>;
+        wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_526>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP3300_r102277>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000004> , <http://purl.obolibrary.org/obo/DOID_526>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606>;
+        wp:organismName        "Homo sapiens";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000004>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3300&oldid=r102277> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3300&oldid=r102277>;
+        foaf:page              <http://www.wikipathways.org/instance/WP3300_r102277> .
 
 <https://identifiers.org/ensembl/ENSG00000067955>
         rdf:type            wp:DataNode , wp:GeneProduct;
@@ -99,14 +136,45 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000067955>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000067955";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3300/WP3300_rWP3300_r102277/DataNode/c2317> , <http://rdf.wikipathways.org/Pathway/WP3300/WP3300_rWP3300_r102277/DataNode/d0e61> , <http://rdf.wikipathways.org/Pathway/WP3300/WP3300_rWP3300_r102277/DataNode/c940e> , <http://rdf.wikipathways.org/Pathway/WP3300/WP3300_rWP3300_r102277/DataNode/bc249>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3300_r102277/Complex/fd910> , <http://rdf.wikipathways.org/Pathway/WP3300_r102277/Complex/d80bc> , <https://identifiers.org/wikipathways/WP3300_r102277>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3300_r102277/DataNode/d0e61> , <http://rdf.wikipathways.org/Pathway/WP3300_r102277/DataNode/c940e> , <http://rdf.wikipathways.org/Pathway/WP3300_r102277/DataNode/bc249> , <http://rdf.wikipathways.org/Pathway/WP3300_r102277/DataNode/c2317>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000067955> .
 
-<https://identifiers.org/ensembl/ENSG00000170315>
+<https://identifiers.org/uniprot/P69723>
         rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "UBB";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000170315>;
+        rdfs:label          "Vif";
+        dc:identifier       <https://identifiers.org/uniprot/P69723>;
+        dc:source           "Uniprot-TrEMBL";
+        dcterms:identifier  "P69723";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3300_r102277/WP/Interaction/id92f8e9cb> , <http://rdf.wikipathways.org/Pathway/WP3300_r102277/Complex/d80bc> , <https://identifiers.org/wikipathways/WP3300_r102277>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3300_r102277/DataNode/effb5> , <http://rdf.wikipathways.org/Pathway/WP3300_r102277/DataNode/f1596> , <http://rdf.wikipathways.org/Pathway/WP3300_r102277/DataNode/ab6fd>;
+        foaf:page           <http://www.uniprot.org/uniprot/P69723> .
+
+<https://identifiers.org/ensembl/ENSG00000239713>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "A3G";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000239713>;
         dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000170315";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3300/WP3300_rWP3300_r102277/DataNode/d881f>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000170315> .
+        dcterms:identifier  "ENSG00000239713";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3300_r102277>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3300_r102277/DataNode/cbd72>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000239713> .
+
+<https://identifiers.org/ensembl/ENSG00000100387>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "RBX1";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000100387>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000100387";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3300_r102277/Complex/fd910> , <https://identifiers.org/wikipathways/WP3300_r102277>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3300_r102277/DataNode/f18ea>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000100387> .
+
+<http://rdf.wikipathways.org/Pathway/WP3300_r102277/WP/Interaction/id989addc4>
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP3300_r102277/WP/Interaction/id92f8e9cb> .
+
+<http://rdf.wikipathways.org/Pathway/WP3300_r102277/ComplexBinding/d80bc>
+        rdf:type          wp:Binding , wp:ComplexBinding , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3300_r102277>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3300_r102277/Group/d80bc>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000067955> , <http://rdf.wikipathways.org/Pathway/WP3300_r102277/Complex/d80bc> , <https://identifiers.org/uniprot/P69723> , <https://identifiers.org/ensembl/ENSG00000154582> , <https://identifiers.org/ensembl/ENSG00000103363> .

@@ -16,124 +16,113 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
+<http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/b3c89>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2140_r106868>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2140_r106868/Interaction/b3c89>;
+        wp:participants   <https://identifiers.org/ensembl/ENSMUSG00000021250> , <https://identifiers.org/ensembl/ENSMUSG00000041380>;
+        wp:source         <https://identifiers.org/ensembl/ENSMUSG00000041380>;
+        wp:target         <https://identifiers.org/ensembl/ENSMUSG00000021250> .
+
+<http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/ide9f9b058>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2140_r106868>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2140_r106868/Interaction/ide9f9b058>;
+        wp:participants   <https://identifiers.org/ensembl/ENSMUSG00000034997> , <https://identifiers.org/chebi/CHEBI:6123>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:6123>;
+        wp:target         <https://identifiers.org/ensembl/ENSMUSG00000034997> .
+
+<http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/bf87f>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2140_r106868>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2140_r106868/Interaction/bf87f>;
+        wp:participants   <https://identifiers.org/ensembl/ENSMUSG00000021721> , <https://identifiers.org/chebi/CHEBI:6123>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:6123>;
+        wp:target         <https://identifiers.org/ensembl/ENSMUSG00000021721> .
+
+<https://identifiers.org/pubmed/8190100>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "8190100";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/ecbb5>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/8190100> .
+
+<https://identifiers.org/pubmed/20826676>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "20826676";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/e8cc7> , <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/id95666a2a>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/20826676> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP2140&oldid=r106868>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/ecbb5>
+        rdf:type            wp:Interaction , wp:DirectedInteraction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2140_r106868>;
+        dcterms:references  <https://identifiers.org/pubmed/8190100>;
+        cito:cites          <https://identifiers.org/pubmed/8190100>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2140_r106868/Interaction/ecbb5>;
+        wp:participants     <https://identifiers.org/ensembl/ENSMUSG00000052889> , <https://identifiers.org/ensembl/ENSMUSG00000022602>;
+        wp:source           <https://identifiers.org/ensembl/ENSMUSG00000022602>;
+        wp:target           <https://identifiers.org/ensembl/ENSMUSG00000052889> .
+
+<https://identifiers.org/wikipathways/WP2140_r106868>
+        rdf:type                skos:Collection , wp:Pathway;
+        dc:identifier           <https://identifiers.org/wikipathways/WP2140>;
+        dc:source               "WikiPathways";
+        dc:title                "Serotonin and anxiety-related events"@en;
+        dcterms:description     "Stress and anxiety disorders are risk factors for depression and these behaviours are modulated by corticotropin releasing factor (CRFR1) and serotonin (5-HT2R) receptors. (Source: Berg et al \"5-Hydroxytryptamine type 2A receptors regulate cyclic AMP accumulation in a neuronal cell line by protein kinase C-dependent and calcium/calmodulin-dependent mechanisms\")";
+        dcterms:identifier      "WP2140";
+        cito:cites              <https://identifiers.org/pubmed/20383137> , <https://identifiers.org/pubmed/8190100> , <https://identifiers.org/pubmed/20826676>;
+        wp:cellTypeOntologyTag  <http://purl.obolibrary.org/obo/CL_0010012> , <http://purl.obolibrary.org/obo/CL_0000540>;
+        wp:diseaseOntologyTag   <http://purl.obolibrary.org/obo/DOID_2030>;
+        wp:isAbout              <http://rdf.wikipathways.org/Pathway/WP2140_r106868>;
+        wp:ontologyTag          <http://purl.obolibrary.org/obo/CL_0000540> , <http://purl.obolibrary.org/obo/DOID_2030> , <http://purl.obolibrary.org/obo/PW_0000003> , <http://purl.obolibrary.org/obo/CL_0010012> , <http://purl.obolibrary.org/obo/PW_0000013>;
+        wp:organism             <http://purl.obolibrary.org/obo/NCBITaxon_10090>;
+        wp:organismName         "Mus musculus";
+        wp:pathwayOntologyTag   <http://purl.obolibrary.org/obo/PW_0000013> , <http://purl.obolibrary.org/obo/PW_0000003>;
+        foaf:img                <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP2140&oldid=r106868> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP2140&oldid=r106868>;
+        foaf:page               <http://www.wikipathways.org/instance/WP2140_r106868> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP2140&oldid=r106868>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/f2c8a>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2140_r106868>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2140_r106868/Interaction/f2c8a>;
+        wp:participants   <https://identifiers.org/ensembl/ENSMUSG00000041380> , <https://identifiers.org/chebi/CHEBI:6123>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:6123>;
+        wp:target         <https://identifiers.org/ensembl/ENSMUSG00000041380> .
+
+<http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/cf288>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2140_r106868>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2140_r106868/Interaction/cf288>;
+        wp:participants   <https://identifiers.org/ensembl/ENSMUSG00000041380> , <https://identifiers.org/hmdb/HMDB0000259>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000259>;
+        wp:target         <https://identifiers.org/ensembl/ENSMUSG00000041380> .
+
+<http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/b70ca>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2140_r106868>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2140_r106868/Interaction/b70ca>;
+        wp:participants   <https://identifiers.org/ensembl/ENSMUSG00000021250> , <https://identifiers.org/ensembl/ENSMUSG00000021721>;
+        wp:source         <https://identifiers.org/ensembl/ENSMUSG00000021721>;
+        wp:target         <https://identifiers.org/ensembl/ENSMUSG00000021250> .
+
 <https://identifiers.org/ensembl/ENSMUSG00000063887>
         rdf:type            wp:GeneProduct , wp:DataNode;
         rdfs:label          "Nlgn1";
         dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000063887>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSMUSG00000063887";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2140/WP2140_rWP2140_r106868/DataNode/f8382>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2140_r106868>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2140_r106868/DataNode/f8382>;
         foaf:page           <https://www.ensembl.org/id/ENSMUSG00000063887> .
-
-<https://identifiers.org/ensembl/ENSMUSG00000026173>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Plcd4";
-        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000026173>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSMUSG00000026173";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2140/WP2140_rWP2140_r106868/DataNode/e4d81>;
-        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000026173> .
-
-<https://identifiers.org/ensembl/ENSMUSG00000020120>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Plek";
-        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000020120>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSMUSG00000020120";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2140/WP2140_rWP2140_r106868/DataNode/d3ed4>;
-        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000020120> .
-
-<https://identifiers.org/uniprot/Q8CIT0>
-        rdf:type            wp:Protein , wp:DataNode;
-        rdfs:label          "CRF_MOUSE";
-        dc:identifier       <https://identifiers.org/uniprot/Q8CIT0>;
-        dc:source           "Uniprot-TrEMBL";
-        dcterms:identifier  "Q8CIT0";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2140/WP2140_rWP2140_r106868/DataNode/d6b29>;
-        foaf:page           <http://www.uniprot.org/uniprot/Q8CIT0> .
-
-<https://identifiers.org/chebi/CHEBI:6123>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "ketanserin";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:6123>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:6123";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2140/WP2140_rWP2140_r106868/DataNode/a5d9d>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:6123> .
-
-<https://identifiers.org/ensembl/ENSMUSG00000018634>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Crhr1";
-        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000018634>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSMUSG00000018634";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2140/WP2140_rWP2140_r106868/DataNode/a7ab4>;
-        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000018634> .
-
-<https://identifiers.org/ensembl/ENSMUSG00000021250>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "C-Fos";
-        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000021250>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSMUSG00000021250";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2140/WP2140_rWP2140_r106868/DataNode/ed43c>;
-        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000021250> .
-
-<https://identifiers.org/ensembl/ENSMUSG00000052889>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Prkcb1";
-        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000052889>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSMUSG00000052889";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2140/WP2140_rWP2140_r106868/DataNode/fa82e>;
-        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000052889> .
-
-<https://identifiers.org/ensembl/ENSMUSG00000002771>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Grin2d";
-        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000002771>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSMUSG00000002771";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2140/WP2140_rWP2140_r106868/DataNode/b5126>;
-        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000002771> .
-
-<https://identifiers.org/wikipathways/WP2140/WP2140_rWP2140_r106868>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP2140/WP2140>;
-        dc:source            "WikiPathways";
-        dc:title             "Serotonin and anxiety-related events"@en;
-        dcterms:description  "Stress and anxiety disorders are risk factors for depression and these behaviours are modulated by corticotropin releasing factor (CRFR1) and serotonin (5-HT2R) receptors. (Source: Berg et al \"5-Hydroxytryptamine type 2A receptors regulate cyclic AMP accumulation in a neuronal cell line by protein kinase C-dependent and calcium/calmodulin-dependent mechanisms\")";
-        dcterms:identifier   "WP2140/WP2140";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP2140/WP2140_rWP2140_r106868>;
-        wp:organismName      "Mus musculus";
-        foaf:page            <http://www.wikipathways.org/instance/WP2140/WP2140_rWP2140_r106868> .
-
-<https://identifiers.org/ensembl/ENSMUSG00000022602>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Arc";
-        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000022602>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSMUSG00000022602";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2140/WP2140_rWP2140_r106868/DataNode/e1ad8>;
-        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000022602> .
-
-<https://identifiers.org/ensembl/ENSMUSG00000034997>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Serotonin Receptor Htr2a";
-        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000034997>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSMUSG00000034997";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2140/WP2140_rWP2140_r106868/DataNode/aa494>;
-        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000034997> .
-
-<https://identifiers.org/ensembl/ENSMUSG00000041380>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Serotonin Receptor Htr2c";
-        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000041380>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSMUSG00000041380";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2140/WP2140_rWP2140_r106868/DataNode/c7fbb>;
-        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000041380> .
 
 <https://identifiers.org/ensembl/ENSMUSG00000021721>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -141,17 +130,63 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000021721>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSMUSG00000021721";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2140/WP2140_rWP2140_r106868/DataNode/ea395>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/b260f> , <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/bf87f> , <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/f9ee0> , <https://identifiers.org/wikipathways/WP2140_r106868> , <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/b70ca>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2140_r106868/DataNode/ea395>;
         foaf:page           <https://www.ensembl.org/id/ENSMUSG00000021721> .
 
-<https://identifiers.org/hmdb/HMDB0000259>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Serotonin";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000259>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000259";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2140/WP2140_rWP2140_r106868/DataNode/f1ee8>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000259> .
+<https://identifiers.org/ensembl/ENSMUSG00000021250>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "C-Fos";
+        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000021250>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSMUSG00000021250";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/ab144> , <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/b70ca> , <https://identifiers.org/wikipathways/WP2140_r106868> , <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/b3c89>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2140_r106868/DataNode/ed43c>;
+        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000021250> .
+
+<https://identifiers.org/ensembl/ENSMUSG00000052889>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "Prkcb1";
+        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000052889>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSMUSG00000052889";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2140_r106868> , <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/ecbb5>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2140_r106868/DataNode/fa82e>;
+        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000052889> .
+
+<http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/e85b5>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2140_r106868>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2140_r106868/Interaction/e85b5>;
+        wp:participants   <https://identifiers.org/mgi/MGI:107164> , <https://identifiers.org/ensembl/ENSMUSG00000022602>;
+        wp:source         <https://identifiers.org/ensembl/ENSMUSG00000022602>;
+        wp:target         <https://identifiers.org/mgi/MGI:107164> .
+
+<http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/ab144>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2140_r106868>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2140_r106868/Interaction/ab144>;
+        wp:participants   <https://identifiers.org/ensembl/ENSMUSG00000021250> , <https://identifiers.org/ensembl/ENSMUSG00000034997>;
+        wp:source         <https://identifiers.org/ensembl/ENSMUSG00000034997>;
+        wp:target         <https://identifiers.org/ensembl/ENSMUSG00000021250> .
+
+<http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/idc753cc83>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2140_r106868>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2140_r106868/Interaction/idc753cc83>;
+        wp:participants   <https://identifiers.org/ensembl/ENSMUSG00000018634> , <https://identifiers.org/uniprot/Q8CIT0>;
+        wp:source         <https://identifiers.org/uniprot/Q8CIT0>;
+        wp:target         <https://identifiers.org/ensembl/ENSMUSG00000018634> .
+
+<http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/id95666a2a>
+        rdf:type            wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2140_r106868>;
+        dcterms:references  <https://identifiers.org/pubmed/20826676>;
+        cito:cites          <https://identifiers.org/pubmed/20826676>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2140_r106868/Interaction/id95666a2a>;
+        wp:participants     <https://identifiers.org/ensembl/ENSMUSG00000022602> , <https://identifiers.org/ensembl/ENSMUSG00000034997>;
+        wp:source           <https://identifiers.org/ensembl/ENSMUSG00000034997>;
+        wp:target           <https://identifiers.org/ensembl/ENSMUSG00000022602> .
 
 <https://identifiers.org/mgi/MGI:107164>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -159,5 +194,182 @@
         dc:identifier       <https://identifiers.org/mgi/MGI:107164>;
         dc:source           "MGI";
         dcterms:identifier  "MGI:107164";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2140/WP2140_rWP2140_r106868/DataNode/b3324>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2140_r106868> , <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/e85b5>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2140_r106868/DataNode/b3324>;
         foaf:page           <http://www.informatics.jax.org/marker/MGI:107164> .
+
+<https://identifiers.org/ensembl/ENSMUSG00000041380>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "Serotonin Receptor Htr2c";
+        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000041380>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSMUSG00000041380";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/b3c89> , <https://identifiers.org/wikipathways/WP2140_r106868> , <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/e8cc7> , <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/cf288> , <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/ida9ef1118> , <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/f2c8a>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2140_r106868/DataNode/c7fbb>;
+        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000041380> .
+
+<http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/id74d515b9>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2140_r106868>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2140_r106868/Interaction/id74d515b9>;
+        wp:participants   <https://identifiers.org/ensembl/ENSMUSG00000034997> , <https://identifiers.org/hmdb/HMDB0000259>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000259>;
+        wp:target         <https://identifiers.org/ensembl/ENSMUSG00000034997> .
+
+<https://identifiers.org/ensembl/ENSMUSG00000002771>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "Grin2d";
+        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000002771>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSMUSG00000002771";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2140_r106868>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2140_r106868/DataNode/b5126>;
+        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000002771> .
+
+<http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/f9ee0>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2140_r106868>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2140_r106868/Interaction/f9ee0>;
+        wp:participants   <https://identifiers.org/ensembl/ENSMUSG00000021721> , <https://identifiers.org/hmdb/HMDB0000259>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000259>;
+        wp:target         <https://identifiers.org/ensembl/ENSMUSG00000021721> .
+
+<https://identifiers.org/pubmed/20383137>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "20383137";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/c1685> , <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/ida9ef1118>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/20383137> .
+
+<https://identifiers.org/ensembl/ENSMUSG00000022602>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "Arc";
+        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000022602>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSMUSG00000022602";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/b260f> , <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/e8cc7> , <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/ecbb5> , <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/e85b5> , <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/id95666a2a> , <https://identifiers.org/wikipathways/WP2140_r106868> , <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/e35bb>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2140_r106868/DataNode/e1ad8>;
+        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000022602> .
+
+<https://identifiers.org/chebi/CHEBI:6123>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "ketanserin";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:6123>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:6123";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2140_r106868> , <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/bf87f> , <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/ide9f9b058> , <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/f2c8a>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2140_r106868/DataNode/a5d9d>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:6123> .
+
+<http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/b260f>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2140_r106868>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2140_r106868/Interaction/b260f>;
+        wp:participants   <https://identifiers.org/ensembl/ENSMUSG00000022602> , <https://identifiers.org/ensembl/ENSMUSG00000021721>;
+        wp:source         <https://identifiers.org/ensembl/ENSMUSG00000021721>;
+        wp:target         <https://identifiers.org/ensembl/ENSMUSG00000022602> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_10090>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "10090" .
+
+<http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/e35bb>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2140_r106868>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2140_r106868/Interaction/e35bb>;
+        wp:participants   <https://identifiers.org/ensembl/ENSMUSG00000020120> , <https://identifiers.org/ensembl/ENSMUSG00000022602>;
+        wp:source         <https://identifiers.org/ensembl/ENSMUSG00000022602>;
+        wp:target         <https://identifiers.org/ensembl/ENSMUSG00000020120> .
+
+<http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/c1685>
+        rdf:type            wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2140_r106868>;
+        dcterms:references  <https://identifiers.org/pubmed/20383137>;
+        cito:cites          <https://identifiers.org/pubmed/20383137>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2140_r106868/Interaction/c1685>;
+        wp:participants     <https://identifiers.org/ensembl/ENSMUSG00000034997> , <https://identifiers.org/ensembl/ENSMUSG00000018634>;
+        wp:source           <https://identifiers.org/ensembl/ENSMUSG00000018634>;
+        wp:target           <https://identifiers.org/ensembl/ENSMUSG00000034997> .
+
+<http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/ida9ef1118>
+        rdf:type            wp:Interaction , wp:DirectedInteraction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2140_r106868>;
+        dcterms:references  <https://identifiers.org/pubmed/20383137>;
+        cito:cites          <https://identifiers.org/pubmed/20383137>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2140_r106868/Interaction/ida9ef1118>;
+        wp:participants     <https://identifiers.org/ensembl/ENSMUSG00000041380> , <https://identifiers.org/ensembl/ENSMUSG00000018634>;
+        wp:source           <https://identifiers.org/ensembl/ENSMUSG00000018634>;
+        wp:target           <https://identifiers.org/ensembl/ENSMUSG00000041380> .
+
+<https://identifiers.org/ensembl/ENSMUSG00000020120>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "Plek";
+        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000020120>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSMUSG00000020120";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2140_r106868> , <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/e35bb>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2140_r106868/DataNode/d3ed4>;
+        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000020120> .
+
+<http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/e8cc7>
+        rdf:type            wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2140_r106868>;
+        dcterms:references  <https://identifiers.org/pubmed/20826676>;
+        cito:cites          <https://identifiers.org/pubmed/20826676>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2140_r106868/Interaction/e8cc7>;
+        wp:participants     <https://identifiers.org/ensembl/ENSMUSG00000041380> , <https://identifiers.org/ensembl/ENSMUSG00000022602>;
+        wp:source           <https://identifiers.org/ensembl/ENSMUSG00000041380>;
+        wp:target           <https://identifiers.org/ensembl/ENSMUSG00000022602> .
+
+<https://identifiers.org/ensembl/ENSMUSG00000018634>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "Crhr1";
+        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000018634>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSMUSG00000018634";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/idc753cc83> , <https://identifiers.org/wikipathways/WP2140_r106868> , <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/ida9ef1118> , <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/c1685>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2140_r106868/DataNode/a7ab4>;
+        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000018634> .
+
+<https://identifiers.org/ensembl/ENSMUSG00000034997>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "Serotonin Receptor Htr2a";
+        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000034997>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSMUSG00000034997";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/ide9f9b058> , <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/id74d515b9> , <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/ab144> , <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/id95666a2a> , <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/c1685> , <https://identifiers.org/wikipathways/WP2140_r106868>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2140_r106868/DataNode/aa494>;
+        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000034997> .
+
+<https://identifiers.org/uniprot/Q8CIT0>
+        rdf:type            wp:Protein , wp:DataNode;
+        rdfs:label          "CRF_MOUSE";
+        dc:identifier       <https://identifiers.org/uniprot/Q8CIT0>;
+        dc:source           "Uniprot-TrEMBL";
+        dcterms:identifier  "Q8CIT0";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/idc753cc83> , <https://identifiers.org/wikipathways/WP2140_r106868>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2140_r106868/DataNode/d6b29>;
+        foaf:page           <http://www.uniprot.org/uniprot/Q8CIT0> .
+
+<https://identifiers.org/hmdb/HMDB0000259>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Serotonin";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000259>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0000259";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/f9ee0> , <https://identifiers.org/wikipathways/WP2140_r106868> , <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/cf288> , <http://rdf.wikipathways.org/Pathway/WP2140_r106868/WP/Interaction/id74d515b9>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2140_r106868/DataNode/f1ee8>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000259> .
+
+<https://identifiers.org/wikipathways/WP2140>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP2140_r106868> .
+
+<https://identifiers.org/ensembl/ENSMUSG00000026173>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "Plcd4";
+        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000026173>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSMUSG00000026173";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2140_r106868>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2140_r106868/DataNode/e4d81>;
+        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000026173> .

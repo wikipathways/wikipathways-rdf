@@ -16,22 +16,39 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/c93fb>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/c93fb>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/e6d45>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/e6d45> .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/bb16b>
+        rdf:type          wp:Conversion , wp:Interaction , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/fe21d>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/bb16b>;
+        wp:participants   <https://identifiers.org/kegg.compound/C17237> , <https://identifiers.org/kegg.compound/C19714>;
+        wp:source         <https://identifiers.org/kegg.compound/C19714>;
+        wp:target         <https://identifiers.org/kegg.compound/C17237> .
+
 <https://identifiers.org/kegg.compound/C17238>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "S-(Hydroxyphenylacetothiohydroximoyl)-L-cysteine";
         dc:identifier       <https://identifiers.org/kegg.compound/C17238>;
         dc:source           "KEGG Compound";
         dcterms:identifier  "C17238";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/e48ac>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4598_r105283> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/f26b5> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/e4a04>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/e48ac>;
         foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C17238> .
 
 <https://identifiers.org/knapsack/C00000125>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "3-indolylmethyl glucosinolate";
         dc:identifier       <https://identifiers.org/knapsack/C00000125>;
         dc:source           "KNApSAcK";
         dcterms:identifier  "C00000125";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/c2d1f>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/e6d45> , <https://identifiers.org/wikipathways/WP4598_r105283> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/d9faf> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/cb618> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/d3777>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/c2d1f>;
         foaf:page           <http://kanaya.naist.jp/knapsack_jsp/information.jsp?word=C00000125> .
 
 <https://identifiers.org/kegg.compound/C00078>
@@ -40,8 +57,19 @@
         dc:identifier       <https://identifiers.org/kegg.compound/C00078>;
         dc:source           "KEGG Compound";
         dcterms:identifier  "C00078";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/a9fb1>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4598_r105283> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/ea513> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/a2bdf>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/a9fb1>;
         foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C00078> .
+
+<https://identifiers.org/kegg.compound/C17240>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "p-Hydroxybenzyldesulphoglucosinolate";
+        dc:identifier       <https://identifiers.org/kegg.compound/C17240>;
+        dc:source           "KEGG Compound";
+        dcterms:identifier  "C17240";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4598_r105283> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/ea5f3> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/b2cd5>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/bfe3a>;
+        foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C17240> .
 
 <https://identifiers.org/tair.locus/AT4G37400>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -49,26 +77,33 @@
         dc:identifier       <https://identifiers.org/tair.locus/AT4G37400>;
         dc:source           "TAIR";
         dcterms:identifier  "AT4G37400";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/cc127>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/cc127>;
         foaf:page           <http://arabidopsis.org/servlets/TairObject?type=locus&name=AT4G37400> .
 
-<https://identifiers.org/kegg.compound/C17240>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "p-Hydroxybenzyldesulphoglucosinolate";
-        dc:identifier       <https://identifiers.org/kegg.compound/C17240>;
-        dc:source           "KEGG Compound";
-        dcterms:identifier  "C17240";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/bfe3a>;
-        foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C17240> .
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/e6d59>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/e6d59>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/bca0d>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/bca0d> .
 
 <https://identifiers.org/tair.locus/IGMT1>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "indole glucosinolate methyltransferase";
         dc:identifier       <https://identifiers.org/tair.locus/IGMT1>;
         dc:source           "TAIR";
         dcterms:identifier  "IGMT1";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/d1ab5>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4598_r105283> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/b094c>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/d1ab5>;
         foaf:page           <http://arabidopsis.org/servlets/TairObject?type=locus&name=IGMT1> .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/ab1dc>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/ab1dc>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/f1585>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/f1585> .
 
 <https://identifiers.org/kegg.compound/C03719>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -76,7 +111,8 @@
         dc:identifier       <https://identifiers.org/kegg.compound/C03719>;
         dc:source           "KEGG Compound";
         dcterms:identifier  "C03719";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/ae0d3>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/f1585> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/be778> , <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/ae0d3>;
         foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C03719> .
 
 <https://identifiers.org/kegg.compound/C16518>
@@ -85,35 +121,87 @@
         dc:identifier       <https://identifiers.org/kegg.compound/C16518>;
         dc:source           "KEGG Compound";
         dcterms:identifier  "C16518";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/d33cc>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/e0c5c> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/dbc59> , <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/d33cc>;
         foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C16518> .
 
+<https://identifiers.org/pubmed/16367753>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "16367753";
+        dcterms:isPartOf    <https://identifiers.org/tair.locus/AT1G74100>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/16367753> .
+
 <https://identifiers.org/tair.locus/AT5G05260>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "CYP79A2";
         dc:identifier       <https://identifiers.org/tair.locus/AT5G05260>;
         dc:source           "TAIR";
         dcterms:identifier  "AT5G05260";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/bc2ee>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4598_r105283> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/b1a15>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/bc2ee>;
         foaf:page           <http://arabidopsis.org/servlets/TairObject?type=locus&name=AT5G05260> .
 
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/d9faf>
+        rdf:type          wp:Conversion , wp:Interaction , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/b3077>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/d9faf>;
+        wp:participants   <https://identifiers.org/knapsack/C00000125> , <https://identifiers.org/kegg.compound/C16517>;
+        wp:source         <https://identifiers.org/kegg.compound/C16517>;
+        wp:target         <https://identifiers.org/knapsack/C00000125> .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/c9abd>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/c9abd>;
+        wp:participants   <https://identifiers.org/kegg.compound/C00082>;
+        wp:target         <https://identifiers.org/kegg.compound/C00082> .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/b2cd5>
+        rdf:type          wp:Interaction , wp:Conversion , wp:DirectedInteraction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/d84c1> , <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/b2cd5>;
+        wp:participants   <https://identifiers.org/kegg.compound/C17239> , <https://identifiers.org/kegg.compound/C17240>;
+        wp:source         <https://identifiers.org/kegg.compound/C17239>;
+        wp:target         <https://identifiers.org/kegg.compound/C17240> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_3702>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "3702" .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/f7cff>
+        rdf:type          wp:DirectedInteraction , wp:Conversion , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/b1a15> , <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/f7cff>;
+        wp:participants   <https://identifiers.org/kegg.compound/C19714> , <https://identifiers.org/kegg.compound/C00079>;
+        wp:source         <https://identifiers.org/kegg.compound/C00079>;
+        wp:target         <https://identifiers.org/kegg.compound/C19714> .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/b5786>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/b094c> , <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/b5786>;
+        wp:participants   <https://identifiers.org/knapsack/C00000128> , <https://identifiers.org/knapsack/C00000127>;
+        wp:source         <https://identifiers.org/knapsack/C00000127>;
+        wp:target         <https://identifiers.org/knapsack/C00000128> .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/fdb94>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/fdb94>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/f26b5> , <https://identifiers.org/tair.locus/AT2G20610>;
+        wp:source         <https://identifiers.org/tair.locus/AT2G20610>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/f26b5> .
+
 <https://identifiers.org/kegg.compound/C17239>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "p-Hydroxyphenylacetothiohydroximate";
         dc:identifier       <https://identifiers.org/kegg.compound/C17239>;
         dc:source           "KEGG Compound";
         dcterms:identifier  "C17239";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/bccf7>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4598_r105283> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/b2cd5> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/f26b5>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/bccf7>;
         foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C17239> .
-
-<https://identifiers.org/knapsack/C00000126>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "1-Methoxy-3-indolylmethylglucosinolate";
-        dc:identifier       <https://identifiers.org/knapsack/C00000126>;
-        dc:source           "KNApSAcK";
-        dcterms:identifier  "C00000126";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/f2136>;
-        foaf:page           <http://kanaya.naist.jp/knapsack_jsp/information.jsp?word=C00000126> .
 
 <https://identifiers.org/kegg.compound/C08417>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -121,8 +209,35 @@
         dc:identifier       <https://identifiers.org/kegg.compound/C08417>;
         dc:source           "KEGG Compound";
         dcterms:identifier  "C08417";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/bc5ba>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/ccef6> , <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/bc5ba>;
         foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C08417> .
+
+<https://identifiers.org/knapsack/C00000126>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "1-Methoxy-3-indolylmethylglucosinolate";
+        dc:identifier       <https://identifiers.org/knapsack/C00000126>;
+        dc:source           "KNApSAcK";
+        dcterms:identifier  "C00000126";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/d79ca> , <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/f2136>;
+        foaf:page           <http://kanaya.naist.jp/knapsack_jsp/information.jsp?word=C00000126> .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/dbc59>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/b0a30>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/dbc59>;
+        wp:participants   <https://identifiers.org/kegg.compound/C16518> , <https://identifiers.org/kegg.compound/C16516>;
+        wp:source         <https://identifiers.org/kegg.compound/C16518>;
+        wp:target         <https://identifiers.org/kegg.compound/C16516> .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/a67f2>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/a67f2>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/ea5f3> , <https://identifiers.org/tair.locus/AT1G74100>;
+        wp:source         <https://identifiers.org/tair.locus/AT1G74100>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/ea5f3> .
 
 <https://identifiers.org/kegg.compound/C00079>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -130,8 +245,28 @@
         dc:identifier       <https://identifiers.org/kegg.compound/C00079>;
         dc:source           "KEGG Compound";
         dcterms:identifier  "C00079";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/cfa81>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/f7cff> , <https://identifiers.org/wikipathways/WP4598_r105283> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/b3ec4> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/ide1184523>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/cfa81>;
         foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C00079> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4598&oldid=r105283>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/f990e>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/f990e>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/b11a2>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/b11a2> .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/b57d7>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/b57d7>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/ee6f0> , <https://identifiers.org/kegg.genes/K13027>;
+        wp:source         <https://identifiers.org/kegg.genes/K13027>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/ee6f0> .
 
 <https://identifiers.org/kegg.compound/C04350>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -139,8 +274,32 @@
         dc:identifier       <https://identifiers.org/kegg.compound/C04350>;
         dc:source           "KEGG Compound";
         dcterms:identifier  "C04350";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/b94b9>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/ee6f0> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/e4a04> , <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/b94b9>;
         foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C04350> .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/ba7a3>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/ba7a3>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/c6c78>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/c6c78> .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/d79ca>
+        rdf:type          wp:Conversion , wp:Interaction , wp:DirectedInteraction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/f3132> , <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/d79ca>;
+        wp:participants   <https://identifiers.org/knapsack/C00000126> , <https://identifiers.org/pubchem.compound/123131529>;
+        wp:source         <https://identifiers.org/pubchem.compound/123131529>;
+        wp:target         <https://identifiers.org/knapsack/C00000126> .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/c4455>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/c4455>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/be778> , <https://identifiers.org/tair.locus/AT1G24100>;
+        wp:source         <https://identifiers.org/tair.locus/AT1G24100>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/be778> .
 
 <https://identifiers.org/knapsack/C00000127>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -148,8 +307,22 @@
         dc:identifier       <https://identifiers.org/knapsack/C00000127>;
         dc:source           "KNApSAcK";
         dcterms:identifier  "C00000127";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/fd111>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4598_r105283> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/b5786> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/cb618>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/fd111>;
         foaf:page           <http://kanaya.naist.jp/knapsack_jsp/information.jsp?word=C00000127> .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/b11a2>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/f990e>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/b11a2> .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/e529c>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/e529c>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/e4a04> , <https://identifiers.org/tair.locus/AT4G31500>;
+        wp:source         <https://identifiers.org/tair.locus/AT4G31500>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/e4a04> .
 
 <https://identifiers.org/tair.locus/AT5G57220>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -157,19 +330,25 @@
         dc:identifier       <https://identifiers.org/tair.locus/AT5G57220>;
         dc:source           "TAIR";
         dcterms:identifier  "AT5G57220";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/a212f>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/a212f>;
         foaf:page           <http://arabidopsis.org/servlets/TairObject?type=locus&name=AT5G57220> .
 
-<https://identifiers.org/wikipathways/WP4598/WP4598_rWP4598_r105283>
-        rdf:type             wp:Pathway , skos:Collection;
-        dc:identifier        <https://identifiers.org/wikipathways/WP4598/WP4598>;
-        dc:source            "WikiPathways";
-        dc:title             "Glucosinolate biosynthesis (from aromatic amino acid)"@en;
-        dcterms:description  "This pathway describes the glucosinolate derived from aromatic amino acid (Phe, Tyr, Trp) in Arabidopsis thaliana. This is based on the KEGG pathway and PlantCyc.\n\nSome pathway entities are unknown and being investigated, these are denoted as \"Catalyst\" and \"Metabolite\" for now.";
-        dcterms:identifier   "WP4598/WP4598";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283>;
-        wp:organismName      "Arabidopsis thaliana";
-        foaf:page            <http://www.wikipathways.org/instance/WP4598/WP4598_rWP4598_r105283> .
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/fe21d>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/fe21d>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/bb16b> , <https://identifiers.org/tair.locus/AT4G31500>;
+        wp:source         <https://identifiers.org/tair.locus/AT4G31500>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/bb16b> .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/f1585>
+        rdf:type          wp:DirectedInteraction , wp:Conversion , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/ab1dc> , <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/f1585>;
+        wp:participants   <https://identifiers.org/kegg.compound/C17237> , <https://identifiers.org/kegg.compound/C03719>;
+        wp:source         <https://identifiers.org/kegg.compound/C17237>;
+        wp:target         <https://identifiers.org/kegg.compound/C03719> .
 
 <https://identifiers.org/tair.locus/AT4G37430>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -177,8 +356,42 @@
         dc:identifier       <https://identifiers.org/tair.locus/AT4G37430>;
         dc:source           "TAIR";
         dcterms:identifier  "AT4G37430";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/d3dde>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/d3dde>;
         foaf:page           <http://arabidopsis.org/servlets/TairObject?type=locus&name=AT4G37430> .
+
+<https://identifiers.org/wikipathways/WP4598_r105283>
+        rdf:type               wp:Pathway , skos:Collection;
+        dc:identifier          <https://identifiers.org/wikipathways/WP4598>;
+        dc:source              "WikiPathways";
+        dc:title               "Glucosinolate biosynthesis (from aromatic amino acid)"@en;
+        dcterms:description    "This pathway describes the glucosinolate derived from aromatic amino acid (Phe, Tyr, Trp) in Arabidopsis thaliana. This is based on the KEGG pathway and PlantCyc.\n\nSome pathway entities are unknown and being investigated, these are denoted as \"Catalyst\" and \"Metabolite\" for now.";
+        dcterms:identifier     "WP4598";
+        dcterms:references     <https://identifiers.org/pubmed/22303260>;
+        cito:cites             <https://identifiers.org/pubmed/16367753> , <https://identifiers.org/pubmed/22303260> , <https://identifiers.org/pubmed/19077143> , <https://identifiers.org/pubmed/15584955>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4598_r105283>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000002>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_3702>;
+        wp:organismName        "Arabidopsis thaliana";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000002>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4598&oldid=r105283> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4598&oldid=r105283>;
+        foaf:page              <http://www.wikipathways.org/instance/WP4598_r105283> .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/adb6d>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/adb6d>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/a1ef8> , <https://identifiers.org/tair.locus/AT1G24100>;
+        wp:source         <https://identifiers.org/tair.locus/AT1G24100>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/a1ef8> .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/b3077>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/b3077>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/d9faf> , <https://identifiers.org/tair.locus/AT1G74100>;
+        wp:source         <https://identifiers.org/tair.locus/AT1G74100>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/d9faf> .
 
 <https://identifiers.org/tair.locus/AT4G31500>
         rdf:type            wp:DataNode , wp:GeneProduct;
@@ -186,26 +399,68 @@
         dc:identifier       <https://identifiers.org/tair.locus/AT4G31500>;
         dc:source           "TAIR";
         dcterms:identifier  "AT4G31500";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/f9b5b> , <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/f2a1a> , <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/e4049>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/a7526> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/fe21d> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/e529c> , <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/f2a1a> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/e4049> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/f9b5b>;
         foaf:page           <http://arabidopsis.org/servlets/TairObject?type=locus&name=AT4G31500> .
 
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/a7526>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/a7526>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/e0c5c> , <https://identifiers.org/tair.locus/AT4G31500>;
+        wp:source         <https://identifiers.org/tair.locus/AT4G31500>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/e0c5c> .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/c149f>
+        rdf:type          wp:Interaction , wp:DirectedInteraction , wp:Conversion;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/d85c0> , <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/c149f>;
+        wp:participants   <https://identifiers.org/kegg.compound/C01069> , <https://identifiers.org/chebi/CHEBI:17127>;
+        wp:source         <https://identifiers.org/kegg.compound/C01069>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:17127> .
+
 <https://identifiers.org/kegg.compound/C00082>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "L-Tyrosine";
         dc:identifier       <https://identifiers.org/kegg.compound/C00082>;
         dc:source           "KEGG Compound";
         dcterms:identifier  "C00082";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/ba214>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4598_r105283> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/c9abd> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/ee6f0>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/ba214>;
         foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C00082> .
 
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/fa632>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/fa632>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/d3777> , <https://identifiers.org/tair.locus/AT4G37410>;
+        wp:source         <https://identifiers.org/tair.locus/AT4G37410>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/d3777> .
+
 <https://identifiers.org/pubchem.compound/123131529>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "1-Hydroxy-3-indolylmethylglucosinolate";
         dc:identifier       <https://identifiers.org/pubchem.compound/123131529>;
         dc:source           "PubChem-compound";
         dcterms:identifier  "123131529";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/e59be>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/d79ca> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/d3777> , <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/e59be>;
         foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=123131529> .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/ee6f0>
+        rdf:type          wp:Interaction , wp:DirectedInteraction , wp:Conversion;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/b57d7>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/ee6f0>;
+        wp:participants   <https://identifiers.org/kegg.compound/C04350> , <https://identifiers.org/kegg.compound/C00082>;
+        wp:source         <https://identifiers.org/kegg.compound/C00082>;
+        wp:target         <https://identifiers.org/kegg.compound/C04350> .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/bca0d>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/e6d59>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/bca0d>;
+        wp:participants   <https://identifiers.org/kegg.compound/C17236>;
+        wp:source         <https://identifiers.org/kegg.compound/C17236> .
 
 <https://identifiers.org/kegg.compound/C08426>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -213,26 +468,69 @@
         dc:identifier       <https://identifiers.org/kegg.compound/C08426>;
         dc:source           "KEGG Compound";
         dcterms:identifier  "C08426";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/c3478>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4598_r105283> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/ea5f3>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/c3478>;
         foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C08426> .
 
 <https://identifiers.org/kegg.compound/C17235>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "L-Homophenylalanine";
         dc:identifier       <https://identifiers.org/kegg.compound/C17235>;
         dc:source           "KEGG Compound";
         dcterms:identifier  "C17235";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/cbdaa>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/c6c78> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/b3ec4> , <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/cbdaa>;
         foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C17235> .
 
+<https://identifiers.org/pubmed/15584955>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "15584955";
+        dcterms:isPartOf    <https://identifiers.org/tair.locus/AT1G24100>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/15584955> .
+
 <https://identifiers.org/tair.locus/AT4G37410>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "CYP81F4";
         dc:identifier       <https://identifiers.org/tair.locus/AT4G37410>;
         dc:source           "TAIR";
         dcterms:identifier  "AT4G37410";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/e6a52>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/fa632> , <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/e6a52>;
         foaf:page           <http://arabidopsis.org/servlets/TairObject?type=locus&name=AT4G37410> .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/ea5f3>
+        rdf:type          wp:Interaction , wp:DirectedInteraction , wp:Conversion;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/a67f2>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/ea5f3>;
+        wp:participants   <https://identifiers.org/kegg.compound/C08426> , <https://identifiers.org/kegg.compound/C17240>;
+        wp:source         <https://identifiers.org/kegg.compound/C17240>;
+        wp:target         <https://identifiers.org/kegg.compound/C08426> .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/ea513>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/ea513>;
+        wp:participants   <https://identifiers.org/kegg.compound/C02937> , <https://identifiers.org/kegg.compound/C00078>;
+        wp:source         <https://identifiers.org/kegg.compound/C00078>;
+        wp:target         <https://identifiers.org/kegg.compound/C02937> .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/d3777>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/fa632>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/d3777>;
+        wp:participants   <https://identifiers.org/knapsack/C00000125> , <https://identifiers.org/pubchem.compound/123131529>;
+        wp:source         <https://identifiers.org/knapsack/C00000125>;
+        wp:target         <https://identifiers.org/pubchem.compound/123131529> .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/b80d8>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/f0b4e>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/b80d8> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4598&oldid=r105283>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
 
 <https://identifiers.org/knapsack/C00000128>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -240,8 +538,24 @@
         dc:identifier       <https://identifiers.org/knapsack/C00000128>;
         dc:source           "KNApSAcK";
         dcterms:identifier  "C00000128";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/d5c14>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/b5786> , <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/d5c14>;
         foaf:page           <http://kanaya.naist.jp/knapsack_jsp/information.jsp?word=C00000128> .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/f0b4e>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/f0b4e>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/b80d8>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/b80d8> .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/f26b5>
+        rdf:type          wp:DirectedInteraction , wp:Conversion , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/fdb94> , <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/f26b5>;
+        wp:participants   <https://identifiers.org/kegg.compound/C17239> , <https://identifiers.org/kegg.compound/C17238>;
+        wp:source         <https://identifiers.org/kegg.compound/C17238>;
+        wp:target         <https://identifiers.org/kegg.compound/C17239> .
 
 <https://identifiers.org/tair.locus/AT2G20610>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -249,7 +563,8 @@
         dc:identifier       <https://identifiers.org/tair.locus/AT2G20610>;
         dc:source           "TAIR";
         dcterms:identifier  "AT2G20610";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/e9af9> , <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/e8612>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/fdb94> , <https://identifiers.org/wikipathways/WP4598_r105283> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/b0a30>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/e9af9> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/e8612>;
         foaf:page           <http://arabidopsis.org/servlets/TairObject?type=locus&name=AT2G20610> .
 
 <https://identifiers.org/tair.locus/AT1G74100>
@@ -258,7 +573,10 @@
         dc:identifier       <https://identifiers.org/tair.locus/AT1G74100>;
         dc:source           "TAIR";
         dcterms:identifier  "AT1G74100";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/ff06b> , <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/b31ea> , <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/df70c>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/b3077> , <https://identifiers.org/wikipathways/WP4598_r105283> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/a67f2> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/d85c0>;
+        dcterms:references  <https://identifiers.org/pubmed/19077143> , <https://identifiers.org/pubmed/16367753>;
+        cito:cites          <https://identifiers.org/pubmed/19077143> , <https://identifiers.org/pubmed/16367753>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/df70c> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/ff06b> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/b31ea>;
         foaf:page           <http://arabidopsis.org/servlets/TairObject?type=locus&name=AT1G74100> .
 
 <https://identifiers.org/tair.locus/AT2G22330>
@@ -267,8 +585,17 @@
         dc:identifier       <https://identifiers.org/tair.locus/AT2G22330>;
         dc:source           "TAIR";
         dcterms:identifier  "AT2G22330";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/dbfce>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/dbfce>;
         foaf:page           <http://arabidopsis.org/servlets/TairObject?type=locus&name=AT2G22330> .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/e4a04>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/e529c>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/e4a04>;
+        wp:participants   <https://identifiers.org/kegg.compound/C17238> , <https://identifiers.org/kegg.compound/C04350>;
+        wp:source         <https://identifiers.org/kegg.compound/C04350>;
+        wp:target         <https://identifiers.org/kegg.compound/C17238> .
 
 <https://identifiers.org/kegg.compound/C02937>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -276,8 +603,25 @@
         dc:identifier       <https://identifiers.org/kegg.compound/C02937>;
         dc:source           "KEGG Compound";
         dcterms:identifier  "C02937";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/f54f2>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/e0c5c> , <https://identifiers.org/wikipathways/WP4598_r105283> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/ea513>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/f54f2>;
         foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C02937> .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/be778>
+        rdf:type          wp:Interaction , wp:DirectedInteraction , wp:Conversion;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/c4455> , <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/be778>;
+        wp:participants   <https://identifiers.org/kegg.compound/C03719> , <https://identifiers.org/kegg.compound/C01069>;
+        wp:source         <https://identifiers.org/kegg.compound/C03719>;
+        wp:target         <https://identifiers.org/kegg.compound/C01069> .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/a1ef8>
+        rdf:type          wp:Interaction , wp:DirectedInteraction , wp:Conversion;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/adb6d> , <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/a1ef8>;
+        wp:participants   <https://identifiers.org/kegg.compound/C16516> , <https://identifiers.org/kegg.compound/C16517>;
+        wp:source         <https://identifiers.org/kegg.compound/C16516>;
+        wp:target         <https://identifiers.org/kegg.compound/C16517> .
 
 <https://identifiers.org/kegg.compound/C17236>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -285,8 +629,63 @@
         dc:identifier       <https://identifiers.org/kegg.compound/C17236>;
         dc:source           "KEGG Compound";
         dcterms:identifier  "C17236";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/dccd6>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/c6c78> , <https://identifiers.org/wikipathways/WP4598_r105283> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/bca0d>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/dccd6>;
         foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C17236> .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/c6c78>
+        rdf:type          wp:Interaction , wp:DirectedInteraction , wp:Conversion;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/ba7a3>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/c6c78>;
+        wp:participants   <https://identifiers.org/kegg.compound/C17235> , <https://identifiers.org/kegg.compound/C17236>;
+        wp:source         <https://identifiers.org/kegg.compound/C17235>;
+        wp:target         <https://identifiers.org/kegg.compound/C17236> .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/d85c0>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/d85c0>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/c149f> , <https://identifiers.org/tair.locus/AT1G74100>;
+        wp:source         <https://identifiers.org/tair.locus/AT1G74100>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/c149f> .
+
+<https://identifiers.org/pubmed/19077143>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "19077143";
+        dcterms:isPartOf    <https://identifiers.org/tair.locus/AT1G74100>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/19077143> .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/f3132>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/f3132>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/d79ca> , <https://identifiers.org/tair.locus/IGMT5>;
+        wp:source         <https://identifiers.org/tair.locus/IGMT5>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/d79ca> .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/fc4a5>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/fc4a5>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/ccef6>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/ccef6> .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/cb618>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/cb618>;
+        wp:participants   <https://identifiers.org/knapsack/C00000127> , <https://identifiers.org/knapsack/C00000125>;
+        wp:source         <https://identifiers.org/knapsack/C00000125>;
+        wp:target         <https://identifiers.org/knapsack/C00000127> .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/b3ec4>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/b3ec4>;
+        wp:participants   <https://identifiers.org/kegg.compound/C17235> , <https://identifiers.org/kegg.compound/C00079>;
+        wp:source         <https://identifiers.org/kegg.compound/C00079>;
+        wp:target         <https://identifiers.org/kegg.compound/C17235> .
 
 <https://identifiers.org/tair.locus/AT4G39950>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -294,26 +693,39 @@
         dc:identifier       <https://identifiers.org/tair.locus/AT4G39950>;
         dc:source           "TAIR";
         dcterms:identifier  "AT4G39950";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/b06d2>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/b06d2>;
         foaf:page           <http://arabidopsis.org/servlets/TairObject?type=locus&name=AT4G39950> .
 
 <https://identifiers.org/tair.locus/AT1G24100>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "UGT74B1";
         dc:identifier       <https://identifiers.org/tair.locus/AT1G24100>;
         dc:source           "TAIR";
         dcterms:identifier  "AT1G24100";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/dadc0> , <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/e7f2d>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4598_r105283> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/adb6d> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/c4455>;
+        dcterms:references  <https://identifiers.org/pubmed/15584955>;
+        cito:cites          <https://identifiers.org/pubmed/15584955>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/dadc0> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/e7f2d>;
         foaf:page           <http://arabidopsis.org/servlets/TairObject?type=locus&name=AT1G24100> .
 
 <https://identifiers.org/kegg.compound/C16516>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "Indolylmethylthiohydroximate";
         dc:identifier       <https://identifiers.org/kegg.compound/C16516>;
         dc:source           "KEGG Compound";
         dcterms:identifier  "C16516";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/ca772>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/a1ef8> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/dbc59> , <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/ca772>;
         foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C16516> .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/e0c5c>
+        rdf:type          wp:DirectedInteraction , wp:Interaction , wp:Conversion;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/a7526>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/e0c5c>;
+        wp:participants   <https://identifiers.org/kegg.compound/C02937> , <https://identifiers.org/kegg.compound/C16518>;
+        wp:source         <https://identifiers.org/kegg.compound/C02937>;
+        wp:target         <https://identifiers.org/kegg.compound/C16518> .
 
 <https://identifiers.org/kegg.genes/K13027>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -321,7 +733,8 @@
         dc:identifier       <https://identifiers.org/kegg.genes/K13027>;
         dc:source           "KEGG Genes";
         dcterms:identifier  "K13027";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/c32ba>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/b57d7> , <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/c32ba>;
         foaf:page           <http://www.genome.jp/dbget-bin/www_bget?K13027> .
 
 <https://identifiers.org/chebi/CHEBI:17127>
@@ -330,50 +743,125 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:17127>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:17127";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/f666f>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/c149f> , <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/f666f>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17127> .
 
+<https://identifiers.org/wikipathways/WP4598>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP4598_r105283> .
+
 <https://identifiers.org/tair.locus/IGMT5>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "O-methyltransferase";
         dc:identifier       <https://identifiers.org/tair.locus/IGMT5>;
         dc:source           "TAIR";
         dcterms:identifier  "IGMT5";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/ea5bd>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4598_r105283> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/f3132>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/ea5bd>;
         foaf:page           <http://arabidopsis.org/servlets/TairObject?type=locus&name=IGMT5> .
 
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/b094c>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/b094c>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/b5786> , <https://identifiers.org/tair.locus/IGMT1>;
+        wp:source         <https://identifiers.org/tair.locus/IGMT1>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/b5786> .
+
 <https://identifiers.org/kegg.compound/C19714>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "(E)-Phenylacetaldoxime";
         dc:identifier       <https://identifiers.org/kegg.compound/C19714>;
         dc:source           "KEGG Compound";
         dcterms:identifier  "C19714";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/d7e68>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/bb16b> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/f7cff> , <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/d7e68>;
         foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C19714> .
 
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/b0a30>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/b0a30>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/dbc59> , <https://identifiers.org/tair.locus/AT2G20610>;
+        wp:source         <https://identifiers.org/tair.locus/AT2G20610>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/dbc59> .
+
+<https://identifiers.org/pubmed/22303260>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "22303260";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4598_r105283>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/22303260> .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/ide1184523>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/ide1184523>;
+        wp:participants   <https://identifiers.org/kegg.compound/C00079>;
+        wp:target         <https://identifiers.org/kegg.compound/C00079> .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/d84c1>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/d84c1>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/b2cd5>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/b2cd5> .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/a2bdf>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/a2bdf>;
+        wp:participants   <https://identifiers.org/kegg.compound/C00078>;
+        wp:target         <https://identifiers.org/kegg.compound/C00078> .
+
 <https://identifiers.org/kegg.compound/C17237>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "S-(Phenylacetothiohydroximoyl)-L-cysteine";
         dc:identifier       <https://identifiers.org/kegg.compound/C17237>;
         dc:source           "KEGG Compound";
         dcterms:identifier  "C17237";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/c2637>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/bb16b> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/f1585> , <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/c2637>;
         foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C17237> .
 
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/b1a15>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/b1a15>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/f7cff> , <https://identifiers.org/tair.locus/AT5G05260>;
+        wp:source         <https://identifiers.org/tair.locus/AT5G05260>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/f7cff> .
+
 <https://identifiers.org/kegg.compound/C01069>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "Desulfoglucotropeolin";
         dc:identifier       <https://identifiers.org/kegg.compound/C01069>;
         dc:source           "KEGG Compound";
         dcterms:identifier  "C01069";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/d9b4a>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/be778> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/c149f> , <https://identifiers.org/wikipathways/WP4598_r105283>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/d9b4a>;
         foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C01069> .
 
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/ccef6>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/fc4a5>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/ccef6>;
+        wp:participants   <https://identifiers.org/kegg.compound/C08417>;
+        wp:target         <https://identifiers.org/kegg.compound/C08417> .
+
+<http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/e6d45>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4598_r105283> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/c93fb>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4598_r105283/Interaction/e6d45>;
+        wp:participants   <https://identifiers.org/knapsack/C00000125>;
+        wp:source         <https://identifiers.org/knapsack/C00000125> .
+
 <https://identifiers.org/kegg.compound/C16517>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "Indolylmethyl-desulfoglucosinolate";
         dc:identifier       <https://identifiers.org/kegg.compound/C16517>;
         dc:source           "KEGG Compound";
         dcterms:identifier  "C16517";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598/WP4598_rWP4598_r105283/DataNode/b60f6>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/d9faf> , <https://identifiers.org/wikipathways/WP4598_r105283> , <http://rdf.wikipathways.org/Pathway/WP4598_r105283/WP/Interaction/a1ef8>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4598_r105283/DataNode/b60f6>;
         foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C16517> .

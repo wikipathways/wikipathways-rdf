@@ -16,34 +16,87 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/wikipathways/WP2645/WP2645_rWP2645_r123107>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP2645/WP2645>;
-        dc:source            "WikiPathways";
-        dc:title             "Heroin metabolism"@en;
-        dcterms:description  "Pathway complementing the morphine metabolism pathway around heroin. The catalytic efficiency is substantially greater for CES2 (a.k.a. hCE-2) compared to other esterases.";
-        dcterms:identifier   "WP2645/WP2645";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP2645/WP2645_rWP2645_r123107>;
-        wp:organismName      "Homo sapiens";
-        foaf:page            <http://www.wikipathways.org/instance/WP2645/WP2645_rWP2645_r123107> .
+<http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/ide473476>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2645_r123107>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2645_r123107/Interaction/ide473476>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/id3ad34204> , <https://identifiers.org/ensembl/ENSG00000198848>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000198848>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/id3ad34204> .
 
-<https://identifiers.org/wikipathways/WP1604>
-        rdf:type            wp:Pathway , wp:DataNode;
-        rdfs:label          "morphine metabolism";
-        dc:identifier       <https://identifiers.org/wikipathways/WP1604>;
-        dc:source           "WikiPathways";
-        dcterms:identifier  "WP1604";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2645/WP2645_rWP2645_r123107/DataNode/a7fb5>;
-        foaf:page           <https://www.wikipathways.org/instance/WP1604> .
+<http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/idee25ceb0>
+        rdf:type            wp:Conversion , wp:Interaction , wp:DirectedInteraction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2645_r123107> , <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/id294e530e>;
+        dcterms:references  <https://identifiers.org/pubmed/20649590>;
+        cito:cites          <https://identifiers.org/pubmed/20649590>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2645_r123107/Interaction/idee25ceb0>;
+        wp:participants     <https://identifiers.org/chebi/CHEBI:27808> , <https://identifiers.org/pubchem.compound/5462507>;
+        wp:source           <https://identifiers.org/chebi/CHEBI:27808>;
+        wp:target           <https://identifiers.org/pubchem.compound/5462507> .
 
-<https://identifiers.org/ensembl/ENSG00000198848>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "CES1";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000198848>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000198848";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2645/WP2645_rWP2645_r123107/DataNode/c446d>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000198848> .
+<http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/id8f564c1a>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2645_r123107>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2645_r123107/Interaction/id8f564c1a>;
+        wp:participants   <https://identifiers.org/wikipathways/WP1604> , <https://identifiers.org/chebi/CHEBI:17303>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:17303>;
+        wp:target         <https://identifiers.org/wikipathways/WP1604> .
+
+<http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/ab19c>
+        rdf:type            wp:Catalysis , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2645_r123107>;
+        dcterms:references  <https://identifiers.org/pubmed/16778732>;
+        cito:cites          <https://identifiers.org/pubmed/16778732>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2645_r123107/Interaction/ab19c>;
+        wp:participants     <https://identifiers.org/ensembl/ENSG00000172831> , <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/id3ad34204>;
+        wp:source           <https://identifiers.org/ensembl/ENSG00000172831>;
+        wp:target           <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/id3ad34204> .
+
+<http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/id294e530e>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2645_r123107>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2645_r123107/Interaction/id294e530e>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/idee25ceb0> , <https://identifiers.org/ensembl/ENSG00000198848>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000198848>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/idee25ceb0> .
+
+<http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/id3ad34204>
+        rdf:type            wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2645_r123107> , <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/ab19c> , <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/b2a47> , <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/ide473476>;
+        dcterms:references  <https://identifiers.org/pubmed/12773168>;
+        cito:cites          <https://identifiers.org/pubmed/12773168>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2645_r123107/Interaction/id3ad34204>;
+        wp:participants     <https://identifiers.org/chebi/CHEBI:17303> , <https://identifiers.org/pubchem.compound/5462507>;
+        wp:source           <https://identifiers.org/pubchem.compound/5462507>;
+        wp:target           <https://identifiers.org/chebi/CHEBI:17303> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_9606>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9606" .
+
+<https://identifiers.org/pubmed/16778732>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "16778732";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/b2a47> , <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/ab19c> , <https://identifiers.org/ensembl/ENSG00000114200> , <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/ba6b3> , <https://identifiers.org/ensembl/ENSG00000172831> , <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/c693b>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/16778732> .
+
+<https://identifiers.org/wikipathways/WP2645_r123107>
+        rdf:type               wp:Pathway , skos:Collection;
+        dc:identifier          <https://identifiers.org/wikipathways/WP2645>;
+        dc:source              "WikiPathways";
+        dc:title               "Heroin metabolism"@en;
+        dcterms:description    "Pathway complementing the morphine metabolism pathway around heroin. The catalytic efficiency is substantially greater for CES2 (a.k.a. hCE-2) compared to other esterases.";
+        dcterms:identifier     "WP2645";
+        dcterms:references     <https://identifiers.org/pubmed/2420426>;
+        cito:cites             <https://identifiers.org/pubmed/20649590> , <https://identifiers.org/pubmed/2420426> , <https://identifiers.org/pubmed/12773168> , <https://identifiers.org/pubmed/16778732>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP2645_r123107>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0001229> , <http://purl.obolibrary.org/obo/PW_0002558> , <http://purl.obolibrary.org/obo/PW_0000754>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606>;
+        wp:organismName        "Homo sapiens";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0002558> , <http://purl.obolibrary.org/obo/PW_0000754> , <http://purl.obolibrary.org/obo/PW_0001229>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP2645&oldid=r123107> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP2645&oldid=r123107>;
+        foaf:page              <http://www.wikipathways.org/instance/WP2645_r123107> .
 
 <https://identifiers.org/ensembl/ENSG00000172831>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -51,17 +104,76 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000172831>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000172831";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2645/WP2645_rWP2645_r123107/DataNode/fe3b3> , <http://rdf.wikipathways.org/Pathway/WP2645/WP2645_rWP2645_r123107/DataNode/ec2c5>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/ab19c> , <https://identifiers.org/wikipathways/WP2645_r123107> , <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/id827ed290>;
+        dcterms:references  <https://identifiers.org/pubmed/16778732>;
+        cito:cites          <https://identifiers.org/pubmed/16778732>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2645_r123107/DataNode/fe3b3> , <http://rdf.wikipathways.org/Pathway/WP2645_r123107/DataNode/ec2c5>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000172831> .
 
-<https://identifiers.org/chebi/CHEBI:27808>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "heroin";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:27808>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:27808";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2645/WP2645_rWP2645_r123107/DataNode/cdf04>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:27808> .
+<http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/id827ed290>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2645_r123107>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2645_r123107/Interaction/id827ed290>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/id295fda1b> , <https://identifiers.org/ensembl/ENSG00000172831>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000172831>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/id295fda1b> .
+
+<http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/b2a47>
+        rdf:type            wp:Catalysis , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2645_r123107>;
+        dcterms:references  <https://identifiers.org/pubmed/16778732>;
+        cito:cites          <https://identifiers.org/pubmed/16778732>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2645_r123107/Interaction/b2a47>;
+        wp:participants     <https://identifiers.org/ensembl/ENSG00000114200> , <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/id3ad34204>;
+        wp:source           <https://identifiers.org/ensembl/ENSG00000114200>;
+        wp:target           <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/id3ad34204> .
+
+<https://identifiers.org/pubchem.compound/5462507>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "6-acetylmorphine";
+        dc:identifier       <https://identifiers.org/pubchem.compound/5462507>;
+        dc:source           "PubChem-compound";
+        dcterms:identifier  "5462507";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/idee25ceb0> , <https://identifiers.org/wikipathways/WP2645_r123107> , <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/id295fda1b> , <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/c693b> , <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/id3ad34204>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2645_r123107/DataNode/cfe59>;
+        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=5462507> .
+
+<https://identifiers.org/wikipathways/WP2645>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP2645_r123107> .
+
+<https://identifiers.org/pubmed/20649590>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "20649590";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/idee25ceb0> , <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/id295fda1b>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/20649590> .
+
+<https://identifiers.org/pubmed/12773168>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "12773168";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/id3ad34204> , <https://identifiers.org/ensembl/ENSG00000198848>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/12773168> .
+
+<http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/c693b>
+        rdf:type            wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/e047a> , <https://identifiers.org/wikipathways/WP2645_r123107>;
+        dcterms:references  <https://identifiers.org/pubmed/16778732>;
+        cito:cites          <https://identifiers.org/pubmed/16778732>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2645_r123107/Interaction/c693b>;
+        wp:participants     <https://identifiers.org/chebi/CHEBI:27808> , <https://identifiers.org/pubchem.compound/5462507>;
+        wp:source           <https://identifiers.org/chebi/CHEBI:27808>;
+        wp:target           <https://identifiers.org/pubchem.compound/5462507> .
+
+<https://identifiers.org/wikipathways/WP1604>
+        rdf:type            wp:Pathway , wp:DataNode;
+        rdfs:label          "morphine metabolism";
+        dc:identifier       <https://identifiers.org/wikipathways/WP1604>;
+        dc:source           "WikiPathways";
+        dcterms:identifier  "WP1604";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/id8f564c1a> , <https://identifiers.org/wikipathways/WP2645_r123107>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2645_r123107/DataNode/a7fb5>;
+        foaf:page           <https://www.wikipathways.org/instance/WP1604> .
 
 <https://identifiers.org/ensembl/ENSG00000114200>
         rdf:type            wp:Protein , wp:DataNode;
@@ -69,23 +181,83 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000114200>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000114200";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2645/WP2645_rWP2645_r123107/DataNode/a5b38> , <http://rdf.wikipathways.org/Pathway/WP2645/WP2645_rWP2645_r123107/DataNode/b4932>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/e047a> , <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/b2a47> , <https://identifiers.org/wikipathways/WP2645_r123107>;
+        dcterms:references  <https://identifiers.org/pubmed/16778732>;
+        cito:cites          <https://identifiers.org/pubmed/16778732>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2645_r123107/DataNode/a5b38> , <http://rdf.wikipathways.org/Pathway/WP2645_r123107/DataNode/b4932>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000114200> .
 
-<https://identifiers.org/chebi/CHEBI:17303>
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP2645&oldid=r123107>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<https://identifiers.org/pubmed/2420426>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "2420426";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2645_r123107>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/2420426> .
+
+<http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/e047a>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2645_r123107>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2645_r123107/Interaction/e047a>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/c693b> , <https://identifiers.org/ensembl/ENSG00000114200>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000114200>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/c693b> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP2645&oldid=r123107>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/ba6b3>
+        rdf:type            wp:Interaction , wp:DirectedInteraction , wp:Conversion;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2645_r123107>;
+        dcterms:references  <https://identifiers.org/pubmed/16778732>;
+        cito:cites          <https://identifiers.org/pubmed/16778732>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2645_r123107/Interaction/ba6b3>;
+        wp:participants     <https://identifiers.org/chebi/CHEBI:27808> , <https://identifiers.org/chebi/CHEBI:17303>;
+        wp:source           <https://identifiers.org/chebi/CHEBI:27808>;
+        wp:target           <https://identifiers.org/chebi/CHEBI:17303> .
+
+<https://identifiers.org/chebi/CHEBI:27808>
         rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "heroin";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:27808>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:27808";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2645_r123107> , <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/ba6b3> , <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/idee25ceb0> , <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/id295fda1b> , <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/c693b>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2645_r123107/DataNode/cdf04>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:27808> .
+
+<https://identifiers.org/chebi/CHEBI:17303>
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "morphine";
         dc:identifier       <https://identifiers.org/chebi/CHEBI:17303>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:17303";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2645/WP2645_rWP2645_r123107/DataNode/be981>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2645_r123107> , <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/ba6b3> , <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/id8f564c1a> , <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/id3ad34204>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2645_r123107/DataNode/be981>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17303> .
 
-<https://identifiers.org/pubchem.compound/5462507>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "6-acetylmorphine";
-        dc:identifier       <https://identifiers.org/pubchem.compound/5462507>;
-        dc:source           "PubChem-compound";
-        dcterms:identifier  "5462507";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2645/WP2645_rWP2645_r123107/DataNode/cfe59>;
-        foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=5462507> .
+<https://identifiers.org/ensembl/ENSG00000198848>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "CES1";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000198848>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000198848";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/id294e530e> , <https://identifiers.org/wikipathways/WP2645_r123107> , <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/ide473476>;
+        dcterms:references  <https://identifiers.org/pubmed/12773168>;
+        cito:cites          <https://identifiers.org/pubmed/12773168>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2645_r123107/DataNode/c446d>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000198848> .
+
+<http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/id295fda1b>
+        rdf:type            wp:DirectedInteraction , wp:Interaction , wp:Conversion;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2645_r123107> , <http://rdf.wikipathways.org/Pathway/WP2645_r123107/WP/Interaction/id827ed290>;
+        dcterms:references  <https://identifiers.org/pubmed/20649590>;
+        cito:cites          <https://identifiers.org/pubmed/20649590>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2645_r123107/Interaction/id295fda1b>;
+        wp:participants     <https://identifiers.org/chebi/CHEBI:27808> , <https://identifiers.org/pubchem.compound/5462507>;
+        wp:source           <https://identifiers.org/chebi/CHEBI:27808>;
+        wp:target           <https://identifiers.org/pubchem.compound/5462507> .

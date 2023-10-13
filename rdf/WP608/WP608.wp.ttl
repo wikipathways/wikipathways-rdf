@@ -16,23 +16,51 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP608&oldid=r69184>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
 <https://identifiers.org/mirbase/MI0000139>
         rdf:type            wp:DataNode;
         rdfs:label          "mmu-mir-1-1";
         dc:identifier       <https://identifiers.org/mirbase/MI0000139>;
         dc:source           "miRBase Sequence";
         dcterms:identifier  "MI0000139";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP608/WP608_rWP608_r69184/DataNode/bdc06>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP608_r69184>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP608_r69184/DataNode/bdc06>;
         foaf:page           <http://www.mirbase.org/cgi-bin/mirna_entry.pl?acc=MI0000139> .
 
+<http://purl.obolibrary.org/obo/NCBITaxon_10090>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "10090" .
+
+<http://rdf.wikipathways.org/Pathway/WP608_r69184/WP/Interaction/df4ac>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP608_r69184>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP608_r69184/Interaction/df4ac>;
+        wp:participants   <https://identifiers.org/ncbigene/15111>;
+        wp:source         <https://identifiers.org/ncbigene/15111> .
+
 <https://identifiers.org/ncbigene/16508>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "Kcnd2";
         dc:identifier       <https://identifiers.org/ncbigene/16508>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "16508";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP608/WP608_rWP608_r69184/DataNode/d7557>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP608_r69184/WP/Interaction/df705> , <https://identifiers.org/wikipathways/WP608_r69184> , <http://rdf.wikipathways.org/Pathway/WP608_r69184/WP/Interaction/c5eb9>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP608_r69184/DataNode/d7557>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/16508> .
+
+<https://identifiers.org/pubmed/18270516>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "18270516";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP608_r69184>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/18270516> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP608&oldid=r69184>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
 
 <https://identifiers.org/ncbigene/15111>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -40,17 +68,44 @@
         dc:identifier       <https://identifiers.org/ncbigene/15111>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "15111";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP608/WP608_rWP608_r69184/DataNode/f3a5a>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP608_r69184> , <http://rdf.wikipathways.org/Pathway/WP608_r69184/WP/Interaction/df4ac>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP608_r69184/DataNode/f3a5a>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/15111> .
 
 <https://identifiers.org/ncbigene/54352>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "Irx5";
         dc:identifier       <https://identifiers.org/ncbigene/54352>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "54352";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP608/WP608_rWP608_r69184/DataNode/e352b>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP608_r69184> , <http://rdf.wikipathways.org/Pathway/WP608_r69184/WP/Interaction/c5eb9>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP608_r69184/DataNode/e352b>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/54352> .
+
+<http://rdf.wikipathways.org/Pathway/WP608_r69184/WP/Interaction/c5eb9>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP608_r69184>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP608_r69184/Interaction/c5eb9>;
+        wp:participants   <https://identifiers.org/ncbigene/16508> , <https://identifiers.org/ncbigene/54352>;
+        wp:source         <https://identifiers.org/ncbigene/54352>;
+        wp:target         <https://identifiers.org/ncbigene/16508> .
+
+<https://identifiers.org/wikipathways/WP608_r69184>
+        rdf:type               skos:Collection , wp:Pathway;
+        dc:identifier          <https://identifiers.org/wikipathways/WP608>;
+        dc:source              "WikiPathways";
+        dc:title               "miR-1 in cardiac development"@en;
+        dcterms:description    "This pathway is an adaptation from figure 2.a in Stefani et al. (2008). miR-1 regulates cardiac morphogenesis by optimizing the level of the HAND2 transcription factor. Electric conduction is abnormal in mice that lack miR-1 as a consequence of de-inhibition of IRX5, a homeodomain-containing transcription factor that represses the expression of the KCND2 potassium channel.";
+        dcterms:identifier     "WP608";
+        dcterms:references     <https://identifiers.org/pubmed/18270516>;
+        cito:cites             <https://identifiers.org/pubmed/18270516>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP608_r69184>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000808>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_10090>;
+        wp:organismName        "Mus musculus";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000808>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP608&oldid=r69184> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP608&oldid=r69184>;
+        foaf:page              <http://www.wikipathways.org/instance/WP608_r69184> .
 
 <https://identifiers.org/mirbase/MI0000652>
         rdf:type            wp:DataNode;
@@ -58,16 +113,16 @@
         dc:identifier       <https://identifiers.org/mirbase/MI0000652>;
         dc:source           "miRBase Sequence";
         dcterms:identifier  "MI0000652";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP608/WP608_rWP608_r69184/DataNode/a18de>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP608_r69184>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP608_r69184/DataNode/a18de>;
         foaf:page           <http://www.mirbase.org/cgi-bin/mirna_entry.pl?acc=MI0000652> .
 
-<https://identifiers.org/wikipathways/WP608/WP608_rWP608_r69184>
-        rdf:type             wp:Pathway , skos:Collection;
-        dc:identifier        <https://identifiers.org/wikipathways/WP608/WP608>;
-        dc:source            "WikiPathways";
-        dc:title             "miR-1 in cardiac development"@en;
-        dcterms:description  "This pathway is an adaptation from figure 2.a in Stefani et al. (2008). miR-1 regulates cardiac morphogenesis by optimizing the level of the HAND2 transcription factor. Electric conduction is abnormal in mice that lack miR-1 as a consequence of de-inhibition of IRX5, a homeodomain-containing transcription factor that represses the expression of the KCND2 potassium channel.";
-        dcterms:identifier   "WP608/WP608";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP608/WP608_rWP608_r69184>;
-        wp:organismName      "Mus musculus";
-        foaf:page            <http://www.wikipathways.org/instance/WP608/WP608_rWP608_r69184> .
+<http://rdf.wikipathways.org/Pathway/WP608_r69184/WP/Interaction/df705>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP608_r69184>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP608_r69184/Interaction/df705>;
+        wp:participants   <https://identifiers.org/ncbigene/16508>;
+        wp:source         <https://identifiers.org/ncbigene/16508> .
+
+<https://identifiers.org/wikipathways/WP608>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP608_r69184> .

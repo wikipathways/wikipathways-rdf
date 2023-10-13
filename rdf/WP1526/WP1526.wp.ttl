@@ -16,52 +16,71 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/mirbase/MI0000555>
-        rdf:type            wp:DataNode;
-        rdfs:label          "miR-208a";
-        dc:identifier       <https://identifiers.org/mirbase/MI0000555>;
-        dc:source           "miRBase Sequence";
-        dcterms:identifier  "MI0000555";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1526/WP1526_rWP1526_r126388/DataNode/bf9d8>;
-        foaf:page           <http://www.mirbase.org/cgi-bin/mirna_entry.pl?acc=MI0000555> .
+<http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/id1f657449>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1526_r126388>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1526_r126388/Interaction/id1f657449>;
+        wp:participants   <https://identifiers.org/ncbigene/327987>;
+        wp:source         <https://identifiers.org/ncbigene/327987> .
 
-<https://identifiers.org/ncbigene/74318>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Hop";
-        dc:identifier       <https://identifiers.org/ncbigene/74318>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "74318";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1526/WP1526_rWP1526_r126388/DataNode/f4864>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/74318> .
+<https://identifiers.org/wikipathways/WP1526_r126388>
+        rdf:type               wp:Pathway , skos:Collection;
+        dc:identifier          <https://identifiers.org/wikipathways/WP1526>;
+        dc:source              "WikiPathways";
+        dc:title               "Regulation of cardiac hypertrophy by miR-208"@en;
+        dcterms:description    "MicroRNA-208a regulates cardiac hypertrophy pathways in mice.\nMicroRNAs are shown in purple. Knock out and overexpression of miR-208a are shown in blue. Processes are shown at the top and include hypertrophy, atrial fibrilation and prolonged PR interval & abberand conduction.";
+        dcterms:identifier     "WP1526";
+        dcterms:references     <https://identifiers.org/pubmed/19726871>;
+        cito:cites             <https://identifiers.org/pubmed/10969030> , <https://identifiers.org/pubmed/19726871>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP1526_r126388>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000296>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_10090>;
+        wp:organismName        "Mus musculus";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000296>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP1526&oldid=r126388> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP1526&oldid=r126388>;
+        foaf:page              <http://www.wikipathways.org/instance/WP1526_r126388> .
 
-<https://identifiers.org/ncbigene/14463>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Gata4";
-        dc:identifier       <https://identifiers.org/ncbigene/14463>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "14463";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1526/WP1526_rWP1526_r126388/DataNode/a71d5>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/14463> .
+<http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/id563ec578>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1526_r126388>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1526_r126388/Interaction/id563ec578>;
+        wp:participants   <https://identifiers.org/ncbigene/74318> , <https://identifiers.org/ncbigene/14463>;
+        wp:source         <https://identifiers.org/ncbigene/14463>;
+        wp:target         <https://identifiers.org/ncbigene/74318> .
 
-<https://identifiers.org/wikipathways/WP1526/WP1526_rWP1526_r126388>
-        rdf:type             wp:Pathway , skos:Collection;
-        dc:identifier        <https://identifiers.org/wikipathways/WP1526/WP1526>;
-        dc:source            "WikiPathways";
-        dc:title             "Regulation of cardiac hypertrophy by miR-208"@en;
-        dcterms:description  "MicroRNA-208a regulates cardiac hypertrophy pathways in mice.\nMicroRNAs are shown in purple. Knock out and overexpression of miR-208a are shown in blue. Processes are shown at the top and include hypertrophy, atrial fibrilation and prolonged PR interval & abberand conduction.";
-        dcterms:identifier   "WP1526/WP1526";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP1526/WP1526_rWP1526_r126388>;
-        wp:organismName      "Mus musculus";
-        foaf:page            <http://www.wikipathways.org/instance/WP1526/WP1526_rWP1526_r126388> .
+<http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/iddca1ffee>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1526_r126388>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1526_r126388/Interaction/iddca1ffee>;
+        wp:participants   <https://identifiers.org/ncbigene/17700>;
+        wp:source         <https://identifiers.org/ncbigene/17700> .
 
-<https://identifiers.org/ensembl/ENSMUSG00000077928>
-        rdf:type            wp:DataNode;
-        rdfs:label          "miR-208b";
-        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000077928>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSMUSG00000077928";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1526/WP1526_rWP1526_r126388/DataNode/b9875>;
-        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000077928> .
+<http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/id8cbb42ad>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1526_r126388>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1526_r126388/Interaction/id8cbb42ad>;
+        wp:participants   <https://identifiers.org/ncbigene/140781>;
+        wp:target         <https://identifiers.org/ncbigene/140781> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_10090>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "10090" .
+
+<http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/id16d201f3>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1526_r126388>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1526_r126388/Interaction/id16d201f3>;
+        wp:participants   <https://identifiers.org/ncbigene/327987> , <https://identifiers.org/ensembl/ENSMUSG00000077928>;
+        wp:source         <https://identifiers.org/ensembl/ENSMUSG00000077928>;
+        wp:target         <https://identifiers.org/ncbigene/327987> .
+
+<http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/id471728c8>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1526_r126388>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1526_r126388/Interaction/id471728c8>;
+        wp:participants   <https://identifiers.org/ncbigene/17700> , <https://identifiers.org/mirbase/MI0000555>;
+        wp:source         <https://identifiers.org/mirbase/MI0000555>;
+        wp:target         <https://identifiers.org/ncbigene/17700> .
 
 <https://identifiers.org/ncbigene/327987>
         rdf:type            wp:Protein , wp:DataNode;
@@ -69,26 +88,24 @@
         dc:identifier       <https://identifiers.org/ncbigene/327987>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "327987";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1526/WP1526_rWP1526_r126388/DataNode/a2d46>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/id2834867c> , <https://identifiers.org/wikipathways/WP1526_r126388> , <http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/ide42a4c71> , <http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/id1f657449> , <http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/id16d201f3>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1526_r126388/DataNode/a2d46>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/327987> .
 
-<https://identifiers.org/ncbigene/140781>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "beta-MHC";
-        dc:identifier       <https://identifiers.org/ncbigene/140781>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "140781";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1526/WP1526_rWP1526_r126388/DataNode/b45cb>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/140781> .
+<http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/ide42a4c71>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1526_r126388>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1526_r126388/Interaction/ide42a4c71>;
+        wp:participants   <https://identifiers.org/ncbigene/327987> , <https://identifiers.org/mirbase/MI0000555>;
+        wp:source         <https://identifiers.org/mirbase/MI0000555>;
+        wp:target         <https://identifiers.org/ncbigene/327987> .
 
-<https://identifiers.org/ncbigene/17700>
-        rdf:type            wp:Protein , wp:DataNode;
-        rdfs:label          "Myostatin";
-        dc:identifier       <https://identifiers.org/ncbigene/17700>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "17700";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1526/WP1526_rWP1526_r126388/DataNode/f91d7>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/17700> .
+<http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/idf068a87f>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1526_r126388>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1526_r126388/Interaction/idf068a87f>;
+        wp:participants   <https://identifiers.org/mirbase/MI0000555>;
+        wp:source         <https://identifiers.org/mirbase/MI0000555> .
 
 <https://identifiers.org/ncbigene/14613>
         rdf:type            wp:Protein , wp:DataNode;
@@ -96,5 +113,181 @@
         dc:identifier       <https://identifiers.org/ncbigene/14613>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "14613";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1526/WP1526_rWP1526_r126388/DataNode/dcd4e>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/id101ed129> , <http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/id10796641> , <https://identifiers.org/wikipathways/WP1526_r126388> , <http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/idb6465aab>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1526_r126388/DataNode/dcd4e>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/14613> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP1526&oldid=r126388>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/idb6465aab>
+        rdf:type            wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1526_r126388>;
+        dcterms:references  <https://identifiers.org/pubmed/10969030>;
+        cito:cites          <https://identifiers.org/pubmed/10969030>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1526_r126388/Interaction/idb6465aab>;
+        wp:participants     <https://identifiers.org/ncbigene/14613>;
+        wp:source           <https://identifiers.org/ncbigene/14613> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP1526&oldid=r126388>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/id101ed129>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1526_r126388>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1526_r126388/Interaction/id101ed129>;
+        wp:participants   <https://identifiers.org/ncbigene/14613> , <https://identifiers.org/ncbigene/74318>;
+        wp:source         <https://identifiers.org/ncbigene/74318>;
+        wp:target         <https://identifiers.org/ncbigene/14613> .
+
+<http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/id63fc196a>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1526_r126388>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1526_r126388/Interaction/id63fc196a>;
+        wp:participants   <https://identifiers.org/ncbigene/14463> , <https://identifiers.org/mirbase/MI0000555>;
+        wp:source         <https://identifiers.org/mirbase/MI0000555>;
+        wp:target         <https://identifiers.org/ncbigene/14463> .
+
+<https://identifiers.org/pubmed/19726871>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "19726871";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1526_r126388>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/19726871> .
+
+<https://identifiers.org/ncbigene/14463>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "Gata4";
+        dc:identifier       <https://identifiers.org/ncbigene/14463>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "14463";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1526_r126388> , <http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/id63fc196a> , <http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/id563ec578>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1526_r126388/DataNode/a71d5>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/14463> .
+
+<https://identifiers.org/ensembl/ENSMUSG00000077928>
+        rdf:type            wp:DataNode;
+        rdfs:label          "miR-208b";
+        dc:identifier       <https://identifiers.org/ensembl/ENSMUSG00000077928>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSMUSG00000077928";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/idfb60d04c> , <http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/id16d201f3> , <http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/id7351c64e> , <https://identifiers.org/wikipathways/WP1526_r126388>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1526_r126388/DataNode/b9875>;
+        foaf:page           <https://www.ensembl.org/id/ENSMUSG00000077928> .
+
+<https://identifiers.org/mirbase/MI0000555>
+        rdf:type            wp:DataNode;
+        rdfs:label          "miR-208a";
+        dc:identifier       <https://identifiers.org/mirbase/MI0000555>;
+        dc:source           "miRBase Sequence";
+        dcterms:identifier  "MI0000555";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/id30c8cef3> , <http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/ide42a4c71> , <http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/id63fc196a> , <https://identifiers.org/wikipathways/WP1526_r126388> , <http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/id471728c8> , <http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/id17dd8f1> , <http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/id10796641> , <http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/idf068a87f> , <http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/id2397b047> , <http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/id4344a768>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1526_r126388/DataNode/bf9d8>;
+        foaf:page           <http://www.mirbase.org/cgi-bin/mirna_entry.pl?acc=MI0000555> .
+
+<http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/id30c8cef3>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1526_r126388>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1526_r126388/Interaction/id30c8cef3>;
+        wp:participants   <https://identifiers.org/mirbase/MI0000555>;
+        wp:target         <https://identifiers.org/mirbase/MI0000555> .
+
+<http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/id4344a768>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1526_r126388>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1526_r126388/Interaction/id4344a768>;
+        wp:participants   <https://identifiers.org/mirbase/MI0000555>;
+        wp:source         <https://identifiers.org/mirbase/MI0000555> .
+
+<https://identifiers.org/ncbigene/74318>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "Hop";
+        dc:identifier       <https://identifiers.org/ncbigene/74318>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "74318";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/id101ed129> , <http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/id563ec578> , <https://identifiers.org/wikipathways/WP1526_r126388>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1526_r126388/DataNode/f4864>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/74318> .
+
+<https://identifiers.org/pubmed/10969030>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "10969030";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/idb6465aab>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/10969030> .
+
+<http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/id17dd8f1>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1526_r126388>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1526_r126388/Interaction/id17dd8f1>;
+        wp:participants   <https://identifiers.org/mirbase/MI0000555>;
+        wp:source         <https://identifiers.org/mirbase/MI0000555> .
+
+<http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/id2923b917>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1526_r126388>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1526_r126388/Interaction/id2923b917>;
+        wp:participants   <https://identifiers.org/ncbigene/140781>;
+        wp:source         <https://identifiers.org/ncbigene/140781> .
+
+<http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/id10796641>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1526_r126388>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1526_r126388/Interaction/id10796641>;
+        wp:participants   <https://identifiers.org/ncbigene/14613> , <https://identifiers.org/mirbase/MI0000555>;
+        wp:source         <https://identifiers.org/mirbase/MI0000555>;
+        wp:target         <https://identifiers.org/ncbigene/14613> .
+
+<https://identifiers.org/ncbigene/17700>
+        rdf:type            wp:Protein , wp:DataNode;
+        rdfs:label          "Myostatin";
+        dc:identifier       <https://identifiers.org/ncbigene/17700>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "17700";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/id471728c8> , <https://identifiers.org/wikipathways/WP1526_r126388> , <http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/idfb60d04c> , <http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/iddca1ffee>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1526_r126388/DataNode/f91d7>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/17700> .
+
+<https://identifiers.org/wikipathways/WP1526>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP1526_r126388> .
+
+<http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/id2397b047>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1526_r126388>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1526_r126388/Interaction/id2397b047>;
+        wp:participants   <https://identifiers.org/mirbase/MI0000555>;
+        wp:source         <https://identifiers.org/mirbase/MI0000555> .
+
+<http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/id7351c64e>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1526_r126388>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1526_r126388/Interaction/id7351c64e>;
+        wp:participants   <https://identifiers.org/ensembl/ENSMUSG00000077928>;
+        wp:target         <https://identifiers.org/ensembl/ENSMUSG00000077928> .
+
+<https://identifiers.org/ncbigene/140781>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "beta-MHC";
+        dc:identifier       <https://identifiers.org/ncbigene/140781>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "140781";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1526_r126388> , <http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/id8cbb42ad> , <http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/id2923b917>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1526_r126388/DataNode/b45cb>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/140781> .
+
+<http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/id2834867c>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1526_r126388>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1526_r126388/Interaction/id2834867c>;
+        wp:participants   <https://identifiers.org/ncbigene/327987>;
+        wp:source         <https://identifiers.org/ncbigene/327987> .
+
+<http://rdf.wikipathways.org/Pathway/WP1526_r126388/WP/Interaction/idfb60d04c>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1526_r126388>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1526_r126388/Interaction/idfb60d04c>;
+        wp:participants   <https://identifiers.org/ncbigene/17700> , <https://identifiers.org/ensembl/ENSMUSG00000077928>;
+        wp:source         <https://identifiers.org/ensembl/ENSMUSG00000077928>;
+        wp:target         <https://identifiers.org/ncbigene/17700> .

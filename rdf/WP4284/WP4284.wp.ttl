@@ -16,34 +16,43 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
+<http://rdf.wikipathways.org/Pathway/WP4284_r108123/WP/Interaction/f5d85>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4284_r108123>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4284_r108123/Interaction/f5d85>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000175305>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000175305> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4284&oldid=r108123>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<https://identifiers.org/pubmed/29180617>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "29180617";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4284_r108123>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/29180617> .
+
 <https://identifiers.org/ensembl/ENSG00000207807>
         rdf:type            wp:DataNode;
         rdfs:label          "MIR95";
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000207807>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000207807";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4284/WP4284_rWP4284_r108123/DataNode/d7b8a>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4284_r108123>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4284_r108123/DataNode/d7b8a>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000207807> .
 
 <https://identifiers.org/ensembl/ENSG00000175305>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "CCNE2";
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000175305>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000175305";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4284/WP4284_rWP4284_r108123/DataNode/e540f>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4284_r108123> , <http://rdf.wikipathways.org/Pathway/WP4284_r108123/WP/Interaction/f5d85>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4284_r108123/DataNode/e540f>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000175305> .
-
-<https://identifiers.org/wikipathways/WP4284/WP4284_rWP4284_r108123>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP4284/WP4284>;
-        dc:source            "WikiPathways";
-        dc:title             "Ultraconserved region 339 modulation of tumor suppressor microRNAs in cancer"@en;
-        dcterms:description  "The TP53-uc.339-miRNA-CCNE2 network. TP53 directly inhibits the expression of ultraconserved region 339 (us339). Ultraconserved region 339 functions as an “entrapper” for CCNE2 targeting miR-339, -663b, and -95 leading to up-regulation of CCNE2 and increased tumor growth and migration.";
-        dcterms:identifier   "WP4284/WP4284";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP4284/WP4284_rWP4284_r108123>;
-        wp:organismName      "Homo sapiens";
-        foaf:page            <http://www.wikipathways.org/instance/WP4284/WP4284_rWP4284_r108123> .
 
 <https://identifiers.org/ensembl/ENSG00000221288>
         rdf:type            wp:DataNode;
@@ -51,16 +60,18 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000221288>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000221288";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4284/WP4284_rWP4284_r108123/DataNode/c6483>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4284_r108123>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4284_r108123/DataNode/c6483>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000221288> .
 
 <https://identifiers.org/ensembl/ENSG00000141510>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "TP53";
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000141510>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000141510";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4284/WP4284_rWP4284_r108123/DataNode/fdf54>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4284_r108123/WP/Interaction/bb356> , <https://identifiers.org/wikipathways/WP4284_r108123>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4284_r108123/DataNode/fdf54>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000141510> .
 
 <https://identifiers.org/ensembl/ENSG00000199023>
@@ -69,5 +80,42 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000199023>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000199023";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4284/WP4284_rWP4284_r108123/DataNode/ef0cb>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4284_r108123>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4284_r108123/DataNode/ef0cb>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000199023> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4284&oldid=r108123>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<http://rdf.wikipathways.org/Pathway/WP4284_r108123/WP/Interaction/bb356>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4284_r108123>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4284_r108123/Interaction/bb356>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000141510>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000141510> .
+
+<https://identifiers.org/wikipathways/WP4284>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP4284_r108123> .
+
+<https://identifiers.org/wikipathways/WP4284_r108123>
+        rdf:type               skos:Collection , wp:Pathway;
+        dc:identifier          <https://identifiers.org/wikipathways/WP4284>;
+        dc:source              "WikiPathways";
+        dc:title               "Ultraconserved region 339 modulation of tumor suppressor microRNAs in cancer"@en;
+        dcterms:description    "The TP53-uc.339-miRNA-CCNE2 network. TP53 directly inhibits the expression of ultraconserved region 339 (us339). Ultraconserved region 339 functions as an “entrapper” for CCNE2 targeting miR-339, -663b, and -95 leading to up-regulation of CCNE2 and increased tumor growth and migration.";
+        dcterms:identifier     "WP4284";
+        dcterms:references     <https://identifiers.org/pubmed/29180617>;
+        cito:cites             <https://identifiers.org/pubmed/29180617>;
+        wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_162>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4284_r108123>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000808> , <http://purl.obolibrary.org/obo/PW_0000605> , <http://purl.obolibrary.org/obo/DOID_162>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606>;
+        wp:organismName        "Homo sapiens";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000605> , <http://purl.obolibrary.org/obo/PW_0000808>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4284&oldid=r108123> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4284&oldid=r108123>;
+        foaf:page              <http://www.wikipathways.org/instance/WP4284_r108123> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_9606>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9606" .

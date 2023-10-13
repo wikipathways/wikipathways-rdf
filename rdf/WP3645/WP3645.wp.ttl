@@ -16,133 +16,38 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/hmdb/HMDB0001179>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Nicotinic acid adenine dinucleotide";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0001179>;
+<https://identifiers.org/hmdb/HMDB0001200>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "N-Formylkin";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0001200>;
         dc:source           "HMDB";
-        dcterms:identifier  "HMDB0001179";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645/WP3645_rWP3645_r123910/DataNode/c96a4>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001179> .
+        dcterms:identifier  "HMDB0001200";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id346dc688> , <https://identifiers.org/wikipathways/WP3645_r123910> , <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/idac5113c4>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645_r123910/DataNode/afef2>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001200> .
 
-<https://identifiers.org/wikipathways/WP3645/WP3645_rWP3645_r123910>
-        rdf:type             wp:Pathway , skos:Collection;
-        dc:identifier        <https://identifiers.org/wikipathways/WP3645/WP3645>;
-        dc:source            "WikiPathways";
-        dc:title             "NAD+ biosynthetic pathways"@en;
-        dcterms:description  "NAD+ biosynthetic pathways. NAD+ levels are maintained by three independent pathways. First, the Preiss-Handler pathway uses dietary nicotinic acid and the enzyme nicotinic acid phosphoribosyltransferase (NAPRT) to generate NAMN, which is then transformed into NAAD by NAMN transferase (NMNAT). Three forms of this enzyme (NMNAT1, -2, and -3) have distinct subcellular localizations. The process is completed by the transformation of NAAD into NAD+ by NAD+ synthase (NADS). Second, the de novo synthesis pathway of NAD from tryptophan occurs through the kinurenine pathway (5). The first step in this pathway is the rate-limiting conversion of tryptophan to N-formylkinurenine (N-formylkin) by either IDO or TDO. Formylkinurenine is transformed into L-kinurenine (L-kin), 3-hydroxykinurenine, and 3-hydroxyanthranilic acid (3-HAA) and finally to ACMS. This compound can spontaneously condense and rearrange into quinolinic acid, which is transformed into NAMN, at which point it converges with the Preiss-Handler pathway. ACMS can also be decarboxylated into AMS by ACMS decarboxylase (ACMSD), leading to its oxidation into acetyl-CoA via the TCA cycle. Third, the NAD+ salvage pathway recycles the nicotinamide generated as a by-product of the enzymatic activities of NAD+-consuming enzymes: sirtuins, PARPs, and the cADPR synthases (CD38 and CD157). Initially, NAMPT recycles nicotinamide into NMN, which is then converted into NAD+ via the different NMNATs.\n\n\nProteins on this pathway have targeted assays available via the [https://assays.cancer.gov/available_assays?wp_id=WP3645 CPTAC Assay Portal]";
-        dcterms:identifier   "WP3645/WP3645";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP3645/WP3645_rWP3645_r123910>;
-        wp:organismName      "Homo sapiens";
-        foaf:page            <http://www.wikipathways.org/instance/WP3645/WP3645_rWP3645_r123910> .
+<http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/idd507bf94>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3645_r123910/Interaction/idd507bf94>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id4b4d6e1e> , <https://identifiers.org/ensembl/ENSG00000153086>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000153086>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id4b4d6e1e> .
 
-<https://identifiers.org/ensembl/ENSG00000107854>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "TNKS2";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000107854>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000107854";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645/WP3645_rWP3645_r123910/DataNode/f3978>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000107854> .
+<http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id47581e38>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3645_r123910/Interaction/id47581e38>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000855>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000855> .
 
-<https://identifiers.org/ncbigene/6999>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "TDO2";
-        dc:identifier       <https://identifiers.org/ncbigene/6999>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "6999";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645/WP3645_rWP3645_r123910/DataNode/d2186>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/6999> .
-
-<https://identifiers.org/ensembl/ENSG00000096717>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "SIRT1";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000096717>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000096717";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645/WP3645_rWP3645_r123910/DataNode/a231b>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000096717> .
-
-<https://identifiers.org/hmdb/HMDB0001487>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "NADH";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0001487>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0001487";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645/WP3645_rWP3645_r123910/DataNode/e20d0>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001487> .
-
-<https://identifiers.org/hmdb/HMDB0001406>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Nicotinamide";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0001406>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0001406";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645/WP3645_rWP3645_r123910/DataNode/a663b>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001406> .
-
-<https://identifiers.org/ensembl/ENSG00000109743>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "BST1";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000109743>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000109743";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645/WP3645_rWP3645_r123910/DataNode/e6555>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000109743> .
-
-<https://identifiers.org/hmdb/HMDB0000232>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Quinolinic acid";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000232>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000232";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645/WP3645_rWP3645_r123910/DataNode/ed524>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000232> .
-
-<https://identifiers.org/ensembl/ENSG00000068903>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "SIRT2";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000068903>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000068903";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645/WP3645_rWP3645_r123910/DataNode/fd1b3>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000068903> .
-
-<https://identifiers.org/hmdb/HMDB0000929>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Tryptophan";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000929>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000929";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645/WP3645_rWP3645_r123910/DataNode/ac796>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000929> .
-
-<https://identifiers.org/ensembl/ENSG00000143799>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "PARP1";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000143799>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000143799";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645/WP3645_rWP3645_r123910/DataNode/f6cb2>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000143799> .
-
-<https://identifiers.org/ensembl/ENSG00000129484>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "PARP2";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000129484>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000129484";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645/WP3645_rWP3645_r123910/DataNode/beaa5>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000129484> .
-
-<https://identifiers.org/ensembl/ENSG00000077463>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "SIRT6";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000077463>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000077463";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645/WP3645_rWP3645_r123910/DataNode/be782>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000077463> .
+<http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/idf5ce9427>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3645_r123910> , <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id2cee8aec>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3645_r123910/Interaction/idf5ce9427>;
+        wp:participants   <https://identifiers.org/chemspider/13553> , <https://identifiers.org/hmdb/HMDB0001406>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001406>;
+        wp:target         <https://identifiers.org/chemspider/13553> .
 
 <https://identifiers.org/hmdb/HMDB0001488>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -150,107 +55,27 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0001488>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0001488";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645/WP3645_rWP3645_r123910/DataNode/a6f5b>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id4997328b> , <https://identifiers.org/wikipathways/WP3645_r123910> , <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/idab8a418d>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645_r123910/DataNode/a6f5b>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001488> .
 
-<https://identifiers.org/ensembl/ENSG00000105835>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "NAMPT";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000105835>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000105835";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645/WP3645_rWP3645_r123910/DataNode/f522e>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000105835> .
+<http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id8779a6f9>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3645_r123910/Interaction/id8779a6f9>;
+        wp:participants   <https://identifiers.org/chemspider/13553> , <https://identifiers.org/hmdb/HMDB0000855>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000855>;
+        wp:target         <https://identifiers.org/chemspider/13553> .
 
-<https://identifiers.org/hmdb/HMDB0001330>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "ACMS";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0001330>;
+<https://identifiers.org/hmdb/HMDB0001406>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Nicotinamide";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0001406>;
         dc:source           "HMDB";
-        dcterms:identifier  "HMDB0001330";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645/WP3645_rWP3645_r123910/DataNode/a4d35>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001330> .
-
-<https://identifiers.org/ensembl/ENSG00000102699>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "PARP4";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000102699>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000102699";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645/WP3645_rWP3645_r123910/DataNode/f18e2>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000102699> .
-
-<https://identifiers.org/ensembl/ENSG00000173273>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "TNKS";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000173273>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000173273";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645/WP3645_rWP3645_r123910/DataNode/ff1df>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000173273> .
-
-<https://identifiers.org/hmdb/HMDB0001132>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Nicotinic acid mononucleotide";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0001132>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0001132";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645/WP3645_rWP3645_r123910/DataNode/dd3d9>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001132> .
-
-<https://identifiers.org/ensembl/ENSG00000173614>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "NMNAT1";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000173614>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000173614";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645/WP3645_rWP3645_r123910/DataNode/db198> , <http://rdf.wikipathways.org/Pathway/WP3645/WP3645_rWP3645_r123910/DataNode/e883d>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000173614> .
-
-<https://identifiers.org/chemspider/13553>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Nicotinamide mononucleotide";
-        dc:identifier       <https://identifiers.org/chemspider/13553>;
-        dc:source           "Chemspider";
-        dcterms:identifier  "13553";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645/WP3645_rWP3645_r123910/DataNode/e8889>;
-        foaf:page           <http://www.chemspider.com/Chemical-Structure.13553.html> .
-
-<https://identifiers.org/ensembl/ENSG00000131203>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "IDO1";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000131203>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000131203";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645/WP3645_rWP3645_r123910/DataNode/db766>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000131203> .
-
-<https://identifiers.org/ensembl/ENSG00000089163>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "SIRT4";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000089163>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000089163";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645/WP3645_rWP3645_r123910/DataNode/f6e09>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000089163> .
-
-<https://identifiers.org/hmdb/HMDB0000684>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "L-Kynurenine";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000684>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000684";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645/WP3645_rWP3645_r123910/DataNode/af436>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000684> .
-
-<https://identifiers.org/ensembl/ENSG00000103485>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "QPRT";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000103485>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000103485";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645/WP3645_rWP3645_r123910/DataNode/c7235>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000103485> .
+        dcterms:identifier  "HMDB0001406";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/idf5ce9427> , <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id3e752414> , <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645_r123910/DataNode/a663b>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001406> .
 
 <https://identifiers.org/ensembl/ENSG00000172890>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -258,8 +83,86 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000172890>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000172890";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645/WP3645_rWP3645_r123910/DataNode/c02f6>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/idb6b65f29> , <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645_r123910/DataNode/c02f6>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000172890> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3645&oldid=r123910>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id43a6d611>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3645_r123910/Interaction/id43a6d611>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id60fe527> , <https://identifiers.org/ensembl/ENSG00000103485>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000103485>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id60fe527> .
+
+<https://identifiers.org/pubmed/26785480>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "26785480";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3645_r123910>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/26785480> .
+
+<https://identifiers.org/ensembl/ENSG00000109743>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "BST1";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000109743>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000109743";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645_r123910/DataNode/e6555>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000109743> .
+
+<https://identifiers.org/ensembl/ENSG00000096717>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "SIRT1";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000096717>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000096717";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645_r123910/DataNode/a231b>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000096717> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3645&oldid=r123910>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id3e752414>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3645_r123910/Interaction/id3e752414>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001406>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001406> .
+
+<https://identifiers.org/hmdb/HMDB0000855>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Nicotinamide riboside";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000855>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0000855";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3645_r123910> , <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id47581e38> , <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id8779a6f9>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645_r123910/DataNode/eb9dc>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000855> .
+
+<https://identifiers.org/ensembl/ENSG00000173614>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "NMNAT1";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000173614>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000173614";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3645_r123910> , <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id1a5491f8> , <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/idaed6d7cb>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645_r123910/DataNode/db198> , <http://rdf.wikipathways.org/Pathway/WP3645_r123910/DataNode/e883d>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000173614> .
+
+<http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/ida90e26c0>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3645_r123910/Interaction/ida90e26c0>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000929>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000929> .
 
 <https://identifiers.org/ensembl/ENSG00000004468>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -267,71 +170,16 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000004468>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000004468";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645/WP3645_rWP3645_r123910/DataNode/ddd0b>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645_r123910/DataNode/ddd0b>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000004468> .
 
-<https://identifiers.org/ensembl/ENSG00000142082>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "SIRT3";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000142082>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000142082";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645/WP3645_rWP3645_r123910/DataNode/e3741>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000142082> .
-
-<https://identifiers.org/ensembl/ENSG00000124523>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "SIRT5";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000124523>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000124523";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645/WP3645_rWP3645_r123910/DataNode/ea00b>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000124523> .
-
-<https://identifiers.org/hmdb/HMDB0000855>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Nicotinamide riboside";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000855>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000855";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645/WP3645_rWP3645_r123910/DataNode/eb9dc>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000855> .
-
-<https://identifiers.org/ensembl/ENSG00000187531>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "SIRT7";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000187531>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000187531";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645/WP3645_rWP3645_r123910/DataNode/ded1c> , <http://rdf.wikipathways.org/Pathway/WP3645/WP3645_rWP3645_r123910/DataNode/b7a66>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000187531> .
-
-<https://identifiers.org/chebi/CHEBI:77634>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "AMS";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:77634>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:77634";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645/WP3645_rWP3645_r123910/DataNode/ed4af>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:77634> .
-
-<https://identifiers.org/ensembl/ENSG00000153086>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "ACMSD";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000153086>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000153086";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645/WP3645_rWP3645_r123910/DataNode/eb91d>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000153086> .
-
-<https://identifiers.org/ensembl/ENSG00000147813>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "NAPRT1";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000147813>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000147813";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645/WP3645_rWP3645_r123910/DataNode/f62eb>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000147813> .
+<http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id6cfbaaf2>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3645_r123910/Interaction/id6cfbaaf2>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:77634>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:77634> .
 
 <https://identifiers.org/hmdb/HMDB0001476>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -339,23 +187,466 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0001476>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0001476";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645/WP3645_rWP3645_r123910/DataNode/dba9e>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/ide8abc490> , <https://identifiers.org/wikipathways/WP3645_r123910> , <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id899fbee4>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645_r123910/DataNode/dba9e>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001476> .
 
-<https://identifiers.org/hmdb/HMDB0000902>
+<http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/idac5113c4>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3645_r123910/Interaction/idac5113c4>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000684> , <https://identifiers.org/hmdb/HMDB0001200>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001200>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000684> .
+
+<https://identifiers.org/ensembl/ENSG00000068903>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "SIRT2";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000068903>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000068903";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645_r123910/DataNode/fd1b3>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000068903> .
+
+<https://identifiers.org/ensembl/ENSG00000131203>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "IDO1";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000131203>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000131203";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id3ffb5eff> , <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645_r123910/DataNode/db766>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000131203> .
+
+<https://identifiers.org/pubmed/18429699>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "18429699";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3645_r123910>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/18429699> .
+
+<https://identifiers.org/hmdb/HMDB0000684>
         rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "L-Kynurenine";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000684>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0000684";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id899fbee4> , <https://identifiers.org/wikipathways/WP3645_r123910> , <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/idac5113c4>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645_r123910/DataNode/af436>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000684> .
+
+<https://identifiers.org/wikipathways/WP3645_r123910>
+        rdf:type               skos:Collection , wp:Pathway;
+        dc:identifier          <https://identifiers.org/wikipathways/WP3645>;
+        dc:source              "WikiPathways";
+        dc:title               "NAD+ biosynthetic pathways"@en;
+        dcterms:description    "NAD+ biosynthetic pathways. NAD+ levels are maintained by three independent pathways. First, the Preiss-Handler pathway uses dietary nicotinic acid and the enzyme nicotinic acid phosphoribosyltransferase (NAPRT) to generate NAMN, which is then transformed into NAAD by NAMN transferase (NMNAT). Three forms of this enzyme (NMNAT1, -2, and -3) have distinct subcellular localizations. The process is completed by the transformation of NAAD into NAD+ by NAD+ synthase (NADS). Second, the de novo synthesis pathway of NAD from tryptophan occurs through the kinurenine pathway (5). The first step in this pathway is the rate-limiting conversion of tryptophan to N-formylkinurenine (N-formylkin) by either IDO or TDO. Formylkinurenine is transformed into L-kinurenine (L-kin), 3-hydroxykinurenine, and 3-hydroxyanthranilic acid (3-HAA) and finally to ACMS. This compound can spontaneously condense and rearrange into quinolinic acid, which is transformed into NAMN, at which point it converges with the Preiss-Handler pathway. ACMS can also be decarboxylated into AMS by ACMS decarboxylase (ACMSD), leading to its oxidation into acetyl-CoA via the TCA cycle. Third, the NAD+ salvage pathway recycles the nicotinamide generated as a by-product of the enzymatic activities of NAD+-consuming enzymes: sirtuins, PARPs, and the cADPR synthases (CD38 and CD157). Initially, NAMPT recycles nicotinamide into NMN, which is then converted into NAD+ via the different NMNATs.\n\n\nProteins on this pathway have targeted assays available via the [https://assays.cancer.gov/available_assays?wp_id=WP3645 CPTAC Assay Portal]";
+        dcterms:identifier     "WP3645";
+        dcterms:references     <https://identifiers.org/pubmed/26785480> , <https://identifiers.org/pubmed/18429699>;
+        cito:cites             <https://identifiers.org/pubmed/26785480> , <https://identifiers.org/pubmed/18429699>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP3645_r123910>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000002> , <http://purl.obolibrary.org/obo/PW_0000219>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606>;
+        wp:organismName        "Homo sapiens";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000219> , <http://purl.obolibrary.org/obo/PW_0000002>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3645&oldid=r123910> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3645&oldid=r123910>;
+        foaf:page              <http://www.wikipathways.org/instance/WP3645_r123910> .
+
+<https://identifiers.org/hmdb/HMDB0001330>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "ACMS";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0001330>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0001330";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id2701df44> , <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/ide8abc490> , <https://identifiers.org/wikipathways/WP3645_r123910> , <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id4b4d6e1e>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645_r123910/DataNode/a4d35>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001330> .
+
+<http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/cbba5>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3645_r123910> , <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id1a5491f8>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3645_r123910/Interaction/cbba5>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001179> , <https://identifiers.org/hmdb/HMDB0001132>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001132>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001179> .
+
+<http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/idab8a418d>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/idfc8c4402> , <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3645_r123910/Interaction/idab8a418d>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001132> , <https://identifiers.org/hmdb/HMDB0001488>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001488>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001132> .
+
+<https://identifiers.org/hmdb/HMDB0000902>
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "NAD";
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000902>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0000902";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645/WP3645_rWP3645_r123910/DataNode/ff105>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id31313a33> , <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/ide28f6889> , <https://identifiers.org/wikipathways/WP3645_r123910> , <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/idfaa70de7>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645_r123910/DataNode/ff105>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000902> .
 
-<https://identifiers.org/hmdb/HMDB0001200>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "N-Formylkin";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0001200>;
+<http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/ide8abc490>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3645_r123910/Interaction/ide8abc490>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001330> , <https://identifiers.org/hmdb/HMDB0001476>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001476>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001330> .
+
+<http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id346dc688>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3645_r123910> , <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id68a03a9b> , <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id3ffb5eff>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3645_r123910/Interaction/id346dc688>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000929> , <https://identifiers.org/hmdb/HMDB0001200>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000929>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001200> .
+
+<http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id2cee8aec>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3645_r123910/Interaction/id2cee8aec>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/idf5ce9427> , <https://identifiers.org/ensembl/ENSG00000105835>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000105835>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/idf5ce9427> .
+
+<http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/idfaa70de7>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3645_r123910> , <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/idaed6d7cb>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3645_r123910/Interaction/idfaa70de7>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000902> , <https://identifiers.org/chemspider/13553>;
+        wp:source         <https://identifiers.org/chemspider/13553>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000902> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_9606>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9606" .
+
+<http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id2701df44>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3645_r123910/Interaction/id2701df44>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000232> , <https://identifiers.org/hmdb/HMDB0001330>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001330>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000232> .
+
+<http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/idfc8c4402>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3645_r123910/Interaction/idfc8c4402>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/idab8a418d> , <https://identifiers.org/ensembl/ENSG00000147813>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000147813>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/idab8a418d> .
+
+<https://identifiers.org/ensembl/ENSG00000147813>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "NAPRT1";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000147813>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000147813";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/idfc8c4402> , <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645_r123910/DataNode/f62eb>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000147813> .
+
+<https://identifiers.org/ensembl/ENSG00000103485>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "QPRT";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000103485>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000103485";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3645_r123910> , <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id43a6d611>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645_r123910/DataNode/c7235>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000103485> .
+
+<https://identifiers.org/hmdb/HMDB0000232>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Quinolinic acid";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000232>;
         dc:source           "HMDB";
-        dcterms:identifier  "HMDB0001200";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645/WP3645_rWP3645_r123910/DataNode/afef2>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001200> .
+        dcterms:identifier  "HMDB0000232";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id60fe527> , <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id2701df44> , <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645_r123910/DataNode/ed524>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000232> .
+
+<https://identifiers.org/hmdb/HMDB0000929>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Tryptophan";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000929>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0000929";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id346dc688> , <https://identifiers.org/wikipathways/WP3645_r123910> , <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/ida90e26c0>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645_r123910/DataNode/ac796>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000929> .
+
+<https://identifiers.org/ensembl/ENSG00000107854>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "TNKS2";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000107854>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000107854";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645_r123910/DataNode/f3978>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000107854> .
+
+<https://identifiers.org/ensembl/ENSG00000173273>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "TNKS";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000173273>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000173273";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645_r123910/DataNode/ff1df>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000173273> .
+
+<http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id1a5491f8>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3645_r123910/Interaction/id1a5491f8>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/cbba5> , <https://identifiers.org/ensembl/ENSG00000173614>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000173614>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/cbba5> .
+
+<http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id899fbee4>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3645_r123910/Interaction/id899fbee4>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001476> , <https://identifiers.org/hmdb/HMDB0000684>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000684>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001476> .
+
+<https://identifiers.org/ensembl/ENSG00000077463>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "SIRT6";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000077463>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000077463";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645_r123910/DataNode/be782>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000077463> .
+
+<https://identifiers.org/hmdb/HMDB0001132>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Nicotinic acid mononucleotide";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0001132>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0001132";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3645_r123910> , <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/cbba5> , <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/idab8a418d> , <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id60fe527>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645_r123910/DataNode/dd3d9>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001132> .
+
+<https://identifiers.org/ensembl/ENSG00000105835>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "NAMPT";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000105835>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000105835";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3645_r123910> , <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id2cee8aec>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645_r123910/DataNode/f522e>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000105835> .
+
+<https://identifiers.org/ncbigene/6999>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "TDO2";
+        dc:identifier       <https://identifiers.org/ncbigene/6999>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "6999";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id68a03a9b> , <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645_r123910/DataNode/d2186>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/6999> .
+
+<https://identifiers.org/ensembl/ENSG00000102699>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "PARP4";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000102699>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000102699";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645_r123910/DataNode/f18e2>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000102699> .
+
+<http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/ide28f6889>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3645_r123910/Interaction/ide28f6889>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000902> , <https://identifiers.org/hmdb/HMDB0001487>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001487>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000902> .
+
+<https://identifiers.org/hmdb/HMDB0001179>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Nicotinic acid adenine dinucleotide";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0001179>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0001179";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/cbba5> , <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id31313a33> , <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645_r123910/DataNode/c96a4>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001179> .
+
+<https://identifiers.org/ensembl/ENSG00000153086>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "ACMSD";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000153086>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000153086";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/idd507bf94> , <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645_r123910/DataNode/eb91d>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000153086> .
+
+<https://identifiers.org/ensembl/ENSG00000142082>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "SIRT3";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000142082>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000142082";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645_r123910/DataNode/e3741>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000142082> .
+
+<http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id4b4d6e1e>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3645_r123910> , <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/idd507bf94>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3645_r123910/Interaction/id4b4d6e1e>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001330> , <https://identifiers.org/chebi/CHEBI:77634>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001330>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:77634> .
+
+<https://identifiers.org/ensembl/ENSG00000124523>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "SIRT5";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000124523>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000124523";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645_r123910/DataNode/ea00b>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000124523> .
+
+<http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/idb6b65f29>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3645_r123910/Interaction/idb6b65f29>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id31313a33> , <https://identifiers.org/ensembl/ENSG00000172890>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000172890>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id31313a33> .
+
+<https://identifiers.org/ensembl/ENSG00000143799>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "PARP1";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000143799>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000143799";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645_r123910/DataNode/f6cb2>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000143799> .
+
+<http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id31313a33>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/idb6b65f29> , <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3645_r123910/Interaction/id31313a33>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000902> , <https://identifiers.org/hmdb/HMDB0001179>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001179>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000902> .
+
+<http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id3ffb5eff>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3645_r123910/Interaction/id3ffb5eff>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id346dc688> , <https://identifiers.org/ensembl/ENSG00000131203>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000131203>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id346dc688> .
+
+<https://identifiers.org/chemspider/13553>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Nicotinamide mononucleotide";
+        dc:identifier       <https://identifiers.org/chemspider/13553>;
+        dc:source           "Chemspider";
+        dcterms:identifier  "13553";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id8779a6f9> , <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/idf5ce9427> , <https://identifiers.org/wikipathways/WP3645_r123910> , <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/idfaa70de7>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645_r123910/DataNode/e8889>;
+        foaf:page           <http://www.chemspider.com/Chemical-Structure.13553.html> .
+
+<http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id68a03a9b>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3645_r123910/Interaction/id68a03a9b>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id346dc688> , <https://identifiers.org/ncbigene/6999>;
+        wp:source         <https://identifiers.org/ncbigene/6999>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id346dc688> .
+
+<http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id60fe527>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3645_r123910> , <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id43a6d611>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3645_r123910/Interaction/id60fe527>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001132> , <https://identifiers.org/hmdb/HMDB0000232>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000232>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001132> .
+
+<https://identifiers.org/ensembl/ENSG00000129484>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "PARP2";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000129484>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000129484";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645_r123910/DataNode/beaa5>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000129484> .
+
+<https://identifiers.org/chebi/CHEBI:77634>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "AMS";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:77634>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:77634";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id4b4d6e1e> , <https://identifiers.org/wikipathways/WP3645_r123910> , <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id6cfbaaf2>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645_r123910/DataNode/ed4af>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:77634> .
+
+<https://identifiers.org/hmdb/HMDB0001487>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "NADH";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0001487>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0001487";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/ide28f6889> , <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645_r123910/DataNode/e20d0>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001487> .
+
+<https://identifiers.org/wikipathways/WP3645>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP3645_r123910> .
+
+<https://identifiers.org/ensembl/ENSG00000089163>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "SIRT4";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000089163>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000089163";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645_r123910/DataNode/f6e09>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000089163> .
+
+<https://identifiers.org/ensembl/ENSG00000187531>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "SIRT7";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000187531>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000187531";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3645_r123910/DataNode/b7a66> , <http://rdf.wikipathways.org/Pathway/WP3645_r123910/DataNode/ded1c>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000187531> .
+
+<http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/id4997328b>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3645_r123910/Interaction/id4997328b>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001488>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001488> .
+
+<http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/idaed6d7cb>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3645_r123910>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3645_r123910/Interaction/idaed6d7cb>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/idfaa70de7> , <https://identifiers.org/ensembl/ENSG00000173614>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000173614>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP3645_r123910/WP/Interaction/idfaa70de7> .

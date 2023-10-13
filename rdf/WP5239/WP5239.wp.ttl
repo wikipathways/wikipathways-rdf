@@ -16,39 +16,53 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<http://rdf.wikipathways.org/Pathway/WP5239/WP5239_rWP5239_r123034/WP/Interaction/fc181>
-        rdf:type  wp:Interaction .
+<https://identifiers.org/wikipathways/WP5239_r123034>
+        rdf:type               skos:Collection , wp:Pathway;
+        dc:identifier          <https://identifiers.org/wikipathways/WP5239>;
+        dc:source              "WikiPathways";
+        dc:title               "Lac-Phe pathway"@en;
+        dcterms:description    "Lac-Phe is formed by CNDP2 and exported outside the cell, into the blood circulation by ABCC5. It is linked to food intake and obesity, where it is increased after exercise and suppresses food intake.";
+        dcterms:identifier     "WP5239";
+        cito:cites             <https://identifiers.org/pubmed/35705806> , <https://identifiers.org/pubmed/25964343>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP5239_r123034>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000003> , <http://purl.obolibrary.org/obo/PW_0000002> , <http://purl.obolibrary.org/obo/PW_0000540>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606>;
+        wp:organismName        "Homo sapiens";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000002> , <http://purl.obolibrary.org/obo/PW_0000003> , <http://purl.obolibrary.org/obo/PW_0000540>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP5239&oldid=r123034> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP5239&oldid=r123034>;
+        foaf:page              <http://www.wikipathways.org/instance/WP5239_r123034> .
 
-<http://rdf.wikipathways.org/Pathway/WP5239/WP5239_rWP5239_r123034/WP/Interaction/e173b>
-        rdf:type  wp:Interaction .
+<https://identifiers.org/wikipathways/WP5239>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP5239_r123034> .
 
-<https://identifiers.org/wikipathways/WP5239/WP5239_rWP5239_r123034>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP5239/WP5239>;
-        dc:source            "WikiPathways";
-        dc:title             "Lac-Phe pathway"@en;
-        dcterms:description  "Lac-Phe is formed by CNDP2 and exported outside the cell, into the blood circulation by ABCC5. It is linked to food intake and obesity, where it is increased after exercise and suppresses food intake.";
-        dcterms:identifier   "WP5239/WP5239";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP5239/WP5239_rWP5239_r123034>;
-        wp:organismName      "Homo sapiens";
-        foaf:page            <http://www.wikipathways.org/instance/WP5239/WP5239_rWP5239_r123034> .
+<http://rdf.wikipathways.org/Pathway/WP5239_r123034/WP/Interaction/ecef7>
+        rdf:type            wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5239_r123034> , <http://rdf.wikipathways.org/Pathway/WP5239_r123034/WP/Interaction/c4815> , <http://rdf.wikipathways.org/Pathway/WP5239_r123034/WP/Interaction/e173b>;
+        dcterms:references  <https://identifiers.org/pubmed/25964343>;
+        cito:cites          <https://identifiers.org/pubmed/25964343>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5239_r123034/Interaction/ecef7>;
+        wp:participants     <https://identifiers.org/chebi/CHEBI:167456> , <https://identifiers.org/chebi/CHEBI:16651>;
+        wp:source           <https://identifiers.org/chebi/CHEBI:16651>;
+        wp:target           <https://identifiers.org/chebi/CHEBI:167456> .
 
 <https://identifiers.org/uniprot/O15440>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "ABCC5";
         dc:identifier       <https://identifiers.org/uniprot/O15440>;
         dc:source           "Uniprot-TrEMBL";
         dcterms:identifier  "O15440";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5239/WP5239_rWP5239_r123034/DataNode/a5f82>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5239_r123034> , <http://rdf.wikipathways.org/Pathway/WP5239_r123034/WP/Interaction/c81b4>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5239_r123034/DataNode/a5f82>;
         foaf:page           <http://www.uniprot.org/uniprot/O15440> .
 
 <https://identifiers.org/chebi/CHEBI:167456>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "Lac-Phe";
         dc:identifier       <https://identifiers.org/chebi/CHEBI:167456>;
         dc:source           "ChEBI";
         dcterms:identifier  "167456";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5239/WP5239_rWP5239_r123034/DataNode/fcf48> , <http://rdf.wikipathways.org/Pathway/WP5239/WP5239_rWP5239_r123034/DataNode/ef6b4>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5239_r123034/WP/Interaction/ecef7> , <http://rdf.wikipathways.org/Pathway/WP5239_r123034/WP/Interaction/fc181> , <https://identifiers.org/wikipathways/WP5239_r123034>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5239_r123034/DataNode/ef6b4> , <http://rdf.wikipathways.org/Pathway/WP5239_r123034/DataNode/fcf48>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=167456> .
 
 <https://identifiers.org/chebi/CHEBI:16651>
@@ -57,8 +71,13 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:16651>;
         dc:source           "ChEBI";
         dcterms:identifier  "16651";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5239/WP5239_rWP5239_r123034/DataNode/c484a>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5239_r123034/WP/Interaction/ecef7> , <https://identifiers.org/wikipathways/WP5239_r123034>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5239_r123034/DataNode/c484a>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=16651> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP5239&oldid=r123034>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
 
 <https://identifiers.org/uniprot/Q96KP4>
         rdf:type            wp:Protein , wp:DataNode;
@@ -66,14 +85,68 @@
         dc:identifier       <https://identifiers.org/uniprot/Q96KP4>;
         dc:source           "Uniprot-TrEMBL";
         dcterms:identifier  "Q96KP4";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5239/WP5239_rWP5239_r123034/DataNode/f2148>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5239_r123034/WP/Interaction/c4815> , <https://identifiers.org/wikipathways/WP5239_r123034>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5239_r123034/DataNode/f2148>;
         foaf:page           <http://www.uniprot.org/uniprot/Q96KP4> .
 
+<http://rdf.wikipathways.org/Pathway/WP5239_r123034/WP/Interaction/c4815>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5239_r123034>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5239_r123034/Interaction/c4815>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP5239_r123034/WP/Interaction/ecef7> , <https://identifiers.org/uniprot/Q96KP4>;
+        wp:source         <https://identifiers.org/uniprot/Q96KP4>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP5239_r123034/WP/Interaction/ecef7> .
+
+<http://rdf.wikipathways.org/Pathway/WP5239_r123034/WP/Interaction/c81b4>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5239_r123034>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5239_r123034/Interaction/c81b4>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP5239_r123034/WP/Interaction/fc181> , <https://identifiers.org/uniprot/O15440>;
+        wp:source         <https://identifiers.org/uniprot/O15440>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP5239_r123034/WP/Interaction/fc181> .
+
+<http://rdf.wikipathways.org/Pathway/WP5239_r123034/WP/Interaction/fc181>
+        rdf:type            wp:Interaction;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5239_r123034> , <http://rdf.wikipathways.org/Pathway/WP5239_r123034/WP/Interaction/c81b4>;
+        dcterms:references  <https://identifiers.org/pubmed/35705806> , <https://identifiers.org/pubmed/25964343>;
+        cito:cites          <https://identifiers.org/pubmed/35705806> , <https://identifiers.org/pubmed/25964343>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5239_r123034/Interaction/fc181>;
+        wp:participants     <https://identifiers.org/chebi/CHEBI:167456> .
+
+<https://identifiers.org/pubmed/25964343>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "25964343";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5239_r123034/WP/Interaction/fc181> , <http://rdf.wikipathways.org/Pathway/WP5239_r123034/WP/Interaction/ecef7>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/25964343> .
+
 <https://identifiers.org/chebi/CHEBI:58095>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "L-phenylalanine";
         dc:identifier       <https://identifiers.org/chebi/CHEBI:58095>;
         dc:source           "ChEBI";
         dcterms:identifier  "58095";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5239/WP5239_rWP5239_r123034/DataNode/a4f78>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5239_r123034> , <http://rdf.wikipathways.org/Pathway/WP5239_r123034/WP/Interaction/e173b>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5239_r123034/DataNode/a4f78>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=58095> .
+
+<https://identifiers.org/pubmed/35705806>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "35705806";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5239_r123034/WP/Interaction/fc181>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/35705806> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP5239&oldid=r123034>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<http://rdf.wikipathways.org/Pathway/WP5239_r123034/WP/Interaction/e173b>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5239_r123034>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5239_r123034/Interaction/e173b>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP5239_r123034/WP/Interaction/ecef7> , <https://identifiers.org/chebi/CHEBI:58095> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_9606>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9606" .

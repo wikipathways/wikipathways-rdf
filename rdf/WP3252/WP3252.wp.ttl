@@ -16,61 +16,92 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/hmdb/HMDB0000122>
-        rdf:type            wp:DataNode , wp:Metabolite;
-        rdfs:label          "Glucose";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000122>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000122";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3252/WP3252_rWP3252_r117627/DataNode/c1502> , <http://rdf.wikipathways.org/Pathway/WP3252/WP3252_rWP3252_r117627/DataNode/e0064> , <http://rdf.wikipathways.org/Pathway/WP3252/WP3252_rWP3252_r117627/DataNode/fd7c3>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000122> .
-
-<https://identifiers.org/ensembl/ENSBTAG00000003147>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "JAK1";
-        dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000003147>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSBTAG00000003147";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3252/WP3252_rWP3252_r117627/DataNode/b0e72> , <http://rdf.wikipathways.org/Pathway/WP3252/WP3252_rWP3252_r117627/DataNode/cc42b>;
-        foaf:page           <https://www.ensembl.org/id/ENSBTAG00000003147> .
-
-<https://identifiers.org/wikipathways/WP3252/WP3252_rWP3252_r117627>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP3252/WP3252>;
-        dc:source            "WikiPathways";
-        dc:title             "TCA cycle nutrient use and invasiveness of ovarian cancer"@en;
-        dcterms:description  "Schematic showing the shift in nutrient utilization in TCA cycle with increasing degree of invasiveness. Low-invasive ovarian cancer (OVCA) cells are glucose dependent for their TCA cycle pool. With increasing invasiveness in cancer cells, dominant nutrient which feeds the TCA cycle shifts from glucose to Gln. In high-invasive OVCA cells, Gln dominates the TCA cycle. In low-invasive OVCA cells, glucose activates Jak1, which activates STAT3 by tyrosine phosphorylation, thereby regulating glycolysis in cancer cells. In highinvasive OVCA cells, besides glucose's role in activating STAT3 tyrosine phosphorylation, glutamine activates JAK1 through TCA cycle to further activate STAT3 by tyrosine phosphorylation and thus regulate glycolysis. Further, Gln activates Erk1/2, which subsequently activates STAT3 by serine phosphorylation selectively in high-invasive OVCA cells. The serine phosphorylation of STAT3 enhances oxidative phosphorylation in mitochondria by interaction with mitochondrial complexes I and II, thereby increasing TCA cycle activity in high-invasive OVCA cells.";
-        dcterms:identifier   "WP3252/WP3252";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP3252/WP3252_rWP3252_r117627>;
-        wp:organismName      "Bos taurus";
-        foaf:page            <http://www.wikipathways.org/instance/WP3252/WP3252_rWP3252_r117627> .
-
 <https://identifiers.org/ensembl/ENSBTAG00000016156>
         rdf:type            wp:GeneProduct , wp:DataNode;
         rdfs:label          "MAPK3";
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000016156>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000016156";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3252/WP3252_rWP3252_r117627/DataNode/c3e6f>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3252_r117627>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3252_r117627/DataNode/c3e6f>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000016156> .
 
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3252&oldid=r117627>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/id96ef6249>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3252_r117627>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3252_r117627/Interaction/id96ef6249>;
+        wp:participants   <https://identifiers.org/ensembl/ENSBTAG00000003147> , <https://identifiers.org/ensembl/ENSBTAG00000011628>;
+        wp:source         <https://identifiers.org/ensembl/ENSBTAG00000011628>;
+        wp:target         <https://identifiers.org/ensembl/ENSBTAG00000003147> .
+
+<https://identifiers.org/hmdb/HMDB0000122>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Glucose";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000122>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0000122";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/id5e1188a0> , <http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/f830a> , <http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/eee04> , <http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/bd041> , <https://identifiers.org/wikipathways/WP3252_r117627>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3252_r117627/DataNode/e0064> , <http://rdf.wikipathways.org/Pathway/WP3252_r117627/DataNode/fd7c3> , <http://rdf.wikipathways.org/Pathway/WP3252_r117627/DataNode/c1502>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000122> .
+
+<https://identifiers.org/pubmed/24799285>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "24799285";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3252_r117627>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/24799285> .
+
+<http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/f830a>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3252_r117627>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3252_r117627/Interaction/f830a>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000122> , <https://identifiers.org/ensembl/ENSBTAG00000021523>;
+        wp:source         <https://identifiers.org/ensembl/ENSBTAG00000021523>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000122> .
+
+<http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/id20dcdc6a>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3252_r117627>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3252_r117627/Interaction/id20dcdc6a>;
+        wp:participants   <https://identifiers.org/ensembl/ENSBTAG00000021523> , <https://identifiers.org/ensembl/ENSBTAG00000003147>;
+        wp:source         <https://identifiers.org/ensembl/ENSBTAG00000003147>;
+        wp:target         <https://identifiers.org/ensembl/ENSBTAG00000021523> .
+
 <https://identifiers.org/ensembl/ENSBTAG00000011628>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "EGFR";
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000011628>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000011628";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3252/WP3252_rWP3252_r117627/DataNode/cda95> , <http://rdf.wikipathways.org/Pathway/WP3252/WP3252_rWP3252_r117627/DataNode/ed313>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/id96ef6249> , <https://identifiers.org/wikipathways/WP3252_r117627> , <http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/eee04> , <http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/f64fd> , <http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/bd041>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3252_r117627/DataNode/cda95> , <http://rdf.wikipathways.org/Pathway/WP3252_r117627/DataNode/ed313>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000011628> .
 
-<https://identifiers.org/hmdb/HMDB0003423>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "D-Glutamine";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0003423>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0003423";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3252/WP3252_rWP3252_r117627/DataNode/cf7ed>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0003423> .
+<https://identifiers.org/wikipathways/WP78>
+        rdf:type            wp:DataNode , wp:Pathway;
+        rdfs:label          "TCA Cycle";
+        dc:identifier       <https://identifiers.org/wikipathways/WP78>;
+        dc:source           "WikiPathways";
+        dcterms:identifier  "WP78";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/id882e8822> , <https://identifiers.org/wikipathways/WP3252_r117627> , <http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/b2bf0> , <http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/a83a5>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3252_r117627/DataNode/f133c>;
+        foaf:page           <https://www.wikipathways.org/instance/WP78> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_9913>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9913" .
+
+<http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/a83a5>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3252_r117627>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3252_r117627/Interaction/a83a5>;
+        wp:participants   <https://identifiers.org/ensembl/ENSBTAG00000021523> , <https://identifiers.org/wikipathways/WP78>;
+        wp:source         <https://identifiers.org/wikipathways/WP78>;
+        wp:target         <https://identifiers.org/ensembl/ENSBTAG00000021523> .
 
 <https://identifiers.org/ensembl/ENSBTAG00000010312>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -78,17 +109,25 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000010312>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000010312";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3252/WP3252_rWP3252_r117627/DataNode/d3a8b>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3252_r117627>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3252_r117627/DataNode/d3a8b>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000010312> .
 
-<https://identifiers.org/wikipathways/WP78>
-        rdf:type            wp:Pathway , wp:DataNode;
-        rdfs:label          "TCA Cycle";
-        dc:identifier       <https://identifiers.org/wikipathways/WP78>;
-        dc:source           "WikiPathways";
-        dcterms:identifier  "WP78";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3252/WP3252_rWP3252_r117627/DataNode/f133c>;
-        foaf:page           <https://www.wikipathways.org/instance/WP78> .
+<http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/eee04>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3252_r117627>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3252_r117627/Interaction/eee04>;
+        wp:participants   <https://identifiers.org/ensembl/ENSBTAG00000011628> , <https://identifiers.org/hmdb/HMDB0000122>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000122>;
+        wp:target         <https://identifiers.org/ensembl/ENSBTAG00000011628> .
+
+<http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/b15f8>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3252_r117627> , <http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/da63f>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3252_r117627/Interaction/b15f8>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000190> , <https://identifiers.org/hmdb/HMDB0000243>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000243>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000190> .
 
 <https://identifiers.org/hmdb/HMDB0000190>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -96,8 +135,53 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000190>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0000190";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3252/WP3252_rWP3252_r117627/DataNode/c34c9>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/b15f8> , <https://identifiers.org/wikipathways/WP3252_r117627>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3252_r117627/DataNode/c34c9>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000190> .
+
+<http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/c4cb0>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3252_r117627>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3252_r117627/Interaction/c4cb0>;
+        wp:participants   <https://identifiers.org/ensembl/ENSBTAG00000021523> , <https://identifiers.org/ensembl/ENSBTAG00000003147>;
+        wp:source         <https://identifiers.org/ensembl/ENSBTAG00000003147>;
+        wp:target         <https://identifiers.org/ensembl/ENSBTAG00000021523> .
+
+<https://identifiers.org/hmdb/HMDB0000243>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Pyruvate";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000243>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0000243";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/b15f8> , <https://identifiers.org/wikipathways/WP3252_r117627> , <http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/id5e1188a0>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3252_r117627/DataNode/d632b>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000243> .
+
+<http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/f64fd>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3252_r117627>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3252_r117627/Interaction/f64fd>;
+        wp:participants   <https://identifiers.org/ensembl/ENSBTAG00000003147> , <https://identifiers.org/ensembl/ENSBTAG00000011628>;
+        wp:source         <https://identifiers.org/ensembl/ENSBTAG00000011628>;
+        wp:target         <https://identifiers.org/ensembl/ENSBTAG00000003147> .
+
+<https://identifiers.org/hmdb/HMDB0003423>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "D-Glutamine";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0003423>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0003423";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/id882e8822> , <https://identifiers.org/wikipathways/WP3252_r117627>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3252_r117627/DataNode/cf7ed>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0003423> .
+
+<http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/bd041>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3252_r117627>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3252_r117627/Interaction/bd041>;
+        wp:participants   <https://identifiers.org/ensembl/ENSBTAG00000011628> , <https://identifiers.org/hmdb/HMDB0000122>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000122>;
+        wp:target         <https://identifiers.org/ensembl/ENSBTAG00000011628> .
 
 <https://identifiers.org/ensembl/ENSBTAG00000021523>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -105,14 +189,73 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000021523>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000021523";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3252/WP3252_rWP3252_r117627/DataNode/a2a4a> , <http://rdf.wikipathways.org/Pathway/WP3252/WP3252_rWP3252_r117627/DataNode/dd827> , <http://rdf.wikipathways.org/Pathway/WP3252/WP3252_rWP3252_r117627/DataNode/a3dd3>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/f830a> , <http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/da63f> , <http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/id20dcdc6a> , <https://identifiers.org/wikipathways/WP3252_r117627> , <http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/b2bf0> , <http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/a83a5> , <http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/c4cb0>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3252_r117627/DataNode/a2a4a> , <http://rdf.wikipathways.org/Pathway/WP3252_r117627/DataNode/a3dd3> , <http://rdf.wikipathways.org/Pathway/WP3252_r117627/DataNode/dd827>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000021523> .
 
-<https://identifiers.org/hmdb/HMDB0000243>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Pyruvate";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000243>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000243";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3252/WP3252_rWP3252_r117627/DataNode/d632b>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000243> .
+<http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/id882e8822>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3252_r117627>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3252_r117627/Interaction/id882e8822>;
+        wp:participants   <https://identifiers.org/wikipathways/WP78> , <https://identifiers.org/hmdb/HMDB0003423>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0003423>;
+        wp:target         <https://identifiers.org/wikipathways/WP78> .
+
+<https://identifiers.org/ensembl/ENSBTAG00000003147>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "JAK1";
+        dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000003147>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSBTAG00000003147";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3252_r117627> , <http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/f64fd> , <http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/id20dcdc6a> , <http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/id96ef6249> , <http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/c4cb0>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3252_r117627/DataNode/b0e72> , <http://rdf.wikipathways.org/Pathway/WP3252_r117627/DataNode/cc42b>;
+        foaf:page           <https://www.ensembl.org/id/ENSBTAG00000003147> .
+
+<http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/da63f>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3252_r117627>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3252_r117627/Interaction/da63f>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/b15f8> , <https://identifiers.org/ensembl/ENSBTAG00000021523>;
+        wp:source         <https://identifiers.org/ensembl/ENSBTAG00000021523>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/b15f8> .
+
+<http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/b2bf0>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3252_r117627>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3252_r117627/Interaction/b2bf0>;
+        wp:participants   <https://identifiers.org/wikipathways/WP78> , <https://identifiers.org/ensembl/ENSBTAG00000021523>;
+        wp:source         <https://identifiers.org/ensembl/ENSBTAG00000021523>;
+        wp:target         <https://identifiers.org/wikipathways/WP78> .
+
+<https://identifiers.org/wikipathways/WP3252>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP3252_r117627> .
+
+<http://rdf.wikipathways.org/Pathway/WP3252_r117627/WP/Interaction/id5e1188a0>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3252_r117627>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3252_r117627/Interaction/id5e1188a0>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000243> , <https://identifiers.org/hmdb/HMDB0000122>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000122>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000243> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3252&oldid=r117627>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<https://identifiers.org/wikipathways/WP3252_r117627>
+        rdf:type               wp:Pathway , skos:Collection;
+        dc:identifier          <https://identifiers.org/wikipathways/WP3252>;
+        dc:source              "WikiPathways";
+        dc:title               "TCA cycle nutrient use and invasiveness of ovarian cancer"@en;
+        dcterms:description    "Schematic showing the shift in nutrient utilization in TCA cycle with increasing degree of invasiveness. Low-invasive ovarian cancer (OVCA) cells are glucose dependent for their TCA cycle pool. With increasing invasiveness in cancer cells, dominant nutrient which feeds the TCA cycle shifts from glucose to Gln. In high-invasive OVCA cells, Gln dominates the TCA cycle. In low-invasive OVCA cells, glucose activates Jak1, which activates STAT3 by tyrosine phosphorylation, thereby regulating glycolysis in cancer cells. In highinvasive OVCA cells, besides glucose's role in activating STAT3 tyrosine phosphorylation, glutamine activates JAK1 through TCA cycle to further activate STAT3 by tyrosine phosphorylation and thus regulate glycolysis. Further, Gln activates Erk1/2, which subsequently activates STAT3 by serine phosphorylation selectively in high-invasive OVCA cells. The serine phosphorylation of STAT3 enhances oxidative phosphorylation in mitochondria by interaction with mitochondrial complexes I and II, thereby increasing TCA cycle activity in high-invasive OVCA cells.";
+        dcterms:identifier     "WP3252";
+        dcterms:references     <https://identifiers.org/pubmed/24799285>;
+        cito:cites             <https://identifiers.org/pubmed/24799285>;
+        wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_15> , <http://purl.obolibrary.org/obo/DOID_162>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP3252_r117627>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/DOID_15> , <http://purl.obolibrary.org/obo/PW_0001119> , <http://purl.obolibrary.org/obo/PW_0000605> , <http://purl.obolibrary.org/obo/DOID_162>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9913>;
+        wp:organismName        "Bos taurus";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0001119> , <http://purl.obolibrary.org/obo/PW_0000605>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3252&oldid=r117627> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3252&oldid=r117627>;
+        foaf:page              <http://www.wikipathways.org/instance/WP3252_r117627> .

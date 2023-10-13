@@ -16,63 +16,75 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
+<https://identifiers.org/ensembl/ENSBTAG00000038323>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "GLYAT";
+        dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000038323>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSBTAG00000038323";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1008_r105985> , <http://rdf.wikipathways.org/Pathway/WP1008_r105985/Complex/b1488>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1008_r105985/DataNode/a52db>;
+        foaf:page           <https://www.ensembl.org/id/ENSBTAG00000038323> .
+
 <https://identifiers.org/hmdb/HMDB0000714>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "hippuric acid";
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000714>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0000714";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1008/WP1008_rWP1008_r105985/DataNode/ba590>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1008_r105985/WP/Interaction/a52c1> , <https://identifiers.org/wikipathways/WP1008_r105985> , <http://rdf.wikipathways.org/Pathway/WP1008_r105985/WP/Interaction/dca68>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1008_r105985/DataNode/ba590>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000714> .
 
-<https://identifiers.org/hmdb/HMDB0000045>
+<https://identifiers.org/hmdb/HMDB0002252>
         rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "AMP";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000045>;
+        rdfs:label          "Benzoyl-CoA";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0002252>;
         dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000045";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1008/WP1008_rWP1008_r105985/DataNode/f880c>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000045> .
+        dcterms:identifier  "HMDB0002252";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1008_r105985/WP/Interaction/d9fc5> , <http://rdf.wikipathways.org/Pathway/WP1008_r105985/WP/Interaction/a52c1> , <http://rdf.wikipathways.org/Pathway/WP1008_r105985/WP/Interaction/d8ba1> , <http://rdf.wikipathways.org/Pathway/WP1008_r105985/WP/Interaction/dd1c5> , <https://identifiers.org/wikipathways/WP1008_r105985>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1008_r105985/DataNode/f4d6d>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0002252> .
 
-<https://identifiers.org/hmdb/HMDB0001423>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Coenzyme A";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0001423>;
+<http://rdf.wikipathways.org/Pathway/WP1008_r105985/WP/Interaction/a52c1>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1008_r105985>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1008_r105985/Interaction/a52c1>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000714> , <https://identifiers.org/hmdb/HMDB0002252>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0002252>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000714> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_9913>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9913" .
+
+<https://identifiers.org/hmdb/HMDB0000123>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "glycine";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000123>;
         dc:source           "HMDB";
-        dcterms:identifier  "HMDB0001423";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1008/WP1008_rWP1008_r105985/DataNode/cfee7>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001423> .
+        dcterms:identifier  "HMDB0000123";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1008_r105985/WP/Interaction/dca68> , <https://identifiers.org/wikipathways/WP1008_r105985>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1008_r105985/DataNode/e9f5c>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000123> .
 
-<https://identifiers.org/hmdb/HMDB0001870>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Benzoic acid AMP ester" , "Benzoic acid";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0001870>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0001870";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1008/WP1008_rWP1008_r105985/DataNode/f8b3c> , <http://rdf.wikipathways.org/Pathway/WP1008/WP1008_rWP1008_r105985/DataNode/f08c7>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001870> .
+<http://rdf.wikipathways.org/Pathway/WP1008_r105985/ComplexBinding/b1488>
+        rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1008_r105985>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1008_r105985/Group/b1488>;
+        wp:participants   <https://identifiers.org/ensembl/ENSBTAG00000030847> , <https://identifiers.org/ensembl/ENSBTAG00000038323> , <http://rdf.wikipathways.org/Pathway/WP1008_r105985/Complex/b1488> .
 
-<http://rdf.wikipathways.org/Pathway/WP1008/WP1008_rWP1008_r105985/WP/Interaction/e379d>
-        rdf:type  wp:Interaction .
-
-<https://identifiers.org/wikipathways/WP1008/WP1008_rWP1008_r105985>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP1008/WP1008>;
-        dc:source            "WikiPathways";
-        dc:title             "Amino acid conjugation of benzoic acid"@en;
-        dcterms:description  "";
-        dcterms:identifier   "WP1008/WP1008";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP1008/WP1008_rWP1008_r105985>;
-        wp:organismName      "Bos taurus";
-        foaf:page            <http://www.wikipathways.org/instance/WP1008/WP1008_rWP1008_r105985> .
+<https://identifiers.org/wikipathways/WP1008>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP1008_r105985> .
 
 <https://identifiers.org/ensembl/ENSBTAG00000013303>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "ACSS2";
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000013303>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000013303";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1008/WP1008_rWP1008_r105985/DataNode/bdf48>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1008_r105985> , <http://rdf.wikipathways.org/Pathway/WP1008_r105985/WP/Interaction/a3b44>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1008_r105985/DataNode/bdf48>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000013303> .
 
 <https://identifiers.org/cas/72-89-9>
@@ -81,44 +93,82 @@
         dc:identifier       <https://identifiers.org/cas/72-89-9>;
         dc:source           "CAS";
         dcterms:identifier  "72-89-9";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1008/WP1008_rWP1008_r105985/DataNode/e5093>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1008_r105985/WP/Interaction/dd1c5> , <https://identifiers.org/wikipathways/WP1008_r105985>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1008_r105985/DataNode/e5093>;
         foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=72-89-9> .
 
-<https://identifiers.org/hmdb/HMDB0000123>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "glycine";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000123>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000123";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1008/WP1008_rWP1008_r105985/DataNode/e9f5c>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000123> .
+<http://rdf.wikipathways.org/Pathway/WP1008_r105985/Complex/b1488>
+        rdf:type          wp:Complex , wp:DataNode;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1008_r105985>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1008_r105985/Group/b1488>;
+        wp:participants   <https://identifiers.org/ensembl/ENSBTAG00000030847> , <https://identifiers.org/ensembl/ENSBTAG00000038323> .
 
-<https://identifiers.org/hmdb/HMDB0000538>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "ATP";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000538>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000538";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1008/WP1008_rWP1008_r105985/DataNode/eb377>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000538> .
+<https://identifiers.org/wikipathways/WP1008_r105985>
+        rdf:type               wp:Pathway , skos:Collection;
+        dc:identifier          <https://identifiers.org/wikipathways/WP1008>;
+        dc:source              "WikiPathways";
+        dc:title               "Amino acid conjugation of benzoic acid"@en;
+        dcterms:description    "";
+        dcterms:identifier     "WP1008";
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP1008_r105985>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000011>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9913>;
+        wp:organismName        "Bos taurus";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000011>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP1008&oldid=r105985> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP1008&oldid=r105985>;
+        foaf:page              <http://www.wikipathways.org/instance/WP1008_r105985> .
 
-<https://identifiers.org/ensembl/ENSBTAG00000038323>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "GLYAT";
-        dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000038323>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSBTAG00000038323";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1008/WP1008_rWP1008_r105985/DataNode/a52db>;
-        foaf:page           <https://www.ensembl.org/id/ENSBTAG00000038323> .
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP1008&oldid=r105985>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
 
-<https://identifiers.org/hmdb/HMDB0002252>
+<https://identifiers.org/hmdb/HMDB0001870>
         rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Benzoyl-CoA";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0002252>;
+        rdfs:label          "Benzoic acid AMP ester" , "Benzoic acid";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0001870>;
         dc:source           "HMDB";
-        dcterms:identifier  "HMDB0002252";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1008/WP1008_rWP1008_r105985/DataNode/f4d6d>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0002252> .
+        dcterms:identifier  "HMDB0001870";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1008_r105985/WP/Interaction/e4068> , <http://rdf.wikipathways.org/Pathway/WP1008_r105985/WP/Interaction/d9fc5> , <http://rdf.wikipathways.org/Pathway/WP1008_r105985/WP/Interaction/d817a> , <https://identifiers.org/wikipathways/WP1008_r105985>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1008_r105985/DataNode/f8b3c> , <http://rdf.wikipathways.org/Pathway/WP1008_r105985/DataNode/f08c7>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001870> .
+
+<http://rdf.wikipathways.org/Pathway/WP1008_r105985/WP/Interaction/dd1c5>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1008_r105985>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1008_r105985/Interaction/dd1c5>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0002252> , <https://identifiers.org/cas/72-89-9>;
+        wp:source         <https://identifiers.org/cas/72-89-9>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0002252> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP1008&oldid=r105985>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<https://identifiers.org/hmdb/HMDB0000045>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "AMP";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000045>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0000045";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1008_r105985/WP/Interaction/d817a> , <https://identifiers.org/wikipathways/WP1008_r105985>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1008_r105985/DataNode/f880c>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000045> .
+
+<http://rdf.wikipathways.org/Pathway/WP1008_r105985/WP/Interaction/e4068>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1008_r105985>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1008_r105985/Interaction/e4068>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001870>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001870>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001870> .
+
+<http://rdf.wikipathways.org/Pathway/WP1008_r105985/WP/Interaction/d9fc5>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1008_r105985> , <http://rdf.wikipathways.org/Pathway/WP1008_r105985/WP/Interaction/a3b44>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1008_r105985/Interaction/d9fc5>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0002252> , <https://identifiers.org/hmdb/HMDB0001870>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001870>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0002252> .
 
 <https://identifiers.org/ensembl/ENSBTAG00000030847>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -126,8 +176,43 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000030847>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000030847";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1008/WP1008_rWP1008_r105985/DataNode/bc23e>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1008_r105985> , <http://rdf.wikipathways.org/Pathway/WP1008_r105985/Complex/b1488>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1008_r105985/DataNode/bc23e>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000030847> .
+
+<https://identifiers.org/hmdb/HMDB0000538>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "ATP";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000538>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0000538";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1008_r105985>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1008_r105985/DataNode/eb377>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000538> .
+
+<http://rdf.wikipathways.org/Pathway/WP1008_r105985/WP/Interaction/d817a>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1008_r105985>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1008_r105985/Interaction/d817a>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000045> , <https://identifiers.org/hmdb/HMDB0001870>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001870>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000045> .
+
+<http://rdf.wikipathways.org/Pathway/WP1008_r105985/WP/Interaction/dca68>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1008_r105985>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1008_r105985/Interaction/dca68>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000714> , <https://identifiers.org/hmdb/HMDB0000123>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000123>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000714> .
+
+<http://rdf.wikipathways.org/Pathway/WP1008_r105985/WP/Interaction/d8ba1>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1008_r105985>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1008_r105985/Interaction/d8ba1>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001423> , <https://identifiers.org/hmdb/HMDB0002252>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0002252>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001423> .
 
 <https://identifiers.org/hmdb/HMDB0001429>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -135,5 +220,24 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0001429>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0001429";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1008/WP1008_rWP1008_r105985/DataNode/e4925> , <http://rdf.wikipathways.org/Pathway/WP1008/WP1008_rWP1008_r105985/DataNode/e077f>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1008_r105985>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1008_r105985/DataNode/e077f> , <http://rdf.wikipathways.org/Pathway/WP1008_r105985/DataNode/e4925>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001429> .
+
+<https://identifiers.org/hmdb/HMDB0001423>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Coenzyme A";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0001423>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0001423";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1008_r105985/WP/Interaction/d8ba1> , <https://identifiers.org/wikipathways/WP1008_r105985>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1008_r105985/DataNode/cfee7>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001423> .
+
+<http://rdf.wikipathways.org/Pathway/WP1008_r105985/WP/Interaction/a3b44>
+        rdf:type          wp:Stimulation , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1008_r105985>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1008_r105985/Interaction/a3b44>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP1008_r105985/WP/Interaction/d9fc5> , <https://identifiers.org/ensembl/ENSBTAG00000013303>;
+        wp:source         <https://identifiers.org/ensembl/ENSBTAG00000013303>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP1008_r105985/WP/Interaction/d9fc5> .

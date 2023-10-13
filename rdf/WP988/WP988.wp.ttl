@@ -22,7 +22,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000006546>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000006546";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP988/WP988_rWP988_r105999/DataNode/dfa5a>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP988_r105999>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP988_r105999/DataNode/dfa5a>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000006546> .
 
 <https://identifiers.org/ensembl/ENSBTAG00000009232>
@@ -31,7 +32,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000009232>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000009232";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP988/WP988_rWP988_r105999/DataNode/dea4c>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP988_r105999/WP/Interaction/b7518> , <https://identifiers.org/wikipathways/WP988_r105999> , <http://rdf.wikipathways.org/Pathway/WP988_r105999/WP/Interaction/bff9c>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP988_r105999/DataNode/dea4c>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000009232> .
 
 <https://identifiers.org/ensembl/ENSBTAG00000001061>
@@ -40,17 +42,30 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000001061>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000001061";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP988/WP988_rWP988_r105999/DataNode/a62fe>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP988_r105999/WP/Interaction/b2be9> , <https://identifiers.org/wikipathways/WP988_r105999>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP988_r105999/DataNode/a62fe>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000001061> .
 
+<https://identifiers.org/wikipathways/WP988>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP988_r105999> .
+
 <https://identifiers.org/ensembl/ENSBTAG00000044192>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "MAF";
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000044192>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000044192";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP988/WP988_rWP988_r105999/DataNode/d79c3>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP988_r105999/Complex/e7cad> , <https://identifiers.org/wikipathways/WP988_r105999>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP988_r105999/DataNode/d79c3>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000044192> .
+
+<http://rdf.wikipathways.org/Pathway/WP988_r105999/WP/Interaction/c8e6f>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP988_r105999>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP988_r105999/Interaction/c8e6f>;
+        wp:participants   <https://identifiers.org/ensembl/ENSBTAG00000019255> , <https://identifiers.org/ensembl/ENSBTAG00000007876>;
+        wp:source         <https://identifiers.org/ensembl/ENSBTAG00000007876>;
+        wp:target         <https://identifiers.org/ensembl/ENSBTAG00000019255> .
 
 <https://identifiers.org/hmdb/HMDB0005792>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -58,11 +73,51 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0005792>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0005792";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP988/WP988_rWP988_r105999/DataNode/b03a0>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP988_r105999>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP988_r105999/DataNode/b03a0>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0005792> .
 
-<http://rdf.wikipathways.org/Pathway/WP988/WP988_rWP988_r105999/WP/Interaction/e1c56>
-        rdf:type  wp:Interaction .
+<http://rdf.wikipathways.org/Pathway/WP988_r105999/WP/Interaction/bff9c>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP988_r105999>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP988_r105999/Interaction/bff9c>;
+        wp:participants   <https://identifiers.org/ensembl/ENSBTAG00000009232>;
+        wp:source         <https://identifiers.org/ensembl/ENSBTAG00000009232> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_9913>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9913" .
+
+<https://identifiers.org/wikipathways/WP988_r105999>
+        rdf:type               skos:Collection , wp:Pathway;
+        dc:identifier          <https://identifiers.org/wikipathways/WP988>;
+        dc:source              "WikiPathways";
+        dc:title               "Transcriptional activation by NRF2"@en;
+        dcterms:description    "Based on [http://www.nature.com/nrc/journal/v3/n10/fig_tab/nrc1189_F4.html Surh, 2003, figure 4].\nNrf2 induces the expression of many antioxidant enzymes. It is therefore thought to be involved in oxidative stress response.";
+        dcterms:identifier     "WP988";
+        dcterms:references     <https://identifiers.org/pubmed/14570043>;
+        cito:cites             <https://identifiers.org/pubmed/14570043>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP988_r105999>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000378> , <http://purl.obolibrary.org/obo/PW_0000369>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9913>;
+        wp:organismName        "Bos taurus";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000369> , <http://purl.obolibrary.org/obo/PW_0000378>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP988&oldid=r105999> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP988&oldid=r105999>;
+        foaf:page              <http://www.wikipathways.org/instance/WP988_r105999> .
+
+<http://rdf.wikipathways.org/Pathway/WP988_r105999/WP/Interaction/f3c7e>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP988_r105999>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP988_r105999/Interaction/f3c7e>;
+        wp:participants   <https://identifiers.org/ensembl/ENSBTAG00000019255> , <https://identifiers.org/ensembl/ENSBTAG00000045902>;
+        wp:source         <https://identifiers.org/ensembl/ENSBTAG00000045902>;
+        wp:target         <https://identifiers.org/ensembl/ENSBTAG00000019255> .
+
+<http://rdf.wikipathways.org/Pathway/WP988_r105999/ComplexBinding/e7cad>
+        rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP988_r105999>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP988_r105999/Group/e7cad>;
+        wp:participants   <https://identifiers.org/ensembl/ENSBTAG00000044192> , <https://identifiers.org/ensembl/ENSBTAG00000019255> , <http://rdf.wikipathways.org/Pathway/WP988_r105999/Complex/e7cad> .
 
 <https://identifiers.org/ensembl/ENSBTAG00000007876>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -70,7 +125,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000007876>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000007876";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP988/WP988_rWP988_r105999/DataNode/a859f>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP988_r105999> , <http://rdf.wikipathways.org/Pathway/WP988_r105999/WP/Interaction/c8e6f>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP988_r105999/DataNode/a859f>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000007876> .
 
 <https://identifiers.org/ensembl/ENSBTAG00000020632>
@@ -79,7 +135,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000020632>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000020632";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP988/WP988_rWP988_r105999/DataNode/f553c>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP988_r105999>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP988_r105999/DataNode/f553c>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000020632> .
 
 <https://identifiers.org/hmdb/HMDB0002269>
@@ -88,7 +145,8 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0002269>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0002269";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP988/WP988_rWP988_r105999/DataNode/ff3f4>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP988_r105999>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP988_r105999/DataNode/ff3f4>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0002269> .
 
 <https://identifiers.org/ensembl/ENSBTAG00000007842>
@@ -97,7 +155,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000007842>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000007842";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP988/WP988_rWP988_r105999/DataNode/f5ed1>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP988_r105999>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP988_r105999/DataNode/f5ed1>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000007842> .
 
 <https://identifiers.org/ensembl/ENSBTAG00000007367>
@@ -106,22 +165,29 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000007367>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000007367";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP988/WP988_rWP988_r105999/DataNode/b06bd>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP988_r105999> , <http://rdf.wikipathways.org/Pathway/WP988_r105999/WP/Interaction/d3ea2>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP988_r105999/DataNode/b06bd>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000007367> .
 
-<http://rdf.wikipathways.org/Pathway/WP988/WP988_rWP988_r105999/WP/Interaction/fbcd9>
-        rdf:type  wp:Interaction .
+<http://rdf.wikipathways.org/Pathway/WP988_r105999/WP/Interaction/bcfe7>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP988_r105999/WP/Interaction/f0473> , <https://identifiers.org/wikipathways/WP988_r105999>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP988_r105999/Interaction/bcfe7>;
+        wp:participants   <https://identifiers.org/ensembl/ENSBTAG00000019255>;
+        wp:source         <https://identifiers.org/ensembl/ENSBTAG00000019255>;
+        wp:target         <https://identifiers.org/ensembl/ENSBTAG00000019255> .
 
-<https://identifiers.org/wikipathways/WP988/WP988_rWP988_r105999>
-        rdf:type             wp:Pathway , skos:Collection;
-        dc:identifier        <https://identifiers.org/wikipathways/WP988/WP988>;
-        dc:source            "WikiPathways";
-        dc:title             "Transcriptional activation by NRF2"@en;
-        dcterms:description  "Based on [http://www.nature.com/nrc/journal/v3/n10/fig_tab/nrc1189_F4.html Surh, 2003, figure 4].\nNrf2 induces the expression of many antioxidant enzymes. It is therefore thought to be involved in oxidative stress response.";
-        dcterms:identifier   "WP988/WP988";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP988/WP988_rWP988_r105999>;
-        wp:organismName      "Bos taurus";
-        foaf:page            <http://www.wikipathways.org/instance/WP988/WP988_rWP988_r105999> .
+<http://rdf.wikipathways.org/Pathway/WP988_r105999/Complex/b774c>
+        rdf:type          wp:Complex , wp:DataNode;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP988_r105999>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP988_r105999/Group/b774c>;
+        wp:participants   <https://identifiers.org/ensembl/ENSBTAG00000003543> , <https://identifiers.org/ensembl/ENSBTAG00000019255> .
+
+<http://rdf.wikipathways.org/Pathway/WP988_r105999/ComplexBinding/b774c>
+        rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP988_r105999>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP988_r105999/Group/b774c>;
+        wp:participants   <https://identifiers.org/ensembl/ENSBTAG00000003543> , <https://identifiers.org/ensembl/ENSBTAG00000019255> , <http://rdf.wikipathways.org/Pathway/WP988_r105999/Complex/b774c> .
 
 <https://identifiers.org/chemspider/7991398>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -129,16 +195,30 @@
         dc:identifier       <https://identifiers.org/chemspider/7991398>;
         dc:source           "Chemspider";
         dcterms:identifier  "7991398";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP988/WP988_rWP988_r105999/DataNode/b366d>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP988_r105999> , <http://rdf.wikipathways.org/Pathway/WP988_r105999/WP/Interaction/f0473>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP988_r105999/DataNode/b366d>;
         foaf:page           <http://www.chemspider.com/Chemical-Structure.7991398.html> .
 
+<http://rdf.wikipathways.org/Pathway/WP988_r105999/WP/Interaction/f0473>
+        rdf:type          wp:Stimulation , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP988_r105999>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP988_r105999/Interaction/f0473>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP988_r105999/WP/Interaction/bcfe7> , <https://identifiers.org/chemspider/7991398>;
+        wp:source         <https://identifiers.org/chemspider/7991398>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP988_r105999/WP/Interaction/bcfe7> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP988&oldid=r105999>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
 <https://identifiers.org/ensembl/ENSBTAG00000003543>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "KEAP1";
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000003543>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000003543";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP988/WP988_rWP988_r105999/DataNode/fdb18> , <http://rdf.wikipathways.org/Pathway/WP988/WP988_rWP988_r105999/DataNode/be345>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP988_r105999/Complex/b774c> , <https://identifiers.org/wikipathways/WP988_r105999>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP988_r105999/DataNode/fdb18> , <http://rdf.wikipathways.org/Pathway/WP988_r105999/DataNode/be345>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000003543> .
 
 <https://identifiers.org/ensembl/ENSBTAG00000015571>
@@ -147,8 +227,15 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000015571>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000015571";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP988/WP988_rWP988_r105999/DataNode/cecad>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP988_r105999>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP988_r105999/DataNode/cecad>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000015571> .
+
+<http://rdf.wikipathways.org/Pathway/WP988_r105999/Complex/e7cad>
+        rdf:type          wp:Complex , wp:DataNode;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP988_r105999>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP988_r105999/Group/e7cad>;
+        wp:participants   <https://identifiers.org/ensembl/ENSBTAG00000044192> , <https://identifiers.org/ensembl/ENSBTAG00000019255> .
 
 <https://identifiers.org/ensembl/ENSBTAG00000045902>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -156,8 +243,36 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000045902>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000045902";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP988/WP988_rWP988_r105999/DataNode/dbe12>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP988_r105999/WP/Interaction/f3c7e> , <https://identifiers.org/wikipathways/WP988_r105999>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP988_r105999/DataNode/dbe12>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000045902> .
+
+<http://rdf.wikipathways.org/Pathway/WP988_r105999/WP/Interaction/b7518>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP988_r105999>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP988_r105999/Interaction/b7518>;
+        wp:participants   <https://identifiers.org/ensembl/ENSBTAG00000019255> , <https://identifiers.org/ensembl/ENSBTAG00000009232>;
+        wp:source         <https://identifiers.org/ensembl/ENSBTAG00000009232>;
+        wp:target         <https://identifiers.org/ensembl/ENSBTAG00000019255> .
+
+<https://identifiers.org/pubmed/14570043>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "14570043";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP988_r105999>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/14570043> .
+
+<http://rdf.wikipathways.org/Pathway/WP988_r105999/WP/Interaction/b2be9>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP988_r105999>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP988_r105999/Interaction/b2be9>;
+        wp:participants   <https://identifiers.org/ensembl/ENSBTAG00000019255> , <https://identifiers.org/ensembl/ENSBTAG00000001061>;
+        wp:source         <https://identifiers.org/ensembl/ENSBTAG00000001061>;
+        wp:target         <https://identifiers.org/ensembl/ENSBTAG00000019255> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP988&oldid=r105999>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
 
 <https://identifiers.org/ensembl/ENSBTAG00000034075>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -165,8 +280,22 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000034075>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000034075";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP988/WP988_rWP988_r105999/DataNode/a1b6d>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP988_r105999>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP988_r105999/DataNode/a1b6d>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000034075> .
+
+<http://rdf.wikipathways.org/Pathway/WP988_r105999/WP/Interaction/bd859>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP988_r105999>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP988_r105999/Interaction/bd859> .
+
+<http://rdf.wikipathways.org/Pathway/WP988_r105999/WP/Interaction/d3ea2>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP988_r105999>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP988_r105999/Interaction/d3ea2>;
+        wp:participants   <https://identifiers.org/ensembl/ENSBTAG00000019255> , <https://identifiers.org/ensembl/ENSBTAG00000007367>;
+        wp:source         <https://identifiers.org/ensembl/ENSBTAG00000007367>;
+        wp:target         <https://identifiers.org/ensembl/ENSBTAG00000019255> .
 
 <https://identifiers.org/ensembl/ENSBTAG00000015582>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -174,7 +303,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000015582>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000015582";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP988/WP988_rWP988_r105999/DataNode/d4c77>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP988_r105999>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP988_r105999/DataNode/d4c77>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000015582> .
 
 <https://identifiers.org/ensembl/ENSBTAG00000019255>
@@ -183,7 +313,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSBTAG00000019255>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSBTAG00000019255";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP988/WP988_rWP988_r105999/DataNode/b68db> , <http://rdf.wikipathways.org/Pathway/WP988/WP988_rWP988_r105999/DataNode/fbb3a> , <http://rdf.wikipathways.org/Pathway/WP988/WP988_rWP988_r105999/DataNode/d3b16>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP988_r105999/WP/Interaction/c8e6f> , <https://identifiers.org/wikipathways/WP988_r105999> , <http://rdf.wikipathways.org/Pathway/WP988_r105999/WP/Interaction/bcfe7> , <http://rdf.wikipathways.org/Pathway/WP988_r105999/Complex/b774c> , <http://rdf.wikipathways.org/Pathway/WP988_r105999/WP/Interaction/b7518> , <http://rdf.wikipathways.org/Pathway/WP988_r105999/WP/Interaction/d3ea2> , <http://rdf.wikipathways.org/Pathway/WP988_r105999/Complex/e7cad> , <http://rdf.wikipathways.org/Pathway/WP988_r105999/WP/Interaction/f3c7e> , <http://rdf.wikipathways.org/Pathway/WP988_r105999/WP/Interaction/b2be9>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP988_r105999/DataNode/fbb3a> , <http://rdf.wikipathways.org/Pathway/WP988_r105999/DataNode/d3b16> , <http://rdf.wikipathways.org/Pathway/WP988_r105999/DataNode/b68db>;
         foaf:page           <https://www.ensembl.org/id/ENSBTAG00000019255> .
 
 <https://identifiers.org/chebi/CHEBI:8062>
@@ -192,5 +323,6 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:8062>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:8062";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP988/WP988_rWP988_r105999/DataNode/d739f>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP988_r105999>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP988_r105999/DataNode/d739f>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:8062> .

@@ -16,14 +16,29 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/ncbigene/38261>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "CG1140";
-        dc:identifier       <https://identifiers.org/ncbigene/38261>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "38261";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP101/WP101_rWP101_r116930/DataNode/b01>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/38261> .
+<https://identifiers.org/wikipathways/WP101_r116930>
+        rdf:type               wp:Pathway , skos:Collection;
+        dc:identifier          <https://identifiers.org/wikipathways/WP101>;
+        dc:source              "WikiPathways";
+        dc:title               "Synthesis and degradation of ketone bodies"@en;
+        dcterms:description    "Ketone bodies are three water-soluble compounds that are produced as by-products when fatty acids are broken down for energy in the liver and kidney. They are used as a source of energy in the heart and brain. In the brain, they are a vital source of energy during fasting.\n\nSource: [[wikipedia:Ketone_bodies|Wikipedia]]";
+        dcterms:identifier     "WP101";
+        dcterms:references     <https://identifiers.org/pubmed/14769483>;
+        cito:cites             <https://identifiers.org/pubmed/14769483>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP101_r116930>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000069>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_7227>;
+        wp:organismName        "Drosophila melanogaster";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000069>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP101&oldid=r116930> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP101&oldid=r116930>;
+        foaf:page              <http://www.wikipathways.org/instance/WP101_r116930> .
+
+<https://identifiers.org/pubmed/14769483>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "14769483";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP101_r116930>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/14769483> .
 
 <https://identifiers.org/ncbigene/33978>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -31,8 +46,30 @@
         dc:identifier       <https://identifiers.org/ncbigene/33978>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "33978";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP101/WP101_rWP101_r116930/DataNode/beb>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP101_r116930>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP101_r116930/DataNode/beb>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/33978> .
+
+<https://identifiers.org/ncbigene/38261>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "CG1140";
+        dc:identifier       <https://identifiers.org/ncbigene/38261>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "38261";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP101_r116930>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP101_r116930/DataNode/b01>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/38261> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP101&oldid=r116930>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_7227>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "7227" .
+
+<https://identifiers.org/wikipathways/WP101>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP101_r116930> .
 
 <https://identifiers.org/ncbigene/31695>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -40,16 +77,10 @@
         dc:identifier       <https://identifiers.org/ncbigene/31695>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "31695";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP101/WP101_rWP101_r116930/DataNode/e90>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP101_r116930>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP101_r116930/DataNode/e90>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/31695> .
 
-<https://identifiers.org/wikipathways/WP101/WP101_rWP101_r116930>
-        rdf:type             wp:Pathway , skos:Collection;
-        dc:identifier        <https://identifiers.org/wikipathways/WP101/WP101>;
-        dc:source            "WikiPathways";
-        dc:title             "Synthesis and degradation of ketone bodies"@en;
-        dcterms:description  "Ketone bodies are three water-soluble compounds that are produced as by-products when fatty acids are broken down for energy in the liver and kidney. They are used as a source of energy in the heart and brain. In the brain, they are a vital source of energy during fasting.\n\nSource: [[wikipedia:Ketone_bodies|Wikipedia]]";
-        dcterms:identifier   "WP101/WP101";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP101/WP101_rWP101_r116930>;
-        wp:organismName      "Drosophila melanogaster";
-        foaf:page            <http://www.wikipathways.org/instance/WP101/WP101_rWP101_r116930> .
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP101&oldid=r116930>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .

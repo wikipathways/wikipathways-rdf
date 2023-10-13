@@ -16,16 +16,14 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/WP/Interaction/ae7b4>
-        rdf:type  wp:Interaction .
-
 <https://identifiers.org/ensembl/ENSGALG00000004342>
         rdf:type            wp:GeneProduct , wp:DataNode;
         rdfs:label          "ORC6";
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000004342>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000004342";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/de7>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/de7>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000004342> .
 
 <https://identifiers.org/ensembl/ENSGALG00000012348>
@@ -34,7 +32,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000012348>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000012348";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/d80>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP840_r95750/Complex/bc72b> , <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/d80>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000012348> .
 
 <https://identifiers.org/ensembl/ENSGALG00000025759>
@@ -43,7 +42,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000025759>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000025759";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/cc9>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/cc9>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000025759> .
 
 <https://identifiers.org/ensembl/ENSGALG00000012448>
@@ -52,8 +52,38 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000012448>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000012448";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/f68>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/f68>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000012448> .
+
+<http://rdf.wikipathways.org/Pathway/WP840_r95750/WP/Interaction/adb05>
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP840_r95750/WP/Interaction/a744f> .
+
+<http://rdf.wikipathways.org/Pathway/WP840_r95750/WP/Interaction/ae7b4>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP840_r95750/Interaction/ae7b4>;
+        wp:participants   <https://identifiers.org/ensembl/ENSGALG00000029292> , <https://identifiers.org/ensembl/ENSGALG00000025977> .
+
+<http://rdf.wikipathways.org/Pathway/WP840_r95750/WP/Interaction/afc7f>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP840_r95750/Interaction/afc7f>;
+        wp:participants   <https://identifiers.org/ensembl/ENSGALG00000025977> , <https://identifiers.org/ensembl/ENSGALG00000033631>;
+        wp:source         <https://identifiers.org/ensembl/ENSGALG00000033631>;
+        wp:target         <https://identifiers.org/ensembl/ENSGALG00000025977> .
+
+<http://rdf.wikipathways.org/Pathway/WP840_r95750/Complex/f86bb>
+        rdf:type          wp:Complex , wp:DataNode;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP840_r95750/Group/f86bb>;
+        wp:participants   <https://identifiers.org/ensembl/ENSGALG00000040794> , <https://identifiers.org/ensembl/ENSGALG00000004494> .
+
+<http://rdf.wikipathways.org/Pathway/WP840_r95750/ComplexBinding/bc72b>
+        rdf:type          wp:Binding , wp:Interaction , wp:ComplexBinding;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP840_r95750/Group/bc72b>;
+        wp:participants   <https://identifiers.org/ensembl/ENSGALG00000016676> , <https://identifiers.org/ensembl/ENSGALG00000012348> , <https://identifiers.org/ensembl/ENSGALG00000006037> , <http://rdf.wikipathways.org/Pathway/WP840_r95750/Complex/bc72b> , <https://identifiers.org/ensembl/ENSGALG00000012915> , <https://identifiers.org/ensembl/ENSGALG00000012546> , <https://identifiers.org/ensembl/ENSGALG00000032699> .
 
 <https://identifiers.org/ensembl/ENSGALG00000010623>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -61,7 +91,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000010623>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000010623";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/d6c>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/d6c>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000010623> .
 
 <https://identifiers.org/ensembl/ENSGALG00000017159>
@@ -70,8 +101,15 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000017159>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000017159";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/ec1>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750> , <http://rdf.wikipathways.org/Pathway/WP840_r95750/WP/Interaction/a11d4>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/ec1>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000017159> .
+
+<http://rdf.wikipathways.org/Pathway/WP840_r95750/Complex/a4625>
+        rdf:type          wp:Complex , wp:DataNode;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP840_r95750/Group/a4625>;
+        wp:participants   <https://identifiers.org/ensembl/ENSGALG00000007555> , <https://identifiers.org/ensembl/ENSGALG00000003485> , <https://identifiers.org/ensembl/ENSGALG00000017283> .
 
 <https://identifiers.org/ensembl/ENSGALG00000001722>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -79,19 +117,9 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000001722>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000001722";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/c70>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/c70>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000001722> .
-
-<https://identifiers.org/wikipathways/WP840/WP840_rWP840_r95750>
-        rdf:type             wp:Pathway , skos:Collection;
-        dc:identifier        <https://identifiers.org/wikipathways/WP840/WP840>;
-        dc:source            "WikiPathways";
-        dc:title             "G1 to S cell cycle control"@en;
-        dcterms:description  "In the G1 phase there are two types of DNA damage responses, the p53-dependent and the p53-independent pathways. The p53-dependent responses inhibit CDKs through the up-regulation of genes encoding CKIs mediated by the p53 protein, whereas the p53-independent mechanisms inhibit CDKs through the inhibitory T14Y15 phosphorylation of Cdk2. Failure of DNA damage checkpoints in G1 leads to mutagenic replication of damaged templates and other replication defects.\n\nSource: Reactome http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&FOCUS_SPECIES=Homo%20sapiens&ID=69615&";
-        dcterms:identifier   "WP840/WP840";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750>;
-        wp:organismName      "Gallus gallus";
-        foaf:page            <http://www.wikipathways.org/instance/WP840/WP840_rWP840_r95750> .
 
 <https://identifiers.org/ensembl/ENSGALG00000041244>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -99,7 +127,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000041244>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000041244";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/e9d>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/e9d>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000041244> .
 
 <https://identifiers.org/ensembl/ENSGALG00000030099>
@@ -108,7 +137,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000030099>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000030099";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/f38>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/f38>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000030099> .
 
 <https://identifiers.org/ensembl/ENSGALG00000015641>
@@ -117,25 +147,26 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000015641>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000015641";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/d2c>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/d2c>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000015641> .
 
-<https://identifiers.org/ensembl/ENSGALG00000010537>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "CDKN2C";
-        dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000010537>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSGALG00000010537";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/db7>;
-        foaf:page           <https://www.ensembl.org/id/ENSGALG00000010537> .
+<http://rdf.wikipathways.org/Pathway/WP840_r95750/WP/Interaction/d95a4>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP840_r95750/Interaction/d95a4>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP840_r95750/WP/Interaction/d20ab> , <https://identifiers.org/ensembl/ENSGALG00000038469>;
+        wp:source         <https://identifiers.org/ensembl/ENSGALG00000038469>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP840_r95750/WP/Interaction/d20ab> .
 
 <https://identifiers.org/ensembl/ENSGALG00000014790>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "CDK7";
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000014790>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000014790";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/ca6> , <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/c16>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/ca6> , <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/c16>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000014790> .
 
 <https://identifiers.org/ensembl/ENSGALG00000028318>
@@ -144,8 +175,19 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000028318>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000028318";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/acc>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/acc>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000028318> .
+
+<https://identifiers.org/ensembl/ENSGALG00000010537>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "CDKN2C";
+        dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000010537>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSGALG00000010537";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/db7>;
+        foaf:page           <https://www.ensembl.org/id/ENSGALG00000010537> .
 
 <https://identifiers.org/ensembl/ENSGALG00000016454>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -153,11 +195,9 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000016454>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000016454";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/e0f>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/e0f>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000016454> .
-
-<http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/WP/Interaction/f32f6>
-        rdf:type  wp:Interaction .
 
 <https://identifiers.org/ensembl/ENSGALG00000008175>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -165,8 +205,16 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000008175>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000008175";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/fdb>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/fdb>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000008175> .
+
+<http://rdf.wikipathways.org/Pathway/WP840_r95750/WP/Interaction/fc77f>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP840_r95750/Interaction/fc77f>;
+        wp:participants   <https://identifiers.org/ensembl/ENSGALG00000029292>;
+        wp:source         <https://identifiers.org/ensembl/ENSGALG00000029292> .
 
 <https://identifiers.org/ensembl/ENSGALG00000015800>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -174,7 +222,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000015800>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000015800";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/db2>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/db2>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000015800> .
 
 <https://identifiers.org/ensembl/ENSGALG00000008234>
@@ -183,16 +232,45 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000008234>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000008234";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/e4c>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/e4c>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000008234> .
 
+<https://identifiers.org/wikipathways/WP840_r95750>
+        rdf:type               skos:Collection , wp:Pathway;
+        dc:identifier          <https://identifiers.org/wikipathways/WP840>;
+        dc:source              "WikiPathways";
+        dc:title               "G1 to S cell cycle control"@en;
+        dcterms:description    "In the G1 phase there are two types of DNA damage responses, the p53-dependent and the p53-independent pathways. The p53-dependent responses inhibit CDKs through the up-regulation of genes encoding CKIs mediated by the p53 protein, whereas the p53-independent mechanisms inhibit CDKs through the inhibitory T14Y15 phosphorylation of Cdk2. Failure of DNA damage checkpoints in G1 leads to mutagenic replication of damaged templates and other replication defects.\n\nSource: Reactome http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&FOCUS_SPECIES=Homo%20sapiens&ID=69615&";
+        dcterms:identifier     "WP840";
+        dcterms:references     <https://identifiers.org/pubmed/12164919>;
+        cito:cites             <https://identifiers.org/pubmed/12164919>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP840_r95750>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000095> , <http://purl.obolibrary.org/obo/PW_0000094>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9031>;
+        wp:organismName        "Gallus gallus";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000094> , <http://purl.obolibrary.org/obo/PW_0000095>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP840&oldid=r95750> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP840&oldid=r95750>;
+        foaf:page              <http://www.wikipathways.org/instance/WP840_r95750> .
+
+<http://rdf.wikipathways.org/Pathway/WP840_r95750/WP/Interaction/e702e>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP840_r95750/Interaction/e702e>;
+        wp:participants   <https://identifiers.org/ensembl/ENSGALG00000025977>;
+        wp:source         <https://identifiers.org/ensembl/ENSGALG00000025977> .
+
+<https://identifiers.org/wikipathways/WP840>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP840_r95750> .
+
 <https://identifiers.org/ensembl/ENSGALG00000012915>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "MCM4";
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000012915>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000012915";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/d3e>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750> , <http://rdf.wikipathways.org/Pathway/WP840_r95750/Complex/bc72b>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/d3e>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000012915> .
 
 <https://identifiers.org/ensembl/ENSGALG00000001252>
@@ -201,7 +279,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000001252>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000001252";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/cb9>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/cb9>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000001252> .
 
 <https://identifiers.org/ensembl/ENSGALG00000012237>
@@ -210,16 +289,18 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000012237>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000012237";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/dd7>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/dd7>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000012237> .
 
 <https://identifiers.org/ensembl/ENSGALG00000011910>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "MNAT1";
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000011910>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000011910";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/de1>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP840_r95750/WP/Interaction/a744f> , <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/de1>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000011910> .
 
 <https://identifiers.org/ensembl/ENSGALG00000001616>
@@ -228,7 +309,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000001616>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000001616";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/add>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/add>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000001616> .
 
 <https://identifiers.org/ensembl/ENSGALG00000002523>
@@ -237,7 +319,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000002523>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000002523";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/cb1>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/cb1>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000002523> .
 
 <https://identifiers.org/ensembl/ENSGALG00000033631>
@@ -246,7 +329,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000033631>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000033631";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/d30>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750> , <http://rdf.wikipathways.org/Pathway/WP840_r95750/WP/Interaction/afc7f>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/d30>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000033631> .
 
 <https://identifiers.org/ensembl/ENSGALG00000003085>
@@ -255,7 +339,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000003085>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000003085";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/b0b>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/b0b>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000003085> .
 
 <https://identifiers.org/ensembl/ENSGALG00000007555>
@@ -264,7 +349,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000007555>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000007555";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/d1f>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP840_r95750/Complex/a4625> , <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/d1f>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000007555> .
 
 <https://identifiers.org/ensembl/ENSGALG00000032699>
@@ -273,7 +359,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000032699>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000032699";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/df5> , <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/c54>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750> , <http://rdf.wikipathways.org/Pathway/WP840_r95750/Complex/bc72b>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/c54> , <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/df5>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000032699> .
 
 <https://identifiers.org/ensembl/ENSGALG00000003072>
@@ -282,7 +369,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000003072>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000003072";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/e96>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/e96>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000003072> .
 
 <https://identifiers.org/ensembl/ENSGALG00000005769>
@@ -291,17 +379,32 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000005769>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000005769";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/eb5>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/eb5>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000005769> .
 
 <https://identifiers.org/ensembl/ENSGALG00000017283>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "CCND2";
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000017283>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000017283";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/ba0>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750> , <http://rdf.wikipathways.org/Pathway/WP840_r95750/Complex/a4625>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/ba0>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000017283> .
+
+<http://rdf.wikipathways.org/Pathway/WP840_r95750/Complex/bc72b>
+        rdf:type          wp:Complex , wp:DataNode;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP840_r95750/Group/bc72b>;
+        wp:participants   <https://identifiers.org/ensembl/ENSGALG00000032699> , <https://identifiers.org/ensembl/ENSGALG00000012348> , <https://identifiers.org/ensembl/ENSGALG00000012546> , <https://identifiers.org/ensembl/ENSGALG00000016676> , <https://identifiers.org/ensembl/ENSGALG00000006037> , <https://identifiers.org/ensembl/ENSGALG00000012915> .
+
+<http://rdf.wikipathways.org/Pathway/WP840_r95750/WP/Interaction/c5378>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP840_r95750/Interaction/c5378>;
+        wp:participants   <https://identifiers.org/ensembl/ENSGALG00000025977>;
+        wp:target         <https://identifiers.org/ensembl/ENSGALG00000025977> .
 
 <https://identifiers.org/ensembl/ENSGALG00000001332>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -309,8 +412,17 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000001332>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000001332";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/ea2>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/ea2>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000001332> .
+
+<http://rdf.wikipathways.org/Pathway/WP840_r95750/WP/Interaction/d5185>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP840_r95750/Interaction/d5185>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP840_r95750/WP/Interaction/bcbb6> , <https://identifiers.org/ensembl/ENSGALG00000009942>;
+        wp:source         <https://identifiers.org/ensembl/ENSGALG00000009942>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP840_r95750/WP/Interaction/bcbb6> .
 
 <https://identifiers.org/ensembl/ENSGALG00000040794>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -318,8 +430,13 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000040794>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000040794";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/ff4>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP840_r95750/Complex/f86bb> , <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/ff4>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000040794> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP840&oldid=r95750>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
 
 <https://identifiers.org/ensembl/ENSGALG00000003485>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -327,7 +444,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000003485>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000003485";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/d19>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750> , <http://rdf.wikipathways.org/Pathway/WP840_r95750/Complex/a4625>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/d19>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000003485> .
 
 <https://identifiers.org/ensembl/ENSGALG00000012680>
@@ -336,7 +454,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000012680>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000012680";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/e61>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/e61>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000012680> .
 
 <https://identifiers.org/ensembl/ENSGALG00000006037>
@@ -345,7 +464,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000006037>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000006037";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/d88>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750> , <http://rdf.wikipathways.org/Pathway/WP840_r95750/Complex/bc72b>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/d88>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000006037> .
 
 <https://identifiers.org/ensembl/ENSGALG00000022980>
@@ -354,7 +474,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000022980>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000022980";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/a51>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/a51>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000022980> .
 
 <https://identifiers.org/ensembl/ENSGALG00000003045>
@@ -363,7 +484,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000003045>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000003045";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/a3b>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/a3b>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000003045> .
 
 <https://identifiers.org/ensembl/ENSGALG00000016676>
@@ -372,7 +494,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000016676>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000016676";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/d5b>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP840_r95750/Complex/bc72b> , <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/d5b>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000016676> .
 
 <https://identifiers.org/ensembl/ENSGALG00000041973>
@@ -381,11 +504,12 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000041973>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000041973";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/f96>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/f96>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000041973> .
 
-<http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/WP/Interaction/a2a5d>
-        rdf:type  wp:Interaction .
+<http://rdf.wikipathways.org/Pathway/WP840_r95750/WP/Interaction/d20ab>
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP840_r95750/WP/Interaction/d95a4> .
 
 <https://identifiers.org/ensembl/ENSGALG00000010347>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -393,8 +517,17 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000010347>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000010347";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/c19>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/c19>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000010347> .
+
+<http://rdf.wikipathways.org/Pathway/WP840_r95750/WP/Interaction/a744f>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP840_r95750/Interaction/a744f>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP840_r95750/WP/Interaction/adb05> , <https://identifiers.org/ensembl/ENSGALG00000011910>;
+        wp:source         <https://identifiers.org/ensembl/ENSGALG00000011910>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP840_r95750/WP/Interaction/adb05> .
 
 <https://identifiers.org/ensembl/ENSGALG00000038469>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -402,7 +535,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000038469>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000038469";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/fbc>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP840_r95750/WP/Interaction/d95a4> , <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/fbc>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000038469> .
 
 <https://identifiers.org/ensembl/ENSGALG00000004494>
@@ -411,7 +545,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000004494>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000004494";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/f83> , <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/bd6> , <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/fc1>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750> , <http://rdf.wikipathways.org/Pathway/WP840_r95750/Complex/f86bb>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/fc1> , <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/f83> , <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/bd6>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000004494> .
 
 <https://identifiers.org/ensembl/ENSGALG00000009476>
@@ -420,16 +555,18 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000009476>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000009476";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/e87> , <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/a5f>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/a5f> , <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/e87>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000009476> .
 
 <https://identifiers.org/ensembl/ENSGALG00000025977>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "GADD45A";
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000025977>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000025977";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/ef6>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP840_r95750/WP/Interaction/afc7f> , <https://identifiers.org/wikipathways/WP840_r95750> , <http://rdf.wikipathways.org/Pathway/WP840_r95750/WP/Interaction/c5378> , <http://rdf.wikipathways.org/Pathway/WP840_r95750/WP/Interaction/e702e> , <http://rdf.wikipathways.org/Pathway/WP840_r95750/WP/Interaction/ae7b4>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/ef6>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000025977> .
 
 <https://identifiers.org/ensembl/ENSGALG00000026137>
@@ -438,8 +575,18 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000026137>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000026137";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/c04> , <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/afb>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/c04> , <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/afb>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000026137> .
+
+<http://rdf.wikipathways.org/Pathway/WP840_r95750/WP/Interaction/bcbb6>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP840_r95750/WP/Interaction/d5185> , <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP840_r95750/Interaction/bcbb6> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_9031>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9031" .
 
 <https://identifiers.org/ensembl/ENSGALG00000010700>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -447,8 +594,13 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000010700>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000010700";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/d37>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/d37>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000010700> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP840&oldid=r95750>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
 
 <https://identifiers.org/ensembl/ENSGALG00000039384>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -456,17 +608,25 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000039384>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000039384";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/a3c>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/a3c>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000039384> .
 
 <https://identifiers.org/ensembl/ENSGALG00000012546>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "MCM5";
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000012546>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000012546";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/dfb>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750> , <http://rdf.wikipathways.org/Pathway/WP840_r95750/Complex/bc72b>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/dfb>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000012546> .
+
+<http://rdf.wikipathways.org/Pathway/WP840_r95750/ComplexBinding/f86bb>
+        rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP840_r95750/Group/f86bb>;
+        wp:participants   <https://identifiers.org/ensembl/ENSGALG00000040794> , <https://identifiers.org/ensembl/ENSGALG00000004494> , <http://rdf.wikipathways.org/Pathway/WP840_r95750/Complex/f86bb> .
 
 <https://identifiers.org/ensembl/ENSGALG00000016997>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -474,16 +634,18 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000016997>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000016997";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/d0d> , <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/d75> , <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/a1f>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/d0d> , <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/a1f> , <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/d75>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000016997> .
 
 <https://identifiers.org/ensembl/ENSGALG00000009942>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "MDM2";
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000009942>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000009942";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/c06>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP840_r95750/WP/Interaction/a11d4> , <http://rdf.wikipathways.org/Pathway/WP840_r95750/WP/Interaction/d5185> , <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/c06>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000009942> .
 
 <https://identifiers.org/ensembl/ENSGALG00000016278>
@@ -492,8 +654,30 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000016278>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000016278";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/b87>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/b87>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000016278> .
+
+<http://rdf.wikipathways.org/Pathway/WP840_r95750/WP/Interaction/a11d4>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP840_r95750/Interaction/a11d4>;
+        wp:participants   <https://identifiers.org/ensembl/ENSGALG00000009942> , <https://identifiers.org/ensembl/ENSGALG00000017159>;
+        wp:source         <https://identifiers.org/ensembl/ENSGALG00000017159>;
+        wp:target         <https://identifiers.org/ensembl/ENSGALG00000009942> .
+
+<http://rdf.wikipathways.org/Pathway/WP840_r95750/ComplexBinding/a4625>
+        rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP840_r95750/Group/a4625>;
+        wp:participants   <https://identifiers.org/ensembl/ENSGALG00000007555> , <https://identifiers.org/ensembl/ENSGALG00000003485> , <https://identifiers.org/ensembl/ENSGALG00000017283> , <http://rdf.wikipathways.org/Pathway/WP840_r95750/Complex/a4625> .
+
+<https://identifiers.org/pubmed/12164919>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "12164919";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/12164919> .
 
 <https://identifiers.org/ensembl/ENSGALG00000038915>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -501,7 +685,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000038915>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000038915";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/bb0>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/bb0>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000038915> .
 
 <https://identifiers.org/ensembl/ENSGALG00000016823>
@@ -510,7 +695,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000016823>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000016823";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/eaf> , <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/e73>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/e73> , <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/eaf>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000016823> .
 
 <https://identifiers.org/ensembl/ENSGALG00000017052>
@@ -519,7 +705,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000017052>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000017052";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/fd6>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/fd6>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000017052> .
 
 <https://identifiers.org/ensembl/ENSGALG00000000734>
@@ -528,11 +715,9 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000000734>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000000734";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/c1b>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/c1b>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000000734> .
-
-<http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/WP/Interaction/a5674>
-        rdf:type  wp:Interaction .
 
 <https://identifiers.org/ensembl/ENSGALG00000005932>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -540,7 +725,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000005932>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000005932";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/cc8>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/cc8>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000005932> .
 
 <https://identifiers.org/ensembl/ENSGALG00000029292>
@@ -549,7 +735,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000029292>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000029292";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/a7d>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750> , <http://rdf.wikipathways.org/Pathway/WP840_r95750/WP/Interaction/fc77f> , <http://rdf.wikipathways.org/Pathway/WP840_r95750/WP/Interaction/ae7b4>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/a7d>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000029292> .
 
 <https://identifiers.org/ensembl/ENSGALG00000008393>
@@ -558,5 +745,6 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSGALG00000008393>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSGALG00000008393";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840/WP840_rWP840_r95750/DataNode/ee5>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP840_r95750>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP840_r95750/DataNode/ee5>;
         foaf:page           <https://www.ensembl.org/id/ENSGALG00000008393> .

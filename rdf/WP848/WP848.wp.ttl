@@ -16,35 +16,60 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
+<https://identifiers.org/hmdb/HMDB0003125>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "H2O2";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0003125>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0003125";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP848_r117403> , <http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id1c49aa36>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP848_r117403/DataNode/b813b>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0003125> .
+
+<https://identifiers.org/ncbigene/457450>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "PPOX";
+        dc:identifier       <https://identifiers.org/ncbigene/457450>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "457450";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP848_r117403> , <http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id757f42ba>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP848_r117403/DataNode/ca1>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/457450> .
+
+<http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id5ed5361>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP848_r117403>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP848_r117403/Interaction/id5ed5361>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/idf6e74499> , <https://identifiers.org/ncbigene/450813>;
+        wp:source         <https://identifiers.org/ncbigene/450813>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/idf6e74499> .
+
+<http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id6083db4a>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP848_r117403>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP848_r117403/Interaction/id6083db4a>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0002111>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0002111> .
+
+<https://identifiers.org/ncbigene/450813>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "UROS";
+        dc:identifier       <https://identifiers.org/ncbigene/450813>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "450813";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id5ed5361> , <https://identifiers.org/wikipathways/WP848_r117403>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP848_r117403/DataNode/e16>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/450813> .
+
 <https://identifiers.org/ncbigene/455437>
         rdf:type            wp:GeneProduct , wp:DataNode;
         rdfs:label          "FECH";
         dc:identifier       <https://identifiers.org/ncbigene/455437>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "455437";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP848/WP848_rWP848_r117403/DataNode/c3a>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id4614c9a9> , <https://identifiers.org/wikipathways/WP848_r117403>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP848_r117403/DataNode/c3a>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/455437> .
-
-<https://identifiers.org/hmdb/HMDB0000051>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "NH3";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000051>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000051";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP848/WP848_rWP848_r117403/DataNode/ae090>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000051> .
-
-<http://rdf.wikipathways.org/Pathway/WP848/WP848_rWP848_r117403/WP/Interaction/id3903a7f9>
-        rdf:type  wp:Interaction .
-
-<https://identifiers.org/ncbigene/450813>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "UROS";
-        dc:identifier       <https://identifiers.org/ncbigene/450813>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "450813";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP848/WP848_rWP848_r117403/DataNode/e16>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/450813> .
 
 <https://identifiers.org/ncbigene/473626>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -52,91 +77,14 @@
         dc:identifier       <https://identifiers.org/ncbigene/473626>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "473626";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP848/WP848_rWP848_r117403/DataNode/a6e>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP848_r117403>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP848_r117403/DataNode/a6e>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/473626> .
 
-<http://rdf.wikipathways.org/Pathway/WP848/WP848_rWP848_r117403/WP/Interaction/id7856b940>
-        rdf:type  wp:Interaction .
-
-<http://rdf.wikipathways.org/Pathway/WP848/WP848_rWP848_r117403/WP/Interaction/ide20c39ac>
-        rdf:type  wp:Interaction .
-
-<https://identifiers.org/hmdb/HMDB0002111>
-        rdf:type            wp:DataNode , wp:Metabolite;
-        rdfs:label          "H2O";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0002111>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0002111";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP848/WP848_rWP848_r117403/DataNode/d789f> , <http://rdf.wikipathways.org/Pathway/WP848/WP848_rWP848_r117403/DataNode/dfd99> , <http://rdf.wikipathways.org/Pathway/WP848/WP848_rWP848_r117403/DataNode/efc67>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0002111> .
-
-<https://identifiers.org/wikipathways/WP848/WP848_rWP848_r117403>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP848/WP848>;
-        dc:source            "WikiPathways";
-        dc:title             "Heme biosynthesis"@en;
-        dcterms:description  "The enzymatic process that produces heme is properly called porphyrin synthesis, as all the intermediates are tetrapyrroles that are chemically classified are porphyrins. The process is highly conserved across biology. In humans, this pathway serves almost exclusively to form heme. In other species, it also produces similar substances such as cobalamin (vitamin B12).\n\nThe pathway is initiated by the synthesis of D-Aminolevulinic acid (dALA or δALA) from the amino acid glycine and succinyl-CoA from the citric acid cycle (Krebs cycle). The rate-limiting enzyme responsible for this reaction, ALA synthase, is strictly regulated by intracellular iron levels and heme concentration. A low-iron level, e.g., in iron deficiency, leads to decreased porphyrin synthesis, which prevents accumulation of the toxic intermediates. This mechanism is of therapeutic importance: infusion of heme arginate or hematin can abort attacks of porphyria in patients with an inborn error of metabolism of this process, by reducing transcription of ALA synthase.\n\nThe organs mainly involved in heme synthesis are the liver and the bone marrow, although every cell requires heme to function properly. Heme is seen as an intermediate molecule in catabolism of haemoglobin in the process of bilirubin metabolism.\n\nSource: Wikipedia http://en.wikipedia.org/wiki/Heme";
-        dcterms:identifier   "WP848/WP848";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP848/WP848_rWP848_r117403>;
-        wp:organismName      "Pan troglodytes";
-        foaf:page            <http://www.wikipathways.org/instance/WP848/WP848_rWP848_r117403> .
-
-<https://identifiers.org/hmdb/HMDB0003125>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "H2O2";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0003125>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0003125";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP848/WP848_rWP848_r117403/DataNode/b813b>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0003125> .
-
-<https://identifiers.org/ncbigene/464675>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "ALAD";
-        dc:identifier       <https://identifiers.org/ncbigene/464675>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "464675";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP848/WP848_rWP848_r117403/DataNode/de3>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/464675> .
-
-<https://identifiers.org/ncbigene/460416>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "ALAS1";
-        dc:identifier       <https://identifiers.org/ncbigene/460416>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "460416";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP848/WP848_rWP848_r117403/DataNode/dd6>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/460416> .
-
-<http://rdf.wikipathways.org/Pathway/WP848/WP848_rWP848_r117403/WP/Interaction/id847e94a>
-        rdf:type  wp:Interaction .
-
-<https://identifiers.org/ncbigene/456541>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "UROD";
-        dc:identifier       <https://identifiers.org/ncbigene/456541>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "456541";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP848/WP848_rWP848_r117403/DataNode/fe4>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/456541> .
-
-<https://identifiers.org/ncbigene/744366>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "HMBS";
-        dc:identifier       <https://identifiers.org/ncbigene/744366>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "744366";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP848/WP848_rWP848_r117403/DataNode/d81>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/744366> .
-
-<https://identifiers.org/ncbigene/460544>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "CPOX";
-        dc:identifier       <https://identifiers.org/ncbigene/460544>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "460544";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP848/WP848_rWP848_r117403/DataNode/d76>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/460544> .
+<http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id28c96495>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id4614c9a9> , <https://identifiers.org/wikipathways/WP848_r117403>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP848_r117403/Interaction/id28c96495> .
 
 <https://identifiers.org/hmdb/HMDB0001967>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -144,38 +92,101 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0001967>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0001967";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP848/WP848_rWP848_r117403/DataNode/dc8bb> , <http://rdf.wikipathways.org/Pathway/WP848/WP848_rWP848_r117403/DataNode/f73dc> , <http://rdf.wikipathways.org/Pathway/WP848/WP848_rWP848_r117403/DataNode/cd108>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/ide9efe243> , <https://identifiers.org/wikipathways/WP848_r117403> , <http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/ided09570d>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP848_r117403/DataNode/dc8bb> , <http://rdf.wikipathways.org/Pathway/WP848_r117403/DataNode/cd108> , <http://rdf.wikipathways.org/Pathway/WP848_r117403/DataNode/f73dc>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001967> .
 
-<https://identifiers.org/ncbigene/457450>
+<http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id77fc32b0>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP848_r117403>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP848_r117403/Interaction/id77fc32b0>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id5905a4c1> , <https://identifiers.org/ncbigene/464675>;
+        wp:source         <https://identifiers.org/ncbigene/464675>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id5905a4c1> .
+
+<https://identifiers.org/hmdb/HMDB0000051>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "NH3";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000051>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0000051";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP848_r117403> , <http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id88efa3eb>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP848_r117403/DataNode/ae090>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000051> .
+
+<http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id27bd7f3>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP848_r117403>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP848_r117403/Interaction/id27bd7f3>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0002111>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0002111> .
+
+<http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id636c6d7c>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/ide20c39ac> , <http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id757f42ba> , <https://identifiers.org/wikipathways/WP848_r117403>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP848_r117403/Interaction/id636c6d7c> .
+
+<http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id757f42ba>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP848_r117403>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP848_r117403/Interaction/id757f42ba>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id636c6d7c> , <https://identifiers.org/ncbigene/457450>;
+        wp:source         <https://identifiers.org/ncbigene/457450>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id636c6d7c> .
+
+<https://identifiers.org/ncbigene/460416>
         rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "PPOX";
-        dc:identifier       <https://identifiers.org/ncbigene/457450>;
+        rdfs:label          "ALAS1";
+        dc:identifier       <https://identifiers.org/ncbigene/460416>;
         dc:source           "Entrez Gene";
-        dcterms:identifier  "457450";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP848/WP848_rWP848_r117403/DataNode/ca1>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/457450> .
+        dcterms:identifier  "460416";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP848_r117403>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP848_r117403/DataNode/dd6>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/460416> .
 
-<http://rdf.wikipathways.org/Pathway/WP848/WP848_rWP848_r117403/WP/Interaction/ide4688531>
-        rdf:type  wp:Interaction .
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP848&oldid=r117403>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
 
-<https://identifiers.org/hmdb/HMDB0000245>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Porphobilinogen";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000245>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000245";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP848/WP848_rWP848_r117403/DataNode/da9f5>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000245> .
+<http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/idc732d2f7>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP848_r117403> , <http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id2f2ae877>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP848_r117403/Interaction/idc732d2f7> .
 
-<https://identifiers.org/hmdb/HMDB0001423>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "CoA";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0001423>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0001423";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP848/WP848_rWP848_r117403/DataNode/c8776>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001423> .
+<http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id2f2ae877>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP848_r117403>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP848_r117403/Interaction/id2f2ae877>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/idc732d2f7> , <https://identifiers.org/ncbigene/456541>;
+        wp:source         <https://identifiers.org/ncbigene/456541>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/idc732d2f7> .
+
+<https://identifiers.org/ncbigene/460544>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "CPOX";
+        dc:identifier       <https://identifiers.org/ncbigene/460544>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "460544";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/idfefd5bd6> , <https://identifiers.org/wikipathways/WP848_r117403>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP848_r117403/DataNode/d76>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/460544> .
+
+<https://identifiers.org/ncbigene/464675>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "ALAD";
+        dc:identifier       <https://identifiers.org/ncbigene/464675>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "464675";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id77fc32b0> , <https://identifiers.org/wikipathways/WP848_r117403>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP848_r117403/DataNode/de3>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/464675> .
+
+<http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id88efa3eb>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP848_r117403>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP848_r117403/Interaction/id88efa3eb>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000051>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000051> .
 
 <https://identifiers.org/hmdb/HMDB0001377>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -183,5 +194,159 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0001377>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0001377";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP848/WP848_rWP848_r117403/DataNode/c0252> , <http://rdf.wikipathways.org/Pathway/WP848/WP848_rWP848_r117403/DataNode/a9b4a>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP848_r117403> , <http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id7856b940> , <http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/ide20c39ac>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP848_r117403/DataNode/c0252> , <http://rdf.wikipathways.org/Pathway/WP848_r117403/DataNode/a9b4a>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001377> .
+
+<http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/idf6e74499>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP848_r117403> , <http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id5ed5361>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP848_r117403/Interaction/idf6e74499> .
+
+<http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id5905a4c1>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id77fc32b0> , <https://identifiers.org/wikipathways/WP848_r117403>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP848_r117403/Interaction/id5905a4c1> .
+
+<https://identifiers.org/hmdb/HMDB0001423>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "CoA";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0001423>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0001423";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP848_r117403>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP848_r117403/DataNode/c8776>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001423> .
+
+<http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id4614c9a9>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP848_r117403>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP848_r117403/Interaction/id4614c9a9>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id28c96495> , <https://identifiers.org/ncbigene/455437>;
+        wp:source         <https://identifiers.org/ncbigene/455437>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id28c96495> .
+
+<https://identifiers.org/hmdb/HMDB0000245>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Porphobilinogen";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000245>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0000245";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP848_r117403>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP848_r117403/DataNode/da9f5>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000245> .
+
+<http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id2ce1a918>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/idfefd5bd6> , <http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id7856b940> , <https://identifiers.org/wikipathways/WP848_r117403>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP848_r117403/Interaction/id2ce1a918> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP848&oldid=r117403>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<https://identifiers.org/ncbigene/456541>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "UROD";
+        dc:identifier       <https://identifiers.org/ncbigene/456541>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "456541";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP848_r117403> , <http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id2f2ae877>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP848_r117403/DataNode/fe4>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/456541> .
+
+<http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/ided09570d>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP848_r117403>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP848_r117403/Interaction/ided09570d>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001967>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001967> .
+
+<https://identifiers.org/hmdb/HMDB0002111>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "H2O";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0002111>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0002111";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id27bd7f3> , <http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id6083db4a> , <https://identifiers.org/wikipathways/WP848_r117403>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP848_r117403/DataNode/efc67> , <http://rdf.wikipathways.org/Pathway/WP848_r117403/DataNode/d789f> , <http://rdf.wikipathways.org/Pathway/WP848_r117403/DataNode/dfd99>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0002111> .
+
+<http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id1c49aa36>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP848_r117403>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP848_r117403/Interaction/id1c49aa36>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0003125>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0003125> .
+
+<https://identifiers.org/wikipathways/WP848_r117403>
+        rdf:type               wp:Pathway , skos:Collection;
+        dc:identifier          <https://identifiers.org/wikipathways/WP848>;
+        dc:source              "WikiPathways";
+        dc:title               "Heme biosynthesis"@en;
+        dcterms:description    "The enzymatic process that produces heme is properly called porphyrin synthesis, as all the intermediates are tetrapyrroles that are chemically classified are porphyrins. The process is highly conserved across biology. In humans, this pathway serves almost exclusively to form heme. In other species, it also produces similar substances such as cobalamin (vitamin B12).\n\nThe pathway is initiated by the synthesis of D-Aminolevulinic acid (dALA or δALA) from the amino acid glycine and succinyl-CoA from the citric acid cycle (Krebs cycle). The rate-limiting enzyme responsible for this reaction, ALA synthase, is strictly regulated by intracellular iron levels and heme concentration. A low-iron level, e.g., in iron deficiency, leads to decreased porphyrin synthesis, which prevents accumulation of the toxic intermediates. This mechanism is of therapeutic importance: infusion of heme arginate or hematin can abort attacks of porphyria in patients with an inborn error of metabolism of this process, by reducing transcription of ALA synthase.\n\nThe organs mainly involved in heme synthesis are the liver and the bone marrow, although every cell requires heme to function properly. Heme is seen as an intermediate molecule in catabolism of haemoglobin in the process of bilirubin metabolism.\n\nSource: Wikipedia http://en.wikipedia.org/wiki/Heme";
+        dcterms:identifier     "WP848";
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP848_r117403>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000218>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9598>;
+        wp:organismName        "Pan troglodytes";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000218>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP848&oldid=r117403> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP848&oldid=r117403>;
+        foaf:page              <http://www.wikipathways.org/instance/WP848_r117403> .
+
+<http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id7a4c8ce2>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP848_r117403>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP848_r117403/Interaction/id7a4c8ce2>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id44f26afa> , <https://identifiers.org/ncbigene/744366>;
+        wp:source         <https://identifiers.org/ncbigene/744366>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id44f26afa> .
+
+<http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/ide20c39ac>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP848_r117403>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP848_r117403/Interaction/ide20c39ac>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id636c6d7c> , <https://identifiers.org/hmdb/HMDB0001377> .
+
+<http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id44f26afa>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id7a4c8ce2> , <https://identifiers.org/wikipathways/WP848_r117403>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP848_r117403/Interaction/id44f26afa> .
+
+<https://identifiers.org/wikipathways/WP848>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP848_r117403> .
+
+<https://identifiers.org/ncbigene/744366>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "HMBS";
+        dc:identifier       <https://identifiers.org/ncbigene/744366>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "744366";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP848_r117403> , <http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id7a4c8ce2>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP848_r117403/DataNode/d81>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/744366> .
+
+<http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id7856b940>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP848_r117403>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP848_r117403/Interaction/id7856b940>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id2ce1a918> , <https://identifiers.org/hmdb/HMDB0001377> .
+
+<http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/idfefd5bd6>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP848_r117403>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP848_r117403/Interaction/idfefd5bd6>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id2ce1a918> , <https://identifiers.org/ncbigene/460544>;
+        wp:source         <https://identifiers.org/ncbigene/460544>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/id2ce1a918> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_9598>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9598" .
+
+<http://rdf.wikipathways.org/Pathway/WP848_r117403/WP/Interaction/ide9efe243>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP848_r117403>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP848_r117403/Interaction/ide9efe243>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001967>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001967> .

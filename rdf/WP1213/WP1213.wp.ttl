@@ -16,43 +16,61 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
+<https://identifiers.org/wikipathways/WP1213_r125265>
+        rdf:type               skos:Collection , wp:Pathway;
+        dc:identifier          <https://identifiers.org/wikipathways/WP1213>;
+        dc:source              "WikiPathways";
+        dc:title               "Phase I biotransformations, non P450"@en;
+        dcterms:description    "This pathway lists several phase 1 biotransformations and their related enzymes.";
+        dcterms:identifier     "WP1213";
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP1213_r125265>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000376>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9796>;
+        wp:organismName        "Equus caballus";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000376>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP1213&oldid=r125265> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP1213&oldid=r125265>;
+        foaf:page              <http://www.wikipathways.org/instance/WP1213_r125265> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP1213&oldid=r125265>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
 <https://identifiers.org/ensembl/ENSECAG00000010840>
         rdf:type            wp:GeneProduct , wp:DataNode;
         rdfs:label          "LIPA";
         dc:identifier       <https://identifiers.org/ensembl/ENSECAG00000010840>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSECAG00000010840";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1213/WP1213_rWP1213_r125265/DataNode/b6f>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1213_r125265>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1213_r125265/DataNode/b6f>;
         foaf:page           <https://www.ensembl.org/id/ENSECAG00000010840> .
 
+<http://purl.obolibrary.org/obo/NCBITaxon_9796>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9796" .
+
 <https://identifiers.org/chebi/CHEBI:37734>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "Phosphoric acid esters";
         dc:identifier       <https://identifiers.org/chebi/CHEBI:37734>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:37734";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1213/WP1213_rWP1213_r125265/DataNode/db710> , <http://rdf.wikipathways.org/Pathway/WP1213/WP1213_rWP1213_r125265/DataNode/a1e36>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1213_r125265>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1213_r125265/DataNode/a1e36> , <http://rdf.wikipathways.org/Pathway/WP1213_r125265/DataNode/db710>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37734> .
 
 <https://identifiers.org/chebi/CHEBI:51277>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "thio esters";
         dc:identifier       <https://identifiers.org/chebi/CHEBI:51277>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:51277";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1213/WP1213_rWP1213_r125265/DataNode/b198c> , <http://rdf.wikipathways.org/Pathway/WP1213/WP1213_rWP1213_r125265/DataNode/a1626>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1213_r125265>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1213_r125265/DataNode/a1626> , <http://rdf.wikipathways.org/Pathway/WP1213_r125265/DataNode/b198c>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:51277> .
 
-<https://identifiers.org/wikipathways/WP1213/WP1213_rWP1213_r125265>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP1213/WP1213>;
-        dc:source            "WikiPathways";
-        dc:title             "Phase I biotransformations, non P450"@en;
-        dcterms:description  "This pathway lists several phase 1 biotransformations and their related enzymes.";
-        dcterms:identifier   "WP1213/WP1213";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP1213/WP1213_rWP1213_r125265>;
-        wp:organismName      "Equus caballus";
-        foaf:page            <http://www.wikipathways.org/instance/WP1213/WP1213_rWP1213_r125265> .
+<https://identifiers.org/wikipathways/WP1213>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP1213_r125265> .
 
 <https://identifiers.org/chebi/CHEBI:33308>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -60,7 +78,8 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:33308>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:33308";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1213/WP1213_rWP1213_r125265/DataNode/c109a> , <http://rdf.wikipathways.org/Pathway/WP1213/WP1213_rWP1213_r125265/DataNode/b758e>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1213_r125265>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1213_r125265/DataNode/b758e> , <http://rdf.wikipathways.org/Pathway/WP1213_r125265/DataNode/c109a>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:33308> .
 
 <https://identifiers.org/ensembl/ENSECAG00000010588>
@@ -69,7 +88,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSECAG00000010588>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSECAG00000010588";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1213/WP1213_rWP1213_r125265/DataNode/ac5>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1213_r125265>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1213_r125265/DataNode/ac5>;
         foaf:page           <https://www.ensembl.org/id/ENSECAG00000010588> .
 
 <https://identifiers.org/ensembl/ENSECAG00000015451>
@@ -78,7 +98,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSECAG00000015451>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSECAG00000015451";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1213/WP1213_rWP1213_r125265/DataNode/f26>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1213_r125265>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1213_r125265/DataNode/f26>;
         foaf:page           <https://www.ensembl.org/id/ENSECAG00000015451> .
 
 <https://identifiers.org/ensembl/ENSECAG00000012061>
@@ -87,7 +108,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSECAG00000012061>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSECAG00000012061";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1213/WP1213_rWP1213_r125265/DataNode/dd4>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1213_r125265>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1213_r125265/DataNode/dd4>;
         foaf:page           <https://www.ensembl.org/id/ENSECAG00000012061> .
 
 <https://identifiers.org/ensembl/ENSECAG00000009974>
@@ -96,7 +118,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSECAG00000009974>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSECAG00000009974";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1213/WP1213_rWP1213_r125265/DataNode/b76>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1213_r125265>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1213_r125265/DataNode/b76>;
         foaf:page           <https://www.ensembl.org/id/ENSECAG00000009974> .
 
 <https://identifiers.org/ensembl/ENSECAG00000024350>
@@ -105,7 +128,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSECAG00000024350>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSECAG00000024350";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1213/WP1213_rWP1213_r125265/DataNode/b38>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1213_r125265>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1213_r125265/DataNode/b38>;
         foaf:page           <https://www.ensembl.org/id/ENSECAG00000024350> .
 
 <https://identifiers.org/ensembl/ENSECAG00000010414>
@@ -114,8 +138,13 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSECAG00000010414>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSECAG00000010414";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1213/WP1213_rWP1213_r125265/DataNode/dfd>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1213_r125265>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1213_r125265/DataNode/dfd>;
         foaf:page           <https://www.ensembl.org/id/ENSECAG00000010414> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP1213&oldid=r125265>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
 
 <https://identifiers.org/chebi/CHEBI:32988>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -123,7 +152,8 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:32988>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:32988";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1213/WP1213_rWP1213_r125265/DataNode/e744e> , <http://rdf.wikipathways.org/Pathway/WP1213/WP1213_rWP1213_r125265/DataNode/bc7f3>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1213_r125265>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1213_r125265/DataNode/e744e> , <http://rdf.wikipathways.org/Pathway/WP1213_r125265/DataNode/bc7f3>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:32988> .
 
 <https://identifiers.org/ensembl/ENSECAG00000000344>
@@ -132,5 +162,6 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSECAG00000000344>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSECAG00000000344";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1213/WP1213_rWP1213_r125265/DataNode/ff0>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1213_r125265>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1213_r125265/DataNode/ff0>;
         foaf:page           <https://www.ensembl.org/id/ENSECAG00000000344> .

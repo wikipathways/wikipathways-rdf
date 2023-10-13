@@ -16,14 +16,46 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/mirbase.mature/MIMAT0000422>
-        rdf:type            wp:DataNode;
-        rdfs:label          "hsa-miR-124a";
-        dc:identifier       <https://identifiers.org/mirbase.mature/MIMAT0000422>;
-        dc:source           "miRBase mature sequence";
-        dcterms:identifier  "MIMAT0000422";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3595/WP3595_rWP3595_r89883/DataNode/b55db>;
-        foaf:page           <http://www.mirbase.org/cgi-bin/mature.pl?mature_acc=MIMAT0000422> .
+<https://identifiers.org/wikipathways/WP3595>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP3595_r89883> .
+
+<http://rdf.wikipathways.org/Pathway/WP3595_r89883/WP/Interaction/id2426cd12>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3595_r89883>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3595_r89883/Interaction/id2426cd12>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000132356>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000132356> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3595&oldid=r89883>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<https://identifiers.org/ensembl/ENSG00000132356>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "AMPK";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000132356>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000132356";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3595_r89883> , <http://rdf.wikipathways.org/Pathway/WP3595_r89883/WP/Interaction/id2426cd12> , <http://rdf.wikipathways.org/Pathway/WP3595_r89883/WP/Interaction/id5279fbc9>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3595_r89883/DataNode/fc27e>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000132356> .
+
+<https://identifiers.org/wikipathways/WP3595_r89883>
+        rdf:type               wp:Pathway , skos:Collection;
+        dc:identifier          <https://identifiers.org/wikipathways/WP3595>;
+        dc:source              "WikiPathways";
+        dc:title               "mir-124 predicted interactions with cell cycle and differentiation "@en;
+        dcterms:description    "Schematic of predicted interactions of miR-124 with cell cycle and cell differentiation machinery.\n\nA genomewide miRNA mimic toxicity screen indicates common and selective vulnerabilities of epithelial ovarian cancer cells. miR-124 is selectively toxic, mainly by inducing terminal cell differentiation via its target SIX4.";
+        dcterms:identifier     "WP3595";
+        dcterms:references     <https://identifiers.org/pubmed/26655797>;
+        cito:cites             <https://identifiers.org/pubmed/26655797>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP3595_r89883>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000004>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606>;
+        wp:organismName        "Homo sapiens";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000004>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3595&oldid=r89883> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3595&oldid=r89883>;
+        foaf:page              <http://www.wikipathways.org/instance/WP3595_r89883> .
 
 <https://identifiers.org/ensembl/ENSG00000144579>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -31,8 +63,35 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000144579>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000144579";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3595/WP3595_rWP3595_r89883/DataNode/f3d26>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3595_r89883/WP/Interaction/id4b2a4814> , <http://rdf.wikipathways.org/Pathway/WP3595_r89883/WP/Interaction/idba9bdd6a> , <https://identifiers.org/wikipathways/WP3595_r89883>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3595_r89883/DataNode/f3d26>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000144579> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_9606>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9606" .
+
+<http://rdf.wikipathways.org/Pathway/WP3595_r89883/WP/Interaction/idd3d3bd2a>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3595_r89883>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3595_r89883/Interaction/idd3d3bd2a>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000011304> , <https://identifiers.org/mirbase.mature/MIMAT0000422>;
+        wp:source         <https://identifiers.org/mirbase.mature/MIMAT0000422>;
+        wp:target         <https://identifiers.org/ensembl/ENSG00000011304> .
+
+<http://rdf.wikipathways.org/Pathway/WP3595_r89883/WP/Interaction/id4b2a4814>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3595_r89883>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3595_r89883/Interaction/id4b2a4814>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000144579>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000144579> .
+
+<https://identifiers.org/pubmed/26655797>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "26655797";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3595_r89883>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/26655797> .
 
 <https://identifiers.org/ensembl/ENSG00000100625>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -40,46 +99,9 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000100625>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000100625";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3595/WP3595_rWP3595_r89883/DataNode/bc31c>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3595_r89883/WP/Interaction/id161fdcb7> , <https://identifiers.org/wikipathways/WP3595_r89883> , <http://rdf.wikipathways.org/Pathway/WP3595_r89883/WP/Interaction/id1ba64a9a> , <http://rdf.wikipathways.org/Pathway/WP3595_r89883/WP/Interaction/idb879810a>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3595_r89883/DataNode/bc31c>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000100625> .
-
-<https://identifiers.org/wikipathways/WP3595/WP3595_rWP3595_r89883>
-        rdf:type             wp:Pathway , skos:Collection;
-        dc:identifier        <https://identifiers.org/wikipathways/WP3595/WP3595>;
-        dc:source            "WikiPathways";
-        dc:title             "mir-124 predicted interactions with cell cycle and differentiation "@en;
-        dcterms:description  "Schematic of predicted interactions of miR-124 with cell cycle and cell differentiation machinery.\n\nA genomewide miRNA mimic toxicity screen indicates common and selective vulnerabilities of epithelial ovarian cancer cells. miR-124 is selectively toxic, mainly by inducing terminal cell differentiation via its target SIX4.";
-        dcterms:identifier   "WP3595/WP3595";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP3595/WP3595_rWP3595_r89883>;
-        wp:organismName      "Homo sapiens";
-        foaf:page            <http://www.wikipathways.org/instance/WP3595/WP3595_rWP3595_r89883> .
-
-<https://identifiers.org/ensembl/ENSG00000118046>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "KLB1";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000118046>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000118046";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3595/WP3595_rWP3595_r89883/DataNode/a31c9>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000118046> .
-
-<https://identifiers.org/ensembl/ENSG00000132356>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "AMPK";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000132356>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000132356";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3595/WP3595_rWP3595_r89883/DataNode/fc27e>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000132356> .
-
-<https://identifiers.org/ensembl/ENSG00000082146>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "STRADB";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000082146>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000082146";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3595/WP3595_rWP3595_r89883/DataNode/ccbb3>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000082146> .
 
 <https://identifiers.org/ensembl/ENSG00000011304>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -87,5 +109,95 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000011304>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000011304";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3595/WP3595_rWP3595_r89883/DataNode/bae25>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3595_r89883> , <http://rdf.wikipathways.org/Pathway/WP3595_r89883/WP/Interaction/idd3d3bd2a> , <http://rdf.wikipathways.org/Pathway/WP3595_r89883/WP/Interaction/id31b81667>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3595_r89883/DataNode/bae25>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000011304> .
+
+<http://rdf.wikipathways.org/Pathway/WP3595_r89883/WP/Interaction/idb879810a>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3595_r89883>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3595_r89883/Interaction/idb879810a>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000082146> , <https://identifiers.org/ensembl/ENSG00000100625>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000100625>;
+        wp:target         <https://identifiers.org/ensembl/ENSG00000082146> .
+
+<http://rdf.wikipathways.org/Pathway/WP3595_r89883/WP/Interaction/id5279fbc9>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3595_r89883>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3595_r89883/Interaction/id5279fbc9>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000132356> , <https://identifiers.org/ensembl/ENSG00000118046>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000118046>;
+        wp:target         <https://identifiers.org/ensembl/ENSG00000132356> .
+
+<http://rdf.wikipathways.org/Pathway/WP3595_r89883/WP/Interaction/id161fdcb7>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3595_r89883>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3595_r89883/Interaction/id161fdcb7>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000100625> , <https://identifiers.org/mirbase.mature/MIMAT0000422>;
+        wp:source         <https://identifiers.org/mirbase.mature/MIMAT0000422>;
+        wp:target         <https://identifiers.org/ensembl/ENSG00000100625> .
+
+<http://rdf.wikipathways.org/Pathway/WP3595_r89883/WP/Interaction/id31b81667>
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3595_r89883>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3595_r89883/Interaction/id31b81667>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP3595_r89883/WP/Interaction/idba9bdd6a> , <https://identifiers.org/ensembl/ENSG00000011304>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000011304>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP3595_r89883/WP/Interaction/idba9bdd6a> .
+
+<https://identifiers.org/ensembl/ENSG00000082146>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "STRADB";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000082146>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000082146";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3595_r89883/WP/Interaction/idb879810a> , <https://identifiers.org/wikipathways/WP3595_r89883> , <http://rdf.wikipathways.org/Pathway/WP3595_r89883/WP/Interaction/id3afb19d>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3595_r89883/DataNode/ccbb3>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000082146> .
+
+<https://identifiers.org/mirbase.mature/MIMAT0000422>
+        rdf:type            wp:DataNode;
+        rdfs:label          "hsa-miR-124a";
+        dc:identifier       <https://identifiers.org/mirbase.mature/MIMAT0000422>;
+        dc:source           "miRBase mature sequence";
+        dcterms:identifier  "MIMAT0000422";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3595_r89883/WP/Interaction/id161fdcb7> , <http://rdf.wikipathways.org/Pathway/WP3595_r89883/WP/Interaction/idd3d3bd2a> , <http://rdf.wikipathways.org/Pathway/WP3595_r89883/WP/Interaction/idba9bdd6a> , <https://identifiers.org/wikipathways/WP3595_r89883>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3595_r89883/DataNode/b55db>;
+        foaf:page           <http://www.mirbase.org/cgi-bin/mature.pl?mature_acc=MIMAT0000422> .
+
+<http://rdf.wikipathways.org/Pathway/WP3595_r89883/WP/Interaction/idba9bdd6a>
+        rdf:type          wp:Interaction , wp:DirectedInteraction , wp:Inhibition;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3595_r89883> , <http://rdf.wikipathways.org/Pathway/WP3595_r89883/WP/Interaction/id31b81667>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3595_r89883/Interaction/idba9bdd6a>;
+        wp:participants   <https://identifiers.org/mirbase.mature/MIMAT0000422> , <https://identifiers.org/ensembl/ENSG00000144579>;
+        wp:source         <https://identifiers.org/mirbase.mature/MIMAT0000422>;
+        wp:target         <https://identifiers.org/ensembl/ENSG00000144579> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3595&oldid=r89883>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<http://rdf.wikipathways.org/Pathway/WP3595_r89883/WP/Interaction/id3afb19d>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3595_r89883>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3595_r89883/Interaction/id3afb19d>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000118046> , <https://identifiers.org/ensembl/ENSG00000082146>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000082146>;
+        wp:target         <https://identifiers.org/ensembl/ENSG00000118046> .
+
+<http://rdf.wikipathways.org/Pathway/WP3595_r89883/WP/Interaction/id1ba64a9a>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3595_r89883>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3595_r89883/Interaction/id1ba64a9a>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000100625>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000100625> .
+
+<https://identifiers.org/ensembl/ENSG00000118046>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "KLB1";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000118046>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000118046";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3595_r89883> , <http://rdf.wikipathways.org/Pathway/WP3595_r89883/WP/Interaction/id3afb19d> , <http://rdf.wikipathways.org/Pathway/WP3595_r89883/WP/Interaction/id5279fbc9>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3595_r89883/DataNode/a31c9>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000118046> .

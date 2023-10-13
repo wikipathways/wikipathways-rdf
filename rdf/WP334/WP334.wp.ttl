@@ -22,8 +22,16 @@
         dc:identifier       <https://identifiers.org/ncbigene/1395>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "1395";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334/WP334_rWP334_r117741/DataNode/e1e>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP334_r117741>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334_r117741/DataNode/e1e>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/1395> .
+
+<http://rdf.wikipathways.org/Pathway/WP334_r117741/WP/Interaction/id4c09ec97>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP334_r117741>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP334_r117741/Interaction/id4c09ec97>;
+        wp:participants   <https://identifiers.org/ncbigene/2696>;
+        wp:target         <https://identifiers.org/ncbigene/2696> .
 
 <https://identifiers.org/ncbigene/799>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -31,7 +39,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/799>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "799";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334/WP334_rWP334_r117741/DataNode/ca0>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP334_r117741>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334_r117741/DataNode/ca0>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/799> .
 
 <https://identifiers.org/ncbigene/2015>
@@ -40,8 +49,22 @@
         dc:identifier       <https://identifiers.org/ncbigene/2015>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "2015";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334/WP334_rWP334_r117741/DataNode/c5e>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP334_r117741>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334_r117741/DataNode/c5e>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/2015> .
+
+<https://identifiers.org/wikipathways/WP334>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP334_r117741> .
+
+<https://identifiers.org/ncbigene/117>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "ADCYAP1R1";
+        dc:identifier       <https://identifiers.org/ncbigene/117>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "117";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP334_r117741/WP/Interaction/idc6e8c7bb> , <https://identifiers.org/wikipathways/WP334_r117741>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334_r117741/DataNode/f79>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/117> .
 
 <https://identifiers.org/ncbigene/7433>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -49,36 +72,22 @@
         dc:identifier       <https://identifiers.org/ncbigene/7433>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "7433";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334/WP334_rWP334_r117741/DataNode/e74>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP334_r117741>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334_r117741/DataNode/e74>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/7433> .
 
-<https://identifiers.org/ncbigene/117>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "ADCYAP1R1";
-        dc:identifier       <https://identifiers.org/ncbigene/117>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "117";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334/WP334_rWP334_r117741/DataNode/f79>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/117> .
-
-<https://identifiers.org/wikipathways/WP334/WP334_rWP334_r117741>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP334/WP334>;
-        dc:source            "WikiPathways";
-        dc:title             "GPCRs, class B secretin-like"@en;
-        dcterms:description  "This pathway was created using the GPCRDB (Horn et al., 1998), http://www.gpcr.org/7tm/ (originally at http://www.cmbi.kun.nl/7tm/). The groupings are based on the GPCR phylogenetic tree available from the GPCRDB and the training sets used by Karchin et al. (Bioinformatics, 2002, pg. 147-159). The labels indicate children and grandchildren of the various classes of GPCRs as described by these references.";
-        dcterms:identifier   "WP334/WP334";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP334/WP334_rWP334_r117741>;
-        wp:organismName      "Homo sapiens";
-        foaf:page            <http://www.wikipathways.org/instance/WP334/WP334_rWP334_r117741> .
+<http://purl.obolibrary.org/obo/NCBITaxon_9606>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9606" .
 
 <https://identifiers.org/ncbigene/2692>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "GHRHR";
         dc:identifier       <https://identifiers.org/ncbigene/2692>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "2692";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334/WP334_rWP334_r117741/DataNode/cab>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP334_r117741> , <http://rdf.wikipathways.org/Pathway/WP334_r117741/WP/Interaction/id1aeb41b5>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334_r117741/DataNode/cab>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/2692> .
 
 <https://identifiers.org/ncbigene/7434>
@@ -87,8 +96,13 @@
         dc:identifier       <https://identifiers.org/ncbigene/7434>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "7434";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334/WP334_rWP334_r117741/DataNode/f83>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP334_r117741>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334_r117741/DataNode/f83>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/7434> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP334&oldid=r117741>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
 
 <https://identifiers.org/ncbigene/5745>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -96,8 +110,16 @@
         dc:identifier       <https://identifiers.org/ncbigene/5745>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "5745";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334/WP334_rWP334_r117741/DataNode/ac8>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP334_r117741>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334_r117741/DataNode/ac8>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/5745> .
+
+<https://identifiers.org/pubmed/11836223>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "11836223";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP334_r117741>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/11836223> .
 
 <https://identifiers.org/ncbigene/64123>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -105,7 +127,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/64123>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "64123";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334/WP334_rWP334_r117741/DataNode/a0a>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP334_r117741>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334_r117741/DataNode/a0a>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/64123> .
 
 <https://identifiers.org/ncbigene/10203>
@@ -114,7 +137,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/10203>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "10203";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334/WP334_rWP334_r117741/DataNode/fc0>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP334_r117741>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334_r117741/DataNode/fc0>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/10203> .
 
 <https://identifiers.org/ncbigene/5746>
@@ -123,7 +147,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/5746>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "5746";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334/WP334_rWP334_r117741/DataNode/a6d>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP334_r117741>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334_r117741/DataNode/a6d>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/5746> .
 
 <https://identifiers.org/ncbigene/9340>
@@ -132,7 +157,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/9340>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "9340";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334/WP334_rWP334_r117741/DataNode/f3f>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP334_r117741>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334_r117741/DataNode/f3f>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/9340> .
 
 <https://identifiers.org/ncbigene/2740>
@@ -141,8 +167,20 @@
         dc:identifier       <https://identifiers.org/ncbigene/2740>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "2740";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334/WP334_rWP334_r117741/DataNode/f31>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP334_r117741>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334_r117741/DataNode/f31>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/2740> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP334&oldid=r117741>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<http://rdf.wikipathways.org/Pathway/WP334_r117741/WP/Interaction/id1aeb41b5>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP334_r117741>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP334_r117741/Interaction/id1aeb41b5>;
+        wp:participants   <https://identifiers.org/ncbigene/2692>;
+        wp:target         <https://identifiers.org/ncbigene/2692> .
 
 <https://identifiers.org/ncbigene/30817>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -150,16 +188,18 @@
         dc:identifier       <https://identifiers.org/ncbigene/30817>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "30817";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334/WP334_rWP334_r117741/DataNode/f53>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP334_r117741>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334_r117741/DataNode/f53>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/30817> .
 
 <https://identifiers.org/ncbigene/976>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "CD97";
         dc:identifier       <https://identifiers.org/ncbigene/976>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "976";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334/WP334_rWP334_r117741/DataNode/e7c> , <http://rdf.wikipathways.org/Pathway/WP334/WP334_rWP334_r117741/DataNode/c09>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP334_r117741>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334_r117741/DataNode/e7c> , <http://rdf.wikipathways.org/Pathway/WP334_r117741/DataNode/c09>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/976> .
 
 <https://identifiers.org/ncbigene/10149>
@@ -168,8 +208,33 @@
         dc:identifier       <https://identifiers.org/ncbigene/10149>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "10149";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334/WP334_rWP334_r117741/DataNode/c23>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP334_r117741>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334_r117741/DataNode/c23>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/10149> .
+
+<https://identifiers.org/wikipathways/WP334_r117741>
+        rdf:type               wp:Pathway , skos:Collection;
+        dc:identifier          <https://identifiers.org/wikipathways/WP334>;
+        dc:source              "WikiPathways";
+        dc:title               "GPCRs, class B secretin-like"@en;
+        dcterms:description    "This pathway was created using the GPCRDB (Horn et al., 1998), http://www.gpcr.org/7tm/ (originally at http://www.cmbi.kun.nl/7tm/). The groupings are based on the GPCR phylogenetic tree available from the GPCRDB and the training sets used by Karchin et al. (Bioinformatics, 2002, pg. 147-159). The labels indicate children and grandchildren of the various classes of GPCRs as described by these references.";
+        dcterms:identifier     "WP334";
+        dcterms:references     <https://identifiers.org/pubmed/11836223> , <https://identifiers.org/pubmed/9399852>;
+        cito:cites             <https://identifiers.org/pubmed/11836223> , <https://identifiers.org/pubmed/9399852>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP334_r117741>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000125>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606>;
+        wp:organismName        "Homo sapiens";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000125>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP334&oldid=r117741> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP334&oldid=r117741>;
+        foaf:page              <http://www.wikipathways.org/instance/WP334_r117741> .
+
+<http://rdf.wikipathways.org/Pathway/WP334_r117741/WP/Interaction/id5d94201c>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP334_r117741>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP334_r117741/Interaction/id5d94201c>;
+        wp:participants   <https://identifiers.org/ncbigene/6344>;
+        wp:target         <https://identifiers.org/ncbigene/6344> .
 
 <https://identifiers.org/ncbigene/2642>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -177,8 +242,16 @@
         dc:identifier       <https://identifiers.org/ncbigene/2642>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "2642";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334/WP334_rWP334_r117741/DataNode/c13>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP334_r117741>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334_r117741/DataNode/c13>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/2642> .
+
+<https://identifiers.org/pubmed/9399852>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "9399852";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP334_r117741>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/9399852> .
 
 <https://identifiers.org/ncbigene/23284>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -186,7 +259,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/23284>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "23284";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334/WP334_rWP334_r117741/DataNode/d0b>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP334_r117741>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334_r117741/DataNode/d0b>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/23284> .
 
 <https://identifiers.org/ncbigene/22859>
@@ -195,7 +269,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/22859>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "22859";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334/WP334_rWP334_r117741/DataNode/eac>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP334_r117741>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334_r117741/DataNode/eac>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/22859> .
 
 <https://identifiers.org/ncbigene/1394>
@@ -204,8 +279,16 @@
         dc:identifier       <https://identifiers.org/ncbigene/1394>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "1394";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334/WP334_rWP334_r117741/DataNode/db4>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP334_r117741>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334_r117741/DataNode/db4>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/1394> .
+
+<http://rdf.wikipathways.org/Pathway/WP334_r117741/WP/Interaction/idc6e8c7bb>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP334_r117741>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP334_r117741/Interaction/idc6e8c7bb>;
+        wp:participants   <https://identifiers.org/ncbigene/117>;
+        wp:target         <https://identifiers.org/ncbigene/117> .
 
 <https://identifiers.org/ncbigene/2696>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -213,16 +296,18 @@
         dc:identifier       <https://identifiers.org/ncbigene/2696>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "2696";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334/WP334_rWP334_r117741/DataNode/c52>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP334_r117741/WP/Interaction/id4c09ec97> , <https://identifiers.org/wikipathways/WP334_r117741>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334_r117741/DataNode/c52>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/2696> .
 
 <https://identifiers.org/ncbigene/6344>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "SCTR";
         dc:identifier       <https://identifiers.org/ncbigene/6344>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "6344";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334/WP334_rWP334_r117741/DataNode/dd5>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP334_r117741> , <http://rdf.wikipathways.org/Pathway/WP334_r117741/WP/Interaction/id5d94201c>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334_r117741/DataNode/dd5>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/6344> .
 
 <https://identifiers.org/ncbigene/23266>
@@ -231,5 +316,6 @@
         dc:identifier       <https://identifiers.org/ncbigene/23266>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "23266";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334/WP334_rWP334_r117741/DataNode/eb2>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP334_r117741>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP334_r117741/DataNode/eb2>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/23266> .

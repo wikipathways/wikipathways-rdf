@@ -16,70 +16,23 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/kegg.compound/C05748>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "trans-2-Enoyl-ACP";
-        dc:identifier       <https://identifiers.org/kegg.compound/C05748>;
-        dc:source           "KEGG Compound";
-        dcterms:identifier  "C05748";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4317/WP4317_rWP4317_r114309/DataNode/bbc73>;
-        foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C05748> .
-
 <https://identifiers.org/hmdb/HMDB0000221>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "NADPH";
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000221>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0000221";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4317/WP4317_rWP4317_r114309/DataNode/f1046> , <http://rdf.wikipathways.org/Pathway/WP4317/WP4317_rWP4317_r114309/DataNode/e9074>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4317_r114309>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4317_r114309/DataNode/e9074> , <http://rdf.wikipathways.org/Pathway/WP4317_r114309/DataNode/f1046>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000221> .
 
-<https://identifiers.org/wikipathways/WP4317/WP4317_rWP4317_r114309>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP4317/WP4317>;
-        dc:source            "WikiPathways";
-        dc:title             "Mitochondrial fatty acid synthesis pathway"@en;
-        dcterms:description  "Schematic presentation of the sequence of events. The indicated abbreviations follow the nomenclature used for the human enzymes and proteins. ACC, acetyl-CoA carboxylase; MCT, malonyl-CoA transferase; ACP, acyl-carrier protein; KAS, ketoacyl synthase; KAR, ketoacyl reductase; HTD2, hydroxyacyl-thioester reductase type 2; ETR, enoyl-thioester reductase. [J. Kastaniotis et al 2010]";
-        dcterms:identifier   "WP4317/WP4317";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP4317/WP4317_rWP4317_r114309>;
-        wp:organismName      "Homo sapiens";
-        foaf:page            <http://www.wikipathways.org/instance/WP4317/WP4317_rWP4317_r114309> .
-
-<https://identifiers.org/wikidata/Q59811305>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Acetyl/Acyl-ACP";
-        dc:identifier       <https://identifiers.org/wikidata/Q59811305>;
-        dc:source           "Wikidata";
-        dcterms:identifier  "Q59811305";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4317/WP4317_rWP4317_r114309/DataNode/d4a5f>;
-        foaf:page           <https://scholia.toolforge.org/Q59811305> .
-
-<https://identifiers.org/ensembl/ENSG00000116353>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "MECR";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000116353>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000116353";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4317/WP4317_rWP4317_r114309/DataNode/c45ef>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000116353> .
-
-<https://identifiers.org/chebi/CHEBI:57318>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "3-Hydroxyacyl-ACP";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:57318>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:57318";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4317/WP4317_rWP4317_r114309/DataNode/f560d>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:57318> .
-
-<https://identifiers.org/ensembl/ENSG00000149084>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "HSD17B12";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000149084>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000149084";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4317/WP4317_rWP4317_r114309/DataNode/de93f>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000149084> .
+<http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/ed7e7>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4317_r114309>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4317_r114309/Interaction/ed7e7>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/a4dba> , <https://identifiers.org/ensembl/ENSG00000151093>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000151093>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/a4dba> .
 
 <https://identifiers.org/hmdb/HMDB0001175>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -87,53 +40,92 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0001175>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0001175";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4317/WP4317_rWP4317_r114309/DataNode/d4575>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4317_r114309> , <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/b3f58> , <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/b89f0>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4317_r114309/DataNode/d4575>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001175> .
 
-<https://identifiers.org/ensembl/ENSG00000100294>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "MCAT";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000100294>;
-        dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000100294";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4317/WP4317_rWP4317_r114309/DataNode/b202f>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000100294> .
-
-<https://identifiers.org/hmdb/HMDB0002111>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "water";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0002111>;
+<https://identifiers.org/hmdb/HMDB0001206>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Acetyl-CoA";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0001206>;
         dc:source           "HMDB";
-        dcterms:identifier  "HMDB0002111";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4317/WP4317_rWP4317_r114309/DataNode/ab60a>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0002111> .
+        dcterms:identifier  "HMDB0001206";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/b3f58> , <https://identifiers.org/wikipathways/WP4317_r114309>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4317_r114309/DataNode/a1b2f>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001206> .
 
-<https://identifiers.org/chebi/CHEBI:57347>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "3-Ketoacyl-ACP";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:57347>;
+<https://identifiers.org/ensembl/ENSG00000255154>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "HTD2";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000255154>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000255154";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4317_r114309> , <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/d5438>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4317_r114309/DataNode/ca171>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000255154> .
+
+<https://identifiers.org/wikipathways/WP4317_r114309>
+        rdf:type               skos:Collection , wp:Pathway;
+        dc:identifier          <https://identifiers.org/wikipathways/WP4317>;
+        dc:source              "WikiPathways";
+        dc:title               "Mitochondrial fatty acid synthesis pathway"@en;
+        dcterms:description    "Schematic presentation of the sequence of events. The indicated abbreviations follow the nomenclature used for the human enzymes and proteins. ACC, acetyl-CoA carboxylase; MCT, malonyl-CoA transferase; ACP, acyl-carrier protein; KAS, ketoacyl synthase; KAR, ketoacyl reductase; HTD2, hydroxyacyl-thioester reductase type 2; ETR, enoyl-thioester reductase. [J. Kastaniotis et al 2010]";
+        dcterms:identifier     "WP4317";
+        dcterms:references     <https://identifiers.org/pubmed/20226757>;
+        cito:cites             <https://identifiers.org/pubmed/20226757>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4317_r114309>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000026> , <http://purl.obolibrary.org/obo/PW_0000002>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606>;
+        wp:organismName        "Homo sapiens";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000026> , <http://purl.obolibrary.org/obo/PW_0000002>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4317&oldid=r114309> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4317&oldid=r114309>;
+        foaf:page              <http://www.wikipathways.org/instance/WP4317_r114309> .
+
+<https://identifiers.org/chebi/CHEBI:15378>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "H";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:15378>;
         dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:57347";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4317/WP4317_rWP4317_r114309/DataNode/c00e2>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:57347> .
+        dcterms:identifier  "CHEBI:15378";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4317_r114309>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4317_r114309/DataNode/b876b> , <http://rdf.wikipathways.org/Pathway/WP4317_r114309/DataNode/cc743>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15378> .
 
-<https://identifiers.org/ensembl/ENSG00000278540>
+<https://identifiers.org/ensembl/ENSG00000116353>
         rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "ACACA";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000278540>;
+        rdfs:label          "MECR";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000116353>;
         dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000278540";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4317/WP4317_rWP4317_r114309/DataNode/aac71>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000278540> .
+        dcterms:identifier  "ENSG00000116353";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/e0383> , <https://identifiers.org/wikipathways/WP4317_r114309>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4317_r114309/DataNode/c45ef>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000116353> .
 
-<https://identifiers.org/hmdb/HMDB0000538>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "ATP";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0000538>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0000538";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4317/WP4317_rWP4317_r114309/DataNode/bb673> , <http://rdf.wikipathways.org/Pathway/WP4317/WP4317_rWP4317_r114309/DataNode/dff2c>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000538> .
+<https://identifiers.org/wikidata/Q59811305>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "Acetyl/Acyl-ACP";
+        dc:identifier       <https://identifiers.org/wikidata/Q59811305>;
+        dc:source           "Wikidata";
+        dcterms:identifier  "Q59811305";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/d0537> , <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/a5f1f> , <https://identifiers.org/wikipathways/WP4317_r114309>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4317_r114309/DataNode/d4a5f>;
+        foaf:page           <https://scholia.toolforge.org/Q59811305> .
+
+<http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/bbfff>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4317_r114309>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4317_r114309/Interaction/bbfff>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/b3f58> , <https://identifiers.org/ensembl/ENSG00000278540>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000278540>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/b3f58> .
+
+<http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/d561a>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4317_r114309>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4317_r114309/Interaction/d561a>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/b89f0> , <https://identifiers.org/ensembl/ENSG00000100294>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000100294>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/b89f0> .
 
 <https://identifiers.org/hmdb/HMDB0001967>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -141,17 +133,29 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0001967>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0001967";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4317/WP4317_rWP4317_r114309/DataNode/f8ab1> , <http://rdf.wikipathways.org/Pathway/WP4317/WP4317_rWP4317_r114309/DataNode/af1ae>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4317_r114309>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4317_r114309/DataNode/af1ae> , <http://rdf.wikipathways.org/Pathway/WP4317_r114309/DataNode/f8ab1>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001967> .
 
 <https://identifiers.org/chebi/CHEBI:7725>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "Octanoyl-ACP";
         dc:identifier       <https://identifiers.org/chebi/CHEBI:7725>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:7725";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4317/WP4317_rWP4317_r114309/DataNode/fc0eb>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4317_r114309> , <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/af42c>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4317_r114309/DataNode/fc0eb>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:7725> .
+
+<https://identifiers.org/ensembl/ENSG00000278540>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "ACACA";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000278540>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000278540";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4317_r114309> , <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/bbfff>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4317_r114309/DataNode/aac71>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000278540> .
 
 <https://identifiers.org/kegg.compound/C01209>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -159,35 +163,104 @@
         dc:identifier       <https://identifiers.org/kegg.compound/C01209>;
         dc:source           "KEGG Compound";
         dcterms:identifier  "C01209";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4317/WP4317_rWP4317_r114309/DataNode/e4705>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/a4dba> , <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/b89f0> , <https://identifiers.org/wikipathways/WP4317_r114309>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4317_r114309/DataNode/e4705>;
         foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C01209> .
 
-<https://identifiers.org/chebi/CHEBI:15378>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "H";
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:15378>;
-        dc:source           "ChEBI";
-        dcterms:identifier  "CHEBI:15378";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4317/WP4317_rWP4317_r114309/DataNode/cc743> , <http://rdf.wikipathways.org/Pathway/WP4317/WP4317_rWP4317_r114309/DataNode/b876b>;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15378> .
+<http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/cbc97>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4317_r114309>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4317_r114309/Interaction/cbc97>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000217>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000217> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4317&oldid=r114309>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/d0537>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4317_r114309>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4317_r114309/Interaction/d0537>;
+        wp:participants   <https://identifiers.org/wikidata/Q59811305>;
+        wp:target         <https://identifiers.org/wikidata/Q59811305> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4317&oldid=r114309>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/b8ea1>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4317_r114309>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4317_r114309/Interaction/b8ea1>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/ac8af> , <https://identifiers.org/ensembl/ENSG00000149084>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000149084>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/ac8af> .
 
 <https://identifiers.org/ensembl/ENSG00000151093>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "KAS";
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000151093>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000151093";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4317/WP4317_rWP4317_r114309/DataNode/a2e4d>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/ed7e7> , <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/d4879> , <https://identifiers.org/wikipathways/WP4317_r114309>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4317_r114309/DataNode/a2e4d>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000151093> .
 
-<https://identifiers.org/ensembl/ENSG00000255154>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "HTD2";
-        dc:identifier       <https://identifiers.org/ensembl/ENSG00000255154>;
+<http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/dcb14>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4317_r114309>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4317_r114309/Interaction/dcb14> .
+
+<http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/ac8af>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/b8ea1> , <https://identifiers.org/wikipathways/WP4317_r114309>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4317_r114309/Interaction/ac8af>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:57318> , <https://identifiers.org/chebi/CHEBI:57347>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:57347>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:57318> .
+
+<https://identifiers.org/ensembl/ENSG00000100294>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "MCAT";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000100294>;
         dc:source           "Ensembl";
-        dcterms:identifier  "ENSG00000255154";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4317/WP4317_rWP4317_r114309/DataNode/ca171>;
-        foaf:page           <https://www.ensembl.org/id/ENSG00000255154> .
+        dcterms:identifier  "ENSG00000100294";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/d561a> , <https://identifiers.org/wikipathways/WP4317_r114309>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4317_r114309/DataNode/b202f>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000100294> .
+
+<http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/b3f58>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4317_r114309> , <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/bbfff>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4317_r114309/Interaction/b3f58>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001175> , <https://identifiers.org/hmdb/HMDB0001206>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001206>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001175> .
+
+<https://identifiers.org/chebi/CHEBI:57318>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "3-Hydroxyacyl-ACP";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:57318>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:57318";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4317_r114309> , <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/ac8af> , <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/e573d>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4317_r114309/DataNode/f560d>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:57318> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_9606>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9606" .
+
+<https://identifiers.org/kegg.compound/C05748>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "trans-2-Enoyl-ACP";
+        dc:identifier       <https://identifiers.org/kegg.compound/C05748>;
+        dc:source           "KEGG Compound";
+        dcterms:identifier  "C05748";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/e573d> , <https://identifiers.org/wikipathways/WP4317_r114309> , <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/a5e0d>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4317_r114309/DataNode/bbc73>;
+        foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C05748> .
 
 <https://identifiers.org/hmdb/HMDB0000217>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -195,14 +268,140 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000217>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0000217";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4317/WP4317_rWP4317_r114309/DataNode/a42a1> , <http://rdf.wikipathways.org/Pathway/WP4317/WP4317_rWP4317_r114309/DataNode/cbbcb>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/cbc97> , <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/db085> , <https://identifiers.org/wikipathways/WP4317_r114309>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4317_r114309/DataNode/cbbcb> , <http://rdf.wikipathways.org/Pathway/WP4317_r114309/DataNode/a42a1>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000217> .
 
-<https://identifiers.org/hmdb/HMDB0001206>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Acetyl-CoA";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0001206>;
+<https://identifiers.org/chebi/CHEBI:57347>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "3-Ketoacyl-ACP";
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:57347>;
+        dc:source           "ChEBI";
+        dcterms:identifier  "CHEBI:57347";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/a5f1f> , <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/ac8af> , <https://identifiers.org/wikipathways/WP4317_r114309> , <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/a4dba>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4317_r114309/DataNode/c00e2>;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:57347> .
+
+<https://identifiers.org/hmdb/HMDB0002111>
+        rdf:type            wp:DataNode , wp:Metabolite;
+        rdfs:label          "water";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0002111>;
         dc:source           "HMDB";
-        dcterms:identifier  "HMDB0001206";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4317/WP4317_rWP4317_r114309/DataNode/a1b2f>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001206> .
+        dcterms:identifier  "HMDB0002111";
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/c310c> , <https://identifiers.org/wikipathways/WP4317_r114309>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4317_r114309/DataNode/ab60a>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0002111> .
+
+<https://identifiers.org/hmdb/HMDB0000538>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "ATP";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0000538>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0000538";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4317_r114309>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4317_r114309/DataNode/dff2c> , <http://rdf.wikipathways.org/Pathway/WP4317_r114309/DataNode/bb673>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000538> .
+
+<http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/c310c>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4317_r114309>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4317_r114309/Interaction/c310c>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0002111>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0002111> .
+
+<http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/a5f1f>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/d4879> , <https://identifiers.org/wikipathways/WP4317_r114309>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4317_r114309/Interaction/a5f1f>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:57347> , <https://identifiers.org/wikidata/Q59811305>;
+        wp:source         <https://identifiers.org/wikidata/Q59811305>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:57347> .
+
+<http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/e0383>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4317_r114309>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4317_r114309/Interaction/e0383>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/a5e0d> , <https://identifiers.org/ensembl/ENSG00000116353>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000116353>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/a5e0d> .
+
+<http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/d5438>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4317_r114309>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4317_r114309/Interaction/d5438>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/e573d> , <https://identifiers.org/ensembl/ENSG00000255154>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000255154>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/e573d> .
+
+<http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/af42c>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4317_r114309>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4317_r114309/Interaction/af42c>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:7725>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:7725> .
+
+<http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/d4879>
+        rdf:type          wp:Interaction , wp:Catalysis , wp:DirectedInteraction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4317_r114309>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4317_r114309/Interaction/d4879>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/a5f1f> , <https://identifiers.org/ensembl/ENSG00000151093>;
+        wp:source         <https://identifiers.org/ensembl/ENSG00000151093>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/a5f1f> .
+
+<http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/e573d>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4317_r114309> , <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/d5438>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4317_r114309/Interaction/e573d>;
+        wp:participants   <https://identifiers.org/kegg.compound/C05748> , <https://identifiers.org/chebi/CHEBI:57318>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:57318>;
+        wp:target         <https://identifiers.org/kegg.compound/C05748> .
+
+<https://identifiers.org/pubmed/20226757>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "20226757";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4317_r114309>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/20226757> .
+
+<https://identifiers.org/ensembl/ENSG00000149084>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "HSD17B12";
+        dc:identifier       <https://identifiers.org/ensembl/ENSG00000149084>;
+        dc:source           "Ensembl";
+        dcterms:identifier  "ENSG00000149084";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4317_r114309> , <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/b8ea1>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4317_r114309/DataNode/de93f>;
+        foaf:page           <https://www.ensembl.org/id/ENSG00000149084> .
+
+<http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/db085>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4317_r114309>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4317_r114309/Interaction/db085>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000217>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000217> .
+
+<http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/a4dba>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/ed7e7> , <https://identifiers.org/wikipathways/WP4317_r114309>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4317_r114309/Interaction/a4dba>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:57347> , <https://identifiers.org/kegg.compound/C01209>;
+        wp:source         <https://identifiers.org/kegg.compound/C01209>;
+        wp:target         <https://identifiers.org/chebi/CHEBI:57347> .
+
+<http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/b89f0>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4317_r114309> , <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/d561a>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4317_r114309/Interaction/b89f0>;
+        wp:participants   <https://identifiers.org/kegg.compound/C01209> , <https://identifiers.org/hmdb/HMDB0001175>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001175>;
+        wp:target         <https://identifiers.org/kegg.compound/C01209> .
+
+<https://identifiers.org/wikipathways/WP4317>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP4317_r114309> .
+
+<http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/a5e0d>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4317_r114309> , <http://rdf.wikipathways.org/Pathway/WP4317_r114309/WP/Interaction/e0383>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4317_r114309/Interaction/a5e0d>;
+        wp:participants   <https://identifiers.org/kegg.compound/C05748>;
+        wp:source         <https://identifiers.org/kegg.compound/C05748> .

@@ -16,32 +16,39 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<https://identifiers.org/wb/C16B8.1>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "LIN-18";
-        dc:identifier       <https://identifiers.org/wb/C16B8.1>;
-        dc:source           "WormBase";
-        dcterms:identifier  "C16B8.1";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2222/WP2222_rWP2222_r118057/DataNode/d5bba>;
-        foaf:page           <http://www.wormbase.org/db/gene/gene?name=C16B8.1;class=Gene> .
+<https://identifiers.org/pubmed/18050418>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "18050418";
+        dcterms:isPartOf    <https://identifiers.org/wb/C16B8.1> , <https://identifiers.org/wb/Y71F9B.5> , <https://identifiers.org/wb/W10C8.2> , <https://identifiers.org/wb/K10B4.6> , <https://identifiers.org/wb/F38E1.7> , <https://identifiers.org/wb/E01A2.3>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/18050418> .
 
-<https://identifiers.org/wb/E01A2.3>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "LIN-44";
-        dc:identifier       <https://identifiers.org/wb/E01A2.3>;
-        dc:source           "WormBase";
-        dcterms:identifier  "E01A2.3";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2222/WP2222_rWP2222_r118057/DataNode/ed253>;
-        foaf:page           <http://www.wormbase.org/db/gene/gene?name=E01A2.3;class=Gene> .
+<http://rdf.wikipathways.org/Pathway/WP2222_r118057/WP/Interaction/id6cdb240e>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2222_r118057>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2222_r118057/Interaction/id6cdb240e>;
+        wp:participants   <https://identifiers.org/wb/Y71F9B.5> , <https://identifiers.org/wb/E01A2.3>;
+        wp:source         <https://identifiers.org/wb/E01A2.3>;
+        wp:target         <https://identifiers.org/wb/Y71F9B.5> .
 
-<https://identifiers.org/wb/ZC247.3>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "lin-11";
-        dc:identifier       <https://identifiers.org/wb/ZC247.3>;
-        dc:source           "WormBase";
-        dcterms:identifier  "ZC247.3";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2222/WP2222_rWP2222_r118057/DataNode/dcfb7>;
-        foaf:page           <http://www.wormbase.org/db/gene/gene?name=ZC247.3;class=Gene> .
+<https://identifiers.org/wikipathways/WP2222>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP2222_r118057> .
+
+<http://rdf.wikipathways.org/Pathway/WP2222_r118057/WP/Interaction/id153a3729>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2222_r118057>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2222_r118057/Interaction/id153a3729>;
+        wp:participants   <https://identifiers.org/wb/W10C8.2> , <https://identifiers.org/wb/C16B8.1>;
+        wp:source         <https://identifiers.org/wb/C16B8.1>;
+        wp:target         <https://identifiers.org/wb/W10C8.2> .
+
+<http://rdf.wikipathways.org/Pathway/WP2222_r118057/WP/Interaction/idc3e82c13>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2222_r118057>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2222_r118057/Interaction/idc3e82c13>;
+        wp:participants   <https://identifiers.org/wb/K10B4.6>;
+        wp:source         <https://identifiers.org/wb/K10B4.6>;
+        wp:target         <https://identifiers.org/wb/K10B4.6> .
 
 <https://identifiers.org/wb/Y71F9B.5>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -49,7 +56,10 @@
         dc:identifier       <https://identifiers.org/wb/Y71F9B.5>;
         dc:source           "WormBase";
         dcterms:identifier  "Y71F9B.5";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2222/WP2222_rWP2222_r118057/DataNode/f20ee>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2222_r118057> , <http://rdf.wikipathways.org/Pathway/WP2222_r118057/WP/Interaction/id6cdb240e> , <http://rdf.wikipathways.org/Pathway/WP2222_r118057/WP/Interaction/id819ac933> , <http://rdf.wikipathways.org/Pathway/WP2222_r118057/WP/Interaction/id17c30ceb>;
+        dcterms:references  <https://identifiers.org/pubmed/18050418>;
+        cito:cites          <https://identifiers.org/pubmed/18050418>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2222_r118057/DataNode/f20ee>;
         foaf:page           <http://www.wormbase.org/db/gene/gene?name=Y71F9B.5;class=Gene> .
 
 <https://identifiers.org/wb/K10B4.6>
@@ -58,17 +68,11 @@
         dc:identifier       <https://identifiers.org/wb/K10B4.6>;
         dc:source           "WormBase";
         dcterms:identifier  "K10B4.6";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2222/WP2222_rWP2222_r118057/DataNode/a3424>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP2222_r118057/WP/Interaction/id819ac933> , <https://identifiers.org/wikipathways/WP2222_r118057> , <http://rdf.wikipathways.org/Pathway/WP2222_r118057/WP/Interaction/idc3e82c13> , <http://rdf.wikipathways.org/Pathway/WP2222_r118057/WP/Interaction/idcd9808f1>;
+        dcterms:references  <https://identifiers.org/pubmed/18050418>;
+        cito:cites          <https://identifiers.org/pubmed/18050418>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2222_r118057/DataNode/a3424>;
         foaf:page           <http://www.wormbase.org/db/gene/gene?name=K10B4.6;class=Gene> .
-
-<https://identifiers.org/wb/W10C8.2>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "POP-1";
-        dc:identifier       <https://identifiers.org/wb/W10C8.2>;
-        dc:source           "WormBase";
-        dcterms:identifier  "W10C8.2";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2222/WP2222_rWP2222_r118057/DataNode/bbaaa>;
-        foaf:page           <http://www.wormbase.org/db/gene/gene?name=W10C8.2;class=Gene> .
 
 <https://identifiers.org/wb/F38E1.7>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -76,16 +80,114 @@
         dc:identifier       <https://identifiers.org/wb/F38E1.7>;
         dc:source           "WormBase";
         dcterms:identifier  "F38E1.7";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2222/WP2222_rWP2222_r118057/DataNode/bf650>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2222_r118057> , <http://rdf.wikipathways.org/Pathway/WP2222_r118057/WP/Interaction/idb64f8e0a>;
+        dcterms:references  <https://identifiers.org/pubmed/18050418>;
+        cito:cites          <https://identifiers.org/pubmed/18050418>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2222_r118057/DataNode/bf650>;
         foaf:page           <http://www.wormbase.org/db/gene/gene?name=F38E1.7;class=Gene> .
 
-<https://identifiers.org/wikipathways/WP2222/WP2222_rWP2222_r118057>
-        rdf:type             wp:Pathway , skos:Collection;
-        dc:identifier        <https://identifiers.org/wikipathways/WP2222/WP2222>;
-        dc:source            "WikiPathways";
-        dc:title             "Wnt signaling in cell polarity"@en;
-        dcterms:description  "The Wnt pathway functions in many aspects of vulval development, it is required in the specification of vulval precursor cell competance, regulation of vulval induction, and the establishment of polarity of the P7.p cell, as diagrammed here.";
-        dcterms:identifier   "WP2222/WP2222";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP2222/WP2222_rWP2222_r118057>;
-        wp:organismName      "Caenorhabditis elegans";
-        foaf:page            <http://www.wikipathways.org/instance/WP2222/WP2222_rWP2222_r118057> .
+<https://identifiers.org/wb/E01A2.3>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "LIN-44";
+        dc:identifier       <https://identifiers.org/wb/E01A2.3>;
+        dc:source           "WormBase";
+        dcterms:identifier  "E01A2.3";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2222_r118057> , <http://rdf.wikipathways.org/Pathway/WP2222_r118057/WP/Interaction/id6cdb240e>;
+        dcterms:references  <https://identifiers.org/pubmed/18050418>;
+        cito:cites          <https://identifiers.org/pubmed/18050418>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2222_r118057/DataNode/ed253>;
+        foaf:page           <http://www.wormbase.org/db/gene/gene?name=E01A2.3;class=Gene> .
+
+<http://rdf.wikipathways.org/Pathway/WP2222_r118057/WP/Interaction/idb64f8e0a>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2222_r118057>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2222_r118057/Interaction/idb64f8e0a>;
+        wp:participants   <https://identifiers.org/wb/C16B8.1> , <https://identifiers.org/wb/F38E1.7>;
+        wp:source         <https://identifiers.org/wb/F38E1.7>;
+        wp:target         <https://identifiers.org/wb/C16B8.1> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_6239>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "6239" .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP2222&oldid=r118057>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP2222&oldid=r118057>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<https://identifiers.org/wb/W10C8.2>
+        rdf:type            wp:DataNode , wp:GeneProduct;
+        rdfs:label          "POP-1";
+        dc:identifier       <https://identifiers.org/wb/W10C8.2>;
+        dc:source           "WormBase";
+        dcterms:identifier  "W10C8.2";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2222_r118057> , <http://rdf.wikipathways.org/Pathway/WP2222_r118057/WP/Interaction/id153a3729> , <http://rdf.wikipathways.org/Pathway/WP2222_r118057/WP/Interaction/id17c30ceb>;
+        dcterms:references  <https://identifiers.org/pubmed/18050418>;
+        cito:cites          <https://identifiers.org/pubmed/18050418>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2222_r118057/DataNode/bbaaa>;
+        foaf:page           <http://www.wormbase.org/db/gene/gene?name=W10C8.2;class=Gene> .
+
+<http://rdf.wikipathways.org/Pathway/WP2222_r118057/WP/Interaction/idcd9808f1>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2222_r118057>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2222_r118057/Interaction/idcd9808f1>;
+        wp:participants   <https://identifiers.org/wb/C16B8.1> , <https://identifiers.org/wb/K10B4.6>;
+        wp:source         <https://identifiers.org/wb/K10B4.6>;
+        wp:target         <https://identifiers.org/wb/C16B8.1> .
+
+<http://rdf.wikipathways.org/Pathway/WP2222_r118057/WP/Interaction/id17c30ceb>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2222_r118057>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2222_r118057/Interaction/id17c30ceb>;
+        wp:participants   <https://identifiers.org/wb/W10C8.2> , <https://identifiers.org/wb/Y71F9B.5>;
+        wp:source         <https://identifiers.org/wb/Y71F9B.5>;
+        wp:target         <https://identifiers.org/wb/W10C8.2> .
+
+<https://identifiers.org/wb/C16B8.1>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "LIN-18";
+        dc:identifier       <https://identifiers.org/wb/C16B8.1>;
+        dc:source           "WormBase";
+        dcterms:identifier  "C16B8.1";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2222_r118057> , <http://rdf.wikipathways.org/Pathway/WP2222_r118057/WP/Interaction/idb64f8e0a> , <http://rdf.wikipathways.org/Pathway/WP2222_r118057/WP/Interaction/idcd9808f1> , <http://rdf.wikipathways.org/Pathway/WP2222_r118057/WP/Interaction/id153a3729>;
+        dcterms:references  <https://identifiers.org/pubmed/18050418>;
+        cito:cites          <https://identifiers.org/pubmed/18050418>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2222_r118057/DataNode/d5bba>;
+        foaf:page           <http://www.wormbase.org/db/gene/gene?name=C16B8.1;class=Gene> .
+
+<https://identifiers.org/wikipathways/WP2222_r118057>
+        rdf:type               wp:Pathway , skos:Collection;
+        dc:identifier          <https://identifiers.org/wikipathways/WP2222>;
+        dc:source              "WikiPathways";
+        dc:title               "Wnt signaling in cell polarity"@en;
+        dcterms:description    "The Wnt pathway functions in many aspects of vulval development, it is required in the specification of vulval precursor cell competance, regulation of vulval induction, and the establishment of polarity of the P7.p cell, as diagrammed here.";
+        dcterms:identifier     "WP2222";
+        cito:cites             <https://identifiers.org/pubmed/18050418>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP2222_r118057>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000200> , <http://purl.obolibrary.org/obo/PW_0000008>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_6239>;
+        wp:organismName        "Caenorhabditis elegans";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000200> , <http://purl.obolibrary.org/obo/PW_0000008>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP2222&oldid=r118057> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP2222&oldid=r118057>;
+        foaf:page              <http://www.wikipathways.org/instance/WP2222_r118057> .
+
+<http://rdf.wikipathways.org/Pathway/WP2222_r118057/WP/Interaction/id819ac933>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP2222_r118057>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP2222_r118057/Interaction/id819ac933>;
+        wp:participants   <https://identifiers.org/wb/Y71F9B.5> , <https://identifiers.org/wb/K10B4.6>;
+        wp:source         <https://identifiers.org/wb/K10B4.6>;
+        wp:target         <https://identifiers.org/wb/Y71F9B.5> .
+
+<https://identifiers.org/wb/ZC247.3>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "lin-11";
+        dc:identifier       <https://identifiers.org/wb/ZC247.3>;
+        dc:source           "WormBase";
+        dcterms:identifier  "ZC247.3";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP2222_r118057>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP2222_r118057/DataNode/dcfb7>;
+        foaf:page           <http://www.wormbase.org/db/gene/gene?name=ZC247.3;class=Gene> .

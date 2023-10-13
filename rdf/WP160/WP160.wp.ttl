@@ -16,13 +16,39 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
+<http://rdf.wikipathways.org/Pathway/WP160_r116973/WP/Interaction/a90dc>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP160_r116973/Interaction/a90dc>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001586>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001586> .
+
+<http://rdf.wikipathways.org/Pathway/WP160_r116973/WP/Interaction/cf05c>
+        rdf:type          wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP160_r116973/Interaction/cf05c>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP160_r116973/WP/Interaction/f7295> , <https://identifiers.org/hmdb/HMDB0000286> .
+
+<http://rdf.wikipathways.org/Pathway/WP160_r116973/WP/Interaction/e730f>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP160_r116973/WP/Interaction/ef63e> , <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP160_r116973/Interaction/e730f> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_10116>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "10116" .
+
+<https://identifiers.org/wikipathways/WP160>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP160_r116973> .
+
 <https://identifiers.org/ncbigene/24645>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "Pgm1";
         dc:identifier       <https://identifiers.org/ncbigene/24645>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "24645";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973/DataNode/f0d>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP160_r116973> , <http://rdf.wikipathways.org/Pathway/WP160_r116973/WP/Interaction/b9472>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160_r116973/DataNode/f0d>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/24645> .
 
 <https://identifiers.org/ncbigene/24673>
@@ -31,7 +57,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/24673>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "24673";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973/DataNode/a2e>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160_r116973/DataNode/a2e>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/24673> .
 
 <https://identifiers.org/ncbigene/289827>
@@ -40,7 +67,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/289827>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "289827";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973/DataNode/ced> , <http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973/DataNode/b6f>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160_r116973/DataNode/ced> , <http://rdf.wikipathways.org/Pathway/WP160_r116973/DataNode/b6f>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/289827> .
 
 <https://identifiers.org/ncbigene/117256>
@@ -49,11 +77,9 @@
         dc:identifier       <https://identifiers.org/ncbigene/117256>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "117256";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973/DataNode/b42>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160_r116973/DataNode/b42>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/117256> .
-
-<http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973/WP/Interaction/cf05c>
-        rdf:type  wp:Interaction .
 
 <https://identifiers.org/ncbigene/81675>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -61,8 +87,24 @@
         dc:identifier       <https://identifiers.org/ncbigene/81675>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "81675";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973/DataNode/c04>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160_r116973/DataNode/c04>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/81675> .
+
+<https://identifiers.org/wikipathways/WP160_r116973>
+        rdf:type               wp:Pathway , skos:Collection;
+        dc:identifier          <https://identifiers.org/wikipathways/WP160>;
+        dc:source              "WikiPathways";
+        dc:title               "Glycogen metabolism"@en;
+        dcterms:description    "Glycogen is a very large, branched polymer of glucose residues. Within skeletal muscle and liver glucose is stored as glycogen. In the liver, glycogen synthesis and degradation are regulated to maintain blood-glucose levels as required to meet the needs of the organism as a whole. In contrast, in muscle, these processes are regulated to meet the energy needs of the muscle itself. \n\n'''Glycogen synthesis''' is, unlike its breakdown, endergonic. This means that glycogen synthesis requires the input of energy. Energy for glycogen synthesis comes from UTP, which reacts with glucose-1-phosphate, forming UDP-glucose, in reaction catalyzed by UDP-glucose pyrophosphorylase. Glycogen is synthesized from monomers of UDP-glucose by the enzyme glycogen synthase, which progressively lengthens the glycogen chain with (a1->4) bonded glucose. As glycogen synthase can only lengthen an existing chain, the protein glycogenin is needed to initiate the synthesis of glycogen. The glycogen-branching enzyme, amylo (a1->4) to (a1->6) transglycosylase, catalyzes the transfer of a terminal fragment of 6-7 glucose residues from a nonreducing end to the C-6 hydroxyl group of a glucose residue deeper into the interior of the glycogen molecule. The branching enzyme can act upon only a branch having at least 11 residues, and the enzyme may transfer to the same glucose chain or adjacent glucose chains.\n\n'''Glycogen degradation''' consists of three steps: (1) the release of glucose 1-phosphate from glycogen, (2) the remodeling of the glycogen substrate to permit further degradation, and (3) the conversion of glucose 1-phosphate into glucose 6-phosphate for further metabolism.\n\nInformation partly derived from \"Biochemistry\" by Stryer and [http://en.wikipedia.org/wiki/Glycogen Wikipedia].";
+        dcterms:identifier     "WP160";
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP160_r116973>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000533>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_10116>;
+        wp:organismName        "Rattus norvegicus";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000533>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP160&oldid=r116973> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP160&oldid=r116973>;
+        foaf:page              <http://www.wikipathways.org/instance/WP160_r116973> .
 
 <https://identifiers.org/ncbigene/64561>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -70,7 +112,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/64561>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "64561";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973/DataNode/b13>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160_r116973/DataNode/b13>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/64561> .
 
 <https://identifiers.org/ncbigene/50663>
@@ -79,11 +122,9 @@
         dc:identifier       <https://identifiers.org/ncbigene/50663>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "50663";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973/DataNode/df8>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160_r116973/DataNode/df8>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/50663> .
-
-<http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973/WP/Interaction/e7293>
-        rdf:type  wp:Interaction .
 
 <https://identifiers.org/ncbigene/312754>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -91,8 +132,24 @@
         dc:identifier       <https://identifiers.org/ncbigene/312754>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "312754";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973/DataNode/df7>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160_r116973/DataNode/df7>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/312754> .
+
+<http://rdf.wikipathways.org/Pathway/WP160_r116973/WP/Interaction/abe2c>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP160_r116973/Interaction/abe2c>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000286>;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000286> .
+
+<http://rdf.wikipathways.org/Pathway/WP160_r116973/WP/Interaction/b9472>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP160_r116973/Interaction/b9472>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP160_r116973/WP/Interaction/fc7aa> , <https://identifiers.org/ncbigene/24645>;
+        wp:source         <https://identifiers.org/ncbigene/24645>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP160_r116973/WP/Interaction/fc7aa> .
 
 <https://identifiers.org/ncbigene/84027>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -100,19 +157,22 @@
         dc:identifier       <https://identifiers.org/ncbigene/84027>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "84027";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973/DataNode/ea5>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160_r116973/DataNode/ea5>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/84027> .
 
-<https://identifiers.org/wikipathways/WP160/WP160_rWP160_r116973>
-        rdf:type             skos:Collection , wp:Pathway;
-        dc:identifier        <https://identifiers.org/wikipathways/WP160/WP160>;
-        dc:source            "WikiPathways";
-        dc:title             "Glycogen metabolism"@en;
-        dcterms:description  "Glycogen is a very large, branched polymer of glucose residues. Within skeletal muscle and liver glucose is stored as glycogen. In the liver, glycogen synthesis and degradation are regulated to maintain blood-glucose levels as required to meet the needs of the organism as a whole. In contrast, in muscle, these processes are regulated to meet the energy needs of the muscle itself. \n\n'''Glycogen synthesis''' is, unlike its breakdown, endergonic. This means that glycogen synthesis requires the input of energy. Energy for glycogen synthesis comes from UTP, which reacts with glucose-1-phosphate, forming UDP-glucose, in reaction catalyzed by UDP-glucose pyrophosphorylase. Glycogen is synthesized from monomers of UDP-glucose by the enzyme glycogen synthase, which progressively lengthens the glycogen chain with (a1->4) bonded glucose. As glycogen synthase can only lengthen an existing chain, the protein glycogenin is needed to initiate the synthesis of glycogen. The glycogen-branching enzyme, amylo (a1->4) to (a1->6) transglycosylase, catalyzes the transfer of a terminal fragment of 6-7 glucose residues from a nonreducing end to the C-6 hydroxyl group of a glucose residue deeper into the interior of the glycogen molecule. The branching enzyme can act upon only a branch having at least 11 residues, and the enzyme may transfer to the same glucose chain or adjacent glucose chains.\n\n'''Glycogen degradation''' consists of three steps: (1) the release of glucose 1-phosphate from glycogen, (2) the remodeling of the glycogen substrate to permit further degradation, and (3) the conversion of glucose 1-phosphate into glucose 6-phosphate for further metabolism.\n\nInformation partly derived from \"Biochemistry\" by Stryer and [http://en.wikipedia.org/wiki/Glycogen Wikipedia].";
-        dcterms:identifier   "WP160/WP160";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973>;
-        wp:organismName      "Rattus norvegicus";
-        foaf:page            <http://www.wikipathways.org/instance/WP160/WP160_rWP160_r116973> .
+<http://rdf.wikipathways.org/Pathway/WP160_r116973/WP/Interaction/f7295>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP160_r116973> , <http://rdf.wikipathways.org/Pathway/WP160_r116973/WP/Interaction/cf05c>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP160_r116973/Interaction/f7295> .
+
+<http://rdf.wikipathways.org/Pathway/WP160_r116973/WP/Interaction/b1403>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP160_r116973/Interaction/b1403>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP160_r116973/WP/Interaction/c7782> , <https://identifiers.org/ncbigene/362029>;
+        wp:source         <https://identifiers.org/ncbigene/362029>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP160_r116973/WP/Interaction/c7782> .
 
 <https://identifiers.org/ncbigene/309179>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -120,7 +180,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/309179>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "309179";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973/DataNode/a4f>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160_r116973/DataNode/a4f>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/309179> .
 
 <https://identifiers.org/ncbigene/24242>
@@ -129,8 +190,13 @@
         dc:identifier       <https://identifiers.org/ncbigene/24242>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "24242";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973/DataNode/af6>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160_r116973/DataNode/af6>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/24242> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP160&oldid=r116973>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
 
 <https://identifiers.org/ncbigene/117104>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -138,7 +204,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/117104>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "117104";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973/DataNode/e1e>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160_r116973/DataNode/e1e>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/117104> .
 
 <https://identifiers.org/hmdb/HMDB0000058>
@@ -147,7 +214,8 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000058>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0000058";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973/DataNode/afdba>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160_r116973/DataNode/afdba>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000058> .
 
 <https://identifiers.org/ncbigene/25739>
@@ -156,8 +224,14 @@
         dc:identifier       <https://identifiers.org/ncbigene/25739>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "25739";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973/DataNode/b4d>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160_r116973/DataNode/b4d>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/25739> .
+
+<http://rdf.wikipathways.org/Pathway/WP160_r116973/WP/Interaction/bd7b0>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP160_r116973/Interaction/bd7b0> .
 
 <https://identifiers.org/ncbigene/362102>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -165,7 +239,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/362102>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "362102";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973/DataNode/f57>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160_r116973/DataNode/f57>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/362102> .
 
 <https://identifiers.org/ncbigene/361377>
@@ -174,7 +249,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/361377>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "361377";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973/DataNode/a31>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160_r116973/DataNode/a31>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/361377> .
 
 <https://identifiers.org/ncbigene/140671>
@@ -183,7 +259,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/140671>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "140671";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973/DataNode/a9b>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160_r116973/DataNode/a9b>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/140671> .
 
 <https://identifiers.org/ncbigene/363122>
@@ -192,7 +269,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/363122>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "363122";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973/DataNode/bf6>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160_r116973/DataNode/bf6>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/363122> .
 
 <https://identifiers.org/ncbigene/678739>
@@ -201,8 +279,14 @@
         dc:identifier       <https://identifiers.org/ncbigene/678739>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "678739";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973/DataNode/e17>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160_r116973/DataNode/e17>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/678739> .
+
+<http://rdf.wikipathways.org/Pathway/WP160_r116973/WP/Interaction/c7782>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP160_r116973> , <http://rdf.wikipathways.org/Pathway/WP160_r116973/WP/Interaction/b1403>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP160_r116973/Interaction/c7782> .
 
 <https://identifiers.org/hmdb/HMDB0000286>
         rdf:type            wp:Metabolite , wp:DataNode;
@@ -210,7 +294,8 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000286>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0000286";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973/DataNode/d1c90>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP160_r116973> , <http://rdf.wikipathways.org/Pathway/WP160_r116973/WP/Interaction/cf05c> , <http://rdf.wikipathways.org/Pathway/WP160_r116973/WP/Interaction/abe2c>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160_r116973/DataNode/d1c90>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000286> .
 
 <https://identifiers.org/ncbigene/288333>
@@ -219,7 +304,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/288333>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "288333";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973/DataNode/f01>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP160_r116973/WP/Interaction/ef63e> , <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160_r116973/DataNode/f01>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/288333> .
 
 <https://identifiers.org/ncbigene/117281>
@@ -228,17 +314,9 @@
         dc:identifier       <https://identifiers.org/ncbigene/117281>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "117281";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973/DataNode/c15>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160_r116973/DataNode/c15>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/117281> .
-
-<https://identifiers.org/ncbigene/64035>
-        rdf:type            wp:GeneProduct , wp:DataNode;
-        rdfs:label          "Pygl";
-        dc:identifier       <https://identifiers.org/ncbigene/64035>;
-        dc:source           "Entrez Gene";
-        dcterms:identifier  "64035";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973/DataNode/fd9>;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/64035> .
 
 <https://identifiers.org/ncbigene/24701>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -246,8 +324,19 @@
         dc:identifier       <https://identifiers.org/ncbigene/24701>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "24701";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973/DataNode/a03>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160_r116973/DataNode/a03>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/24701> .
+
+<https://identifiers.org/ncbigene/64035>
+        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdfs:label          "Pygl";
+        dc:identifier       <https://identifiers.org/ncbigene/64035>;
+        dc:source           "Entrez Gene";
+        dcterms:identifier  "64035";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160_r116973/DataNode/fd9>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/gene/64035> .
 
 <https://identifiers.org/ncbigene/362029>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -255,7 +344,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/362029>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "362029";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973/DataNode/df1>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP160_r116973/WP/Interaction/b1403> , <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160_r116973/DataNode/df1>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/362029> .
 
 <https://identifiers.org/ncbigene/691318>
@@ -264,7 +354,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/691318>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "691318";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973/DataNode/ac1>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160_r116973/DataNode/ac1>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/691318> .
 
 <https://identifiers.org/ncbigene/29353>
@@ -273,7 +364,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/29353>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "29353";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973/DataNode/eb4>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160_r116973/DataNode/eb4>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/29353> .
 
 <https://identifiers.org/ncbigene/50686>
@@ -282,8 +374,13 @@
         dc:identifier       <https://identifiers.org/ncbigene/50686>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "50686";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973/DataNode/bf3>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160_r116973/DataNode/bf3>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/50686> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP160&oldid=r116973>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
 
 <https://identifiers.org/ncbigene/690987>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -291,8 +388,24 @@
         dc:identifier       <https://identifiers.org/ncbigene/690987>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "690987";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973/DataNode/bdb>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160_r116973/DataNode/bdb>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/690987> .
+
+<http://rdf.wikipathways.org/Pathway/WP160_r116973/WP/Interaction/ef63e>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP160_r116973/Interaction/ef63e>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP160_r116973/WP/Interaction/e730f> , <https://identifiers.org/ncbigene/288333>;
+        wp:source         <https://identifiers.org/ncbigene/288333>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP160_r116973/WP/Interaction/e730f> .
+
+<http://rdf.wikipathways.org/Pathway/WP160_r116973/WP/Interaction/fc7aa>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP160_r116973> , <http://rdf.wikipathways.org/Pathway/WP160_r116973/WP/Interaction/b9472>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP160_r116973/Interaction/fc7aa>;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001586>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001586> .
 
 <https://identifiers.org/ncbigene/24244>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -300,7 +413,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/24244>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "24244";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973/DataNode/c2a>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160_r116973/DataNode/c2a>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/24244> .
 
 <https://identifiers.org/hmdb/HMDB0001586>
@@ -309,8 +423,14 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0001586>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0001586";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973/DataNode/d5dd2>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP160_r116973> , <http://rdf.wikipathways.org/Pathway/WP160_r116973/WP/Interaction/a90dc> , <http://rdf.wikipathways.org/Pathway/WP160_r116973/WP/Interaction/fc7aa>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160_r116973/DataNode/d5dd2>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001586> .
+
+<http://rdf.wikipathways.org/Pathway/WP160_r116973/WP/Interaction/c00a6>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP160_r116973/Interaction/c00a6> .
 
 <https://identifiers.org/ncbigene/315648>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -318,7 +438,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/315648>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "315648";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973/DataNode/edd>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160_r116973/DataNode/edd>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/315648> .
 
 <https://identifiers.org/ncbigene/60660>
@@ -327,7 +448,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/60660>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "60660";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973/DataNode/d5a>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160_r116973/DataNode/d5a>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/60660> .
 
 <https://identifiers.org/ncbigene/363193>
@@ -336,8 +458,14 @@
         dc:identifier       <https://identifiers.org/ncbigene/363193>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "363193";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973/DataNode/d4b>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160_r116973/DataNode/d4b>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/363193> .
+
+<http://rdf.wikipathways.org/Pathway/WP160_r116973/WP/Interaction/e680e>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP160_r116973/Interaction/e680e> .
 
 <https://identifiers.org/ncbigene/24672>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -345,7 +473,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/24672>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "24672";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973/DataNode/c65>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160_r116973/DataNode/c65>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/24672> .
 
 <https://identifiers.org/ncbigene/25623>
@@ -354,7 +483,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/25623>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "25623";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973/DataNode/a3c>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160_r116973/DataNode/a3c>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/25623> .
 
 <https://identifiers.org/ncbigene/299147>
@@ -363,5 +493,6 @@
         dc:identifier       <https://identifiers.org/ncbigene/299147>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "299147";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160/WP160_rWP160_r116973/DataNode/c42>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP160_r116973>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP160_r116973/DataNode/c42>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/299147> .

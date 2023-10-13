@@ -22,16 +22,18 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000184916>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000184916";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3413/WP3413_rWP3413_r116601/DataNode/d4f68>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3413_r116601>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3413_r116601/DataNode/d4f68>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000184916> .
 
 <https://identifiers.org/ensembl/ENSG00000148400>
-        rdf:type            wp:GeneProduct , wp:DataNode;
+        rdf:type            wp:DataNode , wp:GeneProduct;
         rdfs:label          "NOTCH1";
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000148400>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000148400";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3413/WP3413_rWP3413_r116601/DataNode/a5b38>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3413_r116601/WP/Interaction/id83a523bb> , <https://identifiers.org/wikipathways/WP3413_r116601>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3413_r116601/DataNode/a5b38>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000148400> .
 
 <https://identifiers.org/ensembl/ENSG00000130066>
@@ -40,19 +42,13 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000130066>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000130066";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3413/WP3413_rWP3413_r116601/DataNode/cc31c>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3413_r116601>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3413_r116601/DataNode/cc31c>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000130066> .
 
-<https://identifiers.org/wikipathways/WP3413/WP3413_rWP3413_r116601>
-        rdf:type             wp:Pathway , skos:Collection;
-        dc:identifier        <https://identifiers.org/wikipathways/WP3413/WP3413>;
-        dc:source            "WikiPathways";
-        dc:title             "NOTCH1 regulation of endothelial cell calcification"@en;
-        dcterms:description  "Model of NOTCH1 regulation of human endothelial cell calcification.\n\n\nProteins on this pathway have targeted assays available via the [https://assays.cancer.gov/available_assays?wp_id=WP3413 CPTAC Assay Portal]";
-        dcterms:identifier   "WP3413/WP3413";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP3413/WP3413_rWP3413_r116601>;
-        wp:organismName      "Homo sapiens";
-        foaf:page            <http://www.wikipathways.org/instance/WP3413/WP3413_rWP3413_r116601> .
+<http://purl.obolibrary.org/obo/NCBITaxon_9606>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9606" .
 
 <https://identifiers.org/ensembl/ENSG00000104368>
         rdf:type            wp:DataNode , wp:Protein;
@@ -60,8 +56,16 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000104368>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000104368";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3413/WP3413_rWP3413_r116601/DataNode/f0b3a> , <http://rdf.wikipathways.org/Pathway/WP3413/WP3413_rWP3413_r116601/DataNode/f6b97>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3413_r116601>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3413_r116601/DataNode/f0b3a> , <http://rdf.wikipathways.org/Pathway/WP3413_r116601/DataNode/f6b97>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000104368> .
+
+<http://rdf.wikipathways.org/Pathway/WP3413_r116601/WP/Interaction/id83a523bb>
+        rdf:type          wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3413_r116601>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3413_r116601/Interaction/id83a523bb>;
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000148400>;
+        wp:target         <https://identifiers.org/ensembl/ENSG00000148400> .
 
 <https://identifiers.org/ensembl/ENSG00000110693>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -69,7 +73,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000110693>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000110693";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3413/WP3413_rWP3413_r116601/DataNode/a06bc>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3413_r116601>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3413_r116601/DataNode/a06bc>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000110693> .
 
 <https://identifiers.org/ensembl/ENSG00000111341>
@@ -78,8 +83,16 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000111341>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000111341";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3413/WP3413_rWP3413_r116601/DataNode/ed294>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3413_r116601>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3413_r116601/DataNode/ed294>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000111341> .
+
+<https://identifiers.org/pubmed/25871831>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "25871831";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3413_r116601>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/25871831> .
 
 <https://identifiers.org/ensembl/ENSG00000128595>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -87,7 +100,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000128595>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000128595";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3413/WP3413_rWP3413_r116601/DataNode/e3221>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3413_r116601>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3413_r116601/DataNode/e3221>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000128595> .
 
 <https://identifiers.org/ncbigene/2702>
@@ -96,7 +110,8 @@
         dc:identifier       <https://identifiers.org/ncbigene/2702>;
         dc:source           "Entrez Gene";
         dcterms:identifier  "2702";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3413/WP3413_rWP3413_r116601/DataNode/c94eb>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3413_r116601>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3413_r116601/DataNode/c94eb>;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/2702> .
 
 <https://identifiers.org/ensembl/ENSG00000128917>
@@ -105,8 +120,13 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000128917>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000128917";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3413/WP3413_rWP3413_r116601/DataNode/a81fd>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3413_r116601>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3413_r116601/DataNode/a81fd>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000128917> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3413&oldid=r116601>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
 
 <https://identifiers.org/ensembl/ENSG00000112715>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -114,8 +134,13 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000112715>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000112715";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3413/WP3413_rWP3413_r116601/DataNode/ae6a0>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3413_r116601>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3413_r116601/DataNode/ae6a0>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000112715> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3413&oldid=r116601>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
 
 <https://identifiers.org/ensembl/ENSG00000068078>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -123,7 +148,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000068078>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000068078";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3413/WP3413_rWP3413_r116601/DataNode/c5078>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3413_r116601>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3413_r116601/DataNode/c5078>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000068078> .
 
 <https://identifiers.org/ensembl/ENSG00000162551>
@@ -132,8 +158,26 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000162551>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000162551";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3413/WP3413_rWP3413_r116601/DataNode/cd119>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3413_r116601>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3413_r116601/DataNode/cd119>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000162551> .
+
+<https://identifiers.org/wikipathways/WP3413_r116601>
+        rdf:type               skos:Collection , wp:Pathway;
+        dc:identifier          <https://identifiers.org/wikipathways/WP3413>;
+        dc:source              "WikiPathways";
+        dc:title               "NOTCH1 regulation of endothelial cell calcification"@en;
+        dcterms:description    "Model of NOTCH1 regulation of human endothelial cell calcification.\n\n\nProteins on this pathway have targeted assays available via the [https://assays.cancer.gov/available_assays?wp_id=WP3413 CPTAC Assay Portal]";
+        dcterms:identifier     "WP3413";
+        dcterms:references     <https://identifiers.org/pubmed/25871831>;
+        cito:cites             <https://identifiers.org/pubmed/25871831>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP3413_r116601>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000004>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606>;
+        wp:organismName        "Homo sapiens";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000004>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3413&oldid=r116601> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3413&oldid=r116601>;
+        foaf:page              <http://www.wikipathways.org/instance/WP3413_r116601> .
 
 <https://identifiers.org/ensembl/ENSG00000198121>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -141,7 +185,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000198121>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000198121";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3413/WP3413_rWP3413_r116601/DataNode/aa22d>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3413_r116601>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3413_r116601/DataNode/aa22d>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000198121> .
 
 <https://identifiers.org/ensembl/ENSG00000213949>
@@ -150,7 +195,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000213949>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000213949";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3413/WP3413_rWP3413_r116601/DataNode/b9593>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3413_r116601>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3413_r116601/DataNode/b9593>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000213949> .
 
 <https://identifiers.org/ensembl/ENSG00000198719>
@@ -159,8 +205,12 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000198719>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000198719";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3413/WP3413_rWP3413_r116601/DataNode/aee95>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3413_r116601>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3413_r116601/DataNode/aee95>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000198719> .
+
+<https://identifiers.org/wikipathways/WP3413>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP3413_r116601> .
 
 <https://identifiers.org/ensembl/ENSG00000101384>
         rdf:type            wp:GeneProduct , wp:DataNode;
@@ -168,7 +218,8 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000101384>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000101384";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3413/WP3413_rWP3413_r116601/DataNode/f34f4>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3413_r116601>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3413_r116601/DataNode/f34f4>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000101384> .
 
 <https://identifiers.org/ensembl/ENSG00000090932>
@@ -177,5 +228,6 @@
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000090932>;
         dc:source           "Ensembl";
         dcterms:identifier  "ENSG00000090932";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3413/WP3413_rWP3413_r116601/DataNode/b1987>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3413_r116601>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3413_r116601/DataNode/b1987>;
         foaf:page           <https://www.ensembl.org/id/ENSG00000090932> .

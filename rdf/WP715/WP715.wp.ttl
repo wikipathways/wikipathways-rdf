@@ -16,13 +16,35 @@
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
+<https://identifiers.org/hmdb/HMDB0001429>
+        rdf:type            wp:Metabolite , wp:DataNode;
+        rdfs:label          "Phosphate";
+        dc:identifier       <https://identifiers.org/hmdb/HMDB0001429>;
+        dc:source           "HMDB";
+        dcterms:identifier  "HMDB0001429";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP715_r106831>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP715_r106831/DataNode/b8600> , <http://rdf.wikipathways.org/Pathway/WP715_r106831/DataNode/b836b>;
+        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001429> .
+
+<https://identifiers.org/wikipathways/WP715>
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP715_r106831> .
+
+<http://rdf.wikipathways.org/Pathway/WP715_r106831/WP/Interaction/a9d87>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP715_r106831>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP715_r106831/Interaction/a9d87>;
+        wp:participants   <http://rdf.wikipathways.org/Pathway/WP715_r106831/WP/Interaction/d91ed> , <https://identifiers.org/hmdb/HMDB0000538>;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000538>;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP715_r106831/WP/Interaction/d91ed> .
+
 <https://identifiers.org/hmdb/HMDB0000251>
         rdf:type            wp:Metabolite , wp:DataNode;
         rdfs:label          "Taurine";
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000251>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0000251";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP715/WP715_rWP715_r106831/DataNode/f36a5>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP715_r106831>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP715_r106831/DataNode/f36a5>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000251> .
 
 <https://identifiers.org/hmdb/HMDB0000641>
@@ -31,16 +53,30 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000641>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0000641";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP715/WP715_rWP715_r106831/DataNode/cb1fb>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP715_r106831>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP715_r106831/DataNode/cb1fb>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000641> .
 
+<http://rdf.wikipathways.org/Pathway/WP715_r106831/WP/Interaction/d91ed>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP715_r106831> , <http://rdf.wikipathways.org/Pathway/WP715_r106831/WP/Interaction/a9d87>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP715_r106831/Interaction/d91ed>;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:33575>;
+        wp:source         <https://identifiers.org/chebi/CHEBI:33575> .
+
+<http://rdf.wikipathways.org/Pathway/WP715_r106831/WP/Interaction/bbbac>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP715_r106831>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP715_r106831/Interaction/bbbac> .
+
 <https://identifiers.org/chebi/CHEBI:33575>
-        rdf:type            wp:Metabolite , wp:DataNode;
+        rdf:type            wp:DataNode , wp:Metabolite;
         rdfs:label          "carboxylic acid";
         dc:identifier       <https://identifiers.org/chebi/CHEBI:33575>;
         dc:source           "ChEBI";
         dcterms:identifier  "CHEBI:33575";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP715/WP715_rWP715_r106831/DataNode/e0361>;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP715_r106831/WP/Interaction/d91ed> , <https://identifiers.org/wikipathways/WP715_r106831>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP715_r106831/DataNode/e0361>;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:33575> .
 
 <https://identifiers.org/hmdb/HMDB0000123>
@@ -49,7 +85,8 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000123>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0000123";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP715/WP715_rWP715_r106831/DataNode/b09fb>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP715_r106831>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP715_r106831/DataNode/b09fb>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000123> .
 
 <https://identifiers.org/hmdb/HMDB0000538>
@@ -58,25 +95,47 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000538>;
         dc:source           "HMDB";
         dcterms:identifier  "HMDB0000538";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP715/WP715_rWP715_r106831/DataNode/bb44a>;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP715_r106831> , <http://rdf.wikipathways.org/Pathway/WP715_r106831/WP/Interaction/a9d87>;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP715_r106831/DataNode/bb44a>;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000538> .
 
-<https://identifiers.org/wikipathways/WP715/WP715_rWP715_r106831>
-        rdf:type             wp:Pathway , skos:Collection;
-        dc:identifier        <https://identifiers.org/wikipathways/WP715/WP715>;
-        dc:source            "WikiPathways";
-        dc:title             "Amino acid conjugation"@en;
-        dcterms:description  "Xenobiotic compounds containing a carboxylic acid group (-COOH) or an aromatic hydroxylamine (-NHOH) group can be substrates for amino acid conjugation. (Source: http://reactome.org/content/detail/R-HSA-156587) Amino acid conjugation is important in the biotransformation of several xenobiotic carboxylic acids. An amide or peptide bond can be formed between the carboxyl group of the xenobiotic and the amino group of an amino acid, mainly glycine, taurine or glutamine. (Source: Hutt A.J., Caldwell J. Conjugation Reactions In Drug Metabolism; Chapter 10 Amino acid conjugation; 1990).";
-        dcterms:identifier   "WP715/WP715";
-        wp:isAbout           <http://rdf.wikipathways.org/Pathway/WP715/WP715_rWP715_r106831>;
-        wp:organismName      "Homo sapiens";
-        foaf:page            <http://www.wikipathways.org/instance/WP715/WP715_rWP715_r106831> .
+<https://identifiers.org/wikipathways/WP715_r106831>
+        rdf:type               skos:Collection , wp:Pathway;
+        dc:identifier          <https://identifiers.org/wikipathways/WP715>;
+        dc:source              "WikiPathways";
+        dc:title               "Amino acid conjugation"@en;
+        dcterms:description    "Xenobiotic compounds containing a carboxylic acid group (-COOH) or an aromatic hydroxylamine (-NHOH) group can be substrates for amino acid conjugation. (Source: http://reactome.org/content/detail/R-HSA-156587) Amino acid conjugation is important in the biotransformation of several xenobiotic carboxylic acids. An amide or peptide bond can be formed between the carboxyl group of the xenobiotic and the amino group of an amino acid, mainly glycine, taurine or glutamine. (Source: Hutt A.J., Caldwell J. Conjugation Reactions In Drug Metabolism; Chapter 10 Amino acid conjugation; 1990).";
+        dcterms:identifier     "WP715";
+        dcterms:references     <https://identifiers.org/pubmed/17428148>;
+        cito:cites             <https://identifiers.org/pubmed/17428148>;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP715_r106831>;
+        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000011>;
+        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606>;
+        wp:organismName        "Homo sapiens";
+        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000011>;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP715&oldid=r106831> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP715&oldid=r106831>;
+        foaf:page              <http://www.wikipathways.org/instance/WP715_r106831> .
 
-<https://identifiers.org/hmdb/HMDB0001429>
-        rdf:type            wp:Metabolite , wp:DataNode;
-        rdfs:label          "Phosphate";
-        dc:identifier       <https://identifiers.org/hmdb/HMDB0001429>;
-        dc:source           "HMDB";
-        dcterms:identifier  "HMDB0001429";
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP715/WP715_rWP715_r106831/DataNode/b8600> , <http://rdf.wikipathways.org/Pathway/WP715/WP715_rWP715_r106831/DataNode/b836b>;
-        foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001429> .
+<https://identifiers.org/pubmed/17428148>
+        rdf:type            wp:PublicationReference;
+        dc:source           "PubMed";
+        dcterms:identifier  "17428148";
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP715_r106831>;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/17428148> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP715&oldid=r106831>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/svg+xml" .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP715&oldid=r106831>
+        rdf:type        foaf:Image;
+        dcterms:format  "image/png" .
+
+<http://rdf.wikipathways.org/Pathway/WP715_r106831/WP/Interaction/cb47e>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP715_r106831>;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP715_r106831/Interaction/cb47e> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_9606>
+        <http://purl.obolibrary.org/obo/NCIT_C179773>
+                "9606" .
